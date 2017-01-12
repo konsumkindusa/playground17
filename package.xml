@@ -72,6 +72,8 @@
         <members>Contact.AutorabitExtId__c</members>
         <members>Contact.Languages__c</members>
         <members>Contact.Level__c</members>
+        <members>EMD__c.EMD_Checkbox__c</members>
+        <members>EMD__c.EMD_Picklist__c</members>
         <members>Goal.OrigGoalId__c</members>
         <members>Lead.AutorabitExtId__c</members>
         <members>Lead.CurrentGenerators__c</members>
@@ -120,6 +122,7 @@
         <members>DandBCompany</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
+        <members>EMD__c</members>
         <members>EmailMessage</members>
         <members>Event</members>
         <members>ExchangeUserMapping</members>
@@ -213,6 +216,7 @@
         <members>Contract-Contract Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EMD__c-EMD Layout</members>
         <members>Event-Event Layout</members>
         <members>FeedItem-Feed Item Layout</members>
         <members>Global-Global Layout</members>
@@ -451,6 +455,7 @@
         <members>Campaign</members>
         <members>Case</members>
         <members>Contact</members>
+        <members>EMD__c</members>
         <members>Lead</members>
         <members>Opportunity</members>
         <members>Order</members>
