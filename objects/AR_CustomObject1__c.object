@@ -58,9 +58,10 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>AR_CustomField1__c</fullName>
+        <description>Add comment for AR-CustomField1.</description>
         <externalId>false</externalId>
         <label>AR-CustomField1</label>
-        <length>30</length>
+        <length>35</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
