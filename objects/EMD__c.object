@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -67,33 +63,40 @@
         <fullName>EMD_Picklist__c</fullName>
         <externalId>false</externalId>
         <label>EMD Picklist</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Value01</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Value02</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Value03</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Value04</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Value05</fullName>
-                <default>false</default>
-            </picklistValues>
-            <restrictedPicklist>true</restrictedPicklist>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Value01</fullName>
+                    <default>false</default>
+                    <label>Value01</label>
+                </value>
+                <value>
+                    <fullName>Value02</fullName>
+                    <default>false</default>
+                    <label>Value02</label>
+                </value>
+                <value>
+                    <fullName>Value03</fullName>
+                    <default>false</default>
+                    <label>Value03</label>
+                </value>
+                <value>
+                    <fullName>Value04</fullName>
+                    <default>false</default>
+                    <label>Value04</label>
+                </value>
+                <value>
+                    <fullName>Value05</fullName>
+                    <default>false</default>
+                    <label>Value05</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>EMD</label>
     <nameField>
@@ -103,4 +106,5 @@
     <pluralLabel>EMDs</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

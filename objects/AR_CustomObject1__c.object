@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -47,8 +43,8 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Test Comment</description>
-    <enableActivities>false</enableActivities>
+    <description>Add comment for AR-CustomObject1.</description>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
@@ -58,9 +54,10 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>AR_CustomField1__c</fullName>
+        <description>Add comment for AR-CustomField1.</description>
         <externalId>false</externalId>
         <label>AR-CustomField1</label>
-        <length>30</length>
+        <length>35</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -68,9 +65,10 @@
     </fields>
     <fields>
         <fullName>AR_Custom_Field3__c</fullName>
+        <description>Add Comment for  AR-Custom Field3.</description>
         <externalId>false</externalId>
         <label>AR-Custom Field3</label>
-        <length>30</length>
+        <length>35</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -84,4 +82,5 @@
     <pluralLabel>AR-CustomObject1s</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>
