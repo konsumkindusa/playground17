@@ -406,6 +406,7 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>Goal.OrigGoalId__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>Lead.Address</members>
@@ -443,6 +444,7 @@
         <members>Macro.Description</members>
         <members>Macro.Name</members>
         <members>Macro.OwnerId</members>
+        <members>Metric.OrigMetricId__c</members>
         <members>Opportunity.AccountId</members>
         <members>Opportunity.Amount</members>
         <members>Opportunity.AutorabitExtId__c</members>
@@ -786,6 +788,12 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Account.Standard_Account_Match_Rule_v1_0</members>
+        <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
+        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
         <members>AR-Profile1</members>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>
@@ -853,6 +861,8 @@
     </types>
     <types>
         <members>Idea.InternalIdeasIdeaRecordType</members>
+        <members>Metric.Completion</members>
+        <members>Metric.Progress</members>
         <name>RecordType</name>
     </types>
     <types>
