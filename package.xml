@@ -6,6 +6,8 @@
         <members>ARApexClass4</members>
         <members>ARApexClassUAT</members>
         <members>ARApexClassUAT2</members>
+        <members>AccountCreation</members>
+        <members>AccountCreationTest</members>
         <members>ArApexClass5</members>
         <name>ApexClass</name>
     </types>
@@ -117,6 +119,7 @@
         <members>AssetRelationship.RelatedAssetId</members>
         <members>AssetRelationship.RelationshipType</members>
         <members>AssetRelationship.ToDate</members>
+        <members>Aug_Demo__c.Aug_text__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
@@ -599,6 +602,7 @@
         <members>Asset</members>
         <members>AssetRelationship</members>
         <members>AssistantProgress</members>
+        <members>Aug_Demo__c</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
         <members>Case</members>
@@ -688,6 +692,7 @@
         <members>Account-Account Layout</members>
         <members>Ar_Obj23__c-Ar-Obj23 Layout</members>
         <members>Asset-Asset Layout</members>
+        <members>Aug_Demo__c-Aug Demo Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>CampaignMember-Campaign Member Page Layout</members>
         <members>Case-Case %28Marketing%29 Layout</members>
