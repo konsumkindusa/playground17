@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>39.0</version>
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>ARApexClass1</members>
         <members>ARApexClass4</members>
@@ -120,6 +118,7 @@
         <members>AssetRelationship.RelationshipType</members>
         <members>AssetRelationship.ToDate</members>
         <members>Aug_Demo__c.Aug_text__c</members>
+        <members>Aug_Demo__c.Type1__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
@@ -983,4 +982,5 @@
         <members>AR_CustomObject1__c.AR-WorkflowRule2</members>
         <name>WorkflowRule</name>
     </types>
+    <version>40.0</version>
 </Package>
