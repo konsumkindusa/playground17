@@ -53,6 +53,7 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Aug_text__c</fullName>
+        <description>Demo changes</description>
         <externalId>false</externalId>
         <label>Aug text</label>
         <length>50</length>
