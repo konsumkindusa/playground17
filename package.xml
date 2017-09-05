@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>39.0</version>
     <types>
         <members>ARApexClass1</members>
         <members>ARApexClass4</members>
@@ -982,5 +984,4 @@
         <members>AR_CustomObject1__c.AR-WorkflowRule2</members>
         <name>WorkflowRule</name>
     </types>
-    <version>40.0</version>
 </Package>
