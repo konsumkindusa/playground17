@@ -122,6 +122,8 @@
         <members>Aug_Demo__c.Aug_text__c</members>
         <members>Aug_Demo__c.Type1__c</members>
         <members>Aug_Demo__c.Type2__c</members>
+        <members>Aug_Demo__c.Type_3__c</members>
+        <members>Aug_Demo__c.Type_4__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
