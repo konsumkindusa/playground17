@@ -52,62 +52,21 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Aug_text__c</fullName>
-        <description>PG test</description>
+        <fullName>HNI_Text_Field__c</fullName>
         <externalId>false</externalId>
-        <label>Aug text</label>
+        <label>HNI Text Field</label>
         <length>50</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Type1__c</fullName>
-        <externalId>false</externalId>
-        <label>Type1</label>
-        <length>50</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Type2__c</fullName>
-        <externalId>false</externalId>
-        <label>Type2</label>
-        <length>50</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Type_3__c</fullName>
-        <externalId>false</externalId>
-        <label>Type 3</label>
-        <length>50</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Type_4__c</fullName>
-        <externalId>false</externalId>
-        <label>Type 4</label>
-        <length>50</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <label>Aug Demo</label>
+    <label>HNI</label>
     <nameField>
-        <label>Aug Demo Name</label>
+        <label>HNI Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Aug Demos</pluralLabel>
+    <pluralLabel>HNIs</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

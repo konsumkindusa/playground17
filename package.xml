@@ -120,6 +120,10 @@
         <members>AssetRelationship.RelationshipType</members>
         <members>AssetRelationship.ToDate</members>
         <members>Aug_Demo__c.Aug_text__c</members>
+        <members>Aug_Demo__c.Type1__c</members>
+        <members>Aug_Demo__c.Type2__c</members>
+        <members>Aug_Demo__c.Type_3__c</members>
+        <members>Aug_Demo__c.Type_4__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
@@ -409,6 +413,7 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>HNI__c.HNI_Text_Field__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>Lead.Address</members>
@@ -620,6 +625,7 @@
         <members>ExchangeUserMapping</members>
         <members>FeedItem</members>
         <members>ForecastingCategoryMapping</members>
+        <members>HNI__c</members>
         <members>Idea</members>
         <members>Lead</members>
         <members>LeadCleanInfo</members>
@@ -650,8 +656,10 @@
         <members>AR_CustomObject1__c-en_US</members>
         <members>AR_UATObj2__c-en_US</members>
         <members>Ar_Obj23__c-en_US</members>
+        <members>Aug_Demo__c-en_US</members>
         <members>EMD_CI_Demo__c-en_US</members>
         <members>EMD__c-en_US</members>
+        <members>HNI__c-en_US</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
@@ -711,6 +719,7 @@
         <members>Event-Event Layout</members>
         <members>FeedItem-Feed Item Layout</members>
         <members>Global-Global Layout</members>
+        <members>HNI__c-HNI Layout</members>
         <members>Idea-Idea Layout</members>
         <members>Lead-Lead %28Marketing%29 Layout</members>
         <members>Lead-Lead %28Sales%29 Layout</members>
