@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>39.0</version>
+    <version>40.0</version>
     <types>
         <members>ARApexClass1</members>
         <members>ARApexClass4</members>
@@ -736,6 +736,8 @@
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Task-Task Layout</members>
         <members>User-User Layout</members>
@@ -844,6 +846,10 @@
         <members>StandardAul</members>
         <members>Work%2Ecom Only User</members>
         <name>Profile</name>
+    </types>
+    <types>
+        <members>PT1_profilePasswordPolicy1463153221823</members>
+        <name>ProfilePasswordPolicy</name>
     </types>
     <types>
         <members>Case.NewChildCase</members>
