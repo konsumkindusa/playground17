@@ -2,10 +2,15 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>40.0</version>
     <types>
+        <members>ARApexACclass2</members>
         <members>ARApexClass1</members>
         <members>ARApexClass4</members>
         <members>ARApexClassUAT</members>
         <members>ARApexClassUAT2</members>
+        <members>ARApexclass12</members>
+        <members>ARApexclass13</members>
+        <members>ARApexclass15</members>
+        <members>ARSApexclass4</members>
         <members>AccountCreation</members>
         <members>AccountCreationTest</members>
         <members>ArApexClass5</members>
@@ -39,12 +44,14 @@
         <members>standard__Chatter</members>
         <members>standard__Community</members>
         <members>standard__Content</members>
+        <members>standard__Insights</members>
         <members>standard__Marketing</members>
         <members>standard__Platform</members>
         <members>standard__Sales</members>
         <members>standard__Service</members>
         <members>standard__ServiceConsole</members>
         <members>standard__Sites</members>
+        <members>standard__Work</members>
         <name>CustomApplication</name>
     </types>
     <types>
@@ -582,7 +589,6 @@
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
         <members>Test_object__c.Field_A__c</members>
-        <members>Test_object__c.Field_B__c</members>
         <members>User.ManagerId</members>
         <members>UserProvisioningRequest.AppName</members>
         <members>UserProvisioningRequest.ApprovalStatus</members>
@@ -650,6 +656,7 @@
         <members>SocialPersona</members>
         <members>Solution</members>
         <members>StreamingChannel</members>
+        <members>Support_Test_Object__c</members>
         <members>Task</members>
         <members>Test_object__c</members>
         <members>User</members>
@@ -663,6 +670,7 @@
         <members>Ar_Obj23__c-en_US</members>
         <members>EMD_CI_Demo__c-en_US</members>
         <members>EMD__c-en_US</members>
+        <members>Support_Test_Object__c-en_US</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
@@ -742,6 +750,7 @@
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
         <members>Solution-Solution Layout</members>
+        <members>Support_Test_Object__c-Support Test Object Layout</members>
         <members>Task-Task Layout</members>
         <members>Test_object__c-Test object Layout</members>
         <members>User-User Layout</members>
@@ -806,10 +815,8 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>Account.Standard_Account_Match_Rule_v1_0</members>
-        <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
-        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
-        <name>MatchingRule</name>
+        <members>LeelaMarket_Developer</members>
+        <name>PermissionSet</name>
     </types>
     <types>
         <members>AR-Profile1</members>
@@ -926,6 +933,7 @@
         <members>Forecasting</members>
         <members>Ideas</members>
         <members>Knowledge</members>
+        <members>LeadConvert</members>
         <members>LiveAgent</members>
         <members>Macro</members>
         <members>Mobile</members>
@@ -942,7 +950,22 @@
         <name>Settings</name>
     </types>
     <types>
-        <members>Task.UpdateStatus_0.quickAction</members>
+        <members>AR_Accobj1__c</members>
+        <members>AR_CustomObject1__c</members>
+        <members>AR_UATObj2__c</members>
+        <members>Account</members>
+        <members>Ar_Obj23__c</members>
+        <members>Asset</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>EMD_CI_Demo__c</members>
+        <members>EMD__c</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>Support_Test_Object__c</members>
+        <members>User</members>
         <name>SharingRules</name>
     </types>
     <types>
