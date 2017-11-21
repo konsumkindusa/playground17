@@ -587,6 +587,7 @@
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
         <members>Test_object__c.Field_A__c</members>
+        <members>Test_object__c.Field_C__c</members>
         <members>User.ManagerId</members>
         <members>UserProvisioningRequest.AppName</members>
         <members>UserProvisioningRequest.ApprovalStatus</members>

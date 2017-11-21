@@ -1409,6 +1409,11 @@
         <field>Test_object__c.Field_B__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Test_object__c.Field_C__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>AR_Accobj1__c-AR-Accobj1 Layout</layout>
     </layoutAssignments>
