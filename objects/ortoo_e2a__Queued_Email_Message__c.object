@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <listViews>
+        <fullName>Academic_Support_Queued_Email_Message</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Academic Support</label>
+        <queue>Academic_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+</CustomObject>

@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <fields>
+        <fullName>BA_CompPlatformProd_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Understand and document the landscape of competitive tools. Develop and execute a plan to displace competitive tools.</inlineHelpText>
+        <label>BA_CompPlatformProd_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_CompPlatformProd__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify and displace competitive platform products (e.g. Excel, Python, R)</inlineHelpText>
+        <label>BA-Competitors</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BA_Events_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Regular cadence of on-site events. Joint ownership by the customer. New opportunities and technical engagements resulting from events.</inlineHelpText>
+        <label>BA_Events_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_Events__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Agreed plan for onsite events, actively supported by the customer and including at least 1 full day Technical Seminar (MathWorks day) per year</inlineHelpText>
+        <label>BA-On-Site Event Plans</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BA_Instructions_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Instructions on how to request an install, how to get a license, where to find internal resources, how to access training, available support channels etc.</inlineHelpText>
+        <label>BA_Instructions_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_Instructions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>MathWorks ability to provide clear, shareable instructions for new users to be able to access tools and resources in their own organization</inlineHelpText>
+        <label>BA-New User Instructions</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BA_InternalSupp_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Presence of centralized support resources for users. Content updated regularly, site in use. Regular meetings of power users, for support and idea sharing.</inlineHelpText>
+        <label>BA_InternalSupp_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_InternalSupp__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer SharePoint or equivalent users site for internal support and/or active MATLAB User Group</inlineHelpText>
+        <label>BA-Centralized Support Resources</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BA_MLUsers_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase the number of MATLAB users. Understand the Total Addressable Market (TAM). Develop and execute a plan to reach 100% of the TAM.</inlineHelpText>
+        <label>BA_MLUsers_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_MLUsers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase in # MATLAB Users</inlineHelpText>
+        <label>BA-Increase MATLAB</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BA_SLUsers_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase the number of Simulink users. Understand the Total Addressable Market (TAM). Develop and execute a plan to reach 100% of the TAM.</inlineHelpText>
+        <label>BA_SLUsers_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_SLUsers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase in # Simulink Users</inlineHelpText>
+        <label>BA-Increase Simulink</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BA_Training_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Regular cadence of introductory training courses. Customer commits annual budget to training credits. Customer has a streamlined training registration process.</inlineHelpText>
+        <label>BA_Training_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BA_Training__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Commitment to regular Fundamentals on-site training</inlineHelpText>
+        <label>BA-Fundamentals Training</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_AddOnTool_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>On-site training courses include advanced topics.</inlineHelpText>
+        <label>DA_AddOnTool_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_AddOnTool__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Add-on tool onsite training</inlineHelpText>
+        <label>DA-On-Site Training</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_AdvancedTool_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Establish value from application of advanced tools. Broadcast success internally. Connect users with common interests. Pull multiple engagements together to create larger opportunities through standardization and escalation.</inlineHelpText>
+        <label>DA_AdvancedTool_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_AdvancedTool__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Advanced tool usage spreads to new groups, departments, projects (by reference and/or by standardization)</inlineHelpText>
+        <label>DA-Advanced Tool Usage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_AttendeesEvent_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer sees value in attending off-site events. New opportunities and technical engagements resulting from events.</inlineHelpText>
+        <label>DA_AttendeesEvent_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_AttendeesEvent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Attendees at relevant public events (EXPO / CMEs / Conferences)</inlineHelpText>
+        <label>DA-Public Event Attendance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_EngProjects_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>MathWorks CFEs are actively engaged supporting the adoption of advanced tools across the account.</inlineHelpText>
+        <label>DA_EngProjects_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_EngProjects__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Engineering (Consulting / Training / Pilot / Application Engineering) projects on advanced tools</inlineHelpText>
+        <label>DA-Engineering Engagements</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_IncreaseAttachRate_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Define key advanced tools for the account (e.g. SS, EC, VV). Measure and grow usage over time.</inlineHelpText>
+        <label>DA_IncreaseAttachRate_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_IncreaseAttachRate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase attach rate on Priority Products and other add-ons</inlineHelpText>
+        <label>DA-Attach Rate on Priority Products</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_InfluenceWF_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>CFEs involved in the application of advanced tools, and process definition.</inlineHelpText>
+        <label>DA_InfluenceWF_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_InfluenceWF__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Examples of influencing customer work-flow</inlineHelpText>
+        <label>DA-Influence Customer Workflow</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_NextSteps_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Drive progress on all technical engagements. Demonstrable well-defined next steps and actions.</inlineHelpText>
+        <label>DA_NextSteps_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_NextSteps__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Appropriate next steps in place on all technical engagements</inlineHelpText>
+        <label>DA-Technical Engagements Next Steps</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_OnsiteDev_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Dev / IM / PM engaged with customer on advanced tools and applications. Customer influences MathWorks products.</inlineHelpText>
+        <label>DA_OnsiteDev_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_OnsiteDev__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Onsite activity from Development, Industry Marketing and Product Marketing</inlineHelpText>
+        <label>DA-Dev-Marketing Engagements</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DA_OnsiteEvent_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>On-site events include advanced topics. Levels of attendance and follow-on activities is consistent with introductory events.</inlineHelpText>
+        <label>DA_OnsiteEvent_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DA_OnsiteEvent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Onsite event program including Lunch &amp; Learn sessions on advanced tools/applications</inlineHelpText>
+        <label>DA-On-Site Event Plans</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DM_Overall_Completeness__c</fullName>
+        <externalId>false</externalId>
+        <formula>((DMAPP__LOR_Completion__c) + 
+                (DMAPP__White_Space__c) + 
+                (DMAPP__Segmentation_Completion__c) + 
+                (DMAPP__Strategy_Map_Level__c) + 
+                (DMAPP__Political_Map_Level__c) + 
+                (DMAPP__Value_Map_Completion__c) + 
+                (DMAPP__Objectives_Level__c) + 
+                (DMAPP__Actions_Ratio__c) + 
+                (DMAPP__Plan_Details_Attainment__c)) /9</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall Completeness</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ER_Advice_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Examples of customers engaging at the start of new work to seek advice, not just when technical problems arise.</inlineHelpText>
+        <label>ER_Advice_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_Advice__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>End users seek our advice on application of MW tools to their engineering challenges</inlineHelpText>
+        <label>ER-Customer Seeks Advice</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_MarketingCommPlan_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Communication plan to help drive attendance at on-site and public events</inlineHelpText>
+        <label>ER_MarketingCommPlan_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_MarketingCommPlan__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Integrated Marketing communications plan</inlineHelpText>
+        <label>ER-Marketing Communications Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_NoAttendeesMAB_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Power users attend MAB or EMAB. Examples of discussion and engagement with MathWorkers.</inlineHelpText>
+        <label>ER_NoAttendeesMAB_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_NoAttendeesMAB__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of attendees at MAB / EMAB</inlineHelpText>
+        <label>ER-MAB Attendees</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_PowerUsers_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Demonstrable knowledge of internal applications or models. Examples of driving adoption in new groups.</inlineHelpText>
+        <label>ER_PowerUsers_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_PowerUsers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>One or more power users creating high quality, re-usable applications or models with MathWorks Tools</inlineHelpText>
+        <label>ER-Power Users</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_ReciprocalRel_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>E.g. facilitating introductions, providing guidance and feedback (insight and relationship maps), helping with internal marketing, speaking at events, etc.</inlineHelpText>
+        <label>ER_ReciprocalRel_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_ReciprocalRel__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reciprocal relationship: Examples of the customer doing things for us (customer sponsorship / mentor)</inlineHelpText>
+        <label>ER-Reciprocal Relationships</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_UserChampion_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Maintain a list or map of user champions by their specialism. Identify and fill gaps through new relationships.</inlineHelpText>
+        <label>ER_UserChampion_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_UserChampion__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identified user champions including: name, position and specify by product or discipline or cluster (LTC, CDA, PCG etc.)</inlineHelpText>
+        <label>ER-Identify User Champions</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ER_UserGroup_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Presence of user group. CFEs participate and influence technical content and discussion, leading to new opportunities or engagements.</inlineHelpText>
+        <label>ER_UserGroup_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ER_UserGroup__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Active user groups or involvement in customer&apos;s own Tech Cluster (COPs, COEs, User Groups) / Best Practice sharing meetings</inlineHelpText>
+        <label>ER-User Groups</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_AccessibleResponsive_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Executives can be contacted directly (or via PA), without other gatekeepers. Executives are responsive and engaged. Accepts invitations (meetings, relevant events, dinners etc.)</inlineHelpText>
+        <label>EXR_AccessibleResponsive_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_AccessibleResponsive__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Independently accessible and responsive</inlineHelpText>
+        <label>EXR-Independently Accessible</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_ExecutiveReview_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Regular cadence of contact with Executives. Demonstrable next-steps from meetings.</inlineHelpText>
+        <label>EXR_ExecutiveReview_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_ExecutiveReview__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Executive Review / keeping in touch / face time</inlineHelpText>
+        <label>EXR-Regular Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_IdentifyExecutives_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Maintain a list or map of relevant executives by their specialism. Identify and fill gaps through new relationships.</inlineHelpText>
+        <label>EXR_IdentifyExecutives_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_IdentifyExecutives__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identified Executives including: name, position and responsibilities</inlineHelpText>
+        <label>EXR-Identified Executives</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_Introductions_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Connects MathWorks with new people internally, and their industry peers.</inlineHelpText>
+        <label>EXR_Introductions_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_Introductions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Introductions and doors opened (internal and external)</inlineHelpText>
+        <label>EXR-Connects us with New People</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_JointAccntStrategy_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Account team understands the executive priorities. MathWorks tools and services are aligned to those priorities, and acknowledged.</inlineHelpText>
+        <label>EXR_JointAccntStrategy_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_JointAccntStrategy__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Joint account strategy</inlineHelpText>
+        <label>EXR-Joint Account Strategy</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_KeyVendor_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Understand how the customer defines supplier status (if at all). Identify MathWorks status. Develop and execute plan to advance status.</inlineHelpText>
+        <label>EXR_KeyVendor_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_KeyVendor__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Key vendor / strategic supplier / trusted partner status</inlineHelpText>
+        <label>EXR-MathWorks Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_MeetMWDevMgmt_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Plan in place for the customer to meet with key people our technical organization.</inlineHelpText>
+        <label>EXR_MeetMWDevMgmt_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_MeetMWDevMgmt__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Meets with MathWorks Development organization management</inlineHelpText>
+        <label>EXR-Meets with Development</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_MeetMWSeniorSalesMgmt_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Plan in place for the customer to meet with key people in our commercial organization.</inlineHelpText>
+        <label>EXR_MeetMWSeniorSalesMgmt_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_MeetMWSeniorSalesMgmt__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Meets with MathWorks Senior Sales Management</inlineHelpText>
+        <label>EXR-Meets with Senior Management</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_ProtectMWStatus_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Executives communicate importance of MathWorks, can be influenced by MathWorks, and mandates actions / change.</inlineHelpText>
+        <label>EXR_ProtectMWStatus_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_ProtectMWStatus__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects MathWorks status internally and is willing and able to act on our request</inlineHelpText>
+        <label>EXR-Protects MathWorks</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EXR_RevenueInv_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Executives understand the use of MathWorks tools and services and see value. Executives desire growth in usage and set budgets appropriately.</inlineHelpText>
+        <label>EXR_RevenueInv_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EXR_RevenueInv__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects revenue investment and growth</inlineHelpText>
+        <label>EXR-Protects Investment and Growth</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_CommitSMSTerm_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Budget holder and decision maker are known, and spend budget appropriately</inlineHelpText>
+        <label>MR_CommitSMSTerm_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_CommitSMSTerm__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Commits to fully renewing SMS and Term in advance</inlineHelpText>
+        <label>MR-Committed to Renewals</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_CommitUsage_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Management see value in growth of MathWorks tools, assist with growth. Budget holder and decision maker are known, and spend budget appropriately.</inlineHelpText>
+        <label>MR_CommitUsage_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_CommitUsage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Commits to growing usage of MathWorks tools across organization, including new software purchases</inlineHelpText>
+        <label>MR-Committed to Growing Usage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_KeynoteSpeaker_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer speaks at MathWorks EXPOs and conferences</inlineHelpText>
+        <label>MR_KeynoteSpeaker_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_KeynoteSpeaker__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer is keynote speaker at MathWorks events</inlineHelpText>
+        <label>MR-Keynote Speaker</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_ProcessChange_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Examples of managers engaging with MathWorks to improve engineering processes through application of our tools. Account team is prospecting for these opportunities.</inlineHelpText>
+        <label>MR_ProcessChange_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_ProcessChange__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Influences tool / process change</inlineHelpText>
+        <label>MR-Tool/Process Influence</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_ProjPlanning_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Examples of managers engaging at the start of new work to seek advice, not just when technical problems arise.</inlineHelpText>
+        <label>MR_ProjPlanning_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_ProjPlanning__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Involves us in early project planning and decisions</inlineHelpText>
+        <label>MR-Early Involvement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_SeniorInfluencers_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Existing management relationships used to meet new people, not just depend on existing contacts.</inlineHelpText>
+        <label>MR_SeniorInfluencers_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_SeniorInfluencers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identified senior influencers including: name, position and specify by project or function</inlineHelpText>
+        <label>MR-Senior Influencers</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MR_SeniorRel_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Existing management relationships used to meet new people, not just depend on existing contacts.</inlineHelpText>
+        <label>MR_SeniorRel_Details</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MR_SeniorRel__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>New senior relationships and new introductions</inlineHelpText>
+        <label>MR-Senior Relationships</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Altify_5_Point_Value</valueSetName>
+        </valueSet>
+    </fields>
+</CustomObject>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <fields>
+        <fullName>BA_CompPlatformProd__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify and displace competitive platform products (e.g. Excel, Python, R)</inlineHelpText>
+        <label>BA_CompPlatformProd</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BA_Events__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Agreed plan for onsite events, actively supported by the customer and including at least 1 full day Technical Seminar (MathWorks day) per year</inlineHelpText>
+        <label>BA_Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BA_Instructions__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>MathWorks ability to provide clear, shareable instructions for new users to be able to access tools and resources in their own organization</inlineHelpText>
+        <label>BA_Instructions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BA_InternalSupp__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer SharePoint or equivalent users site for internal support and/or active MATLAB User Group</inlineHelpText>
+        <label>BA_InternalSupp</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BA_MLUsers__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase in # ML Users</inlineHelpText>
+        <label>BA_MLUsers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BA_SLUsers__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase in # SL Users</inlineHelpText>
+        <label>BA_SLUsers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BA_Training__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Commitment to regular Fundamentals on-site training</inlineHelpText>
+        <label>BA_Training</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_AddOnTool__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Add-on tool onsite training</inlineHelpText>
+        <label>DA_AddOnTool</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_AdvancedTool__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Advanced tool usage spreads to new groups, departments, projects (by reference and/or by standardization)</inlineHelpText>
+        <label>DA_AdvancedTool</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_AttendeesEvent__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Attendees at relevant public events (EXPO / CMEs / Conferences)</inlineHelpText>
+        <label>DA_AttendeesEvent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_EngProjects__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Engineering (Consulting / Training / Pilot / Application Engineering) projects on advanced tools</inlineHelpText>
+        <label>DA_EngProjects</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_IncreaseAttachRate__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Increase attach rate on Priority Products and other add-ons</inlineHelpText>
+        <label>DA_IncreaseAttachRate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_InfluenceWF__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Examples of influencing customer work-flow</inlineHelpText>
+        <label>DA_InfluenceWF</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_NextSteps__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Appropriate next steps in place on all technical engagements</inlineHelpText>
+        <label>DA_NextSteps</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_OnsiteDev__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Onsite activity from Development, Industry Marketing and Product Marketing</inlineHelpText>
+        <label>DA_OnsiteDev</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DA_OnsiteEvent__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Onsite event program including Lunch &amp; Learn sessions on advanced tools/applications</inlineHelpText>
+        <label>DA_OnsiteEvent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_Advice__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>End users seek our advice on application of MW tools to their engineering challenges</inlineHelpText>
+        <label>ER_Advice</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_MarketingCommPlan__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Integrated Marketing communications plan</inlineHelpText>
+        <label>ER_MarketingCommPlan</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_NoAttendeesMAB__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>ER_NoAttendeesMAB</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_PowerUsers__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>One or more power users creating high quality, re-usable applications or models with MathWorks Tools</inlineHelpText>
+        <label>ER_PowerUsers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_ReciprocalRel__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Reciprocal relationship: Examples of the customer doing things for us (customer sponsorship / mentor)</inlineHelpText>
+        <label>ER_ReciprocalRel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_UserChampion__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Identified user champions including: name, position and specify by product or discipline or cluster (LTC, CDA, PCG etc.)</inlineHelpText>
+        <label>ER_UserChampion</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ER_UserGroup__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Active user groups or involvement in customer&apos;s own Tech Cluster (COPs, COEs, User Groups) / Best Practice sharing meetings</inlineHelpText>
+        <label>ER_UserGroup</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_AccessibleResponsive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Independently accessible and responsive</inlineHelpText>
+        <label>EXR_AccessibleResponsive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_ExecutiveReview__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Executive Review / keeping in touch / face time</inlineHelpText>
+        <label>EXR_ExecutiveReview</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_IdentifyExecutives__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Identified Executives including: name, position and responsibilities</inlineHelpText>
+        <label>EXR_IdentifyExecutives</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_Introductions__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Introductions and doors opened (internal and external)</inlineHelpText>
+        <label>EXR_Introductions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_JointAccntStrategy__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Joint account strategy</inlineHelpText>
+        <label>EXR_JointAccntStrategy</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_KeyVendor__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Key vendor / strategic supplier / trusted partner status</inlineHelpText>
+        <label>EXR_KeyVendor</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_MeetMWDevMgmt__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Meets with MathWorks Development organization management</inlineHelpText>
+        <label>EXR_MeetMWDevMgmt</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_MeetMWSeniorSalesMgmt__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Meets with MathWorks Senior Sales Management</inlineHelpText>
+        <label>EXR_MeetMWSeniorSalesMgmt</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_ProtectMWStatus__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects MathWorks status internally and is willing and able to act on our request</inlineHelpText>
+        <label>EXR_ProtectMWStatus</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EXR_RevenueInv__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Protects revenue investment and growth</inlineHelpText>
+        <label>EXR_RevenueInv</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_CommitSMSTerm__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Commits to fully renewing SMS and Term in advance</inlineHelpText>
+        <label>MR_CommitSMSTerm</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_CommitUsage__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Commits to growing usage of MathWorks tools across organization, including new software purchases</inlineHelpText>
+        <label>MR_CommitUsage</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_KeynoteSpeaker__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer is keynote speaker at MathWorks events</inlineHelpText>
+        <label>MR_KeynoteSpeaker</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_ProcessChange__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Influences tool / process change</inlineHelpText>
+        <label>MR_ProcessChange</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_ProjPlanning__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Involves us in early project planning and decisions</inlineHelpText>
+        <label>MR_ProjPlanning</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_SeniorInfluencers__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Identified senior influencers including: name, position and specify by project or function</inlineHelpText>
+        <label>MR_SeniorInfluencers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MR_SeniorRel__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>New senior relationships and new introductions</inlineHelpText>
+        <label>MR_SeniorRel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

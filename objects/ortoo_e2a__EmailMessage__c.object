@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Academic_Support_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Relationship to Academic Support Project</description>
+        <externalId>false</externalId>
+        <label>Academic Support Project</label>
+        <referenceTo>Academic_Support_Project__c</referenceTo>
+        <relationshipLabel>Emails</relationshipLabel>
+        <relationshipName>e2a_Emails</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Book_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Book Project</label>
+        <referenceTo>Book_Project__c</referenceTo>
+        <relationshipLabel>Emails</relationshipLabel>
+        <relationshipName>e2a_Emails</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Agreement</label>
+        <referenceTo>Partner_Agreement__c</referenceTo>
+        <relationshipLabel>Emails</relationshipLabel>
+        <relationshipName>e2a_Emails</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>MW_Project__c</referenceTo>
+        <relationshipLabel>e2a Emails</relationshipLabel>
+        <relationshipName>e2a_Emails</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Social_Action__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>relationship to Social Action</description>
+        <externalId>false</externalId>
+        <label>Social Action</label>
+        <referenceTo>Social_Action__c</referenceTo>
+        <relationshipLabel>Emails</relationshipLabel>
+        <relationshipName>e2a_Emails</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <webLinks>
+        <fullName>Send_Email</fullName>
+        <availability>online</availability>
+        <description>This is a custom overridden button to invoke the VF page</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Email</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/32.0/integration.js&quot;)}
+
+
+var ParentId = window.location.pathname;
+ParentId = ParentId .replace(&apos;/&apos;,&apos;&apos;);
+var openURL = &apos;/apex/ortoo_e2a__EmailClientInit?obj_name=ortoo_e2a__EmailMessage__c&amp;p3_lkid=&apos;+ParentId+&apos;&amp;retURL=%2F&apos;+ParentId;
+
+//check if the tab is opened in console
+if(sforce.console.isInConsole())
+{
+srcUp(openURL+&apos;&amp;isdtp=vw&apos;);
+}else{
+parent.location.href = openURL;
+}</url>
+    </webLinks>
+</CustomObject>
