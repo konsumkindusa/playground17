@@ -8315,6 +8315,7 @@
     <types>
         <members>Academic_Support_Project__c.Academic_Support</members>
         <members>Academic_Support_Project__c.Student_Competition</members>
+        <members>CRMC_PP__GridView__c.AG_View_Private</members>
         <members>Campaign.Marketing_Campaign</members>
         <members>Campaign.Sales_Campaign</members>
         <members>CampaignMember.Marketing_Campaign_Member</members>
@@ -9393,6 +9394,9 @@
         <members>Manage_Account_industry</members>
         <members>Manage_Account_industry/Account_Industry_Audit_Report</members>
         <members>Sales_Ops_Admin_reports</members>
+        <members>Sales_Ops_Admin_reports/Unassigned_Leads_Missing_Office_12Noon</members>
+        <members>Sales_Ops_Admin_reports/Unassigned_Leads_Missing_Office_4PM</members>
+        <members>Sales_Ops_Admin_reports/Unassigned_Leads_Missing_Office_8AM</members>
         <members>Sales_Ops_To_Remove</members>
         <members>Sales_Ops_To_Remove/Active_Funnel_Territory_by_Rev_Class</members>
         <members>Sales_Ops_To_Remove/Completed_Activities</members>
