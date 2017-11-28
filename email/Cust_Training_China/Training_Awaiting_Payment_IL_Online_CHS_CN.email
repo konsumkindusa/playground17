@@ -1,0 +1,17 @@
+尊敬的{!Contact.Name}, 
+
+感谢您联系 MathWorks 培训部门，您报名的以下课程，{!Enrollment__c.Class__c}。
+因未付款而没有确认。为了确保有名额，请您务必在课程开始前支付课程费用。
+
+关于支付方式，请访问https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor 
+
+为确保我们正确处理，请在所有订单和支票上注明参加人员名字，课程名称，地点和日期。
+
+因课程报名人数多，建议您在晚上支付以保证支付顺利。
+
+支付成功后，您将收到一封确认邮件，其中包含课程的所有详细信息。如有任何问题，我们会将立刻通知您。
+
+
+谢谢, 
+
+{!Class__c.Sponsor_Office_Signature__c}

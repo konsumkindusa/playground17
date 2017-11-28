@@ -1,0 +1,14 @@
+Hello,
+
+Thank you for sending us information about the recent MATLAB crash you experienced.
+
+Our initial analysis indicates this is a known issue that is still under investigation. We are currently trying to identify a set of consistent reproduction steps to allow us to develop a suitable solution.
+
+If you can reproduce the crash, please reply to this message with the following information:
+
+{!Case.Questions_Specific_To_Issue__c}
+
+Sincerely,
+MathWorks Technical Support
+
+{!Case.Email_Ref_Id__c}

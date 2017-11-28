@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Adams / MSC Software</fullName>
+        <default>false</default>
+        <label>Adams / MSC Software</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ADS / Agilent</fullName>
+        <default>false</default>
+        <label>ADS / Agilent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AMESim / LMS</fullName>
+        <default>false</default>
+        <label>AMESim / LMS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ASCET / ETAS</fullName>
+        <default>false</default>
+        <label>ASCET / ETAS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BEACON / ADI (Applied Dynamics Int&apos;l)</fullName>
+        <default>false</default>
+        <label>BEACON / ADI (Applied Dynamics Int&apos;l)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>C/C++ / C/C++</fullName>
+        <default>false</default>
+        <label>C/C++ / C/C++</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Catapult C / Mentor Graphics</fullName>
+        <default>false</default>
+        <label>Catapult C / Mentor Graphics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CHIPit/HAPS (Synplicity) / Synopsys</fullName>
+        <default>false</default>
+        <label>CHIPit/HAPS (Synplicity) / Synopsys</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CodeSonar / GrammaTech</fullName>
+        <default>false</default>
+        <label>CodeSonar / GrammaTech</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ControlBuild (Geensoft) / Dassault Sys</fullName>
+        <default>false</default>
+        <label>ControlBuild (Geensoft) / Dassault Sys</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Coverity / Coverity</fullName>
+        <default>false</default>
+        <label>Coverity / Coverity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DIAdem / National Instruments</fullName>
+        <default>false</default>
+        <label>DIAdem / National Instruments</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DSP Builder / Altera</fullName>
+        <default>false</default>
+        <label>DSP Builder / Altera</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dymola / Dassault Systèmes</fullName>
+        <default>false</default>
+        <label>Dymola / Dassault Systèmes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EASY5 / MSC Software</fullName>
+        <default>false</default>
+        <label>EASY5 / MSC Software</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Excel (including VBA) / Microsoft</fullName>
+        <default>false</default>
+        <label>Excel (including VBA) / Microsoft</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Flowmaster / Flowmaster Ltd.</fullName>
+        <default>false</default>
+        <label>Flowmaster / Flowmaster Ltd.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fortran / Fortran</fullName>
+        <default>false</default>
+        <label>Fortran / Fortran</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IDL / ITT</fullName>
+        <default>false</default>
+        <label>IDL / ITT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insight / Klocwork</fullName>
+        <default>false</default>
+        <label>Insight / Klocwork</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Jacket / Accelereyes</fullName>
+        <default>false</default>
+        <label>Jacket / Accelereyes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Java / Java</fullName>
+        <default>false</default>
+        <label>Java / Java</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Julia / Julia</fullName>
+        <default>false</default>
+        <label>Julia / Julia</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LabVIEW / National Instruments</fullName>
+        <default>false</default>
+        <label>LabVIEW / National Instruments</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LabWindows/CVI / National Instruments</fullName>
+        <default>false</default>
+        <label>LabWindows/CVI / National Instruments</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Maple / Maplesoft</fullName>
+        <default>false</default>
+        <label>Maple / Maplesoft</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MapleSim / Maplesoft</fullName>
+        <default>false</default>
+        <label>MapleSim / Maplesoft</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mathcad / PTC</fullName>
+        <default>false</default>
+        <label>Mathcad / PTC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mathematica / Wolfram Research</fullName>
+        <default>false</default>
+        <label>Mathematica / Wolfram Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MATRIXx / National Instruments</fullName>
+        <default>false</default>
+        <label>MATRIXx / National Instruments</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Modelica / Modelica</fullName>
+        <default>false</default>
+        <label>Modelica / Modelica</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Octave / Octave</fullName>
+        <default>false</default>
+        <label>Octave / Octave</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other / Other</fullName>
+        <default>false</default>
+        <label>Other / Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PLECS / Plexim</fullName>
+        <default>false</default>
+        <label>PLECS / Plexim</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PowerFactory / DigSILENT</fullName>
+        <default>false</default>
+        <label>PowerFactory / DigSILENT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSCAD / Manitoba Hydro HVDC</fullName>
+        <default>false</default>
+        <label>PSCAD / Manitoba Hydro HVDC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSIM / PowerSim</fullName>
+        <default>false</default>
+        <label>PSIM / PowerSim</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSPICE / PSPICE</fullName>
+        <default>false</default>
+        <label>PSPICE / PSPICE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Python/Numpy/Scipy / Python</fullName>
+        <default>false</default>
+        <label>Python/Numpy/Scipy / Python</label>
+    </standardValue>
+    <standardValue>
+        <fullName>R / R Foundation</fullName>
+        <default>false</default>
+        <label>R / R Foundation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rational Rhapsody / IBM</fullName>
+        <default>false</default>
+        <label>Rational Rhapsody / IBM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rational Statemate / IBM</fullName>
+        <default>false</default>
+        <label>Rational Statemate / IBM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Saber / Synopsys</fullName>
+        <default>false</default>
+        <label>Saber / Synopsys</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SAS / SAS Institute</fullName>
+        <default>false</default>
+        <label>SAS / SAS Institute</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SCADE / Esterel Technologies</fullName>
+        <default>false</default>
+        <label>SCADE / Esterel Technologies</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scilab / Xcos / Scilab Consortium</fullName>
+        <default>false</default>
+        <label>Scilab / Xcos / Scilab Consortium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Simplorer / Ansoft</fullName>
+        <default>false</default>
+        <label>Simplorer / Ansoft</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SimulationX / ITI</fullName>
+        <default>false</default>
+        <label>SimulationX / ITI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPlus/Spotfire S+ / Tibco</fullName>
+        <default>false</default>
+        <label>SPlus/Spotfire S+ / Tibco</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPSS / IBM</fullName>
+        <default>false</default>
+        <label>SPSS / IBM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SPW (CoWare) / Synopsys</fullName>
+        <default>false</default>
+        <label>SPW (CoWare) / Synopsys</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Stata / StataCorp</fullName>
+        <default>false</default>
+        <label>Stata / StataCorp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>STK / AGI</fullName>
+        <default>false</default>
+        <label>STK / AGI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Synplify  / Synopsys</fullName>
+        <default>false</default>
+        <label>Synplify  / Synopsys</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Generator / Xilinx</fullName>
+        <default>false</default>
+        <label>System Generator / Xilinx</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SystemVue / Agilent</fullName>
+        <default>false</default>
+        <label>SystemVue / Agilent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TargetLink / dSPACE</fullName>
+        <default>false</default>
+        <label>TargetLink / dSPACE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UML / UML</fullName>
+        <default>false</default>
+        <label>UML / UML</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Verilog / Verilog</fullName>
+        <default>false</default>
+        <label>Verilog / Verilog</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VHDL / VHDL</fullName>
+        <default>false</default>
+        <label>VHDL / VHDL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VHDL-AMS / VHDL-AMS</fullName>
+        <default>false</default>
+        <label>VHDL-AMS / VHDL-AMS</label>
+    </standardValue>
+</StandardValueSet>

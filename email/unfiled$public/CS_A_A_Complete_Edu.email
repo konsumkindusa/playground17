@@ -1,0 +1,25 @@
+{!Case.Account} 
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c}と申します。
+この度はライセンス移管の件、ご協力頂きまして誠にありがとうございました。
+
+ご依頼頂きましたライセンス番号△△△の○○から○○への
+ライセンス移管が完了致しましたのでお知らせ致します。
+
+尚、ご登録内容 及び ライセンス内容 等は、下記「MathWorks アカウント」より  
+ご確認頂けます。
+www.mathworks.co.jp/licensecenter
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のReference IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.co.jp/contact_cs.html
+
+今後ともどうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

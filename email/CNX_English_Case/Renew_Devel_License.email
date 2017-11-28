@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+We’d like to remind you that the Software Maintenance Service (SMS) on your MathWorks development license is due to expire soon. According to our records, license # [LICENSE#] expires on [DATE]. 
+
+This license is currently tagged as your main development license for your MathWorks Connections Program participation. We value your participation in the program, and are sending this reminder so you are aware that you need to keep one license active on SMS in order to maintain your membership in the program. Please renew this license within 30 days of its expiration, or if you are now using a different license number, forward us those details.  
+
+As a reminder, MathWorks Connections Program supports companies that develop and deliver complementary, commercial products and services based on MathWorks products.  Our customers expect that these offerings will be compatible with MathWorks products, and well supported. The development license is used by Connections Program members to maintain compatibility between their products and the latest MathWorks releases, or in the case of services providers, to maintain up to date product expertise.
+
+If you have any questions about your renewal, you can contact your MathWorks Sales representative. If you have questions related to the MathWorks Connections Program, feel free to send them to me.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Case: {!Case.CaseNumber}

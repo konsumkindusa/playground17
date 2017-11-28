@@ -1,0 +1,34 @@
+<!-- 
+* @author Original: Limo Sadalla - Cloud Sherpas
+* @date Original: 13 June 2013 
+* @description Extension class for Geck creation page
+ -->
+ 
+<apex:page StandardController="Case" showheader="true" extensions="CaseGeckCreationController" action="{!generateGekoURL}">
+
+ <apex:includeScript value="{!$Resource.jquery_172}"/>
+ <apex:includeScript value="{!$Resource.jquery_redirect}"/>
+  
+  <script>
+
+ $(function() 
+ {
+    
+        gekoURL =  $('[id$=gekoURL]').val(); 
+      
+        $().redirect(gekoURL);
+
+   });
+    
+    
+    
+  </script>
+   <apex:form id="_form">
+    
+        <apex:pageMessages />
+             
+       
+       <apex:inputHidden value="{!gekoURL}" id="gekoURL"/> 
+            
+    </apex:form>
+</apex:page>

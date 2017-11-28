@@ -1,0 +1,18 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},    
+
+vielen Dank für Ihre Anfrage #{!Case.CaseNumber} - "{!Case.Subject}".    
+
+Nach den mir vorliegenden Informationen ist der Wartungsvertrag für Lizenz #{!Case.License__c} ausgelaufen.    
+
+Technischer Support ist einer der Vorteile unseres Software Maintenance Services (SMS). Daher ist es erforderlich den Wartungsvertrag dieser Lizenz zu erneuern oder uns eine Lizenznummer mit aktivem SMS anzugeben.    
+
+Unser Sales Team wird Ihnen ein Angebot für die Erneuerung des SMS zukommen lassen. Falls Sie dazu Fragen haben kontaktieren Sie uns bitte über:
+http://www.mathworks.com/company/aboutus/contact_us/    
+
+Mit freundlichen Grüßen    
+{!User.Email_Template_Signature__c}  
+
+Self-Service: http://www.mathworks.de/support 
+File Exchange und MATLAB Answers: http://www.mathworks.de/matlabcentral/ 
+
+{!User.Disclosure__c}

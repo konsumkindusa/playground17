@@ -1,0 +1,25 @@
+Hi {!Contact.FirstName},
+
+Thank you for contacting us requesting information on running MATLAB Distributed Computing Server on Amazon EC2 (mathworks.com/ec2).
+
+On the form you completed, you have indicated that you are interested in a counted, perpetual license of  MATLAB Distributed Computing Server.   I will ask your sales manager to contact you in regards to a perpetual license of MATLAB Distributed Computing Server. 
+
+MATLAB Distributed Computing Server on Amazon EC2 tests new capabilities designed for MATLAB users to run their applications on Amazon EC2 resources. These new capabilities are available through Parallel Computing Toolbox and MATLAB Distributed Computing Server.   The MATLAB Distributed Computing Server license allows you to use the products for which your desktop is licensed, and the software for all toolboxes is already installed with the exception of a few items listed here: 
+https://www.mathworks.com/products/ineligible_programs/ 
+
+You can develop your program or model on a multicore desktop computer using Parallel Computing Toolbox and then scale up to many computers by running it on MATLAB Distributed Computing Server. The server supports batch jobs, parallel computations, and distributed large data. 
+
+MATLAB Distributed Computing Server on Amazon EC2 allows you to pay for software resources as you use them with an on demand license or to pay up front for a specified license
+
+Pricing for MDCS On Demand licenses is based on the per worker/per hour usage.
+
+Software costs for running  MATLAB Distributed Computing Server on Amazon EC2.
+(to MathWorks)
+On-Demand option
+     * On-demand pricing is determined based on per worker/per hour 
+     * MathWorks only accepts credit card payment.  You will need to provide a credit card that is kept on file.  Billing is done at the beginning of each month for usage in the 
+        prior month. 
+
+Please let me know if you would  like to additional information on  MATLAB Distributed Computing Server or if you would like a one day of trial MATLAB Distributed Computer Server On Amazon EC2..
+
+Best regards,

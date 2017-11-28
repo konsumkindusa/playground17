@@ -1,0 +1,4325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>MW_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>MW_Layout</fullName>
+        <fields>Project_Name__c</fields>
+        <fields>Product_Area__c</fields>
+        <fields>Expected_Date_Time__c</fields>
+        <fields>Location_of_Request__c</fields>
+        <label>MW Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is the AEG Request and Project Object.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Used as a place holder so that the project can be created from Account.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Application_of_Interest__c</fullName>
+        <description>Describe the AE/PE Application</description>
+        <externalId>false</externalId>
+        <label>Describe the Application / Details</label>
+        <length>32000</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Assignment_Area__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used by AE/PE Managers to assign Technical Service Requests to PAN-EMEA and PAN-APAC queues.</inlineHelpText>
+        <label>Assignment Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PAN AMER</fullName>
+                    <default>false</default>
+                    <label>PAN AMER</label>
+                </value>
+                <value>
+                    <fullName>PAN APAC</fullName>
+                    <default>false</default>
+                    <label>PAN APAC</label>
+                </value>
+                <value>
+                    <fullName>PAN EMEA</fullName>
+                    <default>false</default>
+                    <label>PAN EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Rationale__c</fullName>
+        <description>The filed is to explicitly show the rationale for the PE work separate from the overall description of the Project work.</description>
+        <externalId>false</externalId>
+        <label>Business Rationale</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <description>Captures the kind of TE relationship with an account</description>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full</fullName>
+                    <default>false</default>
+                    <label>Full</label>
+                </value>
+                <value>
+                    <fullName>Light</fullName>
+                    <default>false</default>
+                    <label>Light</label>
+                </value>
+                <value>
+                    <fullName>Opportunistic</fullName>
+                    <default>false</default>
+                    <label>Opportunistic</label>
+                </value>
+                <value>
+                    <fullName>Strategic</fullName>
+                    <default>false</default>
+                    <label>Strategic</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Competitors__c</fullName>
+        <description>will be checked if there are any competitors related with project or opportunity</description>
+        <externalId>false</externalId>
+        <label>Competitive Situation?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Consulting_Potential__c</fullName>
+        <externalId>false</externalId>
+        <label>Consulting Potential</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Contact__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_Account__c</fullName>
+        <description>Count Account records associated with Project</description>
+        <externalId>false</externalId>
+        <label>Count Account</label>
+        <summaryForeignKey>Account_Project__c.Project__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Count_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Count Opportunity</label>
+        <summaryForeignKey>Opportunity_Projects__c.Project__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Count_Selected_Priorities__c</fullName>
+        <description>Count the number of the Selected Priorities from multi select picklist</description>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES( Selling_Priorities__c , &quot;Automated Driving&quot;),1,0) +
+                  IF(INCLUDES( Selling_Priorities__c , &quot;Computer Vision&quot;),1,0) +
+                  IF(INCLUDES( Selling_Priorities__c , &quot;HDL&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Robotics&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Motor and Power Control&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Internet of Things&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;MATLAB Platform&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Physical Systems Modeling&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Polyspace&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Simulink Real-Time&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Wireless&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;Simulink and Model-Based Design&quot;),1,0) +
+IF(INCLUDES( Selling_Priorities__c , &quot;EDU&quot;),1,0) +
+IF(INCLUDES(  Selling_Priorities__c , &quot;Engineering Data Analytics&quot;),1,0)</formula>
+        <label>Count of Selected Priorities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_Time_Card__c</fullName>
+        <description>Number of the time card associated with the project. Used in validation rule</description>
+        <externalId>false</externalId>
+        <label>Count Time Card</label>
+        <summaryForeignKey>Project_Time_Card__c.Project__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Create_content_for_this_event__c</fullName>
+        <externalId>false</externalId>
+        <label>Create content for this event?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Created_To_First_Assigned_Days__c</fullName>
+        <description>Calculate days between project created date and first assigned date, exclude weekends. If Assigned Date is null, calculate time between Created and Now excluding weekends</description>
+        <externalId>false</externalId>
+        <formula>If(IsNull(First_Assigned_Date__c),
+If(MOD( DateValue(CreatedDate)  - DATE(1985,6,24),7)&lt;=MOD( DateValue(Now())  - DATE(1985,6,24),7),
+Now() - CreatedDate - (FLOOR((DateValue(Now()) - DateValue(CreatedDate))/7)*2),
+Now() - CreatedDate - (FLOOR((DateValue(Now()) - DateValue(CreatedDate))/7)*2+2)
+)
+,
+If(MOD( DateValue(CreatedDate)  - DATE(1985,6,24),7)&lt;=MOD( DateValue(First_Assigned_Date__c)  - DATE(1985,6,24),7),
+First_Assigned_Date__c - CreatedDate - (FLOOR((DateValue(First_Assigned_Date__c) - DateValue(CreatedDate))/7)*2),
+First_Assigned_Date__c - CreatedDate - (FLOOR((DateValue(First_Assigned_Date__c) - DateValue(CreatedDate))/7)*2+2)
+)
+-
+CASE(MOD( DateValue(First_Assigned_Date__c)  - DATE(1985,6,24),7)
+  ,5, First_Assigned_Date__c - DateTimeValue(DateValue(First_Assigned_Date__c))
+  ,6, First_Assigned_Date__c - (DateTimeValue(DateValue(First_Assigned_Date__c))-1)
+  ,0)
+)
+-
+CASE(MOD( DateValue(CreatedDate)  - DATE(1985,6,24),7)
+,5, DateTimeValue(DateValue(CreatedDate))+2-CreatedDate-2
+,6, DateTimeValue(DateValue(CreatedDate))+1-CreatedDate-2
+,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created To First Assigned - Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_To_First_Assigned_Hours__c</fullName>
+        <description>Hours Between Created and First Assigned Date. Calculation based on Days Between Created and First Assigned field</description>
+        <externalId>false</externalId>
+        <formula>Created_To_First_Assigned_Days__c *24</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created To First Assigned - Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Primary Customer Contact for AEG Request</description>
+        <externalId>false</externalId>
+        <label>Customer Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>AEG_Projects_del</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_Project_Became_Active__c</fullName>
+        <description>when Project status  changes from Open to PE: Active, the field should be updated with the current Date/Time.</description>
+        <externalId>false</externalId>
+        <label>Date Project Became Active</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Project_Closed__c</fullName>
+        <description>Story 1073498 
+Send a notification to project requester to let him know that the project status switched to Closed/Canceled.</description>
+        <externalId>false</externalId>
+        <label>Date Project Closed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Do_they_have_budget__c</fullName>
+        <description>Do they have budget flag</description>
+        <externalId>false</externalId>
+        <label>Do they have budget?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>I don&apos;t know</fullName>
+                    <default>true</default>
+                    <label>I don&apos;t know</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Due_for_Review__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR( AND( ISBLANK( Last_Project_Review_Date__c  ) , Total_Project_Time__c &gt;25) , AND( NOT( ISBLANK( Last_Project_Review_Date__c ) ) ,  Labor_Hours_after_Last_Reviewed__c  &gt; 50) ) , TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Due for Review</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Date_Time__c</fullName>
+        <description>Expected delivery time of AEG Request</description>
+        <externalId>false</externalId>
+        <label>Proposed Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>First_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date/Time the Project was first assigned to a team member</inlineHelpText>
+        <label>First Assigned Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Is_Open__c</fullName>
+        <description>Formula field to check if the project is open with either open or PE: Active status</description>
+        <externalId>false</externalId>
+        <formula>OR(ISPICKVAL(Project_Status__c,&apos;Open&apos;), ISPICKVAL( Project_Status__c , &apos;PE: Active&apos;) )</formula>
+        <label>Is Open</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_decision_maker_involved__c</fullName>
+        <description>Is decision maker involved field</description>
+        <externalId>false</externalId>
+        <label>Is decision maker involved?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_joint_partner_involved__c</fullName>
+        <externalId>false</externalId>
+        <label>Is joint partner involved?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_the_CFE_Already_Involved__c</fullName>
+        <description>Is CFE already involved on opportunity: (Required only when CFE has been specified)</description>
+        <externalId>false</externalId>
+        <label>Is CFE already involved?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Labor_Hours_after_Last_Reviewed__c</fullName>
+        <externalId>false</externalId>
+        <label>Labor Hours after Last Reviewed</label>
+        <summarizedField>Project_Time_Card__c.Hours__c</summarizedField>
+        <summaryFilterItems>
+            <field>Project_Time_Card__c.Is_Hours_Since_Last_Reviewed_Date__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Project_Time_Card__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Last_Assigned_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest Date/Time the Project was assigned to a team member</inlineHelpText>
+        <label>Last Assigned Date</label>
+        <summarizedField>Project_Team_Member__c.CreatedDate</summarizedField>
+        <summaryForeignKey>Project_Team_Member__c.Project__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Last_Project_Review_Date__c</fullName>
+        <defaultValue>null</defaultValue>
+        <description>used to capture the last project review date for pilot projects.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the last project review date for projects (typically Pilot projects)</inlineHelpText>
+        <label>Last Project Review Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Target</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_of_Request__c</fullName>
+        <description>to capture from which location request was made.</description>
+        <externalId>false</externalId>
+        <label>Location of Request (City, State)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Min_Date_Account_Relationship_Created__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Date Account Relationship Created</label>
+        <summarizedField>Account_Project__c.CreatedDate</summarizedField>
+        <summaryForeignKey>Account_Project__c.Project__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>My_Project__c</fullName>
+        <externalId>false</externalId>
+        <formula>CONTAINS(Project_Team_Members__c, RIGHT($User.Id,5)+ &quot;,&quot;)</formula>
+        <label>My Project</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>My_Requests__c</fullName>
+        <description>This field will be true when the current User is the Project Requester.</description>
+        <externalId>false</externalId>
+        <formula>IF( Requester__c = $User.Id , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Requests</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>BNL</fullName>
+                    <default>false</default>
+                    <label>BNL</label>
+                </value>
+                <value>
+                    <fullName>CH</fullName>
+                    <default>false</default>
+                    <label>CH</label>
+                </value>
+                <value>
+                    <fullName>CN</fullName>
+                    <default>false</default>
+                    <label>CN</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>FR</fullName>
+                    <default>false</default>
+                    <label>FR</label>
+                </value>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>JP</fullName>
+                    <default>false</default>
+                    <label>JP</label>
+                </value>
+                <value>
+                    <fullName>KR</fullName>
+                    <default>false</default>
+                    <label>KR</label>
+                </value>
+                <value>
+                    <fullName>Natick</fullName>
+                    <default>false</default>
+                    <label>Natick</label>
+                </value>
+                <value>
+                    <fullName>Nordic</fullName>
+                    <default>false</default>
+                    <label>Nordic</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opp_Stage_at_Time_of_Request__c</fullName>
+        <description>captures the Opp Stage when the Project was created from an Opportunity</description>
+        <externalId>false</externalId>
+        <label>Opp Stage at Time of Request</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used as a place holder so that the project can be created from Opty. Will use this field to set the project Id on the opportunity from which it is created.</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>AEG_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Outcome</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Purpose__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Conf Call/Email</fullName>
+                    <default>false</default>
+                    <label>Conf Call/Email</label>
+                </value>
+                <value>
+                    <fullName>Visit Customer</fullName>
+                    <default>false</default>
+                    <label>Visit Customer</label>
+                </value>
+                <value>
+                    <fullName>WebEx</fullName>
+                    <default>false</default>
+                    <label>WebEx</label>
+                </value>
+                <value>
+                    <fullName>Guided Evaluation</fullName>
+                    <default>false</default>
+                    <label>Guided Evaluation</label>
+                </value>
+                <value>
+                    <fullName>Deep Technical Engagement</fullName>
+                    <default>false</default>
+                    <label>Deep Technical Engagement</label>
+                </value>
+                <value>
+                    <fullName>Product Customization</fullName>
+                    <default>false</default>
+                    <label>Product Customization</label>
+                </value>
+                <value>
+                    <fullName>Private Seminar</fullName>
+                    <default>false</default>
+                    <label>Private Seminar</label>
+                </value>
+                <value>
+                    <fullName>Workshop</fullName>
+                    <default>false</default>
+                    <label>Workshop</label>
+                </value>
+                <value>
+                    <fullName>Public Seminar</fullName>
+                    <default>false</default>
+                    <label>Public Seminar</label>
+                </value>
+                <value>
+                    <fullName>Customer Visits MW</fullName>
+                    <default>false</default>
+                    <label>Customer Visits MW</label>
+                </value>
+                <value>
+                    <fullName>Release &amp; Software Update</fullName>
+                    <default>false</default>
+                    <label>Release &amp; Software Update</label>
+                </value>
+                <value>
+                    <fullName>CME</fullName>
+                    <default>false</default>
+                    <label>CME</label>
+                </value>
+                <value>
+                    <fullName>Webinar</fullName>
+                    <default>false</default>
+                    <label>Webinar</label>
+                </value>
+                <value>
+                    <fullName>Conference/Trade Show</fullName>
+                    <default>false</default>
+                    <label>Conference/Trade Show</label>
+                </value>
+                <value>
+                    <fullName>Web Event</fullName>
+                    <default>false</default>
+                    <label>Web Event</label>
+                </value>
+                <value>
+                    <fullName>Partner/Distributor Support</fullName>
+                    <default>false</default>
+                    <label>Partner/Distributor Support</label>
+                </value>
+                <value>
+                    <fullName>Other Physical Events</fullName>
+                    <default>false</default>
+                    <label>Other Physical Events</label>
+                </value>
+                <value>
+                    <fullName>Departmental Support</fullName>
+                    <default>false</default>
+                    <label>Departmental Support</label>
+                </value>
+                <value>
+                    <fullName>Administrative</fullName>
+                    <default>false</default>
+                    <label>Administrative</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Internal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>Conf Call/Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>Visit Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>WebEx</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>Guided Evaluation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>Deep Technical Engagement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>Product Customization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Workshop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <controllingFieldValue>Opportunity Support</controllingFieldValue>
+                <valueName>Customer Visits MW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Territory Support</controllingFieldValue>
+                <valueName>Release &amp; Software Update</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Private Seminar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Public Seminar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>CME</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Webinar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Conference/Trade Show</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Web Event</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Partner/Distributor Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Marketing</controllingFieldValue>
+                <valueName>Other Physical Events</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Dept Support</controllingFieldValue>
+                <valueName>Departmental Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Administrative</controllingFieldValue>
+                <valueName>Administrative</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partner_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Number__c</fullName>
+        <description>Number of the account marked as primary in the Account Project Related object</description>
+        <externalId>false</externalId>
+        <label>Primary Number</label>
+        <summaryFilterItems>
+            <field>Account_Project__c.is_Primary__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Account_Project__c.Project__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Product_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>LTC</fullName>
+                    <default>false</default>
+                    <label>LTC</label>
+                </value>
+                <value>
+                    <fullName>CDA</fullName>
+                    <default>false</default>
+                    <label>CDA</label>
+                </value>
+                <value>
+                    <fullName>SPC</fullName>
+                    <default>false</default>
+                    <label>SPC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Project_Latest_Time_Card_Created_By__c</fullName>
+        <description>Latest Time Card Created By</description>
+        <externalId>false</externalId>
+        <label>Project Latest Time Card Created By</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Latest_Time_Card__c</fullName>
+        <description>Latest Time Card Created Date</description>
+        <externalId>false</externalId>
+        <label>Project Latest Time Card</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Level__c</fullName>
+        <description>is required field for project record type</description>
+        <externalId>false</externalId>
+        <label>Project Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AE Project</fullName>
+                    <default>false</default>
+                    <label>AE Project</label>
+                </value>
+                <value>
+                    <fullName>PE: Coaching</fullName>
+                    <default>false</default>
+                    <label>PE: Coaching</label>
+                </value>
+                <value>
+                    <fullName>PE: Full Pilot</fullName>
+                    <default>false</default>
+                    <label>PE: Full Pilot</label>
+                </value>
+                <value>
+                    <fullName>PE: Professional Courtesy</fullName>
+                    <default>false</default>
+                    <label>PE: Professional Courtesy</label>
+                </value>
+                <value>
+                    <fullName>DE: Strategic</fullName>
+                    <default>false</default>
+                    <label>DE: Strategic</label>
+                </value>
+                <value>
+                    <fullName>DE: Initial Purchase  </fullName>
+                    <default>false</default>
+                    <label>DE: Initial Purchase  </label>
+                </value>
+                <value>
+                    <fullName>DE: Utilization</fullName>
+                    <default>false</default>
+                    <label>DE: Utilization</label>
+                </value>
+                <value>
+                    <fullName>DE: Expansion</fullName>
+                    <default>false</default>
+                    <label>DE: Expansion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Link__c</fullName>
+        <description>used to create a console friendly URL for a project record, used in the assignment emails.  This is not on the page layout.</description>
+        <externalId>false</externalId>
+        <formula>$Setup.General_Settings__c.Current_Domain__c  &amp; &quot;console#%2f&quot; &amp;  Id</formula>
+        <label>Project Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Status__c</fullName>
+        <description>The Project Status</description>
+        <externalId>false</externalId>
+        <label>Project Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>PE: Active</fullName>
+                    <default>false</default>
+                    <label>PE: Active</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Strategic_Importance__c</fullName>
+        <description>will be required for project record type</description>
+        <externalId>false</externalId>
+        <label>Project Strategic Importance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial Success</fullName>
+                    <default>false</default>
+                    <label>Initial Success</label>
+                </value>
+                <value>
+                    <fullName>Deployment Expansion</fullName>
+                    <default>false</default>
+                    <label>Deployment Expansion</label>
+                </value>
+                <value>
+                    <fullName>Industry Success</fullName>
+                    <default>false</default>
+                    <label>Industry Success</label>
+                </value>
+                <value>
+                    <fullName>Revenue Generation</fullName>
+                    <default>false</default>
+                    <label>Revenue Generation</label>
+                </value>
+                <value>
+                    <fullName>Competitive Win</fullName>
+                    <default>false</default>
+                    <label>Competitive Win</label>
+                </value>
+                <value>
+                    <fullName>Marketing Benefit</fullName>
+                    <default>false</default>
+                    <label>Marketing Benefit</label>
+                </value>
+                <value>
+                    <fullName>Management Focus</fullName>
+                    <default>false</default>
+                    <label>Management Focus</label>
+                </value>
+                <value>
+                    <fullName>Improve Biz Relationship</fullName>
+                    <default>false</default>
+                    <label>Improve Biz Relationship</label>
+                </value>
+                <value>
+                    <fullName>Development Requirements</fullName>
+                    <default>false</default>
+                    <label>Development Requirements</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Team_Members__c</fullName>
+        <description>Field to hold a concatenated list of Project Team Member user IDs (populated via trigger on Project Team Member object) to be used for dynamically determining &quot;My Projects&quot;.</description>
+        <externalId>false</externalId>
+        <label>Project Team Members</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Proposed_CFE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Proposed Customer Facing Engineer (CFE)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Proposed Customer Facing Engineer (CFE)</inlineHelpText>
+        <label>Proposed CFE</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Profile.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AEG_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Purpose__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Opportunity Support</fullName>
+                    <default>false</default>
+                    <label>Opportunity Support</label>
+                </value>
+                <value>
+                    <fullName>Territory Support</fullName>
+                    <default>false</default>
+                    <label>Territory Support</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Other Dept Support</fullName>
+                    <default>false</default>
+                    <label>Other Dept Support</label>
+                </value>
+                <value>
+                    <fullName>TE University Engagement</fullName>
+                    <default>false</default>
+                    <label>TE University Engagement</label>
+                </value>
+                <value>
+                    <fullName>Administrative</fullName>
+                    <default>false</default>
+                    <label>Administrative</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Requester__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field will have to be populated with the Requester Name.</description>
+        <externalId>false</externalId>
+        <label>Requester</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Priorities__c</fullName>
+        <externalId>false</externalId>
+        <label>Selling Priorities</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Automated Driving</fullName>
+                    <default>false</default>
+                    <label>Automated Driving</label>
+                </value>
+                <value>
+                    <fullName>Computer Vision</fullName>
+                    <default>false</default>
+                    <label>Computer Vision</label>
+                </value>
+                <value>
+                    <fullName>HDL</fullName>
+                    <default>false</default>
+                    <label>HDL</label>
+                </value>
+                <value>
+                    <fullName>Engineering Data Analytics</fullName>
+                    <default>false</default>
+                    <label>Engineering Data Analytics</label>
+                </value>
+                <value>
+                    <fullName>Robotics</fullName>
+                    <default>false</default>
+                    <label>Robotics</label>
+                </value>
+                <value>
+                    <fullName>Motor and Power Control</fullName>
+                    <default>false</default>
+                    <label>Motor and Power Control</label>
+                </value>
+                <value>
+                    <fullName>Internet of Things</fullName>
+                    <default>false</default>
+                    <label>Internet of Things</label>
+                </value>
+                <value>
+                    <fullName>MATLAB Platform</fullName>
+                    <default>false</default>
+                    <label>MATLAB Platform</label>
+                </value>
+                <value>
+                    <fullName>Physical Systems Modeling</fullName>
+                    <default>false</default>
+                    <label>Physical Systems Modeling</label>
+                </value>
+                <value>
+                    <fullName>Polyspace</fullName>
+                    <default>false</default>
+                    <label>Polyspace</label>
+                </value>
+                <value>
+                    <fullName>Simulink Real-Time</fullName>
+                    <default>false</default>
+                    <label>Simulink Real-Time</label>
+                </value>
+                <value>
+                    <fullName>Wireless</fullName>
+                    <default>false</default>
+                    <label>Wireless</label>
+                </value>
+                <value>
+                    <fullName>Simulink and Model-Based Design</fullName>
+                    <default>false</default>
+                    <label>Simulink and Model-Based Design</label>
+                </value>
+                <value>
+                    <fullName>EDU</fullName>
+                    <default>false</default>
+                    <label>EDU</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <description>Technical Evangelist Agreement Id in Siebel</description>
+        <externalId>true</externalId>
+        <label>Siebel ID</label>
+        <length>70</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Technical_Resource_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Resource Group</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application Engineering</fullName>
+                    <default>true</default>
+                    <label>Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>Technical Evangelist</fullName>
+                    <default>false</default>
+                    <label>Technical Evangelist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Thread_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;LEFT( $Organization.Id , 4 )&amp; 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;), 
+RIGHT($Organization.Id,4), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;), 
+RIGHT($Organization.Id,5), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;), 
+RIGHT($Organization.Id,6), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;), 
+RIGHT($Organization.Id,7), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;), 
+RIGHT($Organization.Id,8), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;), 
+RIGHT($Organization.Id,9), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;), 
+RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp; 
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4), 
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5), 
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6), 
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7), 
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8), 
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9), 
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10), 
+RIGHT(Id,11) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+&amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_by_Selling_Priority__c</fullName>
+        <description>Total Project Time ( summary of Time Cards time) divided by the number of the selected Selling Priorities</description>
+        <externalId>false</externalId>
+        <formula>IF (Count_Selected_Priorities__c &gt;0,Total_Project_Time__c  /  Count_Selected_Priorities__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time per Selling Priority</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Project_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Project Time</label>
+        <summarizedField>Project_Time_Card__c.Hours__c</summarizedField>
+        <summaryForeignKey>Project_Time_Card__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Project</label>
+    <listViews>
+        <fullName>AE_PE_Unassigned_Requests_MW_Project</fullName>
+        <columns>NAME</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>Office__c</columns>
+        <columns>Purpose__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <label>AE/PE Unassigned Requests</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Overdue_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>Customer_Contact__c</columns>
+        <columns>Contact_Account__c</columns>
+        <columns>Requester__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>MW_Project__c.Project</value>
+        </filters>
+        <filters>
+            <field>Expected_Date_Time__c</field>
+            <operation>lessThan</operation>
+            <value>LAST_N_DAYS:10</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filters>
+        <label>Overdue Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>TE_All_Closed_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Contact_Account__c</columns>
+        <columns>Customer_Contact__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Purpose__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Technical Evangelist</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>equals</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <label>TE All Closed Projects</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>MW_Education_Marketing</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TE_All_Open_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Contact_Account__c</columns>
+        <columns>Customer_Contact__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Purpose__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Technical Evangelist</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <label>TE All Open Projects</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>MW_Education_Marketing</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TE_All_Overdue_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Purpose__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Technical Evangelist</value>
+        </filters>
+        <filters>
+            <field>Expected_Date_Time__c</field>
+            <operation>lessThan</operation>
+            <value>LAST_N_DAYS:10</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filters>
+        <label>TE All Overdue Projects</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>MW_Education_Marketing</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TE_Unassigned_Requests_MW_Project</fullName>
+        <columns>NAME</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>Office__c</columns>
+        <columns>Purpose__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <label>TE Unassigned Requests</label>
+        <language>en_US</language>
+        <queue>TE_Unassigned_Requests</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X100_AE_Natick_CDA_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>contains</operation>
+            <value>Natick</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <filters>
+            <field>Product_Area__c</field>
+            <operation>equals</operation>
+            <value>CDA</value>
+        </filters>
+        <label>AE Natick - CDA Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_US_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X100_AE_Natick_LTC_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>contains</operation>
+            <value>Natick</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <filters>
+            <field>Product_Area__c</field>
+            <operation>equals</operation>
+            <value>LTC</value>
+        </filters>
+        <label>AE Natick - LTC Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_US_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X100_AE_Natick_SPC_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>contains</operation>
+            <value>Natick</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <filters>
+            <field>Product_Area__c</field>
+            <operation>equals</operation>
+            <value>SPC</value>
+        </filters>
+        <label>AE Natick - SPC Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_US_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X100_AE_Natick_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>Natick</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Natick Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_US_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X101_AE_Australia_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>AU</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Australia Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_APAC</group>
+            <roleAndSubordinatesInternal>IN_AE_Manager_Kishore_Rao</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X102_AE_China_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>CN</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE China Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_APAC</group>
+            <roleAndSubordinatesInternal>IN_AE_Manager_Kishore_Rao</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X103_AE_France_Unassigned_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>FR</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE France Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X104_AE_Germany_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>DE</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Germany Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X105_AE_India_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>IN</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE India Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_APAC</group>
+            <roleAndSubordinatesInternal>IN_AE_Manager_Kishore_Rao</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X106_AE_Italy_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>IT</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Italy Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X107_AE_Japan_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>JP</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Japan Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_APAC</group>
+            <roleAndSubordinatesInternal>IN_AE_Manager_Kishore_Rao</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X108_AE_Korea_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>KR</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Korea Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_APAC</group>
+            <roleAndSubordinatesInternal>IN_AE_Manager_Kishore_Rao</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X109_AE_Netherlands_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>BNL</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Netherlands Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X110_AE_Nordic_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>Nordic</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Nordic Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X111_AE_Spain_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>ES</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Spain Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X112_AE_Switzerland_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>CH</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE Switzerland Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X113_AE_United_Kingdom_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Office__c</field>
+            <operation>equals</operation>
+            <value>UK,IE</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE United Kingdom Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X114_AE_PAN_APAC_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Assignment_Area__c</field>
+            <operation>equals</operation>
+            <value>PAN APAC</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE PAN APAC Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_APAC</group>
+            <roleAndSubordinatesInternal>IN_AE_Manager_Kishore_Rao</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X115_AE_PAN_EMEA_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Assignment_Area__c</field>
+            <operation>equals</operation>
+            <value>PAN EMEA</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE PAN EMEA Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_EMEA_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X116_AE_PAN_AMER_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Assignment_Area__c</field>
+            <operation>equals</operation>
+            <value>PAN AMER</value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Application Engineering</value>
+        </filters>
+        <label>AE PAN AMER Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>AE_US_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X120_PE_All_Unassigned</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Selling_Priorities__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Technical_Resource_Group__c</field>
+            <operation>equals</operation>
+            <value>Pilot Engineering</value>
+        </filters>
+        <label>PE All Unassigned</label>
+        <language>en_US</language>
+        <queue>AE_PE_Unassigned_Requests</queue>
+        <sharedTo>
+            <group>PE_Managers</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X122_My_Open_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Assignment_Area__c</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>My_Project__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>X124_My_Closed_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Purpose__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Application_of_Interest__c</columns>
+        <columns>Expected_Date_Time__c</columns>
+        <columns>Requester__c</columns>
+        <columns>Product_Area__c</columns>
+        <columns>Proposed_CFE__c</columns>
+        <columns>Is_the_CFE_Already_Involved__c</columns>
+        <columns>Competitors__c</columns>
+        <columns>Technical_Resource_Group__c</columns>
+        <columns>Outcome__c</columns>
+        <columns>Location_of_Request__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Project_Status__c</field>
+            <operation>equals</operation>
+            <value>Closed,Cancelled</value>
+        </filters>
+        <filters>
+            <field>My_Project__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Closed Projects</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>P{000000}</displayFormat>
+        <label>Project Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Projects</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Marketing_Request</fullName>
+        <active>true</active>
+        <description>AE/PE Resource Requests from a Marketing User</description>
+        <label>Marketing Request</label>
+        <picklistValues>
+            <picklist>Assignment_Area__c</picklist>
+            <values>
+                <fullName>PAN AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Light</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitors__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Consulting_Potential__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Create_content_for_this_event__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_they_have_budget__c</picklist>
+            <values>
+                <fullName>I don%27t know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_decision_maker_involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_joint_partner_involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_the_CFE_Already_Involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outcome__c</picklist>
+            <values>
+                <fullName>CME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conf Call%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Visits MW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guided Evaluation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Physical Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner%2FDistributor Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WebEx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Area__c</picklist>
+            <values>
+                <fullName>CDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Level__c</picklist>
+            <values>
+                <fullName>AE Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Initial Purchase %E2%80%AF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Coaching</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Full Pilot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Professional Courtesy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PE%3A Active</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Strategic_Importance__c</picklist>
+            <values>
+                <fullName>Competitive Win</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deployment Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improve Biz Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Success</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Success</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Benefit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revenue Generation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose__c</picklist>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Selling_Priorities__c</picklist>
+            <values>
+                <fullName>Automated Driving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Data Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet of Things</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motor and Power Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Systems Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polyspace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Robotics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink Real-Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink and Model-Based Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Resource_Group__c</picklist>
+            <values>
+                <fullName>Application Engineering</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pilot Engineering</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Project</fullName>
+        <active>true</active>
+        <description>AEG approved project</description>
+        <label>Project</label>
+        <picklistValues>
+            <picklist>Assignment_Area__c</picklist>
+            <values>
+                <fullName>PAN AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Light</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitors__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Consulting_Potential__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Create_content_for_this_event__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_they_have_budget__c</picklist>
+            <values>
+                <fullName>I don%27t know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_decision_maker_involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_joint_partner_involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_the_CFE_Already_Involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outcome__c</picklist>
+            <values>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conf Call%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Visits MW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deep Technical Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Departmental Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guided Evaluation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Physical Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner%2FDistributor Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Customization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Release %26 Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WebEx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Area__c</picklist>
+            <values>
+                <fullName>CDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Level__c</picklist>
+            <values>
+                <fullName>AE Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Initial Purchase %E2%80%AF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Coaching</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Full Pilot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Professional Courtesy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PE%3A Active</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Strategic_Importance__c</picklist>
+            <values>
+                <fullName>Competitive Win</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deployment Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improve Biz Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Success</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Success</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Benefit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revenue Generation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose__c</picklist>
+            <values>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Dept Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TE University Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Territory Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Selling_Priorities__c</picklist>
+            <values>
+                <fullName>Automated Driving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Data Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet of Things</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motor and Power Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Systems Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polyspace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Robotics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink Real-Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink and Model-Based Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Resource_Group__c</picklist>
+            <values>
+                <fullName>Application Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pilot Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Evangelist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sales_Request</fullName>
+        <active>true</active>
+        <description>AE/PE Resource Requests from a Sales Rep from an Account or Opportunity</description>
+        <label>Sales Request</label>
+        <picklistValues>
+            <picklist>Assignment_Area__c</picklist>
+            <values>
+                <fullName>PAN AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Light</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitors__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Consulting_Potential__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Create_content_for_this_event__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_they_have_budget__c</picklist>
+            <values>
+                <fullName>I don%27t know</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_decision_maker_involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_joint_partner_involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_the_CFE_Already_Involved__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outcome__c</picklist>
+            <values>
+                <fullName>CME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conf Call%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Visits MW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deep Technical Engagement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guided Evaluation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Physical Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner%2FDistributor Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Customization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Release %26 Software Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WebEx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Area__c</picklist>
+            <values>
+                <fullName>CDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Level__c</picklist>
+            <values>
+                <fullName>AE Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Initial Purchase %E2%80%AF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE%3A Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Coaching</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Full Pilot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE%3A Professional Courtesy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PE%3A Active</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Project_Strategic_Importance__c</picklist>
+            <values>
+                <fullName>Competitive Win</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deployment Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improve Biz Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Success</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Success</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Benefit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Revenue Generation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose__c</picklist>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Territory Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Selling_Priorities__c</picklist>
+            <values>
+                <fullName>Automated Driving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Data Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet of Things</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motor and Power Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Systems Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polyspace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Robotics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink Real-Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink and Model-Based Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technical_Resource_Group__c</picklist>
+            <values>
+                <fullName>Application Engineering</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pilot Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Evangelist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Project_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Technical_Resource_Group__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Location_of_Request__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Area__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Project_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Expected_Date_Time__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Last_Project_Review_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Office__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>My_Project__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Project_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Technical_Resource_Group__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Location_of_Request__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Area__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Project_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Expected_Date_Time__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Last_Project_Review_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Office__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>My_Project__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Project_Name__c</lookupFilterFields>
+        <lookupFilterFields>Technical_Resource_Group__c</lookupFilterFields>
+        <lookupFilterFields>Location_of_Request__c</lookupFilterFields>
+        <lookupFilterFields>Product_Area__c</lookupFilterFields>
+        <lookupFilterFields>Office__c</lookupFilterFields>
+        <lookupFilterFields>My_Project__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Project_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Technical_Resource_Group__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Location_of_Request__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Product_Area__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Project_Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Expected_Date_Time__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Last_Project_Review_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Office__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>My_Project__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Project_Name__c</searchFilterFields>
+        <searchFilterFields>Technical_Resource_Group__c</searchFilterFields>
+        <searchFilterFields>Location_of_Request__c</searchFilterFields>
+        <searchFilterFields>Product_Area__c</searchFilterFields>
+        <searchFilterFields>Project_Status__c</searchFilterFields>
+        <searchFilterFields>Expected_Date_Time__c</searchFilterFields>
+        <searchFilterFields>Last_Project_Review_Date__c</searchFilterFields>
+        <searchFilterFields>Office__c</searchFilterFields>
+        <searchFilterFields>My_Project__c</searchFilterFields>
+        <searchResultsAdditionalFields>Project_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Technical_Resource_Group__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Location_of_Request__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Area__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Expected_Date_Time__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Last_Project_Review_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Office__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>My_Project__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>AEG_CFE_Agreed_Rule</fullName>
+        <active>true</active>
+        <description>When the &quot;Proposed CFE&quot; is specified the &quot;Is CFE already involved&quot; is Required.</description>
+        <errorConditionFormula>AND (!ISBLANK( Proposed_CFE__c ), ISBLANK(TEXT( Is_the_CFE_Already_Involved__c )))</errorConditionFormula>
+        <errorDisplayField>Is_the_CFE_Already_Involved__c</errorDisplayField>
+        <errorMessage>You must specify if the CFE agreed to work on the Request</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>AEG_Partner_Rule</fullName>
+        <active>true</active>
+        <description>When the &quot;Is Joint Partner Involved&quot; is specified &quot;Partner Name&quot; is required</description>
+        <errorConditionFormula>AND(ISPICKVAL( Is_joint_partner_involved__c , &quot;Yes&quot;), ISBLANK( Partner_Name__c ) )</errorConditionFormula>
+        <errorDisplayField>Partner_Name__c</errorDisplayField>
+        <errorMessage>When the &quot;Is Joint Partner Involved&quot; is specified &quot;Partner Name&quot; is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Project_Ownership</fullName>
+        <active>true</active>
+        <description>On update allow to set project ownership only to AE/PE users</description>
+        <errorConditionFormula>AND( ISCHANGED( OwnerId),not($Permission.Object_Project_Allow_Project_Ownership))</errorConditionFormula>
+        <errorDisplayField>OwnerId</errorDisplayField>
+        <errorMessage>To change a Project Owner you must be an AE or PE user</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Project_Purpose_NonSupport_Suppor</fullName>
+        <active>true</active>
+        <description>Change project with time time cards from non Opportunity or non Territory support to Opportunity or Territory Support</description>
+        <errorConditionFormula>AND(Count_Time_Card__c &gt;0, ISCHANGED( Purpose__c ),OR(AND(ISPICKVAL(Purpose__c,&apos;Territory Support&apos;),NOT(ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Opportunity Support&apos;)) ),AND(ISPICKVAL(Purpose__c,&apos;Opportunity Support&apos;),NOT(ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Territory Support&apos;)) ) ))</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Project_Purpose_Non_Support</fullName>
+        <active>true</active>
+        <description>Change purpose with Time cards from Non Opportunity or Non Territory to Non Opportunity or Non Territory support</description>
+        <errorConditionFormula>AND(Count_Time_Card__c &gt;0, ISCHANGED( Purpose__c ),OR(AND(NOT(ISPICKVAL(Purpose__c,&apos;Territory Support&apos;)),ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Opportunity Support&apos;) ),AND(NOT(ISPICKVAL(Purpose__c,&apos;Opportunity Support&apos;)),ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Territory Support&apos;) ) ))</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Project_Purpose_with_Time_Card</fullName>
+        <active>true</active>
+        <description>Error message for any non territory and non opportunity support projects purposes if there are time cards entries</description>
+        <errorConditionFormula>AND(ISCHANGED(Purpose__c), Count_Time_Card__c
+&gt;0,NOT(ISPICKVAL(Purpose__c,&apos;Territory Support&apos;)),NOT(ISPICKVAL(Purpose__c,&apos;Opportunity Support&apos;)),
+NOT(ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Opportunity Support&apos;))
+,NOT(ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Territory Support&apos;)
+))</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Purpose_No_Support_To_No_Support</fullName>
+        <active>false</active>
+        <description>Error message for any non support  project purposes if there are time cards entries</description>
+        <errorConditionFormula>AND(ISCHANGED(Purpose__c), Count_Time_Card__c &gt;0,NOT(ISPICKVAL(Purpose__c, &apos;NPS Opp Support&apos;)),NOT(ISPICKVAL(Purpose__c, &apos;SMS Opp Support&apos;)),NOT(ISPICKVAL(Purpose__c, &apos;Territory Support&apos;)), NOT(ISPICKVAL( PRIORVALUE(Purpose__c) , &apos;Territory Support&apos;)),NOT(ISPICKVAL( PRIORVALUE(Purpose__c) , &apos;NPS Opp  Support&apos;)),NOT(ISPICKVAL( PRIORVALUE(Purpose__c) , &apos;SMS Opp  Support&apos;)) )</errorConditionFormula>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Purpose_NonSupport_To_Support</fullName>
+        <active>false</active>
+        <description>Error message when change NonSupport purpose to Support purpose</description>
+        <errorConditionFormula>AND(
+ISCHANGED(Purpose__c), Count_Time_Card__c &gt;0,(OR (ISPICKVAL(Purpose__c,&apos;NPS Opp Support&apos;),ISPICKVAL(Purpose__c,&apos;SMS Opp Support&apos;),
+ISPICKVAL(Purpose__c,&apos;Territory Support&apos;))),NOT (ISPICKVAL(PRIORVALUE(Purpose__c), &apos;SMS Opp Support&apos;)
+),NOT (ISPICKVAL(PRIORVALUE(Purpose__c), &apos;NPS Opp Support&apos;)
+),
+NOT (ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Territory Support&apos;)
+)
+)</errorConditionFormula>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Purpose_Support_To_Non_Support</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISCHANGED(Purpose__c), Count_Time_Card__c
+&gt;0,NOT(ISPICKVAL(Purpose__c,&apos;Territory Support&apos;)),NOT(ISPICKVAL(Purpose__c,&apos;NPS Opp Support&apos;)),NOT(ISPICKVAL(Purpose__c,&apos;SMS Opp Support&apos;)),
+ISPICKVAL(PRIORVALUE(Purpose__c), &apos;NPS Opp Support&apos;)
+,ISPICKVAL(PRIORVALUE(Purpose__c), &apos;SMS Opp Support&apos;)
+,ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Territory Support&apos;)
+)</errorConditionFormula>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Purpose_Territory_Support</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISCHANGED(Purpose__c), Count_Time_Card__c
+&gt;0,NOT(ISPICKVAL(Purpose__c,&apos;Territory Support&apos;)),NOT(ISPICKVAL(Purpose__c,&apos;NPS Opp Support&apos;)),NOT(ISPICKVAL(Purpose__c,&apos;SMS Opp Support&apos;))
+,ISPICKVAL(PRIORVALUE(Purpose__c), &apos;Territory Support&apos;)
+)</errorConditionFormula>
+        <errorMessage>Project purpose cannot be changed since time card entries exist. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CreateTSROnAccountForParticularPurpose</fullName>
+        <active>true</active>
+        <description>Restrict creating TSR on Account  if the Purpose field don&apos;t have Marketing purpose value</description>
+        <errorConditionFormula>IF(AND( ISNEW(),(Campaign__c == Null),(Opportunity__c == Null),(Account__c != Null),
+NOT(OR(ISPICKVAL(Purpose__c, &apos;Territory Support&apos;),
+   ISPICKVAL(Purpose__c, &apos;Marketing&apos;)   
+   ))), True, False)</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>The Purpose selected is not valid for TSRs created from an Account or Contact</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CreateTSROnCampaignForParticularPurpose</fullName>
+        <active>true</active>
+        <description>Restrict creating TSR on Campaign if the Purpose field don&apos;t have Marketing value</description>
+        <errorConditionFormula>IF(AND( ISNEW() ,(Campaign__c != Null),(Opportunity__c == Null),(Account__c == Null),NOT(
+   ISPICKVAL(Purpose__c, &apos;Marketing&apos;)
+)), True, False)</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>The Purpose selected is not valid for TSRs created from a Campaign</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CreateTSROnOpptForParticularPurpose</fullName>
+        <active>true</active>
+        <description>Restrict creating TSR on Opportunity if the Purpose field don&apos;t have NPS Support,SMS Support value.</description>
+        <errorConditionFormula>IF(AND( ISNEW(),(Opportunity__c != Null),NOT(
+ISPICKVAL(Purpose__c, &apos;Opportunity Support&apos;)
+)), True, False)</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>The Purpose selected is not valid for TSRs created from an Opportunity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Oppty_Support_Purpose_Allow_To_Add_Oppty</fullName>
+        <active>true</active>
+        <description>Allow opportunity to be added only if the project purpose Opportunity Support</description>
+        <errorConditionFormula>AND(NOT(ISPICKVAL((Purpose__c),&quot;Opportunity Support&quot;)),  ISCHANGED(Count_Opportunity__c),Count_Opportunity__c &gt;0 )</errorConditionFormula>
+        <errorDisplayField>Purpose__c</errorDisplayField>
+        <errorMessage>Opportunity can only be associated with Opportunity Support projects. Start a new project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Editing_Closed_Projects</fullName>
+        <active>true</active>
+        <description>If the project is closed, do not allow a user to make any updates to it unless they are a AE/PE or TS manager (profile)</description>
+        <errorConditionFormula>IF (ISCHANGED(Count_Opportunity__c),
+AND(
+ $User.Id &lt;&gt;  OwnerId
+ ,ISCHANGED(Opportunity__c) 
+    ,ISPICKVAL(PRIORVALUE(Project_Status__c) ,&quot;Closed&quot; )
+),
+AND(
+ $User.Id &lt;&gt;  OwnerId ,$Setup.Project_Validation_Rule_Settings__c.Prevent_Editing_Closed_Projects__c
+    ,ISPICKVAL(PRIORVALUE(Project_Status__c) ,&quot;Closed&quot; )
+)
+)</errorConditionFormula>
+        <errorMessage>This project has been closed and cannot be edited.  Contact the Project Owner, or the AE/PE or TS manager to have this project re-opened.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Requester_Required_on_Project_Creation</fullName>
+        <active>true</active>
+        <description>Require the requester value be populated when a new record is created</description>
+        <errorConditionFormula>AND(ISNEW(), ISBLANK(Requester__c),RecordType.DeveloperName != &apos;Project&apos;)</errorConditionFormula>
+        <errorDisplayField>Requester__c</errorDisplayField>
+        <errorMessage>Please select the Requester</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Primary_Contact_for_Oppt_Sup</fullName>
+        <active>false</active>
+        <description>The Require Primary Contact is mandatory for opportunity support</description>
+        <errorConditionFormula>AND( OR( ISPICKVAL( Purpose__c , &quot;SMS Opp Support&quot;) , ISPICKVAL( Purpose__c , &quot;NPS Opp Support&quot;)) ,   ISBLANK(Customer_Contact__c) )</errorConditionFormula>
+        <errorDisplayField>Customer_Contact__c</errorDisplayField>
+        <errorMessage>Primary Contact is mandatory for NPS and SMS opportunity support projects</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Remove_Opportunity</fullName>
+        <active>true</active>
+        <description>Remove opportunity when project closed if project purpose is not Opportunity Support</description>
+        <errorConditionFormula>AND(TEXT(Purpose__c)&lt;&gt;&apos;Opportunity Support&apos;,NOT(ISPICKVAL( PRIORVALUE( Project_Status__c ) , &quot;Closed&quot;)), Count_Opportunity__c &gt;0,TEXT(Project_Status__c)=&apos;Closed&apos;)</errorConditionFormula>
+        <errorMessage>Opportunity can only be associated with Opportunity Support projects. Remove Opportunity from the project</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Selling_Priority_for_new_Project</fullName>
+        <active>true</active>
+        <description>Requires Selling Priorities to be selected on new project. None can be selected as a valid</description>
+        <errorConditionFormula>AND( ISNEW() ,  ISBLANK( Selling_Priorities__c ), OR(ISPICKVAL(Purpose__c, &apos;Marketing&apos;),ISPICKVAL(Purpose__c, &apos;Opportunity Support&apos;)))</errorConditionFormula>
+        <errorDisplayField>Selling_Priorities__c</errorDisplayField>
+        <errorMessage>Error: You must select at least one Selling Priority</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_Account_On_Project_Close</fullName>
+        <active>true</active>
+        <description>Error: Project cannot be modified until you associate an Account with it or select a Primary Account</description>
+        <errorConditionFormula>AND(TEXT(Purpose__c)=&apos;Territory Support&apos;, OR(ISBLANK(Account__c ), Primary_Number__c =0),TEXT(Project_Status__c)=&apos;Closed&apos;, NOT(ISPICKVAL( PRIORVALUE( Project_Status__c ) , &quot;Closed&quot;)) )</errorConditionFormula>
+        <errorMessage>Project cannot be modified until you associate an Account with it or select a Primary Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_Fields_on_Project_close</fullName>
+        <active>true</active>
+        <description>Account and Opportunity are required on project close</description>
+        <errorConditionFormula>AND(Count_Opportunity__c =0,  TEXT(Project_Status__c)=&apos;Closed&apos;, TEXT(Purpose__c)=&apos;Opportunity Support&apos;,NOT(ISPICKVAL( PRIORVALUE( Project_Status__c ) , &quot;Closed&quot;)))</errorConditionFormula>
+        <errorMessage>Project cannot be modified until you associate an Opportunity with it</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_Location_for_Marketing_Purpose</fullName>
+        <active>true</active>
+        <description>Requires location on close project for Marketing Purpose</description>
+        <errorConditionFormula>AND(TEXT(Purpose__c)=&apos;Marketing&apos;, ISBLANK( Location_of_Request__c ),TEXT(Project_Status__c)=&apos;Closed&apos;, NOT(ISPICKVAL( PRIORVALUE( Project_Status__c ) , &quot;Closed&quot;) ))</errorConditionFormula>
+        <errorDisplayField>Location_of_Request__c</errorDisplayField>
+        <errorMessage>You must select a Primary Account or enter a value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Purpose_for_Attached_Opport</fullName>
+        <active>true</active>
+        <description>Do not allow changing project purpose other than Opportunist Support if oppty is attached to the projet</description>
+        <errorConditionFormula>AND( Count_Opportunity__c &gt;0, ISCHANGED( Purpose__c ) ,TEXT(Purpose__c)&lt;&gt;&apos;Opportunity Support&apos;)</errorConditionFormula>
+        <errorMessage>Project purpose cannot be changed since there is an opportunity associated with the project. Start a new project or remove Opportunity from the project</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Time_Card</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New Time Card</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/ProjectTimecard?projectID={!CASESAFEID(MW_Project__c.Id)}</url>
+    </webLinks>
+</CustomObject>

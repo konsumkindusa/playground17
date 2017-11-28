@@ -1,0 +1,11 @@
+Beste {!Contact.FirstName}, 
+
+Deze e-mail is een reactie op je vraag #{!Case.CaseNumber} betreffende '{!Case.Subject}'.
+
+
+
+Wanneer je antwoordt op deze e-mail, zorg er dan alsjeblieft voor dat onderstaand Reference ID intact blijft. 
+
+Met vriendelijke groet, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

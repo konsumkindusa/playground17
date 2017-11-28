@@ -1,0 +1,24 @@
+Hi <XXXDistributor NameXXX>,
+
+Our warehouse has notified us that a shipment intended for one of your customers was returned to them due to a delivery address issue.  I have included the customer's contact information, delivery address and the products that were shipped below.  Please follow up with the customer listed below to confirm their shipping address, and then reship their products if possible. 
+
+Customer:
+
+<XXXNameXXX>
+<XXXEmail AddressXXX>
+<XXXTelephone NumberXXX>
+
+Shipping Address:
+<XXXShipping AddressXXX>
+
+Products Shipped:
+<XXXProducts ShippedXXX>
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

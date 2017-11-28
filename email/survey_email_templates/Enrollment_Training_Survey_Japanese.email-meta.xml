@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>Enrollment Training Survey - Japanese</name>
+    <style>freeForm</style>
+    <subject>MathWorks トレーニングに対するアンケートのお願い</subject>
+    <textOnly>{!Enrollment__c.Enrollee_Name__c}  様
+
+MathWorks のトレーニング コースを受講いただきありがとうございました。 弊社のトレーニングは、MATLAB、Simulink などのツールを十分ご活用いただいて、成果を達成していただくことを目標としています。
+
+弊社ではトレーニングをさらに充実したものにするよう、継続的な取り組みを行っています。是非、お客様の貴重なご意見をお寄せください。5 分程度でご回答いただける簡単な受講後アンケートです。ご協力いただければ幸いです。
+
+受講後アンケート
+
+
+
+皆様から頂いたご意見を基に、よりニーズに即したトレーニングをご提供できるよう努力していく所存です。
+
+よろしくお願い申し上げます。
+
+Craig Santos
+Training Business Manager
+The MathWorks, Inc.
+Craig.Santos@mathworks.com
+
+アドレスの変更をご希望の方は、service@mathworks.com までご連絡ください。
+
+© 2009 by The MathWorks, Inc. MATLAB, Simulink, Stateflow, Handle Graphics, Real-Time Workshop, SimBiology, SimHydraulics, and xPC TargetBox are registered trademarks and SimEvents is a trademark of The MathWorks, Inc. Other product or brand names are trademarks or registered trademarks of their respective holders.
+
+
+オプトアウト:
+今後 MathWorks から E-mail の受け取りを希望されない場合は、こちらのリンクをクリックしてください。</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

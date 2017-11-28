@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>MathWorks_Customer_Services</submitter>
+        <type>roleSubordinatesInternal</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>MW_Operations</submitter>
+        <type>roleSubordinatesInternal</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Title</field>
+        <field>Answer__c</field>
+        <field>ArticleNumber</field>
+        <field>Answers_URL__c</field>
+        <field>Attachments__c</field>
+        <field>Attachment_2__c</field>
+        <field>Attachment_3__c</field>
+        <field>Attachment_4__c</field>
+        <field>Attachment_5__c</field>
+        <field>Question_RT__c</field>
+        <field>Related_Articles__c</field>
+        <field>Site__c</field>
+        <field>Summary</field>
+        <field>Tags__c</field>
+        <field>UrlName</field>
+        <field>ValidationStatus</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <description>Any article submitted by a Publisher for externally approved status is entered into an approval process.</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>FAQ__kav.IsVisibleInApp</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Publisher approval process</label>
+        <name>Publisher_approval_process</name>
+    </approvalStep>
+    <description>Self Approval process for &quot;Publisher&quot; users, entry is based on validation status field, only publishers whose articles that don&apos;t meet proper validation status / channel criteria that indicate an update will enter the approval process. Final action results in a new version published, no email alert</description>
+    <emailTemplate>Email_Alert_Email_Templates/Article_Approval_Assignment</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>(1 AND 2 AND 3 AND 6) OR (1 AND 2 AND 4 AND 5)</booleanFilter>
+        <criteriaItems>
+            <field>User.Knowledge_Role__c</field>
+            <operation>equals</operation>
+            <value>Publisher</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FAQ__kav.Major_Release__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FAQ__kav.ValidationStatus</field>
+            <operation>equals</operation>
+            <value>Not Validated,Internally Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FAQ__kav.ValidationStatus</field>
+            <operation>equals</operation>
+            <value>Externally Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FAQ__kav.IsVisibleInCsp</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FAQ__kav.IsVisibleInCsp</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Publish_New_Ver1</name>
+            <type>KnowledgePublish</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Publisher self approval: Maj Rel</label>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

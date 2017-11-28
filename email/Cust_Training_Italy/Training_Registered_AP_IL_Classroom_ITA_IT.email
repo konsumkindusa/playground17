@@ -1,0 +1,32 @@
+Gentile {!Contact.Name},
+
+la ringraziamo per essersi iscritto al seguente corso:
+
+DENOMINAZIONE CORSO: {!Enrollment__c.Class__c}  
+DATE:  {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+SEDE:  {!Class__c.City__c}, {!Class__c.Country__c} 
+ORARIO: dalle {!Class__c.Start_Time__c} fino alle {!Class__c.End_Time__c}
+
+Acceda al link sottostante per dettagli sulla sede di svolgimento:
+http://www.mathworks.it/services/training/policies/directions.html 
+
+Le ricordiamo che la sua iscrizione sarà confermata solo al ricevimento dell'ordine d'acquisto, che dovrà pervenire almeno 15 gg prima dell'inizio del corso. Potrete trasmettere il suddetto ordine via fax al numero 011.2274710 o, se preferite, via posta presso la nostra sede legale:
+
+     The MathWorks srl
+     Via Bertola, 34
+     10122 - Torino
+
+Per consentire una gestione ottimale, si prega di indicare in ordine nome del partecipante, denominazione del corso, sede e date dei corsi a cui si intende partecipare.  
+
+Policy and FAQ: http://www.mathworks.it/services/training/policies/
+
+Non appena ricevuto l'ordine le verrà inviato un email di conferma contenente tutti i dettagli del corso. Nel caso si riscontrassero problemi, sarà immediatamente contattato. 
+
+Per eventuali informazioni non esiti a telefonarci al centralino 011.2274.700 o al numero 011.2274.771, o ad inviarci un email all'indirizzo info@mathworks.it.
+
+Cordiali saluti,
+{!Class__c.Sponsor_Office_Signature__c} 
+
+
+Regolamento per Cancellazioni/Rimborsi   
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

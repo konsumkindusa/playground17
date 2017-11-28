@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>AE PE Templates</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>AE_PE_Report_Admin</group>
+        <role>AE_Rep_Report_Steve_M</role>
+        <roleAndSubordinatesInternal>AE_PE</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>AE_Rep_Report_Steve_M</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>BISS_AE</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>EMEA_AE</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>US_AE</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

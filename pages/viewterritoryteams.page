@@ -1,0 +1,51 @@
+<apex:page id="page" title="Sales Roster" controller="viewterritoryteam" showHeader="false" sidebar="false">
+ <style>
+ .territoryLabel
+ {
+     color: #000;
+     font-size: 1.1em;
+     font-weight: bold;
+ }   
+ </style>
+ 
+  <apex:form id="form" style="margin-top: 3%;margin-left: 1%;margin-right: 1%;">
+      <apex:pageBlock title="Territory Details" rendered="{!IF(ViewUserDetails.size>0, TRUE, FALSE)}">
+       <apex:panelGrid columns="2" id="panelGrid" style="width:100%;margin-left:6%">
+           <apex:outputPanel layout="block" id="panel1">
+               <apex:outputText value="Territory Name" id="territoryName" styleclass="territoryLabel"/>
+           </apex:outputPanel>
+           <apex:outputPanel layout="block" id="panel2">
+               <apex:outputText value="{!ViewUserDetails[0].Territory2.Name}" id="territoryNameValue"/>
+           </apex:outputPanel>
+           <apex:outputPanel layout="block" id="panel3">
+               <apex:outputText value="Territory Office" id="territoryOffice" styleclass="territoryLabel"/>
+           </apex:outputPanel>
+           <apex:outputPanel layout="block" id="panel4">
+               <apex:outputText value="{!ViewUserDetails[0].Territory2.Office__c}" id="territoryOfficeValue"/>
+           </apex:outputPanel>
+           <apex:outputPanel layout="block" id="panel5">
+               <apex:outputText value="Territory Manager" id="territoryManager" styleclass="territoryLabel"/>
+           </apex:outputPanel>
+           <apex:outputPanel layout="block" id="panel6">
+               <apex:outputText value="" id="territoryManagerValue"/>
+           </apex:outputPanel>
+        </apex:panelGrid>   
+      </apex:pageBlock>
+      
+      
+      <apex:pageBlock title="Team Details" id="pageblock">
+          <apex:messages id="apexmessages"/>
+              <apex:pageBlockTable id="pageBlockTable" value="{!ViewUserDetails}"  
+                                  var="UserDetails" rendered="{!IF(ViewUserDetails.size>0, TRUE, FALSE)}">
+               <!--Added by Archana Suryawanshi on 23 May 2016-->
+              <!--Added code to show user territory association role in territory (and not on the User Default Functional Role)-->
+              <apex:column value="{!UserDetails.RoleInTerritory2}" id="column" headerValue="{!UserDetails.RoleInTerritory2}"/>
+              <apex:repeat value="{!$ObjectType.User.FieldSets.Territory_Team}" var="fs">
+                    <apex:column value="{!UserDetails.User[fs]}" id="column" headerValue="{!fs.Label}"/>
+              </apex:repeat>
+              
+              
+              </apex:pageBlockTable>   
+      </apex:pageBlock> 
+  </apex:form> 
+</apex:page>

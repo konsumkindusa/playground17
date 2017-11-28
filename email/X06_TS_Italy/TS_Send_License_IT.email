@@ -1,0 +1,22 @@
+Gentile {!Contact.Salutation} {!Contact.LastName},    
+
+Abbiamo ricevuto la Sua richiesta relativa a '{!Case.Subject}' e abbiamo cominciato ad analizzare il suo caso.    
+
+Può gentilmente inviarci una email con il risultato completo che si ottiene con il comando, 
+
+per le versioni di MATLAB dalla R2012b in poi:
+>> ver -support
+
+per le versioni di MATLAB R2012a e precedenti:
+>> ver
+
+digitato nella riga di comando del prompt di  MATLAB. 
+Questo ci fornirà i dettegli della sua licenza, versione e sistema operativo.
+
+La sua licenza deve essere in Maintenance per poter accedere al servizio di Supporto Tecnico, che è parte dei benefici riservati agli iscritti al Software Maintenance Service.    
+
+La prego di rispondere a questa mail mantenendo il Reference ID.
+
+Cordiali Saluti,    
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

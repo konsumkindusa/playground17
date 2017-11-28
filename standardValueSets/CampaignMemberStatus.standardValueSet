@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended - Lead Qual Req</fullName>
+        <default>false</default>
+        <label>Attended - Lead Qual Req</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended - Sales Rep Req</fullName>
+        <default>false</default>
+        <label>Attended - Sales Rep Req</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended - Walk In</fullName>
+        <default>false</default>
+        <label>Attended - Walk In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Upload</fullName>
+        <default>false</default>
+        <label>Contact Upload</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Created Opp</fullName>
+        <default>false</default>
+        <label>Created Opp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>email #1</fullName>
+        <default>false</default>
+        <label>email #1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Form Submitted</fullName>
+        <default>false</default>
+        <label>Form Submitted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Geantwortet</fullName>
+        <default>false</default>
+        <label>Geantwortet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gesendet</fullName>
+        <default>false</default>
+        <label>Gesendet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Qualified</fullName>
+        <default>false</default>
+        <label>Lead Qualified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LVM</fullName>
+        <default>false</default>
+        <label>LVM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Prospect</fullName>
+        <default>false</default>
+        <label>New Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Interest</fullName>
+        <default>false</default>
+        <label>No Interest</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Longer At Account</fullName>
+        <default>false</default>
+        <label>No Longer At Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Show</fullName>
+        <default>false</default>
+        <label>No Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Event Promotion</fullName>
+        <default>false</default>
+        <label>Pre-Event Promotion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Event Reminder</fullName>
+        <default>false</default>
+        <label>Pre-Event Reminder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospected</fullName>
+        <default>false</default>
+        <label>Prospected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SMS Expired</fullName>
+        <default>false</default>
+        <label>SMS Expired</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To Call</fullName>
+        <default>false</default>
+        <label>To Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To Contact</fullName>
+        <default>false</default>
+        <label>To Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited</fullName>
+        <default>false</default>
+        <label>Visited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Booth</fullName>
+        <default>false</default>
+        <label>Visited Booth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Booth - Sales Rep Req</fullName>
+        <default>false</default>
+        <label>Visited Booth - Sales Rep Req</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Voicemail</fullName>
+        <default>false</default>
+        <label>Voicemail</label>
+    </standardValue>
+</StandardValueSet>

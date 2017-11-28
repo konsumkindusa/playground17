@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ActionGrid Case Install Natick</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom56: Bottle</motif>
+    <page>AG_Case_Install_Natick</page>
+</CustomTab>

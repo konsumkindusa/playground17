@@ -1,0 +1,31 @@
+<apex:page sidebar="false" showHeader="false" showChat="false">
+
+<body class="search_template" id="nextgen_b">
+    <apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block">
+        <apex:outputPanel layout="block" id="content_container">
+
+<p class="txt_center">
+We are unable to complete your request at this time. <br></br>
+For technical support, please send an email to <a href="mailto:support@mathworks.com" > support@mathworks.com</a>  <br></br>
+For customer service, please send an email to <a href="mailto:service@mathworks.com" > service@mathworks.com</a>  
+</p>
+    
+</apex:outputPanel>      
+</apex:outputPanel>      
+</apex:outputPanel>  
+</apex:outputPanel>
+</div>
+</apex:outputPanel> 
+</apex:outputPanel>      
+<apex:include pageName="cp_footer" />           
+</body>  
+ 
+    
+
+</apex:page>

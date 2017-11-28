@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>KR AE Rep Report  Young Joon Lee</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>KR AE Rep Report  Young Joon Lee</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>KR_AE_Manager_Young_Joon_Lee</parentRole>
+</Role>

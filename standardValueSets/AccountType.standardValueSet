@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Authorized Reseller</fullName>
+        <default>false</default>
+        <label>Authorized Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bookstore</fullName>
+        <default>false</default>
+        <label>Bookstore</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contractual Reseller</fullName>
+        <default>false</default>
+        <label>Contractual Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dealer Academic Dom</fullName>
+        <default>false</default>
+        <label>Dealer Academic Dom</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VAR</fullName>
+        <default>false</default>
+        <label>VAR</label>
+    </standardValue>
+</StandardValueSet>

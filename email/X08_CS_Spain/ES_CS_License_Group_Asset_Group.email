@@ -1,0 +1,16 @@
+Buenos días {!Case.Contact},
+
+En base a la solicitud de XXXXXX, XXXXXX ha sido añadido a la licencia #####  como Asset Manager.
+
+El Asset Manager es un contacto opcional asociado a una licencia, con los mismos privilegios que el Administrador. Puede haber varios Asset Managers asociados a una licencia.
+
+Para aprender más acerca de la activación de su licencia, puede seguir el link que figura a continuación, que requiere que se conecte a su Cuenta MathWorks:   http://www.mathworks.com/support/activation/index.html?BB=1    
+
+Si necesita más ayuda en relación a este Caso, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml 
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

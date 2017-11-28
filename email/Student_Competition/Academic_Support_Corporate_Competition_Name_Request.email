@@ -1,0 +1,25 @@
+Notes:
+- Make sure the From field says: Student Competitions
+- Copy and paste in what was in the form field for Student Competition Name into the email template (YYY).
+
+
+cc: lauren.tabolinsky@mathworks.com; Sarah.Beaven@mathworks.com
+
+Hello,
+
+In the form below you listed YYY as the name of the competition you are participating in.  MathWorks is not currently sponsoring that student competition so we will be unable to provide your  team with software.  
+
+If the information below is not correct, please reply all to this email with the correct name of the competition you are participating in.
+
+Best Regards,
+MathWorks Student Competition Program
+studentcompetitions@mathworks.com
+www.mathworks.com/academia/student-competitions/
+
+--------------- Original Message --------------- 
+From: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Name__c} [{!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Address__c}] 
+Sent: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Message_Date__c} 
+To: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__To_Address__c} 
+Subject: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Subject__c} 
+
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

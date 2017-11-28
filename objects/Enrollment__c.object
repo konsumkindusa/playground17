@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>Enrollment_FieldSet</fullName>
+        <description>Field set used to display fields on the New Enrollment page. Do not include Enrollee Name, Enterprise Training Agreement, Class or Status in this field set as they are already present on the page.</description>
+        <displayedFields>
+            <field>Payment_Method__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Order_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Enrollment_FieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Enrollee_Name__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Certification_Agreement_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (Class_Format__c = &quot;Certification&quot;, $Setup.Training_Agreement_Settings__c.Certification_Agreement_Link__c + &apos;?Enrollment_ID=&apos;+Id, &apos;&apos;)</formula>
+        <label>Certification Agreement URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Certification_Exam_Agreement__c</fullName>
+        <externalId>false</externalId>
+        <label>Certification Exam Agreement</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accept</fullName>
+                    <default>false</default>
+                    <label>Accept</label>
+                </value>
+                <value>
+                    <fullName>Decline</fullName>
+                    <default>false</default>
+                    <label>Decline</label>
+                </value>
+                <value>
+                    <fullName>Awaiting Response</fullName>
+                    <default>true</default>
+                    <label>Awaiting Response</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Certification_Training_Dates__c</fullName>
+        <description>This formula field use to calculate the certification training dates and which is used in visualforce Email template</description>
+        <externalId>false</externalId>
+        <formula>IF( Start_Date__c == End_Date__c , 
+text(DAY( Start_Date__c )) +&apos; &apos;+ CASE( MONTH( Start_Date__c ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos; &apos;+ Text(YEAR( Start_Date__c )) , 
+IF( MONTH( Start_Date__c ) == MONTH( End_Date__c ), 
+TEXT(DAY(Start_Date__c))+&apos; - &apos; 
++ 
+text(DAY( End_Date__c )) +&apos; &apos;+ CASE( MONTH( End_Date__c ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos; &apos;+ Text(YEAR( End_Date__c )) 
+,text(DAY( Start_Date__c )) +&apos; &apos;+ CASE( MONTH( Start_Date__c ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;)+&apos; - &apos;+text(DAY( End_Date__c )) +&apos; &apos;+ CASE( MONTH( End_Date__c ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos;,&apos;+ Text(YEAR( End_Date__c )) 
+) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Certification Training Dates</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Format__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Class__r.Class_Format__c)</formula>
+        <label>Class Format</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Class__r.Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Class Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Class__r.Class_Type__c )</formula>
+        <label>Class Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <referenceTo>Class__c</referenceTo>
+        <relationshipLabel>Enrollments</relationshipLabel>
+        <relationshipName>Class_Enrollees</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CourseId__c</fullName>
+        <description>Get Course Id From Class</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Class__r.Course__c)</formula>
+        <label>CourseId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Course_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Class__r.Course_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Course Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(DAY(  End_Date__c  )) +&apos;-&apos;+ CASE( MONTH(  End_Date__c  ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos;-&apos;+ Text(YEAR(  End_Date__c  ))</formula>
+        <label>Display End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(DAY(  Start_Date__c  )) +&apos;-&apos;+ CASE( MONTH(  Start_Date__c  ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos;-&apos;+ Text(YEAR(  Start_Date__c  ))</formula>
+        <label>Display Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Enrollee_Name__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Enrollee_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollee Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Class Enrollments</relationshipLabel>
+        <relationshipName>Class_Enrollees</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Code</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Awaiting Payment</fullName>
+                    <default>false</default>
+                    <label>Awaiting Payment</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Class Cancelled</fullName>
+                    <default>false</default>
+                    <label>Class Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>No Show</fullName>
+                    <default>false</default>
+                    <label>No Show</label>
+                </value>
+                <value>
+                    <fullName>No Show-Bill</fullName>
+                    <default>false</default>
+                    <label>No Show-Bill</label>
+                </value>
+                <value>
+                    <fullName>Registered - Awaiting Payment</fullName>
+                    <default>false</default>
+                    <label>Registered - Awaiting Payment</label>
+                </value>
+                <value>
+                    <fullName>Registered</fullName>
+                    <default>false</default>
+                    <label>Registered</label>
+                </value>
+                <value>
+                    <fullName>Waitlisted</fullName>
+                    <default>false</default>
+                    <label>Waitlisted</label>
+                </value>
+                <value>
+                    <fullName>!!! CHECK ME !!! -</fullName>
+                    <default>false</default>
+                    <label>!!! CHECK ME !!! -</label>
+                </value>
+                <value>
+                    <fullName>!!! CHECK ME !!! -*** Unselected ***</fullName>
+                    <default>false</default>
+                    <label>!!! CHECK ME !!! -*** Unselected ***</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Enterprise_Training_Agreement__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Enterprise Training Agreement</label>
+        <referenceTo>Enterprise_Training_Agreement__c</referenceTo>
+        <relationshipLabel>Enrollments</relationshipLabel>
+        <relationshipName>Enrollments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Date__c</fullName>
+        <description>Display the Exam Date from the associated class.</description>
+        <externalId>false</externalId>
+        <formula>Class__r.Exam_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Exam Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Reminder__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Days before the class enrollment expires that an email reminder should be sent to the enrollee</inlineHelpText>
+        <label>Expiration Reminder</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Format_Of_Class__c</fullName>
+        <externalId>false</externalId>
+        <formula>Class__r.Format_Of_Class__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Format Of Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MW_Account_ID__c</fullName>
+        <description>Field to Store MathWorks Account Id on the Enrollment</description>
+        <externalId>false</externalId>
+        <label>MW Account ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Notify_RAC_for_Post_Payment_Processing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Primary use case is Japan for some customers to process payment after the class is completed.  Workfront Story #1736520</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, will create a Case for RAC to process an invoice against an existing PO when the enrollment is marked completed.</inlineHelpText>
+        <label>Notify RAC for Post Payment Processing</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Passed_Test_Flag__c</fullName>
+        <description>Field to store the exam result based on the test scores and the passing scores</description>
+        <externalId>false</externalId>
+        <label>Passed Test?</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>e-Payment</fullName>
+                    <default>false</default>
+                    <label>e-Payment</label>
+                </value>
+                <value>
+                    <fullName>Prepaid/No Charge</fullName>
+                    <default>false</default>
+                    <label>Prepaid/No Charge</label>
+                </value>
+                <value>
+                    <fullName>Credit Terms</fullName>
+                    <default>false</default>
+                    <label>Credit Terms</label>
+                </value>
+                <value>
+                    <fullName>Training Credits</fullName>
+                    <default>false</default>
+                    <label>Training Credits</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Seat_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Seat Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Self_Paced_Exp_Reminder_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+   Format_Of_Class__c = &quot;Self-Paced&quot;, 
+   IF( NOT( ISBLANK( Expiration_Reminder__c )) , 
+             End_Date__c - Expiration_Reminder__c , End_Date__c - 30), null)</formula>
+        <label>Self Paced Exp Reminder Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Send_Awaiting_Payment_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an enrollment is changed to Awaiting Payment. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Awaiting Payment email notification</inlineHelpText>
+        <label>Send Awaiting Payment Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Cancelled_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an enrollment is changed to Cancelled. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend cancelled email notification</inlineHelpText>
+        <label>Send Cancelled Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Certificate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Certificate</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Class_Cancellation_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of a class is changed to Cancelled. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Class Cancelled email notification</inlineHelpText>
+        <label>Send Class Cancellation Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Completion_Certificate_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an enrollment is changed to Completed and the Enrollment has the Send Certificate flag checked. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend class completion certificate</inlineHelpText>
+        <label>Send Completion Certificate Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag for whether automated email notifications should be sent related to this enrollment</inlineHelpText>
+        <label>Send Email</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Exam_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an exam enrollment is completed, the Result is not passing and the Enrollment has the Send Certificate and Send Email flag checked. This flag will be used to determine the base template to be used for exam failure emails.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Exam result notification. Certification certificate will be sent is passed.</inlineHelpText>
+        <label>Send Exam Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Level_3_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When checked, process builder will send the contact an email to complete a level 3 training survey.</description>
+        <externalId>false</externalId>
+        <label>Send Level 3 Survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Registered_AP_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an enrollment is changed to Registered - Awaiting Payment. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Registered - Awaiting Payment email notification</inlineHelpText>
+        <label>Send Registered - AP Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Registered_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an enrollment is changed to Registered. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Registered email notification</inlineHelpText>
+        <label>Send Registered Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Registered_Reminder_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to true by a workflow 7 days prior to the class start date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Registered reminder email notification. This is automatically sent 7 days prior to class start.</inlineHelpText>
+        <label>Send Registered Reminder Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Self_Paced_Expiration_Reminder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag when checked will send a reminder email to customers enrolled in self-paced classes that their registration will expire within 30 days</description>
+        <externalId>false</externalId>
+        <label>Send Self Paced Expiration Reminder</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Training_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to manually send the Training Survey to the Contact of the Enrollment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to manually send the Training Survey to the Contact of the Enrollment</inlineHelpText>
+        <label>Send Training Survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Waitlisted_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag will be set to True when the status of an enrollment is changed to Waitlisted. This flag will be used to determine the base template to be used for email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resend Waitlisted email notification</inlineHelpText>
+        <label>Send Waitlisted Notification</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Siebel_Enrollment_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Siebel enrollment id</description>
+        <externalId>true</externalId>
+        <label>Siebel Enrollment ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bulk Enrollment</fullName>
+                    <default>false</default>
+                    <label>Bulk Enrollment</label>
+                </value>
+                <value>
+                    <fullName>Manual Enrollment</fullName>
+                    <default>false</default>
+                    <label>Manual Enrollment</label>
+                </value>
+                <value>
+                    <fullName>Self-Enrollment Portal</fullName>
+                    <default>false</default>
+                    <label>Self-Enrollment Portal</label>
+                </value>
+                <value>
+                    <fullName>Commerce Enrollment</fullName>
+                    <default>false</default>
+                    <label>Commerce Enrollment</label>
+                </value>
+                <value>
+                    <fullName>External Enrollment</fullName>
+                    <default>false</default>
+                    <label>External Enrollment</label>
+                </value>
+                <value>
+                    <fullName>Migration</fullName>
+                    <default>false</default>
+                    <label>Migration</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Training_Survey_Date_Received__c</fullName>
+        <description>The day and time the Enrollment Training Survey is received</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The day and time the Enrollment Training Survey is received</inlineHelpText>
+        <label>Survey - Training Survey  Date Received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Training_Survey_Last_Sent__c</fullName>
+        <description>Indicates the date and time the Training Survey was sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the date and time the Training Survey was sent.</inlineHelpText>
+        <label>Survey - Training Survey Last Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Test_1_Pass_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>Test_Name__r.Passing_Score_1__c</formula>
+        <label>Test 1 Pass Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_1_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Test 1 Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_2_Pass_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>Test_Name__r.Passing_Score_2__c</formula>
+        <label>Test 2 Pass Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_2_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Test 2 Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Flags_1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>test fields for Email notification frameWork</description>
+        <externalId>false</externalId>
+        <label>Test_Flags_1</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Test_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Test Name</label>
+        <referenceTo>Training_Test__c</referenceTo>
+        <relationshipLabel>Enrollments</relationshipLabel>
+        <relationshipName>Enrollments</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Enrollment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollee_Name__c</columns>
+        <columns>Email__c</columns>
+        <columns>Class__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Order_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Awaiting_Payment_Status</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Enrollee_Name__c</columns>
+        <columns>Account__c</columns>
+        <columns>Class__c</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Class_Status__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Awaiting Payment</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:5</value>
+        </filters>
+        <label>Awaiting Payment Status</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinatesInternal>MathWorks_Customer_Services</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Certified_Contacts</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollee_Name__c</columns>
+        <columns>Email__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Test_Name__c</columns>
+        <columns>Passed_Test_Flag__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Certification</value>
+        </filters>
+        <label>Certified Contacts</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>E-{00000000}</displayFormat>
+        <label>Enrollment ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Enrollments</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Distance_Learning</fullName>
+        <active>true</active>
+        <description>Enrollments for Distance Learning Classes</description>
+        <label>Distance Learning</label>
+        <picklistValues>
+            <picklist>Certification_Exam_Agreement__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Enrollment_Status__c</picklist>
+            <values>
+                <fullName>Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show-Bill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered - Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid%2FNo Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>Bulk Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commerce Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Enrollment Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Exam</fullName>
+        <active>true</active>
+        <description>Enrollments for Exam Classes</description>
+        <label>Exam</label>
+        <picklistValues>
+            <picklist>Certification_Exam_Agreement__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Awaiting Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Enrollment_Status__c</picklist>
+            <values>
+                <fullName>Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show-Bill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered - Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid%2FNo Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>Bulk Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commerce Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Enrollment Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Instructor_Led</fullName>
+        <active>true</active>
+        <description>Enrollments for Instructor Led Classes</description>
+        <label>Instructor Led</label>
+        <picklistValues>
+            <picklist>Certification_Exam_Agreement__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Enrollment_Status__c</picklist>
+            <values>
+                <fullName>Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show-Bill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered - Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid%2FNo Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>Bulk Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commerce Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Enrollment Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Pre_Enrollment</fullName>
+        <active>true</active>
+        <description>All Enrollment records are created with the Pre-Enrollment Record Type. Upon save of the New record it is switched with a Workflow Rule to the Record Type of the class. This is the only Records Type available on User Profiles.</description>
+        <label>Pre-Enrollment</label>
+        <picklistValues>
+            <picklist>Certification_Exam_Agreement__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Enrollment_Status__c</picklist>
+            <values>
+                <fullName>Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show-Bill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered - Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid%2FNo Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>Bulk Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commerce Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Enrollment Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Self_Paced</fullName>
+        <active>true</active>
+        <description>Enrollments for Self-Paced Classes</description>
+        <label>Self-Paced</label>
+        <picklistValues>
+            <picklist>Certification_Exam_Agreement__c</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Enrollment_Status__c</picklist>
+            <values>
+                <fullName>Awaiting Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Method__c</picklist>
+            <values>
+                <fullName>Credit Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaid%2FNo Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Credits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>Bulk Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commerce Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Enrollment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Enrollment Portal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Enrollee_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Email__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Enrollment_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Class__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Class_Format__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Test_Name__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Email__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Enrollee_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Enrollment_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Class__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Class__c</lookupFilterFields>
+        <lookupFilterFields>Start_Date__c</lookupFilterFields>
+        <lookupFilterFields>Enrollment_Status__c</lookupFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Class__c</searchFilterFields>
+        <searchFilterFields>Start_Date__c</searchFilterFields>
+        <searchFilterFields>Class_Format__c</searchFilterFields>
+        <searchFilterFields>Enrollee_Name__c</searchFilterFields>
+        <searchFilterFields>Email__c</searchFilterFields>
+        <searchFilterFields>Enrollment_Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Email__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Enrollee_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Enrollment_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Class__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Class_Format__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Seat_Price__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>New_Enrollment_Class_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+     NOT(ISPICKVAL(  Class__r.Status__c  , &quot;Active&quot;)) 
+    ,ISNULL(CreatedDate) 
+    ,not($Permission.Allow_Training_Data_Changes)
+)</errorConditionFormula>
+        <errorMessage>Enrollment cannot be created if Class Status is not Active</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>New_Enrollment_Contact_Flags</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+( OR 
+ (
+    Enrollee_Name__r.Denied_On_Watch_List_checkbox__c  =  True
+  , Enrollee_Name__r.Export_Prohibited_checkbox__c = True
+  , Enrollee_Name__r.Account.Denied_Company__c = True
+  , Enrollee_Name__r.Account.Export_Status__c = &quot;A&quot; 
+ )
+, not($Permission.Allow_Training_Data_Changes)
+)</errorConditionFormula>
+        <errorMessage>Enrollment cannot be created if Contact or Account has Denied Flag or Export Prohibited Flag</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Post_Payment_without_Order_Num</fullName>
+        <active>true</active>
+        <description>Prevents a user from saving an enrollment with the Notify RAC for Post Payment Processing flag checked if there is no Order Number provided (as RAC needs an Order Number in order to process the invoice.) Workfront Story #1736520</description>
+        <errorConditionFormula>AND(
+	Notify_RAC_for_Post_Payment_Processing__c 
+	,ISBLANK(Order_Number__c)
+	,NOT($Permission.Allow_Post_Pay_Enrollment_without_Order_Number) 
+)</errorConditionFormula>
+        <errorDisplayField>Order_Number__c</errorDisplayField>
+        <errorMessage>An Order Number must be provided in order to mark an enrollment for post payment processing.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_certification_exam_Test_Name</fullName>
+        <active>true</active>
+        <description>Prevent users to enter the exam test name if the value of certification exam agreement is anything other than Accept</description>
+        <errorConditionFormula>AND
+   (
+      ISCHANGED(Test_Name__c)
+     ,NOT(ISBLANK(Test_Name__c))
+     ,Format_Of_Class__c = &quot;Exam&quot;
+     ,NOT(ISPICKVAL( Certification_Exam_Agreement__c, &quot;Accept&quot;))
+     ,not($Permission.Allow_Training_Data_Changes)
+   )</errorConditionFormula>
+        <errorDisplayField>Test_Name__c</errorDisplayField>
+        <errorMessage>Cannot enter test name if certification exam agreement is not accepted</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_enroll_on_inact_ent_train_agr</fullName>
+        <active>true</active>
+        <description>Prevent enrollments on inactive training agreements</description>
+        <errorConditionFormula>AND(ISNEW(), NOT Enterprise_Training_Agreement__r.Is_Active__c,  NOT ISBLANK( Enterprise_Training_Agreement__c ) )</errorConditionFormula>
+        <errorDisplayField>Enterprise_Training_Agreement__c</errorDisplayField>
+        <errorMessage>Enterprise Training Agreement is inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Resend_Notifications_flags_Send_Email</fullName>
+        <active>true</active>
+        <description>The validation rule ensures that the Resend Notifications flags only can be checked when Send Email is true</description>
+        <errorConditionFormula>AND( NOT ( Send_Email__c ) , OR( Send_Awaiting_Payment_Notification__c,  Send_Cancelled_Notification__c,  Send_Class_Cancellation_Notification__c,  Send_Completion_Certificate_Notification__c,  Send_Exam_Notification__c,  Send_Registered_AP_Notification__c,  Send_Registered_Notification__c,  Send_Registered_Reminder_Notification__c, Send_Waitlisted_Notification__c  ))</errorConditionFormula>
+        <errorDisplayField>Send_Email__c</errorDisplayField>
+        <errorMessage>Resend Notifications flags only can be checked when Send Email is checked</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Enrollment</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Enrollment</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/xdomain/xdomain.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/37.0/integration.js&quot;)}
+
+var navigateToUrl = &apos;/apex/EnrollmentPage?&apos;;
+if(&apos;{!Contact.Id}&apos; != &apos;&apos;) {
+    navigateToUrl += &apos;en={!Contact.Id}&amp;&apos;;
+}
+if(&apos;{!Enterprise_Training_Agreement__c.Id}&apos; != &apos;&apos;) {
+    navigateToUrl += &apos;ea={!Enterprise_Training_Agreement__c.Id}&amp;&apos;;
+}
+if(&apos;{!Class__c.Id}&apos; != &apos;&apos;) {
+    navigateToUrl += &apos;cl={!Class__c.Id}&amp;&apos;;
+}
+
+if (sforce.console.isInConsole()) {
+    sforce.console.getEnclosingPrimaryTabId(function(result) {
+        var tabId = result.id;
+        if(tabId !== null || tabId !== &apos;&apos;) {
+        	sforce.console.openSubtab(tabId, navigateToUrl + &apos;retURL=&apos; + window.location.pathname, true, &apos;Register Enrollment&apos;, null);
+        } else {
+        	sforce.console.openPrimaryTab(null, navigateToUrl + &apos;retURL=&apos; + window.location.pathname, true, &apos;Register Enrollment&apos;, null, null);
+        }
+    });
+} else {
+    window.location.href = navigateToUrl + &apos;retURL=&apos; + window.location.pathname;
+}</url>
+    </webLinks>
+</CustomObject>

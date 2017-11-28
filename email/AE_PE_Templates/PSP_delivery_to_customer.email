@@ -1,0 +1,13 @@
+PSP Version:
+
+Summary: 
+
+Account Name: {!MW_Project__c.Account__c}
+
+Customer Contact: {!MW_Project__c.Customer_Contact__c} 
+
+Office Location: {!MW_Project__c.Office__c}
+
+Owner: {!MW_Project__c.OwnerFullName}
+
+Project in Salesforce: {!MW_Project__c.Project_Link__c}

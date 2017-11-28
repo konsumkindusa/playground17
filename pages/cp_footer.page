@@ -1,0 +1,28 @@
+<apex:page >
+
+    <footer id="footer" class="bs-footer"> 
+        <!-- BASIC FOOTER CONTENT - Begin --> 
+        <div class="container"> 
+            <div class="footer" translate="no">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9">
+                        <div class="clearfix"></div>
+                        <ul class="footernav">
+                            <li class="footernav_patents"><a href="{!$Label.MySR_Footer_Patents_Url}">{!$Label.MySR_Footer_Patents}</a></li>
+                            <li class="footernav_trademarks"><a href="{!$Label.MySR_Footer_Trademarks_Url}">{!$Label.MySR_Footer_Trademarks}</a></li>
+                            <li class="footernav_privacy"><a href="{!$Label.MySR_Footer_Privacy_Policy_Url}">{!$Label.MySR_Footer_Privacy_Policy}</a></li>
+                            <li class="footernav_piracy"><a href="{!$Label.MySR_Footer_Preventing_Piracy_Url}">{!$Label.MySR_Footer_Preventing_Piracy}</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                        <p class="copyright" translate="no">&copy; 1994-{!year(today())} The MathWorks, Inc.</p>
+                    </div>
+                    <div class="clearfix visible-sm add_margin_10"></div>
+                    <div class="col-xs-12 col-md-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BASIC FAT FOOTER CONTENT - End -->
+    </footer>
+</apex:page>

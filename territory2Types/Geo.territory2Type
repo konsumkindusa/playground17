@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Type xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Territories that are assigned to Accounts based strictly on the geographical properties of the Account such as city, state, country.</description>
+    <name>Geo</name>
+    <priority>0</priority>
+</Territory2Type>

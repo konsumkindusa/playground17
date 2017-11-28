@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response when new case is submitted</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC ES Auto Reply (with EN)</name>
+    <style>freeForm</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>POR FAVOR NO CONTESTE A ESTE MENSAJE- Esta es una respuesta generada automáticamente.
+
+Caso Nº:  {!Case.CaseNumber}
+
+
+
+Muchas gracias por contactar con el Departamento de Pedidos de MathWorks. Hemos recibido su solicitud.
+
+
+
+Si usted está enviando un pedido, le informamos que recibirá una confirmación de pedido tan pronto como el mismo sea procesado.
+
+
+
+Si usted tiene alguna pregunta sobre este caso, por favor contáctenos. Por favor tenga en cuenta que le preguntaremos su número de caso, por lo que es necesario que lo anote para cualquier comunicación.
+
+
+
+Atentamente,
+
+MathWorks, Inc.
+
+Departamento de Pedidos
+
+
+
+
+
+
+PLEASE DO NOT REPLY TO THIS MESSAGE. This is an auto-generated reply to your request.
+
+CASE ID:  {!Case.CaseNumber}
+
+
+
+Thank you very much for contacting the MathWorks Order Receipt Desk.  We have received your request.
+
+
+
+If you are placing an order, we will email you an Order Confirmation as soon as we process your order.
+
+
+
+If you have any questions about this case, please contact us. We will ask you for the above mentioned Case ID, so please make a note of it.
+
+
+Sincerely,
+
+MathWorks
+
+Order Receipt Desk
+
+
+
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

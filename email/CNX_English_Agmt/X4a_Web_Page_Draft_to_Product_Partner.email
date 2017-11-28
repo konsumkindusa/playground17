@@ -1,0 +1,33 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+Review your Connections Program Web page within 2 weeks
+===========================================
+Attached is the draft I have created of your Connections Program Web page for {!Partner_Agreement__c.Partner_Agreement_Name__c}. I used the basic information from your original application and applied our standard format. Please review the draft carefully, make any edits or additions, and add graphics as appropriate using the Web Page guidelines found on the Connections Help Desk Web site (see details below). Should the edits you return not meet the standard format; we reserve the right to make appropriate edits. 
+
+To have your Web page make the next scheduled update to the Web area, please return your edits within 2 weeks. Web edits that come in sooner will be processed sooner. If 2 weeks is not sufficient, please let me know as soon as possible. 
+
+When we receive your Web page edits, we will send you a short response to let you know we have received them. If you do not receive this reply within 2 business days, please send us an e-mail without an attachment letting us know when you sent the edits and what type of file you sent. Unfortunately, we have been having some trouble with edits being caught by spam and virus filters. If you do not receive a reply from us within 2 days, we did not receive your edits.
+
+If you would like The MathWorks to include a link to your Web site on your Connections Program Web page, please mention MATLAB or The MathWorks somewhere on your Web site and link it, or a Connections Program Partner Logo back to http://www.mathworks.com. Partner Logos may be obtained via our Connections Help Desk. 
+
+Access our Partner Web site, Connections Help Desk
+========================================
+The Connections Help Desk is a Web site just for our partners, that is filled with information such as marketing and sales benefits, technical information, and request forms. To access the Connections Help Desk, point your browser to the following URL. Because this is an unusual URL, we recommend that you take the time right away to bookmark or add it to your "favorites" listing.
+
+https://www.mathworks.com/partners
+
+You will be prompted for a user name and password. Please note that the user name and password are case sensitive. 
+
+User Name: CNXproduct
+Password:  Ima#1p
+
+Location of Web Page Guidelines on the Help Desk
+====================================================
+To access the Web Page Guidelines, log on to the Connections Help Desk using the instructions above, then click on the left-hand navigation button entitled "Marketing Your Product."  In the fifth paragraph, under "Update Your Connections Web Page", click on the relevant link. 
+
+If you have any questions or suggestions about the Connections Help Desk or how we can work together, please contact us at connections@mathworks.com.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

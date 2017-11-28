@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to customer when Account details are missing or is an Indvidual account</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EC2 SV Home Use No Account</name>
+    <style>none</style>
+    <subject>The MathWorks - Account Information Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

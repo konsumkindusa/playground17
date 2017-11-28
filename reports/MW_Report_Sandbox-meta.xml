@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>MW_Report_Sandbox_Users</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>Sales_Report_Admin</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>MW Report Sandbox</name>
+</ReportFolder>

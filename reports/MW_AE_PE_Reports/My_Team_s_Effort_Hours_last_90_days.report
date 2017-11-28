@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>Project_Time_Card__c.Hours__c</columnName>
+        <highBreakpoint>28.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>20.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project_Time_Card__c.Hours__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shows total hours for each team member by week for the last 90 days. Color coding helps spot any weeks with missed or erroneous time card entries.</description>
+    <filter>
+        <criteriaItems>
+            <column>Project_Time_Card__c.My_Team_Time_Card__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project_Time_Card__c.Activity_Type__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Admin</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project_Time_Card__c.Week_Ending__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CHILD_CREATED_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>My Team&apos;s Effort Hours (last 90 days)</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MW_Project__c$Project_Time_Card__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Project_Time_Card__c.Week_Ending__c</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

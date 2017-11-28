@@ -1,0 +1,15 @@
+<!-- 
+/**
+* @author Original: Jesfer Baculod - Cloud Sherpas/Mathworks
+* @date Original: 19 June 2013
+* @description page that redirects the user to original Case detail page on Cloning  
+*/ 
+-->
+<apex:page standardController="Case" extensions="CaseCloneOverrideController" showHeader="false" sidebar="false">
+    <apex:form >
+    <apex:actionFunction name="DeleteClonedCase" action="{!CancelClonedCase}"/>
+    </apex:form>
+    <script>
+        DeleteClonedCase();
+    </script>
+</apex:page>

@@ -1,0 +1,15 @@
+Dear {!Case.Contact},
+
+Here is the quote for your Sales Support License. Please reference your quote number on your purchase order.  These are processed in your local currency to our MathWorks US office: 3 Apple Hill Drive, Natick, MA 01760.
+
+To complete your order we must receive a purchase order or payment information.
+
+To ensure your order is processed correctly please submit your payment information to The MathWorks Connections Program Team by email to connections@mathworks.com. 
+
+If you have any questions, please feel free to contact me or any member of the Connections Program Team at connections@mathworks.com. Thank you.  
+
+Best regards, 
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

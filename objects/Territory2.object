@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>CaseAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>ContactAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DeveloperName</fullName>
+    </fields>
+    <fields>
+        <fullName>Global_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Global Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Include_In_Sales_Hierarchy__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Include In Sales Hierarchy</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Master_Territory_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Logical unique identifier for a Territory - used as key between systems (Salesforce, CDS, Warehouse, etc.)</inlineHelpText>
+        <label>Master Territory ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Migration_ID__c</fullName>
+        <description>Salesforce ID from staging environments to be used for migrating complete structure to high level environments</description>
+        <externalId>false</externalId>
+        <label>Migration ID</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>Office_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Channel</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct</fullName>
+                    <default>false</default>
+                    <label>Direct</label>
+                </value>
+                <value>
+                    <fullName>Indirect</fullName>
+                    <default>false</default>
+                    <label>Indirect</label>
+                </value>
+                <value>
+                    <fullName>Office</fullName>
+                    <default>false</default>
+                    <label>Office</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Office_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Group</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER - House</fullName>
+                    <default>false</default>
+                    <label>AMER - House</label>
+                </value>
+                <value>
+                    <fullName>APAC - House</fullName>
+                    <default>false</default>
+                    <label>APAC - House</label>
+                </value>
+                <value>
+                    <fullName>APAC Indirect</fullName>
+                    <default>false</default>
+                    <label>APAC Indirect</label>
+                </value>
+                <value>
+                    <fullName>EMEA Direct Non Office</fullName>
+                    <default>false</default>
+                    <label>EMEA Direct Non Office</label>
+                </value>
+                <value>
+                    <fullName>EMEA - House</fullName>
+                    <default>false</default>
+                    <label>EMEA - House</label>
+                </value>
+                <value>
+                    <fullName>EMEA Indirect</fullName>
+                    <default>false</default>
+                    <label>EMEA Indirect</label>
+                </value>
+                <value>
+                    <fullName>Latin America</fullName>
+                    <default>false</default>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Ireland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Ireland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Nordic</fullName>
+                    <default>false</default>
+                    <label>MathWorks Nordic</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA (Direct)</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA (Direct)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Office</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AMER - House</fullName>
+                    <default>false</default>
+                    <label>AMER - House</label>
+                </value>
+                <value>
+                    <fullName>APAC - House</fullName>
+                    <default>false</default>
+                    <label>APAC - House</label>
+                </value>
+                <value>
+                    <fullName>China Overlay</fullName>
+                    <default>false</default>
+                    <label>China Overlay</label>
+                </value>
+                <value>
+                    <fullName>Componentes Electronicas Ltda</fullName>
+                    <default>false</default>
+                    <label>Componentes Electronicas Ltda</label>
+                </value>
+                <value>
+                    <fullName>EMEA Direct Non Office</fullName>
+                    <default>false</default>
+                    <label>EMEA Direct Non Office</label>
+                </value>
+                <value>
+                    <fullName>EMEA - House</fullName>
+                    <default>false</default>
+                    <label>EMEA - House</label>
+                </value>
+                <value>
+                    <fullName>ETMC Exponenta Ltd</fullName>
+                    <default>false</default>
+                    <label>ETMC Exponenta Ltd</label>
+                </value>
+                <value>
+                    <fullName>FIGES</fullName>
+                    <default>false</default>
+                    <label>FIGES</label>
+                </value>
+                <value>
+                    <fullName>Gamax Laboratory Solutions Kft</fullName>
+                    <default>false</default>
+                    <label>Gamax Laboratory Solutions Kft</label>
+                </value>
+                <value>
+                    <fullName>Humusoft</fullName>
+                    <default>false</default>
+                    <label>Humusoft</label>
+                </value>
+                <value>
+                    <fullName>India Edu-Gov/Overlay</fullName>
+                    <default>false</default>
+                    <label>India Edu-Gov/Overlay</label>
+                </value>
+                <value>
+                    <fullName>MathWorks AB (Sweden)</fullName>
+                    <default>false</default>
+                    <label>MathWorks AB (Sweden)</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Ireland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Ireland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>Mentor Hellas</fullName>
+                    <default>false</default>
+                    <label>Mentor Hellas</label>
+                </value>
+                <value>
+                    <fullName>MultiOn Comm/Overlay</fullName>
+                    <default>false</default>
+                    <label>MultiOn Comm/Overlay</label>
+                </value>
+                <value>
+                    <fullName>MultiOn Distributor</fullName>
+                    <default>false</default>
+                    <label>MultiOn Distributor</label>
+                </value>
+                <value>
+                    <fullName>Natick - AMER</fullName>
+                    <default>false</default>
+                    <label>Natick - AMER</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA (Direct)</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA (Direct)</label>
+                </value>
+                <value>
+                    <fullName>ONT</fullName>
+                    <default>false</default>
+                    <label>ONT</label>
+                </value>
+                <value>
+                    <fullName>OpenCadd</fullName>
+                    <default>false</default>
+                    <label>OpenCadd</label>
+                </value>
+                <value>
+                    <fullName>Opti-Num Solutions</fullName>
+                    <default>false</default>
+                    <label>Opti-Num Solutions</label>
+                </value>
+                <value>
+                    <fullName>Softline - CIS</fullName>
+                    <default>false</default>
+                    <label>Softline - CIS</label>
+                </value>
+                <value>
+                    <fullName>Systematics</fullName>
+                    <default>false</default>
+                    <label>Systematics</label>
+                </value>
+                <value>
+                    <fullName>TechSource</fullName>
+                    <default>false</default>
+                    <label>TechSource</label>
+                </value>
+                <value>
+                    <fullName>Terasoft</fullName>
+                    <default>false</default>
+                    <label>Terasoft</label>
+                </value>
+                <value>
+                    <fullName>World Express</fullName>
+                    <default>false</default>
+                    <label>World Express</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OpportunityAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>ParentTerritory2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER</fullName>
+                    <default>false</default>
+                    <label>AMER</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Siebel_Territory_ID__c</fullName>
+        <description>Territory ID from Siebel that will be used as a lookup value from the Account to assign the appropriate Salesforce Territory.</description>
+        <externalId>false</externalId>
+        <label>Siebel Territory ID</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory2ModelId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Territory2TypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Territory_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Industry</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AERO</fullName>
+                    <default>false</default>
+                    <label>AERO</label>
+                </value>
+                <value>
+                    <fullName>AUTO</fullName>
+                    <default>false</default>
+                    <label>AUTO</label>
+                </value>
+                <value>
+                    <fullName>CES</fullName>
+                    <default>false</default>
+                    <label>CES</label>
+                </value>
+                <value>
+                    <fullName>CROSS</fullName>
+                    <default>false</default>
+                    <label>CROSS</label>
+                </value>
+                <value>
+                    <fullName>EDU</fullName>
+                    <default>false</default>
+                    <label>EDU</label>
+                </value>
+                <value>
+                    <fullName>EP</fullName>
+                    <default>false</default>
+                    <label>EP</label>
+                </value>
+                <value>
+                    <fullName>FIN</fullName>
+                    <default>false</default>
+                    <label>FIN</label>
+                </value>
+                <value>
+                    <fullName>GOV</fullName>
+                    <default>false</default>
+                    <label>GOV</label>
+                </value>
+                <value>
+                    <fullName>IAM</fullName>
+                    <default>false</default>
+                    <label>IAM</label>
+                </value>
+                <value>
+                    <fullName>MED</fullName>
+                    <default>false</default>
+                    <label>MED</label>
+                </value>
+                <value>
+                    <fullName>UNKNOWN</fullName>
+                    <default>false</default>
+                    <label>UNKNOWN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Sales Group</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AMER - House</fullName>
+                    <default>false</default>
+                    <label>AMER - House</label>
+                </value>
+                <value>
+                    <fullName>APAC - House</fullName>
+                    <default>false</default>
+                    <label>APAC - House</label>
+                </value>
+                <value>
+                    <fullName>EMEA - House</fullName>
+                    <default>false</default>
+                    <label>EMEA - House</label>
+                </value>
+                <value>
+                    <fullName>EMEA Other</fullName>
+                    <default>false</default>
+                    <label>EMEA Other</label>
+                </value>
+                <value>
+                    <fullName>ETMC Exponenta Ltd</fullName>
+                    <default>false</default>
+                    <label>ETMC Exponenta Ltd</label>
+                </value>
+                <value>
+                    <fullName>FIGES</fullName>
+                    <default>false</default>
+                    <label>FIGES</label>
+                </value>
+                <value>
+                    <fullName>Gamax</fullName>
+                    <default>false</default>
+                    <label>Gamax</label>
+                </value>
+                <value>
+                    <fullName>Hoare Research</fullName>
+                    <default>false</default>
+                    <label>Hoare Research</label>
+                </value>
+                <value>
+                    <fullName>Humusoft</fullName>
+                    <default>false</default>
+                    <label>Humusoft</label>
+                </value>
+                <value>
+                    <fullName>Latin America</fullName>
+                    <default>false</default>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Ireland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Ireland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Nordic</fullName>
+                    <default>false</default>
+                    <label>MathWorks Nordic</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>Mentor Hellas</fullName>
+                    <default>false</default>
+                    <label>Mentor Hellas</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Aero</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Aero</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Aero-Geo So Cal</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Aero-Geo So Cal</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Auto</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Auto</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Auto-Geo MI</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Auto-Geo MI</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-CES-Geo No Cal</fullName>
+                    <default>false</default>
+                    <label>NA Comm-CES-Geo No Cal</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-CES-Geo Northwest</fullName>
+                    <default>false</default>
+                    <label>NA Comm-CES-Geo Northwest</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Fin</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Fin</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Fin-Geo East</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Fin-Geo East</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Geo East</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Geo East</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Geo Midwest</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Geo Midwest</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-Gov-Geo Beltway</fullName>
+                    <default>false</default>
+                    <label>NA Comm-Gov-Geo Beltway</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-IAM-EP-Geo So Central</fullName>
+                    <default>false</default>
+                    <label>NA Comm-IAM-EP-Geo So Central</label>
+                </value>
+                <value>
+                    <fullName>NA Comm-IAM-EP-Geo Southwest</fullName>
+                    <default>false</default>
+                    <label>NA Comm-IAM-EP-Geo Southwest</label>
+                </value>
+                <value>
+                    <fullName>NA EDU</fullName>
+                    <default>false</default>
+                    <label>NA EDU</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA</label>
+                </value>
+                <value>
+                    <fullName>ONT</fullName>
+                    <default>false</default>
+                    <label>ONT</label>
+                </value>
+                <value>
+                    <fullName>Opti-Num Solutions</fullName>
+                    <default>false</default>
+                    <label>Opti-Num Solutions</label>
+                </value>
+                <value>
+                    <fullName>Softline - CIS</fullName>
+                    <default>false</default>
+                    <label>Softline - CIS</label>
+                </value>
+                <value>
+                    <fullName>Systematics</fullName>
+                    <default>false</default>
+                    <label>Systematics</label>
+                </value>
+                <value>
+                    <fullName>TechSource</fullName>
+                    <default>false</default>
+                    <label>TechSource</label>
+                </value>
+                <value>
+                    <fullName>Terasoft</fullName>
+                    <default>false</default>
+                    <label>Terasoft</label>
+                </value>
+                <value>
+                    <fullName>World Express</fullName>
+                    <default>false</default>
+                    <label>World Express</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Team_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Sales Team Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blended</fullName>
+                    <default>false</default>
+                    <label>Blended</label>
+                </value>
+                <value>
+                    <fullName>CMA</fullName>
+                    <default>false</default>
+                    <label>CMA</label>
+                </value>
+                <value>
+                    <fullName>EDU</fullName>
+                    <default>false</default>
+                    <label>EDU</label>
+                </value>
+                <value>
+                    <fullName>Geo</fullName>
+                    <default>false</default>
+                    <label>Geo</label>
+                </value>
+                <value>
+                    <fullName>House</fullName>
+                    <default>false</default>
+                    <label>House</label>
+                </value>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                    <label>Major</label>
+                </value>
+                <value>
+                    <fullName>Mixed</fullName>
+                    <default>false</default>
+                    <label>Mixed</label>
+                </value>
+                <value>
+                    <fullName>Named</fullName>
+                    <default>false</default>
+                    <label>Named</label>
+                </value>
+                <value>
+                    <fullName>NMA</fullName>
+                    <default>false</default>
+                    <label>NMA</label>
+                </value>
+                <value>
+                    <fullName>UNKNOWN</fullName>
+                    <default>false</default>
+                    <label>UNKNOWN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Territory_Sector__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Sector</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Comm/Gov</fullName>
+                    <default>false</default>
+                    <label>Comm/Gov</label>
+                </value>
+                <value>
+                    <fullName>Edu</fullName>
+                    <default>false</default>
+                    <label>Edu</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unique_Master_Territory__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Stores Concatenation of Master Territory Id and Territory Model Id so Master Territory Id is unique within territory Model.</description>
+        <externalId>false</externalId>
+        <label>Unique Master Territory</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>Active_Territories</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <columns>is_Active__c</columns>
+        <columns>TERRITORY_TYPE.NAME</columns>
+        <columns>Territory_Sales_Group__c</columns>
+        <columns>Master_Territory_ID__c</columns>
+        <columns>Include_In_Sales_Hierarchy__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Territories</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_EDU_Territories</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>contains</operation>
+            <value>EDU</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All EDU Territories</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Territories</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Territories</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Australia</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>AU-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Australia</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Benelux</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>BX-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Benelux</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>China</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <columns>Territory_Sales_Group__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>CN-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>China</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>France</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>FR-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>France</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Germany</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>DE-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Germany</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>India</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>IN-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>India</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Italy</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>IT-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Italy</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Japan</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>JP-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Japan</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Korea</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>KR-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Korea</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Nordic</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>NRD-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Nordic</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>North_America</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <columns>Territory_Sales_Group__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>NA-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>North America</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Spain</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>ES-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Spain</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Switzerland</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>CH-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Switzerland</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>UK</fullName>
+        <columns>TERR_NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ROLLUP_DESCRIPTION</columns>
+        <columns>is_Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TERR_NAME</field>
+            <operation>startsWith</operation>
+            <value>UK-</value>
+        </filters>
+        <filters>
+            <field>is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>UK</label>
+        <language>en_US</language>
+    </listViews>
+</CustomObject>

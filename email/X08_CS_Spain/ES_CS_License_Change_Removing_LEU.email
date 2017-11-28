@@ -1,0 +1,25 @@
+Estimado/a {!Case.Contact},
+
+Usted ha solicitado eliminar un usuario final de la Licencia #######.  A continuación le indicamos el procedimiento a seguir para eliminar usuarios. Por favor tenga en cuenta que solamente el Administrador o el Asset Manager tienen permiso para realizar esta acción y que con ella se desactivarán las activaciones previas. 
+
+Para eliminar un usuario de una Licencia, el  Administrador o Asset Manager deben ingresar al License Center desde su Cuenta MathWorks en: mathworks.com/licensecenter y seguir estas instrucciones:
+
+1) Hacer click en la fila de la licencia que desea modificar  
+2) Hacer click en la pestaña "Edit Users and License Contacts"
+3) Elegir el usuario que desean eliminar y hacer click en el ícono “Remove User”   
+4) Por favor tener en cuenta que esta acción provocará que se desactive la licencia.
+
+Una vez que las activaciones previas hayan sido desactivadas y el software se haya desinstalado de los correspondientes equipos, el Administrador o Asset Manager podrán comenzar el Proceso de  Activación para un Nuevo Usuario.
+
+Para aprender más acerca de la Activación de su licencia, puede seguir el link que figura a continuación, que requiere que se conecte a su Cuenta MathWorks:   http://www.mathworks.com/support/activation/index.html?BB=1    
+
+Para aprender más acerca de la Desactivación de su licencia, haga click en: http://www.mathworks.com/support/solutions/data/1-698KQP.html?solution=1-698KQP
+
+Si necesita más ayuda en relación a este Caso, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

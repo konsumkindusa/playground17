@@ -1,0 +1,23 @@
+{!Enterprise_Training_Agreement__c.Primary_Contact__c} 様、
+
+{!Enterprise_Training_Agreement__c.Account_Name__c}  のMathWorksオンライントレーニングに同意いただき、誠にありがとうございます。次の専用リンクからアクセスしてください。
+
+{!Enterprise_Training_Agreement__c.Active_Self_Enrollment_URL__c}
+
+アクセス数や登録時の制限によりますが、次のコースへのアクセスが認められています。
+
+[COURSE NAME#1] 
+[COURSE NAME#2] 
+[COURSE NAME#3] 
+[COURSE NAME#4] 
+[…]
+
+注意事項：現在の終了期限は、{!Enterprise_Training_Agreement__c.Term_End_Date__c}です。ユーザーは終了期限までにコースにアクセスし、コンテンツを完了する必要があります。また、同意いただいたEメールドメインで登録されたMathWorksアカウントが必要です。
+
+ご質問
+ご不明な点などございましたら、 {!Enterprise_Training_Agreement__c.Sponsor_Office_Phone__c}  もしくは {!Enterprise_Training_Agreement__c.Sponsor_Office_Email__c} までお問い合わせください。
+
+以上、よろしくお願い申し上げます。
+
+MathWorks トレーニングサービス
+{!Enterprise_Training_Agreement__c.Sponsor_Office_Signature__c}

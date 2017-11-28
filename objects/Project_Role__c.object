@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to identify the role a contact is playing related to a specific project.  A contact can be related to multiple projects.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>Returns the Latin name of the account</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Contact__r.Account.Account_Name_Latin__c), Contact__r.Account.Name , Contact__r.Account.Account_Name_Latin__c)</formula>
+        <label>Account</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>used to related a contact to the project</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact related to the contact role object</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Project Contact Roles</relationshipLabel>
+        <relationshipName>Project_Contact_Roles</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Email address of contact</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Email</formula>
+        <inlineHelpText>Email address of contact</inlineHelpText>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <description>used to reflect the job title of the related contact</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Title</formula>
+        <inlineHelpText>used to reflect the job title of the related contact</inlineHelpText>
+        <label>Job Title</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>used to relate a project contact role to a project record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the related project</inlineHelpText>
+        <label>Related Project</label>
+        <referenceTo>MW_Project__c</referenceTo>
+        <relationshipLabel>Related Contacts</relationshipLabel>
+        <relationshipName>Project_Contact_Roles</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>used to identify the role a contact plays in this particular relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose a role that the contact is playing in relationship to this specific project</inlineHelpText>
+        <label>Role</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dean</fullName>
+                    <default>false</default>
+                    <label>Dean</label>
+                </value>
+                <value>
+                    <fullName>Department Head/Chair</fullName>
+                    <default>false</default>
+                    <label>Department Head/Chair</label>
+                </value>
+                <value>
+                    <fullName>Faculty</fullName>
+                    <default>false</default>
+                    <label>Faculty</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                    <label>Staff</label>
+                </value>
+                <value>
+                    <fullName>Primary Contact</fullName>
+                    <default>false</default>
+                    <label>Primary Contact</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Siebel_Role_Id__c</fullName>
+        <description>Siebel Role ID</description>
+        <externalId>true</externalId>
+        <label>Siebel Role Id</label>
+        <length>70</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Technical_Resource_Group__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Related_Project__r.Technical_Resource_Group__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Technical Resource Group</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Project_Contact_Role_Association__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>This field will store the concatenation of Project Id and Contact Id to determine uniqueness of the relationship and prevent any duplicates</description>
+        <externalId>false</externalId>
+        <label>Unique Project Contact Role Association</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Project Contact Role</label>
+    <nameField>
+        <displayFormat>PCR-{0000000}</displayFormat>
+        <label>Project Role Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Project Contact Roles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

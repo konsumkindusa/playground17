@@ -1,0 +1,38 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせを頂き、誠にありがとうございます。
+
+DVDメディアのご依頼を頂きましたお客様には、恐れ入りますが
+一度ダウンロードをお試し頂くようご案内を致しております。
+ダウンロード方法につきましては下記リンクをご参照くださいますよう
+よろしくお願い致します。
+
+(MATLAB 関連製品のダウンロードを行いたいのですが、どのように行いますか？)
+http://www.mathworks.com/matlabcentral/answers/94903
+
+またライセンス管理者の場合、ISO Imageをダウンロードしていただけます。
+
+(どのようにMATLABのISOイメージをダウンロードしますか​。)
+http://jp.mathworks.com/matlabcentral/answers/129819-matlab-iso
+
+(ISO イメージで MathWorks 製品をインストールするにはどうすればよいですか?)
+http://jp.mathworks.com/matlabcentral/answers/93967-iso-mathworks
+
+上記をお試しいただいたにもかかわらず、セキュリティなどの影響により
+ダウンロードができない場合には、カスタマーサービスまでご連絡くださいますよう、お願いいたします。
+
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のReference IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://jp.mathworks.com/support/contact_us/
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Case ID: {!Case.CaseNumber}

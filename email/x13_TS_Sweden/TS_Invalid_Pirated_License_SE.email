@@ -1,0 +1,13 @@
+Hej {!Contact.FirstName} {!Contact.LastName}, 
+
+Licensnummer {!Case.License__c} är ett ogiltigt licensnummer. För att kunna använda MATLAB och någon av tilläggsprodukterna måste du ha en giltig licens.
+
+Vänligen skicka följande information för att vi ska kunna verifiera din installation av MathWorks produkter:
+1) Har du en egen licens för MathWorks produkter eller använder du ditt företags / organisations licens?
+2) Om du inte använder din egen licens, vad är namnet på det företag eller organisation där du arbetar?
+3) Ett telefonnummer till dig eller den person som ansvarar för licensierade programvaror på ditt företag.
+
+Vänliga hälsningar, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

@@ -1,0 +1,11 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+[We received your signed Terms and Conditions, thank you.] Your Connections Program application is still under review. This process can take several months depending on the reviewers schedules. As soon as I am informed of the review team's decision, I will send you an update.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

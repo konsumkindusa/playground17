@@ -1,0 +1,43 @@
+<!-- 
+/**
+* @author Original: Archana Lohar- Cloud Sherpas/Mathworks, Last Modified: Archana Lohar - Cloud Sherpas/Mathworks
+* @date Original: 28 May 2014, Last Modified: 28 May 2014
+* @description page for CDSLookup
+*/ 
+-->
+<apex:page standardController="Contact" extensions="GlobalContactSearchController" showHeader="{!$CurrentPage.parameters.noHeader}" sidebar="{!$CurrentPage.parameters.noSidebar}">
+
+    <apex:form >
+      
+    <apex:pageMessages id="pageError"/>
+      
+       <h3>Global Contact Search</h3>  
+        <apex:pageBlock id="gcspgBlckId" >  
+            <apex:pageBlockButtons > 
+                <apex:commandButton action="{!searchContact}" value="Lookup"  status="status" reRender="status,pageError,searchoptions,gcspgBlckId"/>                         
+                <apex:commandButton action="{!Cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>            
+            <apex:pageBlockSection >       
+                   <apex:inputfield value="{!contObj.email}" label="Email Address" required="true" onkeydown="if(event.keyCode==13){this.blur();doSearchContact();}" />       
+            </apex:pageBlockSection>
+            
+            <apex:actionFunction name="doSearchContact" action="{!searchContact}" status="status" reRender="status,pageError,searchoptions,gcspgBlckId" />        
+        </apex:pageBlock>       
+         
+        <apex:actionstatus id="status">
+                    <apex:facet name="start">
+                        <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                            <div class="waitingHolder" style="top: 74.2px; opacity: 1.0; width: 91px;">
+                                <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." /> 
+                                <span class="waitingDescription">{!$label.Processin_for_CDS_contact_lookup}</span>
+                            </div>
+                        </div>
+                    </apex:facet>
+                    <apex:facet name="stop">                    
+                    </apex:facet> 
+        </apex:actionstatus>
+        
+        <!--<apex:actionPoller reRender="loadPanelid" interval="5"/>-->
+    </apex:form>
+    
+</apex:page>

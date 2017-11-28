@@ -1,0 +1,19 @@
+Buenos días {!Contact.Name}, 
+
+Le confirmamos su inscripción al curso: 
+
+Nombre del curso: {!Enrollment__c.Class__c}  
+
+Atención: Dispone de {!Class__c.Default_Duration__c} días desde la fecha de compra para acceder y completar el curso. 
+
+Para acceder al contenido del curso visite {!Class__c.Class_URL__c} y acceda con el nombre de usuario y contraseña de su cuenta de MathWorks.
+Si no dispone de una cuenta de MathWorks, cree una para acceder al contenido del curso. 
+Puede que haya un retraso de 10-15 minutos antes de poder acceder al curso después de crear su cuenta de MathWorks.
+
+Si tiene cualquier pregunta, contáctenos a través de training@mathworks.com. 
+
+Para más información sobre cursos ofertados por MathWorks, visite https://es.mathworks.com/services/training.html 
+
+Atentamente,
+
+{!Class__c.Sponsor_Office_Signature__c}

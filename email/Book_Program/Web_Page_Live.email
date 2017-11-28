@@ -1,0 +1,26 @@
+{!Contact.Email}
+[Book Program Email Profile]
+naomi.fernandes@mathworks.com
+
+Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName},
+
+The MathWorks Book Program received a promotional copy of your book {!Book_Project__c.Book_Title__c} and has developed a promotional Web page for it at 
+{!Book_Project__c.MathWorks_Webpage__c}.
+
+As you develop a next edition or new book based on MathWorks products, please take advantage of the resources available on the MathWorks Book Program Member Support Web site (www.mathworks.com/support/books/members) for planning, developing, and promoting your book.
+
+This Member Support Web site also includes important information to help you properly reference MathWorks and our products.  Please be sure to review and apply these editorial standards described in The Trademark and Logo Usage Guidelines linked from the main page of this site.
+
+Thanks for choosing MATLAB. We look forward to working with you in the future.
+
+Regards,
+
+{!User.FirstName} {!User.LastName}
+=============================
+MathWorks Book Program
+3 Apple Hill Drive, Natick, MA 01760
+bookprogram@mathworks.com
+mathworks.com/support/members
+=============================
+
+Book Project: {!Book_Project__c.Name}

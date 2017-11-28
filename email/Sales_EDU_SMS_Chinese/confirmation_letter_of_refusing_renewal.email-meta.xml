@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>确认不续服邮件 confirmation letter of refusing renewal</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>确认不续服邮件 confirmation letter of refusing renewal</name>
+    <style>none</style>
+    <subject>您好,Mathworks软件的维护续约</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

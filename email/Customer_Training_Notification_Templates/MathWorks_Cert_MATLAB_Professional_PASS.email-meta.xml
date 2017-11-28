@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <available>true</available>
+    <description>This email template use for generating Training Certificate for MathWorks Certified MATLAB Professional PASS</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>MathWorks Cert MATLAB Professional PASS</name>
+    <style>none</style>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

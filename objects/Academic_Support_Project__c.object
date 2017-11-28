@@ -1,0 +1,2288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to capture Grant, Curriculum and Student Competition applications
+
+Changed Label from Academic Support Project to EDU Project on 5/4</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>used to related an academic support project to an account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>used to related an academic support project to an account</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Academic_Support_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Application_Category__c</fullName>
+        <description>Used to categorize an application, replaced line items used in siebel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to categorize an application</inlineHelpText>
+        <label>Application Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Applications</fullName>
+                    <default>false</default>
+                    <label>All Applications</label>
+                </value>
+                <value>
+                    <fullName>Communications Systems</fullName>
+                    <default>false</default>
+                    <label>Communications Systems</label>
+                </value>
+                <value>
+                    <fullName>Computational Biology</fullName>
+                    <default>false</default>
+                    <label>Computational Biology</label>
+                </value>
+                <value>
+                    <fullName>Computational Finance</fullName>
+                    <default>false</default>
+                    <label>Computational Finance</label>
+                </value>
+                <value>
+                    <fullName>Control Systems</fullName>
+                    <default>false</default>
+                    <label>Control Systems</label>
+                </value>
+                <value>
+                    <fullName>Digital Signal Processing</fullName>
+                    <default>false</default>
+                    <label>Digital Signal Processing</label>
+                </value>
+                <value>
+                    <fullName>Embedded Systems</fullName>
+                    <default>false</default>
+                    <label>Embedded Systems</label>
+                </value>
+                <value>
+                    <fullName>FPGA Design</fullName>
+                    <default>false</default>
+                    <label>FPGA Design</label>
+                </value>
+                <value>
+                    <fullName>Image Processing &amp; Comp Vision</fullName>
+                    <default>false</default>
+                    <label>Image Processing &amp; Comp Vision</label>
+                </value>
+                <value>
+                    <fullName>Mechatronics</fullName>
+                    <default>false</default>
+                    <label>Mechatronics</label>
+                </value>
+                <value>
+                    <fullName>Technical Computing</fullName>
+                    <default>false</default>
+                    <label>Technical Computing</label>
+                </value>
+                <value>
+                    <fullName>Test and Measurement</fullName>
+                    <default>false</default>
+                    <label>Test and Measurement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <description>Used to delineate the type of program, values vary by record type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to delineate the type of program, values vary by record type</inlineHelpText>
+        <label>Class</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Curriculum Development</fullName>
+                    <default>false</default>
+                    <label>Curriculum Development</label>
+                </value>
+                <value>
+                    <fullName>Industry Advisory Boards/Progs</fullName>
+                    <default>false</default>
+                    <label>Industry Advisory Boards/Progs</label>
+                </value>
+                <value>
+                    <fullName>Letter of Support</fullName>
+                    <default>false</default>
+                    <label>Letter of Support</label>
+                </value>
+                <value>
+                    <fullName>MISC</fullName>
+                    <default>false</default>
+                    <label>MISC</label>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                    <label>Research</label>
+                </value>
+                <value>
+                    <fullName>Student Competitions</fullName>
+                    <default>false</default>
+                    <label>Student Competitions</label>
+                </value>
+                <value>
+                    <fullName>Student Support</fullName>
+                    <default>false</default>
+                    <label>Student Support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Days_between_Start_and_End_Date__c</fullName>
+        <description>COmpares teh start date to the end date</description>
+        <externalId>false</externalId>
+        <formula>ROUND( End__c - Start__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days between Start and End Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_between_Start_and_now__c</fullName>
+        <description>Calculates the days between the Start Date and NOW</description>
+        <externalId>false</externalId>
+        <formula>ROUND((DATEVALUE(Now()) -  Start__c  ),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days between Start and now</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Used to capture a description of the course, grant or competition</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture a description of the course, grant or competition</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2AEmailCount__c</fullName>
+        <description>This field show the count of e2a email which has status as new</description>
+        <externalId>false</externalId>
+        <label>E2AEmailCount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndTime_in_Review_by_Lega__c</fullName>
+        <description>day / time when the staus is moved from Review by Legal</description>
+        <externalId>false</externalId>
+        <label>End Time in Review by Legal</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_Time_in_Customer_Signature__c</fullName>
+        <description>day / time when the staus is moved from Customer Signature</description>
+        <externalId>false</externalId>
+        <label>End Time in Customer Signature</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_Time_in_Review_by_VP_of_Marketing__c</fullName>
+        <description>day / time when the staus is moved from Review by VP of Marketing</description>
+        <externalId>false</externalId>
+        <label>End Time in Review by VP of Marketing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_Time_in_Review_by_other_Mathworkers__c</fullName>
+        <description>day / time when the staus is moved from Review by Other MW&apos;ers</description>
+        <externalId>false</externalId>
+        <label>End Time in Review by Other Mathworkers</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End__c</fullName>
+        <description>Date the agreement for the course, curriculum or competition has ended.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the agreement for the course, curriculum or competition has ended.</inlineHelpText>
+        <label>End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extended_End__c</fullName>
+        <description>Date the multi-year award will end based on requestor start date.  May be updated after a final approval date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the multi-year award will end based on requestor start date.  May be updated after a final approval date.</inlineHelpText>
+        <label>Extended End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Final_Approval__c</fullName>
+        <description>Denotes the date that the request was approved</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the date that the request was approved</inlineHelpText>
+        <label>Final Approval</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to indicate if the Academic Support Project needs follow up action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to indicate if the Academic Support Project needs follow up action</inlineHelpText>
+        <label>Follow Up Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Has_TAH_License__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>capture if an AS Project has a TAH license or not</description>
+        <externalId>false</externalId>
+        <label>Has TAH License</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <description>Used to categorize the industry the application fits into.  Replaced line items used in siebel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to categorize the industry the application fits into</inlineHelpText>
+        <label>Industry</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Industries</fullName>
+                    <default>false</default>
+                    <label>All Industries</label>
+                </value>
+                <value>
+                    <fullName>Aerospace and Defense</fullName>
+                    <default>false</default>
+                    <label>Aerospace and Defense</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Biotech &amp; Pharmaceutical</fullName>
+                    <default>false</default>
+                    <label>Biotech &amp; Pharmaceutical</label>
+                </value>
+                <value>
+                    <fullName>Medical Devices</fullName>
+                    <default>false</default>
+                    <label>Medical Devices</label>
+                </value>
+                <value>
+                    <fullName>Chemical and Petroleum</fullName>
+                    <default>false</default>
+                    <label>Chemical and Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Communication Infrastructure</fullName>
+                    <default>false</default>
+                    <label>Communication Infrastructure</label>
+                </value>
+                <value>
+                    <fullName>Communication Devices</fullName>
+                    <default>false</default>
+                    <label>Communication Devices</label>
+                </value>
+                <value>
+                    <fullName>Computer Electronics</fullName>
+                    <default>false</default>
+                    <label>Computer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Consumer Goods</fullName>
+                    <default>false</default>
+                    <label>Consumer Goods</label>
+                </value>
+                <value>
+                    <fullName>Earth and Ocean Sciences</fullName>
+                    <default>false</default>
+                    <label>Earth and Ocean Sciences</label>
+                </value>
+                <value>
+                    <fullName>Consumer Electronics</fullName>
+                    <default>false</default>
+                    <label>Consumer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Food and Beverage</fullName>
+                    <default>false</default>
+                    <label>Food and Beverage</label>
+                </value>
+                <value>
+                    <fullName>Industrial Automation and Mach</fullName>
+                    <default>false</default>
+                    <label>Industrial Automation and Mach</label>
+                </value>
+                <value>
+                    <fullName>Instrumentation</fullName>
+                    <default>false</default>
+                    <label>Instrumentation</label>
+                </value>
+                <value>
+                    <fullName>Metals, Materials and Mining</fullName>
+                    <default>false</default>
+                    <label>Metals, Materials and Mining</label>
+                </value>
+                <value>
+                    <fullName>Pulp and Paper</fullName>
+                    <default>false</default>
+                    <label>Pulp and Paper</label>
+                </value>
+                <value>
+                    <fullName>Rail Ships &amp; other Transport</fullName>
+                    <default>false</default>
+                    <label>Rail Ships &amp; other Transport</label>
+                </value>
+                <value>
+                    <fullName>Semiconductor</fullName>
+                    <default>false</default>
+                    <label>Semiconductor</label>
+                </value>
+                <value>
+                    <fullName>Software and Internet</fullName>
+                    <default>false</default>
+                    <label>Software and Internet</label>
+                </value>
+                <value>
+                    <fullName>Technical Svcs &amp; Consulting</fullName>
+                    <default>false</default>
+                    <label>Technical Svcs &amp; Consulting</label>
+                </value>
+                <value>
+                    <fullName>Utilities and Energy</fullName>
+                    <default>false</default>
+                    <label>Utilities and Energy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>License_Activated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will be manually set by the user once the License is activated.</description>
+        <externalId>false</externalId>
+        <label>License Activated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>New_Email_Message__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>used to denote that a new email has been related to the record, not on page layout and used in list views.</description>
+        <externalId>false</externalId>
+        <label>New Email Message</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to create parent / child relationships between academic support records.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to create parent / child relationships between academic support records.  Use this look up to make this record a child of another.</inlineHelpText>
+        <label>Parent</label>
+        <referenceTo>Academic_Support_Project__c</referenceTo>
+        <relationshipName>Academic_Support</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Academic_Support_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Receive_Time_of_Last_Email__c</fullName>
+        <description>The day / time when the last email was received.</description>
+        <externalId>false</externalId>
+        <label>Receive Time of Last Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Record_Number__c</fullName>
+        <description>Creates a unique sequential number for records created</description>
+        <displayFormat>AS-{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Record Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used for data migration, captures the Siebel ID for migrated records.  Can be used for search in Salesforce</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Used for data migration, captures the Siebel ID for migrated records.  Can be used to search records in Salesforce</inlineHelpText>
+        <label>Siebel ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsoring_Office__c</fullName>
+        <description>Used to identify the sponsoring office where the request originated from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to identify the sponsoring office where the request originated from.</inlineHelpText>
+        <label>Sponsoring Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Nordic</fullName>
+                    <default>false</default>
+                    <label>MathWorks Nordic</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Worldwide</fullName>
+                    <default>false</default>
+                    <label>MathWorks Worldwide</label>
+                </value>
+                <value>
+                    <fullName>Natick - AMER</fullName>
+                    <default>false</default>
+                    <label>Natick - AMER</label>
+                </value>
+                <value>
+                    <fullName>Natick - APAC</fullName>
+                    <default>false</default>
+                    <label>Natick - APAC</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Time_in_Customer_Signature__c</fullName>
+        <description>the day / time when the Status is changed to Customer Signature</description>
+        <externalId>false</externalId>
+        <label>Start Time in Customer Signature</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time_in_Review_By_Other_Mathworker__c</fullName>
+        <description>the day / time when the Status is changed to Review by other MWers</description>
+        <externalId>false</externalId>
+        <label>Start Time in Review By Other Mathworker</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time_in_Review_by_Legal__c</fullName>
+        <description>the day / time when the Status is changed to Review by Legal</description>
+        <externalId>false</externalId>
+        <label>Start Time in Review by Legal</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time_in_Review_by_VP_of_Marketing__c</fullName>
+        <description>the day / time when the Status is changed to Review by VP of Marketing</description>
+        <externalId>false</externalId>
+        <label>Start Time in Review by VP of Marketing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start__c</fullName>
+        <description>Date that the completed external application and internal proposal (if applicable) from the internal MathWorks sponsor was received.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the completed external application and internal proposal (if applicable) from the internal MathWorks sponsor was received.</inlineHelpText>
+        <label>Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND((Now() -  Status_Updated_date__c  ),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Updated_date__c</fullName>
+        <description>indicated when the status was last updated</description>
+        <externalId>false</externalId>
+        <label>Status Updated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Used to capture the status for the Academic Support record and drive process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the status for the Academic Support record and drive process</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>true</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>Sponsor Updating Proposal</fullName>
+                    <default>false</default>
+                    <label>Sponsor Updating Proposal</label>
+                </value>
+                <value>
+                    <fullName>Review by VP of Marketing</fullName>
+                    <default>false</default>
+                    <label>Review by VP of Marketing</label>
+                </value>
+                <value>
+                    <fullName>Review by Other MathWorkers</fullName>
+                    <default>false</default>
+                    <label>Review by Other MathWorkers</label>
+                </value>
+                <value>
+                    <fullName>Review by Legal</fullName>
+                    <default>false</default>
+                    <label>Review by Legal</label>
+                </value>
+                <value>
+                    <fullName>Customer Signature</fullName>
+                    <default>false</default>
+                    <label>Customer Signature</label>
+                </value>
+                <value>
+                    <fullName>Implementation</fullName>
+                    <default>false</default>
+                    <label>Implementation</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Signature</fullName>
+                    <default>false</default>
+                    <label>MathWorks Signature</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Closed - No Response</fullName>
+                    <default>false</default>
+                    <label>Closed - No Response</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+                <value>
+                    <fullName>Spam</fullName>
+                    <default>false</default>
+                    <label>Spam</label>
+                </value>
+                <value>
+                    <fullName>No Action</fullName>
+                    <default>false</default>
+                    <label>No Action</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Class__c</fullName>
+        <description>Dependent on Class, provides more detail to the class</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Dependent on Class, provides more detail to the class</inlineHelpText>
+        <label>Sub Class</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Class__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>IAB/IAP</fullName>
+                    <default>false</default>
+                    <label>IAB/IAP</label>
+                </value>
+                <value>
+                    <fullName>Awards</fullName>
+                    <default>false</default>
+                    <label>Awards</label>
+                </value>
+                <value>
+                    <fullName>External Events Support</fullName>
+                    <default>false</default>
+                    <label>External Events Support</label>
+                </value>
+                <value>
+                    <fullName>Prize-MATLAB Student Version</fullName>
+                    <default>false</default>
+                    <label>Prize-MATLAB Student Version</label>
+                </value>
+                <value>
+                    <fullName>Development-Collaboration Research Grants</fullName>
+                    <default>false</default>
+                    <label>Development-Collaboration Research Grants</label>
+                </value>
+                <value>
+                    <fullName>Other Research Grants – Faculty Research Project</fullName>
+                    <default>false</default>
+                    <label>Other Research Grants – Faculty Research Project</label>
+                </value>
+                <value>
+                    <fullName>Other Research Grants – Projects for Undergraduates/Graduates</fullName>
+                    <default>false</default>
+                    <label>Other Research Grants – Projects for Undergraduates/Graduates</label>
+                </value>
+                <value>
+                    <fullName>Corporate Sponsored</fullName>
+                    <default>false</default>
+                    <label>Corporate Sponsored</label>
+                </value>
+                <value>
+                    <fullName>Individual Student Team</fullName>
+                    <default>false</default>
+                    <label>Individual Student Team</label>
+                </value>
+                <value>
+                    <fullName>Fellowship</fullName>
+                    <default>false</default>
+                    <label>Fellowship</label>
+                </value>
+                <value>
+                    <fullName>Scholarship</fullName>
+                    <default>false</default>
+                    <label>Scholarship</label>
+                </value>
+                <value>
+                    <fullName>Teaching Assistant</fullName>
+                    <default>false</default>
+                    <label>Teaching Assistant</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Industry Advisory Boards/Progs</controllingFieldValue>
+                <valueName>IAB/IAP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MISC</controllingFieldValue>
+                <valueName>Awards</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MISC</controllingFieldValue>
+                <valueName>External Events Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MISC</controllingFieldValue>
+                <valueName>Prize-MATLAB Student Version</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Research</controllingFieldValue>
+                <valueName>Development-Collaboration Research Grants</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Research</controllingFieldValue>
+                <valueName>Other Research Grants – Faculty Research Project</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Research</controllingFieldValue>
+                <valueName>Other Research Grants – Projects for Undergraduates/Graduates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Student Competitions</controllingFieldValue>
+                <valueName>Corporate Sponsored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Student Competitions</controllingFieldValue>
+                <valueName>Individual Student Team</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Student Support</controllingFieldValue>
+                <valueName>Fellowship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Student Support</controllingFieldValue>
+                <valueName>Scholarship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Student Support</controllingFieldValue>
+                <valueName>Teaching Assistant</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Support_level__c</fullName>
+        <description>Used for Curriculum development only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for curriculum development only.  Select the appropriate value.</inlineHelpText>
+        <label>Support Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>University</fullName>
+                    <default>false</default>
+                    <label>University</label>
+                </value>
+                <value>
+                    <fullName>Pre-University</fullName>
+                    <default>false</default>
+                    <label>Pre-University</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TE_Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Relate a Project to an Academic Support Project</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relate a TE Project to an Academic Support Project</inlineHelpText>
+        <label>TE Project</label>
+        <referenceTo>MW_Project__c</referenceTo>
+        <relationshipName>Academic_Support_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Thread_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;LEFT( $Organization.Id , 4 )&amp;
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;),
+RIGHT($Organization.Id,4),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;),
+RIGHT($Organization.Id,5),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;),
+RIGHT($Organization.Id,6),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;),
+RIGHT($Organization.Id,7),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;),
+RIGHT($Organization.Id,8),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;),
+RIGHT($Organization.Id,9),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;),
+RIGHT($Organization.Id,10),
+RIGHT($Organization.Id,11)
+)
+)
+)
+)
+)
+)
+)
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp;
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4),
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5),
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6),
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7),
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8),
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9),
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10),
+RIGHT(Id,11)
+)
+)
+)
+)
+)
+)
+)
+&amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_in_Customer_Signature__c</fullName>
+        <externalId>false</externalId>
+        <formula>End_Time_in_Customer_Signature__c -  Start_Time_in_Customer_Signature__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time in Customer Signature</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_in_Review_By_Legal__c</fullName>
+        <externalId>false</externalId>
+        <formula>EndTime_in_Review_by_Lega__c -  Start_Time_in_Review_by_Legal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time in Review By Legal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_in_Review_By_Other_Mathworkers__c</fullName>
+        <externalId>false</externalId>
+        <formula>End_Time_in_Review_by_other_Mathworkers__c -  Start_Time_in_Review_By_Other_Mathworker__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time in Review By Other Mathworkers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_in_Review_By_VP_of_Marketing__c</fullName>
+        <externalId>false</externalId>
+        <formula>End_Time_in_Review_by_VP_of_Marketing__c -  Start_Time_in_Review_by_VP_of_Marketing__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time in Review By VP of Marketing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Monetary_Investment__c</fullName>
+        <description>Summary roll up of investment records of type monetary</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summary roll up of investment records of type monetary</inlineHelpText>
+        <label>Total Monetary Investment</label>
+        <summarizedField>Investment__c.Payment_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Investment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Monetary</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Investment__c.Academic_Support_Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Web_Site__c</fullName>
+        <description>Used to capture a URL for a course or competition</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture a URL for a course or competition</inlineHelpText>
+        <label>Web Site</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>EDU Project</label>
+    <listViews>
+        <fullName>AS_w_new_Email_or_require_followup</fullName>
+        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Class__c</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Follow_Up_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Spam,No Action</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Academic_Support</value>
+        </filters>
+        <label>AS w/new Email or require followup</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>CURRENCY_ISO_CODE</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>In_Progress_Academic_Support_Projects</fullName>
+        <columns>CURRENCY_ISO_CODE</columns>
+        <columns>NAME</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status_Age__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not Started,Closed - No Response,Complete,Denied,Spam,No Action</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Academic_Support</value>
+        </filters>
+        <label>In Progress Academic Support Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>In_Progress_Student_Comp_Projects</fullName>
+        <columns>CURRENCY_ISO_CODE</columns>
+        <columns>NAME</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status_Age__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not Started,Closed - No Response,Complete,Denied,Spam,No Action</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Student_Competition</value>
+        </filters>
+        <label>In Progress Student Comp Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Academic_Support_Projects</fullName>
+        <columns>CURRENCY_ISO_CODE</columns>
+        <columns>NAME</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not Started,Closed - No Response,Complete,Denied,Spam,No Action</value>
+        </filters>
+        <label>My Open Academic Support Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>Natick_Academic_Support_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Class__c</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sponsoring_Office__c</field>
+            <operation>equals</operation>
+            <value>MathWorks Natick</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Academic_Support</value>
+        </filters>
+        <label>Natick Academic Support Projects</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Natick_Student_Comp_Projects</fullName>
+        <columns>NAME</columns>
+        <columns>Class__c</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sponsoring_Office__c</field>
+            <operation>equals</operation>
+            <value>MathWorks Natick</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Student_Competition</value>
+        </filters>
+        <label>Natick Student Comp Projects</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>New_Academic_Support_Projects</fullName>
+        <columns>CURRENCY_ISO_CODE</columns>
+        <columns>NAME</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Not Started</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Academic_Support</value>
+        </filters>
+        <label>New Academic Support Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>New_Student_Comp_Projects</fullName>
+        <columns>CURRENCY_ISO_CODE</columns>
+        <columns>NAME</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Not Started</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Student_Competition</value>
+        </filters>
+        <label>New Student Comp Projects</label>
+    </listViews>
+    <listViews>
+        <fullName>SC_w_new_Email_or_require_followup</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Class__c</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Follow_Up_Required__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Student_Competition</value>
+        </filters>
+        <label>SC w/new Email or require followup</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Student_Competition_Academic_Support_Project</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Student Competition</label>
+        <queue>Student_Competition</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Academic_Support_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Academic_Support</value>
+        </filters>
+        <label>Unassigned Academic Support Requests</label>
+        <queue>Academic_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Student_Comp_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>Sub_Class__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Academic_Support_Project__c.Student_Competition</value>
+        </filters>
+        <label>Unassigned Student Comp Requests</label>
+        <queue>Student_Competition</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>EDU Projects</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Academic_Support</fullName>
+        <active>true</active>
+        <description>Used to track curriculum development &amp; research applications &amp; agreements</description>
+        <label>Academic Support</label>
+        <picklistValues>
+            <picklist>Application_Category__c</picklist>
+            <values>
+                <fullName>All Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Embedded Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FPGA Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image Processing %26 Comp Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechatronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Computing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Curriculum Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Advisory Boards%2FProgs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter of Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MISC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competitions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All Industries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech %26 Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Mach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail Ships %26 other Transport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software and Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Svcs %26 Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities and Energy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsoring_Office__c</picklist>
+            <values>
+                <fullName>MathWorks Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Worldwide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Review by Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review by Other MathWorkers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review by VP of Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsor Updating Proposal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Class__c</picklist>
+            <values>
+                <fullName>Awards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-Collaboration Research Grants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Events Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fellowship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IAB%2FIAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual Student Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Research Grants %E2%80%93 Faculty Research Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Research Grants %E2%80%93 Projects for Undergraduates%2FGraduates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prize-MATLAB Student Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scholarship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teaching Assistant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Support_level__c</picklist>
+            <values>
+                <fullName>Pre-University</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>University</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Student_Competition</fullName>
+        <active>true</active>
+        <label>Student Competition</label>
+        <picklistValues>
+            <picklist>Application_Category__c</picklist>
+            <values>
+                <fullName>All Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Embedded Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FPGA Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image Processing %26 Comp Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechatronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Computing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Curriculum Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industry Advisory Boards%2FProgs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter of Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MISC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competitions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All Industries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech %26 Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Mach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail Ships %26 other Transport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software and Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Svcs %26 Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities and Energy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsoring_Office__c</picklist>
+            <values>
+                <fullName>MathWorks Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Worldwide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed - No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Review by Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review by Other MathWorkers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review by VP of Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsor Updating Proposal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Class__c</picklist>
+            <values>
+                <fullName>Awards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Development-Collaboration Research Grants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Events Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fellowship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IAB%2FIAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual Student Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Research Grants %E2%80%93 Faculty Research Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Research Grants %E2%80%93 Projects for Undergraduates%2FGraduates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prize-MATLAB Student Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scholarship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teaching Assistant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Support_level__c</picklist>
+            <values>
+                <fullName>Pre-University</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>University</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Class__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Sub_Class__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Industry__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Primary_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Record_Number__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Class__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sub_Class__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Industry__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Primary_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Record_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Class__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Sub_Class__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Industry__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Primary_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Record_Number__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Account__c</searchFilterFields>
+        <searchFilterFields>Application_Category__c</searchFilterFields>
+        <searchFilterFields>Class__c</searchFilterFields>
+        <searchFilterFields>Industry__c</searchFilterFields>
+        <searchFilterFields>Primary_Contact__c</searchFilterFields>
+        <searchFilterFields>Sub_Class__c</searchFilterFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Class__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sub_Class__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Industry__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Record_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Class_required</fullName>
+        <active>true</active>
+        <description>Class is required except when Status = Not Started, Spam, No Action, Closed - No Response</description>
+        <errorConditionFormula>AND(
+Not(ISPICKVAL(Status__c, &quot;Not Started&quot;)),
+Not(ISPICKVAL(Status__c, &quot;SPAM&quot;)),
+Not(ISPICKVAL(Status__c, &quot;No Action&quot;)),
+Not(ISPICKVAL(Status__c, &quot;Closed - No Response&quot;)),
+ISPICKVAL( Class__c, &quot;&quot;)
+
+)</errorConditionFormula>
+        <errorDisplayField>Class__c</errorDisplayField>
+        <errorMessage>Class Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sub_Class_Required</fullName>
+        <active>true</active>
+        <description>Sub Class Required when Class is populated, if there are available Sub Classes</description>
+        <errorConditionFormula>AND(
+NOT(ISPICKVAL(Class__c, &quot;Letter of Support&quot;)),
+NOT(ISPICKVAL(Class__c, &quot;Curriculum Development&quot;)),(ISPICKVAL( Sub_Class__c, &quot;&quot;)),
+Not(ISPICKVAL(Status__c, &quot;Not Started&quot;)), 
+Not(ISPICKVAL(Status__c, &quot;SPAM&quot;)), 
+Not(ISPICKVAL(Status__c, &quot;No Action&quot;)), 
+Not(ISPICKVAL(Status__c, &quot;Closed - No Response&quot;))
+
+)</errorConditionFormula>
+        <errorDisplayField>Sub_Class__c</errorDisplayField>
+        <errorMessage>Sub Class Required</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

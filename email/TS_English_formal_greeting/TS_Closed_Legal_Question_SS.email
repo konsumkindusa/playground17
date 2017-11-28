@@ -1,0 +1,13 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+I am writing in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+MathWorks Technical Support cannot provide you legal advice concerning your Application. 
+
+If you have general questions concerning the MathWorks Software License Agreement, you may send those questions to contracts@mathworks.com. 
+
+Please do not provide any information that you consider to be proprietary or confidential, as MathWorks will only respond to questions of general application to the Software License Agreement. 
+
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

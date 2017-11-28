@@ -1,0 +1,32 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+We have confirmed that your license was renewed.  If you are still receiving a MATLAB warning message you likely need to update your installation.  Below is the process for this update:
+
+1.) Select the MATLAB ‘Help’ Menu
+2.) Select ‘Licensing’  ‘Update current licenses…’
+3.) Make sure your license number is highlighted and continue
+4.) Once complete, restart MATLAB.                                                              
+
+If you have further questions, please contact support@mathworks.com. If you have new technical support questions, please submit a request here:
+
+http://www.mathworks.com/contact_TS.html
+
+Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}
+
+From: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Name__c} [{!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Address__c}] 
+Sent: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Message_Date__c} 
+To: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__To_Address__c} 
+Subject: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Subject__c} 
+ 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

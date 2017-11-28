@@ -1,0 +1,2845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is used to capture agreements with companies for Partners &amp; No Charge agreements.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account_Location__c</fullName>
+        <description>cross object formula that pulls the location from the related Account (OOTB Account Site field, label changed to Location)</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Site</formula>
+        <inlineHelpText>Location of the related account.  Note if no account is related to the Agreement, this field will be blank.</inlineHelpText>
+        <label>Account Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Latin__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Account_Name_Latin__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name (Latin)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Account</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Partner Agreements</relationshipLabel>
+        <relationshipName>Partner_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Date__c</fullName>
+        <description>Represents a specific action on an agreement, creating for future use, do not add to page layout</description>
+        <externalId>false</externalId>
+        <label>Action Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Agreement_Application__c</fullName>
+        <description>Used to capture the body of a submitted agreement (processed via the email handler)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the body of a submitted agreement (processed via the email handler)</inlineHelpText>
+        <label>Agreement Application</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Agreement_Status_Updated__c</fullName>
+        <description>the date/time when the last Agreement Status was changed</description>
+        <externalId>false</externalId>
+        <label>Agreement Status Updated</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Applications</fullName>
+                    <default>false</default>
+                    <label>All Applications</label>
+                </value>
+                <value>
+                    <fullName>Communications Systems</fullName>
+                    <default>false</default>
+                    <label>Communications Systems</label>
+                </value>
+                <value>
+                    <fullName>Computational Biology</fullName>
+                    <default>false</default>
+                    <label>Computational Biology</label>
+                </value>
+                <value>
+                    <fullName>Computational Finance</fullName>
+                    <default>false</default>
+                    <label>Computational Finance</label>
+                </value>
+                <value>
+                    <fullName>Control Systems</fullName>
+                    <default>false</default>
+                    <label>Control Systems</label>
+                </value>
+                <value>
+                    <fullName>Digital Signal Processing</fullName>
+                    <default>false</default>
+                    <label>Digital Signal Processing</label>
+                </value>
+                <value>
+                    <fullName>Embedded Systems</fullName>
+                    <default>false</default>
+                    <label>Embedded Systems</label>
+                </value>
+                <value>
+                    <fullName>FPGA Design</fullName>
+                    <default>false</default>
+                    <label>FPGA Design</label>
+                </value>
+                <value>
+                    <fullName>Image Processing &amp; Comp Vision</fullName>
+                    <default>false</default>
+                    <label>Image Processing &amp; Comp Vision</label>
+                </value>
+                <value>
+                    <fullName>Mechatronics</fullName>
+                    <default>false</default>
+                    <label>Mechatronics</label>
+                </value>
+                <value>
+                    <fullName>Technical Computing</fullName>
+                    <default>false</default>
+                    <label>Technical Computing</label>
+                </value>
+                <value>
+                    <fullName>Test and Measurement</fullName>
+                    <default>false</default>
+                    <label>Test and Measurement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CMS_ID__c</fullName>
+        <description>allows users to free text the CMS ID related to the agreement</description>
+        <externalId>false</externalId>
+        <label>CMS ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Class__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Managed</fullName>
+                    <default>false</default>
+                    <label>Managed</label>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>Connections</fullName>
+                    <default>false</default>
+                    <label>Connections</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Technical Support</controllingFieldValue>
+                <controllingFieldValue>Regression Testing</controllingFieldValue>
+                <controllingFieldValue>Training</controllingFieldValue>
+                <controllingFieldValue>RTS</controllingFieldValue>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <controllingFieldValue>VAR</controllingFieldValue>
+                <controllingFieldValue>VARI</controllingFieldValue>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <controllingFieldValue>Sales Support</controllingFieldValue>
+                <valueName>Connections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Support</controllingFieldValue>
+                <controllingFieldValue>Regression Testing</controllingFieldValue>
+                <controllingFieldValue>Training</controllingFieldValue>
+                <controllingFieldValue>RTS</controllingFieldValue>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <controllingFieldValue>VAR</controllingFieldValue>
+                <controllingFieldValue>VARI</controllingFieldValue>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <controllingFieldValue>Sales Support</controllingFieldValue>
+                <valueName>Marketing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Support</controllingFieldValue>
+                <controllingFieldValue>Regression Testing</controllingFieldValue>
+                <controllingFieldValue>Training</controllingFieldValue>
+                <controllingFieldValue>RTS</controllingFieldValue>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <controllingFieldValue>VAR</controllingFieldValue>
+                <controllingFieldValue>VARI</controllingFieldValue>
+                <controllingFieldValue>Development</controllingFieldValue>
+                <controllingFieldValue>Sales Support</controllingFieldValue>
+                <valueName>Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Service</controllingFieldValue>
+                <controllingFieldValue>Local Office</controllingFieldValue>
+                <controllingFieldValue>Distributor</controllingFieldValue>
+                <valueName>Managed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Service</controllingFieldValue>
+                <controllingFieldValue>Local Office</controllingFieldValue>
+                <controllingFieldValue>Distributor</controllingFieldValue>
+                <valueName>A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Service</controllingFieldValue>
+                <controllingFieldValue>Local Office</controllingFieldValue>
+                <controllingFieldValue>Distributor</controllingFieldValue>
+                <valueName>B</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Service</controllingFieldValue>
+                <controllingFieldValue>Local Office</controllingFieldValue>
+                <controllingFieldValue>Distributor</controllingFieldValue>
+                <valueName>C</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <description>Captures the class of the agreement, dependent on Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures the class of the agreement, dependent on Type</inlineHelpText>
+        <label>Class</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Local Office</fullName>
+                    <default>false</default>
+                    <label>Local Office</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>RTS</fullName>
+                    <default>false</default>
+                    <label>RTS</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+                <value>
+                    <fullName>VAR</fullName>
+                    <default>false</default>
+                    <label>VAR</label>
+                </value>
+                <value>
+                    <fullName>VARI</fullName>
+                    <default>false</default>
+                    <label>VARI</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Sales Support</fullName>
+                    <default>false</default>
+                    <label>Sales Support</label>
+                </value>
+                <value>
+                    <fullName>Technical Support</fullName>
+                    <default>false</default>
+                    <label>Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Regression Testing</fullName>
+                    <default>false</default>
+                    <label>Regression Testing</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Interface Devel Needs</fullName>
+                    <default>false</default>
+                    <label>Interface Devel Needs</label>
+                </value>
+                <value>
+                    <fullName>Interface Mtkg Needs</fullName>
+                    <default>false</default>
+                    <label>Interface Mtkg Needs</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Product Devel Support</fullName>
+                    <default>false</default>
+                    <label>MathWorks Product Devel Support</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Vendor - Need Software per Contract</fullName>
+                    <default>false</default>
+                    <label>MathWorks Vendor - Need Software per Contract</label>
+                </value>
+                <value>
+                    <fullName>Platform Vendor</fullName>
+                    <default>false</default>
+                    <label>Platform Vendor</label>
+                </value>
+                <value>
+                    <fullName>Retired MathWorks Customer or Employee</fullName>
+                    <default>false</default>
+                    <label>Retired MathWorks Customer or Employee</label>
+                </value>
+                <value>
+                    <fullName>Support Key Externally-Driven Project</fullName>
+                    <default>false</default>
+                    <label>Support Key Externally-Driven Project</label>
+                </value>
+                <value>
+                    <fullName>Toolbox/Code Author</fullName>
+                    <default>false</default>
+                    <label>Toolbox/Code Author</label>
+                </value>
+                <value>
+                    <fullName>Interface Devel and Mktg Needs</fullName>
+                    <default>false</default>
+                    <label>Interface Devel and Mktg Needs</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Service</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Local Office</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Distributor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>RTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>OEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>VAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>VARI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <valueName>Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <valueName>Sales Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <valueName>Technical Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <valueName>Regression Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <valueName>Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Interface Devel Needs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Interface Mtkg Needs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>MathWorks Product Devel Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>MathWorks Vendor - Need Software per Contract</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Platform Vendor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Retired MathWorks Customer or Employee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Support Key Externally-Driven Project</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Toolbox/Code Author</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Interface Devel and Mktg Needs</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Days_From_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>((DATEVALUE(NOW())- Start_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days From Start Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Denied_Prohibited__c</fullName>
+        <description>Denotes if the related account has a denied prohibited flag on it.</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Denied_Prohibited_Account__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Reflects the denied/prohibited status of the related account.  If there is no account related to the agreement this will be blank.</inlineHelpText>
+        <label>Denied/Prohibited</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>E2AEmailCount__c</fullName>
+        <description>This field store the count of e2a email which has status as new</description>
+        <externalId>false</externalId>
+        <label>E2AEmailCount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>Date partner was removed from the program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date partner was removed from the program</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extended_End_Date__c</fullName>
+        <description>date of license maintenance end date, used for no charge only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of license maintenance end.  Used for No Charge agreements only</inlineHelpText>
+        <label>Extended End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Final_Approval_Date__c</fullName>
+        <description>date partner went active in the program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date partner went active in the program</inlineHelpText>
+        <label>Final Approval Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>used to indicate if the Partner Agreement needs follow up action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>used to indicate if the Partner Agreement needs follow up action</inlineHelpText>
+        <label>Follow Up Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Industries</fullName>
+                    <default>false</default>
+                    <label>All Industries</label>
+                </value>
+                <value>
+                    <fullName>Aerospace and Defense</fullName>
+                    <default>false</default>
+                    <label>Aerospace and Defense</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Biotech &amp; Pharmaceutical</fullName>
+                    <default>false</default>
+                    <label>Biotech &amp; Pharmaceutical</label>
+                </value>
+                <value>
+                    <fullName>Medical Devices</fullName>
+                    <default>false</default>
+                    <label>Medical Devices</label>
+                </value>
+                <value>
+                    <fullName>Chemical and Petroleum</fullName>
+                    <default>false</default>
+                    <label>Chemical and Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Communication Infrastructure</fullName>
+                    <default>false</default>
+                    <label>Communication Infrastructure</label>
+                </value>
+                <value>
+                    <fullName>Communication Devices</fullName>
+                    <default>false</default>
+                    <label>Communication Devices</label>
+                </value>
+                <value>
+                    <fullName>Computer Electronics</fullName>
+                    <default>false</default>
+                    <label>Computer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Software and Internet</fullName>
+                    <default>false</default>
+                    <label>Software and Internet</label>
+                </value>
+                <value>
+                    <fullName>Consumer Goods</fullName>
+                    <default>false</default>
+                    <label>Consumer Goods</label>
+                </value>
+                <value>
+                    <fullName>Earth and Ocean Sciences</fullName>
+                    <default>false</default>
+                    <label>Earth and Ocean Sciences</label>
+                </value>
+                <value>
+                    <fullName>Consumer Electronics</fullName>
+                    <default>false</default>
+                    <label>Consumer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Food and Beverage</fullName>
+                    <default>false</default>
+                    <label>Food and Beverage</label>
+                </value>
+                <value>
+                    <fullName>Industrial Automation and Mach</fullName>
+                    <default>false</default>
+                    <label>Industrial Automation and Mach</label>
+                </value>
+                <value>
+                    <fullName>Instrumentation</fullName>
+                    <default>false</default>
+                    <label>Instrumentation</label>
+                </value>
+                <value>
+                    <fullName>Metals, Materials and Mining</fullName>
+                    <default>false</default>
+                    <label>Metals, Materials and Mining</label>
+                </value>
+                <value>
+                    <fullName>Pulp and Paper</fullName>
+                    <default>false</default>
+                    <label>Pulp and Paper</label>
+                </value>
+                <value>
+                    <fullName>Rail Ships and other Transport</fullName>
+                    <default>false</default>
+                    <label>Rail Ships and other Transport</label>
+                </value>
+                <value>
+                    <fullName>Semiconductor</fullName>
+                    <default>false</default>
+                    <label>Semiconductor</label>
+                </value>
+                <value>
+                    <fullName>Technical Svcs &amp; Consulting</fullName>
+                    <default>false</default>
+                    <label>Technical Svcs &amp; Consulting</label>
+                </value>
+                <value>
+                    <fullName>Utilities and Energy</fullName>
+                    <default>false</default>
+                    <label>Utilities and Energy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Interface_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Interface Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MATLAB Toolbox/Application</fullName>
+                    <default>false</default>
+                    <label>MATLAB Toolbox/Application</label>
+                </value>
+                <value>
+                    <fullName>MATLAB Interface</fullName>
+                    <default>false</default>
+                    <label>MATLAB Interface</label>
+                </value>
+                <value>
+                    <fullName>Simulink Blockset/Application</fullName>
+                    <default>false</default>
+                    <label>Simulink Blockset/Application</label>
+                </value>
+                <value>
+                    <fullName>Simulink Interface</fullName>
+                    <default>false</default>
+                    <label>Simulink Interface</label>
+                </value>
+                <value>
+                    <fullName>Code Generation Target</fullName>
+                    <default>false</default>
+                    <label>Code Generation Target</label>
+                </value>
+                <value>
+                    <fullName>Data Acquisition Tbox Adapter</fullName>
+                    <default>false</default>
+                    <label>Data Acquisition Tbox Adapter</label>
+                </value>
+                <value>
+                    <fullName>Database Connectivity</fullName>
+                    <default>false</default>
+                    <label>Database Connectivity</label>
+                </value>
+                <value>
+                    <fullName>Datafeed Toolbox Data Service</fullName>
+                    <default>false</default>
+                    <label>Datafeed Toolbox Data Service</label>
+                </value>
+                <value>
+                    <fullName>Image Acquisition Tbox Adapter</fullName>
+                    <default>false</default>
+                    <label>Image Acquisition Tbox Adapter</label>
+                </value>
+                <value>
+                    <fullName>Instrument Control Tbox Driver</fullName>
+                    <default>false</default>
+                    <label>Instrument Control Tbox Driver</label>
+                </value>
+                <value>
+                    <fullName>Parallel Computing Scheduler</fullName>
+                    <default>false</default>
+                    <label>Parallel Computing Scheduler</label>
+                </value>
+                <value>
+                    <fullName>Polyspace Interface</fullName>
+                    <default>false</default>
+                    <label>Polyspace Interface</label>
+                </value>
+                <value>
+                    <fullName>Real-Time Windows Tgt Driver</fullName>
+                    <default>false</default>
+                    <label>Real-Time Windows Tgt Driver</label>
+                </value>
+                <value>
+                    <fullName>Requirements Mgmt Interface</fullName>
+                    <default>false</default>
+                    <label>Requirements Mgmt Interface</label>
+                </value>
+                <value>
+                    <fullName>xPC Target Driver/System</fullName>
+                    <default>false</default>
+                    <label>xPC Target Driver/System</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Action_Date__c</fullName>
+        <description>Capture the date of the last action taken</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the date of the last action taken</inlineHelpText>
+        <label>Last Action Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>License_Discount__c</fullName>
+        <description>to keep notes about th elicense disounts and other Partner related license notes</description>
+        <externalId>false</externalId>
+        <label>License Discount Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>License_Discounts_Remaining__c</fullName>
+        <description>counts partner benefit records of type license discount filtered by &apos;unused&apos; checkbox&apos;</description>
+        <externalId>false</externalId>
+        <label>License Discounts Remaining</label>
+        <summaryFilterItems>
+            <field>Partner_Benefits__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>License Discount</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Partner_Benefits__c.Unused_Benefit__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Partner_Benefits__c.Discount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Partner_Benefits__c.Partner_Agreement__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>MW_Focal_Point__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>lookup to contact, filtered on employee flag</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to contact, filtered to only show MathWorks employees</inlineHelpText>
+        <label>MW Focal Point</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.Employee_Flag__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Contacts are filtered to only show MathWorks employees</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Related Partner Agreements</relationshipLabel>
+        <relationshipName>Partner_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_Message__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New Message</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Used to capture notes and other information about the agreement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture notes and other information about the agreement.</inlineHelpText>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Parent_Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to capture the number of the parent agreement (if any)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup field to a parent agreement</inlineHelpText>
+        <label>Parent Agreement</label>
+        <referenceTo>Partner_Agreement__c</referenceTo>
+        <relationshipLabel>Child Agreements</relationshipLabel>
+        <relationshipName>Partner_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Agreement_Name__c</fullName>
+        <description>Used to capture the full name of a partners product/service</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the full name of a partners product/service</inlineHelpText>
+        <label>Partner Agreement Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Response__c</fullName>
+        <description>URL to view the Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL to view the Pre-Product Survey</inlineHelpText>
+        <label>Pre-product - Response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Response_date__c</fullName>
+        <description>The date that survey was received back</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that survey was received back</inlineHelpText>
+        <label>Pre-product - Response date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Status__c</fullName>
+        <description>Track the progress of a survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Track the progress of a survey</inlineHelpText>
+        <label>Pre-product - Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_sent_date__c</fullName>
+        <description>the date the Pre-Product Survey was last sent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>the date the Pre-Product Survey was last sent</inlineHelpText>
+        <label>Pre-product - Sent date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pre_product_no_response__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked when the Customer did nto respond to the Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when the Customer did nto respond to the Pre-Product Survey</inlineHelpText>
+        <label>Pre-product - No response</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pre_product_send__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>check box that indicates that the Pre-Product Survey should be auto sent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, an email will be sent to the Contact that will include the Pre-Product Survey link</inlineHelpText>
+        <label>Pre-product - Send</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>used to identify the primary contact on an agreement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>used to identify the primary contact on an agreement</inlineHelpText>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Partner Agreements (Primary Contact)</relationshipLabel>
+        <relationshipName>Partner_Agreement_Primary_Contact</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Office__c</fullName>
+        <description>Standard list of MW offices</description>
+        <externalId>false</externalId>
+        <label>Primary Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Nordic</fullName>
+                    <default>false</default>
+                    <label>MathWorks Nordic</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Worldwide</fullName>
+                    <default>false</default>
+                    <label>MathWorks Worldwide</label>
+                </value>
+                <value>
+                    <fullName>Natick - AMER</fullName>
+                    <default>false</default>
+                    <label>Natick - AMER</label>
+                </value>
+                <value>
+                    <fullName>Natick - APAC</fullName>
+                    <default>false</default>
+                    <label>Natick - APAC</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prod_Svc_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Prod/Svc Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cameras &amp; Frame Grabbers</fullName>
+                    <default>false</default>
+                    <label>Cameras &amp; Frame Grabbers</label>
+                </value>
+                <value>
+                    <fullName>Data Acquisition Systems</fullName>
+                    <default>false</default>
+                    <label>Data Acquisition Systems</label>
+                </value>
+                <value>
+                    <fullName>Data Analysis Tools</fullName>
+                    <default>false</default>
+                    <label>Data Analysis Tools</label>
+                </value>
+                <value>
+                    <fullName>Databases and Datafeeds</fullName>
+                    <default>false</default>
+                    <label>Databases and Datafeeds</label>
+                </value>
+                <value>
+                    <fullName>Documentation &amp; Report Tools</fullName>
+                    <default>false</default>
+                    <label>Documentation &amp; Report Tools</label>
+                </value>
+                <value>
+                    <fullName>Embedded HW - MCU, DSP, FPGA</fullName>
+                    <default>false</default>
+                    <label>Embedded HW - MCU, DSP, FPGA</label>
+                </value>
+                <value>
+                    <fullName>Embedded SW - Tools, IDE, RTOS</fullName>
+                    <default>false</default>
+                    <label>Embedded SW - Tools, IDE, RTOS</label>
+                </value>
+                <value>
+                    <fullName>HPC Platforms &amp; Schedulers</fullName>
+                    <default>false</default>
+                    <label>HPC Platforms &amp; Schedulers</label>
+                </value>
+                <value>
+                    <fullName>Industrial Controllers &amp; PLCs</fullName>
+                    <default>false</default>
+                    <label>Industrial Controllers &amp; PLCs</label>
+                </value>
+                <value>
+                    <fullName>Lab Experiments</fullName>
+                    <default>false</default>
+                    <label>Lab Experiments</label>
+                </value>
+                <value>
+                    <fullName>Lifecycle Management Software</fullName>
+                    <default>false</default>
+                    <label>Lifecycle Management Software</label>
+                </value>
+                <value>
+                    <fullName>Modeling and Simulation Tools</fullName>
+                    <default>false</default>
+                    <label>Modeling and Simulation Tools</label>
+                </value>
+                <value>
+                    <fullName>Network Protocols</fullName>
+                    <default>false</default>
+                    <label>Network Protocols</label>
+                </value>
+                <value>
+                    <fullName>Rapid Prototyping &amp; HIL System</fullName>
+                    <default>false</default>
+                    <label>Rapid Prototyping &amp; HIL System</label>
+                </value>
+                <value>
+                    <fullName>Robotics Systems</fullName>
+                    <default>false</default>
+                    <label>Robotics Systems</label>
+                </value>
+                <value>
+                    <fullName>Test Instruments</fullName>
+                    <default>false</default>
+                    <label>Test Instruments</label>
+                </value>
+                <value>
+                    <fullName>Verification &amp; Validation Tool</fullName>
+                    <default>false</default>
+                    <label>Verification &amp; Validation Tool</label>
+                </value>
+                <value>
+                    <fullName>Consulting Services</fullName>
+                    <default>false</default>
+                    <label>Consulting Services</label>
+                </value>
+                <value>
+                    <fullName>System Integration Services</fullName>
+                    <default>false</default>
+                    <label>System Integration Services</label>
+                </value>
+                <value>
+                    <fullName>Training Services</fullName>
+                    <default>false</default>
+                    <label>Training Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Qualifying_License_Number__c</fullName>
+        <description>Used to capture the license number of the qualifying license for the application</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the license number of the qualifying license for the application</inlineHelpText>
+        <label>Qualifying License Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receive_Time_of_Last_Email__c</fullName>
+        <description>The day / time when the last email was received.</description>
+        <externalId>false</externalId>
+        <label>Receive Time of Last Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Co-opetition</fullName>
+                    <default>false</default>
+                    <label>Co-opetition</label>
+                </value>
+                <value>
+                    <fullName>Company Co-opetition</fullName>
+                    <default>false</default>
+                    <label>Company Co-opetition</label>
+                </value>
+                <value>
+                    <fullName>Complementary</fullName>
+                    <default>false</default>
+                    <label>Complementary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SSL_Last_Completed__c</fullName>
+        <description>Date the SSL Survey was completed</description>
+        <externalId>false</externalId>
+        <label>SSL Last Completed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SSL_Usage_No_Response__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked when the Customer did not respond to the SSL Usage Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when the Customer did not respond to the SSL Usage Survey</inlineHelpText>
+        <label>SSL Usage - No Response</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SSL_Usage_Response_Date__c</fullName>
+        <description>The date that survey was received back</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that survey was received back</inlineHelpText>
+        <label>SSL Usage - Response Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SSL_Usage_Response__c</fullName>
+        <description>URL to view the SSL Usage Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL to view the SSL Usage Survey</inlineHelpText>
+        <label>SSL Usage - Response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>SSL_Usage_Send__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check box that indicates that the SSL Usage Survey should be auto sent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, an email will be sent to the Contact that will include the SSL Usage Survey link</inlineHelpText>
+        <label>SSL Usage - Send</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SSL_Usage_Sent_Date__c</fullName>
+        <description>The date the SSL Usage Survey was last sent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the SSL Usage Survey was last sent</inlineHelpText>
+        <label>SSL Usage - Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SSL_Usage_Status__c</fullName>
+        <description>Track the progress of a received Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Track the progress of a received Status</inlineHelpText>
+        <label>SSL Usage - Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sector__c</fullName>
+        <externalId>false</externalId>
+        <label>Sector</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial</fullName>
+                    <default>false</default>
+                    <label>Commercial</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Siebel_Agreement_Number__c</fullName>
+        <description>Siebel agreement number, differs from Siebel ID.  This is not meant to be an external ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Siebel agreement number, differs from Siebel ID.  This is not meant to be an external ID</inlineHelpText>
+        <label>Siebel Agreement Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <description>Used to capture legacy agreement number from Siebel Agreements.  This field may be referenced for email handling purposes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture legacy agreement number from Siebel Agreements.  This field may be referenced for email handling purposes.</inlineHelpText>
+        <label>Siebel ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application Deployment</fullName>
+                    <default>false</default>
+                    <label>Application Deployment</label>
+                </value>
+                <value>
+                    <fullName>Code Generation Target</fullName>
+                    <default>false</default>
+                    <label>Code Generation Target</label>
+                </value>
+                <value>
+                    <fullName>Data Analysis/model, Alg devel</fullName>
+                    <default>false</default>
+                    <label>Data Analysis/model, Alg devel</label>
+                </value>
+                <value>
+                    <fullName>Data Import or Acquisition</fullName>
+                    <default>false</default>
+                    <label>Data Import or Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Modeling and Simulation</fullName>
+                    <default>false</default>
+                    <label>Modeling and Simulation</label>
+                </value>
+                <value>
+                    <fullName>Process Support</fullName>
+                    <default>false</default>
+                    <label>Process Support</label>
+                </value>
+                <value>
+                    <fullName>Test, Verification, and Tuning</fullName>
+                    <default>false</default>
+                    <label>Test, Verification, and Tuning</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>Date application was recieved</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Represents the date the application for the agreement was recieved</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Action__c</fullName>
+        <description>allows user to put in the next status action of the Agreement</description>
+        <externalId>false</externalId>
+        <label>Status Action</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND((Now() - Agreement_Status_Updated__c ),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Date__c</fullName>
+        <description>Allows user to input the next action date of the agreement</description>
+        <externalId>false</externalId>
+        <label>Status Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Updated_to_Active__c</fullName>
+        <description>Date when the Status was last changed to Active*</description>
+        <externalId>false</externalId>
+        <label>Status Updated to Active</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Used to manage the agreement process.  Dependent on Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to manage the agreement process.  Dependent on Type</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1a - App Received</fullName>
+                    <default>true</default>
+                    <label>1a - App Received</label>
+                </value>
+                <value>
+                    <fullName>1b - Incomplete App</fullName>
+                    <default>false</default>
+                    <label>1b - Incomplete App</label>
+                </value>
+                <value>
+                    <fullName>1c - Additional App Info</fullName>
+                    <default>false</default>
+                    <label>1c - Additional App Info</label>
+                </value>
+                <value>
+                    <fullName>2a - In Review</fullName>
+                    <default>false</default>
+                    <label>2a - In Review</label>
+                </value>
+                <value>
+                    <fullName>2b - Evaluating</fullName>
+                    <default>false</default>
+                    <label>2b - Evaluating</label>
+                </value>
+                <value>
+                    <fullName>3a - Terms &amp; Conditions</fullName>
+                    <default>false</default>
+                    <label>3a - Terms &amp; Conditions</label>
+                </value>
+                <value>
+                    <fullName>3b - Pre-Product</fullName>
+                    <default>false</default>
+                    <label>3b - Pre-Product</label>
+                </value>
+                <value>
+                    <fullName>3c - References</fullName>
+                    <default>false</default>
+                    <label>3c - References</label>
+                </value>
+                <value>
+                    <fullName>4a - Draft Web Page</fullName>
+                    <default>false</default>
+                    <label>4a - Draft Web Page</label>
+                </value>
+                <value>
+                    <fullName>4b - Web Page Customer</fullName>
+                    <default>false</default>
+                    <label>4b - Web Page Customer</label>
+                </value>
+                <value>
+                    <fullName>4c - Prep for Copy Edit</fullName>
+                    <default>false</default>
+                    <label>4c - Prep for Copy Edit</label>
+                </value>
+                <value>
+                    <fullName>4d - At Copy Edit</fullName>
+                    <default>false</default>
+                    <label>4d - At Copy Edit</label>
+                </value>
+                <value>
+                    <fullName>4e - Make Live</fullName>
+                    <default>false</default>
+                    <label>4e - Make Live</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Active - No Web Page</fullName>
+                    <default>false</default>
+                    <label>Active - No Web Page</label>
+                </value>
+                <value>
+                    <fullName>Active - Out of Compliance</fullName>
+                    <default>false</default>
+                    <label>Active - Out of Compliance</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Inactive - overlap</fullName>
+                    <default>false</default>
+                    <label>Inactive - overlap</label>
+                </value>
+                <value>
+                    <fullName>In Process</fullName>
+                    <default>false</default>
+                    <label>In Process</label>
+                </value>
+                <value>
+                    <fullName>Denied - overlap</fullName>
+                    <default>false</default>
+                    <label>Denied - overlap</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+                <value>
+                    <fullName>1a - Proposal Sent</fullName>
+                    <default>false</default>
+                    <label>1a - Proposal Sent</label>
+                </value>
+                <value>
+                    <fullName>1b - Proposal Received</fullName>
+                    <default>false</default>
+                    <label>1b - Proposal Received</label>
+                </value>
+                <value>
+                    <fullName>1c - Sponsor Updating Proposal</fullName>
+                    <default>false</default>
+                    <label>1c - Sponsor Updating Proposal</label>
+                </value>
+                <value>
+                    <fullName>1d - Proposal Re-review</fullName>
+                    <default>false</default>
+                    <label>1d - Proposal Re-review</label>
+                </value>
+                <value>
+                    <fullName>2a - Management Approval</fullName>
+                    <default>false</default>
+                    <label>2a - Management Approval</label>
+                </value>
+                <value>
+                    <fullName>2b - P&amp;L Approval</fullName>
+                    <default>false</default>
+                    <label>2b - P&amp;L Approval</label>
+                </value>
+                <value>
+                    <fullName>3a - Legal</fullName>
+                    <default>false</default>
+                    <label>3a - Legal</label>
+                </value>
+                <value>
+                    <fullName>3b - Obtain Agmnt Signatures</fullName>
+                    <default>false</default>
+                    <label>3b - Obtain Agmnt Signatures</label>
+                </value>
+                <value>
+                    <fullName>4 - Place the Order</fullName>
+                    <default>false</default>
+                    <label>4 - Place the Order</label>
+                </value>
+                <value>
+                    <fullName>Closed - No Response</fullName>
+                    <default>false</default>
+                    <label>Closed - No Response</label>
+                </value>
+                <value>
+                    <fullName>Closed - Partner No Response</fullName>
+                    <default>false</default>
+                    <label>Closed - Partner No Response</label>
+                </value>
+                <value>
+                    <fullName>1 - Initial Contact</fullName>
+                    <default>false</default>
+                    <label>1 - Initial Contact</label>
+                </value>
+                <value>
+                    <fullName>2a - Discussing Terms</fullName>
+                    <default>false</default>
+                    <label>2a - Discussing Terms</label>
+                </value>
+                <value>
+                    <fullName>2b - Term Sheet Review</fullName>
+                    <default>false</default>
+                    <label>2b - Term Sheet Review</label>
+                </value>
+                <value>
+                    <fullName>4a - Agmt with Customer</fullName>
+                    <default>false</default>
+                    <label>4a - Agmt with Customer</label>
+                </value>
+                <value>
+                    <fullName>4b - Agmt with Legal</fullName>
+                    <default>false</default>
+                    <label>4b - Agmt with Legal</label>
+                </value>
+                <value>
+                    <fullName>4c - Agmt Signed</fullName>
+                    <default>false</default>
+                    <label>4c - Agmt Signed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>1a - App Received</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>1b - Incomplete App</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>1c - Additional App Info</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>2a - In Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>2b - Evaluating</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>3a - Terms &amp; Conditions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>3b - Pre-Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>3c - References</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>4a - Draft Web Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>4b - Web Page Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>4c - Prep for Copy Edit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>4d - At Copy Edit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>4e - Make Live</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Active</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Active - No Web Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Active - Out of Compliance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Inactive</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Inactive - overlap</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Denied - overlap</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Denied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Cancelled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>1 - Initial Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>2a - Discussing Terms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>2b - Term Sheet Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>4a - Agmt with Customer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>4b - Agmt with Legal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Var/OEM</controllingFieldValue>
+                <valueName>4c - Agmt Signed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Restricted Use License</controllingFieldValue>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>In Process</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>1a - Proposal Sent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>1b - Proposal Received</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>1c - Sponsor Updating Proposal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>1d - Proposal Re-review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>2a - Management Approval</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>2b - P&amp;L Approval</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>3a - Legal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>3b - Obtain Agmnt Signatures</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>4 - Place the Order</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Closed - No Response</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Charge</controllingFieldValue>
+                <valueName>Closed - Partner No Response</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Class__c</fullName>
+        <description>Identifies sub class of an agreement, dependent on Class.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies sub class of an agreement, dependent on Class.</inlineHelpText>
+        <label>Sub Class</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Managed</fullName>
+                    <default>false</default>
+                    <label>Managed</label>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>Connections</fullName>
+                    <default>false</default>
+                    <label>Connections</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>MathWorks</fullName>
+                    <default>false</default>
+                    <label>MathWorks</label>
+                </value>
+                <value>
+                    <fullName>Mathworks and Third Party</fullName>
+                    <default>false</default>
+                    <label>Mathworks and Third Party</label>
+                </value>
+                <value>
+                    <fullName>Third Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>T_C_No_Response__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked when the Customer did not respond to the T&amp;C Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when the Customer did not respond to the T&amp;C Survey</inlineHelpText>
+        <label>T&amp;C - No Response</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>T_C_Response_Date__c</fullName>
+        <description>The date that survey was received back</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that survey was received back</inlineHelpText>
+        <label>T&amp;C - Response Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>T_C_Response__c</fullName>
+        <description>URL to view the T&amp;C Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL to view the T&amp;C Survey</inlineHelpText>
+        <label>T&amp;C - Response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>T_C_Send__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check box that indicates that the T&amp;C Survey should be auto sent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, an email will be sent to the Contact that will include the T&amp;C Survey link</inlineHelpText>
+        <label>T&amp;C - Send</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>T_C_Sent_Date__c</fullName>
+        <description>The date the T&amp;C Survey was last sent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the T&amp;C Survey was last sent</inlineHelpText>
+        <label>T&amp;C - Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>T_C_Status__c</fullName>
+        <description>Track the progress of a received Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Track the progress of a received Status</inlineHelpText>
+        <label>T&amp;C - Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Thread_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;LEFT( $Organization.Id , 4 )&amp; 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;), 
+RIGHT($Organization.Id,4), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;), 
+RIGHT($Organization.Id,5), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;), 
+RIGHT($Organization.Id,6), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;), 
+RIGHT($Organization.Id,7), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;), 
+RIGHT($Organization.Id,8), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;), 
+RIGHT($Organization.Id,9), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;), 
+RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp; 
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4), 
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5), 
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6), 
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7), 
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8), 
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9), 
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10), 
+RIGHT(Id,11) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+&amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Training_Discounts_Remaining__c</fullName>
+        <description>Counts partner benefit records of type training discount filtered by &apos;unused&apos; checkbox&apos;</description>
+        <externalId>false</externalId>
+        <label>Training Discounts Remaining</label>
+        <summaryFilterItems>
+            <field>Partner_Benefits__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Training Discount</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Partner_Benefits__c.Unused_Benefit__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Partner_Benefits__c.Partner_Agreement__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Translated_Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to lookup to a related agreement that is the translated version (could be English or Japanese).  One agreement will be related to one translated version only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to relate one agreement to another which represents a translated version.</inlineHelpText>
+        <label>Translated Agreement</label>
+        <referenceTo>Partner_Agreement__c</referenceTo>
+        <relationshipLabel>Translated Agreements</relationshipLabel>
+        <relationshipName>Translated_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Used to capture the type of agreement, note that Class and Sub Class are dependent on this pick list</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the type of agreement, note that Class and Sub Class are dependent on this pick list</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Connections</fullName>
+                    <default>false</default>
+                    <label>Connections</label>
+                </value>
+                <value>
+                    <fullName>Var/OEM</fullName>
+                    <default>false</default>
+                    <label>Var/OEM</label>
+                </value>
+                <value>
+                    <fullName>Restricted Use License</fullName>
+                    <default>false</default>
+                    <label>Restricted Use License</label>
+                </value>
+                <value>
+                    <fullName>No Charge</fullName>
+                    <default>false</default>
+                    <label>No Charge</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vision__c</fullName>
+        <externalId>false</externalId>
+        <label>Vision</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0 - Required for MW product</fullName>
+                    <default>false</default>
+                    <label>0 - Required for MW product</label>
+                </value>
+                <value>
+                    <fullName>1 - Integral</fullName>
+                    <default>false</default>
+                    <label>1 - Integral</label>
+                </value>
+                <value>
+                    <fullName>2 - Supported by MW product</fullName>
+                    <default>false</default>
+                    <label>2 - Supported by MW product</label>
+                </value>
+                <value>
+                    <fullName>3 - Class is integral - major</fullName>
+                    <default>false</default>
+                    <label>3 - Class is integral - major</label>
+                </value>
+                <value>
+                    <fullName>4 - Gap filler</fullName>
+                    <default>false</default>
+                    <label>4 - Gap filler</label>
+                </value>
+                <value>
+                    <fullName>5 - Customer required</fullName>
+                    <default>false</default>
+                    <label>5 - Customer required</label>
+                </value>
+                <value>
+                    <fullName>6 - Door-opener</fullName>
+                    <default>false</default>
+                    <label>6 - Door-opener</label>
+                </value>
+                <value>
+                    <fullName>7 - Class is integral - minor</fullName>
+                    <default>false</default>
+                    <label>7 - Class is integral - minor</label>
+                </value>
+                <value>
+                    <fullName>8 - Plus one</fullName>
+                    <default>false</default>
+                    <label>8 - Plus one</label>
+                </value>
+                <value>
+                    <fullName>9 - Services</fullName>
+                    <default>false</default>
+                    <label>9 - Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Web_Page_URL__c</fullName>
+        <description>allows user to enter the related CMS URl</description>
+        <externalId>false</externalId>
+        <label>Web Page URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>days_to_active__c</fullName>
+        <externalId>false</externalId>
+        <formula>Final_Approval_Date__c - Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to Active</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>partner_count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>partner count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Partner Agreement</label>
+    <listViews>
+        <fullName>X01_Natick_New_Agreements</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>1a - App Received</value>
+        </filters>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>Natick Partner Agreements</value>
+        </filters>
+        <label>01 Natick - New Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X02_Natick_New_Emails_on_Agreements</fullName>
+        <booleanFilter>4 AND 3 AND (1 OR 2)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>notEqual</operation>
+            <value>No Charge</value>
+        </filters>
+        <filters>
+            <field>Primary_Office__c</field>
+            <operation>notEqual</operation>
+            <value>MathWorks Japan</value>
+        </filters>
+        <label>02 Natick - New Emails on Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X03_Natick_All_CNX_Agreements</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_Office__c</field>
+            <operation>equals</operation>
+            <value>MathWorks Natick</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Connections</value>
+        </filters>
+        <label>03 Natick - All CNX Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X04_CNX_All_In_Process_CNX_Agreements</fullName>
+        <columns>Type__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notContain</operation>
+            <value>Closed,active,denied,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>notEqual</operation>
+            <value>Var/OEM,Restricted Use License,No Charge</value>
+        </filters>
+        <label>04 All - In-Process CNX Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X05_CNX_All_In_Process_Demo_Licenses</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notContain</operation>
+            <value>active</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Restricted Use License</value>
+        </filters>
+        <label>05 All - In-Process Demo Licenses</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X06_CNX_All_Active_Demo_Licenses</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Name_Latin__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Restricted Use License</value>
+        </filters>
+        <label>06 All - Active Demo Licenses</label>
+        <sharedTo>
+            <roleAndSubordinates>Mathworks_Development_and_Partner_Programs</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X07_Japan_New_Agreements</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Name_Latin__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>1a - App Received</value>
+        </filters>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>Japan Partner Agreements</value>
+        </filters>
+        <label>07 Japan - New Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X08_Japan_New_Emails_on_Agreements</fullName>
+        <booleanFilter>4 AND 3 AND (1 OR 2)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Account_Name_Latin__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>notEqual</operation>
+            <value>No Charge</value>
+        </filters>
+        <filters>
+            <field>Primary_Office__c</field>
+            <operation>equals</operation>
+            <value>MathWorks Japan</value>
+        </filters>
+        <label>08 Japan - New Emails on Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X09_Japan_All_CNX_Agreements</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_Office__c</field>
+            <operation>equals</operation>
+            <value>MathWorks Japan</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Connections</value>
+        </filters>
+        <label>09 Japan - All CNX Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X10_No_Charge_New_Agreements</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>1a - App Received</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>No Charge</value>
+        </filters>
+        <label>10 No Charge - New Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X11_No_Charge_New_Emails_on_Agreements</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>No Charge</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>11 No Charge - New Emails on Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X12_No_Charge_Open_Agreements</fullName>
+        <booleanFilter>(1 AND 3) AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Closed - No Response,Closed - Partner No Response</value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>No Charge</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>12 No Charge – Open Agreements</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>surveys_sent</fullName>
+        <columns>NAME</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Partner_Agreement_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Class__c</columns>
+        <columns>T_C_Status__c</columns>
+        <columns>T_C_Sent_Date__c</columns>
+        <columns>T_C_Send__c</columns>
+        <columns>T_C_Response_Date__c</columns>
+        <columns>T_C_Response__c</columns>
+        <columns>T_C_No_Response__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>T_C_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed,New,Sent</value>
+        </filters>
+        <label>Survey sent</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Mathworks_Development_and_Partner_Programs</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>PA-{000000}</displayFormat>
+        <label>Partner Agreement Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Partner Agreements</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Partner_Agreement_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Primary_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Partner_Agreement_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER.LAST_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Primary_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Partner_Agreement_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OWNER.LAST_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Primary_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Type__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Partner_Agreement_Name__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>Primary_Office__c</searchFilterFields>
+        <searchFilterFields>Account__c</searchFilterFields>
+        <searchFilterFields>Type__c</searchFilterFields>
+        <searchFilterFields>Primary_Contact__c</searchFilterFields>
+        <searchFilterFields>Account_Name_Latin__c</searchFilterFields>
+        <searchFilterFields>Class__c</searchFilterFields>
+        <searchFilterFields>MW_Focal_Point__c</searchFilterFields>
+        <searchResultsAdditionalFields>Partner_Agreement_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name_Latin__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Class__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Office__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

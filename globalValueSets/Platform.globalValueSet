@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Windows x64</fullName>
+        <default>false</default>
+        <label>Windows x64</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows x32</fullName>
+        <default>false</default>
+        <label>Windows x32</label>
+    </customValue>
+    <customValue>
+        <fullName>Linux x64</fullName>
+        <default>false</default>
+        <label>Linux x64</label>
+    </customValue>
+    <customValue>
+        <fullName>Linux x32</fullName>
+        <default>false</default>
+        <label>Linux x32</label>
+    </customValue>
+    <customValue>
+        <fullName>Mac</fullName>
+        <default>false</default>
+        <label>Mac</label>
+    </customValue>
+    <customValue>
+        <fullName>Solaris</fullName>
+        <default>false</default>
+        <label>Solaris</label>
+    </customValue>
+    <customValue>
+        <fullName>All Platforms</fullName>
+        <default>false</default>
+        <label>All Platforms</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <masterLabel>Platform</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_76755374</developerName>
+        <masterLabel>Product Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Product_Lookup__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>MATLAB</sourceValue>
+            </sourceValues>
+            <value>M1 MATLAB</value>
+        </values>
+        <values>
+            <value>M2 Math, Statistics, and Optimization</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MATLAB Builder EX</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MATLAB Builder for Java Language</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MATLAB Builder JA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MATLAB Builder NE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MATLAB Compiler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MATLAB Production Server</sourceValue>
+            </sourceValues>
+            <value>M3 Application Deployment</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MATLAB Distributed Computing Server</sourceValue>
+            </sourceValues>
+            <value>M4 Parallel Computing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>IEC Certification Kit</sourceValue>
+            </sourceValues>
+            <value>P1 Polyspace Embedded Code Verification</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MATLAB Report Generator</sourceValue>
+            </sourceValues>
+            <value>S1 Simulink and Stateflow</value>
+        </values>
+        <values>
+            <value>S3 Physical Modeling</value>
+        </values>
+        <values>
+            <value>S4 Rapid Prototyping and HIL Simulation</value>
+        </values>
+        <values>
+            <value>S5 Model Verification and Validation</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Embedded Coder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MATLAB Coder</sourceValue>
+            </sourceValues>
+            <value>S6 Embedded Code Generation</value>
+        </values>
+        <values>
+            <value>S7 HDL Code Generation and Verification</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Control System Toolbox</sourceValue>
+            </sourceValues>
+            <value>V1 Control Systems</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Communications System Toolbox</sourceValue>
+            </sourceValues>
+            <value>V2 Signal Processing Systems</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Computer Vision System Toolbox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Image Processing Toolbox</sourceValue>
+            </sourceValues>
+            <value>V3 Image Processing and Computer Visioon</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Data Acquisition Toolbox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Image Acquisition Toolbox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Instrument Control Toolbox</sourceValue>
+            </sourceValues>
+            <value>V4 Test and Measurement</value>
+        </values>
+        <values>
+            <value>V5 Computational Biology</value>
+        </values>
+        <values>
+            <value>V6 Computational Finance</value>
+        </values>
+        <values>
+            <value>V7 Signal Processing Toolbox</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96311119</developerName>
+        <masterLabel>Working Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ASSIGNED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Corey Lagunowich</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeannette Lukito</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pravallika Vinnakota</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Guy Rouleau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sang-Joon Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hao Chen</sourceValue>
+            </sourceValues>
+            <value>Modeling &amp; Simulation</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Judy Wohletz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Biesiada</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collin Spencer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Hafer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hassan McGinnis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Brauer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shangming Wei</sourceValue>
+            </sourceValues>
+            <value>Code Gen</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Christian Bard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexandre De Barros</sourceValue>
+            </sourceValues>
+            <value>Polyspace</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Arts Hirata</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hitoshi Takeshita</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keisuke Yanagihara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yoshiaki Banno</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Takashi Chikamasa</sourceValue>
+            </sourceValues>
+            <value>JP ASG</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrei Ursache</sourceValue>
+            </sourceValues>
+            <value>Test &amp; Measurement</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anthony Chan</sourceValue>
+            </sourceValues>
+            <value>PCT &amp; MDCS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Doug Hull</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Doug Sondak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cesar Rivadeneyra</sourceValue>
+            </sourceValues>
+            <value>MATLAB</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sarah Palfreyman</sourceValue>
+            </sourceValues>
+            <value>External Interfaces</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mandakh Enkh</sourceValue>
+            </sourceValues>
+            <value>Deployment</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Michael Chigirinskiy</sourceValue>
+            </sourceValues>
+            <value>Finance</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_96311119</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CASE_CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>BucketField_76755374</field>
+    </columns>
+    <columns>
+        <field>Case.Product_Lookup__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14)</booleanFilter>
+        <criteriaItems>
+            <column>Case.Area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Advanced</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TS Rep Report Seth Popinchalk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TS Rep Report Judy Wohletz</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TS Rep Report Jeannette Lukito</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TS Rep Report Christian Bard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TS Rep Report Takashi Chikamasa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Seth Popinchalk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Judy Wohletz</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Jeannette Lukito</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Christian Bard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Takashi Chikamasa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Zack Peters</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Cesar Rivadeneyra</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96311119</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ASG Escalation Tasks</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseActivity</reportType>
+    <roleHierarchyFilter>MW_Tech_Support_Manager_Seth_Popinchalk</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CASE_NUMBER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURY</interval>
+    </timeFrameFilter>
+</Report>

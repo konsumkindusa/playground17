@@ -1,0 +1,21 @@
+Sehr geehrt {!Contact.Name},
+
+mit dieser e-mail bestätigen wir Ihnen die Stornierung der folgenden Kurse:
+
+Kursname: {!Enrollment__c.Class__c} 
+Datum:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+Ort:  {!Class__c.City__c}, {!Class__c.Country__c} 
+TIME: {!Class__c.Start_Time__c} - {!Class__c.End_Time__c}
+
+
+Stornierungsbedingungen
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+Für weitere Fragen stehen wir Ihnen gerne zur Verfügung.
+
+Mit freundlichen Grüßen aus München
+
+Training Services
+Tel: {!Class__c.Sponsor_Office_Phone__c} 
+Fax: +49 241 4757 6710
+mailto:{!Class__c.Sponsor_Office_Email__c} 

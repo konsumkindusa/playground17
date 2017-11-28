@@ -1,0 +1,19 @@
+Hej {!Contact.FirstName}, 
+
+Jag skriver med anledning av ditt tekniska supportärende #{!Case.CaseNumber} som gäller '{!Case.Subject}'.
+
+
+
+
+Vänligen bevara referens ID nedan i vidare korrespondens i denna fråga. Detta gör det möjligt för våra system att automatiskt associera ditt svar med rätt ärende, och jag kan hjälpa dig vidare i denna fråga.
+
+Om du har en ny teknisk supportfråga, vänligen skicka in den nya frågan här:
+http://www.mathworks.com/support/servicerequests/create.html
+
+Vänliga hälsningar,
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange och MATLAB Answers: http://www.mathworks.com/matlabcentral/ 
+
+{!User.Disclosure__c}

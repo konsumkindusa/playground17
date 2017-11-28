@@ -1,0 +1,16 @@
+{!Contact.Name}님께,
+
+본 이메일은 아래의 교육 강좌에 대한 귀하의 등록 취소를 확인하기 위해 발송되었습니다.
+
+교육 과정명: {!Enrollment__c.Class__c} 
+
+취소 정책을 확인하기 위해 아래의 링크를 사용하십시오.
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+신용 카드 사용에 따른 환불은 영업일 기준 1~2일 내에 처리될 것입니다.
+
+추가적으로 궁금하신 사항에 대해서는 매스웍스 코리아 교육서비스팀에 연락을 주시기 바랍니다.
+
+감사합니다. 
+매스웍스 코리아 교육서비스팀
+{!Class__c.Sponsor_Office_Signature__c}

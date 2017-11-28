@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Custom Settings to list the general areas that need the tasks under the case to be closed when the case with this area is closed.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>UserArea__c</fullName>
+        <description>This field stores the User Area</description>
+        <externalId>false</externalId>
+        <label>UserArea</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Areas Case Task Closure</label>
+    <visibility>Protected</visibility>
+</CustomObject>

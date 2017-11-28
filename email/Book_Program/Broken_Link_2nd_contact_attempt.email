@@ -1,0 +1,24 @@
+{!Contact.Email} 
+USE BOOK PROGRAM PROFILE
+
+Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName}, 
+
+Recently we contacted you regarding a broken link to your supplemental MATLAB and/or Simulink files on your MathWorks Book Program Web page. To date, we have not heard back from you. Please note, if we do not receive a response within the next week, your promotional web page will be removed from our web site. 
+
+I look forward to hearing from you. 
+
+Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}
+
+--------------- Original Message --------------- 
+
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

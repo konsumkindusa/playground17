@@ -1,0 +1,23 @@
+From the information that is provided, I am unable to determine the cause of the problem you are encountering.  Please send me the following information and I will gladly investigate this matter further:
+
+- MATLAB License Number
+- the Platform and Operating System 
+- a detailed description of the problem 
+- step-by-step instructions to reproduce the problem 
+- the exact error message(s), if any 
+- your license file as an e-mail attachment
+- your lmdebug.out file (if on UNIX/Linux platform)
+
+To obtain your lmdebug.out file:
+
+1. open a terminal window
+
+2. Type the following:
+
+      cd $MATLAB/etc (Where $MATLAB is the path to your root MATLAB directory)
+
+3. run the LMDEBUG script by typing:
+
+      ./lmdebug
+
+4. send the file lmdebug.out located in your $MATLAB\etc directory to me as an e-mail attachment

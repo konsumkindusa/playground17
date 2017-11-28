@@ -1,0 +1,77 @@
+<apex:page standardController="EmailMessage" extensions="cp_EmailMessageController" standardStylesheets="true" sidebar="false" showHeader="false" language="{!language}">
+
+<head>
+    <title>
+      My Service Request - Email
+    </title>
+</head>
+
+<apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block">
+        <apex:outputPanel layout="block" id="content_container">
+  <h1 class="mwheader">{!$Label.MySR_Title}</h1>
+     <apex:form >
+         <apex:commandLink value="<< {!$Label.MySR_Back_to_Service_Request}" action="/apex/cp_case_detail?cc={!$CurrentPage.parameters.cc}&id={!$CurrentPage.parameters.parentId}" target="_self" />
+     </apex:form>
+      <br/>
+      <div class="table_header"><h3>{!$Label.MySR_Email_Details}</h3></div>
+       
+    
+    <apex:pageBlock mode="maindetail">
+        
+        <apex:pageBlockSection showHeader="false" columns="1">            
+           
+            <apex:outputField value="{!EmailMessage.MessageDate}"/> 
+            <apex:outputField value="{!EmailMessage.FromAddress}" label="{!$Label.MySR_Email_From}"/>
+            <apex:outputField value="{!EmailMessage.ToAddress}" Label="{!$Label.MySR_Email_To}"/>
+            <apex:outputField value="{!EmailMessage.ccAddress}" Label="CC"/>
+        </apex:pageBlockSection>
+        
+            
+        <apex:pageBlockSection showHeader="false" columns="1">
+            <apex:outputField value="{!EmailMessage.Subject}"/>
+            <apex:pageBlockSectionItem />
+           
+            <apex:outputField value="{!EmailMessage.TextBody}" label="{!$Label.MySR_Email_Body}" />
+            <apex:pageBlockSectionItem />
+        </apex:pageBlockSection>
+
+    </apex:pageBlock>
+    
+    <div class="table_header"><h3>{!$Label.MySR_Attachments}</h3></div>
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!attachments}" var="attachment">
+            <apex:column headerValue="{!$Label.MySR_Email_Action}">
+               <apex:outputLink value="{!URLFOR($Action.Attachment.Download, attachment.Id)}" target="_blank">{!$Label.MySR_Email_View}</apex:outputLink>
+            </apex:column>
+            <apex:column headervalue="{!$Label.MySR_FileName}" value="{!attachment.Name}"/>
+          
+           
+        </apex:pageBlockTable>
+        
+       
+       <br/>
+       <br/>
+    </apex:pageBlock>
+    <script>
+        $(".labelCol").css("text-align","left");
+        //$(".bPageBlock .pbBody").css("padding","0px 30px");
+        //$(".bPageBlock").css("margin-bottom","0px");
+        //$(".detailList").css("border-top","1px solid #d6d4d4"); 
+    </script>
+    
+    </apex:outputPanel>    
+     </apex:outputPanel>  
+     </apex:outputPanel> 
+     </apex:outputPanel>  
+	</div>
+     </apex:outputPanel> 
+     </apex:outputPanel> 
+	 <apex:include pageName="cp_footer" />
+   
+</apex:page>

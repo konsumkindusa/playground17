@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Distance Learning - Class Cancelled - KR - KOR</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Training_Class_Cancellation_Distance_Learning_KOR_KR</name>
+    <style>none</style>
+    <subject>The MathWorks Training Cancellation for Class</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName} 様 
+
+いつもお世話になっております。 
+お問い合わせ頂いておりましたサービスリクエスト("{!Case.Subject}”, Case# {!Case.CaseNumber}）に関して、ご連絡いたします。 
+
+残念ながら、米国商務省および米国財務省からの指導により、MathWorks および各国のオフィスでは、あなたの国における製品の販売、およびサポートをすることができません。この理由から、今回頂きましたご質問に対して、サポートを提供することができません。
+
+今回は、MathWorks 製品にご興味をお持ちいただきまして、誠にありがとうございました。 
+
+MathWorks テクニカルサポート窓口 
+{!User.Email_Template_Signature__c}

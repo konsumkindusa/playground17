@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>auto sent email to the requestor of an A-thon</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>A-Thon approved email to requestor</name>
+    <style>none</style>
+    <subject>A-Thon Donation Matching Request Status</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

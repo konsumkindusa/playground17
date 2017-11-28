@@ -1,0 +1,15 @@
+Dear {!Contact.Salutation} {!Partner_Agreement__c.Primary_Contact__c},
+
+Recently, you applied to the Connections Program with {!Partner_Agreement__c.Partner_Agreement_Name__c}. At the time of your application, I requested information about two of your customers to perform a cursory reference check and complete the application review process.  To date, however, I have not received a response from you.
+
+If you have two names available, please forward them to <connections@mathworks.com>, complete with company names, e-mail addresses, and telephone numbers.  If you are not able to provide that information at this time, please let me know when I should check-in with you again in the future.
+
+If you are no longer interested in membership in the Connections Program, please let me know and I will remove you from my follow-up list. Please note, if I do not hear from you by (insert date), I will assume you are no longer interested in the Connections Program.  You will then need to reapply to the program, should interest arise at a later date.
+
+Once the reference check has been completed, the next step is drafting your Web page and sending it to you for review. I look forward to working with you on this.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

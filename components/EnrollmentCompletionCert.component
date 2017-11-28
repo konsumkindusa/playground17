@@ -1,0 +1,172 @@
+<apex:component access="global" controller="EnrollmentCertificateController" >
+      <apex:attribute access="global" assignTo="{!enrollId}"  name="enrollmentId" type="String" required="true" description="enrollmentId"/>
+     <!--<apex:attribute name="enrolleeName" description="This is the value for Enrollee Name."
+                    type="String" />
+    <apex:attribute name="enrolleeClassName" description="This is the value for Class."
+                        type="String" />
+    <apex:attribute name="enrolleeTrainingCertiDates" description="This is the value for training certification dates."
+                        type="String" /> -->
+    <html>
+    <!-- <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'></link> -->
+    <style>
+        #BackgroundImage {
+           min-width: 600px;
+           max-width:792px;
+            //height: auto;
+            border-style: none;
+            //background-image: url('{!URLFOR($Resource.Certification_Background_Image)}');
+            background-repeat:no-repeat;
+           // background-attachment:fixed;
+           //  min-height:700px;
+           //   max-height:7920px;
+           // margin-top: 20px;
+       }
+    
+        #Text {
+            text-align: center;
+            padding: 7cm 0.5cm 2cm 6cm;
+            //margin-left:190px;
+           //margin:300px;
+             width: auto;
+            height: 400px;
+            position: fixed;
+            //background-color:blue;
+            color:black;
+            font-size: 22px;
+            font-family:"Arial Unicode MS";
+            margin-left: 40px;
+            //font-weight:lighter;
+             
+        }
+         #JpText {
+            text-align: center;
+            padding: 7cm 0.5cm 2cm 6cm;
+            //margin-left:190px;
+           //margin:300px;
+             width:50%;
+            height: 400px;
+            position: fixed;
+            //background-color:blue;
+            color:black;
+            font-size: 22px;
+            font-family:"Arial Unicode MS";
+            margin-left: 30px;
+            //font-weight:lighter;
+             
+        }
+        #hr1{
+            //padding: 5px;
+            //margin: 0px;
+            color:blue;
+            margin-top: 32px;
+            margin-bottom: -2px;
+            margin-right: 34px;
+           
+        }
+        #hr{
+            //padding: 5px;
+            //margin: 0px;
+            color:blue;
+            margin-top: -23px;
+            
+        }
+         #rightDivText {
+            text-align: right;
+           // padding: 0.5cm 0.05cm 1cm 1cm;
+            margin-right: -85px;
+            width: 220px;
+            height: auto;
+            //background-color:yellow;
+            color:black;
+            margin-top: 643px;
+             font-size: 18px;
+             font-family:"Arial Unicode MS";
+        }
+        #leftDivText {
+            text-align: left;
+            //padding: 0.5cm 0.5cm 1cm 2cm;
+            width: 282px;
+            height: auto;
+            margin-left: 120px;
+            margin-top: 632px;
+            margin-right: 10px;
+            //background-color:green;
+            color:black;
+            font-size: 18px;
+            font-family:"Arial Unicode MS";
+        }
+       /* @font-face{
+                font-family: Garamond;
+                src: url("{!URLFOR($Resource.GaramondFont)}");
+                }*/
+                 @page
+                   {
+                    size: auto;//8in 12in;
+                    size: landscape;
+                    margin-top: 0.00cm;
+                    margin-bottom: 0.00cm;
+                    margin-left: 0.00cm;
+                    margin-right: 0.00cm;
+                   // height:
+                       @top-right { /* Page header */
+                        content: "Sample";
+                        margin-top: 0.00cm;
+                        }
+                  }
+                    body 
+    {
+       // background-color:blue;//#FFFFFF; 
+        //border: solid 1px black ;
+        margin: 0px;  /* this affects the margin on the content before sending to printer */
+   }
+    </style>
+     <img src="{!$resource.Enrollemnt_Certificate_BackgroundImage}" style="position: fixed;z-index:-1" width="100%" height="100%" >
+         </img>
+       
+    <div id = "BackgroundImage" >
+        <apex:outputPanel id="thePanel" rendered="{!NOT(IsSponsorOfficeJp)}" >
+             <div id="Text" >
+                <p>MathWorks Training Services certifies that<br/></p>
+               <p style="font-size:22px;font-weight:bolder"><strong>{!EnrolleeNameForCompletionCert}</strong>
+                <hr id="hr"/></p>
+                 
+               
+               <p style=" font-size: 22px;"> successfully completed the requirements of<br/></p>
+               <p style="font-size:24px;font-weight:bold;font-family:Times">{!EnrollmentRec.Class__r.Course__r.Name}
+                </p>
+                
+           </div>
+         </apex:outputPanel>
+         <apex:outputPanel id="JpPanel" rendered="{!(IsSponsorOfficeJp)}" >
+        <div id="JpText" >
+           
+           <p style="font-size:22px;font-weight:bolder"><strong>{!EnrolleeNameForCompletionCert} {!$Label.EnrollmentJpCertL4}</strong>
+            <hr id="hr"/></p>
+            <p style=" font-size: 22px;">{!$Label.EnrollmentJpCertL1}<br/></p>
+          <p style=" font-size: 22px;"> {!$Label.EnrollmentJpCertL2}<br/></p> 
+           <p style="font-size:24px;font-weight:bold;"><strong>{!EnrollmentRec.Class__r.Name} </strong>
+            </p>
+            
+        </div>
+        </apex:outputPanel>
+        <div id = "leftDivText" style=" float:left;">
+        <hr id="hr1"/>
+        &nbsp;&nbsp;&nbsp;Director, Training Services
+        </div>
+        <apex:outputPanel id="rightPanelText" rendered="{!NOT(IsSponsorOfficeJp)}" >
+            <div id = "rightDivText" style= "float:right;white-space:nowrap;">
+            <p>
+            Training Dates:  {!EnrollmentRec.Certification_Training_Dates__c}
+            </p>
+            </div>
+        </apex:outputPanel>
+        <apex:outputPanel id="jpRightPanelText" rendered="{!(IsSponsorOfficeJp)}" >
+            <div id = "rightDivText" style= "float:right;white-space:nowrap;">
+            <p>
+            {!$Label.EnrollmentJpCertL3}{!EnrollmentRec.Certification_Training_Dates__c}
+            </p>
+            </div>
+        </apex:outputPanel>
+    </div>
+    </html>
+</apex:component>

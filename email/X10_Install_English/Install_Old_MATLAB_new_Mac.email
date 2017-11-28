@@ -1,0 +1,13 @@
+If you are installing R2013a or earlier, you will need to install Apple's Legacy Java 6:
+
+https://support.apple.com/kb/dl1572?locale=en_US
+
+Then you need to force the MATLAB installer to use the Java 6 JVM:
+
+https://www.mathworks.com/matlabcentral/answers/161347-how-can-i-install-matlab-versions-r2011a-r2013a-on-macos-10-10-yosemite-or-later
+
+For R2011a through R2014a, once MATLAB is installed, you need to apply this patch:
+
+https://www.mathworks.com/support/bugreports/1098655
+
+The patch is release specific so make sure you download the right one.

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>ProjectTimecard</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>TimecardRedirect</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AE_PE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AE/PE</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Project_Time_Cards</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Use Manage Time Card Entries to change Activity Type</inlineHelpText>
+        <label>Activity Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Interaction</fullName>
+                    <default>false</default>
+                    <label>Customer Interaction</label>
+                </value>
+                <value>
+                    <fullName>Customer Support</fullName>
+                    <default>false</default>
+                    <label>Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Content Related Tasks</fullName>
+                    <default>false</default>
+                    <label>Content Related Tasks</label>
+                </value>
+                <value>
+                    <fullName>Strategy/Planning/Reporting</fullName>
+                    <default>false</default>
+                    <label>Strategy/Planning/Reporting</label>
+                </value>
+                <value>
+                    <fullName>Traveling</fullName>
+                    <default>false</default>
+                    <label>Traveling</label>
+                </value>
+                <value>
+                    <fullName>PSP: Product Customization</fullName>
+                    <default>false</default>
+                    <label>PSP: Product Customization</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>Admin</fullName>
+                    <default>false</default>
+                    <label>Admin</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Created_By_Area__c</fullName>
+        <description>Time Card Created by Area pulled from the user record.  The value saved at the time when time card has been created.</description>
+        <externalId>false</externalId>
+        <label>Created By Area</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_by_Role_Name__c</fullName>
+        <description>Time Card Created By Role Name . The field has been set at the time when the time card has been created.</description>
+        <externalId>false</externalId>
+        <label>Created by Role Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Hours_Since_Last_Reviewed_Date__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Hours Since Last Reviewed Date</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>My_Team_Time_Card__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.ManagerId = $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Team Time Card</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>My_Time_Card__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedById =$User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Time Card</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Group</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application Deployment</fullName>
+                    <default>false</default>
+                    <label>Application Deployment</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Computational Biology</fullName>
+                    <default>false</default>
+                    <label>Computational Biology</label>
+                </value>
+                <value>
+                    <fullName>Computational Finance</fullName>
+                    <default>false</default>
+                    <label>Computational Finance</label>
+                </value>
+                <value>
+                    <fullName>Control Systems</fullName>
+                    <default>false</default>
+                    <label>Control Systems</label>
+                </value>
+                <value>
+                    <fullName>Embedded Code Generation</fullName>
+                    <default>false</default>
+                    <label>Embedded Code Generation</label>
+                </value>
+                <value>
+                    <fullName>HDL Code Generation &amp; Verification</fullName>
+                    <default>false</default>
+                    <label>HDL Code Generation &amp; Verification</label>
+                </value>
+                <value>
+                    <fullName>Image Processing &amp; Computer Vision</fullName>
+                    <default>false</default>
+                    <label>Image Processing &amp; Computer Vision</label>
+                </value>
+                <value>
+                    <fullName>Math, Statistics &amp; Optimization</fullName>
+                    <default>false</default>
+                    <label>Math, Statistics &amp; Optimization</label>
+                </value>
+                <value>
+                    <fullName>MATLAB</fullName>
+                    <default>false</default>
+                    <label>MATLAB</label>
+                </value>
+                <value>
+                    <fullName>Model Verification &amp; Validation</fullName>
+                    <default>false</default>
+                    <label>Model Verification &amp; Validation</label>
+                </value>
+                <value>
+                    <fullName>Parallel Computing</fullName>
+                    <default>false</default>
+                    <label>Parallel Computing</label>
+                </value>
+                <value>
+                    <fullName>Simscape</fullName>
+                    <default>false</default>
+                    <label>Simscape</label>
+                </value>
+                <value>
+                    <fullName>Polyspace</fullName>
+                    <default>false</default>
+                    <label>Polyspace</label>
+                </value>
+                <value>
+                    <fullName>Real-Time Simulation &amp; Test</fullName>
+                    <default>false</default>
+                    <label>Real-Time Simulation &amp; Test</label>
+                </value>
+                <value>
+                    <fullName>Robotics Systems</fullName>
+                    <default>false</default>
+                    <label>Robotics Systems</label>
+                </value>
+                <value>
+                    <fullName>Signal Processing Systems</fullName>
+                    <default>false</default>
+                    <label>Signal Processing Systems</label>
+                </value>
+                <value>
+                    <fullName>Simulink and Stateflow</fullName>
+                    <default>false</default>
+                    <label>Simulink and Stateflow</label>
+                </value>
+                <value>
+                    <fullName>Test &amp; Measurement</fullName>
+                    <default>false</default>
+                    <label>Test &amp; Measurement</label>
+                </value>
+                <value>
+                    <fullName>Wireless Systems</fullName>
+                    <default>false</default>
+                    <label>Wireless Systems</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project__r.Project_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Status__c</fullName>
+        <description>Pulls the Project Status value from the related project, used in validation rules and time card entry behavior</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Project__r.Project_Status__c)</formula>
+        <label>Project Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>MW_Project__c</referenceTo>
+        <relationshipLabel>Time Cards</relationshipLabel>
+        <relationshipName>Project_Time_Cards</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Week_Date__c</fullName>
+        <description>User Will fill Time card for particular date of the week.</description>
+        <externalId>false</externalId>
+        <label>Week Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Week_Ending__c</fullName>
+        <externalId>false</externalId>
+        <label>Week Ending</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Time Card</label>
+    <listViews>
+        <fullName>All_Time_Cards</fullName>
+        <columns>NAME</columns>
+        <columns>Week_Ending__c</columns>
+        <columns>Hours__c</columns>
+        <columns>Status__c</columns>
+        <columns>Project_Name__c</columns>
+        <columns>Project_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Time Cards</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TC-{0000000000}</displayFormat>
+        <label>Project Time Card Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Time Cards</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Project_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>AE_PE__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Group__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Activity_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Hours__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Week_Ending__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Project_Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Project_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>AE_PE__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Group__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Activity_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Hours__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Week_Ending__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Project_Status__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Project_Name__c</lookupFilterFields>
+        <lookupFilterFields>Product_Group__c</lookupFilterFields>
+        <lookupFilterFields>AE_PE__c</lookupFilterFields>
+        <lookupFilterFields>Activity_Type__c</lookupFilterFields>
+        <lookupFilterFields>Hours__c</lookupFilterFields>
+        <lookupFilterFields>Week_Ending__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Project_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>AE_PE__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Product_Group__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Activity_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Hours__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Week_Ending__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Project_Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Project_Name__c</searchFilterFields>
+        <searchFilterFields>Product_Group__c</searchFilterFields>
+        <searchFilterFields>AE_PE__c</searchFilterFields>
+        <searchFilterFields>Activity_Type__c</searchFilterFields>
+        <searchFilterFields>Hours__c</searchFilterFields>
+        <searchFilterFields>Week_Ending__c</searchFilterFields>
+        <searchFilterFields>Project_Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Project_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>AE_PE__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Group__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Activity_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Hours__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Week_Ending__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Only_Manage_Your_Own_Time_Entries</fullName>
+        <active>true</active>
+        <description>Rule to prevent anyone but the resource on the time entry from editing or creating a time entry for them, with the exception of those listed in the custom setting to bypass it.</description>
+        <errorConditionFormula>AND(
+$User.Id !=  Project__r.OwnerId ,  $Setup.Project_Time_Validation_Settings__c.Manage_My_Time__c  
+    ,$User.Id != PRIORVALUE(AE_PE__c)
+
+)</errorConditionFormula>
+        <errorMessage>You can only edit your own time entries.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Editing_Time_on_Closed_Projects</fullName>
+        <active>true</active>
+        <description>If the project status = closed, do not let users update any fields on the record</description>
+        <errorConditionFormula>AND(
+    $Setup.Project_Validation_Rule_Settings__c.Prevent_Editing_Time_on_Closed_Projects__c
+    ,ISPICKVAL(Project__r.Project_Status__c ,&quot;Closed&quot;)
+)</errorConditionFormula>
+        <errorMessage>The Project that the Time Entry is related to is closed and changes are not able to be made unless the project is re-opened.  Contact your manager to have this change made to the Project.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Week_Date_is_Required_on_the_Time_card</fullName>
+        <active>true</active>
+        <description>prevent user from clearing/not entering the week date on the timecard</description>
+        <errorConditionFormula>ISBLANK( Week_Date__c )</errorConditionFormula>
+        <errorMessage>The Week Date needs to be set on the timecard</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

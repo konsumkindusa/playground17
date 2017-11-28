@@ -1,0 +1,25 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage.
+
+(Für Add:)Da Administratoren über die Master Lizenz assoziiert werden und sich die genannte Lizenz mit einer weiteren/ mit weiteren Lizenz/en in der Master Lizenz XXX befindet, bitte ich Sie uns mitzuteilen, ob Herr/ Frau trotzdem zu dieser Master Lizenz addiert werden soll. Er hätte denn Zugriff auf alle in dieser Master Lizenz befindlichen Lizenzen. Alternativ können wir selbstverständlich die Lizenz # mit den benötigten Administratoren in eine neue Master Lizenz ausgliedern.
+Vielen Dank für Ihre Antwort auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+(Für Remove:)Da Administratoren über die Master Lizenz assoziiert sind und somit Zugriff auf alle darin befindlichen Lizenzen haben, bitte ich Sie uns mitzuteilen, ob Herr/Frau XX von dieser Master Lizenz entfernt werden soll oder ob Sie die Ausgliederung der Lizenz XXX  mit den benötigten Administratoren in eine neue Master Lizenz wünschen.
+Vielen Dank für Ihre Antwort auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Bitte beachten Sie, dass ab sofort Administratoränderungen von einem aktuellen Administrator über das eigene License Center selbst vorgenommen werden können. Die entsprechende Anleitung finden Sie in dem beigefügten Article und unter folgendem Link: 
+How do I change the Administrators on my License? 
+http://www.mathworks.com/matlabcentral/answers/101101 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte ebenfalls auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

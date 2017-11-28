@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Mr.</fullName>
+        <default>false</default>
+        <label>Mr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ms.</fullName>
+        <default>false</default>
+        <label>Ms.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mrs.</fullName>
+        <default>false</default>
+        <label>Mrs.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dr.</fullName>
+        <default>false</default>
+        <label>Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof.</fullName>
+        <default>false</default>
+        <label>Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1Lt</fullName>
+        <default>false</default>
+        <label>1Lt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2Lt</fullName>
+        <default>false</default>
+        <label>2Lt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ADM</fullName>
+        <default>false</default>
+        <label>ADM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Assoc. Prof.</fullName>
+        <default>false</default>
+        <label>Assoc. Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BrigGen</fullName>
+        <default>false</default>
+        <label>BrigGen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Capt</fullName>
+        <default>false</default>
+        <label>Capt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CDR</fullName>
+        <default>false</default>
+        <label>CDR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CPT</fullName>
+        <default>false</default>
+        <label>CPT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dean</fullName>
+        <default>false</default>
+        <label>Dean</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dott.</fullName>
+        <default>false</default>
+        <label>Dott.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dott.ssa</fullName>
+        <default>false</default>
+        <label>Dott.ssa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dr. Ing.</fullName>
+        <default>false</default>
+        <label>Dr. Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dr. Prof.</fullName>
+        <default>false</default>
+        <label>Dr. Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dr.ssa</fullName>
+        <default>false</default>
+        <label>Dr.ssa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Drs.</fullName>
+        <default>false</default>
+        <label>Drs.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Drs. Ing.</fullName>
+        <default>false</default>
+        <label>Drs. Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EUR ING</fullName>
+        <default>false</default>
+        <label>EUR ING</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau</fullName>
+        <default>false</default>
+        <label>Frau</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau Dipl.-Ing.</fullName>
+        <default>false</default>
+        <label>Frau Dipl.-Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau Dr.</fullName>
+        <default>false</default>
+        <label>Frau Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau Ing.</fullName>
+        <default>false</default>
+        <label>Frau Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau Mag.</fullName>
+        <default>false</default>
+        <label>Frau Mag.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau Prof.</fullName>
+        <default>false</default>
+        <label>Frau Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frau Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Frau Prof. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gen</fullName>
+        <default>false</default>
+        <label>Gen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Heer</fullName>
+        <default>false</default>
+        <label>Heer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr</fullName>
+        <default>false</default>
+        <label>Herr</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr Dipl.-Ing.</fullName>
+        <default>false</default>
+        <label>Herr Dipl.-Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr Dr.</fullName>
+        <default>false</default>
+        <label>Herr Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr Ing.</fullName>
+        <default>false</default>
+        <label>Herr Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr Mag.</fullName>
+        <default>false</default>
+        <label>Herr Mag.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr Prof.</fullName>
+        <default>false</default>
+        <label>Herr Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Herr Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Herr Prof. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ing.</fullName>
+        <default>false</default>
+        <label>Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ir.</fullName>
+        <default>false</default>
+        <label>Ir.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lt</fullName>
+        <default>false</default>
+        <label>Lt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LTC</fullName>
+        <default>false</default>
+        <label>LTC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LtCDR</fullName>
+        <default>false</default>
+        <label>LtCDR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LtGen</fullName>
+        <default>false</default>
+        <label>LtGen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LtJG</fullName>
+        <default>false</default>
+        <label>LtJG</label>
+    </standardValue>
+    <standardValue>
+        <fullName>M.</fullName>
+        <default>false</default>
+        <label>M.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>M. Dr.</fullName>
+        <default>false</default>
+        <label>M. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>M. Prof.</fullName>
+        <default>false</default>
+        <label>M. Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Maj</fullName>
+        <default>false</default>
+        <label>Maj</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mevrouw</fullName>
+        <default>false</default>
+        <label>Mevrouw</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mevrouw dr.</fullName>
+        <default>false</default>
+        <label>Mevrouw dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mevrouw drs.</fullName>
+        <default>false</default>
+        <label>Mevrouw drs.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mevrouw ing.</fullName>
+        <default>false</default>
+        <label>Mevrouw ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mevrouw ir.</fullName>
+        <default>false</default>
+        <label>Mevrouw ir.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mevrouw Prof.</fullName>
+        <default>false</default>
+        <label>Mevrouw Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MGen</fullName>
+        <default>false</default>
+        <label>MGen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miss</fullName>
+        <default>false</default>
+        <label>Miss</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mlle</fullName>
+        <default>false</default>
+        <label>Mlle</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mme</fullName>
+        <default>false</default>
+        <label>Mme</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mme Dr.</fullName>
+        <default>false</default>
+        <label>Mme Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mme Prof.</fullName>
+        <default>false</default>
+        <label>Mme Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mr. Prof.</fullName>
+        <default>false</default>
+        <label>Mr. Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mr. Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Mr. Prof. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mrs. Dr.</fullName>
+        <default>false</default>
+        <label>Mrs. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mrs. Prof.</fullName>
+        <default>false</default>
+        <label>Mrs. Prof.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mrs. Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Mrs. Prof. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Prof. Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof. Dr. Ir.</fullName>
+        <default>false</default>
+        <label>Prof. Dr. Ir.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof. Ing.</fullName>
+        <default>false</default>
+        <label>Prof. Ing.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof. Ir.</fullName>
+        <default>false</default>
+        <label>Prof. Ir.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof. Mr.</fullName>
+        <default>false</default>
+        <label>Prof. Mr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prof.ssa</fullName>
+        <default>false</default>
+        <label>Prof.ssa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RADM</fullName>
+        <default>false</default>
+        <label>RADM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rag.</fullName>
+        <default>false</default>
+        <label>Rag.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sgt</fullName>
+        <default>false</default>
+        <label>Sgt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sig.</fullName>
+        <default>false</default>
+        <label>Sig.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sig.ra</fullName>
+        <default>false</default>
+        <label>Sig.ra</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sir</fullName>
+        <default>false</default>
+        <label>Sir</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sr.</fullName>
+        <default>false</default>
+        <label>Sr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sra.</fullName>
+        <default>false</default>
+        <label>Sra.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Srta.</fullName>
+        <default>false</default>
+        <label>Srta.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Staf Sgt</fullName>
+        <default>false</default>
+        <label>Staf Sgt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ten. Col.</fullName>
+        <default>false</default>
+        <label>Ten. Col.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>先生</fullName>
+        <default>false</default>
+        <label>先生</label>
+    </standardValue>
+    <standardValue>
+        <fullName>女士</fullName>
+        <default>false</default>
+        <label>女士</label>
+    </standardValue>
+</StandardValueSet>

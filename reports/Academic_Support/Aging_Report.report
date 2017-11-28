@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Academic_Support_Project__c.Status_Age__c:MAX</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>oldest stage age</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Academic_Support_Project__c.Status_Age__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>average status age</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Academic_Support_Project__c.Status__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Academic_Support_Project__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Start__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Status_Age__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>review by legal over 15 days 
+AND 
+Review by Marketing, other MW&apos;er, Customer Signature over 6 days</description>
+    <filter>
+        <booleanFilter>((1 AND 2)OR (3 AND 4)) OR 5</booleanFilter>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Review by Legal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status_Age__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>14</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Review by VP of Marketing,Review by Other MathWorkers,Customer Signature</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status_Age__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.E2AEmailCount__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Academic_Support_Project__c.Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Academic_Support_Project__c.E2AEmailCount__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Aging Report - for dashboard</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Academic_Support_Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Academic_Support_Project__c.Status_Age__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

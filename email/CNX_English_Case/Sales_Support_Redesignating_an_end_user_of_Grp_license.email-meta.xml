@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Instructions on how to change the LEU on a group member license.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sales Support - Redesignating an end user on a Grp License</name>
+    <style>none</style>
+    <subject>Redesignating an end user on a Group Member License</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

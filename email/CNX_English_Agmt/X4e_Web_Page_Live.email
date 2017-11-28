@@ -1,0 +1,12 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+Your Connections Program Web page is now live on the MathWorks Web site. You can view your page online at {!Partner_Agreement__c.Web_Page_URL__c}.
+
+A link to your web site was not included on your Connections Program web page because you did not have a reciprocal link back to MathWorks.  If you would like MathWorks to include a link to your web site on your Connections Program Web page, please mention MATLAB or MathWorks somewhere on your web site and link it, or a Connections Program Partner Logo back to http://www.mathworks.com.  Once you have added a link back to MathWorks on your website, send an e-mail to connections@mathworks.com and ask that we add your web site link to your Connections Program web page.
+
+Feel free to contact me if you have any comments or questions.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

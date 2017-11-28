@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>KnowledgeArticleVersion$CreatedBy</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>KnowledgeArticleVersion$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$Summary</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleType</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16))</booleanFilter>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$PublishStatus</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Namita	Vishnubhotla</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Khodour Al Kadry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Nalini Vishnoi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Nick Hobbs</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Richa Gupta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Satyajeet Sasmal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Varun Bhaskar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Nachiket Katakkar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Prannay Jain</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sangeetha Jayaprakash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sanket Karnik</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Radu David</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Alekhya Pallapotu</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sindhuja Parimalarangan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ankita Nargundkar</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticleVersion$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Danielle Devereaux My Direct Report Arti</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Article_Versions_Not_to_Deploy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticleVersion$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

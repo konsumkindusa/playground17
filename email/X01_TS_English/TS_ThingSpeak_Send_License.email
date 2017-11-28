@@ -1,0 +1,20 @@
+Hello {!Contact.FirstName}, 
+
+This is in reference to your ThingSpeak Technical Support Case #{!Case.CaseNumber}  regarding {!Case.Subject}.
+
+In order to assist you further with this case, please log in to www.thingspeak.com, click on ‘Account’, click on ‘My Account’ and let us know your ‘License Type’,  ‘License number’, ‘Units’, ‘Messages Purchased’, and ‘Expiration Date’.
+
+This will give us information on your license which is linked to the functionalities that you get namely, number of messages that you can send per year, message update interval limit, compute timeout etc.
+
+Access to our technical support team for ThingSpeak related queries is one of the benefits of maintaining a valid ThingSpeak license.  We look forward to getting this information from you so that we may assist you with your technical issue.
+
+Use the following link to view and update your Case online:
+https://www.mathworks.com/support/servicerequests/index.html
+
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}
+
+Please preserve the Reference ID in any further correspondence on this query. This will allow our systems to automatically assign your reply to the appropriate Case.

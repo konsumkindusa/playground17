@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Enterprise Training Agreements</relationshipLabel>
+        <relationshipName>Enterprise_Training_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Active_Self_Enrollment_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Active Self-Enrollment URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Classes__c</fullName>
+        <description>Count of classes associated with the ETA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of classes associated with ETA</inlineHelpText>
+        <label>Classes</label>
+        <summaryForeignKey>Training_Agreement_Class_Relationship__c.Enterprise_Training_Agreement__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Enable_LEU_Campaigns__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, all Licensed End Users under the License ID specified will receive email notifications regarding their access to self-paced training</inlineHelpText>
+        <label>Enable LEU Campaigns</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Codes_Count__c</fullName>
+        <description>Count of Enrollment Codes for ETA</description>
+        <externalId>false</externalId>
+        <label>Enrollment Codes Count</label>
+        <summaryFilterItems>
+            <field>Enrollment_Code__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Enrollment_Code__c.Enterprise_Training_Agreement__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Grace_Period_End_Date__c</fullName>
+        <description>Term End Date</description>
+        <externalId>false</externalId>
+        <formula>Term_End_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grace Period End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <description>Check if the Agreement is Active or not. It is based on start date and end date.</description>
+        <externalId>false</externalId>
+        <formula>(TODAY() &gt;=  Term_Start_Date__c ) &amp;&amp; ( TODAY() &lt;=  Term_End_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Language__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Language to display content in on self-enrollment portal</inlineHelpText>
+        <label>Language</label>
+        <referenceTo>Language__c</referenceTo>
+        <relationshipLabel>Enterprise Training Agreements</relationshipLabel>
+        <relationshipName>Enterprise_Training_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>License_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used by Eloqua marketing program to identify LEUs</description>
+        <externalId>false</externalId>
+        <inlineHelpText>License ID corresponding to the TAH/Unlimited license agreement to use for identifying Licensed End Users to notify of access to training under this agreement when the &quot;Enable LEU Campaigns&quot; box is checked</inlineHelpText>
+        <label>License ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Lifetime_Agreement_Duration_Years__c</fullName>
+        <description>Difference between Today and the Agreement Start Date for Active agreements and the difference between Agreement End Date and Agreement Start Date for inactive agreements</description>
+        <externalId>false</externalId>
+        <formula>(IF( Term_End_Date__c &gt; TODAY(),TODAY(), Term_End_Date__c) -  Term_Start_Date__c)/365</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>How long has the agreement been active?</inlineHelpText>
+        <label>Lifetime Agreement Duration (Years)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_Seats__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Seats</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Enterprise Training Agreements</relationshipLabel>
+        <relationshipName>Enterprise_Training_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Notification_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that renewal notification emails should be sent if &quot;Enable LEU Campaigns&quot; is checked.  Must be at least 2 days from the current date to allow time for processing.</inlineHelpText>
+        <label>Renewal Notification Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Self_Enrollment_Content__c</fullName>
+        <description>The Self-Enrollment Content to show up on the Self Enrollment page (during enrollment code precheck) on the unauthenticated Force.com site.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Self-Enrollment Content to show up on the Self Enrollment page (during enrollment code precheck) on the unauthenticated Force.com site.</inlineHelpText>
+        <label>Self-Enrollment Content</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sponsor Office Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Phone__c</formula>
+        <label>Sponsor Office Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Signature__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Signature__c</formula>
+        <label>Sponsor Office Signature</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sponsor Office</label>
+        <referenceTo>Sponsor_Office__c</referenceTo>
+        <relationshipLabel>Enterprise Training Agreements</relationshipLabel>
+        <relationshipName>Enterprise_Training_Agreements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Submit_Batch__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Trigger manually ETA records to Course Management System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For system admin only to trigger manually ETAs records to Course Management System</inlineHelpText>
+        <label>Submit Batch</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Term_End_Date__c</fullName>
+        <description>Agreement expiration date</description>
+        <externalId>false</externalId>
+        <label>Term End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Term_Start_Date__c</fullName>
+        <description>The date the agreement becomes effective</description>
+        <externalId>false</externalId>
+        <label>Term Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Total_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Enterprise Training Agreement</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Term_Start_Date__c</columns>
+        <columns>Term_End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>License_ID__c</columns>
+        <columns>Total_Price__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Is_Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Enterprise_Training_Agreements</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Term_Start_Date__c</columns>
+        <columns>Term_End_Date__c</columns>
+        <columns>Is_Active__c</columns>
+        <columns>License_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Term_Start_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>10/1/2014</value>
+        </filters>
+        <label>Enterprise Training Agreements</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Renewing_In_Next_90_Days</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Term_Start_Date__c</columns>
+        <columns>Term_End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>License_ID__c</columns>
+        <columns>Total_Price__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Is_Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Term_End_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <label>Renewing In Next 90 Days</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Enterprise Training Agreement Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Enterprise Training Agreements</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Seat_Based</fullName>
+        <active>true</active>
+        <description>Limited Seats</description>
+        <label>Seat-Based</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Unlimited</fullName>
+        <active>true</active>
+        <description>Unlimited Seats</description>
+        <label>Unlimited</label>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Primary_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Term_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Term_End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Max_Seats__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Total_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Is_Active__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Primary_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Term_Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Term_End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Max_Seats__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Total_Price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_Active__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Primary_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Term_Start_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Term_End_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Max_Seats__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Total_Price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Is_Active__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Account_Name__c</searchFilterFields>
+        <searchFilterFields>Primary_Contact__c</searchFilterFields>
+        <searchFilterFields>Term_Start_Date__c</searchFilterFields>
+        <searchFilterFields>Term_End_Date__c</searchFilterFields>
+        <searchFilterFields>Max_Seats__c</searchFilterFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Term_Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Term_End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Max_Seats__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_Active__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Update_an_existing_License_ID</fullName>
+        <active>true</active>
+        <description>If an ETA has a License ID associated to it, this rule will prevent them from updating the License ID. This rule is implemented for MAOTS integrations.</description>
+        <errorConditionFormula>PRIORVALUE(License_ID__c) &lt;&gt; Null &amp;&amp; ISCHANGED(License_ID__c)</errorConditionFormula>
+        <errorDisplayField>License_ID__c</errorDisplayField>
+        <errorMessage>License ID on an ETA cannot be modified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CheckLicenseBeforeEnablingLEUCamp</fullName>
+        <active>true</active>
+        <description>If the &quot;Enable LEU Campaigns&quot; field is checked without the License ID field being populated. 
+The error message should say &quot;Please provide a License ID before enabling LEU campaigns.&quot;</description>
+        <errorConditionFormula>AND(Enable_LEU_Campaigns__c=true, License_ID__c=null)</errorConditionFormula>
+        <errorDisplayField>License_ID__c</errorDisplayField>
+        <errorMessage>Please provide a License ID before enabling LEU campaigns.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Invalid_Term_Dates</fullName>
+        <active>true</active>
+        <description>Prevent Invalid Term Dates on Enterprise Training Agreements</description>
+        <errorConditionFormula>Term_Start_Date__c  &gt;=  Term_End_Date__c</errorConditionFormula>
+        <errorDisplayField>Term_End_Date__c</errorDisplayField>
+        <errorMessage>Term End Date must be greater than Term Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RestrictRenewalDateOnCreatingBefore48Hrs</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISCHANGED(Renewal_Notification_Date__c), Renewal_Notification_Date__c &lt;  (NOW()+(0.04167*48)))</errorConditionFormula>
+        <errorDisplayField>Renewal_Notification_Date__c</errorDisplayField>
+        <errorMessage>Date should be 48 Hrs from Todays Date.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,21 @@
+Hello {!Case.Contact},
+
+Thank you for your recent purchase. Order # XXXXXXXXX for License ###### is complete.
+
+If you are a license administrator or end user, you can download your licensed products now. Download can be found here: https://www.mathworks.com/downloads
+
+To view the Order Details or print/email order details please log into your MathWorks Account at mathworks.com and click on the “View Orders” link located on your Main Accounts Page. My Orders Page: https://www.mathworks.com/accesslogin/myOrders.do
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}
+
+
+Your use of the products will be governed exclusively by the terms of The MathWorks, Inc. Software License Agreement (click-wrap) that accompanies the products. You cannot continue to install the products unless you agree to the terms when prompted during installation.
+
+MathWorks programs are distributed in accordance with U.S. Export Administration regulations. They may be subject to U.S. Export Control laws or other (U.S. and Non-U.S.) governmental export and import laws. It is the Licensees responsibility to comply with the latest U.S. or other governmental import or export regulations.

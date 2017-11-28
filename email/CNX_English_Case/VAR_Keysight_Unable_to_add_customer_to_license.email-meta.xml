@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to Keysight when there is an issue with the end user entitling</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>VAR Keysight - Unable to add customer to license</name>
+    <style>none</style>
+    <subject>Unable to add Keysight Customer to MathWorks License</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

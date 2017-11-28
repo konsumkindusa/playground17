@@ -1,0 +1,16 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanインストールチームの{!User.Email_Template_Signature__c}です。
+
+ご丁寧にご連絡頂きまして誠にありがとうございました。
+
+その他ご不明な点やご質問等ございましたら
+お気軽に弊社までお問合せ下さい。
+
+今後ともよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+Case ID: {!Case.CaseNumber}

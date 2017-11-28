@@ -1,0 +1,21 @@
+Dear {!Case.Contact},
+
+Your order for Sales Support Licenses has been sent to our order group for processing.  Within 24-48 hours, you should receive an e-mail confirming that your order is complete. You will receive a separate e-mail confirming your association to the new license. 
+
+You will need to visit the MathWorks License Center, using your “MathWorks Account”, to ensure that you have granted them download permissions. If you provide your licensed end users download permissions, they will be able to download and activate the software from the License Center by logging into their “MathWorks Account”. 
+
+
+You will be prompted for a user name and password. Please note that the user name and password are case sensitive.
+
+User Name:  CNXproduct
+Password:   Ima#1p                                (I am a #1 partner)
+
+The attached Sales Support Users Guide outlines your responsibilities as the administrator contact and includes information on how to make changes to your Sales Support Licenses.  This guide can also be found on the Help Desk.
+
+If you have any questions on your responsibilities or the licenses, please let me know.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

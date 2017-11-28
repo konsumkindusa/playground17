@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used to manage the profiles and users that are subject to Project validation rules.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Manage_My_Time__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Manage My Time</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Deleting_Closed_Projects__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Prevent Deleting Closed Projects</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Editing_Closed_Projects__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used to control who can edit Projects after they have been closed. (Primary use case is for a manager or system admin to re-open a closed project for time entry.)</description>
+        <externalId>false</externalId>
+        <label>Prevent Editing Closed Projects</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Editing_Time_on_Closed_Projects__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used to control who can edit Project Time Entries after the project has been closed without reopening the project. (Primary use case is for a system admin or data loader.)</description>
+        <externalId>false</externalId>
+        <label>Prevent Editing Time on Closed Projects</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ProjectActivityType__c</fullName>
+        <externalId>false</externalId>
+        <label>ProjectActivityType</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Project Validation Rule Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

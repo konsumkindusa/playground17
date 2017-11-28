@@ -1,0 +1,17 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+leider mussten wir feststellen, dass Sie trotz mehrfacher telefonischer Zahlungserinnerungen unsere Rechnung xxxxxx bis heute noch nicht bezahlt haben. Letztmalig geben wir Ihnen die Gelegenheit, den offenen Rechnungsbetrag in Höhe von € .... schnellstmöglich auf unser Konto zu überweisen.
+
+Andernfalls behalten wir uns vor, Sie zukünftig nur noch gegen Vorauskasse zu beliefern.
+
+Gerne bieten wir Ihnen ab sofort die Möglichkeit, unsere Rechnungen per Email (PDF Anhang) zu erhalten. Wünschen Sie dieses, antworten Sie bitte auf diese Nachricht und teilen Sie uns die entsprechende Email-Adresse mit.
+
+Bei Antworten auf diese Nachricht, belassen Sie bitte die unten aufgeführte Reference ID in der Email, damit eine direkte Zuordnung zu diesem Vorgang erfolgen kann.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send SMS quote and explain SMS benefits Local Language</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Send SMS quote and explain SMS benefits Local Language</name>
+    <style>none</style>
+    <subject>关于Matlab软件续维护</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

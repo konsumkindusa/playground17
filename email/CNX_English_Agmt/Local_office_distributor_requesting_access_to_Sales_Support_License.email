@@ -1,0 +1,12 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+As a member of the MathWorks Connections Program, you are eligible to purchase limited quantities of low cost Sales Support Licenses of MathWorks products for pre-sales and marketing activities related to your Connections Program-approved offering.  In order to streamline the administration of these licenses, and offer them at significantly reduced prices, we have required partners to establish a single point of contact to administer the licenses and be responsible for the purchase of new licenses for all of their worldwide promotional needs. 
+
+You are currently the administrator contact for your company’s group Sales Support License of MathWorks products.  We have received an inquiry from your distributor/local office in Japan, requesting one or more new users on your  Sales Support license.  There is a limit of 25 Sales Support licenses that you can purchase for worldwide promotion of your product. You currently have <XX> end users and therefore still have <25-XX> more available to purchase.  If you would like to add these new end users to the license please provide their contact information to the attached spreadsheet and I will send you a quote for adding them.   
+
+If you have any questions, please let me know.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

@@ -1,0 +1,15 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+Recently I contacted you regarding additional steps to join the MathWorks Connections Program. To date, we have not heard back from you.
+
+If you are no longer interested please let me know and I will remove you from my follow-up list. Please note, if we do not receive a response by [DATE] your application will be closed and we will no longer be following up. 
+
+I look forward to hearing from you.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

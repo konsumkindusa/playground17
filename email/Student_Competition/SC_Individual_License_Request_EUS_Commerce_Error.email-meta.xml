@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to Export Compliance for Order Approval</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>*SC - Individual License Request - EUS Commerce Error</name>
+    <style>none</style>
+    <subject>Override Error in Commerce</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

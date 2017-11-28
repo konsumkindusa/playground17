@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Service Survey - Natick</name>
+    <style>freeForm</style>
+    <subject>Survey Request</subject>
+    <textOnly>Dear {!Case.Contact},
+You recently contacted us on {!Case.CreatedDate} for technical assistance, and we would like feedback on your experience. Your Service Request {!Case.CaseNumber}, {!Case.Subject}, was closed on {!Case.ClosedDate} by {!Case.OwnerFirstName}.
+Below is a link to our survey. The survey should take less than 5 minutes to complete.
+&lt;ShortSurveyURL&gt;
+Thank you for taking the time to complete the survey. Your feedback is important and helps us continuously improve the service to our valued customers.
+Sincerely,
+MathWorks Technical Support Team
+http://www.mathworks.com/support/
+
+Please do not reply to this e-mail. This mailbox is not monitored, so replies to this e-mail will not be responded to or read.
+
+If you would prefer not to receive surveys from MathWorks in the future, please visit the following link to update your communication preferences: https://go2.mathworks.com/preference-center
+
+If you would like to read MathWorks privacy policy, please visit the following link: http://www.mathworks.com/company/aboutus/policies_statements/</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

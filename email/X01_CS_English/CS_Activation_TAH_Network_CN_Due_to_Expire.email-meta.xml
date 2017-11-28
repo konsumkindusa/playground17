@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TAH Network CN Due to Expire</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - Activation - TAH Network CN Due to Expire</name>
+    <style>none</style>
+    <subject>TAH Network License Due to Expire</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

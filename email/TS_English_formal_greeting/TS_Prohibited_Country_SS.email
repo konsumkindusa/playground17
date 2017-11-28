@@ -1,0 +1,10 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+I am writing in reference to your  Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+I am sorry to inform you that MathWorks and all its worldwide subsidiary offices are prohibited by the U.S. Dept. of Commerce and U.S. Dept. of Treasury from selling or supporting products in your country. For these reasons, we are unable to provide assistance for this request. 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

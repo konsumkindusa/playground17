@@ -1,0 +1,38 @@
+Hi {!Contact.FirstName}
+
+I am following up on your request in regards to running MATLAB Distributed Computing Server on Amazon EC2 (mathworks/EC2). 
+
+If you are still interested, please follow the instructions below to set up your Amazon AWS account and run the Connectivity Checker.  
+
+After Amazon confirms that your AWS account is set up and you have passed the connectivity checker please let me know the date you would like to trial MATLAB Distributed Computer Server for Amazon EC2. 
+
+Please provide me with the following information:
+* Your MATLAB license number
+* What release of MATLAB you are running 
+* What date you would like the trial.
+
+NOTE:  Fees for use of Amazon instances started by Cloud Center on your behalf are billed directly from Amazon Web Services.   You will incur fees for any instances you use, regardless of whether you have actually used MATLAB Distributed Computing Server.   This applies to on-demand licensing, perpetual licensing, and trials.  
+
+Although there is no charge from MathWorks during the trial, you will incur fees directly from Amazon Web Services for hardware usage.
+
+MATLAB Distributed Computing Server on Amazon EC2 Trial
+You can familiarize yourself with Cloud Center by viewing the documentation at http://www.mathworks.com/help/cloudcenter
+
+The purpose of the trial is to ensure that you can create, connect, and submit jobs to a cluster on Amazon. In order to trial the software, you need to run the Connectivity Checker and set up an Amazon Web Services account. 
+
+Connectivity Checker 
+If you are running MATLAB R2015a or lower, you will need to download and run Cloud Connectivity Checker. Instructions can be found at the following URL: http://www.mathworks.com/matlabcentral/fileexchange/48290-cloudconnectivitychecker
+
+If you are running MATLAB R2015b or higher, you can access the Cloud Connectivity Checker directly in the MATLAB desktop. 
+
+1.	Select the “Home” tab in the MATLAB Toolstrip 
+2.	Click on “Parallel” 
+3.	Select “Test Cloud Connection” 
+
+If you receive an error and are unable to connect to the Cloud, please contact our Installation Support team at support@mathworks.com, and copy me on the email. Be sure to add in the exact error message you receive. 
+
+Once your AWS account is created, and you have a trial or license to allow access to Cloud Center, you will then use the AWS Management Console to create an Identity and Access Management (IAM) Role.  Details on the IAM Role creation can be found in the Create and Manage Clusters section of the Cloud Center documentation (http://www.mathworks.com/help/cloudcenter). 
+
+I look forward to hearing from you on when you would like to have your trial. 
+
+Best regards,

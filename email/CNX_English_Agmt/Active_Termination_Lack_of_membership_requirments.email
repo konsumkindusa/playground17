@@ -1,0 +1,43 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+I regret to inform you that your company's membership in The MathWorks Connections Program has been terminated for {!Partner_Agreement__c.Partner_Agreement_Name__c} due to lack of response to program membership requirements.
+The Connections Program was developed as a vehicle for third parties who have developed products based on MATLAB and Simulink for commercial distribution.  Membership in this program is dependent on certain criteria, including responsiveness to inquiries.  We cannot continue to offer program benefits to companies that consistently do not meet those expectations.
+
+[LICENSE]
+
+We have tried to contact you regarding your Connections Program development license which is one of the conditions of program membership. Each partner must own at least one commercial license of MathWorks products, and keep it current under our software maintenance service.  Despite multiple attempts to reach you, our records indicate that your license is still out of maintenance.
+
+[T&C RE-ACK]
+
+The Connections Program Team has tried multiple times to contact your organization regarding your annual acknowledgement of The MathWorks Connections Program Terms and Conditions which is one of the conditions of program membership.  Each year, all partners must review and acknowledge continued acceptance of the program terms and conditions.  Despite multiple attempts to reach you, our records indicate that you still have not responded to our requests for annual terms and conditions acceptance.
+
+[PRE-PROD CHECK]
+The Connections Program Team has tried multiple times to contact your organization to obtain a status update on the development of {!Partner_Agreement__c.Partner_Agreement_Name__c}.  Your Pre-Product membership is contingent upon on-going development of a MATLAB or Simulink based product or service and bi-annual responses to requests for development status updates.  Despite multiple attempts to reach you, your company has been unresponsive.
+
+This letter details the necessary transition steps to remove your product, [Service Agreement.Name], from the Connections Program. The MathWorks decision to end your Connections Program participation with this product only affects your access to Connections Program-specific benefits for that product.   
+
+[Choose relevant partner components below]
+
+Connections Program Web Page
+Your Connections Program Web page for {!Partner_Agreement__c.Partner_Agreement_Name__c} will be removed from our site by [DATE.]
+
+Connections Program Partner Logos
+We require that you discontinue use of any Connections Program partner logos that may have been used in association with [Service Agreement.Name] in your company and product collateral, on your Web site, or on tradeshow signs.  Already printed materials do not need to be modified, but any new materials should not include the partner logos.  Any Web-based versions of the logos should be removed immediately.  
+
+Ability to Request Customer Trials
+If your company is listed on our Partner Trial Request page allowing your company to request evaluation licenses of MathWorks software (trials) on behalf of your prospects, you are no longer authorized to use this form and your company’s name has been removed. Should you have interest in working with a joint customer in the future, please contact Sales at info@mathworks.com.
+
+Development Licenses 
+Your organization is no longer eligible for the Connections Program developer discount on new product purchases in support of [Service Agreement.Name].  Contact your local MathWorks sales organization for any new product purchases. 
+
+Restricted Use Licenses
+Your company has a number of reduced-cost MATLAB licenses for [sales support (demonstration), technical support, customer training, internal regression testing] purposes that you are no longer eligible to use.   The specific licenses provided and the initial end users are listed on the attached License Termination Agreement.  Please ensure that these licenses are deleted from all primary and back up systems and that any DVDs or documentation are disposed of appropriately. Once these steps are completed, you must send me a signed copy of the attached License Termination Agreement.  Any other licenses that your organization owns that were purchased under standard license terms for development purposes are not affected by the termination of these restricted use licenses.
+
+Use of License Assignment Process to Resell MathWorks Software
+In the past, your company may have used our License Assignment process to resell MathWorks software with your product. You are no longer eligible to use this process and may not resell MathWorks products. 
+
+If you wish to have your membership reinstated for {!Partner_Agreement__c.Partner_Agreement_Name__c} by providing the requested information, or have any questions regarding this change in your partner status, please e-mail to connections@mathworks.com.
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

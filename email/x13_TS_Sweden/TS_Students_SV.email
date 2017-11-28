@@ -1,0 +1,18 @@
+Hej {!Contact.FirstName}, 
+
+Jag skriver med anledning av ditt tekniska supportärende #{!Case.CaseNumber} som gäller '{!Case.Subject}'.
+
+För användare med en MATLAB Student licens gäller tillgången till MathWorks Tekniska Support främst installationsproblem och bugrapportering. Det finns dock många support resurser på MathWorks.com som kan hjälpa till att lösa problemet.
+
+MathWorks Documentation Center inehåller fullständig dokumentation av alla MATLAB och Simulink produkter, däribland hundratals demos och exempel:
+http://www.mathworks.com/help/
+
+MATLAB Answers innehåller över 100.000 frågor om MATLAB och Simulink som ställts och besvarats av MATLAB Central online community:
+http://www.mathworks.com/matlabcentral/answes/
+
+Vad gäller din specifikta fråga, här är lite information som kan hjälpa dig att komma igång:
+
+Vänliga hälsningar,
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

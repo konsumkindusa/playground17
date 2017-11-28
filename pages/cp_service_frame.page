@@ -1,0 +1,25 @@
+<apex:page sidebar="false" showHeader="false">
+<!--<apex:stylesheet value="{!URLFOR($Resource.css_and_images, 'MWStyle.css')}"/>-->
+<!--<apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>-->
+
+
+<!--
+<link href="https://www.mathworks.com/includes_content/css/dom.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/css/site4.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/css/site5_pre.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/nextgen/css/header-footer-nextgen.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="http://www.mathworks.com/includes_content/css/mod_brows.css" type="text/css" rel="stylesheet" media="print"/>
+<link href="http://www.mathworks.com/support/service_requests/stylesheets/placeholder_textbox.css" rel="stylesheet" type="text/css" />
+<link href="http://www.mathworks.com/support/service_requests/stylesheets/service_requests.css" rel="stylesheet" type="text/css" /> 
+<link href="http://www.mathworks.com/support/service_requests/stylesheets/modalbox.css" rel="stylesheet" type="text/css" /> 
+-->
+
+<center>
+
+<!--<apex:image value="{!$Resource.mw_header_image}" width="960px;display:block;"/>-->
+ <apex:outputText escape="false">
+ <iframe id="mwsfdcframe" src="/apex/{!IF(NOT(ISBLANK($CurrentPage.parameters.page)),$CurrentPage.parameters.page,'cp_case_home')}{!IF(NOT(ISBLANK($CurrentPage.Parameters.id)), '?id=' + $CurrentPage.Parameters.id,'')}" width="956px" height="800px" frameBorder="0"/>
+ </apex:outputText>
+ </center>
+</apex:page>

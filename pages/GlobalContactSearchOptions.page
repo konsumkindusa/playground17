@@ -1,0 +1,37 @@
+<!-- 
+/**
+* @author Original: kishore AN- Cloud Sherpas/Mathworks, Last Modified:
+* @date Original: 07 Dec 2014, Last Modified: 
+* @description: page to show the options if the Global Contact Search did not return any contact
+*/ 
+-->
+<apex:page title="Global Contact Search" controller="GlobalContactSearchController" showHeader="{!$CurrentPage.parameters.noHeader}" sidebar="{!$CurrentPage.parameters.noSidebar}">
+    <apex:includeScript value="/support/console/32.0/integration.js" />
+    <script>
+    function openTab(url,name, tabname){        
+        if (sforce.console.isInConsole())
+        {
+        sforce.console.openPrimaryTab(null,url, true, name, null,tabname);
+        }
+        else {
+        window.open(url,"_self");
+        }
+     }
+    </script>     
+    <apex:pageMessages id="pageError"/>      
+    <h3>Global Contact Search</h3>
+    <apex:pageBlock >
+        <apex:pageBlockSection columns="1">
+            Global Contact Search did not find any contact with the email address
+            <apex:pageblockSectionItem >
+                {!$Label.would_you_like_create_contact} <a href="javascript:void(0);" onclick="javascript:openTab('/003/e','New Contact', 'New Contact');">Click here</a>
+            </apex:pageblockSectionItem>
+            <apex:pageblockSectionItem >
+                {!$Label.Would_you_like_to_continue_search},<a href="javascript:void(0);" onclick="javascript:openTab('/apex/GlobalContactSearch','Contact Search', 'Contact Search');"> Click here</a> 
+                or {!$Label.use_global_search}.
+            </apex:pageblockSectionItem>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>   
+    
+</apex:page>

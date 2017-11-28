@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FAQ__ka.FAQ__kav$PublishStatus</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka.FAQ__kav$Title</field>
+    </columns>
+    <currency>USD</currency>
+    <description>You can modify this report to show only your direct reports: modify the filter &quot;Create by&quot; Full Name equals You can add multiple names and they should be separated by commas.You may also wish to change the created date to a different time range.</description>
+    <filter>
+        <criteriaItems>
+            <column>FAQ__ka.FAQ__kav$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>andrew schenk,mukul Rao</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FAQ__ka$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>FAQ__ka$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Articles created by individual</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>View_All_Articles__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FAQ__ka.FAQ__kav$PublishStatus</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>FAQ__ka$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Help us invest in your MathWorks training success - L3 - Korean</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>L3 Enrollment Training Survey - Korean</name>
+    <style>freeForm</style>
+    <subject>본 교육 과정으로 제품 사용 측면에서 어떠한 변화가 있었습니까?</subject>
+    <textOnly>{!Enrollment__c.Enrollee_Name__c},
+
+MathWorks 교육을 수강해 주셔서 감사합니다. MATLAB, Simulink 제품을 여러분의 업무에 효과적으로 활용하고 이를 위한 교육의 질을 향상시키기 위해 여러분의 의견을 수렴하고자 합니다.
+
+교육 수강 후 달라진 점에 대한 설문조사에 잠시 시간을 내어 참여해 주시면 감사하겠습니다. 본 설문조사는 약 5분 가량 소요될 예정입니다.
+
+교육 수강에 대한 설문조사 (한글)
+
+Training knowledge transfer survey (English)
+
+설문조사에 응해주셔서 진심으로 감사드리며 보다 나은 교육을 위해 최선을 다하겠습니
+
+다.
+
+Craig Santos
+
+
+Training Business Manager
+The MathWorks, Inc.
+
+To update your address, send e-mail to: service@mathworks.com
+
+© 2017 The MathWorks, Inc. MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See mathworks.com/trademarks for a list of additional trademarks. Other product or brand names may be trademarks or registered trademarks of their respective holders.
+
+
+OPT-OUT:
+Click on the link to remove this e-mail address from the MathWorks commercial electronic mailing list.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

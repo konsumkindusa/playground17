@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>CS English</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Email_Template_Management_Eric_daSilva</group>
+        <group>dual_roles_CS_RAC_for_english</group>
+        <role>MathWorks_Customer_Services</role>
+        <roleAndSubordinatesInternal>MW_Customer_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MW_Operations</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

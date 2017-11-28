@@ -1,0 +1,18 @@
+<apex:page StandardController="Case" showheader="true" extensions="CaseGeckCreationController" action="{!caseCreateEscalationURL}">
+    
+    <apex:includeScript value="{!$Resource.jquery_172}"/>
+    
+    <script>
+    var j$ = jQuery.noConflict();
+    j$(document).ready(function() {
+        window.open('{!JSENCODE(gekoURL)}', '_blank'); //HW 2304826
+    });
+    
+    </script>
+    <h1>Escalation will be created in a new window.</h1>
+    
+    <apex:form id="_form">
+        <br/>
+        <apex:commandButton onClick="window.open('{!JSENCODE(gekoURL)}', '_blank'); return false;" value="Create Escalation"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,2447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>MW_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>MW_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Territory_Name__c</fields>
+        <fields>Industry</fields>
+        <label>MW Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>Account_Field_On_Lead_Conversion</fullName>
+        <description>On custom lead conversion page</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Name_Latin__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Sector__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingStateCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Territory__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Has_License__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Account Field On Lead Conversion</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>CRMC_PP__CRMC_Action_Grid_Defaults</fullName>
+        <description>Default Columns for CRMC Action Grid</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AnnualRevenue</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>NumberOfEmployees</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CRMC Action Grid Defaults</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Address_Diff__c</fullName>
+        <externalId>false</externalId>
+        <formula>LastModifiedDate - Address_Changed_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Address Diff</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>18</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Assignment_Log__c</fullName>
+        <description>Link to BO report to view the account assignment log for the past 20 days</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( $Setup.General_Settings__c.Account_Assignment_Log_Report__c  &amp;  CDS_Account_Id__c ,&quot; View Account Assignment Log&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>BO Report to view account assignment activities for the past 20 days</inlineHelpText>
+        <label>Account Assignment Log</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_City_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>City (Latin)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_County_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>County (Latin)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Changed_Date__c</fullName>
+        <description>The date when account name or account latin name has been changed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when account name or Latin name was changed</inlineHelpText>
+        <label>Account Name Changed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Latin__c</fullName>
+        <description>Latin Account Name</description>
+        <externalId>false</externalId>
+        <label>Account Name (Latin)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Prior_Territory_Changed_Date__c</fullName>
+        <description>The date/time when the account prior owner was changed. Excluded system users like MW Integration, SFDC Admn,Informatica, Data Loader</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time when the account prior owner was changed</inlineHelpText>
+        <label>Account Prior Territory Changed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Account_Prior_Territory__c</fullName>
+        <description>When account owner has been changed, saved the prior owner id . The field is used by DW for reports</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior Account Owner</inlineHelpText>
+        <label>Account Prior Territory</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Sector_Code__c</fullName>
+        <description>Account Sector Abreviation will be used to calculate Account Location</description>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Account_Sector__c , &apos;Commercial&apos;) ,&apos;COM&apos;, IF(ISPICKVAL( Account_Sector__c , &apos;Government&apos;) ,&apos;GOV&apos;,&apos;EDU&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Sector Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Sector__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Sector</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial</fullName>
+                    <default>false</default>
+                    <label>Commercial</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account_State_Province_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>State/Province (Latin)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                    <label>Duplicate</label>
+                </value>
+                <value>
+                    <fullName>Junk</fullName>
+                    <default>false</default>
+                    <label>Junk</label>
+                </value>
+                <value>
+                    <fullName>Unvalidated</fullName>
+                    <default>false</default>
+                    <label>Unvalidated</label>
+                </value>
+                <value>
+                    <fullName>Out of Business</fullName>
+                    <default>false</default>
+                    <label>Out of Business</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account_Street_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>Street (Latin)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Territory_Sector__c</fullName>
+        <description>This field stores the data of Territory Sector</description>
+        <externalId>false</externalId>
+        <label>Account Territory Sector</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Territory_Type__c</fullName>
+        <description>This field stores the data of Territory Type</description>
+        <externalId>false</externalId>
+        <label>Account Territory Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Warning_Icon__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Account_Warning__c, 
+&quot;&quot;, &quot;&quot;,IMAGE ( &quot;/img/msg_icons/warning32.png&quot;, &quot;True Image&quot; ))</formula>
+        <label>Account Warning</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Warning__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Warning</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Credit Hold</fullName>
+                    <default>false</default>
+                    <label>Credit Hold</label>
+                </value>
+                <value>
+                    <fullName>Suspicious - License Use</fullName>
+                    <default>false</default>
+                    <label>Suspicious - License Use</label>
+                </value>
+                <value>
+                    <fullName>Suspicious - Business Practice</fullName>
+                    <default>false</default>
+                    <label>Suspicious - Business Practice</label>
+                </value>
+                <value>
+                    <fullName>Restricted - License Use</fullName>
+                    <default>false</default>
+                    <label>Restricted - License Use</label>
+                </value>
+                <value>
+                    <fullName>Restricted - Trials &amp; Sales</fullName>
+                    <default>false</default>
+                    <label>Restricted - Trials &amp; Sales</label>
+                </value>
+                <value>
+                    <fullName>Restricted - Legal</fullName>
+                    <default>false</default>
+                    <label>Restricted - Legal</label>
+                </value>
+                <value>
+                    <fullName>Export Compliance Concern</fullName>
+                    <default>false</default>
+                    <label>Export Compliance Concern</label>
+                </value>
+                <value>
+                    <fullName>Non-Authorized Reseller</fullName>
+                    <default>false</default>
+                    <label>Non-Authorized Reseller</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Address_Changed_Date__c</fullName>
+        <defaultValue>NOW()</defaultValue>
+        <description>Date/Time field for storing the last time an element of the address was updated; will be set by trigger; not added to page layouts</description>
+        <externalId>false</externalId>
+        <label>Address Changed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Bypass_Fuzzy_Matching__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Static flag to be used during lead conversion process to bypass fuzzy matching in DupeBlocker</description>
+        <externalId>false</externalId>
+        <label>Bypass Fuzzy Matching</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CDS_Account_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>The ID of the Account in CDS Database and will be used for integration</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The ID of the Account in CDS Database</inlineHelpText>
+        <label>CDS Account Id</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Child_Accounts__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of the child accounts associated with the CPN Account</description>
+        <externalId>false</externalId>
+        <label>Child Accounts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Controlled_Technology_Alert__c</fullName>
+        <description>Used by TS or CS group , not display on UI</description>
+        <externalId>false</externalId>
+        <label>Controlled Technology Alert</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unassigned</fullName>
+                    <default>true</default>
+                    <label>Unassigned</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Nuclear End Use</fullName>
+                    <default>false</default>
+                    <label>Nuclear End Use</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Corp_Parent_Name_SF_ID__c</fullName>
+        <description>New field will be used for the reporting purpose to populate CPN Account id on both child record and CPN Account</description>
+        <externalId>false</externalId>
+        <formula>IF( Is_Corporate_Parent__c , CASESAFEID(Id)   , IF( NOT(ISNULL(Corporate_Parent_Name__c)) , CASESAFEID(Corporate_Parent_Name__r.Id)  , &apos;&apos;)  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Corporate Parent Name Salesforce ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Parent_CDS_ID__c</fullName>
+        <description>Formula Corporate parent cds account id used for CPN account management</description>
+        <externalId>false</externalId>
+        <formula>Corporate_Parent_Name__r.CDS_Account_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>CPN Account CDS ID</inlineHelpText>
+        <label>Corporate Parent CDS ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Parent_Name_Latin__c</fullName>
+        <externalId>false</externalId>
+        <formula>Corporate_Parent_Name__r.Account_Name_Latin__c</formula>
+        <label>Corporate Parent Name (Latin)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Parent_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Name of the Corporate Parent</description>
+        <externalId>false</externalId>
+        <label>Corporate Parent Name</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1</booleanFilter>
+            <errorMessage>The entered Account is not a CPN Account</errorMessage>
+            <filterItems>
+                <field>Account.Is_Corporate_Parent__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>CPN Child Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Corporate_Parent_Name_for_Reports__c</fullName>
+        <description>Corporate Parent Name for Reports</description>
+        <externalId>false</externalId>
+        <formula>IF( Is_Corporate_Parent__c , Name , IF( NOT(ISNULL(Corporate_Parent_Name__c)) ,Corporate_Parent_Name__r.Name , &apos;&apos;) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Corporate Parent Name for Reports</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Parent_Siebel_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Corporate_Parent_Name__r.Siebel_Account_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Corporate Parent Siebel Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_State_Code__c</fullName>
+        <description>Concatenated State &amp; Country Codes - used by CDS integration for matching.</description>
+        <externalId>false</externalId>
+        <formula>IF(OR (TEXT(BillingCountryCode) =&apos;US&apos;, TEXT(BillingCountryCode)=&apos;CA&apos;),TEXT(BillingStateCode), 
+   IF(ISBLANK(BillingState),&apos;&apos;,TEXT(BillingCountryCode)&amp;&apos;-&apos;&amp; TEXT(BillingStateCode)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country State Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County__c</fullName>
+        <externalId>false</externalId>
+        <label>County (Local)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Denied_Company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check box field updated by users</description>
+        <externalId>false</externalId>
+        <label>Denied Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Denied_Prohibited_Account__c</fullName>
+        <description>Calculated value display image on UI if account Prohibited flag OR Company Denied flag is True</description>
+        <externalId>false</externalId>
+        <formula>IF (Denied_Company__c = TRUE , 
+IMAGE ( &quot;/img/msg_icons/error32.png&quot;, &quot;True Image&quot; ), &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Denied Account/On Watch List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Disable_Cleansing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Disable Cleansing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Merge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Disable Merge</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Export_Prohibited__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Export_Status__c  = &quot;A&quot;,IMAGE ( &quot;/img/msg_icons/error32.png&quot;, &quot;True Image&quot; ), &quot;&quot;)</formula>
+        <label>Export Prohibited</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Export_Status__c</fullName>
+        <description>Valid values are A,C,and D. Field will be used by formula field Export Prohibited to expose red flag icon when vaue equal A. Not UI Field</description>
+        <externalId>false</externalId>
+        <label>Export Status</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Global_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Global Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduate_Biological_Life_Sciences__c</fullName>
+        <externalId>false</externalId>
+        <label>Graduate Biological &amp; Life Sciences</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduate_Business_and_Economics__c</fullName>
+        <externalId>false</externalId>
+        <label>Graduate Business and Economics</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduate_Engineering__c</fullName>
+        <externalId>false</externalId>
+        <label>Graduate Engineering</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduate_Mathematics__c</fullName>
+        <externalId>false</externalId>
+        <label>Graduate Mathematics</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduate_Physical_Sciences__c</fullName>
+        <externalId>false</externalId>
+        <label>Graduate Physical Sciences</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Has_License__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has License</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Headcount_Source_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique identifier assigned to an account by the external data provider of VTTH/TTH data - i.e. IPEDS</description>
+        <externalId>true</externalId>
+        <label>Headcount Source ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Vetted_Date__c</fullName>
+        <description>The date when the Account Industry Date was set by the authorized users</description>
+        <externalId>false</externalId>
+        <label>Industry Vetted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Vetted_Login__c</fullName>
+        <description>Login name of the user who vetted account industry</description>
+        <externalId>false</externalId>
+        <label>Industry Vetted Login</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsAddress_Changed__c</fullName>
+        <description>Checkbox formula field returning whether the address has changed during the last DML operation as determined by the following: 
+	if the transaction was an insert, return true
+	if the transaction was an update, check if the Address 			Changed Date/Time = Last Modified Date Time, if 	yes then return true, else return false;
+not added to page layouts</description>
+        <externalId>false</externalId>
+        <formula>IF(LastModifiedDate-Address_Changed_Date__c &lt;=  $Setup.General_Settings__c.CDS_IsChanged_Interval__c ,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsAddress Changed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsCustomerPortal</fullName>
+    </fields>
+    <fields>
+        <fullName>IsExcludedFromRealign</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Corporate_Parent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Corporate Parent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Individual_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag is set to true if the account is created as dummy account for the private contacts</description>
+        <externalId>false</externalId>
+        <label>Is Individual Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Kept_Account_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>Kept_Account_Name__r.Site</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Kept Account Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Kept_Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Kept Account Id</description>
+        <externalId>false</externalId>
+        <label>Kept Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Duplicate_Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Kept_Account_Siebel_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Kept_Account_Name__r.Siebel_Account_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Kept Account Siebel ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Account__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please contact Sales Operations to make a change to this field</inlineHelpText>
+        <label>Key Account</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER COM Target Account</fullName>
+                    <default>false</default>
+                    <label>AMER COM Target Account</label>
+                </value>
+                <value>
+                    <fullName>Top 300 University</fullName>
+                    <default>false</default>
+                    <label>Top 300 University</label>
+                </value>
+                <value>
+                    <fullName>Tier 1 - Top WW</fullName>
+                    <default>false</default>
+                    <label>Tier 1 - Top WW</label>
+                </value>
+                <value>
+                    <fullName>Tier 1A - Local Priority</fullName>
+                    <default>false</default>
+                    <label>Tier 1A - Local Priority</label>
+                </value>
+                <value>
+                    <fullName>Tier 2 - Non-Priority Large</fullName>
+                    <default>false</default>
+                    <label>Tier 2 - Non-Priority Large</label>
+                </value>
+                <value>
+                    <fullName>Tier 3 - Non-Priority Small</fullName>
+                    <default>false</default>
+                    <label>Tier 3 - Non-Priority Small</label>
+                </value>
+                <value>
+                    <fullName>Tier 3A - Non-Technical</fullName>
+                    <default>false</default>
+                    <label>Tier 3A - Non-Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Link_to_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>$Label.Console_URL</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Link to Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Territory_ID__c</fullName>
+        <description>Logical unique identifier for a Territory - used as key between systems (Salesforce, CDS, Warehouse, etc.)
+Used to lookup Territory2Id for creating assignments to Territory</description>
+        <externalId>false</externalId>
+        <label>Master Territory ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Non_degree_granting_Educational_NDE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Non degree granting Educational (NDE)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Office_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Office Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Office</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Optional_Data_Missing__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (( Record_Completeness_Percent__c &lt; 1) 
+,
+IF( ISBLANK( Account_Name_Latin__c ) , &quot; Account Name (Latin)&quot;, &quot;&quot;) + 
+IF( ISBLANK( Account_City_Latin__c ) , &quot; City (Latin)&quot;, &quot;&quot;)
+,&quot;&quot;)</formula>
+        <label>Optional Data Missing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Latin_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent.Account_Name_Latin__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Account Hierarchy (Latin)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Primary_Position_ID__c</fullName>
+        <description>Siebel Account Primary Sales Rep&apos;s Position ID</description>
+        <externalId>false</externalId>
+        <label>Primary Sales Rep</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Record_Completeness_Percent__c</fullName>
+        <description>If the Account Country is China, Japan or Korea THEN we want to know if the following fields are not populated: 
+Latin Account Name 
+Latin City</description>
+        <externalId>false</externalId>
+        <formula>IF(OR (ISPICKVAL (BillingCountryCode, &quot;CN&quot;),
+ ISPICKVAL(BillingCountryCode, &quot;JP&quot;),
+ ISPICKVAL(BillingCountryCode, &quot;KR&quot;)), (IF( ISBLANK(Account_Name_Latin__c) , 0, 1) +  IF( ISBLANK( Account_City_Latin__c ) , 0, 1))  / 2, 1)</formula>
+        <label>Record Completeness %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Record_Completeness__c</fullName>
+        <description>Displays the icon if any optional fields are NULL, visible to all users</description>
+        <externalId>false</externalId>
+        <formula>CASE(Record_Completeness_Percent__c, 
+1, &quot;&quot;,IMAGE ( &quot;/img/msg_icons/info32.png&quot;, &quot;True Image&quot; ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This record has been saved without optional but important data, see the Optional Data Missing field for details. If available, add the missing data in order to improve the quality.</inlineHelpText>
+        <label>Record Completeness</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Hierarchy__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;acc/account_hierarchy.jsp?id=&apos;+Id, &apos;View Sales Hierarchy&apos;,&apos;_blank&apos;)</formula>
+        <label>Sales Hierarchy</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Account_ID__c</fullName>
+        <description>Full 18 character Salesforce ID of the Account - to be used for testing integrations.</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <label>Salesforce Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Territory_Id__c</fullName>
+        <description>Salesforce territory Id</description>
+        <externalId>false</externalId>
+        <label>Salesforce Territory Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Siebel_Account_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Current Siebel Account Id</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Siebel Account Id</inlineHelpText>
+        <label>Siebel Account ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Territory_ID__c</fullName>
+        <description>Territory ID from external rules engine (Siebel).  Used to lookup the internal Salesforce Territory to assign to the Account.</description>
+        <externalId>false</externalId>
+        <label>Siebel Territory ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Source_Table__c</fullName>
+        <description>Text formula field returning static value of “Account”; not added to page layouts</description>
+        <externalId>false</externalId>
+        <formula>&apos;Account&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Text formula field returning static value of “Account”; not added to page layouts</inlineHelpText>
+        <label>Source Table</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Suspicious_or_Restricted__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(( NOT ISPICKVAL(Account_Warning__c , &quot;&quot;)  &amp;&amp;    Export_Status__c &lt;&gt;&quot;A&quot; &amp;&amp;  Denied_Company__c = FALSE),IMAGE ( &quot;/img/samples/flag_red.gif&quot;, &quot;True Image&quot; ), &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Suspicious or Restricted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TA_Attempts__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of attempts made to run the territory assignment on the account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of attempts made to run the territory assignment on the account.</inlineHelpText>
+        <label>TA_Attempts</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Industry</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Name__c</fullName>
+        <description>Internal Salesforce Territory Name.  Populated by looking up the Salesforce Territory Name through the External_Territory_ID__c field.</description>
+        <externalId>false</externalId>
+        <label>Territory Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Sales Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Team_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory Sales Team Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <description>Hyperlink formula to the sales roster page</description>
+        <externalId>false</externalId>
+        <formula>IF(
+    Is_Individual_Account__c
+    ,&quot;N/A&quot;
+    ,IF(
+        NOT(ISBLANK(Salesforce_Territory_Id__c))
+        ,HYPERLINK(&quot;/apex/viewterritoryteams?territoryId=&quot;&amp; Salesforce_Territory_Id__c , Territory_Name__c)
+        ,IF(
+            AND(
+                OR(
+					AND(
+						$Setup.Territory_Settings__c.Territory_Assignment_Lookup_Field__c == &quot;Siebel&quot;
+						,NOT(ISBLANK(Siebel_Territory_ID__c))  
+						,Siebel_Territory_ID__c != &apos;0-5220&apos; 
+					)
+					,AND(
+						$Setup.Territory_Settings__c.Territory_Assignment_Lookup_Field__c == &quot;Master&quot;
+						,NOT(ISBLANK(Master_Territory_ID__c))  
+					)				
+				)				
+                ,ISBLANK(Salesforce_Territory_Id__c)
+                ,OR(
+                    TA_Attempts__c == 0
+                    ,ISBLANK(TA_Attempts__c)
+                )                
+            )
+            ,&quot;Assignment Error&quot;
+            ,IF(
+                AND(
+                    OR(
+						AND(
+							$Setup.Territory_Settings__c.Territory_Assignment_Lookup_Field__c == &quot;Siebel&quot;
+							,NOT(ISBLANK(Siebel_Territory_ID__c))  
+							,Siebel_Territory_ID__c != &apos;0-5220&apos;  
+						)
+						,AND(
+							$Setup.Territory_Settings__c.Territory_Assignment_Lookup_Field__c == &quot;Master&quot;
+							,NOT(ISBLANK(Master_Territory_ID__c))  
+						)				
+					)	
+                    ,ISBLANK(Salesforce_Territory_Id__c)
+                    ,TA_Attempts__c &gt; 0
+                    ,TA_Attempts__c &lt;= $Setup.Territory_Settings__c.Max_TA_Attempts__c
+                )
+                ,&quot;Pending Assignment - Retry&quot;
+                ,IF(
+                    AND(
+                        OR(
+							AND(
+								$Setup.Territory_Settings__c.Territory_Assignment_Lookup_Field__c == &quot;Siebel&quot;
+								,NOT(ISBLANK(Siebel_Territory_ID__c))  
+								,Siebel_Territory_ID__c != &apos;0-5220&apos;  
+							)
+							,AND(
+								$Setup.Territory_Settings__c.Territory_Assignment_Lookup_Field__c == &quot;Master&quot;
+								,NOT(ISBLANK(Master_Territory_ID__c))  
+							)				
+						)	
+                        ,ISBLANK(Salesforce_Territory_Id__c)
+                        ,TA_Attempts__c &gt; $Setup.Territory_Settings__c.Max_TA_Attempts__c
+                    )
+                    ,&quot;Pending Assignment - Threshold Exceeded&quot;
+                    ,&quot;Pending Assignment&quot;                             
+                )
+            )
+        )
+    )
+)</formula>
+        <label>Territory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Technical_Headcount_TTH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Graduate_Biological_Life_Sciences__c + Graduate_Business_and_Economics__c + Graduate_Engineering__c + Graduate_Mathematics__c + Graduate_Physical_Sciences__c + Undergraduate_Biological_Life_Sciences__c + Undergraduate_Business_and_Economics__c + Undergraduate_Engineering__c + Undergraduate_Mathematics__c + Undergraduate_Physical_Sciences__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Technical Headcount(TTH)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_Biological_Life_Sciences__c</fullName>
+        <externalId>false</externalId>
+        <label>Undergraduate Biological &amp; Life Sciences</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_Business_and_Economics__c</fullName>
+        <externalId>false</externalId>
+        <label>Undergraduate Business and Economics</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_Engineering__c</fullName>
+        <externalId>false</externalId>
+        <label>Undergraduate Engineering</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_Mathematics__c</fullName>
+        <externalId>false</externalId>
+        <label>Undergraduate Mathematics</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_Physical_Sciences__c</fullName>
+        <externalId>false</externalId>
+        <label>Undergraduate Physical Sciences</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Virtual_Total_Technical_Headcount_VTTH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Graduate_Engineering__c +  Undergraduate_Engineering__c + 0.5*( Undergraduate_Biological_Life_Sciences__c + Undergraduate_Mathematics__c + Undergraduate_Physical_Sciences__c + Graduate_Biological_Life_Sciences__c + Graduate_Mathematics__c + Graduate_Physical_Sciences__c ) + 0.2*( Undergraduate_Business_and_Economics__c + Graduate_Business_and_Economics__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Virtual Total Technical Headcount(VTTH)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Virtual_Total_Technical_Headcount__c</fullName>
+        <description>Virtual Total Technical Headcount (VTTH).  This field is read only for most users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Virtual Total Technical Headcount (VTTH)</inlineHelpText>
+        <label>Virtual Total Technical Headcount (VTTH)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Volume_License_Plan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Volume License Plan (VLP)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ortoo_e2a__Thread_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;
+LEFT( $Organization.Id , 4 )&amp;
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;), RIGHT($Organization.Id,4),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;), RIGHT($Organization.Id,5),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;), RIGHT($Organization.Id,6),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;), RIGHT($Organization.Id,7),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;), RIGHT($Organization.Id,8),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;), RIGHT($Organization.Id,9),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;), RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11)
+)))))))
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp;
+
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4),
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5),
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6),
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7),
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8),
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9),
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10),
+RIGHT(Id,11)
+))))))) &amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Account_Name</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Account_Name_Latin__c</columns>
+        <columns>Territory_Name__c</columns>
+        <columns>Salesforce_Account_ID__c</columns>
+        <columns>CDS_Account_Id__c</columns>
+        <columns>Has_License__c</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Siebel_Account_Id__c</columns>
+        <columns>Primary_Position_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name_Latin__c</field>
+            <operation>equals</operation>
+            <value>China Ordnance Industry Computer Application Technology Research Institute</value>
+        </filters>
+        <label>Account Name Look up</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Sales_Report_Admin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Ann_Acct_Rep_owner</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.OWNERSHIP</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>MyTerritory</filterScope>
+        <label>Ann_Acct_Rep_owner</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Industry_Code_Review</fullName>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Industry_Vetted_Date__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>Has_License__c</columns>
+        <columns>Siebel_Account_Id__c</columns>
+        <columns>Industry_Vetted_Login__c</columns>
+        <columns>Account_Sector__c</columns>
+        <columns>Account_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Sector__c</field>
+            <operation>notEqual</operation>
+            <value>Education</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.INDUSTRY</field>
+            <operation>equals</operation>
+            <value>To be coded</value>
+        </filters>
+        <filters>
+            <field>Account_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Has_License__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Industry Code Review</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Manage_Account_Industry</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Industry_Code_Review_NL</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7) AND 8</booleanFilter>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Industry_Vetted_Date__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>Has_License__c</columns>
+        <columns>Siebel_Account_Id__c</columns>
+        <columns>Industry_Vetted_Login__c</columns>
+        <columns>Account_Sector__c</columns>
+        <columns>Account_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Has_License__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Account_Sector__c</field>
+            <operation>notEqual</operation>
+            <value>Education</value>
+        </filters>
+        <filters>
+            <field>Is_Individual_Account__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>lessThan</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Industry_Vetted_Date__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>ACCOUNT.INDUSTRY</field>
+            <operation>equals</operation>
+            <value>To be coded</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:180</value>
+        </filters>
+        <label>Industry Code Review - NL</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Manage_Account_Industry</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Industry_Code_Review_NL_Recent</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>Industry_Vetted_Date__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>Has_License__c</columns>
+        <columns>Siebel_Account_Id__c</columns>
+        <columns>Industry_Vetted_Login__c</columns>
+        <columns>Account_Sector__c</columns>
+        <columns>Account_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Has_License__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Account_Sector__c</field>
+            <operation>notEqual</operation>
+            <value>Education</value>
+        </filters>
+        <filters>
+            <field>Is_Individual_Account__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Industry_Vetted_Date__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>ACCOUNT.INDUSTRY</field>
+            <operation>equals</operation>
+            <value>To be coded</value>
+        </filters>
+        <label>Industry Code Review - NL Recent</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Manage_Account_Industry</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Maintain_CPN_Accounts_Hierarchy</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Account_Name_Latin__c</columns>
+        <columns>Account_Status__c</columns>
+        <columns>Account_Sector__c</columns>
+        <columns>Is_Corporate_Parent__c</columns>
+        <columns>Corporate_Parent_Name__c</columns>
+        <columns>Corporate_Parent_Name_Latin__c</columns>
+        <columns>Corporate_Parent_Siebel_Account_ID__c</columns>
+        <columns>Has_License__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_Corporate_Parent__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>SalesOps CPN Accounts Hierarchy</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Account_Warning__c</columns>
+        <columns>Account_Warning_Icon__c</columns>
+        <columns>Account_Territory_Sector__c</columns>
+        <columns>Account_Territory_Type__c</columns>
+        <columns>Corporate_Parent_Name__c</columns>
+        <columns>Corporate_Parent_Name_Latin__c</columns>
+        <filterScope>MyTerritory</filterScope>
+        <label>My Accounts</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Territory_Assignment</fullName>
+        <booleanFilter>1 AND 2 AND 5 AND (3 OR 4)</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>Territory__c</columns>
+        <columns>Salesforce_Account_ID__c</columns>
+        <columns>Salesforce_Territory_Id__c</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Siebel_Account_Id__c</columns>
+        <columns>Siebel_Territory_ID__c</columns>
+        <columns>CDS_Account_Id__c</columns>
+        <columns>TA_Attempts__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Is_Individual_Account__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Salesforce_Territory_Id__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Territory_Name__c</field>
+            <operation>startsWith</operation>
+            <value>Assignment Error</value>
+        </filters>
+        <filters>
+            <field>Account_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Duplicate,Junk,Out of Business</value>
+        </filters>
+        <label>Pending Territory Assignment</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>CRM_Team</role>
+        </sharedTo>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Has_License__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Territory_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_Corporate_Parent__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Corporate_Parent_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name_Latin__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CDS_Account_Id__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.SITE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.INDUSTRY</lookupFilterFields>
+        <lookupFilterFields>Territory__c</lookupFilterFields>
+        <lookupFilterFields>Account_Name_Latin__c</lookupFilterFields>
+        <lookupFilterFields>Account_Status__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>Territory__c</searchFilterFields>
+        <searchFilterFields>Account_Sector__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_CITY</searchFilterFields>
+        <searchFilterFields>Country_State_Code__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</searchFilterFields>
+        <searchFilterFields>Has_License__c</searchFilterFields>
+        <searchFilterFields>Account_Name_Latin__c</searchFilterFields>
+        <searchFilterFields>Account_Status__c</searchFilterFields>
+        <searchFilterFields>Is_Corporate_Parent__c</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Has_License__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Territory__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_Corporate_Parent__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Corporate_Parent_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name_Latin__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CDS_Account_Id__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>AccountStatus_From_To_Duplicate</fullName>
+        <active>true</active>
+        <description>Account status cannot be manually set to or from the &quot;Duplicate&quot; status. Only Admins can do it.</description>
+        <errorConditionFormula>OR(
+AND(
+ISPICKVAL(PRIORVALUE(Account_Status__c), &apos;Duplicate&apos;),
+ISCHANGED( Account_Status__c ),  $Setup.Account_Validation_Rule__c.Prevent_Setting_Status_Duplicate__c 
+),
+AND(
+ISPICKVAL( Account_Status__c , &apos;Duplicate&apos;),
+ISCHANGED( Account_Status__c ),  $Setup.Account_Validation_Rule__c.Prevent_Setting_Status_Duplicate__c 
+)
+)</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>Account status cannot be manually set to or from the &quot;Duplicate&quot; status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Name_cannot_exceed_100_character</fullName>
+        <active>true</active>
+        <description>Prevent Account name to exceed 100 characters</description>
+        <errorConditionFormula>LEN( Name ) &gt; 100</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Account Name cannot exceed 100 characters</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Read_Only_Vetted_Industry</fullName>
+        <active>true</active>
+        <description>The account vetted industry is read only for all users expect Admin profiles and Allow Update Account Indusrty permission</description>
+        <errorConditionFormula>AND(NOT(ISNULL(Industry_Vetted_Date__c)), NOT(ISNULL(Industry_Vetted_Login__c)), NOT($Permission.Allow_Update_Account_Industry), ISCHANGED( Industry )  )</errorConditionFormula>
+        <errorDisplayField>Industry</errorDisplayField>
+        <errorMessage>You don&apos;t have permission to update the account industry. Please open the hyperlink below to place the update request 
+https://sharepoint.mathworks.com/salesservice/comm/forms/Lists/IndustryCodingChangeRequest/NewForm.aspx</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_sector_should_not_be_editable</fullName>
+        <active>true</active>
+        <description>Account sector should not be editable by “standard” users</description>
+        <errorConditionFormula>AND (NOT($Permission.Allow_Update_Account_Sector),
+ISCHANGED( Account_Sector__c),
+$Setup.Account_Validation_Rule__c.Prevent_Change_Account_Sector__c)</errorConditionFormula>
+        <errorDisplayField>Account_Sector__c</errorDisplayField>
+        <errorMessage>You cannot change the Account Sector</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_City_Required</fullName>
+        <active>true</active>
+        <description>Billing City (Local) must be entrered</description>
+        <errorConditionFormula>AND(
+Is_Individual_Account__c=FALSE,
+ISBLANK( BillingCity ),
+$Setup.Account_Validation_Rule__c.Prevent_account_without_city__c
+)</errorConditionFormula>
+        <errorDisplayField>BillingCity</errorDisplayField>
+        <errorMessage>Local City must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_Country_Required</fullName>
+        <active>true</active>
+        <description>Billing Country (Local) must be entered for standard accounts</description>
+        <errorConditionFormula>AND(
+Is_Individual_Account__c=FALSE, 
+ISBLANK( BillingCountry ),
+$Setup.Account_Validation_Rule__c.Prevent_billing_account_without_country__c  
+)</errorConditionFormula>
+        <errorDisplayField>BillingCountry</errorDisplayField>
+        <errorMessage>Local Country must be specified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CPN_Account_Name_Read_Only</fullName>
+        <active>true</active>
+        <description>The CPN Account Name field is read only for all users except Sales Ops and profiles with Allow Update CPN Account Name permission</description>
+        <errorConditionFormula>AND((Is_Corporate_Parent__c= TRUE),NOT($Permission.Allow_Update_CPN_Account_Name), ISCHANGED(Name))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Please contact Sales Operations to make a change to this Corporate Parent Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CPN_Cannot_Be_Child</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Is_Corporate_Parent__c,  NOT( ISBLANK(Corporate_Parent_Name__c ) ) )</errorConditionFormula>
+        <errorDisplayField>Corporate_Parent_Name__c</errorDisplayField>
+        <errorMessage>A Corporate Parent Account cannot be a Child for another Corporate Parent Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_CPN_Account_to_Duplicate</fullName>
+        <active>true</active>
+        <description>Cannot change Corporate Parent  Account  status to Duplicate</description>
+        <errorConditionFormula>AND( NOT( ISBLANK( Kept_Account_Name__c ) )  ,Is_Corporate_Parent__c = True)</errorConditionFormula>
+        <errorDisplayField>Kept_Account_Name__c</errorDisplayField>
+        <errorMessage>Cannot  set status to Duplicate on Corporate Parent Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Disable_Merge_to_Duplicate</fullName>
+        <active>true</active>
+        <description>User cannot change account status to duplicate if Disable Merge flag is true</description>
+        <errorConditionFormula>AND( NOT( ISBLANK( Kept_Account_Name__c ) ) , Disable_Merge__c = True)</errorConditionFormula>
+        <errorDisplayField>Kept_Account_Name__c</errorDisplayField>
+        <errorMessage>Cannot set status to Duplicate for the accounts with Disable Merge flag</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Status_from_Active_to_Junk_or_OOB</fullName>
+        <active>true</active>
+        <description>Regular user cannot change from Active to Junk or OOB status if Account has license. Only Admin can do it</description>
+        <errorConditionFormula>AND(ISPICKVAL(PRIORVALUE(Account_Status__c),&quot;Active&quot;),   Has_License__c = True, (AND ($Profile.Name &lt;&gt; &quot;MW Data Administrator&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)),(OR (ISPICKVAL(Account_Status__c, &apos;Junk&apos;),ISPICKVAL(Account_Status__c, &apos;Out of Business&apos;)) ))</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>You cannot change status of Licensed Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Status_from_Duplicate</fullName>
+        <active>true</active>
+        <description>Cannot change from Duplicate if Kept Account name is not null</description>
+        <errorConditionFormula>AND( ISPICKVAL( PRIORVALUE( Account_Status__c ) ,&quot;Duplicate&quot;), ISCHANGED( Account_Status__c ) , NOT( ISBLANK( Kept_Account_Name__c ) ) )</errorConditionFormula>
+        <errorDisplayField>Kept_Account_Name__c</errorDisplayField>
+        <errorMessage>To change Account Status you must clear Kept Account Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Status_from_OOB_to_Junk_or_active</fullName>
+        <active>true</active>
+        <description>Regular user cannot change from OOB to Active  or Junk status if Account has license. Only Admin can change License Account to Active or Junk, and only Admin can change to Inactive regardless the License</description>
+        <errorConditionFormula>AND(ISPICKVAL(PRIORVALUE(Account_Status__c),&quot;Out of Business&quot;),   Has_License__c = True, (AND ($Profile.Name &lt;&gt; &quot;MW Data Administrator&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)),(OR (ISPICKVAL(Account_Status__c, &apos;Junk&apos;),ISPICKVAL(Account_Status__c, &apos;Active&apos;)) ))</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>You cannot change status of Licensed Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Status_to_Duplicate</fullName>
+        <active>true</active>
+        <description>Cannot change status to duplicate manually - only when Kept Account name is populated</description>
+        <errorConditionFormula>AND ( ISCHANGED( Account_Status__c) , ISPICKVAL( Account_Status__c , &quot;Duplicate&quot;), ISBLANK( Kept_Account_Name__c ))</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>To change account status to Duplicate you must enter the value of Kept Account Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_status_from_Junk</fullName>
+        <active>true</active>
+        <description>Admin only can change status to Active or OOB for license account from Junk status</description>
+        <errorConditionFormula>AND(ISPICKVAL(PRIORVALUE(Account_Status__c),&quot;Junk&quot;), Has_License__c = True, (AND ($Profile.Name &lt;&gt; &quot;MW Data Administrator&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)),(OR (ISPICKVAL(Account_Status__c,&apos;Active&apos;),ISPICKVAL(Account_Status__c, &apos;Out of Business&apos;)) ))</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>You cannot change status of Licensed Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Do_Not_Allow_Remove_CPN_Flag</fullName>
+        <active>false</active>
+        <description>Prevent is CPN Flag to be removed if CPN has at least one children account associated with it</description>
+        <errorConditionFormula>AND (Child_Accounts__c &gt;0,ISCHANGED( Is_Corporate_Parent__c ),Is_Corporate_Parent__c = false)</errorConditionFormula>
+        <errorDisplayField>Is_Corporate_Parent__c</errorDisplayField>
+        <errorMessage>There are children accounts associated with Corporate Parent. You have to remove CPN from all children account and then update the flag.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LAddress_Fields_Cannot_Contain_UcodeChar</fullName>
+        <active>true</active>
+        <description>This to check for Unicode characters in address fields</description>
+        <errorConditionFormula>OR(NOT(OR(OR( LEN( Account_City_Latin__c  ) = 0,REGEX( Account_City_Latin__c , $Setup.General_Settings__c.RegEx_Latin__c 
+
+)))),
+
+NOT(OR(OR( LEN( Account_Street_Latin__c ) = 0,REGEX( Account_Street_Latin__c , $Setup.General_Settings__c.RegEx_Latin__c 
+
+)))),
+
+NOT(OR(OR( LEN(  Account_Name_Latin__c ) = 0,REGEX(  Account_Name_Latin__c, $Setup.General_Settings__c.RegEx_Latin__c 
+
+))))
+
+)</errorConditionFormula>
+        <errorMessage>Latin Address fields can not contain multi-byte characters</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Local_State_and_State_Province_Required</fullName>
+        <active>true</active>
+        <description>Local State/Province (Local) and Postal Code (Local) are required for the Local Country.</description>
+        <errorConditionFormula>AND(Is_Individual_Account__c = FALSE,
+CONTAINS($Setup.Countries_Requiring_States__c.Countries_Requires_States__c,
+TEXT(BillingCountryCode)),
+OR(ISBLANK(  BillingState ),  
+ISBLANK(BillingPostalCode)),
+!ISBLANK(BillingCountry),
+$Setup.Account_Validation_Rule__c.Prevent_Local_State_State_Province__c
+)</errorConditionFormula>
+        <errorDisplayField>BillingState</errorDisplayField>
+        <errorMessage>Local State/Province (Local) and Postal Code (Local) are required for the Country (Local).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Setting_Status_Inactive</fullName>
+        <active>true</active>
+        <description>Only Admin can change status to Inactive</description>
+        <errorConditionFormula>AND (
+    TEXT(PRIORVALUE(Account_Status__c)) != &quot;Inactive&quot;
+    ,ISPICKVAL(Account_Status__c, &quot;Inactive&quot;)
+    ,$Setup.Account_Validation_Rule__c.Prevent_Setting_Status_Inactive__c 
+)</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>You cannot change Account Status to Inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Account_Sector</fullName>
+        <active>true</active>
+        <description>This to restrict the length of Account Sector on Account</description>
+        <errorConditionFormula>Len(TEXT(Account_Sector__c))&gt;30</errorConditionFormula>
+        <errorDisplayField>Account_Sector__c</errorDisplayField>
+        <errorMessage>Length of Account Sector should not exceed 30 characters</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Account_Site</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Account Site on Account</description>
+        <errorConditionFormula>Len(Site)&gt;50</errorConditionFormula>
+        <errorDisplayField>Site</errorDisplayField>
+        <errorMessage>Length of Account Site Should not exceed 30 characters</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Account_Status</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Account Status on Account</description>
+        <errorConditionFormula>Len(TEXT(Account_Status__c))&gt;30</errorConditionFormula>
+        <errorDisplayField>Account_Status__c</errorDisplayField>
+        <errorMessage>Length of Account Status  Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Account_Warning</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Account Warning on Account</description>
+        <errorConditionFormula>Len(TEXT(Account_Warning__c))&gt;100</errorConditionFormula>
+        <errorDisplayField>Account_Warning__c</errorDisplayField>
+        <errorMessage>Length of Account Warning Should not exceed 100 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Billing_Country</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Billing Country on Account</description>
+        <errorConditionFormula>Len(BillingCountry)&gt;30</errorConditionFormula>
+        <errorDisplayField>BillingCountry</errorDisplayField>
+        <errorMessage>Length of Billing Country Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Billing_State</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Billing State on Account</description>
+        <errorConditionFormula>Len(BillingState)&gt;40</errorConditionFormula>
+        <errorDisplayField>BillingState</errorDisplayField>
+        <errorMessage>Length of Account Status Should not exceed 40 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_County</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of County on Account</description>
+        <errorConditionFormula>Len(County__c)&gt;50</errorConditionFormula>
+        <errorDisplayField>County__c</errorDisplayField>
+        <errorMessage>Length of County Should not exceed 50 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Kept_Acc_Siebel_ID</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Kept Account Siebel ID on Account</description>
+        <errorConditionFormula>Len(Kept_Account_Siebel_Id__c)&gt;20</errorConditionFormula>
+        <errorMessage>Length of Kept Account Siebel ID Should not exceed 20 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Key_Account</fullName>
+        <active>false</active>
+        <description>This is to restrict the length of Key Account on Account</description>
+        <errorConditionFormula>Len(TEXT(Key_Account__c))&gt;1</errorConditionFormula>
+        <errorDisplayField>Key_Account__c</errorDisplayField>
+        <errorMessage>Length of Key Account Should not exceed 1 character.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Type</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Type on Account</description>
+        <errorConditionFormula>Len(TEXT(Type))&gt;30</errorConditionFormula>
+        <errorDisplayField>Type</errorDisplayField>
+        <errorMessage>Length of Type Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Website</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of  website on Account</description>
+        <errorConditionFormula>Len(Website)&gt;100</errorConditionFormula>
+        <errorDisplayField>Website</errorDisplayField>
+        <errorMessage>Length of Website  Should not exceed 100 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Update_MOOC_Account</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+AND(ISCHANGED(Name), PRIORVALUE(Name)&lt;&gt; Name),
+AND(ISCHANGED(BillingCountry), PRIORVALUE(BillingCountry)&lt;&gt; BillingCountry),AND(ISCHANGED(BillingCity), PRIORVALUE(BillingCity)&lt;&gt; BillingCity),
+AND( ISCHANGED(BillingStreet),PRIORVALUE(BillingStreet)&lt;&gt;BillingStreet),
+AND(ISCHANGED(BillingPostalCode),PRIORVALUE(BillingPostalCode)&lt;&gt; BillingPostalCode),AND(ISCHANGED(County__c ),PRIORVALUE(County__c)&lt;&gt; County__c),
+AND (ISCHANGED( BillingCountry),PRIORVALUE(BillingCountry)&lt;&gt;BillingCountry)  
+),
+CONTAINS($Setup.Account_Validation_Rule__c.MOOC__c, Id ), $Setup.Account_Validation_Rule__c.Prevent_changing_MOOC_Account__c )</errorConditionFormula>
+        <errorMessage>You can&apos;t update Name or Address of the MOOC Account. Please contact Data Admin if you need to make any changes</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Edit_Account</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Edit Account</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var path = window.top.location.pathname
+//If on Standard Salesforce page
+if (path.indexOf(&apos;Service&apos;)  != -1){
+   srcUp(&apos;/apex/AccountEditOverride?id={!Account.Id}&apos;);
+}
+else {
+//If On Service Cloud Console
+ window.location.href =  &apos;/apex/AccountEditOverride?id={!Account.Id}&apos;;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Additional_Licenses</fullName>
+        <availability>online</availability>
+        <description>URL to open new MW License app. Retrieving only Home, PASS, or student licenses</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>View Licenses</masterLabel>
+        <openType>newWindow</openType>
+        <page>LicenseOpenAccount</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>View_CPN_Hierarchy</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View CPN Hierarchy</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/support/console/32.0/integration.js&quot;)}
+var openURL =  &apos;/{!$Setup.Dynamic_Report_Settings__c.Account_View_CPN_Hierachy__c}?pv0={!Account.Corporate_Parent_NameId__c}&amp;pv1={!Account.Id}&apos;;
+if (sforce.console.isInConsole()) 
+{ 
+     sforce.console.openPrimaryTab(null,openURL , true, 
+                &apos;View CPN Hierarchy&apos;);  
+}
+else {
+    window.open(openURL,&quot;_blank&quot;,&quot;height=1000,width=1300, scrollbars=1&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Licenses</fullName>
+        <availability>online</availability>
+        <description>When Button/Link pressed, pass Siebel account id to Query License WS</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Licenses</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/support/console/32.0/integration.js&quot;)}
+var openURL =  &apos;/apex/AccountViewLicense?id={!Account.Id}&apos;;
+if (sforce.console.isInConsole()) 
+{ 
+     sforce.console.openPrimaryTab(null,openURL , true, 
+                &apos;View Licenses - {!JSENCODE(Account.Name)}&apos;, null,&apos;ViewLicensesTab&apos;);  
+}
+else {
+    window.open(openURL,&quot;_blank&quot;,&quot;height=1000,width=1300, scrollbars=1&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Quotes_Commerce</fullName>
+        <availability>online</availability>
+        <description>Opens quotes associated with the current account in the Commerce application</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>View Commerce Quotes</masterLabel>
+        <openType>newWindow</openType>
+        <page>AccountViewQuotesCommerce</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>activities__Create_Tasks_Accounts</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Tasks</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
+var records = {!GETRECORDIDS( $ObjectType.Account)};
+var returnURL = window.location.href;
+if(records != null &amp;&amp; records != &apos;&apos;){
+mywin = window.open(&apos;/apex/activities__createTasks?Ids=&apos;+records+&apos;&amp;retURL=&apos;+returnURL+&apos;&amp;type=whatid&apos; , &apos;_top&apos;,
+&apos;height=400,width=600,status=yes,toolbar=no,menubar=no,location=no,center=yes,resizable=no&apos;);
+mywin.focus();
+}else{
+alert(&apos;Please select atleast one record.&apos;);
+}</url>
+    </webLinks>
+</CustomObject>

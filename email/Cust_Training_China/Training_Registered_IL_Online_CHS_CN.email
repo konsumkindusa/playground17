@@ -1,0 +1,30 @@
+欢迎参加 MathWorks 在线培训课程！ 
+
+您已报名参加 {!Enrollment__c.Class__c} 在线课程。
+
+日期：{!Enrollment__c.Display_Start_Date__c}--{!Enrollment__c.Display_End_Date__c} 
+时间：{!Class__c.Start_Time__c}--{!Class__c.End_Time__c} 
+
+请预先了解要参加的在线课程的系统需求：http://www.mathworks.com/services/training/policies/requirements.html 
+
+
+************************************************************ 
+接下来您将收到以下信息和资料：
+************************************************************ 
+
+** 电子版课程材料 
+
+** 在培训开始前（约5-7天），您将收到两封邮件。 
+
+第一封邮件包含网络培训链接和登录信息，以及 ReadyTech 访问码。ReadyTech 是我们的虚拟教室，提供上课必备的所有软件。
+第二封邮件来自 OnSecure，授予您访问培训材料的权限。点击邮件中的链接后，将提示您创建一个新的账户以访问和查看课程材料。
+
+
+关于取消/退款相关规定，请访问：https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+更多关于MathWorks培训的信息，请访问我们的网站：http://www.mathworks.com
+
+谢谢
+
+{!Class__c.Sponsor_Office_Signature__c} 
+"

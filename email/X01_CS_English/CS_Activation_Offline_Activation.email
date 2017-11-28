@@ -1,0 +1,53 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  It is possible to install and activate MATLAB on a machine that has no access to the Internet. This procedure involves the following 3 steps: 
+ - Obtaining the offline machine's Host ID 
+ - Activating your license through the License Center on a machine that is connected to the Internet 
+ - Performing an offline installation and activation using the File Installation Key and License File.   
+To install MATLAB on a machine that has no Internet access, follow the steps below:     
+
+Obtaining the Host ID
+If you already know your machine's Host ID, you can skip this step.  Otherwise you can perform the following:    
+
+1) Start the installer and choose the installation option to do "Install manually without using the Internet" and click "Next".  
+2) Accept the license agreement in the installer and click "Next".  
+3) Select the option "I do not have the File Installation Key.  Help me with these steps" and click "Next".  
+4) On the next page you will be presented with all the information needed to activate.   
+
+Activating through the License Center:  
+
+After obtaining your Host ID and/or Login Name:
+
+1) Go to the License Center: https://www.mathworks.com/licensecenter
+2) Click the license number you wish to activate under "My Software." If you do not see your license number, click "View additional Licenses or Trials" in the bottom right hand corner.
+3) Click the "Install and Activate" tab
+4) Click "Activate to Retrieve License File"
+5) Click "Activate a Computer"
+6) Enter the release you are activating, as well as the operating system, the host ID, the Computer Login Name, and the Activation Label
+7) Choose whether you want to download the license file or have it emailed to you.
+*) If you need to install MATLAB in addition to activating it, save your File Installation Key. The File Installation Key is not required to activate an instance of MATLAB that is already installed.
+
+Once you have generated a license file, you need to launch the activation client to complete the activation process. For Instructions on how to launch the Activation Client please see the following Article: How do I activate MATLAB?
+
+http://www.mathworks.com/matlabcentral/answers/99457-how-do-i-activate-matlab
+
+Perform the offline installation & activation:  
+To complete the installation:    
+1) Click "Back" in the installer until it prompts for the FIK, or restart the installer and choose "Install manually without using the Internet" once again.  
+2) Choose "I have the File Installation Key for my license:" and enter it in the field.  Press "Next" once complete.  
+3) Choose Typical, hit "Next"  
+4) Enter the Destination folder and click "Next".  The installer will complete and ask you whether to launch the activation client.  Choose to "Activate MATLAB" and click "Next".  
+5) When the activation client starts, choose "Activate manually without using the Internet" and click "Next".  
+6) Choose to "Enter the path to the license file" and browse to the file that was downloaded.  If the file was emailed to you, save the file locally from the email point to that file.  Press "Next" to continue.    
+At that point the activation will complete and you should be able to start MATLAB. 
+
+If you have problems during any of these steps, contact the Installation and Licensing team here: http://www.mathworks.com/support/contact_us/index.html  
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

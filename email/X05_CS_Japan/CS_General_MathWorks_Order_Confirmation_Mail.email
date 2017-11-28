@@ -1,0 +1,40 @@
+{!Case.Account}
+{!Case.Contact}様
+
+いつも大変お世話になっております。
+MathWorks Order Confirmation メールを下記に添付しお送り致します。
+よろしくご査収のほど、お願い致します。
+
+Thank you for your recent purchase. 
+Order ####### for has been completed and is now available for download. 
+If you are not the person who is managing this purchase, please forward this order confirmation to the appropriate person.
+ 
+See Order Details You can see the full details of this order at: http://www.mathworks.com/accesslogin/orderDetail.do?order=#######
+
+Download Your Licensed Products You can download your licensed products immediately at: 
+http://www.mathworks.com/downloads/web_downloads/
+
+Manage Your Licenses 
+You can manage your licenses at: http://www.mathworks.com/licensecenter/ 
+
+The License Center allows you to: * See license details * Manage user information * Activate your software Your use of the products will be governed exclusively by the terms of MathWorks, Inc. Software License Agreement (click-wrap) that accompanies the products. 
+You cannot continue to install the products unless you agree to the terms when prompted during installation. 
+
+If you have any questions about your order, please contact us at: http://www.mathworks.com/support/contact_us 
+
+Sincerely, 
+MathWorks Customer Service Team 
+
+MathWorks programs are distributed in accordance with U.S. Export Administration regulations. They may be subject to U.S. Export Control laws or other (U.S. and Non-U.S.) governmental export and import laws. It is the Licensees responsibility to comply with the latest U.S. or other governmental import or export regulations. Diversion contrary to U.S. law is prohibited.  
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のReference IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.co.jp/contact_cs.html
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,17 @@
+Dear {!Contact.FirstName},
+
+I am responding to your request for the license options for MATLAB Parallel Cloud and MATLAB Distributed Computing Server on Amazon EC2.
+
+We have 3 license offering types for MATLAB Distributed Computing Server.
+
+1)	The on-demand MATLAB Distributed Computing Server license model is intended for users with either unknown compute needs, or sporadic needs for large numbers of workers.   There is no cost to sign up for this license.  Billing is done at the beginning of each month based on jobs that you ran the previous month.  The fee for software usage is billed from MathWorks at the rate of $0.07 per worker/per hour.   Our Finance Team will charge your credit card that is kept on file for the total number of workers/hours.   You must be running MATLAB R2015a or higher in order to use MATLAB Distributed Computing Server on Amazon EC2.  
+
+NOTE: Fees for use of Amazon instances started by Cloud Center on your behalf are billed directly from Amazon Web Services. You will incur fees for any instances you use, regardless of whether you have actually used MATLAB Distributed Computing Server. This applies to on-demand licensing, perpetual licensing, and trials. 
+
+2)	We offer a perpetual license for users who know how many workers they need and have an expectation of multi-year use.   The pricing is based on the number of workers you purchase.   There is an annual maintenance fee for this type of license, and the maintenance is about 20% of the purchase cost.   First year maintenance is included in the purchase price.  The first-year break-even point between on-demand and perpetual licensing varies by license size, but in general is around 1000 hours.   That is, if you will use 64 workers for 1000 hours, it is better for you to purchase a perpetual license.   The break-even point in subsequent years would be around 200 hours.
+
+3)	We offer an annual license for users who know how many workers they need and have an expectation of substantial use.   The pricing is based on the number of workers you purchase.     The break-even point between on-demand and annual licensing varies by license size, but in general is around 500 hours.   That is, if you will use 64 workers for 500 hours, and you will only need the license for one year, it is better for you to purchase an annual license.  
+
+Please note that for all offerings, Amazon Web Services will bill you separately for the hardware usage.  You and other users of the license should periodically check your Amazon Web Services use and billing.
+
+Please let me know which option you are interested in.

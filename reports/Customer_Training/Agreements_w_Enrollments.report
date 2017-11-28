@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Enterprise_Training_Agreement__c.Enrollments__r$Enrollee_Name__c</field>
+    </columns>
+    <columns>
+        <field>Enterprise_Training_Agreement__c.Enrollments__r$Class__c</field>
+    </columns>
+    <columns>
+        <field>Enterprise_Training_Agreement__c.Enrollments__r$Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Enterprise_Training_Agreement__c.Enrollments__r$End_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Enterprise Training Agreements with Enrollments, sorted by # of Enrollments ASC</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Enterprise_Training_Agreement__c$Name</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Asc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Agreements w/ Enrollments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Enterprise_Training_Agreement_Participants__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Enterprise_Training_Agreement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

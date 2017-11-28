@@ -1,0 +1,11 @@
+<apex:page standardController="Enterprise_Training_Agreement__c" extensions="EmailTotrainingCoordinator">
+     <apex:form >
+         <apex:commandLink value="Send Activation Email" styleClass="btn" style="text-decoration: none"
+         action="{!SendActivationMail}" >
+         <apex:param name="activationMail" value="true" assignTo="{!isActivationEmail}"/>
+         </apex:commandLink>
+         <apex:commandLink action="{!SendRenewalMail}"  value="Send Renewal Email" styleClass="btn" style="text-decoration: none">
+         <apex:param name="renewalMail" value="true" assignTo="{!isRenewalEmail}"/>
+         </apex:commandLink>
+     </apex:form>
+</apex:page>

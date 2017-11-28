@@ -1,0 +1,32 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal">Hello,<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">The no charge licenses for {!Contact.Account_Name_Latin__c}&nbsp;are set to expire on {!Partner_Agreement__c.Extended_End_Date__c}.&nbsp; This message is to initiate the renewal process, should you want to
+continue the no charge relationship for another year.&nbsp; Please save a copy
+of the <a href="http://sharepoint/marketing/mktg_ops/prod_life/no_charge_process/Supporting%20Documents/Live%20Proposal%20Templates/No%20Charge%20Renewal%20Proposal.doc">linked
+template</a> and send it to me by [DUE DATE].<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Thank you,<o:p></o:p></p>
+
+<p class="MsoNormal">-Justin <o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b><u>Tools<o:p></o:p></u></b></p>
+
+<p class="MsoNormal"><a href="http://sharepoint/marketing/mktg_ops/prod_life/no_charge_process/Supporting%20Documents/License%20Renewal%20Spreadsheets/July/WindRiver.xlsx">Current
+License Configuration Spreadsheet</a><o:p></o:p></p>
+
+<p class="MsoNormal"><a href="http://sharepoint/marketing/mktg_ops/prod_life/no_charge_process/Supporting%20Documents/Activation%20Spreadsheets/July/Wind%20River.xls">Activation
+Data Spreadsheet</a><o:p></o:p></p>
+
+<p class="MsoNormal"><a href="http://sharepoint/marketing/mktg_ops/prod_life/no_charge_process/No%20Charge%20Proposal%20Library/Wind%20River%20-%20NCP%20-%202013.doc">Previously
+Approved Proposal</a><o:p></o:p></p>]]></td>
+</tr>
+</table>

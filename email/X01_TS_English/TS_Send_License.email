@@ -1,0 +1,25 @@
+Hello {!Contact.FirstName}, 
+
+This is in reference to your Technical Support Case #{!Case.CaseNumber}  regarding '{!Case.Subject}'.
+
+Please send us the complete output displayed after entering the command,
+
+for MATLAB versions R2012b and later:
+>> ver -support
+
+for MATLAB versions R2012a and earlier:
+>> ver
+
+at the MATLAB command line. This will provide us with details regarding your license, product, and platform.
+
+Access to our technical support team is one of the benefits of maintaining an active Software Maintenance Service (SMS) subscription with your license.  We look forward to getting this information from you so that we may assist you with your technical issue.
+
+Use the following link to view and update your Case online:
+http://www.mathworks.com/support/servicerequests/index.html
+
+Please preserve the Reference ID in any further correspondence on this query. This will allow our systems to automatically assign your reply to the appropriate Case. 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

@@ -1,0 +1,18 @@
+{!Contact.Name} 様
+
+この度はMathWorks トレーニングにお申込頂き、誠にありがとうございます。 
+
+
+このメールは以下コースの登録完了をお知らせするものです。
+
+コース名: {!Enrollment__c.Class__c} 
+
+注意: コースコンテンツにはご登録日から {!Class__c.Default_Duration__c} 日間アクセスできます。 
+
+コースコンテンツには、こちらのリンク {!Class__c.Class_URL__c} から MathWorks Account を使用してログインすることでアクセスできます。MathWorks Account をお持ちでない方は弊社 Web からご登録いただきますようお願いいたします。なお、MathWorks Account を新規でご登録された直後にコースコンテンツにアクセスする際は、10-15分お待ちいただきますようお願いいたします。.
+
+他のトレーニング形式の情報については、こちらの Web: https://jp.mathworks.com/services/training/ をご確認ください。
+
+以上、よろしくお願い申し上げます。
+
+{!Class__c.Sponsor_Office_Signature__c} 

@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+
+If you have any further questions, please do not hesitate to email me back. 
+Please be sure to keep the REF ID included at the bottom of this email intact when replying to this message.  
+
+Your Case Number is {!Case.CaseNumber}.
+
+If you have a new technical support question, please submit a new request here:
+
+http://www.mathworks.com/contact_TS.html
+
+Regards,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

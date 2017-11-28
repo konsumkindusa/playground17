@@ -1,0 +1,156 @@
+<apex:page controller="AltifyFivePillarController" showHeader="true" sidebar="false">
+    <apex:includeScript value="{! URLFOR($Resource.DMAPP__jQueryUI, 'js/jquery-2.2.4.min.js') }" /> 
+    <apex:includeScript value="{! URLFOR($Resource.DMAPP__jQueryUI, 'js/jquery-ui.min-1.12.1-altify-mod.js') }" />
+    <style>
+        /* jQueryUI ThemeRoller styles */
+        @import url("{!URLFOR($Resource.DMAPP__jQueryUI,         'css/custom-theme/jquery-ui-1.8.21.custom.css')}");
+
+        /* Extended jQueryUI custom styles */               
+        @import url("{!URLFOR($Resource.DMAPP__jQueryUI,         'css/custom-theme/jquery-ui-1.10.3.custom.css')}");  
+    </style> 
+    <style type="text/css">
+		.bPageHeader ,.bPageFooter{
+    		display:none;
+		}
+        body.sfdcBody {
+    		background: none;
+		}
+
+    	.bodyDiv {
+        	box-shadow: none;
+        	border-top: 0px solid;
+		}
+	</style>
+
+    <apex:form >
+        <div style = "color:green;font-family: Salesforce Sans, Arial, sans-serif;font-weight:bold;text-align:center;font-size: 15px;">
+            <apex:outputText value="Form saves automatically" />
+        </div>      
+        
+        <apex:repeat value="{!sections}" var="section">
+            <div class="togglezone expanded">
+                <div class="section" onclick="toggle($(this).parent())">
+                    <div class="expandprompt whencompressed">&#x25ba;</div>
+                    <div class="expandprompt whenexpanded">&#x25bc;</div>
+                    <div >{!section.title}</div>
+                </div>
+                <div class="whencompressed"></div>
+                <div class="whenexpanded">
+                    <table  width="1000" cellpadding="15" >
+                        <apex:repeat value="{!section.questions}" var="qt" id="theRepeat">
+                          
+                        <apex:outputPanel rendered="{!plan.DMAPP__Plan_Type__r[qt] == true}">
+
+                                <tr>
+                                    <td width="500">
+                                        <div style = "font-family: Salesforce Sans, Arial, sans-serif;font-size: 13px;margin: 4px 0 0 48px;"> 											
+                                               {!QuestionTexts[qt][0]}                                              
+                                        </div> 
+                                    </td>
+
+                                    <td width="100" align="right" valign="top">
+                                       <apex:pageBlock >
+                                        <apex:pageBlockSection >
+                                          <apex:pageBlockSectionItem helpText="{!$ObjectType.DMAPP__DM_Account_Plan__c.Fields[QuestionTexts[qt][1]].inlineHelptext}">
+                                                <apex:outputLabel value=" "></apex:outputLabel> 
+                                        		<apex:selectList value="{!plan[qt]}"  multiselect="false" size="1" onchange="valueChanged('{!qt}', this)">
+                                            		<apex:selectOptions value="{!items}"/>
+                                        		</apex:selectList>
+                                          </apex:pageBlockSectionItem>
+                                        </apex:pageBlockSection>      
+     								   </apex:pageBlock>
+                                    </td>
+                                    
+                                    <td width="400">
+      									<apex:inputTextarea value="{!plan[QuestionTexts[qt][1]]}" cols="50" rows="2" onchange="valueChanged('{!QuestionTexts[qt][1]}', this)"/>
+                     				</td>    
+                                </tr>
+                            </apex:outputPanel> 
+                        </apex:repeat>                          
+                    </table>
+                </div>
+            </div>
+        </apex:repeat>
+
+
+
+    </apex:form>    
+
+    <style>
+        .togglezone {
+            user-select: none;
+        }
+            .togglezone .section {
+                font-size: 20px;
+                font-weight: bold;
+            }
+                .togglezone .section div{
+                    display: inline-block;
+                }
+
+                .togglezone  .section .expandprompt {
+                    cursor:pointer;
+                    padding-right: 10px;
+                }
+
+                .togglezone  .section .expandprompt.whencompressed {
+                    display: inline-block;
+                }
+                .togglezone  .section .expandprompt.whenexpanded {
+                    display: none;
+                }
+                .togglezone.expanded  .section .expandprompt.whencompressed {
+                    display: none;
+                }
+                .togglezone.expanded  .section .expandprompt.whenexpanded {
+                    display: inline-block;
+                }
+
+            .togglezone .whencompressed {
+                display:block;
+            }
+
+
+            .togglezone.expanded .whencompressed {
+                display:none;
+            }
+
+            .togglezone .whenexpanded {
+                display:none;
+            }
+
+            .togglezone.expanded .whenexpanded {
+                display:block
+            }
+    </style>
+    <script>
+        function toggle(ctrl) {
+            if ($(ctrl).hasClass('expanded')) {
+                $(ctrl).removeClass('expanded');
+            }
+            else {
+                $(ctrl).addClass('expanded');
+            }
+        }
+
+        function valueChanged(field, ctrl) {
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.AltifyFivePillarController.updateField}',
+                '{!plan.Id}',
+                field,
+                ctrl.value,
+                function(result, event){    
+                    console.log(result);
+                },
+                {escape: true}
+            );
+            event.stopPropagation();
+        }
+    
+    
+
+
+
+    </script>
+
+</apex:page>

@@ -1,0 +1,12 @@
+Hello XXXXADMINXXXXX,    
+
+This email is to notify you that XXXX requested a passcode for MATLAB RXXXX on license XXXXXX.  Due to company policy, MathWorks will not send MATLAB passcodes for professional licenses to anyone who is not associated to the license as an Administrator.  Could you please forward the license file below to XXXX (email: XXXXXX) at your discretion?
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

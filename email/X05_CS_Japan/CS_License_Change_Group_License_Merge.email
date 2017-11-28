@@ -1,0 +1,55 @@
+{!Case.Account} 
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせ頂き、誠にありがとうございます。
+
+ご依頼頂きました「マスターライセンス統合」が完了致しましたので、お知らせ致します。  
+
+下記ライセンス 
+- 
+- 
+- 
+が新しいマスターライセンス（Master License No. △△△）に紐づいている形となります。  
+
+マスターライセンスはライセンスセンターにて、  
+ 1) 同じマスターライセンス内のライセンスへの製品割り当て ※ 
+ 2) 各ライセンスに対するエンドユーザの設定  
+ 3) エンドユーザへの権限（製品ダウンロードの可否など）の付与  
+を設定して頂けます。  
+
+※ライセンス形態が、Individual 同士またはDesignated Computer同士のライセンス間において、
+保守有効な製品の割り当てをお客様自身で行っていただけます。
+
+作業方法につきましては、下記をご参照ください。
+(製品の割り当て方を教えてください)
+http://jp.mathworks.com/matlabcentral/answers/298033-
+ 
+尚、製品割り当てをする際にはActivationのValidation Statusが[Current]に
+なっている必要がございます。
+移設元ライセンスで実施されたActivationのValidation Statusが[Overdue]の場合、
+正常にライセンス認証がされていない状態として考えられ、製品の割り当てを
+行って頂くことができません。
+こちらは [Install and Activate] タブ内の各 [Activation Label]をクリックし、
+そちらにある[Get License File]ボタンよりライセンスファイルを仮取得する事で、
+[Last Validated]にあるStatus が【Current】へ変更され、製品の割り当てが行える
+状態になります。
+※なお「ライセンスファイルの仮取得」は、MATLABに対して新しいライセンスファイルの
+適用を行うことを意味しているため、【Current】になります。
+
+ご登録内容及びライセンス内容等は、下記「MathWorks アカウント」よりご確認頂けます。 
+https://www.mathworks.com/licensecenter
+
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のReference IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://jp.mathworks.com/support/contact_us/
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

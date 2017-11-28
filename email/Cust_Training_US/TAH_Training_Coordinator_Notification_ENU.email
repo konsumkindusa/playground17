@@ -1,0 +1,22 @@
+Dear {!Enterprise_Training_Agreement__c.Primary_Contact__c},
+
+We are pleased to confirm that your MathWorks online training agreement for {!Enterprise_Training_Agreement__c.Account_Name__c} has now been activated! Your exclusive registration link is:
+
+{!Enterprise_Training_Agreement__c.Active_Self_Enrollment_URL__c}
+
+By following the link above, your users, subject to any seat or registration restrictions, will be granted access to the following course(s):
+
+[COURSE NAME#1] 
+[COURSE NAME#2] 
+[COURSE NAME#3] 
+[COURSE NAME#4]
+[...]
+
+Please note: The current end date of your agreement is {!Enterprise_Training_Agreement__c.Term_End_Date__c}. Users will have until that date to access and complete course content, and will require a MathWorks Account registered to your specified agreement email domain(s).
+
+Questions?
+If you have any questions, contact us at {!Enterprise_Training_Agreement__c.Sponsor_Office_Phone__c} or {!Enterprise_Training_Agreement__c.Sponsor_Office_Email__c}
+
+Thank you,
+MathWorks Training Services
+{!Enterprise_Training_Agreement__c.Sponsor_Office_Signature__c}

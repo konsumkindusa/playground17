@@ -1,0 +1,6 @@
+The following contact has just signed up:
+
+Enrollee: {!Enrollment__c.Enrollee_Name__c}
+Class: {!Enrollment__c.Class__c}
+Start Date: {!Enrollment__c.Start_Date__c}
+End Date: {!Enrollment__c.End_Date__c}

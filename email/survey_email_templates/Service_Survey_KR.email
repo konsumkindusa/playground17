@@ -1,0 +1,184 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; background-color: rgb(255, 255, 255);"><font color="#545454" face="Proxima Nova, Tahoma, Verdana, Arial, sans-serif"><span style="font-size: 14px;">{!Case.Contact}&nbsp;</span></font></span><span lang="KO" style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Batang, serif; line-height: 115%;">고객님</span><span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; line-height: 115%;">,</span><span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; line-height: 115%;"> </span><span lang="KO" style="font-size: 11pt; color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; line-height: 115%;">안녕하세요</span><span style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; background-color: rgb(255, 255, 255);"><font color="#545454" face="Proxima Nova, Tahoma, Verdana, Arial, sans-serif"><span style="font-size: 14px;">,</span></font></span><div style="font-size: 12pt;"><br style="color: rgb(84, 84, 84); font-family: 'Proxima Nova', Tahoma, Verdana, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">최근</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">에</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">고객님께서는</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;</span><span style="color: rgb(84, 84, 84); font-family: &quot;Proxima Nova&quot;, Tahoma, Verdana, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">{!Case.CreatedDate}</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">일자</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: Batang, serif; font-size: 12pt;">로 매스웍스 서비스를
+받으셨습니다</span><span style="color: rgb(0, 0, 0); font-family: Batang, serif; font-size: 12pt;">. <span lang="KO">본 설문조사는 서비스와 관련 만족도 조사를 목적으로 시행하오니 의견을
+주시기 바랍니다</span>. <span lang="KO">고객님의 서비스 요청 내역은 {</span></span><span style="color: rgb(84, 84, 84); font-family: &quot;Proxima Nova&quot;, Tahoma, Verdana, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">!Case.CaseNumber},&nbsp;{!Case.Subject},</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: Batang, serif; font-size: 12pt;">이며</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">,&nbsp;</span><span style="color: rgb(84, 84, 84); font-family: &quot;Proxima Nova&quot;, Tahoma, Verdana, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">{!Case.ClosedDate}</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">일자로</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;&nbsp;</span><font face="arial">{!Case.OwnerFullName}&nbsp;</font><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">에</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">의해</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">서비스</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">내역이</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">종료</span><span lang="KO" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"> </span><span lang="KO" style="color: rgb(0, 0, 0); font-family: &quot;Malgun Gothic&quot;, sans-serif; font-size: 12pt;">되었습니다</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">.</span></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt;"><o:p></o:p></p></div><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><br></div><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">아래의</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">링크를</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">통하여</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">만족도</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">조사를</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">시작하여</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">주시기</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">바랍니다</span>. <o:p></o:p></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">본</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">설문</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">조사는</span><span lang="KO"> </span>5<span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">분</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">정도</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">소요</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">예상</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">됩니다</span>.<o:p></o:p></p></div><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span style="color: rgb(84, 84, 84); font-family: 'Proxima Nova', Tahoma, Verdana, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><br></span></div><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span style="font-size: 12pt;"><a href="https://mathworks.getfeedback.com/r/EZEPSv6q?CaseID={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}&amp;CaseOwnerID={!Case.OwnerId}" style="font-family: &quot;Times New Roman&quot;, Times, serif; background-color: rgb(255, 255, 255);">Link to Survey</a>&nbsp;- </span><font size="2">English version</font></div><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span style="font-size: 12pt;"><font face="Times New Roman, Times, serif"><span style="background-color: rgb(255, 255, 255);"><a href="https://mathworks.getfeedback.com/r/Je2ZXNtC?CaseID={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}&amp;CaseOwnerID={!Case.OwnerId}">Link to Survey</a></span></font>&nbsp;-&nbsp;</span><font size="2">Korean version</font></div><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span style="color: rgb(84, 84, 84); font-family: 'Proxima Nova', Tahoma, Verdana, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><br></span></div><div style="color: rgb(0, 0, 0); font-family: arial;"><p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">귀중한</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">시간을</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">할애하여</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">본</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">설문</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">조사에</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">응해</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">주셔서</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">대단히</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">감사</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">드립니다</span>.&nbsp; <span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri;mso-fareast-language:KO">조사</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">결과는</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">고객님께</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">서비스의</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">지속적인</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">향상을</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">도모하기</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">위한</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">중요한</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">자료로</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">활용될</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">것입니다</span>.<o:p></o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">감사합니다</span>.<o:p></o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">매스웍스</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">지원</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">팀</span><o:p></o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><a href="http://www.mathworks.com/support/">http://www.mathworks.com/support/</a><o:p></o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">본</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">이메일은</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">자동생성된</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">이메일</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">입니다</span>.&nbsp; <span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri;mso-fareast-language:KO">발신전용으로</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">회신이</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">되지</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">않습니다</span>.<o:p></o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><i>&nbsp;</i></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">향후에</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">본</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">설문</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">조사</span><span lang="KO"> &nbsp;</span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">이메일을</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">원하지</span><span lang="KO"> &nbsp;</span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">않으시면</span>, &nbsp;<span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">아래의</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">링크에</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">접속하시어</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">관련</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">사항</span> (Communication preference)<span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">을</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">업데이트</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">하여</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">주시기</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">바랍니다</span>. <o:p></o:p></p>
+
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><font style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><a href="https://go2.mathworks.com/preference-center">https://go2.mathworks.com/preference-cente</a></font><a href="https://go2.mathworks.com/preference-center" target="_blank" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">r</a><span style="font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">&nbsp;</span></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><i>&nbsp;</i></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:KO">매스웍스</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">사의</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">개인</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">정보</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">보호</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">정책을</span>&nbsp; <span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri;mso-fareast-language:KO">원하신다면</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">아래의</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">사이트를</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">방문하여</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">주시기</span><span lang="KO"> </span><span lang="KO" style="font-family:&quot;Malgun Gothic&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-fareast-language:
+KO">바랍니다</span>.<o:p></o:p></p>
+
+<p class="MsoNormal" style="font-size: 12pt; margin-bottom: 0.0001pt;"><i><a href="http://www.mathworks.com/company/aboutus/policies_statements/">http://www.mathworks.com/company/aboutus/policies_statements/</a></i><i><o:p></o:p></i></p></div>]]></td>
+</tr>
+</table>

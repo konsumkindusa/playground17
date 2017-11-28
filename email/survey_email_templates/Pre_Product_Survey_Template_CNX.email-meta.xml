@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to send Pre-Product Survey. To obtain information on the status of their Connections product/service development</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Connections</letterhead>
+    <name>CNX - Pre-Product Survey Template</name>
+    <style>freeForm</style>
+    <subject>Renew your Connections Program Membership (A#: {!Partner_Agreement__c.Name})</subject>
+    <textOnly>Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+Previously, you applied to The MathWorks Connections Program and were enrolled as a Pre-Product partner while finishing development on your commercial product that is based on or interfaces to MathWorks products.
+
+We would like to check in with you on the status of your project, {!Partner_Agreement__c.Partner_Agreement_Name__c}.  Please visit the URL below and provide responses for the questions.
+
+Pre-product Status Update
+
+The link above is from GetFeedback, which we use to collect your response.  If you need to validate that the link is from the Connections Program or have issues with it, please e-mail us at connections@mathworks.com.
+
+If you are not the best person to respond, please forward this message to the appropriate person in your organization.
+
+Best regards,
+Tina McKay
+The MathWorks Connections Program</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+Sehr geehrte(r) {!Contact.Salutation} {!Contact.Name}!
+
+Leider müssen wir Sie über die Absage des folgenden Kurses informieren:
+
+Kurs: {!Enrollment__c.Class__c}  
+Datum: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+Ort: {!Class__c.City__c}, {!Class__c.Country__c}   
+
+Der Link zu unseren Schulungsterminen ist. 
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+Nehmen Sie sich bitte die Zeit, um einen Blick darauf zu werfen. Sollte Sie einer der Kurse interessieren, dann können Sie sich dazu anmelden, indem Sie {!Class__c.Sponsor_Office_Phone__c}  anrufen oder auf diese E-Mail antworten. Zur vollständigen Erstattung der Kursgebühr, teilen Sie bitte unserer Schulungsabteilung Ihre Zahlungsinformationen mit.  
+
+Wir entschuldigen uns für etwaige Unannehmlichkeiten.
+
+Mit freundlichen Grüßen    
+Training Services 
+
+{!Class__c.Sponsor_Office_Signature__c}

@@ -1,0 +1,33 @@
+尊敬的{!Contact.Name}, 
+
+欢迎参见 MathWorks 培训！
+
+您的报名已经确认。为了确保您能够参加课程，请您在课程开始前支付全部课程费用。
+
+课程名称: {!Enrollment__c.Class__c}  
+日期: {!Enrollment__c.Display_Start_Date__c}--{!Enrollment__c.Display_End_Date__c} 
+时间: {!Class__c.Start_Time__c} -- {!Class__c.End_Time__c}
+
+
+通过信用卡方式支付或转账，请拨 {!Class__c.Sponsor_Office_Phone__c} 与我们的客服联系。
+
+通过订单方式支付，请将 PO 邮件或传真给我们，并注明“培训”字样。
+邮箱：{!Class__c.Sponsor_Office_Email__c}
+传真：[local office fax no]。
+
+通过支票方式支付，请您确保您的支票抬头是“迈斯沃克软件（北京）有限公司，并注明“培训”字样，然后发送至：[local office mailing address]。
+
+为确保我们正确处理，请在所有订单和支票上注明参加人员名字，课程名称，地点和日期。
+
+支付成功后，您将收到一封确认邮件，其中包含课程的所有详细信息。如有任何问题，我们会将立刻通知您。
+
+如您有任何问题，请邮件联系我们：{!Class__c.Sponsor_Office_Email__c} 。
+
+更多关于MathWorks培训的信息，请访问我们的网站：{!Class__c.Sponsor_Office_Training_URL__c}
+
+谢谢
+Training Services 
+
+{!Class__c.Sponsor_Office_Signature__c}   
+
+课程取消规定: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

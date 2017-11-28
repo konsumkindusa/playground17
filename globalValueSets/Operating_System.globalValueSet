@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>All OS</fullName>
+        <default>false</default>
+        <label>All OS</label>
+    </customValue>
+    <customValue>
+        <fullName>Linux Any</fullName>
+        <default>false</default>
+        <label>Linux Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Centos Any</fullName>
+        <default>false</default>
+        <label>Centos Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Centos 7.x</fullName>
+        <default>false</default>
+        <label>Centos 7.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Centos 6.x</fullName>
+        <default>false</default>
+        <label>Centos 6.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Centos 5.x</fullName>
+        <default>false</default>
+        <label>Centos 5.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Debian Any</fullName>
+        <default>false</default>
+        <label>Debian Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Debian 8.x</fullName>
+        <default>false</default>
+        <label>Debian 8.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Debian 7.x</fullName>
+        <default>false</default>
+        <label>Debian 7.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Debian 6.x</fullName>
+        <default>false</default>
+        <label>Debian 6.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Debian 5.x</fullName>
+        <default>false</default>
+        <label>Debian 5.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora Core Any</fullName>
+        <default>false</default>
+        <label>Fedora Core Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora 26</fullName>
+        <default>false</default>
+        <label>Fedora 26</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora 24</fullName>
+        <default>false</default>
+        <label>Fedora 24</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora Core 17</fullName>
+        <default>false</default>
+        <label>Fedora Core 17</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora Core 16</fullName>
+        <default>false</default>
+        <label>Fedora Core 16</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora Core 15</fullName>
+        <default>false</default>
+        <label>Fedora Core 15</label>
+    </customValue>
+    <customValue>
+        <fullName>Fedora Core 14</fullName>
+        <default>false</default>
+        <label>Fedora Core 14</label>
+    </customValue>
+    <customValue>
+        <fullName>Mac Any</fullName>
+        <default>false</default>
+        <label>Mac Any</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.12x (Sierra)</fullName>
+        <default>false</default>
+        <label>macOS 10.12x (Sierra)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.11x (El Capitan)</fullName>
+        <default>false</default>
+        <label>macOS 10.11x (El Capitan)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.10x (Yosemite)</fullName>
+        <default>false</default>
+        <label>macOS 10.10x (Yosemite)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.9x (Mavericks)</fullName>
+        <default>false</default>
+        <label>macOS 10.9x (Mavericks)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.8x (Mountain Lion)</fullName>
+        <default>false</default>
+        <label>macOS 10.8x (Mountain Lion)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.7x (Lion)</fullName>
+        <default>false</default>
+        <label>macOS 10.7x (Lion)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.6x (Snow Leopard)</fullName>
+        <default>false</default>
+        <label>macOS 10.6x (Snow Leopard)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.5x (Leopard)</fullName>
+        <default>false</default>
+        <label>macOS 10.5x (Leopard)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.4x (Tiger)</fullName>
+        <default>false</default>
+        <label>macOS 10.4x (Tiger)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.3x (Panther)</fullName>
+        <default>false</default>
+        <label>macOS 10.3x (Panther)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.2x (Jaguar)</fullName>
+        <default>false</default>
+        <label>macOS 10.2x (Jaguar)</label>
+    </customValue>
+    <customValue>
+        <fullName>macOS 10.1x (Puma)</fullName>
+        <default>false</default>
+        <label>macOS 10.1x (Puma)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mandriva Any</fullName>
+        <default>false</default>
+        <label>Mandriva Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Redhat Any</fullName>
+        <default>false</default>
+        <label>Redhat Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Redhat EL Any</fullName>
+        <default>false</default>
+        <label>Redhat EL Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Redhat EL7.x</fullName>
+        <default>false</default>
+        <label>Redhat EL7.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Redhat EL6.X</fullName>
+        <default>false</default>
+        <label>Redhat EL6.X</label>
+    </customValue>
+    <customValue>
+        <fullName>Redhat EL5.X</fullName>
+        <default>false</default>
+        <label>Redhat EL5.X</label>
+    </customValue>
+    <customValue>
+        <fullName>Redhat EL4.X</fullName>
+        <default>false</default>
+        <label>Redhat EL4.X</label>
+    </customValue>
+    <customValue>
+        <fullName>Solaris Any</fullName>
+        <default>false</default>
+        <label>Solaris Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Suse Any</fullName>
+        <default>false</default>
+        <label>Suse Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Suse 11.x</fullName>
+        <default>false</default>
+        <label>Suse 11.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Suse 10.x</fullName>
+        <default>false</default>
+        <label>Suse 10.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu Any</fullName>
+        <default>false</default>
+        <label>Ubuntu Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 16.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 16.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 15.10</fullName>
+        <default>false</default>
+        <label>Ubuntu 15.10</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 15.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 15.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 14.10</fullName>
+        <default>false</default>
+        <label>Ubuntu 14.10</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 14.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 14.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 13.10</fullName>
+        <default>false</default>
+        <label>Ubuntu 13.10</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 13.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 13.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 12.10</fullName>
+        <default>false</default>
+        <label>Ubuntu 12.10</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 12.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 12.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 11.10</fullName>
+        <default>false</default>
+        <label>Ubuntu 11.10</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 11.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 11.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 10.10</fullName>
+        <default>false</default>
+        <label>Ubuntu 10.10</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu 10.04</fullName>
+        <default>false</default>
+        <label>Ubuntu 10.04</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows Any</fullName>
+        <default>false</default>
+        <label>Windows Any</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 10</fullName>
+        <default>false</default>
+        <label>Windows 10</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 8.1</fullName>
+        <default>false</default>
+        <label>Windows 8.1</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 8</fullName>
+        <default>false</default>
+        <label>Windows 8</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 7 SP1</fullName>
+        <default>false</default>
+        <label>Windows 7 SP1</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 7</fullName>
+        <default>false</default>
+        <label>Windows 7</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 2008 Server R2</fullName>
+        <default>false</default>
+        <label>Windows 2008 Server R2</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 2008 Server</fullName>
+        <default>false</default>
+        <label>Windows 2008 Server</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows Server 2012 R2</fullName>
+        <default>false</default>
+        <label>Windows Server 2012 R2</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows Server 2012</fullName>
+        <default>false</default>
+        <label>Windows Server 2012</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows Vista SP1</fullName>
+        <default>false</default>
+        <label>Windows Vista SP1</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows Vista</fullName>
+        <default>false</default>
+        <label>Windows Vista</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 2003 Server</fullName>
+        <default>false</default>
+        <label>Windows 2003 Server</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows XP SP3</fullName>
+        <default>false</default>
+        <label>Windows XP SP3</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows XP SP2</fullName>
+        <default>false</default>
+        <label>Windows XP SP2</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows XP SP1</fullName>
+        <default>false</default>
+        <label>Windows XP SP1</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows XP</fullName>
+        <default>false</default>
+        <label>Windows XP</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows 2000</fullName>
+        <default>false</default>
+        <label>Windows 2000</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <masterLabel>Operating System</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

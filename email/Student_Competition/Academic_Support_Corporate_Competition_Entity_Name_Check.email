@@ -1,0 +1,32 @@
+·         Forward the software request to Julia.Komarovskaya@mathworks.com; Ken.Delaporta@mathworks.com directly from Salesforce.
+
+·         Cc: lauren.tabolinsky@mathworks.com; Sarah.Beaven@mathworks.com
+
+·         Insert the contact’s name and the school/university name so the Export Compliance team can easily see the contact on the Entity List.
+
+·         Copy and paste the following above the forwarded request:                 
+
+
+
+Hi Julia and Ken,
+
+Contact Name: {!Contact.FirstName} {!Contact.LastName}
+
+University/Company: {!Contact.Name}
+
+We have received a request from a student competition team to use MathWorks software.  As per our compliance process, the Faculty Advisor and School requesting software have been reviewed against the entity list and we received a hit on the request below.  The institution and name of the requestor are noted above.
+
+
+
+Best,
+
+MathWorks Student Competition Program
+studentcompetitions@mathworks.com
+
+--------------- Original Message --------------- 
+From: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Name__c} [{!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Address__c}] 
+Sent: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Message_Date__c} 
+To: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__To_Address__c} 
+Subject: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Subject__c} 
+
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

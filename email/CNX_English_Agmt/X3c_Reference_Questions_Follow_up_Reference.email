@@ -1,0 +1,14 @@
+Dear XXX, 
+
+Recently we contacted you with a request for a reference for {!Partner_Agreement__c.Account__c}. We have not received a reply yet and wanted to ensure that you received it. 
+
+We are hoping to get some feedback from you about your work with {!Partner_Agreement__c.Account__c}, as they have applied to become a Connections Program Partner.  Your feedback is valuable in evaluating them as potential candidate. I'd greatly appreciate it if you could take a few moments to briefly answer the questions below. 
+
+Thank you again for your assistance. 
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+--------------- Original Message --------------- 
+
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

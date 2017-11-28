@@ -1,0 +1,32 @@
+Hello {!Case.Contact}, 
+
+Thank you for contacting MathWorks. Per the request of XXXXX, XXXX has been added to Master License XXX as an Administrator. If you log into your MathWorks Account you will see the updated changes in the License Center.
+
+All MathWorks licenses require at least one Administrator to serve as the main source of communication, however, there can be multiple Administrators on a license.  Administrators are able to add and remove Administrators on their Master License in their License Center. 
+
+How do I change the Administrators on my License?
+http://www.mathworks.com/matlabcentral/answers/101101
+
+Administrators are responsible for assigning End Users to a License. If there are existing activations for a license, they will need to be deactivated before the End User can be changed. You can view activations by opening the License Center, selecting a license, and clicking on the “Install and Activate” tab. 
+
+How do I deactivate MATLAB?
+www.mathworks.com/matlabcentral/answers/100663
+
+How do I add or remove an end user to/from my license?
+www.mathworks.com/matlabcentral/answers/94405
+
+Introduction to Installation, Licensing, and Activation
+www.mathworks.com/help/install/installation-and-licensing-fundamentals.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+
+{!Case.CaseNumber} 
+
+
+EXPORT CONTROL: This software is controlled under U.S. Export Administration Regulations. It is unlawful to export or re-export this software contrary to U.S. law or permit the use of software by denied parties. This software may also be subject to non-U.S. export and import laws and regulations. It is the licensee’s responsibility to comply with the latest export and import regulations.

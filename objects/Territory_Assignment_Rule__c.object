@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The Object act as an header for the related assignment rule criteria object.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fieldSets>
+        <fullName>AssignmentRuleFieldSet</fullName>
+        <description>In Territory Summary Page</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Activation_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Expiration_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Rule_Criteria_Types_Used__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>AssignmentRuleFieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>Account_Name_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Name Criteria</label>
+        <summaryFilterItems>
+            <field>Territory_Rule_Criteria__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Name</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Activation_Date__c</fullName>
+        <description>Store the activation date of the rule.</description>
+        <externalId>false</externalId>
+        <label>Activation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>City_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>City Criteria</label>
+        <summaryFilterItems>
+            <field>Territory_Rule_Criteria__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account City</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Country_Code_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Code Criteria</label>
+        <summaryFilterItems>
+            <field>Territory_Rule_Criteria__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Country Code</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Store the description of the territory assignment rule.</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <description>Store the Expiration Date of the territory assignment rule.</description>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Migration_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Migration ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object__c</fullName>
+        <defaultValue>&quot;Account&quot;</defaultValue>
+        <description>Contain the Object Name.</description>
+        <externalId>false</externalId>
+        <label>Object</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Postal Code Criteria</label>
+        <summaryFilterItems>
+            <field>Territory_Rule_Criteria__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Postal Code</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Rule_Criteria_Types_Used__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( City_Criteria__c &gt; 0, &apos;City; &apos;,&apos;&apos;)
++IF( Account_Name_Criteria__c &gt; 0, &apos;Account Name; &apos;,&apos;&apos;)
++IF( Country_Code_Criteria__c &gt; 0, &apos;Country; &apos;,&apos;&apos;)
++IF( Postal_Code_Criteria__c &gt; 0, &apos;Postal Code; &apos;,&apos;&apos;)
++IF( Sector_Criteria__c  &gt; 0, &apos;Sector; &apos;,&apos;&apos;)
++IF( State_Code_Criteria__c &gt; 0, &apos;State Code;&apos;,&apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rule Criteria Types Used</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sector_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Sector Criteria</label>
+        <summaryFilterItems>
+            <field>Territory_Rule_Criteria__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Sector</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>State_Code_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>State Code Criteria</label>
+        <summaryFilterItems>
+            <field>Territory_Rule_Criteria__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account State Code</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Store the territory object record id associated to the territory assignment rule.</description>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <referenceTo>Territory_Shadow__c</referenceTo>
+        <relationshipLabel>Territory Assignment Rules</relationshipLabel>
+        <relationshipName>Territory_Assignment_Rules</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Territory Assignment Rule</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Activation_Date__c</columns>
+        <columns>Expiration_Date__c</columns>
+        <columns>Account_Name_Criteria__c</columns>
+        <columns>Territory__c</columns>
+        <columns>OBJECT_ID</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Territory Assignment Rules</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

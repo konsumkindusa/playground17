@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Student Competition</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinatesInternal>MW_Customer_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MW_Education_Marketing</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

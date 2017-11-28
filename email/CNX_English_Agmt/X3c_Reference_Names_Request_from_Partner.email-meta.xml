@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request Reference Names from Partner</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>3c - Reference Names - Ask for names from Partner</name>
+    <style>none</style>
+    <subject>Connections Program Request for Reference Names</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

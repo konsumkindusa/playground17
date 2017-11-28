@@ -1,0 +1,22 @@
+Dear {!Case.Contact},
+
+Here is the quote you requested. Please reference your quote number on your purchase order.  These are processed in US Dollars to our MathWorks US office at 3 Apple Hill Drive, Natick, MA 01760.
+
+To complete your order, we must receive a valid purchase order or payment information. Include the quote number on the purchase order. Please remember to add Payment terms of NET 30 and bill to and ship to information.
+
+To ensure your order is processed correctly please submit your payment information DIRECTLY to The MathWorks Connections Program Team by email to connections@mathworks.com. 
+
+If someone in your organization needs to install MathWorks products prior to sending it to the end user we will need the name and e-mail of the individual who will be installing the software so we can associate them to the licenses. 
+
+The attached document describes the expectations and requirements of partners who choose to deliver software using the license assignment process. Please review this document in detail and follow all the instructions. Orders cannot be processed with incomplete or inconsistent information. Please submit all required paperwork to me as indicated in the attachment. 
+
+Let me know if you have any questions. 
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}
+
+[Attached File:  License_Assignment_Process.pdf]
+
+{!Case.Email_Thread}

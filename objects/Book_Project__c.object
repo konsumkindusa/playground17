@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is used to capture book projects and manage the book program process.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Book_Language__c</fullName>
+        <description>Language the book is written in</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Language the book is written in</inlineHelpText>
+        <label>Book Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Arabic</fullName>
+                    <default>false</default>
+                    <label>Arabic</label>
+                </value>
+                <value>
+                    <fullName>Bulgarian</fullName>
+                    <default>false</default>
+                    <label>Bulgarian</label>
+                </value>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>false</default>
+                    <label>Chinese</label>
+                </value>
+                <value>
+                    <fullName>Croatian</fullName>
+                    <default>false</default>
+                    <label>Croatian</label>
+                </value>
+                <value>
+                    <fullName>Czech</fullName>
+                    <default>false</default>
+                    <label>Czech</label>
+                </value>
+                <value>
+                    <fullName>Dutch</fullName>
+                    <default>false</default>
+                    <label>Dutch</label>
+                </value>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Finnish</fullName>
+                    <default>false</default>
+                    <label>Finnish</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Greek</fullName>
+                    <default>false</default>
+                    <label>Greek</label>
+                </value>
+                <value>
+                    <fullName>Hungarian</fullName>
+                    <default>false</default>
+                    <label>Hungarian</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Norwegian</fullName>
+                    <default>false</default>
+                    <label>Norwegian</label>
+                </value>
+                <value>
+                    <fullName>Polish</fullName>
+                    <default>false</default>
+                    <label>Polish</label>
+                </value>
+                <value>
+                    <fullName>Portuguese</fullName>
+                    <default>false</default>
+                    <label>Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Romanian</fullName>
+                    <default>false</default>
+                    <label>Romanian</label>
+                </value>
+                <value>
+                    <fullName>Russian</fullName>
+                    <default>false</default>
+                    <label>Russian</label>
+                </value>
+                <value>
+                    <fullName>Serbian</fullName>
+                    <default>false</default>
+                    <label>Serbian</label>
+                </value>
+                <value>
+                    <fullName>Slovak</fullName>
+                    <default>false</default>
+                    <label>Slovak</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>Swedish</fullName>
+                    <default>false</default>
+                    <label>Swedish</label>
+                </value>
+                <value>
+                    <fullName>Thai</fullName>
+                    <default>false</default>
+                    <label>Thai</label>
+                </value>
+                <value>
+                    <fullName>Turkish</fullName>
+                    <default>false</default>
+                    <label>Turkish</label>
+                </value>
+                <value>
+                    <fullName>Ukrainian</fullName>
+                    <default>false</default>
+                    <label>Ukrainian</label>
+                </value>
+                <value>
+                    <fullName>Vietnamese</fullName>
+                    <default>false</default>
+                    <label>Vietnamese</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Book_Promotion_Response_Date_Time__c</fullName>
+        <description>Used to capture when a survey was received back</description>
+        <externalId>false</externalId>
+        <label>Book Promotion Response Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Book_Promotional_Survey_Last_Sent__c</fullName>
+        <description>indicates when the last Book Promotional Survey was sent</description>
+        <externalId>false</externalId>
+        <label>Book Promotional Survey Last Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Book_Title__c</fullName>
+        <description>to maintain the title of the book, used by the email handler where the subject of the email is entered into this field</description>
+        <externalId>false</externalId>
+        <label>Book Title</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Companion_Software_URL__c</fullName>
+        <description>Capture the Companion SW URL</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the Companion software URL</inlineHelpText>
+        <label>Companion Software URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Copyright_Year__c</fullName>
+        <description>Copyright year of the published book</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Copyright year of the published book</inlineHelpText>
+        <label>Copyright Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Description of the Book Program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of the Book Program</inlineHelpText>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2AEmailCount__c</fullName>
+        <description>This field show the count of e2a email which has status as new</description>
+        <externalId>false</externalId>
+        <label>E2AEmailCount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Publication_Date__c</fullName>
+        <description>the date of expected publication of the book</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date of the books expected publication</inlineHelpText>
+        <label>Expected Publication Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_Book_Webpage__c</fullName>
+        <description>used to capture a non-mathworks hosted website dedicated to this book</description>
+        <externalId>false</externalId>
+        <inlineHelpText>used to capture a non-mathworks hosted webpage dedicated to this book</inlineHelpText>
+        <label>External Book Webpage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>used to indicate if the Book Project needs follow up action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>sed to indicate if the Book Project needs follow up action</inlineHelpText>
+        <label>Follow Up Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MathWorks_Web_Page_Live_Date__c</fullName>
+        <description>Date to capture the date the webpage for this book is live</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date to capture the date the webpage for this book is live for the MathWorks</inlineHelpText>
+        <label>MathWorks Web Page Live Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MathWorks_Web_Page_Removed__c</fullName>
+        <description>Date web page removed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date web page removed for MathWorks</inlineHelpText>
+        <label>MathWorks Web Page Removed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MathWorks_Webpage__c</fullName>
+        <description>used to capture the MathWorks webpage</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manually enter the MathWorks Webpage</inlineHelpText>
+        <label>MathWorks Webpage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>New_Message__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New Message</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Book__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>used to relate books together (EG 1st edition and subsequent editions)</inlineHelpText>
+        <label>Parent Book</label>
+        <referenceTo>Book_Project__c</referenceTo>
+        <relationshipLabel>Related Editions</relationshipLabel>
+        <relationshipName>Book_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Primary contact on the Book Project</description>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Book Projects</relationshipLabel>
+        <relationshipName>Book_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_s_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Contact__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Contact&apos;s Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Office__c</fullName>
+        <description>Used to capture the MathWorks Primary Office</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the MathWorks Primary Office</inlineHelpText>
+        <label>Primary Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Promotional_Survey_Status__c</fullName>
+        <description>to indicate if the received survey has been worked on</description>
+        <externalId>false</externalId>
+        <label>Promotional Survey Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Receive_Time_of_Last_Email__c</fullName>
+        <description>The day / time when the last email was received.</description>
+        <externalId>false</externalId>
+        <label>Receive Time of Last Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Send_Book_Promotion_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to trigger renewal email workflows. Should not be exposed in the UI except for testing OR to defined book program users.. checked by manual or data loader operation and unchecked by workflow as a result of an update from GetFeedback.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to trigger renewal email workflows. Should not be exposed in the UI except for testing OR to defined book program users.. checked by manual or data loader operation and unchecked by workflow as a result of an update from GetFeedback.</inlineHelpText>
+        <label>Send Book Promotion Survey</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Siebel ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Publisher__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field has the Publisher data migrated from Siebel Line items</inlineHelpText>
+        <label>Publisher</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND((Now() -  Status_Updated_Date__c  ),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Last_sent_date__c</fullName>
+        <description>records when the last email was sent to the contact that included the Status Update Survey</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Last sent date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Response_Date_Tim__c</fullName>
+        <description>record the date / time the last Status Update Survey was received</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Response Date/Tim</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Send__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When checked it will trigger an email that includes the Status Update Survey link</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Send</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Status__c</fullName>
+        <description>Monitor the Status of a received Survey</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Unresponsive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>this will be checked if the Contact does not complete a sent Status Update Survey</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Unresponsive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status_Updated_Date__c</fullName>
+        <description>Indicate when the status was last updated</description>
+        <externalId>false</externalId>
+        <label>Status Updated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Used to manage the book project from initial application through completion</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to manage the book project from initial application through completion</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Developing</fullName>
+                    <default>false</default>
+                    <label>Developing</label>
+                </value>
+                <value>
+                    <fullName>Copies on order - 1</fullName>
+                    <default>false</default>
+                    <label>Copies on order - 1</label>
+                </value>
+                <value>
+                    <fullName>Copies on order - 2</fullName>
+                    <default>false</default>
+                    <label>Copies on order - 2</label>
+                </value>
+                <value>
+                    <fullName>Copies on order - 3</fullName>
+                    <default>false</default>
+                    <label>Copies on order - 3</label>
+                </value>
+                <value>
+                    <fullName>In Web page process</fullName>
+                    <default>false</default>
+                    <label>In Web page process</label>
+                </value>
+                <value>
+                    <fullName>Waiting for materials</fullName>
+                    <default>false</default>
+                    <label>Waiting for materials</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Denied – coverage</fullName>
+                    <default>false</default>
+                    <label>Denied – coverage</label>
+                </value>
+                <value>
+                    <fullName>Out of Print</fullName>
+                    <default>false</default>
+                    <label>Out of Print</label>
+                </value>
+                <value>
+                    <fullName>Inactive – has new edition</fullName>
+                    <default>false</default>
+                    <label>Inactive – has new edition</label>
+                </value>
+                <value>
+                    <fullName>Published</fullName>
+                    <default>false</default>
+                    <label>Published</label>
+                </value>
+                <value>
+                    <fullName>Published – has other sw</fullName>
+                    <default>false</default>
+                    <label>Published – has other sw</label>
+                </value>
+                <value>
+                    <fullName>Unresponsive</fullName>
+                    <default>false</default>
+                    <label>Unresponsive</label>
+                </value>
+                <value>
+                    <fullName>General Request</fullName>
+                    <default>false</default>
+                    <label>General Request</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Thread_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;LEFT( $Organization.Id , 4 )&amp; 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;), 
+RIGHT($Organization.Id,4), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;), 
+RIGHT($Organization.Id,5), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;), 
+RIGHT($Organization.Id,6), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;), 
+RIGHT($Organization.Id,7), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;), 
+RIGHT($Organization.Id,8), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;), 
+RIGHT($Organization.Id,9), 
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;), 
+RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp; 
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4), 
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5), 
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6), 
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7), 
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8), 
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9), 
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10), 
+RIGHT(Id,11) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+&amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unresponsive_to_Book_Promotion_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Managed by workflow field update, indicates that the contact has not responded to the book promotion survey emails (3 separate attempts)  Used as formula criteria to determine if future emails should be sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Managed by workflow field update, indicates that the contact has not responded to the book promotion survey emails (3 separate attempts)  Used as formula criteria to determine if future emails should be sent.</inlineHelpText>
+        <label>Unresponsive to Book Promotion Survey</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Web_Category__c</fullName>
+        <description>used to capture subject areas that the book falls into</description>
+        <externalId>false</externalId>
+        <inlineHelpText>used to capture subject areas that the book falls into</inlineHelpText>
+        <label>Web Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Biosciences &amp; Biomedical</fullName>
+                    <default>false</default>
+                    <label>Biosciences &amp; Biomedical</label>
+                </value>
+                <value>
+                    <fullName>Chemistry &amp; Chemical Eng</fullName>
+                    <default>false</default>
+                    <label>Chemistry &amp; Chemical Eng</label>
+                </value>
+                <value>
+                    <fullName>Communications Systems</fullName>
+                    <default>false</default>
+                    <label>Communications Systems</label>
+                </value>
+                <value>
+                    <fullName>Digital Signal Processing</fullName>
+                    <default>false</default>
+                    <label>Digital Signal Processing</label>
+                </value>
+                <value>
+                    <fullName>Control Systems</fullName>
+                    <default>false</default>
+                    <label>Control Systems</label>
+                </value>
+                <value>
+                    <fullName>Earth Sciences</fullName>
+                    <default>false</default>
+                    <label>Earth Sciences</label>
+                </value>
+                <value>
+                    <fullName>Economics &amp; Comp Finance</fullName>
+                    <default>false</default>
+                    <label>Economics &amp; Comp Finance</label>
+                </value>
+                <value>
+                    <fullName>Electronics</fullName>
+                    <default>false</default>
+                    <label>Electronics</label>
+                </value>
+                <value>
+                    <fullName>General Interest</fullName>
+                    <default>false</default>
+                    <label>General Interest</label>
+                </value>
+                <value>
+                    <fullName>Image &amp; Video Processing</fullName>
+                    <default>false</default>
+                    <label>Image &amp; Video Processing</label>
+                </value>
+                <value>
+                    <fullName>Mathematics</fullName>
+                    <default>false</default>
+                    <label>Mathematics</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Eng</fullName>
+                    <default>false</default>
+                    <label>Mechanical Eng</label>
+                </value>
+                <value>
+                    <fullName>Neural Networks &amp; Fuzzy Logic</fullName>
+                    <default>false</default>
+                    <label>Neural Networks &amp; Fuzzy Logic</label>
+                </value>
+                <value>
+                    <fullName>Physics</fullName>
+                    <default>false</default>
+                    <label>Physics</label>
+                </value>
+                <value>
+                    <fullName>Programming &amp; Computer Science</fullName>
+                    <default>false</default>
+                    <label>Programming &amp; Computer Science</label>
+                </value>
+                <value>
+                    <fullName>Stats &amp; Probability</fullName>
+                    <default>false</default>
+                    <label>Stats &amp; Probability</label>
+                </value>
+                <value>
+                    <fullName>System ID</fullName>
+                    <default>false</default>
+                    <label>System ID</label>
+                </value>
+                <value>
+                    <fullName>System Modeling and Simulation</fullName>
+                    <default>false</default>
+                    <label>System Modeling and Simulation</label>
+                </value>
+                <value>
+                    <fullName>Test &amp; Measurement</fullName>
+                    <default>false</default>
+                    <label>Test &amp; Measurement</label>
+                </value>
+                <value>
+                    <fullName>Using MATLAB and Simulink</fullName>
+                    <default>false</default>
+                    <label>Using MATLAB and Simulink</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <label>Book Project</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Book_Language__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>X00_Natick_new_Project_OR_w_new_message</fullName>
+        <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+        <columns>Status__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Book_Language__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Follow_Up_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>notEqual</operation>
+            <value>Book Project - Japan</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>00 Natick new Project OR w/new message</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>X01_Natick_new_Project_OR_w_new_message</fullName>
+        <booleanFilter>((1 OR 5) AND 2) OR (3 AND 4)</booleanFilter>
+        <columns>Status__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Book_Language__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Follow_Up_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Book_Language__c</field>
+            <operation>notEqual</operation>
+            <value>Japanese</value>
+        </filters>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>Book Project - Natick</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>01 Natick new Project OR  w/new message</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X02_Japan_new_Project_OR_w_new_message</fullName>
+        <booleanFilter>((1 OR 5)AND 2) OR (3 AND 4)</booleanFilter>
+        <columns>Status__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Follow_Up_Required__c</columns>
+        <columns>Book_Language__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Book_Language__c</field>
+            <operation>equals</operation>
+            <value>Japanese</value>
+        </filters>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>Book Project - Japan</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>02 Japan new Project OR  w/new message</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X04_Japan_Book_Project_w_new_message</fullName>
+        <booleanFilter>(1 OR 3) and 2</booleanFilter>
+        <columns>Status__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Primary_Office__c</columns>
+        <columns>New_Message__c</columns>
+        <columns>Book_Language__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Book_Language__c</field>
+            <operation>equals</operation>
+            <value>Japanese</value>
+        </filters>
+        <filters>
+            <field>Follow_Up_Required__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>04 Japan Book Project w/new message</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X05_Active_Natick_Book_Projects</fullName>
+        <booleanFilter>(1 OR 3) and 2</booleanFilter>
+        <columns>Status__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Primary_Contact_s_Account__c</columns>
+        <columns>Siebel_Publisher__c</columns>
+        <columns>Expected_Publication_Date__c</columns>
+        <columns>Book_Language__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,Developing,Copies on order - 1,Copies on order - 2,Copies on order - 3</value>
+        </filters>
+        <filters>
+            <field>Book_Language__c</field>
+            <operation>notEqual</operation>
+            <value>Japanese</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In Web page process,Waiting for materials</value>
+        </filters>
+        <label>05 Active Natick Book Projects</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X06_Active_Japan_Book_Projects</fullName>
+        <booleanFilter>(1 OR 3) and (2 OR 4)</booleanFilter>
+        <columns>Status__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Siebel_Publisher__c</columns>
+        <columns>Expected_Publication_Date__c</columns>
+        <columns>Book_Language__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,Developing,Copies on order - 1,Copies on order - 2,Copies on order - 3</value>
+        </filters>
+        <filters>
+            <field>Book_Language__c</field>
+            <operation>equals</operation>
+            <value>Japanese</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>In Web page process,Waiting for materials</value>
+        </filters>
+        <filters>
+            <field>OWNER.ALIAS</field>
+            <operation>equals</operation>
+            <value>Book Project - Japan</value>
+        </filters>
+        <label>06 Active Japan Book Projects</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X09_Published_Book_Projects</fullName>
+        <columns>Status__c</columns>
+        <columns>Book_Title__c</columns>
+        <columns>NAME</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Primary_Contact_s_Account__c</columns>
+        <columns>Siebel_Publisher__c</columns>
+        <columns>Copyright_Year__c</columns>
+        <columns>MathWorks_Webpage__c</columns>
+        <columns>Book_Language__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Published,Published – has other sw</value>
+        </filters>
+        <label>09 Published Book Projects</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>BP-{000000}</displayFormat>
+        <label>Book Record Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Book Projects</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Book_Title__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Primary_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Book_Title__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Primary_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Book_Title__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Primary_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Book_Title__c</searchFilterFields>
+        <searchFilterFields>Primary_Contact__c</searchFilterFields>
+        <searchFilterFields>Primary_Office__c</searchFilterFields>
+        <searchFilterFields>Book_Language__c</searchFilterFields>
+        <searchFilterFields>Copyright_Year__c</searchFilterFields>
+        <searchResultsAdditionalFields>Book_Title__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

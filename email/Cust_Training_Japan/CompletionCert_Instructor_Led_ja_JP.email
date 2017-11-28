@@ -1,0 +1,17 @@
+<messaging:emailTemplate subject="MathWorks Training Course Certificate" recipientType="Contact" relatedToType="Enrollment__c">
+<messaging:htmlEmailBody > 
+<p>{!relatedTo.Enrollee_Name__r.LastName} {!relatedTo.Enrollee_Name__r.FirstName} 様</p>
+
+<p>この度はMathWorks トレーニングにご参加いただき誠にありがとうございます。添付ファイルはこの度のご参加を証明するコース修了証となります。<br/>
+弊社ではお客様のスキルアップに貢献できる多数のコースを提供しております。是非、他のコースについてもご検討いただければ幸いです。http://jp.mathworks.com/services/training/index.html<br/>
+何かご不明な点がございましたら、training@mathworks.co.jp までご連絡ください</p><br/>
+
+<p>今後ともよろしくお願いいたします。<br/>
+MathWorks トレーニング サービス</p>
+
+</messaging:htmlEmailBody>
+
+    <messaging:attachment renderAs="pdf" filename="Training_Certificate"> <!-- Use the renderAs attribute here.-->    
+   <c:EnrollmentCompletionCert enrollmentId="{!relatedTo.Id}"></c:EnrollmentCompletionCert>
+  </messaging:attachment>
+</messaging:emailTemplate>

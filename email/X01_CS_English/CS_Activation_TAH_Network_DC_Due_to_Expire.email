@@ -1,0 +1,28 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. A MathWorks Total Academic Headcount License (TAH) is an annual license. This means the license file will need to be updated after the Software Maintenance has been renewed.  After the license file has been updated, the "due to expire" message will no longer be displayed.    
+
+To update the license file for TAH, please follow the instructions below.  
+Licensed End Users with Activation Permission can update the License File for the TAH Designated Computer License through Activation.  Licensed End Users that do not have Activation permissions will need to request an updated License File and File Installation Key from one of the License Administrators.    
+
+To update the License File in MATLAB (internet connection required):  
+Go to Help > Licensing > Update Current Licenses    
+
+To update the License File in the License Center (Activation permission required):  
+1. Access the MathWorks License Center here: https://www.mathworks.com/licensecenter/ (log-in required)  
+2. Select TAH license #####  
+3. Click on the "Activate and Install" tab 
+4. Click on “Update License File”  
+5. Under "Get License File" Select to either email or download the license file.   
+6. Enter the Activation Key 
+7. Select Release and continue to follow along as prompted
+8. Browse to a copy of the newest license file saved.    MATLAB should now run without displaying the "due to expire" message.    
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

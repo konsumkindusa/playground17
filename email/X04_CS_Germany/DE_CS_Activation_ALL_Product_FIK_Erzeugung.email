@@ -1,0 +1,32 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage. 
+
+Um die Funktion des 'All Produkt File Installation Key' zu Lizenz XXX zu nutzen, müssen Sie entweder/oder: 
+
+a. Die Installation mit dem bei Ihrem Erstantrag erstellten All Product File Installation Key und einer Installations- DVD oder dem ISO Image ausführen. 
+
+b. Bei Verlust des damals erstellten All Product File Installation Key diesen wie folgt nochmals selbst abrufen: 
+
+To obtain the All Product FIK: 
+- Log into your MathWorks Account at www.mathworks.com 
+- Click 'My Account' in the upper left corner 
+- Click on the license number for which the All Product FIK is enabled under the Option: ‘My Software‘: ‚License‘ or ‚View additional Licenses or Trials‘
+- Choose the 'Install and Activate' Tab 
+- Click 'Advanced Options' 
+- Select the release you wish to generate for (they are backwards compatible) 
+- Click 'Done’ 
+
+On the next page you will see the FIK for the products on this selected license, and the All Product FIK for all products will be displayed below. 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

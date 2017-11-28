@@ -1,0 +1,15 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihr Interesse an MATLAB. 
+
+Umfassende Informationen zu MATLAB Home finden Sie unter https://www.mathworks.com/products/matlab-home/index.html
+
+Weitere Fragen hierzu senden Sie bitte direkt an: home-use@mathworks.com 
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

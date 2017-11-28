@@ -1,0 +1,24 @@
+Dear 
+
+We recently obtained your name from your author, {!Contact.FirstName} {!Contact.LastName}, who we are working with to support the development of the book, {!Book_Project__c.Book_Title__c}, that will be based on MATLAB.  
+
+We would like to introduce you to the MathWorks Book Program and learn more about your role at your organization so we may work with you effectively.
+
+LEARN MORE ABOUT THE MATHWORKS BOOK PROGRAM
+The MathWorks Book Program supports authors and publishers developing books based on MathWorks products.  We provide a range of benefits that include complimentary access to relevant MathWorks products as well as book promotion. 
+>>Find out more at www.mathworks.com/support/books/join.html
+
+We look forward to receiving this information so that we may begin to support and promote your projects.  If you have any questions about our program and how we can work together, please let us know and we can arrange a phone call for further discussion.
+
+
+Sincerely,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

@@ -1,0 +1,29 @@
+Dear {!Case.Contact}, 
+
+As a partner in The MathWorks Connections Program, you are eligible to purchase:
+
+1.  Time-expiring licenses for classroom instruction
+2.  MathWorks certified training materials
+
+>>MathWorks Software:
+The fee for time-expiring MathWorks software licenses for classroom use in a third-party sponsored training course is $500 per day.  These licenses include all MathWorks products and can be used to train up to twenty students per classroom.  Training licenses will expire on the stated course end date and will be sent electronically to the training contact not more than 10 days prior to the first day of the course.  These licenses are provided for use in the classroom and are not to be used for course development.
+
+>> Materials Certified Training Materials:
+The fee to receive certified MathWorks training materials for students attending a third-party sponsored training course is 30% of the cost of the corresponding MathWorks (Natick, MA) training course.  
+
+For example, the "MATLAB Fundamentals and Programming Techniques" course materials (a two-day course listed at $1000 per student) is available to trainers for $300 per individual student set.  
+
+Each set of materials includes bound copies of the notes and slides for the course, a disk containing all examples and exercises used on the course and, where applicable, a specifically recommended publication such as "Mastering MATLAB 5" by Hanselman & Littlefield.  
+
+>> NOTE:   
+1.  The initial purchase of MathWorks training materials will require the purchase of an instructor copy.  
+2.  MathWorks training material is copyrighted and may not be copied without the written permission of The MathWorks, Inc.
+3.  Installing multiple copies of one license on student computers is a violation of The MathWorks Software License Agreement.
+4.  Trainers who do not wish to use these time-expiring licenses may purchase permanent licenses of MathWorks products at commercial list price.
+
+All Connections Program Training Partners are eligible to purchase these time-expiring software licenses and course materials.  To place an order, trainers should contact MathWorks at (508) 647-7000 option 3 or training@mathworks.com.  Orders should be placed at least three weeks prior to the first day of training to ensure timely receipt of materials and software.
+
+If you have any questions regarding these offerings, please contact connections@mathworks.com.
+
+Best Regards,
+{!User.Email_Template_Signature__c}

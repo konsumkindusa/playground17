@@ -1,0 +1,16 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+nach unserer letzten Emailbestätigung an Sie haben wir die Information erhalten, dass Frau/Herr xxx unter der Emailadresse xxx in Ihrer Firma/Hochschule nicht mehr erreichbar ist.
+Aus diesem Grund haben wir Frau/Herrn xxx als Administrator entfernt. Sollte sich die Emailadresse lediglich intern geändert haben, teilen Sie uns dies bitte mit, sodass wir die Daten aktualisieren können. In diesem Falle werden wir Frau/Herrn xxx wieder zu der/den ehemals verwaltete/n Lizenz/en assoziieren.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

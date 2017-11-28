@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>Enrollment Training Survey - Chinese</name>
+    <style>freeForm</style>
+    <subject>您的MathWorks 培训评估</subject>
+    <textOnly>尊敬的丁 {!Enrollment__c.Enrollee_Name__c},
+
+感谢您参加 MathWorks 的培训。 我们的目标是确保您成功使用 MATLAB、Simulink 以及与您的应用相关的工具。
+
+我们致力于不断提升您的学习体验，而且您的意见或建议对我们来说非常重要。 请您抽出一些时间完成我们的培训调查，这大约只需五分钟。
+
+培训后调查
+
+
+
+感谢您抽出宝贵时间完成我们的调查，我们期待将来能够更好的满足您的学习需要。
+
+顺颂商琪，
+
+Craig Santos
+培训事业部经理
+The MathWorks, Inc.
+Craig.Santos@mathworks.com
+
+
+欲更新您的地址，请发送邮件到： service@mathworks.com
+
+?? 2009 The MathWorks有限公司版权所有。MATLAB、Simulink、Stateflow、Handle Graphics、Real-Time Workshop、SimBiology、 SimHydraulics和xPC TargetBox是The MathWorks有限公司的注册商标，SimEvents是The MathWorks有限公司的商标。其它产品或商标是其各自所有者的商标或注册商标。
+
+
+退出：
+点击以下链接，将此e-mail地址从MathWorks商务电子邮件列表中移除。</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

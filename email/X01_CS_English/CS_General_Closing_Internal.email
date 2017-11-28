@@ -1,0 +1,11 @@
+Hello {!Case.Contact},
+
+
+If you need further assistance regarding this request, please reply to this email preserving the Reference ID listed below.
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

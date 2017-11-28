@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>used to auto send to renew CNX T&amp;C&apos;s</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Connections</letterhead>
+    <name>CNX - T&amp; C renewal (HTML)</name>
+    <style>freeForm</style>
+    <subject>Renew your Connections Program Membership</subject>
+    <textOnly>Dear &lt;partner contact name&gt;,
+
+
+Thank you for your participation in the MathWorks Connections Program. We value your partnership and hope that you continue your participation in the program for the upcoming year.  Connections Program membership provides our partners with a range of sales and marketing benefits to help promote their products and services to MathWorks customers. (E.g. Web page listing, time expiring trials, access to partner licenses, and Connections Program partner logos)
+
+
+Each year we ask partners to review and reconfirm their acceptance of the program membership terms. For this year we haven’t made any changes to these terms and conditions. They remain the same as what your company agreed to upon joining the program.
+
+
+Please visit this URL to confirm your continued participation in the Connections Program.
+
+
+Things to note:
+
+For reference, the current membership terms are also available here.
+The link below is from CustomerSat, which we use to collect your response.  If you need to validate that the link is from the Connections Program or have issues with it, please e-mail us.
+If you are not the best person to respond, please forward this message to the appropriate person in your organization.
+
+
+Please respond to this request by October 1st to continue your membership in the MathWorks Connections Program.
+
+
+Best regards,
+
+Tina McKay
+
+The MathWorks Connections Program</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

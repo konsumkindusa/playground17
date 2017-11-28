@@ -1,0 +1,29 @@
+{!Partner_Agreement__c.Primary_Contact__c} 様
+
+いつもお世話になっております。
+
+[DISTRIBUTOR] は、 [PARTNER] の販売代理店として
+認識しておりますが間違いないでしょうか。 
+
+この度、登録のお申込みを頂きました、MathWorks Connections Programへ
+ご参加いただくには、自社製品とのインテグレーションをお持ちになる必要が
+ございます。お申込み頂いた内容によると、貴社は [PARTNER] のサポートを
+行われており、MathWorks のツールとインテグレートする製品は
+所有されていないようですが、いかがでしょうか。
+
+[PARTNER] を通じた MathWorks との協調業務につきましては、
+[PARTNER CONTACT]へご連絡いただきますよう、
+よろしくお願い申し上げます。
+
+下記にご連絡先の情報をお知らせいたします。
+
+[PARTNER CONTACT]
+
+
+
+よろしくお願い申し上げます。
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

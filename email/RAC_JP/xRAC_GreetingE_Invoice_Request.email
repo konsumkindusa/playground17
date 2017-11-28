@@ -1,0 +1,15 @@
+{!Case.Account}
+{!Case.Contact}様
+
+平素より格別のご高配を賜り厚くお礼申し上げます。
+MathWorks Japan管理部の{!User.Email_Template_Signature__c}と申します。
+
+この度はご注文頂きまして誠にありがとうございました。
+
+
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+Case ID: {!Case.CaseNumber}

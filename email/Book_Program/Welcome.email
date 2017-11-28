@@ -1,0 +1,33 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+Thank you for submitting a project application for your book, {!Book_Project__c.Book_Title__c}. Based on the information you’ve provided, your project qualifies for support from the MathWorks Book Program. 
+
+As a member of the MathWorks Book Program, you can access the Member Support Web site to leverage the resources we’ve made available to you for the planning, development, and promotion of your book at: 
+www.mathworks.com/support/books/members
+
+Resources to help you get started include:
+- Request form to access the latest release of MathWorks products 
+- Guidelines on properly referencing MathWorks products and trademarks
+- Technical tips about the latest features and resources available 
+
+It is important to periodically update the MathWorks Book Program on the status of your project throughout the year.  
+
+If you haven't done so already, explore the new MATLAB Live Editor available in our latest release of MATLAB.  See your results together with the code that produced them; add embedded equations {LaTeX}, images, hyperlinks, and rich formatted text to enhance your narrative; and share with readers as interactive documents.
+www.mathworks.com/products/matlab/live-editor/
+
+
+We look forward to working with you.
+
+
+Sincerely,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

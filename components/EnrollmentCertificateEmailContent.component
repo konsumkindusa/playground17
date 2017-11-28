@@ -1,0 +1,27 @@
+<apex:component access="global" controller="EnrollmentCertificateController" >
+    <apex:attribute access="global" assignTo="{!enrollId}"  name="enrollmentId" type="String" required="true" description="enrollmentId"/>
+    <apex:outputPanel id="thePanel" rendered="{!NOT(IsSponsorOfficeJp)}" >
+        <p>Dear {!EnrolleeNameForCompletionCert},</p>
+        
+        <p>Thank you for your recent participation in our training event.  Attached is a certificate confirming your participation.<br/>
+        Please consider us for your future training needs. To learn more about the courses we offer visit our website at www.mathworks.com/training.<br/>
+        If we may be of further assistance, please contact us at training@mathworks.com.</p><br/>
+        
+        <p>Thank you,<br/>
+        MathWorks Training Services Team</p>
+    </apex:outputPanel>
+
+    <apex:outputPanel id="jpPanel" rendered="{!(IsSponsorOfficeJp)}" >
+        <p>{!EnrolleeNameForCompletionCert} 様</p>
+        
+        <p>この度はMathWorks トレーニングにご参加いただき誠にありがとうございます。添付ファイルはこの度のご参加を証明するコース修了証となります。<br/>
+        
+        弊社ではお客様のスキルアップに貢献できる多数のコースを提供しております。是非、他のコースについてもご検討いただければ幸いです。http://jp.mathworks.com/services/training/index.html<br/>
+        
+        何かご不明な点がございましたら、training@mathworks.co.jp までご連絡ください。</p><br/>
+        
+        <p>今後ともよろしくお願いいたします。<br/>
+        
+        MathWorks トレーニング サービス</p>
+    </apex:outputPanel>
+</apex:component>

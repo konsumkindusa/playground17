@@ -1,0 +1,49 @@
+Dear {!Contact.FirstName},
+
+Thank you for contacting us requesting information on MATLAB Distributed Computing Server on Amazon EC2 (mathworks.com/ec2).
+
+ MATLAB Distributed Computing Server on Amazon EC2 is a parallel computing solution for cloud clusters that allows you to pay for software resources as you use them with an On Demand license.     The MATLAB Distributed Computing Server license allows you to use the products for which your desktop is licensed, and the software for all toolboxes is already installed with the exception of a few items listed here: 
+https://www.mathworks.com/products/ineligible_programs/ 
+
+ Would you please answer the following questions so we better understand your needs and to confirm that you meet the program requirements?
+
+ 1. What is your role (Sys Admin, MATLAB user, or both)? 
+
+ 2. What is your application (general overview)?
+
+ 3. What is your MATLAB License Number?
+      What version of MATLAB are you currently running? 
+      NOTE:  For MATLAB Distributed Computing Server on Amazon EC2, you must be running 2015a or higher) 
+
+ 4. How are you currently using the Parallel Computing Toolbox (matlabpool, parpool, parfor, spmd)? 
+
+ 5. Are you using any Windows or Mac-specific executables such as user-defined
+    MEX-files, Excel spreadsheets, databases, third-party applications, etc.? 
+   (The cloud solution only runs on Linux servers.) 
+
+ 6. Which Cloud providers are you interested in using? Select all that apply: 
+      Amazon, Penguin Computing (POD), Internal, Other
+
+ Software costs (to MathWorks) 
+ On-Demand option 
+ * On-demand rate is $0.07 per worker per hour (Academic US pricing)
+ * MathWorks only accepts credit card payment.  
+ * Customers will provide a credit card via the MathWorks License Center which will
+     be kept on file. 
+ * Billing is completed monthly.
+ * Credit card will be charged for usage in the previous month
+ * Detailed information on billing can be found on our web site at http://www.mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html
+
+Perpetual/Annual license option
+     MathWorks also offers licenses that can be purchased for a specific number of workers.  If you are interested in a perpetual or annual license I will have your Account Manager contact you to provide pricing and licensing information.
+
+Hardware costs (to Amazon)
+PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of the EC2 instances that you use.    You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account
+
+ * Please confirm with aws.amazon.com for current pricing
+ * The list of MathWorks' supported  instances (Linux only) can be found at 
+http://www.mathworks.com/help/cloudcenter/ug/cloud-computing-console.html#bvlyxe_
+
+I look forward to your response. 
+
+Best regards,

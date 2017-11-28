@@ -1,0 +1,18 @@
+Dear {!Case.Contact},
+
+This message is to let you know that you have been approved to purchase Sales Support Licenses for your company through The MathWorks Connections Program.  
+
+To complete your order for Sales Support Licenses, we need to receive:
+
+-A signed Sales Support Demonstration License Agreement (attached)
+-Complete contact information for each end user of the licenses (spreadsheet attached)
+
+Once I receive the signed agreement and end user information I will be able to send you a quote to purchase the licenses. 
+
+If you have any questions on the final steps for setting up the Sales Support Licenses, please let me know.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Record_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Record Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Status Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Submit</fullName>
+                    <default>false</default>
+                    <label>Submit</label>
+                </value>
+                <value>
+                    <fullName>Processing</fullName>
+                    <default>false</default>
+                    <label>Processing</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WHERE_Clause__c</fullName>
+        <externalId>false</externalId>
+        <label>WHERE Clause</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Territory Recalculation Job</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Created_Date__c</columns>
+        <columns>Record_Count__c</columns>
+        <columns>WHERE_Clause__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status_Reason__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Jobs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Jobs</fullName>
+        <columns>NAME</columns>
+        <columns>Created_Date__c</columns>
+        <columns>Record_Count__c</columns>
+        <columns>WHERE_Clause__c</columns>
+        <columns>Status__c</columns>
+        <columns>Status_Reason__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>notContain</operation>
+            <value>Template</value>
+        </filters>
+        <label>My Jobs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Templates</fullName>
+        <columns>NAME</columns>
+        <columns>Created_Date__c</columns>
+        <columns>Record_Count__c</columns>
+        <columns>WHERE_Clause__c</columns>
+        <columns>Status__c</columns>
+        <columns>Status_Reason__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Template</value>
+        </filters>
+        <label>Templates</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Territory Recalculation Job Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Territory Recalculation Job</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Do_not_allow_change_job</fullName>
+        <active>true</active>
+        <description>Do not allow any changes once the record has been created and saved except MW Integration user</description>
+        <errorConditionFormula>AND
+  ( NOT (ISNEW()) 
+,
+   NOT($User.Id = &apos;005i00000014J7w&apos;)
+  
+, 
+	OR(
+		AND(
+		ISPICKVAL(Status__c,&apos;Submit&apos;)
+		,
+		NOT(ISPICKVAL(PRIORVALUE(Status__c),&quot;New&quot;))
+		)
+	,
+		AND(
+			NOT(ISPICKVAL(Status__c,&apos;Submit&apos;)),
+			ISCHANGED(Status__c)
+		)
+	)   
+)</errorConditionFormula>
+        <errorMessage>Jobs that have already been submitted cannot be modified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Do_not_allow_select_status_on_new_record</fullName>
+        <active>true</active>
+        <description>Do not allow users to select other then New or Submitted status when new record has been created</description>
+        <errorConditionFormula>AND(
+ISNEW(),
+NOT(ISPICKVAL(Status__c,&apos;New&apos;))
+,
+NOT(ISPICKVAL(Status__c,&apos;Submit&apos;))
+
+
+
+)</errorConditionFormula>
+        <errorMessage>You can select only New or Submitted job status</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

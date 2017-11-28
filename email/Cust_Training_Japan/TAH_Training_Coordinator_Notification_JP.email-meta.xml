@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TAH Training Coordinator Notification JP</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TAH Training Coordinator Notification JP</name>
+    <style>none</style>
+    <subject>MathWorks オンラインコース契約の確認</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

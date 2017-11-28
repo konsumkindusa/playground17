@@ -1,0 +1,23 @@
+Dear {!Contact.Name}, 
+
+This e-mail is to remind you that you are enrolled in the following training class: 
+
+COURSE NAME: {!Enrollment__c.Class__c}  
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c} 
+LOCATION: {!Class__c.City__c},{!Class__c.State__c}, {!Class__c.Country__c}  
+TIME: {!Class__c.Start_Time__c} until {!Class__c.End_Time__c} 
+
+Cancellation/Return Policies 
+
+Instructor-led Training: 
+Tuition is fully refundable if we receive written notification (via mail or email) of cancellation on or before 7 business days prior to class. 
+
+Cancellations made less than 7 business days prior to class will be charged 25% of the class tuition fee. If you fail to show up to class without written notice, you will be charged for the full tuition. A substitute may be sent in your place to avoid a fee. 
+
+If a training course cannot take place as scheduled due to circumstances beyond The MathWorks’ reasonable control, The MathWorks’ sole responsibility shall be to refund the cost of the class or classes in which you are enrolled or to transfer you to another class of equal or lesser value. However, The MathWorks does not refund for any expenses incurred beyond the cost of the course. 
+
+Inclement Weather Policy 
+The MathWorks intends to maintain its regularly scheduled courses, avoiding closings due to inclement weather whenever possible. However, if weather factors are unfavorable and not expected to improve, courses will be cancelled for the day. For information about cancellations due to inclement weather, please contact the training facility directly. If a cancellation is inevitable, you will receive an email from The MathWorks, including options for rescheduling. Please note that this email is not to inform you of the cancellation, but to provide you with options to reschedule due to the cancellation. 
+
+Thank you, 
+{!Class__c.Sponsor_Office_Signature__c}

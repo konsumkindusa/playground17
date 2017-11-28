@@ -1,0 +1,18 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+In order to complete the Connections Program application process, we require two reference names who we contact to ask a few brief questions about their opinion on {!Partner_Agreement__c.Partner_Agreement_Name__c} and its relationship with MathWorks products.
+
+[CHOOSE ONE]
+
+For product partners, your references must have used {!Partner_Agreement__c.Partner_Agreement_Name__c} together with MathWorks products. Beta testers are acceptable to be used as references. 
+
+For service partners, your references must have used {!Partner_Agreement__c.Partner_Agreement_Name__c} related to MathWorks products.
+
+The questions are very brief and will only take 3-5 minutes to complete. 
+
+Please forward two reference names, including email addresses, to connections@mathworks.com so we can proceed with the application review. If you are unable to provide reference names, please let me know.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

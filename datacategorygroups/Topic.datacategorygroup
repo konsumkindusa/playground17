@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Account/Contact</label>
+                <name>Account_Contact</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Activation</label>
+                <name>Activation_CS</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Billing/Orders</label>
+                <name>Billing_Orders</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Customer Training</label>
+                <name>Customer_Training</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Database Lookup</label>
+                <name>Database_Lookup</name>
+            </dataCategory>
+            <dataCategory>
+                <label>General Information</label>
+                <name>General_Information</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Installation/Downloads</label>
+                <name>Installation_Downloads</name>
+            </dataCategory>
+            <dataCategory>
+                <label>License Association</label>
+                <name>License_Association</name>
+            </dataCategory>
+            <dataCategory>
+                <label>License Modification</label>
+                <name>License_Modification</name>
+            </dataCategory>
+            <dataCategory>
+                <label>MathWorks Account</label>
+                <name>MathWorks_Account</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Passcodes</label>
+                <name>Passcodes</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Student Version</label>
+                <name>Student_Version</name>
+            </dataCategory>
+            <label>All Customer Support</label>
+            <name>All_Customer_Support</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Activation</label>
+                <name>Activation_Install</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Download</label>
+                <name>Download</name>
+            </dataCategory>
+            <dataCategory>
+                <label>License Management</label>
+                <name>License_Management</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Installation</label>
+                <name>Installation</name>
+            </dataCategory>
+            <dataCategory>
+                <label>MATLAB Desktop and Environment</label>
+                <name>MATLAB_Desktop_and_Environment_Install</name>
+            </dataCategory>
+            <label>All Install</label>
+            <name>All_Install</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Code Generation</label>
+                <name>Code_Generation</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Component-Based Modeling</label>
+                <name>Component_Based_Modeling</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Computational Biology</label>
+                <name>Computational_Biology</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Computational Finance</label>
+                <name>Computational_Finance</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Control System Design and Analysis</label>
+                <name>Control_System_Design_and_Analysis</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Data Import and Export</label>
+                <name>Data_Import_and_Export</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Database Connectivity</label>
+                <name>Database_Connectivity</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Deployment</label>
+                <name>Deployment</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Event-Based Modeling</label>
+                <name>Event_Based_Modeling</name>
+            </dataCategory>
+            <dataCategory>
+                <label>External Hardware</label>
+                <name>External_Hardware</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Graphics, and Building UIs and Apps</label>
+                <name>Graphics_and_Building_Uis_and_Apps</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Image Processing and Computer Vision</label>
+                <name>Image_Processing_and_Computer_Vision</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Math, Statistics, and Optimization</label>
+                <name>Math_Statistics_and_Optimization</name>
+            </dataCategory>
+            <dataCategory>
+                <label>MATLAB Desktop and Environment</label>
+                <name>MATLAB_Desktop_and_Environment_TS</name>
+            </dataCategory>
+            <dataCategory>
+                <label>MEX and External Language Interfaces</label>
+                <name>MEX_and_External_Language_Interfaces</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Object-Oriented Programming</label>
+                <name>Object_Oriented_Programming</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Parallel Computing</label>
+                <name>Parallel_Computing</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Programming Scripts and Functions</label>
+                <name>Programming_Scripts_and_Functions</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Reporting</label>
+                <name>Reporting</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Signal Processing and Communication</label>
+                <name>Signal_Processing_and_Communication</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Simulink Block Creation</label>
+                <name>Simulink_Block_Creation</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Simulink Modeling</label>
+                <name>Simulink_Modeling</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Simulink Physical Modeling</label>
+                <name>Simulink_Physical_Modeling</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Simulink Simulation and Visualization</label>
+                <name>Simulink_Simulation_and_Visualization</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Verification, Validation, and Test</label>
+                <name>Verification_Validation_and_Test</name>
+            </dataCategory>
+            <label>All Technical Support</label>
+            <name>All_Technical_Support</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Topic</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

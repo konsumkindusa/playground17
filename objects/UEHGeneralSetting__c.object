@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Enable_Blacklist_Logging__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This will be able  to toggle between logging and not logging blacklisted incoming messages without changing code</description>
+        <externalId>false</externalId>
+        <label>Enable Blacklist Logging</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Max_Email_Body_Length__c</fullName>
+        <description>Maximum clob field length for Email TextBody and HtmlBody</description>
+        <externalId>false</externalId>
+        <label>Max Email Body Length</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Program_User__c</fullName>
+        <description>This will be used as task owner.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user alias that will be used to set the default owner</inlineHelpText>
+        <label>Partner Program User</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>UEH_General Setting</label>
+    <visibility>Protected</visibility>
+</CustomObject>

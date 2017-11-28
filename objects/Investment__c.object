@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>used to capture investment made by MathWorks through the various academic support programs.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Academic_Support_Project__c</fullName>
+        <description>used to relate investment records to Academic Support parent records.</description>
+        <externalId>false</externalId>
+        <label>Academic Support Project</label>
+        <referenceTo>Academic_Support_Project__c</referenceTo>
+        <relationshipLabel>Investments</relationshipLabel>
+        <relationshipName>Investments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Activity_Type__c</fullName>
+        <description>Used to define the type of activity a MathWorks staff resource is engaged in for an event</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to define the type of activity a MathWorks staff resource is engaged in for an event</inlineHelpText>
+        <label>Activity Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Program Management</fullName>
+                    <default>false</default>
+                    <label>Program Management</label>
+                </value>
+                <value>
+                    <fullName>License Management/Set-up</fullName>
+                    <default>false</default>
+                    <label>License Management/Set-up</label>
+                </value>
+                <value>
+                    <fullName>Legal Contract Management</fullName>
+                    <default>false</default>
+                    <label>Legal Contract Management</label>
+                </value>
+                <value>
+                    <fullName>Event/Logistics Planning</fullName>
+                    <default>false</default>
+                    <label>Event/Logistics Planning</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Capture a brief note about the project investment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture a brief note about the project investment</inlineHelpText>
+        <label>Comments</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Course__c</fullName>
+        <description>Enter the name of the course offered</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the name of the course offered</inlineHelpText>
+        <label>Course</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Investment__c</fullName>
+        <description>Used to capture the date the investment was made</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the date the investment was made</inlineHelpText>
+        <label>Date of Investment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deliverable_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Deliverable Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adoption</fullName>
+                    <default>false</default>
+                    <label>Adoption</label>
+                </value>
+                <value>
+                    <fullName>Article</fullName>
+                    <default>false</default>
+                    <label>Article</label>
+                </value>
+                <value>
+                    <fullName>Book</fullName>
+                    <default>false</default>
+                    <label>Book</label>
+                </value>
+                <value>
+                    <fullName>Conference</fullName>
+                    <default>false</default>
+                    <label>Conference</label>
+                </value>
+                <value>
+                    <fullName>Courseware</fullName>
+                    <default>false</default>
+                    <label>Courseware</label>
+                </value>
+                <value>
+                    <fullName>CR Link</fullName>
+                    <default>false</default>
+                    <label>CR Link</label>
+                </value>
+                <value>
+                    <fullName>Publication</fullName>
+                    <default>false</default>
+                    <label>Publication</label>
+                </value>
+                <value>
+                    <fullName>Rating</fullName>
+                    <default>false</default>
+                    <label>Rating</label>
+                </value>
+                <value>
+                    <fullName>User Story</fullName>
+                    <default>false</default>
+                    <label>User Story</label>
+                </value>
+                <value>
+                    <fullName>Webinar</fullName>
+                    <default>false</default>
+                    <label>Webinar</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <description>Reflects the department of the related MathWorker</description>
+        <externalId>false</externalId>
+        <formula>MathWorker__r.Department</formula>
+        <inlineHelpText>Reflects the department of the related MathWorkers contact record</inlineHelpText>
+        <label>Department</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hardware__c</fullName>
+        <externalId>false</externalId>
+        <label>Hardware</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours__c</fullName>
+        <description>Captures the number of hours spent by a MathWorker on an event</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures the number of hours spent by a MathWorker on an event</inlineHelpText>
+        <label>Hours</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Link__c</fullName>
+        <description>This opens up the License details in ORC application.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(License_Number__c )),HYPERLINK(&quot;http://inside-apps.mathworks.com/orclookups/licenseDetails.do?licenseId=&quot;&amp;License_Number__c,&quot;Open License Details&quot;),&quot;&quot;)</formula>
+        <inlineHelpText>This opens up the License details in ORC application.</inlineHelpText>
+        <label>License Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Number__c</fullName>
+        <description>capture the license number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the license number</inlineHelpText>
+        <label>License Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Type__c</fullName>
+        <description>Used to denote the type of license being awarded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to denote the type of license being awarded</inlineHelpText>
+        <label>License Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>License A</fullName>
+                    <default>false</default>
+                    <label>License A</label>
+                </value>
+                <value>
+                    <fullName>License B</fullName>
+                    <default>false</default>
+                    <label>License B</label>
+                </value>
+                <value>
+                    <fullName>Group</fullName>
+                    <default>false</default>
+                    <label>Group</label>
+                </value>
+                <value>
+                    <fullName>Classroom</fullName>
+                    <default>false</default>
+                    <label>Classroom</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Concurrent</fullName>
+                    <default>false</default>
+                    <label>Concurrent</label>
+                </value>
+                <value>
+                    <fullName>Student Version</fullName>
+                    <default>false</default>
+                    <label>Student Version</label>
+                </value>
+                <value>
+                    <fullName>Trial</fullName>
+                    <default>false</default>
+                    <label>Trial</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MathWorker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to contact, filtered on is employee flag, to easily allow a contact to be associated with the investment record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use to select a MathWorkers contact record</inlineHelpText>
+        <label>MathWorker</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The contact you are searching for is not an employee or is not currently in Salesforce.</errorMessage>
+            <filterItems>
+                <field>Contact.Employee_Flag__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Please note that this lookup is filtered to return only contacts in Salesforce that are identified as MathWorks employees.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Investments</relationshipLabel>
+        <relationshipName>Investments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Amount__c</fullName>
+        <description>Used to capture the amount of a payment made as part of a monetary award</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture the amount of a payment made as part of a monetary award</inlineHelpText>
+        <label>Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <description>used to capture the quantity of student version software awarded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the quantity of licenses awarded (specific to Student Version)</inlineHelpText>
+        <label>Quantity</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Used to identify the role a MathWorker played during an event</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to identify the role a MathWorker played during an event</inlineHelpText>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Field Marketing</fullName>
+                    <default>false</default>
+                    <label>Field Marketing</label>
+                </value>
+                <value>
+                    <fullName>Internal Sponsor</fullName>
+                    <default>false</default>
+                    <label>Internal Sponsor</label>
+                </value>
+                <value>
+                    <fullName>Program Manager</fullName>
+                    <default>false</default>
+                    <label>Program Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales rep</fullName>
+                    <default>false</default>
+                    <label>Sales rep</label>
+                </value>
+                <value>
+                    <fullName>Technical Lead</fullName>
+                    <default>false</default>
+                    <label>Technical Lead</label>
+                </value>
+                <value>
+                    <fullName>Technical Marketing</fullName>
+                    <default>false</default>
+                    <label>Technical Marketing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Siebel ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Investment</label>
+    <nameField>
+        <displayFormat>IN-{0000000}</displayFormat>
+        <label>Investment Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Investments</pluralLabel>
+    <recordTypes>
+        <fullName>Deliverable</fullName>
+        <active>true</active>
+        <description>This will be used by TEs to capture deliverables for Curriculum Development projects</description>
+        <label>Deliverable</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concurrent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Hardware</fullName>
+        <active>true</active>
+        <description>This is to enter the Hardware details</description>
+        <label>Hardware</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concurrent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>License</fullName>
+        <active>true</active>
+        <description>Used to capture information about different license types given in relation to an Academic Support project</description>
+        <label>License</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concurrent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Monetary</fullName>
+        <active>true</active>
+        <description>Used to capture information about a Monetary investment</description>
+        <label>Monetary</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Staff_Resource</fullName>
+        <active>true</active>
+        <description>Used to track high level time invested by a MathWorks staff resource</description>
+        <label>Staff Resource</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Training</fullName>
+        <active>true</active>
+        <description>Used to track investment in training as part of an Academic Support project</description>
+        <label>Training</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Year</fullName>
+        <active>true</active>
+        <description>Used to capture Year information</description>
+        <label>Year</label>
+        <picklistValues>
+            <picklist>Activity_Type__c</picklist>
+            <values>
+                <fullName>Event%2FLogistics Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Contract Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Management%2FSet-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deliverable_Type__c</picklist>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Book</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR Link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Courseware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Type__c</picklist>
+            <values>
+                <fullName>Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concurrent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role__c</picklist>
+            <values>
+                <fullName>Field Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Sponsor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

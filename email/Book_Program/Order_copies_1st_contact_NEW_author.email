@@ -1,0 +1,33 @@
+{!Contact.Email} 
+Dear 
+
+We recently learned about your book {!Book_Project__c.Book_Title__c} which is based on MATLAB. As this book includes MATLAB material, MathWorks is eager to promote it through the MathWorks Book Program. Please send one copy of your book to our mailing address below so we may help promote it to the MATLAB community.
+
+Please forward this request to your publisher or feel free to provide us with your editorial contact's name and email address so we can make this request.   
+
+Our mailing address is:
+MathWorks Book Program
+c/o Alexa Zahares
+The MathWorks, Inc.
+3 Apple Hill Dr.
+Natick, MA 01760-2098
+
+Please complete a promotion form to help us accurately develop a promotional Web page on our site. You can complete this information at: www.mathworks.com/support/books/promote.html
+
+If you'd like to learn more about the MathWorks Book Program and the support we offer, visit our Web site at: www.mathworks.com/join/books
+
+Please feel free to contact me if you have any questions.
+
+
+
+Kind Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

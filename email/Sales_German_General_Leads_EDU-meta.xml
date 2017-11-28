@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Sales German General Leads EDU</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DE_Sales_Manager_Andreas_Schindler</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DE_Sales_Support</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

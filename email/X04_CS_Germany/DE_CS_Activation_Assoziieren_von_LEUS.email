@@ -1,0 +1,22 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage. 
+
+Die Verwaltung (Verlinkung, Entfernung) von Licensed End Usern wird vom Administrator einer Lizenz über den eigenen MathWorks Account unter optionaler Vergabe gewünschter User-Permissions (Download, Activation) vorgenommen. Dies erfolgt nach Öffnen der betreffenden Lizenz über den ‚Manage Users‘ Tab.
+
+Bitte beachten Sie, dass die Anzahl von Licensed End Usern bei Individual Lizenzen bzw. Designated Computer Lizenzen auf einen Kontakt beschränkt ist, sodass ein bereits vorhandener Nutzer vor der gewünschten Verlinkung eines neuen Users zuerst entfernt werden muss. 
+
+Hilfreiche Informationen dazu finden Sie auch unter dem Link 
+Add/Remove Licensed End User: http://www.mathworks.com/support/solutions/en/data/1-6092ZT/ 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

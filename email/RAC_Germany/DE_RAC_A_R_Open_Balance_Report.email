@@ -1,0 +1,15 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+anbei erhalten Sie die gewünschte Aufstellung der offenen Posten zum XX.XX.XXXX für die xxxxxxxx(Firma angeben).
+
+Bei Antworten auf diese Nachricht bitten wir Sie, die unten aufgeführte Reference ID in der Email zu belassen, damit eine direkte Zuordnung zu diesem Vorgang erfolgen kann.
+
+Für Rückfragen stehen wir Ihnen gerne zur Verfügung.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

@@ -1,0 +1,36 @@
+Hello, 
+
+The Connections Program Web page from {!Partner_Agreement__c.Account_Name_Latin__c} for {!Partner_Agreement__c.Partner_Agreement_Name__c} is now in the final review stages. You were included in the original review of this partner application and your input is requested. If you are no longer the right contact for this review, please forward this e-mail to the appropriate contact. 
+Original application in English can be found below.
+
+Japanese speaking reviewers:
+=========================
+Please review the Webpage located here:
+<http://www-external-test.mathworks.com/products/connections/product_detail/service_{!Partner_Agreement__c.CMS_ID__c}.html> 
+<http://www-external-test.mathworks.com/products/connections/product_detail/product_{!Partner_Agreement__c.CMS_ID__c}.html> 
+
+All reviewers:
+===========
+Below is my best effort at completing categorization values for this partner. Can you please review each value and reply all if you agree with them or if you have any changes? You can find the definitions of the values at: 
+
+http://sharepoint/marketing/corpdev_partners/partners/connections/SitePages/Categorization_Reference.aspx 
+
+Category : {!Partner_Agreement__c.Category__c} 
+Relationship : {!Partner_Agreement__c.Relationship__c} 
+Rel-to-Vision : {!Partner_Agreement__c.Vision__c} 
+Application : {!Partner_Agreement__c.Application__c} 
+Industries : {!Partner_Agreement__c.Industry__c} 
+Sector : {!Partner_Agreement__c.Sector__c} 
+Prod/Svc Type : {!Partner_Agreement__c.Prod_Svc_Type__c} 
+Interface Type : {!Partner_Agreement__c.Interface_Type__c} 
+Stage : {!Partner_Agreement__c.Stage__c} 
+
+Focal Point (nominee): For A or B category partners, please nominate someone or volunteer yourself as the focal point for the relationship. You can find information on choosing focal points at: http://sharepoint/marketing/corpdev_partners/partners/team_cnx/Webpages/Partner_Programs_Site/Partner_Focal_Points.aspx 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+
+--------------<English application>-----------
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

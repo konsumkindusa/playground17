@@ -1,0 +1,20 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Je vous écris concernant votre dossier n°{!Case.CaseNumber} : {!Case.Subject}.
+
+L'accès à notre équipe de support technique est autorisé aux étudiants pour les problèmes d'installation et le signalement de bogues potentiels. De nombreuses ressources sont disponibles sur le site web de MathWorks, ce qui devrait vous aider à répondre à vos questions : 
+
+Student Version FAQ, Installation and Online Technical Support: http://www.mathworks.fr/academia/student_version/start.html 
+
+Online Technical Support: http://www.mathworks.fr/support/ 
+
+Resources by Department: http://www.mathworks.fr/products/education/academic.shtml 
+
+Usenet newsgroup: comp.soft-sys.matlab 
+MATLAB user community newsgroup: http://www.mathworks.fr/matlabcentral/
+
+Si, après avoir consulté les sources MathWorks listées dessus, vous ne parvenez toujours pas à résoudre le problème, nous vous recommandons de prendre contact avec votre professeur. 
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

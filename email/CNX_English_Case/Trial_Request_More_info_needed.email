@@ -1,0 +1,31 @@
+Dear {!Case.Contact}, 
+
+Thank you for your request for a trial (time-expiring) license of MathWorks products.  
+To enable me to review and process your request, please respond to this message with the following information:
+
+Trial Request Information:
+====================
+Trial Usage : <describe reason for the trial - please be specific> (event, customer demonstration, internal training, product testing/compatibility, evaluation of MathWorks products, technical support, other)
+Duration  : <15, 30 days>, if >30, state why.
+Date(s)  : <date range>
+Location : <city, country>
+
+Release : < R2016b, R2017a, etc.>
+Products : MATLAB, … <provide full list>
+# Users  : <count>
+
+Deliver Trial To:
+  Company : <company name>
+  User Name : <name>
+  User Email : <email>
+  User Phone: <email>
+  User Location : <city, country>
+
+Will the software be left at the customer site afterwards? (Yes/No) ===================
+
+Please note that trials are provided via download URLs. If you require hard media, please provide the reason why, and a shipping address.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

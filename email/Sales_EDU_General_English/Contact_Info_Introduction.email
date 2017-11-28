@@ -1,0 +1,7 @@
+Dear {!Contact.FirstName}
+
+My name is {!Contact.OwnerFullName} and I’m your Educational Sales Specialist working with your Account Manager at MathWorks, developers of MATLAB and Simulink. I’m writing to introduce myself and to provide my contact information.
+
+I look forward to working with you. Please don’t hesitate to contact me with any questions or requests.
+
+Best regards,

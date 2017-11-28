@@ -1,0 +1,22 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage.
+Leider können wir die von Ihnen gewünschte Änderung Ihrer Email Adresse auf XXX nicht umsetzen, da die Nutzung unserer Lizenzen an die Firmen/Hochschuldomäne geknüpft ist.
+Damit wird sowohl der Eigner einer Lizenz ausgewiesen und somit unserer Export Compliance Genüge geleistet, wie auch der Standard für die Assoziierung möglicher Endnutzer gesetzt. 
+
+Bitte lassen Sie uns wissen, sollten Sie Fragen haben.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email  unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+EXPORTBESTIMMUNG:
+Diese Software unterliegt US Exportbestimmungen. Es ist nicht gestattet, die Software entgegen gültiges US Recht zu exportieren, zurück zu exportieren oder ihre Nutzung durch nicht zugelassene Personen oder Länder zu erlauben. Diese Software kann auch Gegenstand nicht US unterworfener Export- und Importregulierungen sein. Es liegt in der Verantwortung des Lizenznehmers die aktuellsten Export- und Import-Regelungen einzuhalten.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

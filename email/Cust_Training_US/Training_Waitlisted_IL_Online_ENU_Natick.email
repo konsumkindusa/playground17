@@ -1,0 +1,27 @@
+Dear {!Contact.Name},
+
+This e-mail confirms that we have received your enrollment request however due to increased interest in this class you have been placed on the waiting list for:
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+TIME:{!Class__c.Start_Time__c} - {!Class__c.End_Time__c}
+
+
+A member of our team will contact you if additional seats become available.  It is our standard practice to notify customers of the availability on a first come first served basis.  You will be notified via e-mail if a spot becomes available for you OR if we decide to add this course/location at a later date.
+
+If your payment is in transit, we will contact you upon receipt to discuss available training opportunities.
+
+If there is another course/location you would like to register for, please feel free to view our schedule below and we would be happy to change your enrollment.
+
+http://www.mathworks.com/services/training/schedule.html
+
+Cancellation Policy
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+If you require further assistance, please contact us at
+{!Class__c.Sponsor_Office_Phone__c}, or email us at
+{!Class__c.Sponsor_Office_Email__c}.
+
+
+Thank you, 
+{!Class__c.Sponsor_Office_Signature__c} 

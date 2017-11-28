@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request a TS manager to give access to a secure artifacts folder for dev teams outside the US.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TS - request for Secure Artifacts access</name>
+    <style>none</style>
+    <subject>Secure Artifacts access for Case {!Case.CaseNumber}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

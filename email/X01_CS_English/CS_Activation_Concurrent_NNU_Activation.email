@@ -1,0 +1,17 @@
+Hello {!Case.Contact},   
+
+Thank you for contacting MathWorks. Network Named User and Concurrent license options require the use of FLEXnet network license servers to manage your MathWorks software licenses. These license servers have always required activation by manually submitting the server Host ID to MathWorks and retrieving your License File through your MathWorks Account.  Also, client machines of Concurrent and Network Named User Licenses do not require activation.  Ability to use the client installation requires connection to the license server.      
+
+Please refer to the following article for additional instructions:
+
+How do I install or update the MATLAB license manager?
+www.mathworks.com/matlabcentral/answers/105860
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

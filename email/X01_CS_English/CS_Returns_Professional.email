@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Per the request of XXXXX, the products on license #####, which are listed below, have been deactivated as part of the MathWorks return process:
+
+<LISTPRODUCTS>
+
+We have also submitted a credit to be issued to your credit card.  The credit invoice # XXXXX for $###### was issued on [INSERT DATE] to your card ending in XXXX.  It may take your bank from 3-5 business days to post this credit to your account.  You may view or print an invoice from your MathWorks Account.  Click on the link labeled “View Orders” located on the left side of your account page.  
+
+Licensee shall not attempt to access or use Programs, or copies of Programs, that Licensee is not currently licensed to use. Licensee is required to remove all archival copies of the programs mentioned above under license number (old license #) from their systems and refrain from using again without first entering into a valid Software License Agreement with MathWorks.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

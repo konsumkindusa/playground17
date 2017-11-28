@@ -1,0 +1,23 @@
+Dear {!Case.Contact},
+
+Thank you for your interest in working with The MathWorks to develop an add-on to MathWorks technology, [Service Request.Abstract].   At this time, this product does not align with our current product development needs so we will not pursue this joint development opportunity.  However, there are other options that we encourage you to explore, for which we can support you.
+
+The MathWorks Connections Program is available to third-party organizations that develop and distribute complementary, commercially-available products and services based on the MATLAB technical computing environment.  If you choose to commercialize your software either directly or through a partner, you may be eligible for membership.  For details about the program and to apply for membership, visit our Web site located at:
+http://www.mathworks.com/products/connections/join
+
+If you do not wish to commercialize your product but want to make it available for others to use, you should consider contributing your tools to The MathWorks MATLAB Central File Exchange site. This site contains numerous user-contributed routines that may be accessed worldwide by our users.  To visit the site, point your browser to: http://www.mathworks.com/matlabcentral/fileexchange/index.jsp
+
+To submit contributions to the site, follow the instructions provided in the link titled "Submit a New File."
+
+The primary focus for The MathWorks product family is to provide the best possible set of core products. As a result, we cannot take on many of the large number of valuable new product proposals and suggestions that we receive.
+
+We regret that we cannot accept your product proposal at this time and hope that you will consider the Connections Program and File Exchange options. At the same time, product requirements change rapidly given today's competitive environment; therefore we would like to reserve the option to contact you in the future about possible collaboration, should our product needs change.
+
+Again, thank you for your interest.  Please feel free to contact me if you require further information regarding any of the above opportunities.
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+
+
+
+{!Case.CaseNumber}

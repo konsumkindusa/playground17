@@ -1,0 +1,20 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Per the request of XXXXXX, I have added the Transitioned Toolbox XXXXXXX to License XXXXXXX. You will see this toolbox when you are using previous releases.
+
+Now that the transitioned toolbox has been added to License XXXXXX you will need to update the License File. If you are using a Network License, you will need to update the License File on the server, and then restart the License Manager software.  Below are instructions on how to get an updated License File, as well as how to update the License File on the License Server.
+
+How do I update my MATLAB License file for an Individual or Designated Computer License?
+http://www.mathworks.com/matlabcentral/answers/96751
+
+How do I update the License File on the License Server?
+http://www.mathworks.com/matlabcentral/answers/102901
+
+If you have any more questions, please contact us at service@mathworks.com. 
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

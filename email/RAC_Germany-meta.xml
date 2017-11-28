@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>RAC - Germany</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>RAC_Manager_Stefan_Wolff</role>
+        <roleAndSubordinatesInternal>RAC_Rep_Report_Manager_Stefan_Wolff</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

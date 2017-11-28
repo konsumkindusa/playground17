@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Sales German General Leads CommGov</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DE_Sales_Support</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>EMEA_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

@@ -1,0 +1,18 @@
+Dear {!Case.Contact},
+
+Your order for  <Insert end user company> has been sent to our order group for processing.  Within 24-48 hours, the License Administrator should receive an e-mail confirming that the order is complete and a separate e-mail confirming their association to the new license. 
+
+The License Administrator will be able to download and activate the software from the License Center by logging in to their “MathWorks Account”. 
+
+<<add i f partner is installing for end user>>
+
+If someone in your organization needs to install MathWorks products prior to sending it to the end user we will need the name and e-mail of the individual who will be installing the software so we can associate them to the licenses.  This person will be identified as a second "Primary Contact" on the licenses. The Primary contact will receive another e-mail notifying them that they have been associated to the new licenses.  This will enable them to download and activate the software prior to shipping your product.
+
+After your product has shipped to the end user the person in your organization that is identified as the second  "Primary Contact" should remove themselves from the license.
+
+If you have any questions, please send them to connections@mathworks.com.
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}

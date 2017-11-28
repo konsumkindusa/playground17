@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Flags contained in this setting are referenced in validation rules on the Contact object to allow for applying the rules selectively by profile, user or globally.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Prevent_Setting_Status_Duplicate__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent changing the Contact Status to Duplicate(Default: True)</inlineHelpText>
+        <label>Prevent Setting Status Duplicate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Setting_Status_Inactive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent changing the Contact Status to Inactive (Default: True)</inlineHelpText>
+        <label>Prevent Setting Status Inactive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_contact_without_Email__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>will check weather email is required or not for current user&apos;s profile</description>
+        <externalId>false</externalId>
+        <label>Prevent contact without Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_contact_without_MailingCity__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>will check weather current user&apos;s profile requires mailing city</description>
+        <externalId>false</externalId>
+        <label>Prevent contact without MailingCity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_contact_without_MailingCountry__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>will check weather current profile requires mailing country or not</description>
+        <externalId>false</externalId>
+        <label>Prevent contact without MailingCountry</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_contact_without_MailingPostalCod__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>will see weather MailingPostalCode is required for profile or not</description>
+        <externalId>false</externalId>
+        <label>Prevent contact without MailingPostalCod</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_contact_without_MailingStateCode__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>will check weather current profile required mailing code or not</description>
+        <externalId>false</externalId>
+        <label>Prevent contact without MailingStateCode</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Contact Validation Rule</label>
+    <visibility>Protected</visibility>
+</CustomObject>

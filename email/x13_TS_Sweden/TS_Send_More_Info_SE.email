@@ -1,0 +1,36 @@
+Hej {!Contact.FirstName}, 
+
+Detta är med anledning av ditt tekniska supportärende #{!Case.CaseNumber} som gäller '{!Case.Subject}'.
+
+För att vi bättre ska kunna hjälpa dig, vänligen skicka oss följande information:
+
+1) Det fullständiga resultatet från kommandot,
+
+för MATLAB version R2012b och senare:
+>> ver -Support
+
+för MATLAB version R2012a och tidigare:
+>> ver
+
+som du skriver på kommandoraden i MATLAB. Detta ger oss information om din licens, produkt och plattform.
+
+2) En detaljerad beskrivning av det problem du stöter på.
+
+3) De exakta felmeddelanden du får, om något.
+
+4) De exakta steg som behövs för att återskapa problemet.
+
+5) Alla relevanta filer, både kod och data.
+
+
+Vi ser fram emot att få ovanstående information från dig.
+
+Använd följande länk för att visa och uppdatera ditt ärende online:
+http://www.mathworks.com/support/servicerequests/index.html
+
+Vänligen bevara referens ID nedan i vidare korrespondens i denna fråga. Detta gör det möjligt för våra system att automatiskt associera ditt svar med rätt ärende, och jag kan hjälpa dig vidare i denna fråga.
+
+Vänliga hälsningar, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

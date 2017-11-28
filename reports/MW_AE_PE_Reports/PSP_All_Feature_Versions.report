@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MW_Project__c.Project_Name__c</field>
+    </columns>
+    <columns>
+        <field>Milestone__c.Milestone_description__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Milestone__c.Comments__c</field>
+    </columns>
+    <columns>
+        <field>Milestone__c.Success_criteria__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Within Project records that are used for PSP Features (start with &quot;PSP&quot; in name), list all Business Milestones. These Milestones represent PSP Versions.</description>
+    <filter>
+        <criteriaItems>
+            <column>MW_Project__c.Technical_Resource_Group__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Pilot Engineering</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MW_Project__c.Project_Name__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>PSP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Milestone__c.Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Business</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>PSP All Feature Versions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MW_Project__c$Milestone__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>MW_Project__c.First_Assigned_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

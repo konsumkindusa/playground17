@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>To be coded</fullName>
+        <default>true</default>
+        <label>To be coded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Aerospace and Defense</fullName>
+        <default>false</default>
+        <label>Aerospace and Defense</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Biotech and Pharmaceutical</fullName>
+        <default>false</default>
+        <label>Biotech and Pharmaceutical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chemical and Petroleum</fullName>
+        <default>false</default>
+        <label>Chemical and Petroleum</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication Devices</fullName>
+        <default>false</default>
+        <label>Communication Devices</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Computer Electronics</fullName>
+        <default>false</default>
+        <label>Computer Electronics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <label>Consumer Electronics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consumer Goods</fullName>
+        <default>false</default>
+        <label>Consumer Goods</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Earth and Ocean Sciences</fullName>
+        <default>false</default>
+        <label>Earth and Ocean Sciences</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Food and Beverage</fullName>
+        <default>false</default>
+        <label>Food and Beverage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrial Automation and Mach</fullName>
+        <default>false</default>
+        <label>Industrial Automation and Mach</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instrumentation</fullName>
+        <default>false</default>
+        <label>Instrumentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Devices</fullName>
+        <default>false</default>
+        <label>Medical Devices</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Metals, Materials and Mining</fullName>
+        <default>false</default>
+        <label>Metals, Materials and Mining</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other/Miscellaneous</fullName>
+        <default>false</default>
+        <label>Other/Miscellaneous</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pulp and Paper</fullName>
+        <default>false</default>
+        <label>Pulp and Paper</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rail Ships and other Transport</fullName>
+        <default>false</default>
+        <label>Rail Ships and other Transport</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Semiconductor</fullName>
+        <default>false</default>
+        <label>Semiconductor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Software and Internet</fullName>
+        <default>false</default>
+        <label>Software and Internet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Svcs and Consulting</fullName>
+        <default>false</default>
+        <label>Technical Svcs and Consulting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utilities and Energy</fullName>
+        <default>false</default>
+        <label>Utilities and Energy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication Infrastructure</fullName>
+        <default>false</default>
+        <label>Communication Infrastructure</label>
+    </standardValue>
+</StandardValueSet>

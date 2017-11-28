@@ -1,0 +1,6 @@
+Dear {!FAQ__kav.CreatedBy},
+
+After review of your article, {!FAQ__kav.Title} it has been published.  If you have any questions, please email me directly.
+
+Here is some additional feedback:
+{!NullValue(FAQ__kav.KCS_Comments__c, "No feedback at this time")}

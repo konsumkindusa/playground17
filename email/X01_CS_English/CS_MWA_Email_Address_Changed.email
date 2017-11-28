@@ -1,0 +1,12 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  This email is to confirm that we have processed the changes you have requested in your MathWorks Account.   Your email address has been changed from XXXXXXX to XXXXXXXXX.  Please use your XXXXXXX email when accessing your MathWorks Account.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

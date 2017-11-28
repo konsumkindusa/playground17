@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>更新最终用户声明  EUS Update</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>更新最终用户声明  EUS Update</name>
+    <style>none</style>
+    <subject>Matlab-EUS Update</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

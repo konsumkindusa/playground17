@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Administrator Change for Sandia Licenses</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>DB - Sandia - Administrator Change</name>
+    <style>none</style>
+    <subject>MathWorks License</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

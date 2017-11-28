@@ -1,0 +1,31 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. MATLAB and Simulink Student software can be purchased online from MathWorks webstore (www.mathworks.com/store) or at campus bookstores.   
+
+A MathWorks Account is required to purchase the Student software.  Below I have included instructions for creating a MathWorks Account and instructions for purchasing the Student license online.  
+
+To create a MathWorks Account:
+
+1.    Go to mathworks.com and click “Create Account” (located under the search area on the top right of the page).  Please supply all correct, required information and click “Submit.” 
+2.    The next screen will request that you supply information regarding areas of interest and student information.  This is optional, but to better serve you we do recommend you complete the fields and click “Submit.”  Then click “Continue.”
+3.    You are now logged into your account.  
+
+To purchase a Student license online:
+
+1.    On your Accounts Main Page, click on "Buy R2017b" in the middle right-hand side located under "Actions."
+2.    Select the products for your order.  Place a check in the top box for MATLAB & Simulink Student Suite (bundled with additional add-on toolboxes) or MATLAB Student (no additional toolboxes). Do the same for any additional toolboxes desired then click “Continue” (Please note that additional toolboxes are sold for only $10 at the initial purchase of the license).    
+3.    The “Product Cart” screen allows you to review your order, and then click “Checkout.”
+4.    The next screen may request verifiable student information, fill out all fields and agree to “Accept Terms.”  
+5.    At "Confirm Address of Use" enter the complete address where the software will be used and click “Continue.”
+6.    At Billing, specify the credit card information, and billing address associated to the credit card.  Please make sure to supply the current billing address for where your credit card bill is being sent.  If the addresses do not match this could cause your order to fail authorization.   Then press “Continue.”
+
+Upon completion of checkout you obtain an Order Number.  Be sure to store this Order Number for your records.  After your order has been processed you will receive a confirmation email including a License Number and download instructions.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

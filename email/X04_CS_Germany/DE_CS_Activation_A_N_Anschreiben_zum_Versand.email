@@ -1,0 +1,21 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+A) 
+vielen Dank für Ihre Anfrage bzgl. des Transfers der MATLAB Lizenz/en# XXX auf ein/e andere/s Unternehmen/Hochschule/ von XXX zu XXX.
+
+B)
+vielen Dank für die Mitteilung bzgl. der Umbenennung Ihres/r Unternehmens/Hochschule.  
+
+Um diese/n auszuführen, bitten wir Sie beigefügtes Assignment & Assumption Formular von einem zeichnungsberechtigten Vorgesetzten der jeweiligen Firmen/Hochschulen unterschreiben zu lassen und als PDF als Antwort auf diese Email unter Beibehalt der unten verzeichneten Reference ID an uns zurückzusenden. Nach Gegenzeichnung durch uns werden wir die gewünschte Änderung dann schnellstmöglich vornehmen.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte ebenfalls auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

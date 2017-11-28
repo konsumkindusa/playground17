@@ -1,0 +1,28 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  In order to transfer license XXXX from XXXX to XXXX, an Assignment and Assumption Agreement is required to be signed by an officer from both companies.  To begin this process, please provide the following information.
+
+- The reason for the License transfer
+- All license numbers that will need to be transferred to the new company
+- The new company name and address
+- The new end user information for each license (Please include name, phone number and business email address)
+
+If XXXXX is no longer in business due to bankruptcy, please provide a letter from the Trustee of XXXXX stating that they have given you permission to transfer the license(s) to XXXXX. 
+
+If this is a merger or acquisition of XXXXX please provide an email copy, or a website link, of a press release of the change.  
+
+Please note the following Academic Guidelines: 
+MathWorks licenses that are categorized as Academic Use are not licensed to individuals but rather to the universities with individual faculty members as primary users of the tools.  In order for us to be able to transfer the license we must have the Assignment and Assumption Agreement signed by a current officer at both Universities.   
+
+Degree granting institutions (and/or its affiliates) need to own the software. Academic pricing is reserved for non-commercial use by degree-granting Institutions in support of on-campus classroom instruction and academic research.  
+
+Please email all requested information while referencing Case Number {!Case.CaseNumber}.  Once we receive all the required information and documentation, a customer service representative will send you an Assignment and Assumption for both parties to sign and email back.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>used in Email Alert when a Task is assigned to an inactive Users manager</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Task re-assigned to new Owner</name>
+    <style>none</style>
+    <subject>Task Assigned to you - Task Owner is inactive</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

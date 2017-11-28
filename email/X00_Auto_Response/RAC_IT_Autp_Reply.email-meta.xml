@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RAC ITauto reply</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC IT Autp Reply</name>
+    <style>freeForm</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>VI PREGHIAMO DI NON RISPONDERE A QUESTO MESSAGGIO. Questo è un messaggio automatico di risposta.
+
+
+
+{!Case.CaseNumber}
+
+
+
+Vi ringraziamo per aver contattato l’Ufficio Ordini presso The MathWorks. Vi confermiamo di avere ricevuto la vostra richiesta.
+
+
+
+Nel caso in cui abbiate inviato un Ordine d’Acquisto, non appena tale ordine sarà evaso riceverete un email di conferma.
+
+
+
+In caso di necessità il nostro Servizio Clienti è a vostra disposizione. Per qualsiasi informazione vi invitiamo a contattarci all’indirizzo: “Contattaci” e a fornire il CASE ID indicato nel presente messaggio. Vi preghiamo quindi di prenderne nota.
+
+
+
+Cordiali Saluti,
+
+
+
+The MathWorks,
+
+Ufficio Ordini</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

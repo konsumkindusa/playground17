@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to Sean K. to verify non-profit status info found on Google</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support - Sean K. Verification of Non-Profit Info</name>
+    <style>none</style>
+    <subject>Request for verification of non-profit status for {!Academic_Support_Project__c.Account__c} - (A#: {!Academic_Support_Project__c.Name})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

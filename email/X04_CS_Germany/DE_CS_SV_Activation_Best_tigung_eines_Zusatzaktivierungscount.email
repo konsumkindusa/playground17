@@ -1,0 +1,19 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+Ihrem Antrag nach Gewährung eines weiteren Aktivierungs-Counts Ihrer Studenten Version wurde stattgegeben.
+
+Bitte beachten Sie, dass die Anzahl der Aktivierungen der Studentenversion inklusive möglicher Redesignations auf maximal 4 pro 12 Monate begrenzt  und dies ein Kulanzcount bis zur automatischen Rücksetzung Ihrer bisher verbrauchten Aktivierungen auf 'wieder verfügbar‘ ist. Lassen Sie uns daher vor der geplanten Nutzung wissen, sollten Sie noch Fragen haben oder Assistenz benötigen.
+
+Andernfalls nehmen Sie bitte die nötige neue Aktivierung wie gewohnt über Ihren MathWorks Account vor.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email  unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

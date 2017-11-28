@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>List of the partial or complete email addresses that should bypass any blacklist or blocking functionality when inbound email is received and make sure that messages from certain people and systems are always processed and routed appropriately.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Email_Address__c</fullName>
+        <description>Contains the complete or partial Email Address to check the white List Members.</description>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Type__c</fullName>
+        <description>Contains the matching type of the Email Address. Exact for accurate Email Address Listed, UserName for the username of the Sender, Domain for the Email Service provider(Ex - gamil.com)</description>
+        <externalId>false</externalId>
+        <label>Match Type</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>UEH_Sender_Whitelist</label>
+    <visibility>Public</visibility>
+</CustomObject>

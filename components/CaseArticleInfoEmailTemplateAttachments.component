@@ -1,0 +1,9 @@
+<apex:component controller="CaseArticleInfoEmailTemplateController" access="global">
+<apex:attribute name="myId" type="String" description="ID of Case record" assignTo="{!cseId}" />
+    <apex:outputText escape="false">
+Case No.{!cse.CaseNumber}<br/>Article Images:
+</apex:outputtext>
+<apex:repeat value="{!ArticleWrList}" var="awr" >
+</apex:repeat>
+    <apex:outputText value="{!articleBody}" escape="false"/>
+</apex:component>

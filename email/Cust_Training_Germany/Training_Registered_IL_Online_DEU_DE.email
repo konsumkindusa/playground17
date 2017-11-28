@@ -1,0 +1,24 @@
+Willkommen zur MathWorks Onlineschulung!
+
+Sie sind für die Onlinekurs {!Enrollment__c.Class__c} angemeldet. 
+
+Datum: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+Uhrzeit: {!Class__c.Start_Time__c} - {!Class__c.End_Time__c} 
+
+Stellen Sie bitte sicher, dass sie folgende Systemvoraussetzungen erfüllen: http://www.mathworks.com/services/training/policies/requirements.html 
+
+************************************************************ 
+So funktioniert die Schulungsvorbereitung: 
+************************************************************ 
+** Die Kursunterlagen werden Ihnen digital zur Verfügung gestellt. 
+
+** Ca. 5-7 Tage vor Schulungsbeginn erhalten Sie zwei E-Mails. 
+
+Die erste enthält die Login-Daten für das Schulungsprogram sowie einen persönlichen ReadyTech Zugangscode. ReadyTech ist unser virtueller Schulungsraum, der alle benötigten Anwendungen bereits vorinstalliert zur Verfügung stellt. Die zweite E-Mail kommt von OnSecure und erlaubt es Ihnen ein Benutzerkonto zu erstellen, um auf die Kursunterlagen zuzugreifen.  
+
+Unsere Stornierungs- und Rückgaberichtlinien finden Sie unter: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor 
+
+Weitere Information bezüglich zusätzlicher Schulungsangebote finden Sie unter http://www.mathworks.com/services/training.html
+
+Mit freundlichen Grüßen 
+{!Class__c.Sponsor_Office_Signature__c}

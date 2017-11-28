@@ -1,0 +1,13 @@
+I have attached your new license.dat file. Please follow the steps below to install this new file.
+
+1.  Copy the SERVER and DAEMON lines from your old license.dat file to your new license.dat file.  Please make sure you are       using a plain text editor:
+
+  Windows: Notepad
+  Mac: textedit
+  UNIX/Linux: vi, emacs, nano
+
+2.  Replace your current license.dat file with the new one.  The old license file can be found 
+    in the $MATLAB/etc directory (where $MATLAB is your root MATLAB directory).
+
+3.  Stop and Restart the license manager.  This can be done by using the lmdown and lmstart 
+    commands from within the $MATLAB/etc directory

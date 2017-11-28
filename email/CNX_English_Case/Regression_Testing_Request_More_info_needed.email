@@ -1,0 +1,29 @@
+Dear {!Case.Contact},
+
+Thank you for your request for regression testing licenses.  Could you answer a couple of questions to help me understand how these need to be set up and to gain the necessary internal approvals?
+
+Questions:
+------------
+1.   Does your company have a dedicated testing suite set up?  Are those machines tied to people?
+
+2.   In your testing environment, do you perform nightly or on-going testing or is the testing you perform ad-hoc per release?
+
+3.  Which of the following describes your testing activities?
+
+a.   testing customer configurations prior to shipping systems to your customers
+
+b.   performing regression testing in your automated testing environment
+
+c.   if neither a or b above, please describe your testing activities
+
+4.  How many testing machines do you have and how many do you need to outfit with MathWorks products?
+
+In addition, could you indicate who should be the primary contact for this license set up?  We’ll need their complete contact details including name, company name, shipping address, phone, and e-mail. 
+
+If you have any questions, please let me know.  Once I receive your response I will be able to send your request out for internal approval.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

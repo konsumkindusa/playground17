@@ -1,0 +1,78 @@
+{!Partner_Agreement__c.Primary_Contact__c} 様
+
+いつもお世話になっております。
+
+お申込みを頂きました、貴社の {!Partner_Agreement__c.Partner_Agreement_Name__c}. （和名に修正）の
+MathWorks Connections Program への登録について、MathWorksレビューチームより承認がされました。
+
+なお、メンバーシップ登録を完了するには、下記にご案内する項目をご連絡頂く必要がございます。
+30日以内にご連絡頂けない場合は、MathWorks Connections Programへの登録申請は無効となりますので、
+ご了承下さい。30日以上の期間が必要な場合は、ご連絡を頂きます様、お願い申し上げます。
+
+ご連絡頂く項目は下記内容です。詳細につきましては続いて記載がございます。
+　・　Connections Program Terms & Conditions への署名と原本の送付
+　・　デベロップメントライセンスの購入、保守更新
+　・　照会先の方のお名前
+　・　照会先の方からのご連絡
+
+===========
+TERMS AND CONDITIONS:
+
+MathWorks Connections Programの Terms & Conditions同意いただき、ご署名頂く必要があります。
+下記より入手いただけます。https://jp.mathworks.com/content/dam/mathworks/mathworks-dot-com/products/connections/join/CNXTerms_Conditions.pdf
+ご署名いただいた原本を下記までご郵送願います。
+
+107-0052
+東京都港区赤坂4-15-1　赤坂ガーデンシティ7階
+MathWorks Japan 
+マーケティングプログラム部
+長田 瑶子
+TEL: 03-6367-6700 
+
+===========
+デベロップメントライセンス:
+
+[CHOOSE ONE BELOW AND DELETE THIS MESSAGE]
+
+御社のMathWorks製品のライセンスはソフトウェア保守の更新がされていないようです。
+保守更新の見積書をご依頼頂く際には、担当営業の[NAME]へ、お電話03-6367-6700または、
+Email [Email] にてご連絡下さい。
+
+お申込み頂いた内容によりますと、MathWorks 製品のライセンスを所有されていないようです。
+Connections Programに登録された貴社製品をサポートするにあたり、25%の 
+Connections Program デベロッパーディスカウントを2ライセンスまで適用することが可能です。
+添付は本ディスカウントの必要条件について説明したガイドラインです。お見積りの依頼は、
+本メールへの返信にて、製品名、ライセンスオプション(インディビジュアル、グループ、コンカレント、等)、
+プラットフォームをご連絡下さい。
+
+既にライセンスを所有されている場合は、connections@mathworks.co.jp  へライセンス番号をお知らせ下さい。
+
+[ATTACH DEVELOPER DISCOUNT GUIDELINES PDF, DOMESTIC OR INTERNATIONAL]
+
+===========
+照会先の方のお名前: 
+
+貴社の[PRODUCT/SERVICE],について、技術的経験、MathWorks製品との関連性について
+意見を伺うために幾つかの質問をさせて頂く方を、2名ご紹介頂く必要がございます。
+[CHOOSE ONE BELOW AND DELETE THIS MESSAGE]
+
+プロダクトパートナーの場合は、貴社製品とMathWorks製品を共に使用した事のある方である必要があります。
+ベータテストをされている方も可能です。質問項目はとても短く、3-5分程度で回答頂ける内容です。
+
+2名のお名前とEmailをconnections@mathworks.co.jp  へお知らせ下さい。
+照会先の方をご紹介頂けない場合は、ご連絡下さい。また、照会先となる方へは、弊社から連絡を差し上げることを
+念の為お伝え頂きます様お願い申し上げます。
+
+===========
+照会先の方からのご連絡: 
+
+ご紹介を頂きました参照先の方へ、ご連絡をしております。
+照会先の方よりご回答を頂き次第、進捗のご報告をさせて頂きます。
+
+ご質問等ございましたら、ご連絡下さい。
+以上、よろしくお願い申し上げます。
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

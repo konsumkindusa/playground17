@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Home Use License Request/Info</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - General - Home Use License Request/Info</name>
+    <style>none</style>
+    <subject>Home Use License Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

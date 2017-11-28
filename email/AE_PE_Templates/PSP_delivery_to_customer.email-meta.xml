@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template for creating / sending an internal email to record that a PSP version was sent to customer</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PSP delivery to customer</name>
+    <style>none</style>
+    <subject>Release {!MW_Project__c.Project_Name__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

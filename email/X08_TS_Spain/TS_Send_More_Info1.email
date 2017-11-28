@@ -1,0 +1,26 @@
+Estimado Sr./Sra. {!Contact.LastName}:
+
+Hemos recibido su cuestión sobre "{!Case.Subject}" y estamos trabajando en ella.
+
+Para poder prestar mejor servicio, ruego me envíe la siguiente información:
+
+1) El contenido completo de la información mostrada después mostrada después de introducir el comando,
+para las versiones de MATLAB R2012b y superiores:
+>> ver -support
+para las versiones de MATLAB R2012a e inferiores:
+>> ver
+en la línea de comandos de MATLAB. Esto nos proporciona información acerca de tu licencia, la versión de MATLAB y el sistema operativo.
+
+2) Una descripción detallada del problema.
+
+3) Los archivos de MATLAB y los datos necesarios para su ejecución.
+
+4) Los pasos exactos para ejecutar su programa.
+
+5) El mensaje de error que recibe, si recibe alguno.
+
+Por favor conserve el número de referencia (Reference ID) indicado al final de este email en cualquier correspondencia relacionada con esta cuestión. Esto permitirá a nuestros sistemas asignar automáticamente su respuesta con la petición de servicio adecuada.
+
+Atentamente, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

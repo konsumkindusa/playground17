@@ -1,0 +1,29 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanインストールサポートの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせ頂き、 誠にありがとうございます。
+
+任意のライセンスファイルを指定して起動するためには、
+MATLAB ショートカットにて下記の手順で設定してください。
+1.　MATLAB ショートカットを右クリックし、プロパティを選択してください。
+2.　リンク先フィールドで、実行コマンドの一番最後につぎの記述を追加してください。
+-c "<path to your license file>"
+（ここで、<path to your license file> は、指定したいライセンスファイルまでのフルパスとなります。）
+例えば、つぎの様に設定します。
+
+"C:\Program Files\MATLAB\R2008a\bin\win32\matlab.exe" -c
+"C:\Program Files\MATLAB\R2008a\license\license.dat"
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のThread IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+よろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Case ID: {!Case.CaseNumber}

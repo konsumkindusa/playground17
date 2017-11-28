@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Termination - Lack of Requirements</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Active - Termination - Membership requirements</name>
+    <style>none</style>
+    <subject>MathWorks Connections Program Membership Termination: {!Partner_Agreement__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

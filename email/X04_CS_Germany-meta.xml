@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>CS Germany</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Email_Template_Management_Eric_daSilva</group>
+        <role>CS_Natick_Manager</role>
+        <role>RAC_Manager_Bertrand_Dissler</role>
+        <role>RAC_Rep_Report_Elena_Corso</role>
+        <roleAndSubordinatesInternal>CS_DE_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Manager_Elena_Corso</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Rep_Report_Installation_and_Licensing_Support</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Sykes_Rep</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>RAC_Manager_Bertrand_Dissler</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

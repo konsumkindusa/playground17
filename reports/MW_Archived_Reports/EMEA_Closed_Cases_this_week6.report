@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89045653</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>TS Rep Report Andreas Goser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TS Rep Report Sebastian Schaefer</sourceValue>
+            </sourceValues>
+            <value>BNL/CH/DE</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>TS Rep Report Abel D’Sa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TS Rep Report Bastiaan Zuurendonk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TS Rep Report Adrienne James</sourceValue>
+            </sourceValues>
+            <value>ES/FR/IT/SE/UK</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tech Support Manager Andreas Goser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TS Support Manager Sebastian Schaefer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tech Support Manager Bastiaan Zuurendonk</sourceValue>
+            </sourceValues>
+            <value>Managers</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>Case.Sub_Area__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 or 4) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>TS Rep Report Andreas Goser,TS Rep Report Sebastian Schaefer,TS Rep Report Abel D’Sa,TS Rep Report Bastiaan Zuurendonk,TS Rep Report Adrienne James</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Effie Ruan,Jing Liu,Grace Ji,Yoontae Kim</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Andreas Goser,Sebastian Schaefer,Abel D’Sa,Bastiaan Zuurendonk,Adrienne James</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89045653</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EMEA Closed Cases this week</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2015-10-14</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-10-12</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,19 @@
+Dear {!Case.Contact},
+
+Attached is the MathWorks Software Trials for Your Prospects datasheet that explains how to provide your prospective customers with a trial (time-expiring license) of MATLAB®.
+
+To enable us to set up this option for you, please respond to this message with the following:
+- Your company name
+- Your Connections Program product name
+
+We will then add your company name to the the Partner Trial Request Form. Once you are signed up for this service (we'll send you an e-mail), complete the trial request form each time you need to request a MathWorks trial for a prospect. Please note that this trial service is provided to support software evaluations by your qualified prospects only. 
+
+MathWorks Sales Representatives will follow up with your customer directly.
+
+http://www.mathworks.com/products/connections/cnxtrialreq.html
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

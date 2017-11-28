@@ -1,0 +1,33 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. In order to process your request we require some additional information from you.  Please provide us with the following information.
+
+You can also submit a Contact Sales Request via https://www.mathworks.com/company/aboutus/contact_us/contact_sales.html?s_iid=hp_sales_event_wgt
+
+
+MATLAB License Number:   
+
+(You can find the license number by typing 'VER' at the MATLAB prompt)
+
+Your Name: 
+Title: 
+Account or University Name: 
+Account or University Address: 
+Department: 
+Telephone Number: 
+Fax Number: 
+Email Address:  
+Country: 
+Products of Interest: 
+Reason for Contact: 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new Service requests here: www.mathworks.com/support/servicerequests/create.html
+
+To contact Sales directly, submit a request here: www.mathworks.com/company/aboutus/contact_us/contact_sales.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <name>PrereleaseDescription</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Please review the associated GetFeedback record to determine next action with the customer</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>PrereleaseOwnerunassignedqueue</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00Gi0000000bO3S</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>PrereleaseSubject</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Prerelease survey feedback follow up</stringValue>
+        </value>
+    </constants>
+    <interviewLabel>GFB CASE {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>GFB CASE</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>create_case</name>
+        <label>Create Case</label>
+        <locationX>380</locationX>
+        <locationY>109</locationY>
+        <assignRecordIdToReference>Caseid</assignRecordIdToReference>
+        <connector>
+            <targetReference>GFB_Case_ID</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Area__c</field>
+            <value>
+                <stringValue>Natick - Technical Support</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>GetFeedbackContactID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>PrereleaseDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IsVisibleInSelfService</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>License_Type__c</field>
+            <value>
+                <stringValue>PreRelease</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <stringValue>Prerelease Survey</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>PrereleaseOwnerunassignedqueue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>PrereleaseSubject</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordCreates>
+    <recordUpdates>
+        <name>GFB_Case_ID</name>
+        <label>Update GetFeedback with Case</label>
+        <locationX>390</locationX>
+        <locationY>270</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetFeedbackID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>case__c</field>
+            <value>
+                <elementReference>Caseid</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Get_Feedback__c</object>
+    </recordUpdates>
+    <startElementReference>create_case</startElementReference>
+    <variables>
+        <description>Caprture the new Case ID</description>
+        <name>Caseid</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Capture the GetFeedback Contact ID for the new Case</description>
+        <name>GetFeedbackContactID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Capture the GetFeedback ID</description>
+        <name>GetFeedbackID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

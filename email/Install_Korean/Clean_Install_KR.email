@@ -1,0 +1,10 @@
+클린 설치 절차는 아래와 같습니다.
+
+1. Matlab 프로그램 삭제 후 Matlab 설치 폴더 삭제
+2. 탐색기에서 %appdata% 입력하신 후 AppData\Roaming\MathWorks\MATLAB\R201XX 폴더와 R201XX_license 폴더(존재시) 삭제
+3. My Documents의 Matlab 폴더 삭제 (필요 소스는 미리 백업)
+4. 네트워크 가능한 안전모드로 부팅
+5. Matlab 인스톨러 아이콘에 오른쪽 마우스 클릭 후 "관리자로 실행" 클릭
+
+참고 링크:
+http://www.mathworks.com/matlabcentral/answers/131519

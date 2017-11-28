@@ -1,0 +1,15 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+im Zusammenhang mit den stattfindenden Reviews der Aktivierungsdaten unserer Lizenzen, wurde bei Lizenz# XXX die Verwendung eines generischen Nutzeraccounts unter der Email Adresse: XXX festgestellt. Da die Nutzung und Verwaltung unserer Lizenzen zur Einhaltung des Software License Agreements und unserer Exportcompliance unter anonymisierten Daten nicht unterstützt ist und solche Daten auch auf eine nicht gestattete Mehrfachnutzung einer Aktivierung oder eines MathWorks Accounts hindeuten könnten, wurden diese Daten von der Lizenz entfernt und diesbezügliche Aktivierungen gelöscht. Bitte nehmen Sie noch die nötigen Deinstallationen vor und verlinken Sie den benötigten User neu mit dessen personalisierten Angaben. 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Flags contained in this setting are referenced in validation rules on the Account object to allow for applying the rules selectively by profile, user or globally.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>MOOC__c</fullName>
+        <externalId>false</externalId>
+        <label>MOOC</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prevent_Change_Account_Sector__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Account sector should not be editable by “standard” users.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account sector should not be editable by “standard” users</inlineHelpText>
+        <label>Prevent Change Account Sector</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Local_State_State_Province__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent creating  an Account without a Local State/Province (Default: True)</inlineHelpText>
+        <label>Prevent Local State &amp; State Province</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Setting_Status_Duplicate__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent changing the Account Status to Duplicate(Default: True)</inlineHelpText>
+        <label>Prevent Setting Status Duplicate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Setting_Status_Inactive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent changing the Account Status to Inactive (Default: True)</inlineHelpText>
+        <label>Prevent Setting Status Inactive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_account_without_city__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent creating  an Account without a Local City (Default: True)</inlineHelpText>
+        <label>Prevent account without city</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_billing_account_without_country__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent creating  an Account without a Local Country (BillingCountry) (Default: True)</inlineHelpText>
+        <label>Prevent account without country</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_changing_MOOC_Account__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Prevent changing MOOC Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Account Validation Rule</label>
+    <visibility>Public</visibility>
+</CustomObject>

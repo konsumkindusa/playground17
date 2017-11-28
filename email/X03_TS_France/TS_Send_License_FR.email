@@ -1,0 +1,21 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Je vous écris concernant votre dossier n°{!Case.CaseNumber} : {!Case.Subject} que nous sommes en train d'étudier. 
+
+Je vous remercie de bien vouloir nous envoyer un e-mail avec le résultat de la commande VER en executant, selon votre version de MATLAB, la commande suivante dans le prompt MATLAB:
+
+Pour les versions post-R2012a:
+>> ver -support
+
+Pour les versions pre-R2012b:
+>> ver
+
+Le résultat de cette commande nous indiquera également la version de MATLAB utilisée ainsi que votre système d'exploitation.
+
+Votre numéro de licence doit être sous maintenance car l'accès à notre équipe de support technique fait partie des bénéfices obtenus dans le cadre de notre Service de Maintenance Software (SMS). 
+
+Merci de bien vouloir conserver le Reference ID en bas de cet e-mail dans toute correspondance future concernant ce dossier.
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

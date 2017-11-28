@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Training Self-Enrollment</description>
+    <emailSenderAddress>support@mathworks.com</emailSenderAddress>
+    <emailSenderName>support@mathworks.com</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>Sample_Email_Templates/CustomerPortalChangePwdEmail</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <newPassTemplate>Sample_Email_Templates/CustomerPortalChangePwdEmail</newPassTemplate>
+    <newUserTemplate>Sample_Email_Templates/CustomerPortalNewUserEmail</newUserTemplate>
+    <selfRegUserTemplate>Sample_Email_Templates/CustomerPortalSelfRegUserEmail</selfRegUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>CustomerSuccess</type>
+</Portal>

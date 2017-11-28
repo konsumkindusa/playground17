@@ -1,0 +1,396 @@
+<!--
+ * @author      Pranav Raulkar
+ * @date        05/04/2016
+ * @description Authenticated Enrollee Details page
+ * @revision    1.0 - Initial version
+-->
+<apex:page controller="RegisterTrainingController" showHeader="false" sidebar="false" language="{!language}" action="{!checkProfileType}">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <title><apex:outputText value="{!$Label.CP_ENROLL_Title_Enrollee_Details}" escape="false" /></title>
+
+        <!-- Load Fonts -->
+        <script src="https://fonts.mathworks.com/xvy5baa.js"></script>
+        <script>
+            try { 
+                Typekit.load();
+            } catch(e) {
+                console.log('Error Loading Font: ' + e.message);
+            }
+            function callsatelliteTrack(){                
+                _satellite.track("moats_success");
+            }
+        </script>
+    </head>
+
+    <style type="text/css">
+        .slds .auth-submit-button {
+            background-color: #187dbb;
+            border: 1px solid #187dbb;
+        }
+
+        .slds .auth-submit-button:hover,
+        .slds .auth-submit-button:active,
+        .slds .auth-submit-button:focus {
+            background-color: #3792cc;
+            border: 1px solid #3792cc;
+        }
+
+        .slds .slds-table--bordered th,
+        .slds .slds-table--bordered td {
+            border: 1px solid #ECECEC;
+        }
+
+        .slds .slds-table .tcol-1 {
+            width: 20%;
+        }
+        .slds .slds-table .tcol-2 {
+            width: 60%;
+        }
+        .slds .slds-table .tcol-3 {
+            width: 20%;
+        }
+        .slds .slds-table .even {
+            background-color: #fafafa;
+        }
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+    <apex:composition template="TAHSiteComposition">
+        <apex:define name="body">
+            <apex:outputPanel id="container" layout="block" styleClass="slds">
+            <div class="slds-grid slds-wrap slds-grid--pull-padded">
+                <!-- <div class="slds-col--padded {!IF(eCode.Code__c == null, 'slds-size--1-of-1 slds-medium-size--2-of-2 slds-large-size--3-of-3', 'slds-medium-size--2-of-2 slds-large-size--2-of-3')}"> -->
+                <div class="slds-col--padded {!IF(eCode.Code__c == null, 'slds-size--1-of-1 slds-medium-size--2-of-2', 'slds-size--1-of-1 slds-medium-size--2-of-2 slds-large-size--2-of-3')}">
+                    <apex:outputPanel layout="block" styleClass="slds-text-heading--medium slds-m-bottom--medium">
+                        <apex:outputText STYleClass="emphasize" value="{!$Label.CP_ENROLL_SignupMatlabAcademyHeader}" escape="false">
+                            <apex:param value="{!IF(eCode != null, eCode.Enterprise_Training_Agreement__r.Account_Name__r.Name, $Label.CP_ENROLL_StaffAndStudents)}" />
+                        </apex:outputText>
+                    </apex:outputPanel>
+                    <apex:outputPanel layout="block" styleClass="slds-text-body--regular">
+                        <apex:outputText value="{!$Label.CP_ENROLL_SignupMatlabAcademyContent}" escape="false" rendered="{!OR(ISBLANK(eCode), ISBLANK(eCode.Enterprise_Training_Agreement__r.Self_Enrollment_Content__c))}" >
+                            <apex:param value="{!$Label.CP_ENROLL_YourOrganization}" />
+                        </apex:outputText>
+
+                        <apex:outputText value="{!eCode.Enterprise_Training_Agreement__r.Self_Enrollment_Content__c}" escape="false" rendered="{!AND(NOT(ISBLANK(eCode)), NOT(ISBLANK(eCode.Enterprise_Training_Agreement__r.Self_Enrollment_Content__c)))}" />
+                    </apex:outputPanel>
+                    
+                    <apex:outputPanel layout="block" styleClass="theme-error slds-m-top--medium slds-m-bottom--medium" rendered="{!isEnrolleBlacklisted}" >
+                        <!-- Blacklisted Enrollee -->
+                        <apex:outputText value="{!$Label.CP_ENROLL_BlacklistedEnrollee}" />
+                    </apex:outputPanel>
+
+                    <apex:outputPanel layout="block" styleClass="theme-error slds-m-top--medium slds-m-bottom--medium" rendered="{!NOT(isEnrolleeFromAllowedDomain)}" >
+                        <!-- Not From Allowed Domain -->
+                        <apex:outputText value="{!$Label.CP_ENROLL_EmailNotInAllowedDomain}" >
+                            <apex:param value="{!eCode.Enterprise_Training_Agreement__r.Account_Name__r.Name}" />
+                            <apex:param value="{!eCode.Enterprise_Training_Agreement__r.Account_Name__r.Name}" />
+                        </apex:outputText>
+                        <div class="slds-m-top--small">
+                            <apex:form >
+                            <apex:outputLink styleClass="slds-button slds-button--icon-inverse slds-button--destructive logoutLink" value="{!logoutURL}" >
+                                <svg aria-hidden="true" class="slds-button__icon slds-button__icon--left">
+                                    <use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#logout')}"></use>
+                                </svg>
+                                <apex:outputText value="{!$Label.CP_ENROLL_Logout}" />
+                            </apex:outputLink>
+                            </apex:form>
+                        </div>
+                    </apex:outputPanel>                 
+                    
+                    <apex:outputPanel layout="block" styleClass="theme-error slds-m-top--medium slds-m-bottom--medium" rendered="{!isInactiveEtaCode}" >
+                        <!-- Inactive ETA Code -->
+                        <apex:outputText value="{!$Label.CP_ENROLL_InactiveEnterpriseAgreementTrainingCode}" />
+                    </apex:outputPanel>
+                        
+                    <apex:outputPanel layout="block" styleClass="theme-error slds-m-top--medium slds-m-bottom--medium" rendered="{!isEnrollmentCodeRevoked}" >
+                        <!-- Revoked Enrollment Code -->
+                        <apex:outputText value="{!$Label.CP_ENROLL_NonActiveEnrollmentCode}" rendered="{!isEnrollmentCodeRevoked}" />
+                    </apex:outputPanel>
+
+                    <apex:outputPanel layout="block" styleClass="theme-error slds-m-top--medium slds-m-bottom--medium" rendered="{!isNonExistentEnrollmentCode}">
+                        <!-- Non existent Enrollment Code -->
+                        <apex:outputText value="{!$Label.CP_ENROLL_NonExistentEnrollmentCode}" />
+                    </apex:outputPanel>
+
+                    <!-- Course Component - X-Small Device Only -->
+                    <apex:outputPanel layout="block" styleClass="slds-m-top--large slds-m-bottom--large slds-x-small-show-only" rendered="{!eCode.Code__c <> null}">
+                        <apex:outputPanel layout="block" styleClass="slds-col" id="componentContainer-x-small" >
+                            <apex:outputPanel layout="block" rendered="{!eCode != null}">
+                                <div class="slds-grid--verticle">
+                                    <div class="slds-col slds-text-heading--medium slds-m-bottom--medium courseHeader">
+                                        <apex:outputText value="{!$Label.CP_ENROLL_Available_Courses}" />
+                                    </div>
+                                    <div class="slds-col">
+                                        <c:Course etaId="{!eCode.Enterprise_Training_Agreement__c}" lang="{!language}" />
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:outputPanel>                 
+                    </apex:outputPanel>
+
+                    <!-- Course Component - Small Device Only -->
+                    <apex:outputPanel layout="block" styleClass="slds-m-top--large slds-m-bottom--large slds-small-show-only" rendered="{!eCode.Code__c <> null}">
+                        <apex:outputPanel layout="block" styleClass="slds-col" id="componentContainer-small" >
+                            <apex:outputPanel layout="block" rendered="{!eCode != null}">
+                                <div class="slds-grid--verticle">
+                                    <div class="slds-col slds-text-heading--medium slds-m-bottom--medium courseHeader">
+                                        <apex:outputText value="{!$Label.CP_ENROLL_Available_Courses}" />
+                                    </div>
+                                    <div class="slds-col">
+                                        <c:Course etaId="{!eCode.Enterprise_Training_Agreement__c}" lang="{!language}" />
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:outputPanel>                 
+                    </apex:outputPanel>
+
+                    <!-- Course Component - Medium Device Only -->
+                    <apex:outputPanel layout="block" styleClass="slds-m-top--large slds-m-bottom--large slds-medium-show-only" rendered="{!eCode.Code__c <> null}">
+                        <apex:outputPanel layout="block" styleClass="slds-col" id="componentContainer-medium" >
+                            <apex:outputPanel layout="block" rendered="{!eCode != null}">
+                                <div class="slds-grid--verticle">
+                                    <div class="slds-col slds-text-heading--medium slds-m-bottom--medium courseHeader">
+                                        <apex:outputText value="{!$Label.CP_ENROLL_Available_Courses}" />
+                                    </div>
+                                    <div class="slds-col">
+                                        <c:Course etaId="{!eCode.Enterprise_Training_Agreement__c}" lang="{!language}" />
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:outputPanel>                 
+                    </apex:outputPanel>
+
+                    <!-- Enrollment code validation form -->
+                    <apex:outputPanel layout="block" id="validationContent" rendered="{!OR(isNonExistentEnrollmentCode, isInactiveEtaCode, isEnrollmentCodeRevoked)}" styleClass="slds-m-top--medium slds-m-bottom--medium" >
+                        <apex:form >
+                            <apex:outputPanel layout="block" styleClass="slds-text-body--regular slds-m-top--medium slds-m-bottom--medium">
+                                <apex:outputText value="{!$Label.CP_ENROLL_EnterEnrollmentCode}" escape="false" />
+                            </apex:outputPanel>
+
+                            <apex:outputPanel styleClass="slds-form--horizontal slds-m-top--medium slds-m-bottom--medium" >
+                                <apex:outputPanel layout="block" styleClass="slds-form-element">
+                                    <apex:outputLabel styleClass="slds-m-right--medium" for="enrollmentCode" value="{!$Label.CP_ENROLL_EnrollmentCode}:" />
+
+                                    <apex:outputPanel layout="block" styleClass="slds-form-element__control">
+                                        <apex:inputText id="enrollmentCode" value="{!enrollmentCode}" styleClass="slds-input slds-size--3-of-4 slds-medium-size--3-of-6 slds-large-size--6-of-12" onkeypress="return validateEnrollmentCodeJS(event);" />
+
+                                        <a id="ecode-info" href="#void" class="slds-m-left--small" >
+                                            <div class="tooltip">
+                                                <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-icon-text-default">
+                                                    <use xlink:href="{!URLFOR($Resource.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use>
+                                                </svg>
+                                                <span class="tooltiptext">
+                                                    <div class="slds-theme--brand">
+                                                        <apex:outputText value="{!$Label.CP_ENROLL_EnrollmentCodeTooltip}" />    
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            
+                                        </a>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="block" styleClass="slds-form-element">
+                                    <apex:outputPanel layout="block" styleClass="slds-form-element__control">
+                                        <apex:commandButton onclick="validateEnrollmentCodeAF();" styleClass="slds-button slds-button--brand slds-grid--align-center" value="{!$Label.CP_ENROLL_ValidateCode}" reRender="introContent, validationContent, classDetails" status="processingRequest" />
+
+                                        <apex:actionFunction name="validateEnrollmentCodeAF" action="{!checkEnrollmentCode}" />
+                                    </apex:outputPanel>                                 
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+                        </apex:form>
+                    </apex:outputPanel> 
+
+                    <apex:outputPanel layout="block" rendered="{!isValidEnrollmentCode}" id="classDetails">
+                        <apex:outputPanel layout="block" styleClass="tableContainer slds-p-left--xx-large slds-p-right--xx-large slds-m-top--x-large slds-m-bottom--x-large slds-p-top--x-small slds-p-bottom--x-small" style="padding-left:28px;padding-right:28px">
+                            <apex:actionstatus id="processingRequest">
+                                <apex:facet name="start">
+                                    <apex:outputPanel layout="block" styleClass="slds-spinner_container">
+                                        <apex:outputPanel layout="block" styleClass="slds-spinner--brand slds-spinner slds-spinner--medium">
+                                            <apex:outputPanel layout="block" styleClass="slds-spinner__dot-a"></apex:outputPanel>
+                                            <apex:outputPanel layout="block" styleClass="slds-spinner__dot-b"></apex:outputPanel>
+                                        </apex:outputPanel>
+                                    </apex:outputPanel>
+                                </apex:facet>
+                            </apex:actionstatus>   
+
+                            <apex:outputPanel layout="block" styleClass="slds-text-heading--small slds-m-top--large slds-m-bottom--medium">
+                                <apex:outputText STYleClass="emphasizeSmall" value="{!$Label.CP_ENROLL_THClassesEnrolledIn}" />
+                            </apex:outputPanel>
+                            <apex:outputPanel layout="block" styleClass="slds-p-around--large" style="background-color: white; border: 1px solid #d8dde6;color:#474747;" rendered="{!enrolledClassCount == 0}">
+                                <apex:outputText value="{!$Label.CP_ENROLL_No_Current_Enrollments}" escape="false" />
+                            </apex:outputPanel>
+                            <apex:outputPanel styleClass="slds-scrollable--x" layout="block" rendered="{!enrolledClassCount > 0}">
+                                <table class="slds-table slds-table--bordered">
+                                    <thead>
+                                        <tr class="slds-text-heading--label">
+                                            <th class="slds-cell-shrink tcol-1">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHEnrolledOn}" /></b></div>
+                                            </th>
+                                            <th scope="col tcol-2">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHClass}" /></b></div>
+                                            </th>
+                                            <th scope="col tcol-3">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHPrerequisite}" /></b></div>
+                                            </th>
+                                            <!-- <th scope="col">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHLanguage}" /></b></div>
+                                            </th> -->
+                                        </tr>
+                                        <apex:variable value="{!0}" var="i" />
+                                        <apex:repeat value="{!enrolledClasses}" var="rec">
+                                            <tr class="{!IF(MOD(i, 2) == 0, 'even', 'odd')}">
+                                                <td class="slds-cell-wrap tcol-1">
+                                                    <div class="slds-text-regular--small">
+                                                        <apex:outputText value="{0,date,dd-MMM-yyyy}" >
+                                                            <apex:param value="{!rec.enrollment.CreatedDate}" />
+                                                        </apex:outputText>
+                                                    </div>
+                                                </td>
+                                                <td class="slds-cell-wrap tcol-2">
+                                                    <div class="slds-text-regular--small">
+                                                        <b><apex:outputText value="{!rec.courseLanguage.Localized_Course_Name__c} ({!rec.lanDisplayName.Display_Name__c})" /></b>
+                                                    </div>
+                                                    <!-- <div class="slds-text-body--small slds-m-top--small">
+                                                        <apex:outputText value="{!rec.courseLanguage.Localized_Short_Description__c}" />
+                                                    </div> -->
+                                                </td>
+                                                <td class="slds-cell-wrap tcol-3">
+                                                    <div class="slds-text-regular--small">
+                                                        <apex:outputText value="{!rec.courseLanguage.Localized_Pre_Requisite__c}" />
+                                                    </div>
+                                                </td>
+                                                <!-- <td class="slds-cell-wrap">
+                                                    <div class="slds-text-regular--small">
+                                                        <apex:outputText value="{!rec.etaclass.Language__r.Name}" />
+                                                    </div>
+                                                </td> -->
+                                            </tr>
+                                            <apex:variable value="{!i + 1}" var="i" />
+                                        </apex:repeat>
+                                    </thead>
+                                </table>
+                            </apex:outputPanel>
+                            <apex:outputPanel layout="block" styleClass="slds-text-body--regular slds-m-top--large slds-m-bottom--medium" rendered="{!enrolledClassCount > 0}">
+                                <apex:outputText value="{!$Label.CP_ENROLL_MATLAB_Academy_Link}" escape="false" />
+                            </apex:outputPanel>
+
+                            <apex:outputPanel layout="block" styleClass="slds-text-heading--small slds-m-top--large slds-m-bottom--medium">
+                                <apex:outputText STYleClass="emphasizeSmall" value="{!$Label.CP_ENROLL_THAvailableClasses}" />
+                            </apex:outputPanel>
+                            <apex:outputPanel layout="block" styleClass="slds-p-around--large" style="background-color: white; border: 1px solid #d8dde6;color:#474747" rendered="{!AND(availableClassCount = 0, NOT(isNewEnrollmentSuccess))}">
+                                <apex:outputText value="{!$Label.CP_ENROLL_No_Classes_Available}" escape="false" />
+                            </apex:outputPanel>
+                            <apex:form >
+                            <apex:outputPanel layout="block" rendered="{!AND(availableClassCount > 0, NOT(isNewEnrollmentSuccess))}" id="availableClasses">
+                                <div class="slds-scrollable--x">
+                                <table class="slds-table slds-table--bordered">
+                                    <thead>
+                                        <tr class="slds-text-heading--label">
+                                            <!-- <th class="slds-cell-shrink">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHSelectRow}" /></b></div>
+                                                <label class="slds-checkbox">
+                                                    <apex:inputCheckbox styleClass="masterCb" onchange="toggleAllClasses(this.checked);" />
+                                                    <input type="checkbox" name="options" value="" />
+                                                    <span class="slds-checkbox--faux"></span>
+                                                    <span class="slds-assistive-text"><b><apex:outputText value="{!$Label.CP_ENROLL_CHSelectRow}" /></b></span>
+                                                </label>
+                                            </th> -->
+                                            <th scope="col" style="text-align: center;" class="tcol-1">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHEnroll}" /></b></div>
+                                            </th>
+                                            <th scope="col" class="tcol-2">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHClass}" /></b></div>
+                                            </th>
+                                            <th scope="col" class="tcol-3">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHPrerequisite}" /></b></div>
+                                            </th>
+                                            <!-- <th scope="col">
+                                                <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHLanguage}" /></b></div>
+                                            </th> -->
+                                        </tr>
+                                        <apex:variable value="{!0}" var="j" />
+                                        <apex:repeat value="{!availableClasses}" var="rec">
+                                            <tr class="{!IF(MOD(j, 2) == 0, 'even', 'odd')}">
+                                                <td class="slds-cell-wrap tcol-1" style="text-align: center;">
+                                                    <label class="slds-checkbox">
+                                                        <apex:inputCheckbox value="{!rec.isNewEnrollment}" styleClass="toggleCb" onchange="toggleSelectedClasses();" />
+                                                        <input type="checkbox" name="options" value="" />
+                                                        <span class="slds-checkbox--faux"></span>
+                                                        <span class="slds-assistive-text"><apex:outputText value="{!$Label.CP_ENROLL_CHSelectRow}" /></span>
+                                                    </label>
+                                                </td>
+                                                <td class="slds-cell-wrap tcol-2">
+                                                    <div class="slds-text-regular--small">
+                                                        <b><apex:outputText value="{!rec.courseLanguage.Localized_Course_Name__c} ({!rec.lanDisplayName.Display_Name__c})" /></b>
+                                                    </div>
+                                                    <!-- <div class="slds-text-body--small slds-m-top--small">
+                                                        <apex:outputText value="{!rec.courseLanguage.Localized_Short_Description__c}" />
+                                                    </div> -->
+                                                </td>
+                                                <td class="slds-cell-wrap tcol-3">
+                                                    <div class="slds-text-regular--small">
+                                                        <apex:outputText value="{!rec.courseLanguage.Localized_Pre_Requisite__c}" />
+                                                    </div>
+                                                </td>
+                                                <!-- <td class="slds-cell-wrap">
+                                                    <div class="slds-text-regular--small">
+                                                        <apex:outputText value="{!rec.etaclass.Language__r.Name}" />
+                                                    </div>
+                                                </td> -->
+                                            </tr>
+                                            <apex:variable value="{!j + 1}" var="j" />                                   
+                                        </apex:repeat>
+                                    </thead>
+                                </table>
+                                </div>
+
+                                <apex:outputPanel layout="block" styleClass="slds-grid slds-text-body--regular slds-m-top--large slds-m-bottom--large">
+                                    <apex:commandButton action="{!enrollForNewClasses}" styleClass="slds-button slds-button--brand auth-submit-button" value="{!$Label.CP_ENROLL_SubmitEnrollmentRequest}" reRender="classDetails" status="processingRequest" oncomplete="callsatelliteTrack()" />
+                                </apex:outputPanel>
+                                
+                                <apex:outputPanel layout="block" styleClass="slds-text-body--regular slds-m-top--medium">
+                                    <apex:outputText value="{!$Label.CP_ENROLL_EnrollingClassInformation}" escape="false" >
+                                        <apex:variable var="firstLastName" value="{!$User.FirstName} {!$User.LastName}" />
+                                        <apex:variable var="lastFirstName" value="{!$User.LastName} {!$User.FirstName}" />
+
+                                        <apex:param value="{!IF(eCode.Enterprise_Training_Agreement__r.Language__r.Show_Names_By__c = 'First, Last', firstLastName, lastFirstName)}" />
+                                        <apex:param value="{!$User.Email}" />
+                                        <apex:param value="{!eCode.Enterprise_Training_Agreement__r.Account_Name__r.Name}" />
+                                        <apex:param value="{!termEndDate}" />
+                                    </apex:outputText>
+                                </apex:outputPanel>
+                            </apex:outputPanel>         
+                            </apex:form>
+
+                            <apex:outputPanel layout="block" styleClass="slds-text-body--medium slds-m-top--medium slds-box theme-success slds-text-align--center" rendered="{!isNewEnrollmentSuccess}">
+                                <apex:outputText value="{!$Label.CP_ENROLL_NewEnrollmentSuccess}" />
+                            </apex:outputPanel>
+                            <apex:outputPanel layout="block" styleClass="slds-text-body--small slds-m-top--medium slds-m-bottom--medium slds-grid slds-grid--align-center">
+                                <div><apex:outputText value="{!$Label.CP_ENROLL_PrivacyPolicyInfo}" escape="false" /></div>                             
+                            </apex:outputPanel> 
+                        </apex:outputPanel>    
+                    </apex:outputPanel>
+                </div>
+                <apex:outputPanel layout="block" styleClass="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3 slds-m-bottom--large slds-large-show" rendered="{!eCode.Code__c <> null}">
+                    <apex:outputPanel layout="block" styleClass="slds-col" id="componentContainerBottom" >
+                        <apex:outputPanel layout="block" rendered="{!eCode != null}">
+                            <div class="slds-grid--verticle">
+                                <div class="slds-col slds-text-heading--medium slds-m-bottom--medium courseHeader">
+                                    <apex:outputText value="{!$Label.CP_ENROLL_Available_Courses}" />
+                                </div>
+                                <div class="slds-col">
+                                    <c:Course etaId="{!eCode.Enterprise_Training_Agreement__c}" lang="{!language}" />
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                    </apex:outputPanel>                 
+                </apex:outputPanel>
+            </div>
+            </apex:outputPanel>
+        </apex:define>
+    </apex:composition>
+    </html>
+</apex:page>

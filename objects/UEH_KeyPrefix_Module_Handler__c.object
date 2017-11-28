@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Key_Prefix__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Duplicated from the Name field so we can enforce uniqueness</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The object key prefix that the thread id contained - copy this key prefix to the Name field as well</inlineHelpText>
+        <label>Key Prefix</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Module_Handler_Class__c</fullName>
+        <description>This field stores the value of Class name that can be used in email routing business logic</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Apex class that should handle inbound messages for this Key Prefix (do not include .cls)</inlineHelpText>
+        <label>Module Handler Class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Module_Name__c</fullName>
+        <description>This field stores Module name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Friendly name of the module the key prefix is mapped to</inlineHelpText>
+        <label>Module Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>UEH_KeyPrefix_Module_Handler</label>
+    <visibility>Public</visibility>
+</CustomObject>

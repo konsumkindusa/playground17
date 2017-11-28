@@ -1,0 +1,19 @@
+Dear {!Contact.FirstName},
+
+Because we have not heard back from you regarding Case# {!Case.CaseNumber} your issue has been marked as closed.
+
+However, if your issue is not resolved and you still need assistance please reply to this email referencing the Reference ID included below.
+
+Thank you,
+
+{!Case.OwnerFullName}
+Customer Service Team
+MathWorks Korea
++82-2-6006-5114
+info@mathworks.co.kr 
+
+This is an auto generated e-mail
+
+
+
+{!Case.Thread_Id}

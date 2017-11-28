@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>Training_Agremnt_Cls_FieldSet</fullName>
+        <description>This field set is used in apex classes</description>
+        <displayedFields>
+            <field>Class__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Enterprise_Training_Agreement__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Training Agreement Class Relationship FieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>ClassCriteriaBE__c</fullName>
+        <externalId>false</externalId>
+        <formula>Class__r.Course__r.Course_Code__c+Class__r.Format_Of_Class__c+Class__r.Language__r.Language_Code__c+CASESAFEID(Enterprise_Training_Agreement__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ClassCriteriaBE</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Class__c.Format_Of_Class__c</field>
+                <operation>equals</operation>
+                <value>Self-Paced</value>
+            </filterItems>
+            <filterItems>
+                <field>Class__c.Status__c</field>
+                <operation>equals</operation>
+                <value>Active</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Class__c</referenceTo>
+        <relationshipLabel>Enterprise Agreement</relationshipLabel>
+        <relationshipName>Training_Agreement_Class</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Course_Code__c</fullName>
+        <description>Part Number</description>
+        <externalId>false</externalId>
+        <formula>Class__r.Course__r.Course_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Part Number</inlineHelpText>
+        <label>Course Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Class_Association__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>This field is to prevent the same class from being added more than once to training agreement</description>
+        <externalId>false</externalId>
+        <label>Duplicate Class Association</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Enterprise_Training_Agreement__c</fullName>
+        <externalId>false</externalId>
+        <label>Enterprise Training Agreement</label>
+        <referenceTo>Enterprise_Training_Agreement__c</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>Training_Agreement_Class_Relationships</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Training Agreement Class Relationship</label>
+    <nameField>
+        <displayFormat>AC-{0000}</displayFormat>
+        <label>Training Agreement Class Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Training Agreement Class Relationships</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

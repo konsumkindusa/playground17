@@ -1,0 +1,22 @@
+Dear {!Contact.FirstName}, 
+
+I am writing in reference to your Service Request “{!Case.Subject}”, Case #{!Case.CaseNumber}. 
+
+I recently requested additional information from you but have not yet received a response. If you still need assistance regarding this issue, please reply to this email with the requested information, preserving the Reference ID listed below. 
+
+If you have a new technical support question, please submit a new request here: 
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml 
+
+Thank you, 
+
+{!Case.OwnerFullName} 
+MathWorks
+www.mathworks.in
+ 
+
+
+This is an auto generated e-mail 
+
+
+
+{!Case.Thread_Id}

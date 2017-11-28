@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RAC auto reply tampleas for Natick</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC English Auto Reply (HTML)</name>
+    <style>freeForm</style>
+    <subject>RE:  {!Case.Subject}</subject>
+    <textOnly>PLEASE DO NOT REPLY TO THIS MESSAGE. This is an auto-generated reply to your request.
+
+CASE ID: !Case.CaseNumber}
+
+
+
+Thank you very much for contacting the MathWorks Order Receipt Desk. We have received your request.
+
+
+
+If you are placing an order, we will email you an Order Confirmation as soon as we process your order. If you have any questions about this case, please contact us. We will ask you for the above mentioned Case ID, so please make a note of it.
+
+
+
+
+
+Sincerely,
+
+MathWorks
+
+Order Receipt Desk</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

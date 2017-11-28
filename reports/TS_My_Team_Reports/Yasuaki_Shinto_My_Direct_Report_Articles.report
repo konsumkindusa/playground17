@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>KnowledgeArticleVersion$CreatedBy</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>KnowledgeArticleVersion$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$Summary</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleType</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15))</booleanFilter>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$PublishStatus</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Kiyoko Imato</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Mesbah Uddin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Mizuki Enomoto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Naoya Maeda</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$ArchivedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Akiko Kobayashi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Shota Morikawa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ayako Mizonishi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ayumu Minamide</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Yasuyuki Suzuki</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Yoko Miyazaki</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Mesbah Uddin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ko Ohashi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Michio Inoue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Shogo Ida</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticleVersion$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Yasuaki Shinto My Direct Report Articles</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Article_Versions_Not_to_Deploy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticleVersion$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

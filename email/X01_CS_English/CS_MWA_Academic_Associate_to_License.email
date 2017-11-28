@@ -1,0 +1,14 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. We have received your request to become associated with license xxxxxx.   In order to be associated to the University license, your email address must have a University email domain.  Please log into your MathWorks Account at mathworks.com using xxxxxxxxxxx as the Login Name.  From your Main Accounts Page click on the link labeled "Edit Profile" located in the top left of the webpage.  Then change your email address to a University email address.  Once your email address has the allowed University email domain, you should be able to associate to the License.
+
+One other note, while in the “Edit Profile” section, make sure under the heading “How Will You Use The MathWorks Software” you have selected "Academic use (including campus/site license use)."  
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

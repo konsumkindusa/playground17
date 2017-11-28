@@ -1,0 +1,25 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.
+
+If you would like to purchase add-on toolboxes for your Student License please follow the instructions below. 
+
+1. Log into your MathWorks Account.
+2. Select the Student License number you would like to add the Toolbox too.
+3. Click "Buy Add-on". The Toolboxes will automatically default to the release that matches your core product.
+4.  Check the box next to the Add-on Toolboxes you would like and click continue. If there are any product dependencies you will receive an error at the top of the screen. Please ensure that you make any adjustments to the order if necessary.
+5.    The “Product Cart” screen allows you to review your order, and then click “Checkout.”
+6.    The next screen may request verifiable student information, fill out all fields and agree to “Accept Terms.”  
+7.    At "Confirm Address of Use" enter the complete address where the software will be used and click “Continue.”
+8.    At Billing, specify the credit card information, and billing address associated to the credit card.  Please make sure to supply the current billing address for where your credit card bill is being sent.  If the addresses do not match this could cause your order to fail authorization.   Then press “Continue.”
+
+Upon completion of checkout you obtain an Order Number.  Be sure to store this Order Number for your records.  After your order has been processed you will receive a confirmation email including download instructions.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

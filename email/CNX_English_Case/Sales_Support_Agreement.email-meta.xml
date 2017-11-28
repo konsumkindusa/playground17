@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send with SSL agmt and end user spreadsheet to fill in.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sales Support - Agreement to Partner</name>
+    <style>none</style>
+    <subject>Sales Support Agreement for Signature</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

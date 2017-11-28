@@ -1,0 +1,16 @@
+Dear {!Case.Contact},
+
+Thank you for contacting MathWorks.    
+
+You have attempted to change your address via your MathWorks Account. However, you are currently listed as a contact on a license registered to XXXX.      
+
+As a license contact you are required to use an address associated with your company or university. Since the registered owner of the license is your company or university your address information will need to reflect your association with that organization. For that reason your account will continue to reflect the information as previously shown.    
+
+If you have any more questions, please contact us at service@mathworks.com.    
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

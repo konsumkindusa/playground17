@@ -1,0 +1,10 @@
+Dear {!Case.Contact}, 
+
+Thank you for your interest in The MathWorks Connections Program Partner training discount.  Attached is a PDF datasheet describing this partner benefit and instructions on how to apply.  If you have any questions on this material, do not hesitate to contact me.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}
+
+[Attach TrainingDiscount.pdf]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Training Discount CNX Approval to TrainOps</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Training Discount CNX Approval to TrainOps</name>
+    <style>none</style>
+    <subject>Training Discount Approval -  Connections Partner</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

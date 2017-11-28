@@ -1,0 +1,13 @@
+Dear {!Contact.Salutation} {!Partner_Agreement__c.Primary_Contact__c},
+
+[We received your signed Terms and Conditions, thank you.] We have been trying to contact the references you provided in your initial application to complete the review of your application to join The MathWorks Connections Program. So far we have not received a reply from (NAME) .
+
+I just sent a reminder to (NAME) . If you could follow up to ensure they complete the cursory reference check, I'd greatly appreciate it. In addition, if you have an additional reference we may contact to ensure a timely response, please send me their name and e-mail address.
+
+I look forward to hearing from you.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

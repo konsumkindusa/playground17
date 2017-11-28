@@ -1,0 +1,27 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},    
+
+vielen Dank für Ihre Anfrage #{!Case.CaseNumber} - "{!Case.Subject}".    
+
+Um Sie besser unterstützen zu können, bitte ich Sie, mir die folgenden Informationen zu zusenden:    
+
+1) Die komplette Ausgabe nach Eingabe des folgenden Befehls am MATLAB Prompt:
+Für MATLAB R2012b und neuere Versionen:
+>> ver -support
+Für MATLAB R2012a und ältere Versionen:
+>> ver
+Dadurch erhalten wir Lizenznummer, Betriebssystem und Produktversionen.
+
+2) Eine detaillierte Beschreibung des Problems.    
+
+3) Alle relevanten Dateien.    
+
+4) Die genauen Schritte, die ich benötige, um Ihre Dateien zu nutzen.    
+
+5) Ggf. die exakten Fehlermeldungen, die Sie erhalten.    
+
+Bitte lassen Sie die REFERENCE ID bei weiterer Kommunikation zu dieser Anfrage intakt. Sie ermöglicht unserem System die automatische Zuweisung Ihrer Antwort zur korrekten Anfrage.    
+
+Mit freundlichen Grüßen    
+{!User.Email_Template_Signature__c}
+
+{!User.Disclosure__c}

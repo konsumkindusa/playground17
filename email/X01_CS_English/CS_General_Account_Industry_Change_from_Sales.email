@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+Unfortunately, Customer Service is unable to update Account Industry, as this field is handled by the Industry Marketing Team.
+
+There is an Industry Coding Change Request form that you can submit to have the industry changed on an account.  Please see the instructions below to access the form.  If you have any further questions on this process, please contact Ann Lombardo-Scipione.
+
+From the Commercial or Educational SharePoint page. click Forms
+Then select Industry Coding Change Request to launch the form.   You will need to complete the form then click Save.  This will generate a request to have the Industry updated.  As stated on the form, All update requests MUST be logged 7 days prior to close of quarter or it will not be moved until the following quarter.
+
+
+If you need further assistance regarding this request, please reply to this email preserving the Reference ID listed below.
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

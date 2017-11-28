@@ -1,0 +1,23 @@
+Beste {!Contact.FirstName}, 
+
+Deze e-mail is een reactie op je vraag #{!Case.CaseNumber} betreffende '{!Case.Subject}'. 
+
+Technische ondersteuning per telefoon en e-mail is alleen beschikbaar voor studenten met vragen over installatie en het rapporteren van bugs. 
+
+De MathWorks website biedt vele links welke je kunnen helpen je vraag te beantwoorden: 
+
+Studentenversie FAQ: http://www.mathworks.nl/academia/student_version/start.html
+
+Online Technical Support: http://www.mathworks.nl/support/ 
+
+Bronnen per discipline: http://www.mathworks.nl/products/education/academic.shtml 
+
+Usenet nieuwsgroep: comp.soft-sys.matlab 
+
+MATLAB Central: http://www.mathworks.nl/matlabcentral/ 
+
+Als je na het gebruik van bovenstaande bronnen nog steeds geen oplossing voor je probleem hebt kunnen vinden, word je aangeraden contact op te nemen met je docent. 
+
+Met vriendelijke groet, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

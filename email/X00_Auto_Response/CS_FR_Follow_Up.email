@@ -1,0 +1,17 @@
+Dear {!Contact.FirstName},Cher (e)  {!Contact.FirstName},
+
+Nous n’avons pas reçu de nouvelles de votre part concernant votre demande numéro {!Case.CaseNumber}, formulée auprès de notre Service Client. Votre problème a peut-être été résolu. Dans le cas contraire, veuillez répondre à ce message par [Service Request.MW AutoClose Date], en indiquant le numéro de dossier “Reference ID“ indiqué en bas de page. 
+
+Sincères salutations,
+
+
+{!Case.OwnerFullName}
+Service Client
+MathWorks S.A.S
+01.41.14.87.00 
+service@mathworks.fr
+
+
+Ce message est une réponse automatique.
+
+{!Case.Thread_Id}

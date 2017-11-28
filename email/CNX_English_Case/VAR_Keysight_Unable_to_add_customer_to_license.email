@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+We are unable to add your customer to a MathWorks License because
+<the name provided for this license matches a name currently on an export restricted list, therefore we cannot support this request at this time.>
+
+or <we have not received a Keysight Order #123456 in any of our weekly order reports.>
+
+Please contact your customer directly to resolve the issue and set their expectations.
+
+Please let me know if you have any questions
+Thank you,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}

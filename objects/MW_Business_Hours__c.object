@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom table with WW Technical Support business hours and timezone by TS Area. The table will be used by BO reports .</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AU - Customer Support</fullName>
+                    <default>false</default>
+                    <label>AU - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>AU - Install</fullName>
+                    <default>false</default>
+                    <label>AU - Install</label>
+                </value>
+                <value>
+                    <fullName>AU - Sales</fullName>
+                    <default>false</default>
+                    <label>AU - Sales</label>
+                </value>
+                <value>
+                    <fullName>AU - Technical Support</fullName>
+                    <default>false</default>
+                    <label>AU - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>BNL - Customer Support</fullName>
+                    <default>false</default>
+                    <label>BNL - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>BNL - Install</fullName>
+                    <default>false</default>
+                    <label>BNL - Install</label>
+                </value>
+                <value>
+                    <fullName>BNL - Sales</fullName>
+                    <default>false</default>
+                    <label>BNL - Sales</label>
+                </value>
+                <value>
+                    <fullName>BNL - Technical Support</fullName>
+                    <default>false</default>
+                    <label>BNL - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Business Application</fullName>
+                    <default>false</default>
+                    <label>Business Application</label>
+                </value>
+                <value>
+                    <fullName>CH - Customer Support</fullName>
+                    <default>false</default>
+                    <label>CH - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CH - Install</fullName>
+                    <default>false</default>
+                    <label>CH - Install</label>
+                </value>
+                <value>
+                    <fullName>CH - Sales</fullName>
+                    <default>false</default>
+                    <label>CH - Sales</label>
+                </value>
+                <value>
+                    <fullName>CH - Technical Support</fullName>
+                    <default>false</default>
+                    <label>CH - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>CN - Customer Support</fullName>
+                    <default>false</default>
+                    <label>CN - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CN - Install</fullName>
+                    <default>false</default>
+                    <label>CN - Install</label>
+                </value>
+                <value>
+                    <fullName>CN - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>CN - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>CN - Sales</fullName>
+                    <default>false</default>
+                    <label>CN - Sales</label>
+                </value>
+                <value>
+                    <fullName>CN - Technical Support</fullName>
+                    <default>false</default>
+                    <label>CN - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>DE - Customer Support</fullName>
+                    <default>false</default>
+                    <label>DE - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>DE - Install</fullName>
+                    <default>false</default>
+                    <label>DE - Install</label>
+                </value>
+                <value>
+                    <fullName>DE - Sales</fullName>
+                    <default>false</default>
+                    <label>DE - Sales</label>
+                </value>
+                <value>
+                    <fullName>DE - Technical Support</fullName>
+                    <default>false</default>
+                    <label>DE - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Install</fullName>
+                    <default>false</default>
+                    <label>EMEA - Install</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Sales</fullName>
+                    <default>false</default>
+                    <label>EMEA - Sales</label>
+                </value>
+                <value>
+                    <fullName>ES - Customer Support</fullName>
+                    <default>false</default>
+                    <label>ES - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>ES - Install</fullName>
+                    <default>false</default>
+                    <label>ES - Install</label>
+                </value>
+                <value>
+                    <fullName>ES - Sales</fullName>
+                    <default>false</default>
+                    <label>ES - Sales</label>
+                </value>
+                <value>
+                    <fullName>ES - Technical Support</fullName>
+                    <default>false</default>
+                    <label>ES - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>FR - Customer Support</fullName>
+                    <default>false</default>
+                    <label>FR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>FR - Install</fullName>
+                    <default>false</default>
+                    <label>FR - Install</label>
+                </value>
+                <value>
+                    <fullName>FR - Sales</fullName>
+                    <default>false</default>
+                    <label>FR - Sales</label>
+                </value>
+                <value>
+                    <fullName>FR - Technical Support</fullName>
+                    <default>false</default>
+                    <label>FR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Grenoble - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Grenoble - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>IN - Customer Support</fullName>
+                    <default>false</default>
+                    <label>IN - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>IN - Install</fullName>
+                    <default>false</default>
+                    <label>IN - Install</label>
+                </value>
+                <value>
+                    <fullName>IN - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IN - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IN - Sales</fullName>
+                    <default>false</default>
+                    <label>IN - Sales</label>
+                </value>
+                <value>
+                    <fullName>IN - Technical Support</fullName>
+                    <default>false</default>
+                    <label>IN - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>International Direct Natick</fullName>
+                    <default>false</default>
+                    <label>International Direct Natick</label>
+                </value>
+                <value>
+                    <fullName>IT - Customer Support</fullName>
+                    <default>false</default>
+                    <label>IT - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>IT - Install</fullName>
+                    <default>false</default>
+                    <label>IT - Install</label>
+                </value>
+                <value>
+                    <fullName>IT - Sales</fullName>
+                    <default>false</default>
+                    <label>IT - Sales</label>
+                </value>
+                <value>
+                    <fullName>IT - Technical Support</fullName>
+                    <default>false</default>
+                    <label>IT - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>JP - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Customer Support</fullName>
+                    <default>false</default>
+                    <label>JP - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Install</fullName>
+                    <default>false</default>
+                    <label>JP - Install</label>
+                </value>
+                <value>
+                    <fullName>JP - Sales</fullName>
+                    <default>false</default>
+                    <label>JP - Sales</label>
+                </value>
+                <value>
+                    <fullName>JP - Technical Support</fullName>
+                    <default>false</default>
+                    <label>JP - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Customer Support</fullName>
+                    <default>false</default>
+                    <label>KR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Install</fullName>
+                    <default>false</default>
+                    <label>KR - Install</label>
+                </value>
+                <value>
+                    <fullName>KR - Sales</fullName>
+                    <default>false</default>
+                    <label>KR - Sales</label>
+                </value>
+                <value>
+                    <fullName>KR - Technical Support</fullName>
+                    <default>false</default>
+                    <label>KR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>MathWorks AB (Sweden)</fullName>
+                    <default>false</default>
+                    <label>MathWorks AB (Sweden)</label>
+                </value>
+                <value>
+                    <fullName>Natick - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Customer Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Database</fullName>
+                    <default>false</default>
+                    <label>Natick - Database</label>
+                </value>
+                <value>
+                    <fullName>Natick - Install</fullName>
+                    <default>false</default>
+                    <label>Natick - Install</label>
+                </value>
+                <value>
+                    <fullName>Natick - Sales</fullName>
+                    <default>false</default>
+                    <label>Natick - Sales</label>
+                </value>
+                <value>
+                    <fullName>Natick - Technical Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Customer Support</fullName>
+                    <default>false</default>
+                    <label>Nordic - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Install</fullName>
+                    <default>false</default>
+                    <label>Nordic - Install</label>
+                </value>
+                <value>
+                    <fullName>Nordic -Sales</fullName>
+                    <default>false</default>
+                    <label>Nordic -Sales</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Technical Support</fullName>
+                    <default>false</default>
+                    <label>Nordic - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Premier Support - Denso</fullName>
+                    <default>false</default>
+                    <label>Premier Support - Denso</label>
+                </value>
+                <value>
+                    <fullName>SE - Install</fullName>
+                    <default>false</default>
+                    <label>SE - Install</label>
+                </value>
+                <value>
+                    <fullName>SE - Sales</fullName>
+                    <default>false</default>
+                    <label>SE - Sales</label>
+                </value>
+                <value>
+                    <fullName>SE - Technical Support</fullName>
+                    <default>false</default>
+                    <label>SE - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Customer Support</fullName>
+                    <default>false</default>
+                    <label>UK - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Install</fullName>
+                    <default>false</default>
+                    <label>UK - Install</label>
+                </value>
+                <value>
+                    <fullName>UK - Sales</fullName>
+                    <default>false</default>
+                    <label>UK - Sales</label>
+                </value>
+                <value>
+                    <fullName>UK - Technical Support</fullName>
+                    <default>false</default>
+                    <label>UK - Technical Support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>End Time</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office_Name__c</fullName>
+        <description>Office Location - Concatenation of Country Name and MW Office</description>
+        <externalId>false</externalId>
+        <label>Office Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Timezone__c</fullName>
+        <description>SFDC Timezone will be join to LOV Picklist table in SFDC sql db to get offset hours</description>
+        <externalId>false</externalId>
+        <label>SFDC Timezone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>America/New_York</fullName>
+                    <default>false</default>
+                    <label>America/New_York</label>
+                </value>
+                <value>
+                    <fullName>Asia/Calcutta</fullName>
+                    <default>false</default>
+                    <label>Asia/Calcutta</label>
+                </value>
+                <value>
+                    <fullName>Asia/Seoul</fullName>
+                    <default>false</default>
+                    <label>Asia/Seoul</label>
+                </value>
+                <value>
+                    <fullName>Asia/Shanghai</fullName>
+                    <default>false</default>
+                    <label>Asia/Shanghai</label>
+                </value>
+                <value>
+                    <fullName>Asia/Tokyo</fullName>
+                    <default>false</default>
+                    <label>Asia/Tokyo</label>
+                </value>
+                <value>
+                    <fullName>Australia/Sydney</fullName>
+                    <default>false</default>
+                    <label>Australia/Sydney</label>
+                </value>
+                <value>
+                    <fullName>Europe/Amsterdam</fullName>
+                    <default>false</default>
+                    <label>Europe/Amsterdam</label>
+                </value>
+                <value>
+                    <fullName>Europe/Berlin</fullName>
+                    <default>false</default>
+                    <label>Europe/Berlin</label>
+                </value>
+                <value>
+                    <fullName>Europe/Brussels</fullName>
+                    <default>false</default>
+                    <label>Europe/Brussels</label>
+                </value>
+                <value>
+                    <fullName>Europe/London</fullName>
+                    <default>false</default>
+                    <label>Europe/London</label>
+                </value>
+                <value>
+                    <fullName>Europe/Paris</fullName>
+                    <default>false</default>
+                    <label>Europe/Paris</label>
+                </value>
+                <value>
+                    <fullName>Europe/Rome</fullName>
+                    <default>false</default>
+                    <label>Europe/Rome</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Time__c</fullName>
+        <description>Business Office startof the day  time</description>
+        <externalId>false</externalId>
+        <label>Start Time</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>MW Business Hours</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>SFDC_Timezone__c</columns>
+        <columns>Area__c</columns>
+        <columns>End_Time__c</columns>
+        <columns>Start_Time__c</columns>
+        <columns>Office_Name__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Office Location</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MW Business Hours</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

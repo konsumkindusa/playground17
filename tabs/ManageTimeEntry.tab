@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Alarm clock
+	The visualforce tab is used for the redirect and use as a override to the standard Project Timecard tab.</description>
+    <label>Manage Time Entry</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom25: Alarm clock</motif>
+    <page>RedirectToTimeCard</page>
+</CustomTab>

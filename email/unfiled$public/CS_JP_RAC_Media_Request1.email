@@ -1,0 +1,24 @@
+fulfillment@mathworks.com 
+
+Hi,
+
+Could you send R○○ for the following customer, please?
+Contact: 
+Lic#: 
+
+Name: 
+Account: 
+Address: 
+City:
+Prefecture:
+Postal Code:
+Japan
+Tel: +
+
+Could you let me know when the process is done, please?
+If there are any issues, please let me know.
+Thank you,
+
+{!User.Disclosure__c} 
+
+Case ID: {!Case.CaseNumber}

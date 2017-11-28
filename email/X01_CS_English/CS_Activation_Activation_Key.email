@@ -1,0 +1,42 @@
+Hello {!Case.Contact},
+ 
+Thank you for contacting MathWorks. IMPORTANT: If you are looking for the File Installation Key for the purposes of installing MATLAB on an offline machine, see "How can I install MATLAB or other MathWorks products on an offline machine?" for complete instructions. Entering a File Installation Key into a MATLAB installer downloaded directly from the MathWorks website _will not _enable you to install MATLAB on an offline machine.
+
+End Users:
+
+The File Installation Key is produced when you activate your license to a machine. See the following article for more information:
+
+How do I activate MATLAB without an internet connection?
+
+To retreive a File Installation Key for a license which is already activated:
+
+Log into the License Center here: http://www.mathworks.com/licensecenter
+Click on the desired license
+Select the "Install and Activate" tab
+Click the blue arrow under "Get License File"
+Select a release.
+Specify that the software is not yet installed.
+The File Installation Key will appear on this screen.
+End users who are not allowed to perform keyless activations must contact their license administrators to obtain a File Installation Key. End users must also contact license administrators to obtain the Activation Key regardless of their permissions. In the MathWorks License Center, click the "Contact Administrators" tab to get contact information for your license administrators.
+
+Administrators:
+
+License administrators can also obtain the Activation Key or File Installation Keys through through the "Advanced Options" button in the license center. To retrieve your Activation Key or File Installation Key, follow the steps below:
+
+Log into the License Center here: http://www.mathworks.com/licensecenter
+Select the desired license
+Select the "Install and Activate" tab
+Click on the "Advanced Options" button
+The File Installation Key will appear on this screen. You can generate a key for a different release using the drop down.
+
+Click on this link to learn more about activation (Log in required):
+www.mathworks.com/support/activation/index.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

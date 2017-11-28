@@ -1,0 +1,21 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+We received your application for the MathWorks Connections Program that you submitted via our Web site. Thank you for taking the time to complete it. Your submission is currently under review. The review process can take several months and I may be in touch with you during the review process with clarification questions.
+
+In order to join the program, you must agree to and sign a copy of the Terms & Conditions of The MathWorks Connections Program. We must receive the signed hard copy of the document before we can allow you membership into the program. Please note, we cannot accept scanned files sent via email. The Terms & Conditions are located at:
+
+https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/products/connections/join/CNXTerms_Conditions.pdf
+
+Please mail a signed copy of the Terms and Conditions to:
+
+Dana Wright
+MathWorks
+3 Apple Hill Drive
+Natick, MA 01760
+
+We appreciate your decision to build products/services using the MATLAB environment. I am looking forward to working with you to complete the application review process.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

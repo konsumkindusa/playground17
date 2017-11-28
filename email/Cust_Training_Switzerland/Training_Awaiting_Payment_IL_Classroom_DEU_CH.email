@@ -1,0 +1,23 @@
+Sehr geehrte/r {!Contact.Name},
+
+wir danken Ihnen für Ihre Anmeldung zu folgender Schulung:
+
+Kursname: {!Enrollment__c.Class__c} 
+Datum:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+Ort:     {!Class__c.City__c}, {!Class__c.Country__c} 
+Zeit:   {!Class__c.Start_Time__c} to {!Class__c.End_Time__c}
+      
+Informationen über den Schulungsort finden Sie unter
+
+https://ch.mathworks.com/services/training/policies/directions.html
+
+Wir haben allerdings noch keine Bezahlung erhalten.   
+Die vollständige Bezahlung der Kursgebühren ist Voraussetzung für die Reservierung eines Trainingsplatzes. Erst wenn die Zahlung erfolgt ist, ist Ihre Teilnahme verbindlich bestätigt. Bisher haben wir noch keine Zahlung erhalten.
+  
+Für Zahlungshinweise besuchen Sie bitte die folgende Seite
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+Eine Anmeldebestätigung mit allen Kursinformationen erhalten Sie unmittelbar nach Eingang der vollständigen Kursgebühren.
+
+Danke,
+{!Class__c.Sponsor_Office_Signature__c}

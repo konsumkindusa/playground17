@@ -1,0 +1,15 @@
+Dear {!Contact.Greeting__c} {!Contact.LastName},
+
+Thank you for contacting MathWorks.
+
+The order XXXXXXX has been returned and your credit card will be credited within the next two weeks. The return order number is XXXXXXXX.
+
+Please reply to this email preserving the Reference ID listed below.
+
+Best regards
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

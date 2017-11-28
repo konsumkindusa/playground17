@@ -1,0 +1,15 @@
+Hello {!Case.Contact},
+
+This email is to confirm that I have completed XXXXXXXXXX.
+
+If you need further assistance regarding this request, please reply to this email preserving the Reference ID listed below.
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}
+
+
+EXPORT CONTROL:   MathWorks licensed software is controlled under U.S. Export Administration Regulations.  It is unlawful to export or re-export software contrary to U.S. law or permit the use of software by denied parties.  Software may also be subject to non-U.S. export and import laws and regulations.  It is the licensee’s responsibility to comply with all applicable export and import regulations.

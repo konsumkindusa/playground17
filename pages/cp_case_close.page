@@ -1,0 +1,104 @@
+<apex:page standardController="Case" extensions="cp_CaseControllerExtension" standardStylesheets="true" sidebar="false" showHeader="false" language="{!language}">
+
+<!-- HW 1762123 remove the original style -->
+<!-- 
+<apex:stylesheet value="{!$Resource.MWHeaderStyles}"/>
+<apex:stylesheet value="{!$Resource.MWExternalStyle960}"/>
+<apex:stylesheet value="{!$Resource.MWcreatecasestyles}"/>
+<apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+<apex:includeScript value="{!$Resource.jquery_191}"/>
+<!-- HW 1762123 remove the original style -->
+
+<head>
+    <title>
+      My Service Request - Close Case
+    </title>
+</head>
+
+<apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block">
+        <apex:outputPanel layout="block" id="content_container">
+
+    <h1 class="mwheader">{!$Label.MySR_Title}</h1>
+    <br/>
+    <div class="table_header" style="width:94%"><h3>{!$Label.MySR_Close_Case_Button}</h3></div>
+    <apex:pageBlock mode="maindetail">
+            <apex:pageBlockSection showHeader="false" columns="1">
+            <apex:outputField label="{!$Label.MySR_Case_Number}" value="{!case.CaseNumber}"/> 
+            <apex:outputField label="{!$Label.MySR_Subject}" value="{!case.Subject}"/>            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock mode="edit">
+        <div >
+        {!$Label.close_case_text3}
+        </div>
+        <apex:form >
+        <apex:inputTextArea label="" value="{!caseclosecomment}" rows="8" cols="168" style="width: 99%;resize:none"/>
+               
+        <div style="float:right">
+            <apex:commandButton action="{!closecase}" id="closecase" value="{!$Label.TS_Submit_Button}" styleClass="mwbutton rounded secondary" />
+            <apex:commandButton action="{!closecasecancel}" id="closeCaseCancel" value="{!$Label.TS_Cancel_Button}"  styleClass="mwbutton rounded"/>
+       </div>
+       <br/>
+       <br/>
+       <br/>
+        </apex:form>
+    </apex:pageBlock>
+  
+  <script>
+        
+       /*   
+        $("html body").css("background-color","white");
+        $("html body").css("background-image","none");
+        $("html body").css("border","1px solid #d1d1d1");
+        $("html body").css("border-top","0px solid #d1d1d1");
+        */
+        //$(".mwheader").css("padding-left","30px");
+        
+       /* $(".btn").css("color","#3C3C3C");
+        $(".btn").css("background-image","none");
+        $(".btn").css(" background-color","#33FF00");
+        $(".btn").css("font-size","11px");
+        $(".btn").css("padding","5px 5px");
+        $(".btn").css("font-family","Arial, Helvetica, sans-serif");        
+        $(".btn").css("-moz-border-radius","5px");
+        $(".btn").css("-webkit-border-radius","5px");
+        */
+        //$(".btn").css("border-radius","5px");
+        //$(".btn").css("font-weight","bold");
+        
+        
+       // $(".detailList tbody tr:nth-child(even)").css("background-color","white");
+        /*
+        $(".pbTitle h3").css("font-size","13px");
+        $(".pbTitle h3").css("margin-left","30px");
+        $(".pbTitle h3").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif"); 
+        
+        $(".pbTitle h2").css("font-size","15px");
+        $(".pbTitle h2").css("margin-left","30px");
+        $(".pbTitle h2").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif");
+        $(".pbTitle h2").css("color","#666");
+        */
+        //$(".detailList").css("border-top","1px solid #d6d4d4"); 
+        
+        //$(".bPageBlock .pbBody").css("padding","0px 30px");
+        //$(".bPageBlock").css("margin-bottom","0px");
+        //$(".bPageBlock").css("padding-bottom","0px");
+        
+        $(".labelCol").css("text-align","left");
+        
+   </script>
+   </apex:outputPanel>    
+   </apex:outputPanel>  
+   </apex:outputPanel> 
+   </apex:outputPanel>
+   </div>  
+   </apex:outputPanel> 
+   </apex:outputPanel> 
+   <apex:include pageName="cp_footer" />
+</apex:page>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Case_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Custom field to store the Case Opportunity field id for use in a custom button to create a Case from an Opportunity</inlineHelpText>
+        <label>Case Opportunity</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MySR_Install_Form_Crash_Dump__c</fullName>
+        <externalId>false</externalId>
+        <label>MySR Install Form Crash Dump</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MySR_Install_Form_Installer_Log__c</fullName>
+        <externalId>false</externalId>
+        <label>MySR Install Form Installer Log</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Primary_Contact__c</fullName>
+        <description>Custom field to store the Opportunity Primary Contact field id for use in a custom button to create an Opportunity from a Contact</description>
+        <externalId>false</externalId>
+        <label>Opportunity Primary Contact</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>URL Parameters</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,48 @@
+<apex:component access="global" controller="EnrollmentConfirmationController"   language="{!language}"> 
+  
+  <apex:attribute access="global" assignTo="{!enrollReqId}"  name="enrollmentRequestId" type="String" required="true" description="enrollmentRequestId"/>
+  <apex:attribute access="global" assignTo="{!lang}" name="langu" type="String" required="true" description="enrollmentRequestId"/>
+  <html>
+    <style> 
+        #Text {
+                    text-align: left;
+                    padding: 7cm 0.5cm 2cm 6cm;                    
+                     width: auto;
+                    height: 400px;
+                    position: fixed;                    
+                    color:black;
+                    font-size: 15px;
+                    font-family:"Arial Unicode MS";
+                    margin-left: 40px;                    
+                     
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            test();
+        }
+    </script>
+    
+     <div id="Text" >
+    
+  <apex:outputText value="{!$Label.CP_EnrollTrainingConf_1}" escape="false" >
+  <apex:param value="{!EnrollName}" />
+  <apex:param value="{!enrollReq.Enterprise_Training_Agreement__r.Account_Name__r.Name}" />
+  <apex:param value="{!RelatedEtaCourses}" />
+  <apex:param value="{!termEndDate}" />
+  <apex:param value="{!MatlabAcademyUrl}" />  
+  <apex:param value="{!FAQPageUrl}" />
+  </apex:outputText>
+    
+  <apex:outputText value="{!$Label.CP_EnrollTrainingConf_2}" escape="false" >
+  <apex:param value="{!enrollReq.Enterprise_Training_Agreement__r.Sponsor_Office__r.Phone__c}" />
+  <apex:param value="{!enrollReq.Enterprise_Training_Agreement__r.Sponsor_Office__r.Email__c}" />
+  <apex:param value="{!TrainingUrl}" />
+  <apex:param value="{!enrollReq.Enterprise_Training_Agreement__r.Sponsor_Office__r.Signature__c}" />
+  </apex:outputText>
+  
+  </div>
+ 
+  </html>
+  
+</apex:component>

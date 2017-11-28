@@ -1,0 +1,28 @@
+AE/PE Support Request assigned to:
+       {!Project_Team_Member__c.Resource__c}  
+       There could be additional technical resources assigned to this request.  Please be sure to click the Project link below to view all team members assigned.
+
+Requester:
+       {!Project_Team_Member__c.Requester__c}  {!Project_Team_Member__c.Requester_Phone__c}
+
+Customer:
+       Account: {!MW_Project__c.Contact_Account__c}
+       Location: {!MW_Project__c.Location_of_Request__c}
+       Primary Contact: {!MW_Project__c.Customer_Contact__c}
+       
+Proposed Date and Time: 
+       {!MW_Project__c.Expected_Date_Time__c}
+
+Request Details:
+       {!MW_Project__c.Application_of_Interest__c}
+
+Link to Project: 
+       {!MW_Project__c.Name} 
+       {!MW_Project__c.Project_Link__c}
+       If the link above does not open a Salesforce session automatically, copy-and-paste this URL into a new browser window.
+
+Desired Outcome:
+       {!MW_Project__c.Outcome__c}
+
+Sales or Marketing  Requester: 
+       Please, ensure that you contact the assignees above to discuss the details of the project.

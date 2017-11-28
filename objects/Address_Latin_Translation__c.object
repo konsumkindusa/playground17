@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Used to manage the list of countries with state/provinces that should be translated and saved in the Latin fields on the Account, Contact and Lead objects.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <description>ISO country code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Two character ISO Code of Country (Example: CN)</inlineHelpText>
+        <label>Country Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Full Name of Country (Example: China)</inlineHelpText>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Code__c</fullName>
+        <description>State code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Two character ISO State Code according to Salesforce State/Country Picklists (Example: 11)</inlineHelpText>
+        <label>State Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Latin__c</fullName>
+        <description>State in latin</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full Latin Name of the State/Province - will be used to translate the Local value and store in the  Latin fields (Example: Beijing)</inlineHelpText>
+        <label>State Latin</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Local__c</fullName>
+        <description>State in local language</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full Local Name of the State/Province - will be used to translate the Local value and store in the Latin fields (Example: 北京)</inlineHelpText>
+        <label>State Local</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Address Latin Translation</label>
+    <visibility>Public</visibility>
+</CustomObject>

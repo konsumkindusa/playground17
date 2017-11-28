@@ -1,0 +1,20 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+unsere per Email versandte Rechnung zu Ihrer aktuellen Bestellung wurde zurückgewiesen, da möglicherweise der Hostname und/oder die IP-Adresse des Absenders nicht akzeptiert wurden.
+
+Unsere systemgenerierten Emails werden von einem Dienstleister versendet. Daher bitten wir Sie diese Firma mit den nachfolgenden Daten in Ihrem System als zugelassenen, sicheren Absender zu hinterlegen.
+
+dataintensity.com
+IP-Adresse: 216.75.149.247
+
+Im Anhang erhalten Sie erneut unsere Rechnung mit der Bitte um Bearbeitung.
+
+Bei Antworten auf diese Nachricht, belassen Sie bitte die unten aufgeführte Reference ID in der Email, damit eine direkte Zuordnung zu diesem Vorgang erfolgen kann.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

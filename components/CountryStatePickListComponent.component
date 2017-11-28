@@ -1,0 +1,71 @@
+<apex:component controller="CountryStatePickListController">
+
+    <apex:attribute name="showStates" type="Boolean"  description="For showing country and states picklist" default="true" />
+    <apex:attribute name="CountryWithStates" type="Boolean"  description="For showing Country having states picklist" default="false"/>
+    <apex:attribute name="RequiredCountry" type="Boolean"  description="For Country required" default="false"/>
+    <apex:attribute name="RequiredState" type="Boolean"  description="For State required" default="false"/>
+    <apex:attribute type="ComponentData" name="compData" required="true" description="The data going in and out" assignTo="{!cData}"/>
+    <apex:attribute name="selectedCountryEdit" type="String"  description="Selected country for edit" required="false" assignTo="{!countrySelectedEdit}"/>
+    <apex:attribute name="selectedStateEdit" type="String"  description="Selected state for edit" required="false" />
+    
+    <apex:attribute name="showCountryNamesWithCodes" type="boolean"  description="For showing country long names with country codes" required="false" default="false" assignTo="{!showCountryLongNamesWithCode}"/>
+    
+
+    <form id="theForm">
+        <apex:pageBlock id="pbMain" >
+             <apex:pageBlockSection columns="1" id="pbStateCountry" showHeader="false" title="Information">
+                       
+                 <apex:pageBlockSectionItem rendered="{!!CountryWithStates}"> 
+                  <apex:outputLabel value="{!$Label.Country_Label}" />
+                   <apex:outputPanel styleClass="requiredInput" layout="block">
+                   <apex:outputPanel styleClass="requiredBlock" layout="block" rendered="{!RequiredCountry}" /> 
+                   <apex:selectList size="1" onChange="showStatePickListAF(this.value)" required="{!RequiredCountry}" value="{!selectedCountryEdit}">
+                       <apex:selectOptions value="{!CountryList}" />
+                   </apex:selectList> 
+                   </apex:outputPanel>                   
+                 </apex:pageBlockSectionItem>
+                 
+                 <apex:pageBlockSectionItem REndered="{!CountryWithStates}">                
+                   <apex:outputLabel value="{!$Label.Country_Label}" />
+                      <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block" rendered="{!RequiredCountry}" /> 
+                   <apex:selectList size="1"  required="{!RequiredCountry}" value="{!selectedCountryEdit}"  onChange="showStatePickListAF(this.value)">
+                       <apex:selectOptions value="{!CountryRequiringStateList}" />
+                   </apex:selectList>   
+                   </apex:outputPanel>                 
+                 </apex:pageBlockSectionItem>
+                 
+                 <apex:pageBlockSectionItem rendered="{!IF(showStates || CountryWithStates,true,false)}">  
+                    <apex:outputLabel value="{!$Label.State_Label}" />
+                     <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block" rendered="{!RequiredState}" /> 
+                    <apex:selectList disabled="{!disableState}" size="1" id="statePageBlockSectionId"  onChange="getStateCodeName(this.value)" required="{!RequiredState}" value="{!selectedStateEdit}">
+                        <apex:selectOptions value="{!StateList}" />
+                    </apex:selectList>   
+                   </apex:outputPanel>                   
+                 </apex:pageBlockSectionItem>  
+                 
+            <apex:actionFunction name="showStatePickListAF"  reRender="statePageBlockSectionId" action="{!getCountryCode}" status="counterStatus">
+            <apex:param name="countrySelected" assignTo="{!countrySelected}" value="" />
+            </apex:actionFunction>    
+            
+             <apex:actionFunction name="getStateCodeName" reRender="ok"  action="{!getStateCode}" status="counterStatus">
+            <apex:param name="stateSelected" assignTo="{!stateSelected}" value="" />
+            </apex:actionFunction> 
+            
+            <apex:actionstatus id="counterStatus">
+                            <apex:facet name="start">
+                                <div class="waitingSearchDiv" id="el_loading"
+                                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                                    <div class="waitingHolder"
+                                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                                        <img class="waitingImage" src="/img/loading.gif"
+                                            title="Please Wait..." /> <span class="waitingDescription">Processing.....</span>
+                                    </div>
+                                </div>
+                            </apex:facet>
+             </apex:actionstatus>          
+          </apex:pageBlockSection>
+        </apex:pageBlock>
+     </form>
+</apex:component>

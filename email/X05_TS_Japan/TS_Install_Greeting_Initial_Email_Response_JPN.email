@@ -1,0 +1,20 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName}様 
+
+いつもお世話になっております。MathWorks の {!User.Email_Template_Signature__c} と申します。 お問い合わせ頂いておりましたサービスリクエスト（“{!Case.Subject}", Case #{!Case.CaseNumber}）に関して、ご連絡いたします。 
+
+
+このサービスリクエストに対して追加の情報をお知らせいただく場合には、下記に記載されている REFERENCE ID を削除せず、本メールにご返信ください。これにより、弊社システム内で自動的に以前のお問い合わせ内容と紐付けされます。 
+
+新規の技術的ご質問がございましたら、下記 URL よりお問い合わせフォームをご利用いただけます。ご活用頂けましたら幸いです。 
+http://www.mathworks.com/support/servicerequests/create.html 
+
+以上、宜しくお願い致します。 
+
+MathWorks テクニカルサポート窓口 
+{!User.Email_Template_Signature__c} 
+
+テクニカルサポートメインページ: 
+http://jp.mathworks.com/support/ 
+File Exchange and MATLAB Answers: 
+http://www.mathworks.com/matlabcentral/

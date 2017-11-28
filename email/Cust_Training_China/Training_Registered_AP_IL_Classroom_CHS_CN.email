@@ -1,0 +1,33 @@
+尊敬的 {!Contact.Name} :
+
+感谢您与 The MathWorks 培训部联系。
+
+本电子邮件是提醒您的 {!Enrollment__c.Class__c}  入学注册只有在我们收到您的全额付款后才会予以确认。
+
+课程名称：{!Enrollment__c.Class__c} 
+日期：{!Enrollment__c.Display_Start_Date__c}至{!Enrollment__c.Display_End_Date__c}
+地点：{!Class__c.State__c} ，{!Class__c.City__c}
+时间：{!Class__c.Start_Time__c} - {!Class__c.End_Time__c} 
+
+为确保席位，请您务必在开课前全额付款。请注意网站上所列的课程价格并未含税，税费为培训费用的6%。请您付费时务必付上课程价格+6%的税费。
+
+付款信息：
+
+
+
+将人民币汇至如下账号，注明报价单编号或发票金额和发票日期提交给下面的银行：
+
+账户名称： 迈斯沃克软件 (北京) 有限公司
+
+银行名称：中国银行北京科学城分行
+
+银行账户：341556023546
+
+
+
+如果通过支票支付，抬头请填写"迈斯沃克软件（北京）有限公司". 请将支票邮寄至：
+
+{!Class__c.Sponsor_Office_Signature__c}
+
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

@@ -1,0 +1,21 @@
+{!Contact.LastName} {!Contact.FirstName}님께,
+
+안녕하십니까?
+고객님의 수업 취소를 확인하여 드리겠습니다.
+
+수업명 : {!Class__c.Course__c}
+일자 :  {!Enrollment__c.Start_Date__c} to {!Enrollment__c.End_Date__c} 
+장소 :  {!Class__c.City__c}
+
+
+귀하께서 이 수업에 대한 수강료를 이미 결제하셨다면, 결제하신 금액과 동일하거나 그 이하의 다른 수업으로 대체하실 수 있으며 환불은 불가하다는 점 양해를 부탁드립니다. 
+
+문의사항이 있으시면 02-6006-5162 로 전화주시거나 training@mathworks.co.kr로 메일을 보내주시기 바랍니다.
+
+
+감사합니다.
+매스웍스코리아 교육서비스팀
+서울시 강남구 삼성동 170-9 덕명빌딩 13층
+Training@mathworks.co.kr
+연락처) 02-6006-5163
+팩스 ) 02-6006-5199

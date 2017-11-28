@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Product Support Package is populated from Informatica and sourced from Product Master.
+
+It contains Product Support Package information for Versioned Software Products</description>
+    <mobileReady>false</mobileReady>
+    <motif>Custom13: Box</motif>
+</CustomTab>

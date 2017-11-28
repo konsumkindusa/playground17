@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Associate LEU</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - License Change - Associate LEU</name>
+    <style>none</style>
+    <subject>License End User Assigned</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When an A/B partner requests Testing Licenses</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Regression Testing Request - More info needed</name>
+    <style>none</style>
+    <subject>Regression Testing License Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

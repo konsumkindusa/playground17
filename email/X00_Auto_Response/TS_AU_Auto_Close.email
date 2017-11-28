@@ -1,0 +1,25 @@
+Dear {!Contact.FirstName},
+
+I am writing in reference to your Service Request “{!Case.Subject}”, Case# {!Case.CaseNumber}.  
+
+I recently requested additional information from you but have not yet received a response.  At this time I assume that you no longer need our assistance for this service request. 
+
+However, should you still need assistance with this service request, please reply to this email with the requested information, preserving the Reference ID listed below and I would be happy to reopen your service request.
+
+If you have a new technical support question, please submit a new request here
+http://www.mathworks.com/support/servicerequests/index.html  
+
+
+
+Thank you, 
+
+Technical Support
+MathWorks Australia Pty Ltd
+Phone:  + 61 (0)2 8669 4700
+Fax:      + 61 (0)2 8669 4710
+Web: www.mathworks.com.au
+
+
+This is an auto generated e-mail
+
+{!Case.Thread_Id}

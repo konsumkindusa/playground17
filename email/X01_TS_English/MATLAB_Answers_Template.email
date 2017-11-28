@@ -1,0 +1,22 @@
+Hi {!Contact.FirstName},
+
+My name is {!Case.OwnerFirstName} and I work at MathWorks.
+
+I am writing in reference to our communication on MATLAB Answers {!Case.Subject}
+
+<ADD THIS MANUALLY: Link to the post>
+
+I would like to investigate the issue further and work with you to resolve it. Hence I am creating a technical support case for you and will be in touch with you through the case.
+
+Please provide me with the following information to better assist you:
+1) A detailed description of the issue you are encountering.
+
+2) The exact error messages you are receiving, if any.
+
+3) The precise steps needed to reproduce the issue.
+
+4) Any relevant files, both code and data.
+
+You can view your support case via the ‘My Service Requests’ page which is accessible at http://www.mathworks.com/support/servicerequests/index.html 
+
+{!User.Email_Template_Signature__c}

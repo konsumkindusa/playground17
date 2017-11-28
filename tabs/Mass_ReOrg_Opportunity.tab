@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>UI to run mass opportunity reorg</description>
+    <label>Mass ReOrg Opportunity</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom7: Square</motif>
+    <page>Opportunity_Mass_Reorg</page>
+</CustomTab>

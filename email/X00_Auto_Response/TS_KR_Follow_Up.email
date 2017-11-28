@@ -1,0 +1,16 @@
+{!Contact.LastName}{!Contact.FirstName}님, 안녕하세요. 
+
+문의하신 '{!Case.Subject}'에 대한 기술 지원 케이스 번호 {!Case.CaseNumber}에 대하여 이메일 드립니다.
+
+최근에 추가 정보를 요청 드렸지만 아직 회신을 받지 못하였습니다. 여전히 이 케이스에 대한 도움이 필요한 경우, 아래의 참조 ID를 유지하여 요청 드린 정보와 함께 회신하여 주시기 바랍니다.
+
+향후 기술지원 시 http://www.mathworks.co.kr/support/contact_us/index.html 의 주소로 요청하여 주시거나 매트랩 상단 Home 툴스트립의 Request Support 버튼을 통하여 요청하여 주시면 보다 빠른 지원이 가능합니다.
+
+감사합니다. 
+
+MathWorks Technical Support 
+www.mathworks.com 
+
+본 이메일은 자동 생성된 이메일 입니다.
+
+{!Case.Thread_Id}

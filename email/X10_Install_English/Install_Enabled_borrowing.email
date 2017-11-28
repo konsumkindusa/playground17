@@ -1,0 +1,9 @@
+Borrowing is now enabled on license {!Case.License__c}.
+
+You will need to update your license file to use license borrowing. A support article for this procedure can be found on the MathWorks website:
+
+https://www.mathworks.com/matlabcentral/answers/102901
+
+For users, the best way to borrow is to enable the borrowing UI within MATLAB. A support article is available for this as well:
+
+https://www.mathworks.com/matlabcentral/answers/91954

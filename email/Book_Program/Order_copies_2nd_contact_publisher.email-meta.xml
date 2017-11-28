@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send this template to follow up on first request of a title from a publisher. Asks again for copies.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Order copies 2nd contact publisher</name>
+    <style>none</style>
+    <subject>Promotional Copies Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

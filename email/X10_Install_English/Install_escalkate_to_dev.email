@@ -1,0 +1,50 @@
+Hi
+
+We have a customer who has a problem with <> 
+The question that needs to be answered:
+<Include a clear question that you are looking to answer>
+<Make sure email subject is specific to the question>
+
+1) Description of problem:
+<Provide details about the question>
+<Describe what the customer is trying to accomplish>
+<Include warning/error messages and/or crash dump snippet>
+
+2) Reproduction steps:
+<Include clear reproduction steps>
+
+3) What TS and the customer have already tried:
+<Include debugging steps and results>
+<If applicable, include Gecks or Solution numbers>
+<No files? -- Remove the links below>
+<Ensure the Product and Release below properly reflect the question>
+
+If there are files associated with this case, all the files can be found at: 
+Windows Path:
+\\mathworks\home\edgcases\{!Case.CaseNumber}
+UNIX Path:
+/mathworks/home/edgcases/{!Case.CaseNumber}
+
+Customer details are:
+Customer Name: {!Contact.FirstName} {!Contact.LastName}
+Company: {!Account.Name}, {!Account.BillingState} {!Account.BillingCountry}
+Platform: {!Case.Platform__c}
+OS: {!Case.OS__c}
+Product: {!Case.Product_Lookup__c}
+Release: {!Case.Release__c}
+
+
+Case details report (for non-SalesForce users):
+http://busobj.mathworks.com/BOE/OpenDocument/opendoc/openDocument.jsp?sIDType=CUID&iDocID=AQ1Q_CdZZ_tNmXbNovwlrLw&lsSCase_Number={!Case.CaseNumber}
+
+For SalesForce Users only
+Link to case in SalesForce: {!Case.Link}
+
+Thanks,
+{!Case.OwnerFirstName}
+{!Case.OwnerPhone}
+
+
+IMPORTANT: We intentionally use support@mathworks.com for the Reply To address. Keeping the Reference ID intact ensures that your comments are automatically entered into this Case in SalesForce. Your email will be sent directly to the sender of this email since they own the Case in SalesForce.
+
+[DEVID: {!Case.CaseNumber}]

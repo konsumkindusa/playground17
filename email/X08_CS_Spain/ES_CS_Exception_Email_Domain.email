@@ -1,0 +1,16 @@
+Estimado/a {!Case.Contact}
+
+Gracias por contactar con MathWorks.
+
+Usted ha intentado cambiar su dirección de email a través de su Cuenta MathWorks. Sin embargo, usted está asociado actualmente a una licencia perteneciente a XXXX.
+
+Todos los usuarios asociados a una licencia deben tener una dirección de email relacionada a su empresa o universidad. Debido a que el dueño de la licencia es su empresa o universidad, su email debe reflejar su relación con ese organismo. Por esta razón, su cuenta continuará reflejando la misma información original.    
+
+No dude en contactarnos si tiene alguna otra pregunta enviando un email a service@mathworks.com.     
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

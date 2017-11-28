@@ -1,0 +1,10 @@
+<apex:page controller="cp_Case_new_ControllerExtension" standardStylesheets="false" sidebar="false" showHeader="false">
+    <script>
+        if ('{!$CurrentPage.parameters.id}' == ''){
+            window.parent.location.href = '/apex/cp_case_new_forwardemail_notification?de={!$CurrentPage.parameters.de}&cc={!$CurrentPage.parameters.CC}'; 
+        }
+        else{
+                window.top.location.href = '/apex/cp_case_detail?id={!$CurrentPage.parameters.id}&isnew=yes&cc={!$CurrentPage.parameters.CC}';
+        }
+    </script>
+</apex:page>

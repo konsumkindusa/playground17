@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>true</default>
+        <label>Open</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>To Call</fullName>
+        <default>false</default>
+        <label>To Call</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>To Call Working</fullName>
+        <default>false</default>
+        <label>To Call Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Converted</fullName>
+        <default>false</default>
+        <label>Closed - Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Unconverted</fullName>
+        <default>false</default>
+        <label>Closed - Unconverted</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

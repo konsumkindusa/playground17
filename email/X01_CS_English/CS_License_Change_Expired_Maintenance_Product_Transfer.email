@@ -1,0 +1,16 @@
+Hello {!Case.Contact}, 
+
+Thank you for contacting MathWorks. The reason you were unable to move the XXXX Toolbox from unassigned on your Master License back to License XXXXX, is because the Toolbox has lapsed in Maintenance. Our policies indicate that products can only be moved if they are current on Maintenance. Because this recent transfer was made in error, and you contacted MathWorks Customer Service right away, we were able to undo this product move for you. However, please keep our policy in mind for future product transfers you make between Licenses. 
+
+The XXXX Toolbox has been moved from unassigned on Master XXXX back to License XXXX. If you log into your MathWorks Account and go into the License Center at www.mathworks.com/licensecenter you will see the updated changes to the Licenses. 
+
+A new Activation is required for all R2008a or newer releases on all machines affected by this Product Transfer.  Click on this link to learn more about activation (Log in required): www.mathworks.com/support/activation/index.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

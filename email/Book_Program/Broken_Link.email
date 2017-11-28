@@ -1,0 +1,20 @@
+{!Contact.Email} 
+Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName}, 
+
+In regards to your book {!Book_Project__c.Book_Title__c}, the MathWorks Book Program has discovered that the link to your supplemental MATLAB and/or Simulink files on the MathWorks Book Program Web page is broken.  <insert companion software broken link>
+
+We kindly ask that you please provide us with a new URL that will direct customers to your supplemental files within the next week. If we do not hear from you we may need to remove the  promotional web page until this is resolved. 
+
+If your book is out of print or a new edition is available, please let us know.
+
+Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

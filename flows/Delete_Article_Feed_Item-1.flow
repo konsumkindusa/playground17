@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Delete Article Feed Item {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Delete Article Feed Item</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_article_Feed_Item</name>
+        <label>Delete Article Feed Item</label>
+        <locationX>425</locationX>
+        <locationY>175</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Var_ArticleFeedId</elementReference>
+            </value>
+        </filters>
+        <object>FAQ__Feed</object>
+    </recordDeletes>
+    <startElementReference>Delete_article_Feed_Item</startElementReference>
+    <variables>
+        <name>Var_ArticleFeedId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>

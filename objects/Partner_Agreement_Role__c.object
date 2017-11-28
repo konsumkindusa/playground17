@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to capture the contacts and their specific role in a partner agreement.  A contact may have many roles across many agreements.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <description>Master Detail to contact record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to a contact record</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Partner Agreements</relationshipLabel>
+        <relationshipName>Partner_Agreement_Roles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Partner_Agreement__c</fullName>
+        <description>used to related the role record to a partner agreement</description>
+        <externalId>false</externalId>
+        <label>Partner Agreement</label>
+        <referenceTo>Partner_Agreement__c</referenceTo>
+        <relationshipLabel>Partner Agreement Contact Roles</relationshipLabel>
+        <relationshipName>Partner_Agreement_Roles</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>list of potential roles a contact may play</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>MKTG</fullName>
+                    <default>false</default>
+                    <label>MKTG</label>
+                </value>
+                <value>
+                    <fullName>Reference</fullName>
+                    <default>false</default>
+                    <label>Reference</label>
+                </value>
+                <value>
+                    <fullName>Corp MKTG</fullName>
+                    <default>false</default>
+                    <label>Corp MKTG</label>
+                </value>
+                <value>
+                    <fullName>SSL Report</fullName>
+                    <default>false</default>
+                    <label>SSL Report</label>
+                </value>
+                <value>
+                    <fullName>Prerelease</fullName>
+                    <default>false</default>
+                    <label>Prerelease</label>
+                </value>
+                <value>
+                    <fullName>Corp MKTG EMEA</fullName>
+                    <default>false</default>
+                    <label>Corp MKTG EMEA</label>
+                </value>
+                <value>
+                    <fullName>Corp MKTG EMEA, INDIA</fullName>
+                    <default>false</default>
+                    <label>Corp MKTG EMEA, INDIA</label>
+                </value>
+                <value>
+                    <fullName>Corp MKTG WW</fullName>
+                    <default>false</default>
+                    <label>Corp MKTG WW</label>
+                </value>
+                <value>
+                    <fullName>T&amp;C Contact</fullName>
+                    <default>false</default>
+                    <label>T&amp;C Contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SSL_Survey_Response_Date__c</fullName>
+        <description>Used to capture the date of the survey response. Utilized in workflow to make the send SSL Survey checkbox null. This field will be nulled based on the Send SSL Survey being not null.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be nulled based on the Send SSL Survey being not null.</inlineHelpText>
+        <label>SSL Survey Response Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Send_SSL_Renewal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to trigger SSL renewal email workflows.  Should not be exposed in the UI except for testing OR to defined partners / connection users..  checked by manual or data loader operation and unchecked by workflow as a result of an update from GetFeedback.  This field will be updated to null via workflow rules when the SSL survey response date field is not null</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be updated to null via workflow rules when the SSL survey response date field is not null</inlineHelpText>
+        <label>Send SSL Renewal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_T_C_Renewal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to trigger renewal email workflows.  Should not be exposed in the UI except for testing OR to defined partners / connection users..  checked by manual or data loader operation and unchecked by workflow as a result of an update from GetFeedback.</description>
+        <externalId>false</externalId>
+        <label>Send T&amp;C Renewal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Siebel ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>T_C_Survey_Response_Date__c</fullName>
+        <description>Used to capture the date of the survey response.  Utilized in workflow to make the send T&amp;C Survey checkbox null.  This field will be nulled based on the Send T&amp;C Survey being not null.</description>
+        <externalId>false</externalId>
+        <label>T&amp;C Survey Response Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Partner Agreement Role</label>
+    <nameField>
+        <displayFormat>PAR-{000000}</displayFormat>
+        <label>Partner Agreement Role</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Partner Agreement Roles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

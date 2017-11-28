@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to teams requesting softwarwe for Smart Model Car Contest competition</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SC - Smart Model Car Contest 2017</name>
+    <style>none</style>
+    <subject>MATLAB &amp; Simulink Software for Smart Model Car Contest</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

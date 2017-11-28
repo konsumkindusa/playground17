@@ -1,0 +1,2438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to capture various records to support the function of the Social Mission team</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.BillingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.BillingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT (Account__r.BillingStateCode)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Zip__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Zip</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Organization that is benefiting from the Social Action. E.g. organization that receives money from a-thon match</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Organization that is benefiting from the Social Action. E.g. organization that receives money from a-thon match</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Social Actions</relationshipLabel>
+        <relationshipName>Social_Actions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Requested__c</fullName>
+        <description>Monetary amount requested from external organization (e.g. amount requested on an application). Leave blank organization did not request a specific amount. This field does NOT apply to internal/staff matching requests.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Monetary amount requested from external organization (e.g. amount requested on an application). Leave blank organization did not request a specific amount. This field does NOT apply to internal/staff matching requests.</inlineHelpText>
+        <label>Amount Requested</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Requested_vs_Mathworks_awarded__c</fullName>
+        <description>Difference between amount requested by organization and amount awarded by MathWorks</description>
+        <externalId>false</externalId>
+        <formula>Mathworks_Monetary_Contribution__c - Amount_Requested__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Difference between amount requested by organization and amount awarded by MathWorks</inlineHelpText>
+        <label>Amount Requested vs. MathWorks Awarded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>Category the Action primarily falls into. Selection is based on &quot;Type&quot;.  Award categories = a-thon, grants, sponsorships. Initiatives categories = staff collection drives, volunteer, STEM.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Category the Action primarily falls into. Selection is based on &quot;Type&quot;.  Award categories = a-thon, grants, sponsorships. Initiatives categories = staff collection drives, volunteer, STEM.</inlineHelpText>
+        <label>Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A-Thon</fullName>
+                    <default>false</default>
+                    <label>A-Thon</label>
+                </value>
+                <value>
+                    <fullName>Breakfast Tables</fullName>
+                    <default>false</default>
+                    <label>Breakfast Tables</label>
+                </value>
+                <value>
+                    <fullName>Charitable Drives</fullName>
+                    <default>false</default>
+                    <label>Charitable Drives</label>
+                </value>
+                <value>
+                    <fullName>Communications</fullName>
+                    <default>false</default>
+                    <label>Communications</label>
+                </value>
+                <value>
+                    <fullName>Community Event</fullName>
+                    <default>false</default>
+                    <label>Community Event</label>
+                </value>
+                <value>
+                    <fullName>Community Funding</fullName>
+                    <default>false</default>
+                    <label>Community Funding</label>
+                </value>
+                <value>
+                    <fullName>Community Grants</fullName>
+                    <default>false</default>
+                    <label>Community Grants</label>
+                </value>
+                <value>
+                    <fullName>Company/Social Mission</fullName>
+                    <default>false</default>
+                    <label>Company/Social Mission</label>
+                </value>
+                <value>
+                    <fullName>Corporate Communications</fullName>
+                    <default>false</default>
+                    <label>Corporate Communications</label>
+                </value>
+                <value>
+                    <fullName>Corporate Sponsorship</fullName>
+                    <default>false</default>
+                    <label>Corporate Sponsorship</label>
+                </value>
+                <value>
+                    <fullName>Curriculum Development</fullName>
+                    <default>false</default>
+                    <label>Curriculum Development</label>
+                </value>
+                <value>
+                    <fullName>Education Marketing</fullName>
+                    <default>false</default>
+                    <label>Education Marketing</label>
+                </value>
+                <value>
+                    <fullName>End of Year Donations</fullName>
+                    <default>false</default>
+                    <label>End of Year Donations</label>
+                </value>
+                <value>
+                    <fullName>Global Relief</fullName>
+                    <default>false</default>
+                    <label>Global Relief</label>
+                </value>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                    <label>HR</label>
+                </value>
+                <value>
+                    <fullName>Other Funding</fullName>
+                    <default>false</default>
+                    <label>Other Funding</label>
+                </value>
+                <value>
+                    <fullName>Raffle</fullName>
+                    <default>false</default>
+                    <label>Raffle</label>
+                </value>
+                <value>
+                    <fullName>Scholarships</fullName>
+                    <default>false</default>
+                    <label>Scholarships</label>
+                </value>
+                <value>
+                    <fullName>STEM</fullName>
+                    <default>false</default>
+                    <label>STEM</label>
+                </value>
+                <value>
+                    <fullName>Student Competitions</fullName>
+                    <default>false</default>
+                    <label>Student Competitions</label>
+                </value>
+                <value>
+                    <fullName>Volunteer</fullName>
+                    <default>false</default>
+                    <label>Volunteer</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>A-Thon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Community Funding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Community Grants</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Corporate Sponsorship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>End of Year Donations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Global Relief</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Other Funding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Scholarships</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Awards</controllingFieldValue>
+                <controllingFieldValue>Events</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Events</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Community Event</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Events</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <valueName>Company/Social Mission</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Events</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>STEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Events</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>Volunteer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Events</controllingFieldValue>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>Breakfast Tables</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>Charitable Drives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>Communications</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <valueName>Corporate Communications</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <valueName>Curriculum Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <valueName>Education Marketing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>Green</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <valueName>HR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Initiatives</controllingFieldValue>
+                <valueName>Raffle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry</controllingFieldValue>
+                <controllingFieldValue>Not Social Mission</controllingFieldValue>
+                <valueName>Student Competitions</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Last Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Primary contact you work with for this specific Social Action. Contact can be internal or external.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Primary contact you work with for this specific Social Action. Contact can be internal or external.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Social Actions</relationshipLabel>
+        <relationshipName>Social_Actions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_is_MW_Staff__c</fullName>
+        <description>Check mark = contact is internal staff member (automatically populated)</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Employee_Flag__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Check mark = contact is internal staff member (automatically populated)</inlineHelpText>
+        <label>Contact is MW Staff</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Count_of_Volunteers__c</fullName>
+        <description>Count of MathWorks volunteers participating in this Social Action. To track volunteers, enter contact(s) in the &quot;Social Engagements&quot; section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of MathWorks volunteers participating in this Social Action. To track volunteers, enter contact(s) in the &quot;Social Engagements&quot; section.</inlineHelpText>
+        <label>Count of Volunteers</label>
+        <summaryForeignKey>Social_Engagement__c.Social_Action__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Currency__c</fullName>
+        <description>capture the currency that is awarded for a Social Action</description>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>true</default>
+                    <label>USD</label>
+                </value>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>false</default>
+                    <label>EUR</label>
+                </value>
+                <value>
+                    <fullName>GBP</fullName>
+                    <default>false</default>
+                    <label>GBP</label>
+                </value>
+                <value>
+                    <fullName>AUD</fullName>
+                    <default>false</default>
+                    <label>AUD</label>
+                </value>
+                <value>
+                    <fullName>JPY</fullName>
+                    <default>false</default>
+                    <label>JPY</label>
+                </value>
+                <value>
+                    <fullName>INR</fullName>
+                    <default>false</default>
+                    <label>INR</label>
+                </value>
+                <value>
+                    <fullName>CHF</fullName>
+                    <default>false</default>
+                    <label>CHF</label>
+                </value>
+                <value>
+                    <fullName>CNY</fullName>
+                    <default>false</default>
+                    <label>CNY</label>
+                </value>
+                <value>
+                    <fullName>KRW</fullName>
+                    <default>false</default>
+                    <label>KRW</label>
+                </value>
+                <value>
+                    <fullName>SEK</fullName>
+                    <default>false</default>
+                    <label>SEK</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_of_Request__c</fullName>
+        <description>Date that the initial request was received.</description>
+        <externalId>false</externalId>
+        <label>Date of Request</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Details of the award, program, or event. If Social Action is created by inbound email, contents of the email will be displayed here as a default. OK to delete/update as appropriate.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Details of the award, program, or event. If Social Action is created by inbound email, contents of the email will be displayed here as a default. OK to delete/update as appropriate.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>E2AEmailCount__c</fullName>
+        <description>Count of New/Unread emails associated to the Social Action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of New/Unread emails associated to the Social Action</inlineHelpText>
+        <label>E2AEmailCount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>Depends on the situation and when the action should be recognized. E.g.:   Community Grants = date grant is approved;  Corporate Sponsorship = date sponsorship term/agreement ends  A-thons=date A-thon request is approved; Volunteer activity=date of event</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Depends on the situation and when the action should be recognized. E.g.:   Community Grants = date grant is approved;  Corporate Sponsorship = date sponsorship term/agreement ends  A-thons=date A-thon request is approved; Volunteer activity=date of event</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Term__c</fullName>
+        <description>Converts the End Date to quarter and year recognized</description>
+        <externalId>false</externalId>
+        <formula>CASE(YEAR(End_Date__c ), 
+2007, &quot;2007&quot; , 
+2008, &quot;2008&quot;, 
+2009, &quot;2009&quot;, 
+2010, &quot;2010&quot;, 
+2011, &quot;2011&quot;, 
+2012, &quot;2012&quot;, 
+2013, &quot;2013&quot;, 
+2014, &quot;2014&quot;, 
+2015, &quot;2015&quot;, 
+2016, &quot;2016&quot;, 
+2017, &quot;2017&quot;, 
+2018, &quot;2018&quot;, 
+2019, &quot;2019&quot;, 
+2020, &quot;2020&quot;, 
+&quot;&quot;)
+
+&amp; &quot;-&quot; 
+
+&amp;CASE(MONTH( End_Date__c), 
+1, &quot;Q1&quot; , 
+2, &quot;Q1&quot;, 
+3, &quot;Q1&quot;, 
+4, &quot;Q2&quot;, 
+5, &quot;Q2&quot;, 
+6, &quot;Q2&quot;, 
+7, &quot;Q3&quot;, 
+8, &quot;Q3&quot;, 
+9, &quot;Q3&quot;, 
+10, &quot;Q4&quot;, 
+11, &quot;Q4&quot;, 
+12, &quot;Q4&quot;, 
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the End Date to quarter and year recognized</inlineHelpText>
+        <label>End Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Hours__c</fullName>
+        <description>track the number of hours the Event is</description>
+        <externalId>false</externalId>
+        <inlineHelpText>track the number of hours the Event is</inlineHelpText>
+        <label>Event Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Program_Name__c</fullName>
+        <description>Working title/name given to the Action. E.g. Museum of Science 2016-2017 Partnership, Marketing Volunteer Event at Natick Farm 5/1/2017</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Working title/name given to the Action. E.g. Museum of Science 2016-2017 Partnership, Marketing Volunteer Event at Natick Farm 5/1/2017</inlineHelpText>
+        <label>Event/Program Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MIgration_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used to facilitate initial data migration of Social Actions and related records.  This is used to store a foreign key and should not be displayed on a page layout.  This may be deleted in the future after checking with CRM team on requirement to keep the field once the initial load is completed.</description>
+        <externalId>true</externalId>
+        <label>MIgration ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>MathWorks_Office__c</fullName>
+        <description>Office the Social Action applies to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Office the Social Action applies to</inlineHelpText>
+        <label>MathWorks Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>BNL</fullName>
+                    <default>false</default>
+                    <label>BNL</label>
+                </value>
+                <value>
+                    <fullName>CH</fullName>
+                    <default>false</default>
+                    <label>CH</label>
+                </value>
+                <value>
+                    <fullName>CN</fullName>
+                    <default>false</default>
+                    <label>CN</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>FR</fullName>
+                    <default>false</default>
+                    <label>FR</label>
+                </value>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>JP</fullName>
+                    <default>false</default>
+                    <label>JP</label>
+                </value>
+                <value>
+                    <fullName>Natick</fullName>
+                    <default>true</default>
+                    <label>Natick</label>
+                </value>
+                <value>
+                    <fullName>Nordic</fullName>
+                    <default>false</default>
+                    <label>Nordic</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+                <value>
+                    <fullName>US - All</fullName>
+                    <default>false</default>
+                    <label>US - All</label>
+                </value>
+                <value>
+                    <fullName>US - LA</fullName>
+                    <default>false</default>
+                    <label>US - LA</label>
+                </value>
+                <value>
+                    <fullName>US - Natick</fullName>
+                    <default>false</default>
+                    <label>US - Natick</label>
+                </value>
+                <value>
+                    <fullName>US - Novi</fullName>
+                    <default>false</default>
+                    <label>US - Novi</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Mathworks_Monetary_Contribution__c</fullName>
+        <description>Sum of MathWorks Contributions entered on the &quot;Social Benefits &amp; Contribution&quot; section. This amount is what is reflected in the Social Mission budget expense reports.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum of MathWorks Contributions entered on the &quot;Social Benefits &amp; Contribution&quot; section. This amount is what is reflected in the Social Mission budget expense reports.</inlineHelpText>
+        <label>Mathworks Monetary Contribution</label>
+        <summarizedField>Social_Benefits_and_Contributions__c.Contribution_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Social_Benefits_and_Contributions__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Contributions</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Social_Benefits_and_Contributions__c.Social_Action__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Monetary_Request_Award_Delta__c</fullName>
+        <description>used to calculate the difference between amount requested and amount awarded.  Useful in reporting.  Does not need to be displayed on the page layout.</description>
+        <externalId>false</externalId>
+        <formula>Mathworks_Monetary_Contribution__c - Amount_Requested__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>used to calculate the difference between amount requested and amount awarded.</inlineHelpText>
+        <label>Monetary Request / Award Delta</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Social_Action__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link this Social Action to a Master/Parent Social Action #.  E.g. Individual volunteer events can be linked to the Parent Social Action &quot;2017 Volunteer Challenge Parent Action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link this Social Action to a Master/Parent Social Action #.  E.g. Individual volunteer events can be linked to the Parent Social Action &quot;2017 Volunteer Challenge Parent Action&quot;</inlineHelpText>
+        <label>Parent Social Action</label>
+        <referenceTo>Social_Action__c</referenceTo>
+        <relationshipLabel>Social Actions</relationshipLabel>
+        <relationshipName>Social_Actions</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pillar__c</fullName>
+        <externalId>false</externalId>
+        <label>Pillar</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                    <label>Staff</label>
+                </value>
+                <value>
+                    <fullName>Community</fullName>
+                    <default>false</default>
+                    <label>Community</label>
+                </value>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Global Relief</fullName>
+                    <default>false</default>
+                    <label>Global Relief</label>
+                </value>
+                <value>
+                    <fullName>General Inquiry</fullName>
+                    <default>false</default>
+                    <label>General Inquiry</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Spam</fullName>
+                    <default>false</default>
+                    <label>Spam</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Hours__c</fullName>
+        <description>Optional: Track the hours of the core Social Mission team/owner spent on this project. This is to measure resource hours, not donated time (which should be tracked in the &quot;Social Engagements&quot; section).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional: Track the hours of the core Social Mission team/owner spent on this project. This is to measure resource hours, not donated time (which should be tracked in the &quot;Social Engagements&quot; section).</inlineHelpText>
+        <label>Project Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SIebel_Agreement__c</fullName>
+        <description>Track the Siebel Agreement that the record was created from</description>
+        <externalId>false</externalId>
+        <label>SIebel Agreement #</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Score__c</fullName>
+        <description>Applies to Community Grant Applications only. Score given to an applicant from the Grant team. Record score as a fraction of the total points. E.g.26/35</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Applies to Community Grant Applications only. Score given to an applicant from the Grant team. Record score as a fraction of the total points. E.g.26/35</inlineHelpText>
+        <label>Score</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Account__c</fullName>
+        <description>track the Account from the Siebel record</description>
+        <externalId>false</externalId>
+        <label>Siebel Account</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Siebel_Contact__c</fullName>
+        <description>track the Contact from the Siebel record</description>
+        <externalId>false</externalId>
+        <label>Siebel Contact</label>
+        <length>256</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Siebel_SR__c</fullName>
+        <description>track the Siebel SR Number for which this record was created for</description>
+        <externalId>false</externalId>
+        <label>Siebel SR #</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Staff_Monetary_Contribution__c</fullName>
+        <description>Amount collected/donated by staff members only. Leave blank if no money was raised by staff members. Monetary contribution from MathWorks should be entered on the &quot;Social Benefits &amp; Contribution&quot; section of the &quot;Action Details&quot; view.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount collected/donated by staff members only. Leave blank if no money was raised by staff members. Monetary contribution from MathWorks should be entered on the &quot;Social Benefits &amp; Contribution&quot; section of the &quot;Action Details&quot; view.</inlineHelpText>
+        <label>Staff Monetary Contribution</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Staff_Requestor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>What Staff member requested the Award or Initiaitve</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What Staff member requested the Award or Initiaitve</inlineHelpText>
+        <label>Staff Requestor</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.Employee_Flag__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>look up of MathWorks staff</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Social Actions (staff Requestor)</relationshipLabel>
+        <relationshipName>Social_Actions1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>Depends on the situation and when the action should be recognized. E.g.:   Community Grants = date application received;  Corporate Sponsorship = date sponsorship term/agreement begins;  A-thons = date staff member submits matching request; Volunteer activity = date of event.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Depends on the situation and when the action should be recognized. E.g.:   Community Grants = date application received;  Corporate Sponsorship = date sponsorship term/agreement begins;  A-thons = date staff member submits matching request; Volunteer acti</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Start_Term__c</fullName>
+        <description>Converts the Start Date to quarter and year recognized</description>
+        <externalId>false</externalId>
+        <formula>CASE(YEAR(Start_Date__c ), 
+2007, &quot;2007&quot; , 
+2008, &quot;2008&quot;, 
+2009, &quot;2009&quot;, 
+2010, &quot;2010&quot;, 
+2011, &quot;2011&quot;, 
+2012, &quot;2012&quot;, 
+2013, &quot;2013&quot;, 
+2014, &quot;2014&quot;, 
+2015, &quot;2015&quot;, 
+2016, &quot;2016&quot;, 
+2017, &quot;2017&quot;, 
+2018, &quot;2018&quot;, 
+2019, &quot;2019&quot;, 
+2020, &quot;2020&quot;, 
+&quot;&quot;)
+
+&amp; &quot;-&quot; 
+
+&amp;CASE(MONTH( Start_Date__c), 
+1, &quot;Q1&quot; , 
+2, &quot;Q1&quot;, 
+3, &quot;Q1&quot;, 
+4, &quot;Q2&quot;, 
+5, &quot;Q2&quot;, 
+6, &quot;Q2&quot;, 
+7, &quot;Q3&quot;, 
+8, &quot;Q3&quot;, 
+9, &quot;Q3&quot;, 
+10, &quot;Q4&quot;, 
+11, &quot;Q4&quot;, 
+12, &quot;Q4&quot;, 
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the Start Date to quarter and year recognized</inlineHelpText>
+        <label>Start Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Status of Action. Selection is dependent on &quot;Category&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status of Action. Selection is dependent on &quot;Category&quot;.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Fundraiser Open</fullName>
+                    <default>false</default>
+                    <label>Fundraiser Open</label>
+                </value>
+                <value>
+                    <fullName>Processing Match</fullName>
+                    <default>false</default>
+                    <label>Processing Match</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Legal Team</fullName>
+                    <default>false</default>
+                    <label>Waiting for Legal Team</label>
+                </value>
+                <value>
+                    <fullName>Waiting For Organization</fullName>
+                    <default>false</default>
+                    <label>Waiting For Organization</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Internal</fullName>
+                    <default>false</default>
+                    <label>Waiting for Internal</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Steering Team</fullName>
+                    <default>false</default>
+                    <label>Waiting for Steering Team</label>
+                </value>
+                <value>
+                    <fullName>Ready for Review</fullName>
+                    <default>false</default>
+                    <label>Ready for Review</label>
+                </value>
+                <value>
+                    <fullName>Process Payment</fullName>
+                    <default>false</default>
+                    <label>Process Payment</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Not Approved</fullName>
+                    <default>false</default>
+                    <label>Not Approved</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Spam</fullName>
+                    <default>false</default>
+                    <label>Spam</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Curriculum Development</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <controllingFieldValue>Education Marketing</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <controllingFieldValue>New</controllingFieldValue>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <controllingFieldValue>Green</controllingFieldValue>
+                <controllingFieldValue>HR</controllingFieldValue>
+                <controllingFieldValue>Other Funding</controllingFieldValue>
+                <controllingFieldValue>Raffle</controllingFieldValue>
+                <controllingFieldValue>Scholarships</controllingFieldValue>
+                <controllingFieldValue>A-Thon</controllingFieldValue>
+                <controllingFieldValue>Breakfast Tables</controllingFieldValue>
+                <controllingFieldValue>Charitable Drives</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Community Event</controllingFieldValue>
+                <controllingFieldValue>Community Funding</controllingFieldValue>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <controllingFieldValue>Company/Social Mission</controllingFieldValue>
+                <controllingFieldValue>Corporate Communications</controllingFieldValue>
+                <controllingFieldValue>STEM</controllingFieldValue>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Student Competitions</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Curriculum Development</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <controllingFieldValue>Education Marketing</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <controllingFieldValue>Green</controllingFieldValue>
+                <controllingFieldValue>HR</controllingFieldValue>
+                <controllingFieldValue>Other Funding</controllingFieldValue>
+                <controllingFieldValue>Raffle</controllingFieldValue>
+                <controllingFieldValue>Scholarships</controllingFieldValue>
+                <controllingFieldValue>A-Thon</controllingFieldValue>
+                <controllingFieldValue>Breakfast Tables</controllingFieldValue>
+                <controllingFieldValue>Charitable Drives</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Community Event</controllingFieldValue>
+                <controllingFieldValue>Community Funding</controllingFieldValue>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <controllingFieldValue>Company/Social Mission</controllingFieldValue>
+                <controllingFieldValue>Corporate Communications</controllingFieldValue>
+                <controllingFieldValue>STEM</controllingFieldValue>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Student Competitions</controllingFieldValue>
+                <valueName>In Progress</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Curriculum Development</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <controllingFieldValue>Education Marketing</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <controllingFieldValue>Green</controllingFieldValue>
+                <controllingFieldValue>HR</controllingFieldValue>
+                <controllingFieldValue>Other Funding</controllingFieldValue>
+                <controllingFieldValue>Raffle</controllingFieldValue>
+                <controllingFieldValue>Scholarships</controllingFieldValue>
+                <controllingFieldValue>A-Thon</controllingFieldValue>
+                <controllingFieldValue>Breakfast Tables</controllingFieldValue>
+                <controllingFieldValue>Charitable Drives</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Community Event</controllingFieldValue>
+                <controllingFieldValue>Community Funding</controllingFieldValue>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <controllingFieldValue>Company/Social Mission</controllingFieldValue>
+                <controllingFieldValue>Corporate Communications</controllingFieldValue>
+                <controllingFieldValue>STEM</controllingFieldValue>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Student Competitions</controllingFieldValue>
+                <valueName>Completed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Curriculum Development</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <controllingFieldValue>Education Marketing</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <controllingFieldValue>Green</controllingFieldValue>
+                <controllingFieldValue>HR</controllingFieldValue>
+                <controllingFieldValue>Other Funding</controllingFieldValue>
+                <controllingFieldValue>Raffle</controllingFieldValue>
+                <controllingFieldValue>Scholarships</controllingFieldValue>
+                <controllingFieldValue>A-Thon</controllingFieldValue>
+                <controllingFieldValue>Breakfast Tables</controllingFieldValue>
+                <controllingFieldValue>Charitable Drives</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Community Event</controllingFieldValue>
+                <controllingFieldValue>Community Funding</controllingFieldValue>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <controllingFieldValue>Company/Social Mission</controllingFieldValue>
+                <controllingFieldValue>Corporate Communications</controllingFieldValue>
+                <controllingFieldValue>STEM</controllingFieldValue>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <controllingFieldValue>Student Competitions</controllingFieldValue>
+                <valueName>Cancelled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <valueName>Fundraiser Open</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <valueName>Processing Match</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Funding</controllingFieldValue>
+                <controllingFieldValue>Scholarships</controllingFieldValue>
+                <controllingFieldValue>A-Thon</controllingFieldValue>
+                <controllingFieldValue>Community Funding</controllingFieldValue>
+                <valueName>Pending Approval</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Ready for Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <valueName>Process Payment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Community Grants</controllingFieldValue>
+                <valueName>Denied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Waiting for Legal Team</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Waiting For Organization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Waiting for Internal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Waiting for Steering Team</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Not Approved</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SubCategory__c</fullName>
+        <description>Subcategory of Action. Selection is dependent on &quot;Category&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subcategory of Action. Selection is dependent on &quot;Category&quot;.</inlineHelpText>
+        <label>SubCategory</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>Corporate Donation</fullName>
+                    <default>false</default>
+                    <label>Corporate Donation</label>
+                </value>
+                <value>
+                    <fullName>Disaster Relief</fullName>
+                    <default>false</default>
+                    <label>Disaster Relief</label>
+                </value>
+                <value>
+                    <fullName>Disaster Relief (staff matching)</fullName>
+                    <default>false</default>
+                    <label>Disaster Relief (staff matching)</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Environment/Animals</fullName>
+                    <default>false</default>
+                    <label>Environment/Animals</label>
+                </value>
+                <value>
+                    <fullName>Health Related</fullName>
+                    <default>false</default>
+                    <label>Health Related</label>
+                </value>
+                <value>
+                    <fullName>Human and Social Services</fullName>
+                    <default>false</default>
+                    <label>Human and Social Services</label>
+                </value>
+                <value>
+                    <fullName>Museum</fullName>
+                    <default>false</default>
+                    <label>Museum</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Program Announcement</fullName>
+                    <default>false</default>
+                    <label>Program Announcement</label>
+                </value>
+                <value>
+                    <fullName>STEM</fullName>
+                    <default>false</default>
+                    <label>STEM</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <valueName>Disaster Relief</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <valueName>Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <valueName>Environment/Animals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <valueName>Health Related</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>End of Year Donations</controllingFieldValue>
+                <valueName>Human and Social Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <valueName>Corporate Donation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <valueName>Disaster Relief (staff matching)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global Relief</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <valueName>Program Announcement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Corporate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>Museum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Corporate Sponsorship</controllingFieldValue>
+                <valueName>STEM</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supporting_Files_URL__c</fullName>
+        <description>Internal URL of files associated to the Social Action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal URL of files associated to the Social Action</inlineHelpText>
+        <label>Supporting Files URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Thread_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;LEFT( $Organization.Id , 4 )&amp;
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;),
+RIGHT($Organization.Id,4),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;),
+RIGHT($Organization.Id,5),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;),
+RIGHT($Organization.Id,6),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;),
+RIGHT($Organization.Id,7),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;),
+RIGHT($Organization.Id,8),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;),
+RIGHT($Organization.Id,9),
+IF(BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;),
+RIGHT($Organization.Id,10),
+RIGHT($Organization.Id,11)
+)
+)
+)
+)
+)
+)
+)
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp;
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4),
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5),
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6),
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7),
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8),
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9),
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10),
+RIGHT(Id,11)
+)
+)
+)
+)
+)
+)
+)
+&amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Hours_Invested__c</fullName>
+        <description>Sum of hours from Social Engagements. This is the donated time by staff members.  Resource hours spent by the core Social Mission Team should be tracked in the &quot;Project Hours&quot; field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum of hours from Social Engagements. This is the donated time by staff members.  Resource hours spent by the core Social Mission Team should be tracked in the &quot;Project Hours&quot; field.</inlineHelpText>
+        <label>Total Volunteer Hours</label>
+        <summarizedField>Social_Engagement__c.Hours_Invested__c</summarizedField>
+        <summaryForeignKey>Social_Engagement__c.Social_Action__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Monetary_Contribution__c</fullName>
+        <description>Sum of MathWorks + Staff monetary contributions</description>
+        <externalId>false</externalId>
+        <formula>Staff_Monetary_Contribution__c +  Mathworks_Monetary_Contribution__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sum of MathWorks + Staff monetary contributions</inlineHelpText>
+        <label>Total Monetary Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>&quot;Awards&quot; = monetary contribution by MathWorks (e.g. grants, sponsorship, a-thon matching). &quot;Initiatives&quot; = activities that do NOT involve a financial contribution from MathWorks (e.g. staff collection drives, STEM activities). &quot;Events&quot; = primary Action is centered on an event (e.g. Science Fair Expo, STEM Ambassador visits a school)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Awards&quot; = monetary contribution by MathWorks. &quot;Initiatives&quot; = activities that do NOT involve a financial contribution from MathWorks. &quot;Events&quot; = primary Action is centered on an event.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Awards</fullName>
+                    <default>false</default>
+                    <label>Awards</label>
+                </value>
+                <value>
+                    <fullName>Events</fullName>
+                    <default>false</default>
+                    <label>Events</label>
+                </value>
+                <value>
+                    <fullName>General Inquiry</fullName>
+                    <default>false</default>
+                    <label>General Inquiry</label>
+                </value>
+                <value>
+                    <fullName>Initiatives</fullName>
+                    <default>false</default>
+                    <label>Initiatives</label>
+                </value>
+                <value>
+                    <fullName>Not Social Mission</fullName>
+                    <default>false</default>
+                    <label>Not Social Mission</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>US_Tax_Documentation_Recieved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check to acknowledge that proper tax documentation was received and the award can be released. This applies only to US organizations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to acknowledge that proper tax documentation was received and the award can be released. This applies only to US organizations.</inlineHelpText>
+        <label>U.S. Tax Documentation Recieved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>US_Tax_Documents__c</fullName>
+        <description>Link to SharePoint folder containing US tax documents</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://sharepoint.mathworks.com/marketing/marcomm/teams/corpcomm/socialmission/Tax%20Documents/Forms/AllItems.aspx&quot;, &quot;Tax Documents In Sharepoint&quot;)</formula>
+        <inlineHelpText>Link to SharePoint folder containing US tax documents</inlineHelpText>
+        <label>US Tax Documents</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Social Action</label>
+    <listViews>
+        <fullName>All_rewards</fullName>
+        <columns>NAME</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>Account__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Type__c</columns>
+        <columns>Category__c</columns>
+        <columns>Pillar__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>End_Date__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Date_of_Request__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Social Actions - No filter</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Grant_Open_Social_Actions</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>Score__c</columns>
+        <columns>Pillar__c</columns>
+        <columns>Category__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>End_Date__c</columns>
+        <columns>End_Term__c</columns>
+        <columns>MathWorks_Office__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Denied,Cancelled,Completed,Spam</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Category__c</field>
+            <operation>equals</operation>
+            <value>Community Grants</value>
+        </filters>
+        <label>Open Grants - Global</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Migration_Data</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Category__c</columns>
+        <columns>Mathworks_Monetary_Contribution__c</columns>
+        <columns>Score__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>5/30/2017 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Event_Program_Name__c</field>
+            <operation>contains</operation>
+            <value>EOY</value>
+        </filters>
+        <label>Loaded Data from Marc</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Social_Mission_Rep</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Social_Actions_Global</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Pillar__c</columns>
+        <columns>Category__c</columns>
+        <columns>SubCategory__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Account__c</columns>
+        <columns>Contact__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Not Approved,Denied,Cancelled,Spam</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Social Actions - Global</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>New_Social_Actions_AND_New_Emails</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>Account__c</columns>
+        <columns>Pillar__c</columns>
+        <columns>Type__c</columns>
+        <columns>Category__c</columns>
+        <columns>Contact__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>E2AEmailCount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>lessOrEqual</operation>
+            <value>NEXT_WEEK</value>
+        </filters>
+        <label>New Social Actions AND New Emails</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Open_Social_Actions</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Pillar__c</columns>
+        <columns>Category__c</columns>
+        <columns>SubCategory__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Account__c</columns>
+        <columns>Contact__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Not Approved,Denied,Cancelled,Spam</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Open Social Actions - Global</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Open_Social_Actions1</fullName>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Pillar__c</columns>
+        <columns>Category__c</columns>
+        <columns>SubCategory__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Account__c</columns>
+        <columns>Contact__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Not Approved,Denied,Cancelled,Spam</value>
+        </filters>
+        <filters>
+            <field>MathWorks_Office__c</field>
+            <operation>equals</operation>
+            <value>UK</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>UK Open Social Actions</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>UK_New_Social_Actions</fullName>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Category__c</columns>
+        <columns>Mathworks_Monetary_Contribution__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>MathWorks_Office__c</field>
+            <operation>equals</operation>
+            <value>UK</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>UK New Social Actions and/or New Emails</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Social_Actions</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>Pillar__c</columns>
+        <columns>Category__c</columns>
+        <columns>SubCategory__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>E2AEmailCount__c</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Cancelled,Spam,Denied</value>
+        </filters>
+        <label>Unassigned Open Social Actions</label>
+        <language>en_US</language>
+        <queue>Unassigned_Social_Mission</queue>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Social_Mission_Social_Action</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Contact__c</columns>
+        <columns>E2AEmailCount__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>Category__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Unassigned - Social Mission - All Status</label>
+        <language>en_US</language>
+        <queue>Unassigned_Social_Mission</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Start_Date__c</columns>
+        <columns>Event_Program_Name__c</columns>
+        <columns>Account__c</columns>
+        <columns>Pillar__c</columns>
+        <columns>Type__c</columns>
+        <columns>Category__c</columns>
+        <columns>Contact__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>E2AEmailCount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <filters>
+            <field>E2AEmailCount__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Upcoming New Actions</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>SA-{000000}</displayFormat>
+        <label>Social Action ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Social Actions</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Social_Action</fullName>
+        <active>true</active>
+        <description>Default Record Type</description>
+        <label>Social Action</label>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>A-Thon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Breakfast Tables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Charitable Drives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Funding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Community Grants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Company%2FSocial Mission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Curriculum Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End of Year Donations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Funding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Raffle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scholarships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competitions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency__c</picklist>
+            <values>
+                <fullName>AUD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KRW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MathWorks_Office__c</picklist>
+            <values>
+                <fullName>AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US - All</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US - LA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US - Natick</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>US - Novi</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pillar__c</picklist>
+            <values>
+                <fullName>Community</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Spam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fundraiser Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing Match</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready for Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting For Organization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Legal Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Steering Team</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SubCategory__c</picklist>
+            <values>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Donation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disaster Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disaster Relief %28staff matching%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environment%2FAnimals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human and Social Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Museum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STEM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Awards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiatives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not Social Mission</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Event_Program_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>Score__c</searchFilterFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Event_Program_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Amount_Raised_by_Staff_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+(text( Status__c ) = &quot;Completed&quot;),
+(text(Category__c ) = &quot;Global Relief&quot;), 
+(text(SubCategory__c ) = &quot;Disaster Relief (staff matching)&quot;),
+(Text(Staff_Monetary_Contribution__c ) = &quot;&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Staff_Monetary_Contribution__c</errorDisplayField>
+        <errorMessage>Staff Monetary Contribution is required to Complete or Approve the record</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Currency_Required_when_Award_is_Closed</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+(text(  Status__c  ) = &quot;Completed&quot;),
+(text( Currency__c )=&quot;&quot;),
+( RecordType.DeveloperName ) = &quot;Awards&quot;
+)</errorConditionFormula>
+        <errorDisplayField>Currency__c</errorDisplayField>
+        <errorMessage>Currency is required to Complete  the record</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_award_end_date</fullName>
+        <active>true</active>
+        <description>requires that an end date is is required when an the Social Action is complete.</description>
+        <errorConditionFormula>AND( ISPICKVAL(Status__c, &quot;Completed&quot;),
+NOT(text( Type__c ) = &quot;General Inquiry&quot;),
+ISBLANK( End_Date__c )
+)</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>End Date is Required to Complete a Social Action</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Score_Required</fullName>
+        <active>true</active>
+        <description>Scor is required when •	Record=Award, Category= Community Grant, Status = Completed</description>
+        <errorConditionFormula>AND ( 
+RecordType.DeveloperName = &quot;Awards&quot;,
+(text( Category__c ) = &quot;Community Grant&quot;),
+(text( Status__c ) = &quot;Completed&quot;),
+( Score__c ) = &quot;&quot;
+)</errorConditionFormula>
+        <errorDisplayField>Score__c</errorDisplayField>
+        <errorMessage>Score required when Record=Award, Category= Community Grant, and Status = Completed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Contribution_required_to_Complete</fullName>
+        <active>true</active>
+        <description>total contribution required to Complete an Award</description>
+        <errorConditionFormula>AND( 
+OR((text( Status__c ) = &quot;Completed&quot;),(text( Status__c ) = &quot;Approved&quot;)), 
+((  Total_Monetary_Contribution__c  )&lt;1), 
+(RecordType.Name ) = &quot;Awards&quot; 
+)</errorConditionFormula>
+        <errorMessage>Total Monetary Contribution Required when Status = Completed or Approved</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>US_Tax_Documentation_received_required</fullName>
+        <active>true</active>
+        <description>US Tax Documentation received is required when Type=Awards, and Category= Community Grants, A-Thon, and MathWorks Office=[all US coded records, Natick, Novi, LA, etc.], and Status= Complete</description>
+        <errorConditionFormula>And(
+ ISPICKVAL(Type__c, &quot;Awards&quot;), 
+OR(ISPICKVAL( Category__c, &quot;Community Grants&quot;), ISPICKVAL( Category__c, &quot;A-thon&quot;)), 
+OR (ISPICKVAL( MathWorks_Office__c, &quot;Natick&quot;), ISPICKVAL( MathWorks_Office__c, &quot;US - Natick&quot;), ISPICKVAL( MathWorks_Office__c, &quot;US - Novi&quot;), ISPICKVAL( MathWorks_Office__c, &quot;US - All&quot;), ISPICKVAL( MathWorks_Office__c, &quot;US - All&quot;)), 
+ISPICKVAL( Status__c, &quot;Completed&quot;), 
+ US_Tax_Documentation_Recieved__c = FALSE
+)</errorConditionFormula>
+        <errorDisplayField>US_Tax_Documentation_Recieved__c</errorDisplayField>
+        <errorMessage>US Tax Documentation received is required to complete the Social Action</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>can_not_complete_with_Queue_as_owner</fullName>
+        <active>true</active>
+        <description>do not allow Users to Complete a Social Action with the Queue as the Owner</description>
+        <errorConditionFormula>AND (
+ text(Status__c ) = &quot;Completed&quot;,
+ NOT(ISBLANK(Owner:Queue.Id))
+)</errorConditionFormula>
+        <errorDisplayField>OwnerId</errorDisplayField>
+        <errorMessage>Owner can not be a queue</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

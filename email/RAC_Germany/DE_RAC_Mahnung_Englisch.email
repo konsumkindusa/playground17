@@ -1,0 +1,18 @@
+Dear {!Contact.Greeting__c} {!Contact.LastName},
+
+In examining our records, it has come to our attention that your account is overdue. We would be grateful for settlement of the outstanding balance at your earliest convenience. 
+
+Invoice No: xxxx 
+Your Order No: xxxx 
+ 
+Please find attached a copy of our invoice.
+
+Please reply to this email preserving the Reference ID listed below. 
+
+Thank you,
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

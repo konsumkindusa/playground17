@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to notify Requester that Project has closed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Closed/Cancelled Project Notification</name>
+    <style>none</style>
+    <subject>Project {!MW_Project__c.Project_Status__c} - {!MW_Project__c.Project_Name__c}, {!MW_Project__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

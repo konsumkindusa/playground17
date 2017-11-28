@@ -1,0 +1,14 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Je vous écris concernant votre dossier n°{!Case.CaseNumber} : {!Case.Subject}.
+
+Notre base de données indique que cette licence (n°{!Case.License__c}) n'est plus sous maintenance.
+
+L'accès à notre équipe de support technique fait partie des bénéfices obtenus dans le cadre de notre Software Maintenance Service (SMS). Afin de contacter notre équipe de Support Technique, je vous remercie de renouveler l'abonnement SMS de cette licence, ou nous fournir un numéro de licence actuellement sous maintenance.
+
+Un membre de notre équipe commerciale vous enverra une proposition de renouvellement de maintenance. Si vous avez des questions à ce sujet, merci de contacter notre service commercial:
+http://www.mathworks.com/company/worldwide/ 
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

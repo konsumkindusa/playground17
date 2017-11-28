@@ -1,0 +1,15 @@
+{!Partner_Agreement__c.Primary_Contact__c} 様
+
+いつもお世話になっております。
+
+先日はTerms & Conditionsをご送付いただきましてありがとうございました。
+貴社のConnections Program へのお申込み内容は、
+現在社内にて検討させて頂いております。お時間を頂戴しており、申し訳ございません。
+
+結果が分かり次第、ご連絡申し上げます。
+今後ともよろしくお願い申し上げます。
+
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

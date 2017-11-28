@@ -1,0 +1,14 @@
+Hello {!Social_Action__c.Contact__c},
+
+Thank you for reaching out to Social Mission. Your request for a breakfast table received on {!Social_Action__c.Start_Date__c} has been approved under Social Mission. You can copy and paste this into your outlook as sufficient proof of approval. Below you will find a link with instructions on how to book a Wednesday Breakfast Table. 
+
+https://inside-mathworks.csod.com/samldefault.aspx?ouid=2&ReturnUrl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253de7ad5722-b214-4995-ae61-b0dbc092470d
+
+Social Mission breakfast tables are staff driven meaning that the staff champion of the organization must be present at all times. The breakfast tables typically run from 7:30- 9:30 and the staff champion should sign in any guests that will be accompanying them and remain with them at all times. Please let me know if you have any questions.
+
+Thank You,
+Caitlin Brosnihan
+Social Mission
+socialmission@mathworks.com
+
+{!Social_Action__c.Thread_ID__c}

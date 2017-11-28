@@ -1,0 +1,28 @@
+· Forward the software request to Julia.Komarovskaya@mathworks.com and Ken.Delaporta@mathworks.com directly from Salesforce. 
+
+· Cc: lauren.tabolinsky@mathworks.com; Sarah.Beaven@mathworks.com
+
+· Insert the Order Number, Contact’s Name and the School/University name so the Export Compliance team can easily see the related information
+
+· Copy and paste the following above the forwarded request: 
+
+
+
+Hi Julia and Ken, 
+
+Order Number: XXXX
+
+Contact Name: {!Contact.FirstName} {!Contact.LastName} 
+
+University/Company: {!Contact.Name} 
+
+We have received a request from a student competition team to use MathWorks software. As per our compliance process, the Faculty Advisor and School requesting software have been reviewed against the entity list, however, we have received an "EUS Required" error when releasing the Order. The order number, institution and name of the requester are noted above. 
+
+Can you please let us know if we can proceed with this order?
+
+
+
+Best, 
+
+MathWorks Student Competition Program 
+studentcompetitions@mathworks.com

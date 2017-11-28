@@ -1,0 +1,56 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. You are currently unable to activate your Student software because you have reached or exceeded the limit for activations.  In order to activate a new machine you must deactivate your software first.  Instructions for deactivating your software are below for your convenience.
+
+Deactivation:
+
+Deactivating an installation renders MathWorks software unusable on a particular computer.  Before deactivating, you must uninstall the program from your machine.  Below you will find instructions on how to uninstall and how to deactivate your software.
+
+To Uninstall on Windows:
+1. Shut down the MATLAB Software
+2. Start the uninstaller, using any of the following methods.
+- On systems running Windows 7, click the Start menu, and select Control Panel.  In the Control Panel, select Programs and Features.  From the list of products displayed, click MATLAB.
+-On systems running Windows XP, click the Start menu, select Settings>Control Panel>Add or Remove Programs.  Select MATLAB from the list of products and click Change/Remove.
+-Navigate to the matlabroot/uninstall/bin$ARCH folder, where matlabroot is your MATLAB installation folder and $ARCH is a platform-specific subfolder, such as win32.  Double-click the uninstaller executable, uninstall.exe.
+3. In the Uninstall Products dialog box, select the products you want to remove and click Uninstall.
+	-If you select MATLAB, you automatically remove all other MathWorks products.
+4. (Optional) Choose whether to delete downloaded archive files.  If your MATLAB installation folder contains the archive files for downloaded products, the uninstaller displays a message asking if you want to delete these archive files.  The install stores these archive files in the matlabroot/archives folder of your installation.  To remove these files, click yes.
+5. To proceed with the removal, click the Uninstall button.  The uninstaller displays the status of the operation as it progresses and displays a dialog box when the operation is complete.  Click Finish to exit the uninstaller.  
+
+To Uninstall on Linux Systems:
+1. Exit the MATLAB program
+2. Stop the license manager.  To stop the license manager, use the lmdown utility in the matlabroot/etc folder.
+3. Enter this command at the Linux prompt:
+	rm –rf matlabroot
+	Where matlabroot represents the name of your top-level MATLAB 	installation folder.
+
+To Uninstall on Macintosh Systems:
+1. Get the user name and password of the administrator account on the Macintosh systems.  Depending on where you installed MATLAB software, you might need administrator privileges to remove it.
+2. Exit MATLAB and stop the license manager before removing a MATLAB installation.   You can use the lmdown command to stop the license manager.
+3. Navigate to your MATLAB installation folder.  For example, the installation folder might be named MATLAB_R20011a.app in your Applications folder.
+4. Drag your MATLAB installation folder to the trash, and then select Empty Trash from the Finder menu.
+
+After uninstalling your software, you must begin the deactivation process:
+
+To Deactivate MATLAB:
+1. Log into your MathWorks Account
+2. Click on your License Number: XXXXXXX
+3. Click the "Install and Activate" tab
+4. Click on "Deactivate a Computer" under "Related Tasks"
+5. Click the "X" to deactivate the computer(s) you no longer have access to
+6. If you are prompted to enter a Deactivation String, follow the instructions to locate and enter the string, if you do not have access to the string, click the link to access the "Manual Deactivation agreement"
+7. Complete the agreement form with all required information
+8. Click the button to "Submit Agreement to Deactivate Software"
+
+Click on this link to learn more about activation (Log in required):
+www.mathworks.com/support/activation/index.html
+
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

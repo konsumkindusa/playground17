@@ -1,0 +1,32 @@
+Dear {!Contact.Name},
+
+Thank you for your enrollment for the following course:
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LOCATION:  {!Class__c.City__c}, {!Class__c.Country__c} 
+
+To confirm this registration, and secure your seat in this class, please send us a PO or order confirmation containing the following information:
+
+-       The quotation number, as provided to you per e-mail.
+-       Name and date of the training
+-       Name and e-mail address of the trainee(s)
+-       The PO-number and / or cost centre number
+-       Order amount
+-       Signature
+-       Invoicing address
+-       VAT number
+-       Payment terms of 30 days NET
+
+You can send this information to either one of the following address:
+By e-mail to {!Class__c.Sponsor_Office_Email__c} 
+
+
+Once your registration is confirmed, you will receive additional information on the training location and time schedule.  If you have any additional questions, please do not hesitate to contact us directly.
+
+Kind regards,
+ 
+Training Services
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

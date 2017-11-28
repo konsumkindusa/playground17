@@ -1,0 +1,15 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+Recently you applied to The MathWorks Connections Program with {!Partner_Agreement__c.Partner_Agreement_Name__c}. After reviewing your application, we regret to inform you that this application for the program has not been accepted for membership. However, this decision does not prevent you from going to market with this product. 
+
+The Connections Program is only for companies offering complementary products for sales commercially. This means that the products are available to the public, sold for a price, and supported. We do not allow unsupported freeware or shareware (free, with a request for a donation) into the program. If a support plan does exist, please provide additional details (price, types of support, etc.)
+
+We would still encourage you to promote your MATLAB-based products or services via our user community
+site, MATLAB Central. The File Exchange on MATLAB Central is a useful place for partners with MATLAB-based products to promote their capabilities to end users. http://www.mathworks.com/matlabcentral 
+
+If you have any questions regarding this denial, please send an e-mail to connections@mathworks.com.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

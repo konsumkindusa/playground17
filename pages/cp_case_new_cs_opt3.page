@@ -1,0 +1,587 @@
+<apex:page Controller="cp_Case_new_ControllerExtension" standardStylesheets="true" sidebar="false" showHeader="false" language="{!language}">
+<apex:include pageName="cp_case_new_style" />
+<style>
+.content_container{
+    padding-left:0px !important;
+    width:99%;
+}
+.warning{margin-left:0px;margin-top:15px;}
+h3{font-family: Arial, Helvetica, sans-serif;} 
+</style>
+<body>
+<apex:form id="mainForm">
+<script>
+        var visitorChoice = 'a3';
+        var fieldsNotPopulated ='';
+        var invalidLicenseFields ='';
+        
+        //HW 2024432
+        function trimLicense() {
+            var element = document.getElementById('j_id0:mainForm:license_3');
+            element.value = element.value.trim();
+        }
+        //HW 2024432
+           
+        function checkRequiredFields(choicevalue,selTask,ihSelTask){
+            document.getElementById('notficationSection').innerHTML ='';
+            document.getElementById('notficationSection').style.display ="none";
+            var infoMessage = '<br/><p>{!$Label.Create_case_Warning_Message}</p><ul>';
+      
+            clearCssOnFields(requiredFieldArr[visitorChoice]);
+            clearCssOnFields(licenseFieldArr[visitorChoice]);
+            
+            invalidLicenseFields =''
+            fieldsNotPopulated='';
+            //Check required field if not blank
+            if(requiredFieldArr[choicevalue] != null && requiredFieldArr[choicevalue] != ''){
+                reqFields = requiredFieldArr[choicevalue].split(',');
+                if(reqFields.length>0){
+                    for(ctr=0;ctr<reqFields.length;ctr++){
+                        if(document.getElementById(reqFields[ctr]) != null){
+                            if(document.getElementById(reqFields[ctr]).value=='' ){
+                                var shouldBeRequired = true;
+                                if(dependencyField[reqFields[ctr]]!=null){
+                                    
+                                    shouldBeRequired = false;
+                                    dependentFieldId = dependencyField[reqFields[ctr]].split('%2C');
+                                    for(ctr2=0;ctr2<dependentFieldId.length;ctr2++){
+                                        if(document.getElementById(dependentFieldId[ctr2])!=null){
+                                            currentRadioButtonState = document.getElementById(dependentFieldId[ctr2]).checked
+                                            shouldBeRequired=shouldBeRequired||currentRadioButtonState;
+                                        }
+                                    }
+                                }
+                                if(shouldBeRequired){
+                                    if(fieldsNotPopulated.length>0){
+                                        fieldsNotPopulated+=',';
+                                    }
+                                    fieldsNotPopulated+=reqFields[ctr];
+                                }
+                            }
+                        }else{
+                            //alert('Missing:'+reqFields[ctr]);
+                        }
+                    }
+                }
+            }
+            // License entry validation
+            if(licenseFieldArr[choicevalue] != null && licenseFieldArr[choicevalue] != ''){
+                licFields = licenseFieldArr[choicevalue].split(',');
+                if(licFields.length>0){
+                    for(ctr=0;ctr<licFields.length;ctr++){
+                        if(document.getElementById(licFields[ctr]) != null){
+                            var licenseVal = document.getElementById(licFields[ctr]).value
+                            
+                            if(licenseVal!='' ){
+                                var licNotValid = true;
+                                if((licenseVal.toUpperCase() == "STUDENT" || licenseVal.toUpperCase() == "DEMO" || !(isNaN(licenseVal))) && ((licenseVal.replace(/\s/g, '').length)>0) && ((licenseVal.length)==(licenseVal.replace(/\s/g, '').length)) ){
+                                    licNotValid = false;
+                                }
+                                if(licNotValid){
+                                    if(invalidLicenseFields.length>0){
+                                        invalidLicenseFields+=',';
+                                    }
+                                    invalidLicenseFields+=licFields[ctr];
+                                }
+                                
+                            }
+                        }else{
+                            alert('Missing:'+licFields[ctr]);
+                        }
+                    }
+                }
+            }
+            
+            if(fieldsNotPopulated.length==0 && choicevalue!='' && invalidLicenseFields.length==0 ){
+                if (ihSelTask != ''){
+                    document.getElementById(ihSelTask).value = selTask;
+                }
+                document.getElementById('submitbutton').disabled = 'true'; //HW 1904967
+                if (selTask != ''){
+                    //Action function from Create New Case option pages
+                    createcase(selTask);
+                }
+                else {
+                    //Action function from Create Case Comment page
+                    createcasecomment();
+                }
+            }else{
+                if(fieldsNotPopulated.length>0){
+                    unPopulatedfields = fieldsNotPopulated.split(',');
+                    for(ctr=0;ctr<unPopulatedfields.length;ctr++){
+                        //document.getElementById(unPopulatedfields[ctr]).setAttribute("class","textfield required");
+                        textlength = unPopulatedfields[ctr].split(':').length;
+                        originalId = (unPopulatedfields[ctr].split(':'))[textlength-1];
+                        document.getElementById(originalId+'div').setAttribute("class","form_element field_error");
+                        document.getElementById(originalId+'span').setAttribute("style","display:none");
+                        infoMessage+='<li id="infoMessage'+ctr+'">{!$Label.MySR_Please_Enter_Part_1} '+document.getElementById(originalId+'div').getAttribute("name")+' {!$Label.MySR_Please_Enter_Part_2}</li>';
+                    }
+                }
+                if(invalidLicenseFields.length>0){
+                    invalidLicenses = invalidLicenseFields.split(',');
+                    for(ctr=0;ctr<invalidLicenses.length;ctr++){
+                        //document.getElementById(invalidLicenses[ctr]).setAttribute("class","textfield required");
+                        textlength = invalidLicenses[ctr].split(':').length;
+                        originalId = (invalidLicenses[ctr].split(':'))[textlength-1];
+                        document.getElementById(originalId+'div').setAttribute("class","form_element field_error");
+                        var element = document.getElementById(originalId+'span');
+                        if (element != null) {
+                            document.getElementById(originalId+'span').setAttribute("style","display:none");
+                        }
+                        infoMessage+='<li id="infoMessageInvalid'+ctr+'">{!$Label.MySR_Invalid} '+document.getElementById(originalId+'div').getAttribute("name")+'</li>';
+                    }
+                }
+                infoMessage+='</ul>';
+                document.getElementById('notficationSection').innerHTML = infoMessage;
+                document.getElementById('notficationSection').style.display="block";
+            }
+        }
+        
+        function clearCssOnFields(fields2Clear){
+            fieldIdToClearList = fields2Clear;
+            fieldIdToClear = fieldIdToClearList.split(',');
+            for(ctr=0;ctr<fieldIdToClear.length;ctr++){
+                //document.getElementById(fieldIdToClear[ctr]).setAttribute("class","");
+                textlength = fieldIdToClear[ctr].split(':').length;
+                originalId = (fieldIdToClear[ctr].split(':'))[textlength-1];
+                var elementdiv = document.getElementById(originalId+'div');
+                if (elementdiv != null) {
+                    document.getElementById(originalId+'div').setAttribute("class","form_element");
+                }
+                var element = document.getElementById(originalId+'span');
+                if (element != null) {
+                    document.getElementById(originalId+'span').setAttribute("style","");
+                }
+            }
+        }
+        
+        
+        function ShowAdminContactOptions(contact,curcontact,notes,ihCSContactRequest_3){
+            //document.getElementById('removeContact').setAttribute( 'disabled', 'disabled' );
+            //document.getElementById('addContact').setAttribute( 'disabled', 'disabled' );            
+            document.getElementById('removeContact').removeAttribute('disabled');
+            document.getElementById('addContact').removeAttribute('disabled');            
+            document.getElementById('changeContact').removeAttribute('disabled');
+            //document.getElementById('changeContact').checked;
+            //document.getElementById('changeContact').checked = true;  
+            //document.getElementById(curcontact).style.display = 'block';                   
+            //document.getElementById(contact).style.display = 'block';
+            //document.getElementById(notes).style.display = 'block';
+            //document.getElementById('addContactBlock').style.color = '#999999';
+            //document.getElementById('removeContactBlock').style.color = '#999999';
+            //document.getElementById(ihCSContactRequest_3).value = 'Change an existing license contact';
+        } 
+        
+        function ShowContactOptions(contact,notes){
+            document.getElementById(contact).style.display = 'none';
+            document.getElementById(notes).style.display = 'none';
+            
+            document.getElementById('addContact').removeAttribute('disabled');
+            document.getElementById('changeContact').removeAttribute('disabled');
+            document.getElementById('removeContact').removeAttribute('disabled');
+            
+            document.getElementById('addContactBlock').style.color = 'black';
+            document.getElementById('removeContactBlock').style.color = 'black';
+        }
+        
+        function ShowEditContactForm(contact,curcontact,notes,dml){
+            document.getElementById(contact).style.display = 'block';
+            if (dml == 'Update'){
+                document.getElementById(curcontact).style.display = 'block';
+            }
+            else
+            {
+                document.getElementById(curcontact).style.display = 'none';
+            }
+            document.getElementById(notes).style.display = 'block';
+        }
+        
+        function ShowRemoveContactForm(contact,curcontact,notes){
+            document.getElementById(contact).style.display = 'none';
+            document.getElementById(curcontact).style.display = 'block';
+            document.getElementById(notes).style.display = 'block';
+        }
+        
+        function reloadParentFrame(caseId){
+           //Case not created, an email has been forwarded to Distributor
+            if (caseId == ''){
+                 window.parent.location.href = '/apex/cp_case_new_forwardemail_notification?de={!distributoremailaddress}&cc={!$CurrentPage.parameters.CC}'; 
+            }
+            //Created a Case
+            else {
+                  if({!isssoenabled}){
+                   window.location.href = parent.location.hostname + '/apex/cp_case_detail';
+                    window.parent.location.href = '/apex/cp_case_detail?id='+caseId + '&isnew=yes&cc={!$CurrentPage.parameters.CC}';
+                   }else{
+                       parent.location.href = parent.location.hostname + '/apex/cp_case_detail';
+                       window.top.location.href = '/apex/cp_case_detail?id='+caseId + '&isnew=yes&cc={!$CurrentPage.parameters.CC}';
+                   }
+            }
+        }
+        
+        function createcancel() { 
+            var loc = parent.location.href.split("?")[0];           
+            if({!isssoenabled}){            
+                if({!isDistributor}){            
+                    window.parent.location.href = loc + '?page=cp_case_home';
+                    window.top.location.href = '/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}';
+                }else if({!NOT(isDistributor)} && {!NOT(hasMWOffice)}){
+                    window.top.location.href = '{!$Label.mw_domain_url}/company/aboutus/contactus.html';
+                }
+                else{
+                    window.parent.location.href = loc + '?page=cp_case_home';
+                    window.top.location.href = '/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}';
+                }
+            }else{
+                window.top.location.href = '/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}';
+            }
+        }
+        
+    </script>
+    <apex:actionFunction action="{!createcase}" name="createcase" status="saving" rerender="none" oncomplete="reloadParentFrame('{!CaseObj.Id}');">
+            <apex:param name="selTask" value="{!selTask}" assignTo="{!selTask}" />
+        </apex:actionFunction>
+        <div class="warning" id="notficationSection" style="display:none;"></div>
+        <!-- form starts -->
+    <br/>
+    <div class="content_container">
+      <p><span class="req">*</span><strong>{!$Label.TS_Request_Install_Required_Info}</strong></p>
+        <div class="form_container wide">
+        <div class="form_module">
+            <h3>{!$Label.TS_Request_Install_Step_2}</h3>
+            
+            <!--
+            <div class="radio_group">
+                <div class="form_element" id="ihCSLicenseContact_3div" name="license contact">
+                    <label for="licensecontactNote" style="padding-bottom: 6px"> <span class="req" id="ihCSLicenseContact_3span">*</span>&nbsp; Select a license contact </label>
+                    <apex:inputHidden id="ihCSLicenseContact_3" value="{!CSLicenseContact[1]}"/>
+                </div>
+                <div class="form_element">
+                    <input name="licenseContactType" type="radio" id="admin" value="Administrator" class="radio" checked="checked" onclick="document.getElementById('{!$Component.ihCSLicenseContact_3}').value = this.value; ShowAdminContactOptions('{!$Component.opNewContact}','{!$Component.opCurrContact}','{!$Component.opContactNotes}','{!$Component.ihCSContactRequest_3}')" />
+                    <label for="admin" style="padding-left: 6px;">
+                    <strong>Administrator</strong>
+                    <ul style="padding-top: 6px;">
+                        <li>
+                        Individual designated as the main source of communication for the license
+                        </li>
+                        <li>
+                        Responsible for managing end users and performing license administration tasks
+                        </li>
+                    </ul>
+                            </label>
+                </div>
+                
+                <div class="form_element">
+                    <input name="licenseContactType" type="radio" id="assetmgr" value="Asset manager" class="radio" onclick="document.getElementById('{!$Component.ihCSLicenseContact_3}').value = this.value; ShowContactOptions('{!$Component.opNewContact}','{!$Component.opContactNotes}')" />
+                    <label for="assetmgr" style="padding-left: 6px">
+                <strong>Asset manager</strong>
+                <ul style="padding-top: 6px">
+                    <li>
+                    An optional contact who has the same privileges as the administrator <br/> (There can be multiple asset managers on a license)
+                    </li>
+                </ul>
+                            </label>
+                </div>
+                <div class="form_element">
+                    <input name="licenseContactType" type="radio" id="maintenancecontact" value="Maintenance contact" class="radio" onclick="document.getElementById('{!$Component.ihCSLicenseContact_3}').value = this.value; ShowContactOptions('{!$Component.opNewContact}','{!$Component.opContactNotes}')" />
+                    <label for="maintenancecontact" style="padding-left: 6px">
+                <strong>Maintenance contact </strong>
+                <ul style="padding-top: 6px">
+                    <li>
+                    Recipient of all software maintenance quotes for the license
+                    </li>
+                </ul>
+                            </label>
+                </div>
+                <div class="form_element">
+                    <input name="licenseContactType" type="radio" id="updatemediarecipient" value="Update media recipient" class="radio" onclick="document.getElementById('{!$Component.ihCSLicenseContact_3}').value = this.value; ShowContactOptions('{!$Component.opNewContact}','{!$Component.opContactNotes}')" />
+                    <label for="updatemediarecipient" style="padding-left: 6px">
+                <strong>Update media recipient </strong>
+                <ul style="padding-top: 6px">
+                    <li>
+                    Recipient of all software media shipments for the license
+                    </li>
+                </ul>
+                </label>
+                </div>
+                
+            </div> <!--end div radio group-->
+            
+            <div class="radio_group">
+                <div class="form_element" id="ihCSContactRequest_3div" name="{!$Label.CS_Task}">
+                <label for="whatLicenseContactRequest"> <span class="req" id="ihCSContactRequest_3span">*</span>{!$Label.CS_What_Would_You}</label>
+                <apex:inputHidden id="ihCSContactRequest_3" value="{!CSLicenseContact[0]}"/>
+                        </div>
+                        <div class="form_element">
+                            <input name="whatLicenseContactRequest" type="radio" id="addContact" value="Add a new administrator" class="radio" onclick="document.getElementById('{!$Component.ihCSContactRequest_3}').value = this.value; ShowEditContactForm('{!$Component.opNewContact}','{!$Component.opCurrContact}','{!$Component.opContactNotes}','Insert')"/>
+                            <label for="addContact" class="toggle"><span id="addContactBlock">{!$Label.CS_Add_Admin}</span>
+                            </label>
+                        </div>
+                        <div class="form_element">
+                            <input name="whatLicenseContactRequest" type="radio" id="changeContact" value="Change an existing administrator" class="radio" onclick="document.getElementById('{!$Component.ihCSContactRequest_3}').value = this.value; ShowEditContactForm('{!$Component.opNewContact}','{!$Component.opCurrContact}','{!$Component.opContactNotes}','Update');" />
+                            <label for="changeContact" class="toggle"><span id="chnageContactBlock" >{!$Label.CS_Change}</span>
+                            </label>
+                        </div>
+                        <div class="form_element">
+                            <input name="whatLicenseContactRequest" type="radio" id="removeContact" value="Remove an existing administrator" class="radio" onclick="document.getElementById('{!$Component.ihCSContactRequest_3}').value = this.value; ShowRemoveContactForm('{!$Component.opNewContact}','{!$Component.opCurrContact}','{!$Component.opContactNotes}')" />
+                            <label for="removeContact" class="toggle"><span id="removeContactBlock" >{!$Label.CS_Remove}</span>
+                            </label>
+                        </div>
+            </div><!--end div radio group-->
+            
+            <div class="form_element" id="license_3div" name="{!$Label.TS_Request_Install_License}">
+                 <apex:outputlabel rendered="{!if(isStudent == false, true,false)}" escape="false">
+                       <span class="req" id="license_3span">*</span>{!$Label.TS_Request_Install_License}
+                 </apex:outputlabel>
+                 <apex:outputlabel rendered="{!if(isStudent == true, true,false)}" escape="false">
+                        <span class="req" id="license_3span"></span>{!$Label.TS_Request_Install_License}
+                  </apex:outputlabel>
+                  <apex:inputText id="license_3" value="{!caseObj.License__c}" maxlength="9" size="25" styleClass="textfield"/>
+                    <br/><img src="{!URLFOR($Resource.helpicon)}" width="11" height="11" alt="" /><a href='#' onClick="javascript:window.open('{!$Label.mw_domain_url}/support/contact_us/ts/popups/licensenum.html','_blank','width=1000,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes');return false;" >{!$Label.CS_How_Get}</a>
+                    <br/><br/>
+                    <p>
+                        {!$Label.CS_To_Add} <a href="{!$Label.mw_domain_url}/licensecenter/?s_cid=mysrs" target="_blank">{!$Label.CS_License_Center}</a>
+                    </p>
+                    
+            </div> 
+            
+            <apex:outputpanel id="opCurrContact" style="display:none;" layout="block">
+            
+            <div class="form_module contact_info">
+                <h3>{!$Label.CS_Current_Contact}</h3>
+                <div class="form_element currentSalutation">
+                <!-- CSLicenseContact[2] -->
+                <label for="currentSalutation">{!$Label.CS_Salutation} <span style="font-weight: normal; color: black;"> </span> </label>
+                <apex:selectList value="{!CSLicenseContact[2]}" id="selSalCurr" size="1" rendered="{!Salutations.size != 0}">
+                    <apex:selectOptions value="{!Salutations}"/>
+                </apex:selectList>
+                <!-- Contact Salutation Field -->
+                </div>
+                <div class="form_element" id="first_name_a_3div" name="{!$Label.CS_First_Name}">
+                <!-- CSLicenseContact[3] -->
+                <label for="currentFirstName"> <span class="req" id="first_name_a_3span">*</span> {!$Label.CS_First_Name}<span style="font-weight: normal; color: black;"> </span> </label>
+                <apex:inputText value="{!CSLicenseContact[3]}" id="first_name_a_3" maxlength="50" styleClass="textfield"/>
+                </div>      
+                <div class="form_element" >
+                <!-- CSLicenseContact[4] -->
+                <label for="currentMiddleName"> {!$Label.CS_Middle_Name}<span style="font-weight: normal; color: black;"> </span> </label>
+                <apex:inputText value="{!CSLicenseContact[4]}" maxlength="50" id="currentMiddleName" styleClass="textfield"/>
+                </div>
+                <div class="form_element" id="last_name_a_3div" name="{!$Label.CS_Last_Name}">
+                <!-- CSLicenseContact[5] -->
+                <label for="currentLastName" name="Last Name"> <span class="req" id="last_name_a_3span">*</span> {!$Label.CS_Last_Name} <span style="font-weight: normal; color: black;"> </span> </label>
+                <apex:inputText value="{!CSLicenseContact[5]}" id="last_name_a_3" maxlength="50" styleClass="textfield" />
+                </div>
+                <div class="form_element" id="email_a_3div" name="{!$Label.CS_E_mail}">
+                <!-- CSLicenseContact[6] -->
+                <label for="currentEmail"> <span class="req" id="email_a_3span">*</span> {!$Label.CS_E_mail} <span style="font-weight: normal; color: black;"> </span> </label>
+                <apex:inputText value="{!CSLicenseContact[6]}" id="email_a_3" maxlength="100" styleClass="textfield" />
+                </div>
+            </div>  
+            
+                </apex:outputpanel>
+                
+                <apex:outputpanel id="opNewContact" style="display:none;" layout="block">
+                        
+                <div class="form_module contact_info">
+                <h3>{!$Label.CS_New_Contact}</h3>
+                <div class="form_element" id="selCountry_a_3div" name="{!$Label.CS_Country_Region}">
+                    <label for="newCountry"> <span class="req" id="selCountry_a_3span">*</span> {!$Label.CS_Country_Region} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <!-- CSLicenseContact[7] -->
+                    <apex:selectList value="{!CSLicenseContact[7]}" id="selCountry_a_3" size="1" rendered="{!Countries.size != 0}" styleClass="picklist">
+                    <apex:selectOptions value="{!Countries}"/>
+                    </apex:selectList>
+                </div>
+                <div class="form_element">
+                    <label for="newSalutation"> {!$Label.CS_Salutation}<span style="font-weight: normal; color: black;"> </span> </label> 
+                    <!-- CSLicenseContact[8] -->
+                    <apex:selectList value="{!CSLicenseContact[8]}" id="selSalNew" size="1" rendered="{!Salutations.size != 0}">
+                    <apex:selectOptions value="{!Salutations}"/>
+                    </apex:selectList><p/>
+                </div>
+                <div class="form_element" id="first_name_b_3div" name="{!$Label.CS_First_Name}">
+                    <!-- CSLicenseContact[9] -->
+                    <label for="newFirstName"> <span class="req" id="first_name_b_3span">*</span> {!$Label.CS_First_Name}<span style="font-weight: normal; color: black;"> </span> </label> 
+                    <apex:inputText value="{!CSLicenseContact[9]}" id="first_name_b_3" maxlength="50"  styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[10] -->
+                    <label for="newMiddleName"> {!$Label.CS_Middle_Name} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[10]}" maxlength="50" id="newMiddleName" styleClass="textfield"/>
+                </div>
+                <div class="form_element" id="last_name_b_3div" name="{!$Label.CS_Last_Name}">
+                    <!-- CSLicenseContact[11] -->
+                    <label for="newLastName"> <span class="req" id="last_name_b_3span">*</span> {!$Label.CS_Last_Name} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[11]}" id="last_name_b_3" maxlength="50" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[12] -->
+                    <label for="newJobTitle"> {!$Label.CS_Job_Title} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[12]}" maxlength="75" id="newJobTitle" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[13] -->
+                    <label for="newDepartment"> {!$Label.CS_Department} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[13]}" maxlength="80" id="newDepartment" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[14] -->
+                    <label for="newMailStop"> {!$Label.CS_Mail_Stop} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[14]}" maxlength="100" id="newMailStop" styleClass="textfield"/>
+                </div>
+                <div class="form_element" id="companyUniversity_b_3div" name="{!$Label.CS_Company_University}">
+                    <!-- CSLicenseContact[15] -->
+                    <label for="companyUniversity_b_3"> <span class="req" id="companyUniversity_b_3span">*</span> {!$Label.CS_Company_University} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[15]}" id="companyUniversity_b_3" maxlength="100" styleClass="textfield"/>
+                    <p class="field_note"> {!$Label.CS_Note_Name} </p>
+                </div>
+                <div class="form_element" id="newStreetAddress1_b_3div" name="{!$Label.CS_Street_Address}">
+                    <!-- CSLicenseContact[16] -->
+                    <label for="newStreetAddress1"> <span class="req" id="newStreetAddress1_b_3span">*</span> {!$Label.CS_Street_Address} 1 <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[16]}" maxlength="200" id="newStreetAddress1_b_3" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[17] -->
+                    <label for="newStreetAddress2"> {!$Label.CS_Street_Address} 2 <span style="font-weight: normal; color: black;"> </span></label>
+                    <apex:inputText value="{!CSLicenseContact[17]}" maxlength="100" id="newStreetAddress2_b_3" styleClass="textfield"/>
+                </div>
+                <div class="form_element" id="newCity_b_3div" name="{!$Label.CS_City}">
+                    <!-- CSLicenseContact[18] -->
+                    <label for="newCity"><span class="req" id="newCity_b_3span">*</span> {!$Label.CS_City} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[18]}" maxlength="50" id="newCity_b_3" styleClass="textfield" />
+                </div>
+                <div class="form_element" style="display:none;">
+                    <label for="newState">
+                    <span class="req">*</span> State
+                    <span style="font-weight: normal; color: black;"> </span>
+                    </label>
+                    <!-- State field picklist -->
+                    <div id="StatesWaiting" style="display:none;">
+                    <br/>
+                    <img alt="waiting" src="http://mathworks.com/images/spinner.gif" border="0" /> Loading states...
+                    </div>
+                </div>
+                <div class="form_element" id="zip_code_b_3div" name="{!$Label.CS_Zip_Code}">
+                    <!-- CSLicenseContact[19] -->
+                    <label for="newZipCode"><span class="req" id="zip_code_b_3span">*</span> {!$Label.CS_Zip_Code} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[19]}" id="zip_code_b_3" maxlength="30"  styleClass="textfield"/>
+                </div>
+                <div class="form_element" id="email_b_3div" name="{!$Label.CS_E_mail}">
+                    <!-- CSLicenseContact[20] -->
+                    <label for="newEmail"> <span class="req" id="email_b_3span">*</span> {!$Label.CS_E_mail} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[20]}" id="email_b_3" maxlength="100" styleClass="textfield"/>
+                </div>
+                <div class="form_element" id="phone_b_3div" name="{!$Label.CS_Phone}">
+                    <!-- CSLicenseContact[21] -->
+                    <label for="newTelephonewithoutinstructions"> <span class="req" id="phone_b_3span">*</span> {!$Label.CS_Phone} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[21]}" id="phone_b_3" maxlength="50" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[22] -->
+                    <label for="newTelephoneExtension"> {!$Label.CS_Extension} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[22]}" maxlength="20" id="newTelephoneExtension" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[23] -->
+                    <label for="newFaxNumber"> {!$Label.CS_Fax} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[23]}" maxlength="18" id="newFaxNumber" styleClass="textfield"/>
+                </div>
+                <div class="form_element">
+                    <!-- CSLicenseContact[24] -->
+                    <label for="newMobilePhoneNumber"> {!$Label.CS_Mobile_Phone} <span style="font-weight: normal; color: black;"> </span> </label>
+                    <apex:inputText value="{!CSLicenseContact[24]}" maxlength="18" id="newMobilePhoneNumber" styleClass="textfield" />
+                </div>
+                </div>
+            
+        </apex:outputpanel>
+            <apex:outputpanel id="opContactNotes" style="display:none;">
+            
+                <div class="form_module">
+                <h3> {!$Label.CS_Add_Details} </h3>
+                <div class="form_element Notes">
+                    <!-- CSLicenseContact[25] -->
+                    <apex:inputTextArea richtext="false" value="{!CSLicenseContact[25]}" cols="76" rows="6" styleclass="textarea" style="width:99%;resize:none" id="CSLicenseContact"/>
+                </div>
+                </div>
+            
+                </apex:outputpanel>
+                <div class="submit_module">
+                    <input type="button" value="{!$Label.TS_Submit_Button}" id="submitbutton" class="mwbutton rounded" onclick="trimLicense(); checkRequiredFields(visitorChoice,'AddChangeLicense','');" />
+                    <input type="button" value="{!$Label.TS_Cancel_Button}" id="cancelButton" class="mwbutton rounded" onclick="createcancel();"/>
+                    <!--<apex:commandButton value="Cancel" styleclass="mwbutton rounded" onclick="createcancel();" style="margin-left:10px;margin-top:2px" rendered="{!isDistributor}" />-->
+                    
+                    <apex:actionstatus id="saving">
+                        <apex:facet name="start">
+                        <img alt="waiting" src="http://mathworks.com/images/spinner.gif" border="0" /> {!$Label.MySR_Saving}
+                </apex:facet>
+                </apex:actionstatus>
+            </div>
+            
+        </div> <!--end div form module-->
+        </div> <!--div end form_container wide-->
+    </div> <!--div end content_container-->
+    <script>
+          var requiredFieldId = '';
+          var requiredFieldArr = new Array();
+          if ( '{!isStudent}' == 'false' ){
+              requiredFieldArr['a1'] = '{!$Component.title_1},{!$Component.License__c_1},{!$Component.add_additional_details_1}';
+              requiredFieldArr['a2'] = '{!$Component.title_2}'+','+'{!$Component.service_license___2}'+','+'{!$Component.what_would_you_like_to_do__2}'+','+'{!$Component.ihPassCodeRelease_2}'+','+'{!$Component.Add_additional_details_to_your_request__2}';
+              requiredFieldArr['a2b'] = '{!$Component.title_2},{!$Component.service_license___2},{!$Component.what_would_you_like_to_do__2},{!$Component.ihPassCodeRelease_2},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email},{!$Component.Add_additional_details_to_your_request__2}';
+              requiredFieldArr['a3'] = '{!$Component.ihCSLicenseContact_3},{!$Component.ihCSContactRequest_3},{!$Component.license_3},{!$Component.first_name_a_3},{!$Component.last_name_a_3},{!$Component.email_a_3},{!$Component.selCountry_a_3},{!$Component.first_name_b_3},{!$Component.last_name_b_3},{!$Component.companyUniversity_b_3},{!$Component.newStreetAddress1_b_3},{!$Component.newCity_b_3},{!$Component.zip_code_b_3},{!$Component.email_b_3},{!$Component.phone_b_3}';
+              requiredFieldArr['a4'] = '{!$Component.title_4},{!$Component.Transfer_product1_4},{!$Component.quantity1_4},{!$Component.from1_4},{!$Component.to1_4}';
+              requiredFieldArr['a4b'] = '{!$Component.title_4},{!$Component.Transfer_product1_4},{!$Component.quantity1_4},{!$Component.from1_4},{!$Component.to1_4},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email}';
+              requiredFieldArr['a5'] = '{!$Component.title_5},{!$Component.license_5},{!$Component.listLicensesToCombine_5}';
+              requiredFieldArr['a5b'] = '{!$Component.title_5},{!$Component.license_5},{!$Component.listLicensesToCombine_5},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email}';
+              requiredFieldArr['a6'] = '{!$Component.title_6},{!$Component.csgcslicense_6},{!$Component.add_additional_details_6}';
+              requiredFieldArr['a6b'] = '{!$Component.title_6},{!$Component.csgcslicense_6},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email},{!$Component.add_additional_details_6}';
+              requiredFieldArr['b1'] = '{!$Component.license_7},{!$Component.platform_7},{!$Component.OS_7},{!$Component.releaselists_7},{!$Component.allproductlist_7},{!$Component.title_7},{!$Component.how_can_we_assist_7}';
+              requiredFieldArr['b2'] = '{!$Component.summary_8},{!$Component.description_8},{!$Component.ver_8},{!$Component.product_8},{!$Component.release_8}';
+          }
+          else{
+              requiredFieldArr['a1'] = '{!$Component.title_1}'+','+'{!$Component.add_additional_details_1}';
+              requiredFieldArr['a2'] = '{!$Component.title_2}'+','+'{!$Component.service_license___2}'+','+'{!$Component.what_would_you_like_to_do__2}'+','+'{!$Component.ihPassCodeRelease_2}'+','+'{!$Component.Add_additional_details_to_your_request__2}';
+              requiredFieldArr['a2b'] = '{!$Component.title_2}'+','+'{!$Component.service_license___2}'+','+'{!$Component.what_would_you_like_to_do__2}'+','+'{!$Component.ihPassCodeRelease_2}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}'+','+'{!$Component.Add_additional_details_to_your_request__2}';
+              requiredFieldArr['a3'] = '{!$Component.ihCSLicenseContact_3}'+','+'{!$Component.ihCSContactRequest_3}'+','+'{!$Component.license_3}'+','+'{!$Component.first_name_a_3}'+','+'{!$Component.last_name_a_3}'+','+'{!$Component.email_a_3}'+','+'{!$Component.selCountry_a_3}'+','+'{!$Component.first_name_b_3}'+','+'{!$Component.last_name_b_3}'+','+'{!$Component.companyUniversity_b_3}'+','+'{!$Component.newStreetAddress1_b_3}'+','+'{!$Component.newCity_b_3}'+','+'{!$Component.zip_code_b_3}'+','+'{!$Component.email_b_3}'+','+'{!$Component.phone_b_3}';
+              requiredFieldArr['a4'] = '{!$Component.title_4}'+','+'{!$Component.Transfer_product1_4}'+','+'{!$Component.quantity1_4}'+','+'{!$Component.from1_4}'+','+'{!$Component.to1_4}';
+              requiredFieldArr['a4b'] = '{!$Component.title_4}'+','+'{!$Component.Transfer_product1_4}'+','+'{!$Component.quantity1_4}'+','+'{!$Component.from1_4}'+','+'{!$Component.to1_4}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}';
+              requiredFieldArr['a5'] = '{!$Component.title_5}'+','+'{!$Component.license_5}'+','+'{!$Component.listLicensesToCombine_5}';
+              requiredFieldArr['a5b'] = '{!$Component.title_5}'+','+'{!$Component.license_5}'+','+'{!$Component.listLicensesToCombine_5}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}';
+              requiredFieldArr['a6'] = '{!$Component.title_6}'+','+'{!$Component.add_additional_details_6}';
+              requiredFieldArr['a6b'] = '{!$Component.title_6}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}'+','+'{!$Component.add_additional_details_6}';
+              requiredFieldArr['b1'] = '{!$Component.platform_7}'+','+'{!$Component.OS_7}'+','+'{!$Component.releaselists_7}'+','+'{!$Component.allproductlist_7}'+','+'{!$Component.title_7}'+','+'{!$Component.how_can_we_assist_7}';
+              requiredFieldArr['b2'] = '{!$Component.summary_8},{!$Component.description_8},{!$Component.ver_8},{!$Component.product_8},{!$Component.release_8}';
+          }
+          
+          var dependencyField = new Array();// index is the id of the required field and value is the dependent radio button id seperated by '%2C'.
+          dependencyField['{!$Component.ihPassCodeRelease_2}'] = "Request a passcode/license file";
+          dependencyField['{!$Component.first_name_a_3}'] = "changeContact%2CremoveContact";
+          dependencyField['{!$Component.last_name_a_3}'] = "changeContact%2CremoveContact";
+          dependencyField['{!$Component.email_a_3}'] = "changeContact%2CremoveContact";
+          dependencyField['{!$Component.selCountry_a_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.first_name_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.last_name_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.companyUniversity_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.newStreetAddress1_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.newCity_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.zip_code_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.email_b_3}'] = "changeContact%2CaddContact";
+          dependencyField['{!$Component.phone_b_3}'] = "changeContact%2CaddContact";
+          
+          var licenseFieldArr = new Array();
+          licenseFieldArr['a1'] = '{!$Component.License__c_1}';
+          licenseFieldArr['a2'] = '{!$Component.service_license___2}';
+          licenseFieldArr['a2b'] = '{!$Component.service_license___2}';
+          licenseFieldArr['a3'] = '{!$Component.license_3}';
+          licenseFieldArr['a4'] = '{!$Component.from1_4},{!$Component.to1_4},{!$Component.from2},{!$Component.to2},{!$Component.from3},{!$Component.to3},{!$Component.from4},{!$Component.to4},{!$Component.from5},{!$Component.to5}';
+          licenseFieldArr['a4b'] = '{!$Component.from1_4},{!$Component.to1_4},{!$Component.from2},{!$Component.to2},{!$Component.from3},{!$Component.to3},{!$Component.from4},{!$Component.to4},{!$Component.from5},{!$Component.to5}';
+          licenseFieldArr['a5'] = '{!$Component.license_5}';
+          licenseFieldArr['a5b'] = '{!$Component.license_5}';
+          licenseFieldArr['a6'] = '{!$Component.csgcslicense_6}';
+          licenseFieldArr['a6b'] = '{!$Component.csgcslicense_6}';
+          licenseFieldArr['b1'] = '{!$Component.license_7}';      
+     </script>
+     
+</apex:form>
+</body>
+<apex:includeScript value="{!URLFOR($Resource.iframeResizer_min, '/iframeResizer.contentWindow.min.js')}"/>
+</apex:page>

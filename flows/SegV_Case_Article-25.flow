@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Error_Missing_Email_Template_Id</name>
+        <label>Error Missing Email Template Id</label>
+        <locationX>390</locationX>
+        <locationY>356</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>SegV Error: Case {!caseNumber}, email template Id not found for Pattern Geck Id: {!geckPatternId} (SFDC SegV Flow)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>SegV Error: Case {!caseNumber}, email template Id not found for Pattern Geck Id: {!geckPatternId} (SFDC SegV Flow)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!ErrorEmailSfdc},{!ErrorEmailSegV}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>SegV_Temp_1</name>
+        <label>SegV Temp 1</label>
+        <locationX>40</locationX>
+        <locationY>606</locationY>
+        <actionName>Case.SegV_Temp_1_US</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>EmailMessage1</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>SegV_Temp_2</name>
+        <label>SegV Temp 2</label>
+        <locationX>230</locationX>
+        <locationY>604</locationY>
+        <actionName>Case.SegV_Temp_2_US</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>EmailMessage2</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>SegV_Temp_3</name>
+        <label>SegV Temp 3</label>
+        <locationX>395</locationX>
+        <locationY>604</locationY>
+        <actionName>Case.SegV_Temp_3_US</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>EmailMessage3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Has_Email_Template_Id</name>
+        <label>Has Email Template Id?</label>
+        <locationX>231</locationX>
+        <locationY>360</locationY>
+        <defaultConnector>
+            <targetReference>Select_email_template</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>No1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>article1.Email_Template_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Missing_Email_Template_Id</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_article_found</name>
+        <label>Is article found?</label>
+        <locationX>39</locationX>
+        <locationY>137</locationY>
+        <defaultConnector>
+            <targetReference>SegV_Temp_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>article1</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_CaseArticle</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Select_email_template</name>
+        <label>Select email template</label>
+        <locationX>234</locationX>
+        <locationY>481</locationY>
+        <defaultConnector>
+            <targetReference>SegV_Temp_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Use template 1</defaultConnectorLabel>
+        <rules>
+            <name>Use_template_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>article1.Email_Template_ID__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1002</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SegV_Temp_2</targetReference>
+            </connector>
+            <label>Use template 2</label>
+        </rules>
+        <rules>
+            <name>Use_template_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>article1.Email_Template_ID__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1003</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SegV_Temp_3</targetReference>
+            </connector>
+            <label>Use template 3</label>
+        </rules>
+    </decisions>
+    <description>For SegV project. This flow is triggered by process when case is created. The flow does:
+1. Create CaseArticle record to link the case to the article.
+2. Send email to case contact.</description>
+    <interviewLabel>SegV Case Article {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SegV Case Article</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_CaseArticle</name>
+        <label>Create CaseArticle</label>
+        <locationX>229</locationX>
+        <locationY>137</locationY>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ArticleLanguage</field>
+            <value>
+                <stringValue>en_US</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CaseId</field>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KnowledgeArticleId</field>
+            <value>
+                <elementReference>article1.KnowledgeArticleId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CaseArticle</object>
+    </recordCreates>
+    <recordCreates>
+        <name>EmailMessage1</name>
+        <label>EmailMessage1</label>
+        <locationX>35</locationX>
+        <locationY>705</locationY>
+        <connector>
+            <targetReference>Close_Case_No_Response</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>support@mathworks.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>EmailSubject1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TextBody</field>
+            <value>
+                <elementReference>Email_template_1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>caseContactEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+    </recordCreates>
+    <recordCreates>
+        <name>EmailMessage2</name>
+        <label>EmailMessage2</label>
+        <locationX>227</locationX>
+        <locationY>705</locationY>
+        <connector>
+            <targetReference>Close_Case_Possible_Workaround</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>support@mathworks.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>EmailSubject1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TextBody</field>
+            <value>
+                <elementReference>Email_template_2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>caseContactEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+    </recordCreates>
+    <recordCreates>
+        <name>EmailMessage3</name>
+        <label>EmailMessage3</label>
+        <locationX>392</locationX>
+        <locationY>707</locationY>
+        <connector>
+            <targetReference>Close_Case_Possible_Workaround</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>support@mathworks.com</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>EmailSubject1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TextBody</field>
+            <value>
+                <elementReference>Email_template_3</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>caseContactEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Query_article</name>
+        <label>Query article</label>
+        <locationX>34</locationX>
+        <locationY>26</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_article_found</targetReference>
+        </connector>
+        <filters>
+            <field>Geck_Pattern_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>geckPatternId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Language</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>en_US</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PublishStatus</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Online</stringValue>
+            </value>
+        </filters>
+        <object>FAQ__kav</object>
+        <outputReference>article1</outputReference>
+        <queriedFields>Title</queriedFields>
+        <queriedFields>Answers_URL__c</queriedFields>
+        <queriedFields>Geck_Additional_Question__c</queriedFields>
+        <queriedFields>KnowledgeArticleId</queriedFields>
+        <queriedFields>Email_Template_ID__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Close_Case_No_Response</name>
+        <label>Close Case No Response</label>
+        <locationX>32</locationX>
+        <locationY>814</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SubStatus__c</field>
+            <value>
+                <stringValue>No Response</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Close_Case_Possible_Workaround</name>
+        <label>Close Case Possible Workaround</label>
+        <locationX>307</locationX>
+        <locationY>815</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SubStatus__c</field>
+            <value>
+                <stringValue>Possible Workaround/Solution</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>227</locationX>
+        <locationY>248</locationY>
+        <connector>
+            <targetReference>Has_Email_Template_Id</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>caseId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Geck_Article_Title__c</field>
+            <value>
+                <elementReference>article1.Title</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Geck_Article_URL__c</field>
+            <value>
+                <elementReference>article1.Answers_URL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Questions_Specific_To_Issue__c</field>
+            <value>
+                <elementReference>article1.Geck_Additional_Question__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <startElementReference>Query_article</startElementReference>
+    <textTemplates>
+        <name>Email_template_1</name>
+        <text>Hello, 
+
+Thank you for sending us information about the recent MATLAB crash you experienced. 
+
+Our initial analysis indicates this crash was the result of an unknown issue. 
+
+If you would like assistance, please reply to this message and we will be happy to help you. 
+
+If possible, please include the following information in your reply: 
+
+   (1) The steps needed to reproduce the issue. 
+
+   (2) Any relevant files necessary to reproduce the crash. 
+
+This information will help us further investigate the cause of this crash. 
+
+Sincerely, 
+MathWorks Technical Support
+
+{!caseRef}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_template_2</name>
+        <text>Hello, 
+
+Thank you for sending us information about the recent MATLAB crash you experienced. 
+
+Our initial analysis indicates this is a known issue that is still under investigation. We are currently trying to identify a set of consistent reproduction steps to allow us to develop a suitable solution. 
+
+If you can reproduce the crash, please reply to this message with the following information: 
+
+{!article1.Geck_Additional_Question__c}
+
+Sincerely, 
+MathWorks Technical Support
+
+{!caseRef}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_template_3</name>
+        <text>Hello, 
+
+Thank you for sending us information about the recent MATLAB crash you experienced. 
+
+Our initial analysis indicates this crash was the result of a known issue, described on the following page: 
+
+   {!article1.Title}
+   {!article1.Answers_URL__c}
+
+If you need further assistance, please reply to this message and we will be happy to help you. 
+
+Sincerely, 
+MathWorks Technical Support
+
+{!caseRef}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubject1</name>
+        <text>Help troubleshooting recent MATLAB crash: {!caseNumber}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ErrorEmailSegV</name>
+        <text>test@example.com</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ErrorEmailSfdc</name>
+        <text>haigang.wu@mathworks.com</text>
+    </textTemplates>
+    <variables>
+        <name>article1</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>FAQ__kav</objectType>
+    </variables>
+    <variables>
+        <name>caseContactEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>caseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>caseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>caseRef</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>caseWebEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>geckEmailTemplateId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>geckPatternId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

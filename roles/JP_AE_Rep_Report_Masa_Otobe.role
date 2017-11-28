@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>JP AE Rep Report Masa Otobe</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>JP AE Rep Report Masa Otobe</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>JP_AE_Manager_Masa_Otobe</parentRole>
+</Role>

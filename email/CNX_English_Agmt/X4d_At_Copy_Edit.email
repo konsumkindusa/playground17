@@ -1,0 +1,15 @@
+connections-and-books-review-team@mathworks.com
+
+
+Hi Editorial Team,
+
+The following Connections web page from {!Partner_Agreement__c.Account__c} for {!Partner_Agreement__c.Partner_Agreement_Name__c} is ready for copyedit: 
+
+{!Partner_Agreement__c.Web_Page_URL__c}
+
+Please reply back to this message once your review is complete.
+
+Thanks,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

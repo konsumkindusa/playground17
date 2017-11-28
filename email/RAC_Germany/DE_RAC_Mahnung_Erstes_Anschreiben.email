@@ -1,0 +1,21 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+bei der Durchsicht der offenen Posten mussten wir feststellen, dass unsere Rechnung xxxxxxx (Fälligkeitsdatum: xx.xx.xxxx) bisher noch nicht bezahlt ist.
+
+Wir bitten Sie, den Vorgang zu prüfen und die Zahlung in Höhe von € ….. zu veranlassen.
+ 
+In der Anlage finden Sie eine Kopie der offenen Rechnung.
+ 
+Für Rückfragen stehen wir Ihnen gerne zur Verfügung.
+
+Gerne bieten wir Ihnen ab sofort die Möglichkeit, unsere Rechnungen per Email (PDF Anhang) zu erhalten. Wünschen Sie dieses, antworten Sie bitte auf diese Nachricht und teilen Sie uns die entsprechende Email-Adresse mit.
+
+Bei Antworten auf diese Nachricht, belassen Sie bitte die unten aufgeführte Reference ID in der Email, damit eine direkte Zuordnung zu diesem Vorgang erfolgen kann.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

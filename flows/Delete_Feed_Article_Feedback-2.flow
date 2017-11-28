@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Process to delete a feed item when the associated article feedback status is set to Complete or Rejected</description>
+    <label>Delete Feed Article Feedback</label>
+    <processType>Workflow</processType>
+</Flow>

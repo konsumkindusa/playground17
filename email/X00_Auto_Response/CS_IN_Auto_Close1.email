@@ -1,0 +1,19 @@
+Dear {!Contact.FirstName},
+
+Because we have not heard back from you regarding Case #{!Case.CaseNumber}, your issue has been marked as closed.  However, if your issue is not resolved any you still need assistance please reply to this email referencing the Reference ID included below.
+
+
+Thank you,
+
+{!Case.OwnerFullName}
+Customer Service Team
+MathWorks India Private Limited
+Phone: +91 80 6632 6000
+info@mathworks.in
+
+
+
+This is an auto generated e-mail
+
+
+{!Case.Thread_Id}

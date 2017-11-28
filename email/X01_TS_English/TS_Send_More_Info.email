@@ -1,0 +1,36 @@
+Dear {!Contact.FirstName}, 
+
+This is in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+In order to better assist you, please send us the following information: 
+
+1) The complete output displayed after entering the command,
+
+for MATLAB versions R2012b and later:
+>> ver -support
+
+for MATLAB versions R2012a and earlier:
+>> ver
+
+at the MATLAB command line. This will provide us with details regarding your license, product, and platform.
+
+2) A detailed description of the issue you are encountering.
+
+3) The exact error messages you are receiving, if any.
+
+4) The precise steps needed to reproduce the issue.
+
+5) Any relevant files, both code and data.
+
+
+We look forward to getting the above information from you.
+
+Use the following link to view and update your Case online:
+http://www.mathworks.com/support/servicerequests/index.html
+
+Please preserve the Reference ID in any further correspondence on this query. This will allow our systems to automatically assign your reply to the appropriate Case. 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

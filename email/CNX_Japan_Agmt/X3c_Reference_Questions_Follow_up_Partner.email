@@ -1,0 +1,17 @@
+{!Partner_Agreement__c.Primary_Contact__c}様
+
+いつもお世話になっております。 
+[先日はTerms & Conditionsをご送付いただきましてありがとうございました。]
+Connections Programレビュープロセスの一環として、お伺いしました照会先へご連絡を
+差し上げておりますが、[　　]様よりまだお返事を頂戴できておりません。
+
+弊社から[　　]様に再度ご連絡をさせていただきましたが、{!Partner_Agreement__c.Primary_Contact__c}様
+からも[　　]様に、ご返信いただくようご依頼いただくことはできますでしょうか。
+[　　]様からのご返信が難しい場合には、別の照会先をお知らせいただけますと幸いです。
+
+どうぞよろしくお願いいたします。
+
+{!User.Email_Template_Signature__c} 
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

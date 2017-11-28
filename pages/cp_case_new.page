@@ -1,0 +1,182 @@
+<!-- 
+/**
+* @author Original: Limo Sadalla - Cloud Sherpas/Mathworks, Last Modified: Jesfer Baculod, Kishore An
+* @date Original: 26 June 2013, Last Modified: 23 September 2013
+* @description page on Customer Portal for creating Case  
+*/ 
+-->
+<apex:page Controller="cp_Case_new_ControllerExtension" standardStylesheets="false" sidebar="false" showHeader="false" language="{!language}">
+     <apex:includeScript value="{!URLFOR($Resource.iframeResizer_min, '/iframeResizer.min.js')}"/>
+     <head>
+        <title>
+          My Service Request - Create
+        </title>
+     </head>
+<style>
+html body { min-width:{!$Label.MySR_Page_Minimum_Width}px; }
+</style>
+    
+     <script>
+        function displayTasks(var1,var2) {
+            document.getElementById('divcsTask').style.display = var1;
+            document.getElementById('divtsTask').style.display = var2;
+            if({!isStudent}){
+                var studentexportControlledDiv = document.getElementById('student-export-controlled-div');         
+                studentexportControlledDiv.style.display = var2;
+            }
+            else{
+                //HW 2070756
+                if ('{!language}' == 'en_US')
+                    var exportControlledDiv = document.getElementById('export-controlled-div-1');   
+                else       
+                    var exportControlledDiv = document.getElementById('export-controlled-div');   
+                //HW 2070756
+
+                exportControlledDiv.style.display = var2;
+            }
+            if({!NOT(isStudent)}){                
+                //document.getElementById('divcsTaskOpt2').style.display =var1; //HW 2292637
+                document.getElementById('divcsTaskOpt3').style.display =var1;
+                document.getElementById('divcsTaskOpt4').style.display =var1;
+                document.getElementById('divcsTaskOpt5').style.display =var1;
+            }
+            
+        }
+            
+       
+        function clearCheckedRadioButtons(){
+            var cst = document.getElementById('divcsTask');
+            var tst = document.getElementById('divtsTask');
+            var cstelems = cst.getElementsByTagName('input');
+            var tstelems = tst.getElementsByTagName('input');
+            for (var i = 0; i < cstelems.length; i++){
+                cstelems[i].checked = false;
+            }
+            for (var i = 0; i < tstelems.length; i++){
+                tstelems[i].checked = false;
+            }
+        }
+</script>
+
+<body id="nextgen_b" class="search_template">
+    <apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block" id="iframeGrid_192">
+        
+        <apex:form id="mainFrm">
+        <apex:actionFunction name="AFselectTask" action="{!getPageFrame}" status="loading" rerender="opframerequest">
+            <apex:param name="selTask" value="{!selTask}" assignTo="{!selTask}" />
+        </apex:actionFunction>
+        <apex:actionFunction name="AFselectRequestType"  action="{!getPageFrame}"  rerender="opframerequest">
+            <apex:param name="selTask" value="{!selTask}" assignTo="{!selTask}" />
+        </apex:actionFunction>
+          
+         <h1 class="mwheader">{!$Label.CS_Create_New}</h1>
+<apex:commandLink action="/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}" value="<< {!$Label.CS_Back_to_Home}" styleClass="return_link" target="_self"/>
+<br></br>
+             <div class="form_container wide margined_0" style="padding-bottom: 0px;">
+              <div class="nextgen_design" style="width:100% !important">
+              <h3>{!$Label.CS_Step_1}</h3>
+          
+                <div class="radio_group" id="radio_group">
+              
+                  <div class="form_element margined_10"> 
+                    <!-- Step 1a: Customer Service -->
+                    <input name="taskType" id="csRadioButtons" type="radio" value="csRadioButtons" class="radio" onclick="displayTasks('block','none'); AFselectRequestType(''); clearCheckedRadioButtons();"/>
+                    <label for="csRadioButtons" >{!$Label.CS_Header}</label>
+                    <div id="divcsTask" style="display: none; padding: 10px 0px 0px 20px"> 
+                      <!-- Step 1a Option 1: Product Activation -->
+                      <!--Removed this option by Haigang Wu, for Sprint 2016.5.2, story 1264855
+                      <div class="form_element" style="display: block; padding-top: 10px; overflow: hidden;">
+                        <input name="cstask" id="csactivationtask" type="radio" value="ProductActivation" class="radio" onclick="AFselectTask(this.value);"/>
+                        <label for="csactivationtask" >Product Activation</label>
+                      </div>
+                      <!-- Step 1a Option 2: Transfer License -->
+                      <!--Removed this option by Haigang Wu, for Sprint 2017.11, story 2292637
+                      <div class="form_element" id="divcsTaskOpt2" style="display: block; padding-top: 10px; overflow: hidden;">
+                        <input name="cstask" id="plptask" type="radio" value="PasscodeLicense" class="radio" onclick="AFselectTask(this.value);"/>
+                        <label for="plptask" >{!$Label.CS_Option_1}</label>
+                      </div>
+                      <!-- Step 1a Option 3: Add, Change Remove -->
+                      <div class="form_element" id="divcsTaskOpt3" style="display: block; padding-top: 10px; overflow: hidden;">
+                        <input name="cstask" id="licensecontacttask" type="radio" value="AddChangeLicense" class="radio" onclick="AFselectTask(this.value);"/>
+                        <label for="licensecontacttask" >{!$Label.CS_Option_2}</label>
+                      </div>
+                      <!-- Step 1a Option 4: Transfer Products -->
+                      <div class="form_element" id="divcsTaskOpt4" style="display: none;overflow: hidden;">
+                        <input name="cstask" id="producttask" type="radio" value="RedesignateProducts" class="radio" onclick="AFselectTask(this.value);"/>
+                        <label for="producttask" >{!$Label.CS_Option_3}</label>
+                      </div>
+                      <!-- Step 1a Option 5: Combine License -->
+                      <!--Removed this option by Haigang Wu, for Sprint 2016.5.2, story 1265041
+                      <div class="form_element" id="divcsTaskOpt5" style="display: none;overflow: hidden;">
+                        <input name="cstask" id="combinetask" type="radio" value="CombineLicenses" class="radio" onclick="AFselectTask(this.value);"/>
+                        <label for="combinetask" >Combine licenses</label>
+                      </div>
+                      <!-- Step 1a Option 6: General -->
+                      <div class="form_element">
+                        <input name="cstask" id="othertask" type="radio" value="GeneralCustomerService" class="radio" onclick="AFselectTask(this.value);"/>
+                        <label for="othertask" >{!$Label.CS_Option_4}</label>
+                      </div>
+                    </div>
+              </div>
+              <div class="form_element  margined_10"> 
+                <!-- Step1b: Tech Support -->
+                <input name="taskType" id="tsRadioButton" type="radio" value="tsRadioButtons" class="radio" onclick="displayTasks('none','block'); AFselectRequestType(''); clearCheckedRadioButtons();"/>
+                <label for="tsRadioButton" >{!$Label.TS_Header}</label>
+                <div id="divtsTask" style="display: none; padding: 10px 0px 10px 20px"> 
+                  <!-- Step 1b Option 1: Tech Support: Install, License, Startup -->
+                  <div class="form_element" style="display: block; overflow: hidden;padding-top:10px">
+                    <input type="radio" id="installtask" name="tstask" value="Installation" onclick="AFselectTask(this.value);" class="radio"/>
+                    <label for="installtask" >{!$Label.TS_Option_1}</label>
+                  </div>
+                  <!-- Step 1b Option 2: Tech Support: Product, Bugs, Documentation -->
+                  <div class="form_element">
+                    <input type="radio" id="generaltask" name="tstask" value="Producthelp" onclick="AFselectTask(this.value);" class="radio"/>
+                    <label for="generaltask" >{!$Label.TS_Option_2}</label>
+                  </div>
+                </div>
+              </div>          
+            </div>        
+          </div>     
+         </div>  
+         <div id="export-controlled-div" style="display:none">
+              {!$Label.CS_Footer_1} <a href="#" onClick="javascript:window.open('{!$Label.mw_domain_url}/company/aboutus/contactus.html','_blank', 'width=1000,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes'); return false;">{!$Label.CS_Footer_2}</a>{!$Label.CS_Footer_3}
+         </div>
+         <div id="export-controlled-div-1" style="display:none">
+              {!$Label.CS_Footer_1} <a href="#" onClick="javascript:window.open('{!$Label.mw_domain_url}/company/aboutus/contactus.html','_blank', 'width=1000,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes'); return false;">{!$Label.CS_Footer_2}</a> {!$Label.CS_Footer_3}
+         </div>
+         <div id="student-export-controlled-div" style="display:none">
+             {!$Label.CS_Footer_4} <a href="#" onclick="javascript:window.open('{!$Label.mw_domain_url}/academia/student_version/start.html?s_cid=support_spt_cta_academia','_blank', 'width=1000,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes'); return false;">{!$Label.CS_Footer_5}</a> {!$Label.CS_Footer_6}
+         </div>    
+    
+         <apex:actionstatus style="display:block;clear:both" id="loading" onstart="document.getElementById('{!$Component.opframerequest}').style.display = 'none';" onstop="document.getElementById('{!$Component.opframerequest}').style.display = 'block';">
+                <apex:facet name="start">
+                    <br/>
+                    <img alt="waiting" src="{!$Resource.spinner}" border="0" /> {!$Label.MySR_Form_is_loading}
+                </apex:facet>
+         </apex:actionstatus>  
+    
+
+         <apex:outputpanel id="opframerequest" >
+                <apex:outputpanel rendered="{!if(selTask <> '',true,false)}" layout="block" >
+                    <iframe src="{!pageFrame}" scrolling="no" frameborder="0" id="theIframe" width="100%" onLoad="iFrameResize({log:false}, '#theIframe')">
+                </iframe>
+                </apex:outputpanel>
+            </apex:outputpanel>
+     
+        </apex:form>
+          
+         </apex:outputPanel>  
+         </apex:outputPanel> 
+         </apex:outputPanel>
+         </div>  
+         </apex:outputPanel> 
+        </apex:outputPanel> 
+        <apex:include pageName="cp_footer" />
+        </body>  
+</apex:page>

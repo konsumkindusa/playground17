@@ -1,0 +1,57 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  Below are the instructions for locating the license file for MATLAB.  The location of the License file can vary based upon the following factors:
+- The operating system you are using
+- What release of MATLAB you are using
+- Which type of license/activation you are using (Standalone Named User, Trial, Network Concurrent, etc)
+
+See the information below for the license file locations:
+NOTE: $MATLAB in the information below refers to the installation folder for MATLAB.
+
+Standalone Named User
+====================
+By default, the license file will be located in the Application Data folder on Windows, and the user's home directory for all other operating systems.  For example, the file for R2009a is located:
+
+C:\Documents and Settings\<username>\Application Data\MathWorks\MATLAB\R2009a_licenses  (for Windows)
+/home/<username>/.matlab/R2009a_licenses (for Unix/Linux/Mac)
+
+NOTE: Application Data may vary on Windows.  To get to the actual Application Data folder, enter %APPDATA% into Windows explorer and click "Go" to get to that location.
+
+Generally the license file located here will be named: 
+
+license_<hostname>_<license #>_<MATLAB version>.lic
+ex: license_my-computer_123456_R2009a.lic
+
+Designated Computer
+=================
+By default, the license file location is $MATLAB\licenses for all platforms.  The license file naming convention will be the same: license_<hostname>_<license #>_<MATLAB version>.lic
+
+Network Concurrent or Network Named User
+====================================
+On the License Server, the license file location is:
+
+$MATLAB\flexlm  (for Windows)
+$MATLAB/etc (for all others)
+
+On the Client computer, the license file location is $MATLAB\licenses for all platforms.  The license file name will be network.lic in this case.
+
+Trials
+======
+The license file will be called demo_<trial #>_<MATLAB version>.lic and will be placed in the $MATLAB\licenses folder as well.
+
+R2007b and below
+==============
+For versions prior to R2008a, the license file is located in either:
+$MATLAB\bin\{win32|win64}  (For Windows)
+$MATLAB/etc (For all other operating systems)
+
+In general, the default license file is license.dat for a full license and demo.lic for a trial.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

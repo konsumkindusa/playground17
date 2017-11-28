@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="{!$Label.CP_ENROLL_CoOrdinatorNotificationSubject}" recipientType="Contact" relatedToType="Enterprise_Training_Agreement__c" language="{!relatedTo.Language__r.ISO_Code__c}">
+    <messaging:HtmlEmailBody >
+        <c:TrainingCoordinatorNotification enterpriseId="{!relatedTo.Id}" langu="{!relatedTo.Language__r.ISO_Code__c}"></c:TrainingCoordinatorNotification>
+    </messaging:HtmlEmailBody>
+   
+</messaging:emailTemplate>

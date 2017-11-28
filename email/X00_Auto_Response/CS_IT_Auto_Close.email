@@ -1,0 +1,22 @@
+Gentile {!Contact.FirstName}, 
+
+Non avendo ricevuto alcun riscontro da parte sua circa il Case# {!Case.CaseNumber} la informiamo che lo stesso è stato chiuso. 
+
+Nel caso in cui il suo problema non fosse risolto per favore risponda a questo messaggio riportando il sottostante Reference ID. 
+
+La ringraziamo per la cortese collaborazione, 
+
+{!Case.OwnerFullName} 
+Customer Service Team 
+
+The MathWorks Srl 
+Via Bertola, 34 
+10122 Torino 
+CF e P.IVA 08333270018 
+CCIAA: 964238 Cap. Soc. € 200.000 
+Direzione e Coordinamento The MathWorks Inc 
+
+{!Case.Thread_Id}
+
+
+Questa è una risposta automatica.

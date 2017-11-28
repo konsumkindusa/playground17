@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used in the Customer Notification process to send EN template when an Answer link is available</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Customer Notification - JP Answer Template</name>
+    <style>none</style>
+    <subject>MathWorks テクニカルサポートフォローアップ</subject>
+    <textOnly>{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName}様 
+
+いつもお世話になっております。MathWorks テクニカルサポート窓口です。
+
+以前にお問い合わせいただきました、ご利用製品の問題に関して、下記のとおり、ご連絡いたします。
+
+テクニカルサポートに {!Case.Customer_Notification_Case_CreateDate__c}付けでお問い合わせいただいた{!Case.Product_Lookup__c} {!Case.Version__c} ({!IF(Case.Release__c = &quot;No Release&quot;, &quot;&quot;, Case.Release__c )})に関する内容は次のものです：&quot;{!Case.Customer_Notification_Answer_T__c}&quot; 
+
+この問題は、Release {!Case.Customer_Notificaiton_Release__c} にて改善されていることをお知らせいたします。
+
+この問題についての詳細は、以下の URL よりご確認いただけます。
+{!Case.Customer_Notification_Answers_URL__c} 
+
+{!Case.Customer_Notificaiton_Release__c}についての詳細は、以下の URL からご覧ください。
+http://www.mathworks.com/products/new_products/latest_features.html?ref=ts_{!Case.Customer_Notificaiton_Release__c} 
+
+さらにご質問がございましたら、テクニカルサポートに以下の URL よりご連絡ください。
+http://www.mathworks.com/support/contact_us/index.html?ref=ts_{!Case.Customer_Notificaiton_Release__c} 
+なお、以前のお問い合わせのサービスリクエスト ID は {!Case.CaseNumber} です。
+
+今後とも何卒宜しくお願い致します。 
+
+MathWorks テクニカルサポート窓口 
+
+{!Case.Email_Ref_Id__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

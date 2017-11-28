@@ -1,0 +1,19 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage.
+
+Um die beantragte Umschreibung der Lizenz/en vornehmen zu können, bitten wir um eine Bestätigung des gegenwärtigen Administrators.
+
+Sobald uns diese vorliegt, werden wir die gewünschte Änderung umgehend ausführen.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email  unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,23 @@
+Estimado Sr./Sra. {!Contact.LastName}:
+
+Le escribo con referencia a su petición de servicio # {!Case.CaseNumber} sobre '{!Case.Subject}'. 
+
+Para las licencias de estudiante, el acceso a nuestro servicio de soporte técnico por teléfono o e-mail está  limitado a dudas relacionadas con la instalación del producto o para reportar fallos .
+
+En la página web de MathWorks hay muchos recursos disponibles que pueden ser útiles para resolver su problema. 
+
+Preguntas Frecuentes para versión de estudiante e instalación y soporte técnico online: http://www.mathworks.com/academia/student_version/start.html
+
+Soporte Técnico Online: http://www.mathworks.com/support/ 
+
+Recursos por departamento: http://www.mathworks.com/products/education/academic.shtml 
+
+Usenet newsgroup: comp.soft-sys.matlab 
+
+Comunidad de usuarios de MATLAB: http://www.mathworks.com/matlabcentral/ 
+
+Si después de usar los recursos mencionados, no ha encontrado la solución a su cuestión, deberá contactar con su profesor o supervisor. 
+
+Atentamente, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

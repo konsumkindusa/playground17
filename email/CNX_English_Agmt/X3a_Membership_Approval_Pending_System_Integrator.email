@@ -1,0 +1,79 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+[CHOOSE ONE]
+
+[SI approval – DELETE Consulting CHOICE]
+The review team has accepted your request to join the MathWorks Connections Program with your application for {!Partner_Agreement__c.Partner_Agreement_Name__c}.
+
+[Consultant approval – DELETE SI CHOICE]
+The MathWorks review team has reviewed your request to join the MathWorks Connections Program with your application for {!Partner_Agreement__c.Partner_Agreement_Name__c}. While we do not feel that your application qualifies you as a System Integrator, we would be happy to accept your application as a Consulting Services Partner.
+
+In order to complete your membership to the Connections Program, please review the additional requirements below. Please note, if these requirements are not met in the next 30 days, your application to the MathWorks Connections Program will be put moved to an inactive status. If you need more time, please reply and provide us with a specific date when you expect to meet these requirements. 
+
+Below is a summary of steps to be completed. Details for each requirement are provided below.
+
+·         Sign and mail the Connections Program Terms & Conditions
+
+·         Purchase or renew development license
+
+·         Reference Names
+
+·         Reference Check
+
+===========
+
+TERMS AND CONDITIONS:
+
+You must agree to and sign a copy of the MathWorks Connections Program Terms & Conditions located at https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/products/connections/join/CNXTerms_Conditions.pdf. We must receive the signed hard copy document before membership is confirmed in the program.  Please mail a signed copy of the Terms and Conditions to:
+
+MathWorks, Inc.
+Attn: Dana Wright
+3 Apple Hill Drive
+Natick, MA 01760 USA
+
+===========
+
+DEVELOPMENT LICENSE:
+
+[CHOOSE ONE BELOW AND DELETE THIS MESSAGE]
+
+Connections Program partners must own and maintain at least one commercial license of MathWorks products on which your products or services depend current under software Maintenance Service. 
+
+[CHOOSE BELOW]
+
+It is our understanding that you’re working through the details for acquiring a license with [SPONSOR]. If you have questions regarding this process, please contact [SPONSOR] at [CONTACT INFO].
+
+According to our records your license of MathWorks tools is currently out of maintenance. To renew your license, please visit https://www.mathworks.com/services/maintenance/?s_tid=htb_sms.
+
+According to our records you do not own a license of MathWorks tools. To purchase a license, please visit https://www.mathworks.com/store.
+
+If you already own a license, please email the license number to connections@mathworks.com. 
+
+Please contact us at connections@mathworks.com once this is complete so we can proceed with the membership process.
+
+===========
+
+[CHOOSE ONE]
+
+[SI approval – 4 references]
+REFERENCE NAMES: 
+We require four reference names that we may contact to ask a few brief questions about their opinion on your company's services, technical expertise, and its relationship with MathWorks products.
+
+[Consultant approval – 2 references]
+REFERENCE NAMES: 
+We require two reference names that we may contact to ask a few brief questions about their opinion on your company's services, technical expertise, and its relationship with MathWorks products.
+
+Please forward these reference names, including emails, to connections@mathworks.com so we can proceed with the application review. If you are unable to provide reference names, please let me know as soon as possible. As a courtesy, and to help speed up the process, we recommend you let your references know that we will be contacting them.
+
+===========
+
+REFERENCE CHECK:
+
+We are in the process of contacting the references that you provided in your application.  Once we have received all responses, I will be in touch with a status update. To speed up the process, we recommend you contact the references you provided, and inform them that we are trying to contact them.
+
+We are looking forward to working with you to complete the application review process. Please feel free to contact us if you have any questions. 
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

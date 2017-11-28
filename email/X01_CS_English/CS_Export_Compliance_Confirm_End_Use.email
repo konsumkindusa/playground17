@@ -1,0 +1,17 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks Customer Service.  In order to proceed with your request, you will need to confirm the End Use for the products.  Please confirm that the MathWorks products associated with your request will not be used for development, production, or use of any of the following:
+a) Chemical or Biological Weapons
+b) Missile Technology (e.g., rocket systems, ballistic missiles, unmanned air vehicles, and drones)
+c) Nuclear Activities, including device, facility and fuel cycle activities
+
+Please reply to this email with “I confirm that these products will not be used in the listed activities”.  If your products will be used for these activities, please let us know and we will provide you with the necessary forms to process your request.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

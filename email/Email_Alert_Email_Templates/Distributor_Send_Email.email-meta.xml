@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be sent to distrbutors with Case details when source is Web, ML_Web or ML_Desktop</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Distributor Send Email</name>
+    <style>none</style>
+    <subject>Web Service Request - [!DistributorEmail]</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

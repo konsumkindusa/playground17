@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MW_Project__c.Project_Time_Cards__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <description>For Managers to see when was the last time the team members logged onto the system and when was last time card entry submitted</description>
+    <filter>
+        <criteriaItems>
+            <column>MW_Project__c.Project_Time_Cards__r$My_Team_Time_Card__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MW_Project__c.Project_Time_Cards__r$CreatedBy.LastLoginDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_DAYS:14</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MW_Project__c.Project_Time_Cards__r$CreatedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>LAST_N_DAYS:14</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MW_Project__c.Project_Time_Cards__r$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MW_Project__c.Project_Time_Cards__r$CreatedBy.LastLoginDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MW_Project__c.Project_Time_Cards__r$CreatedDate</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>My Team Last Login vs Time Card</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Project_with_Time_Cards_and_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>MW_Project__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

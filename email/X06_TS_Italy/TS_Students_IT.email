@@ -1,0 +1,20 @@
+Gentile {!Contact.Salutation} {!Contact.LastName},    
+
+Le scrivo in merito alla sua richiesta # {!Case.CaseNumber} riguardante '{!Case.Subject}'.    
+
+L’accesso al supporto telefonico o via email è disponibile per le Student Version solo per problemi di installazione o per la segnalazione di Bug. Sul nostro sito sono disponibili molte risorse che possono aiutarLa a rispondere alle sue domande:    
+
+Student Version FAQ: 
+Installazione e Supporto Tecnico Online http://www.mathworks.it/academia/student_version/start.html  
+
+Supporto Tecnico Online:  http://www.mathworks.it/support/    
+
+Newsgroup:  comp.soft-sys.matlab    
+
+Il Newsgroup della comunità di utilizzatori di MATLAB è visibile attraverso il MATLAB Central: http://www.mathworks.it/matlabcentral/ o con un qualsiasi newsreader.    
+
+Se dopo aver verificato le risorse consigliate, avesse bisogno di ulteriore aiuto la invitiamo a contattare il Suo professore.    
+
+Cordiali Saluti,    
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

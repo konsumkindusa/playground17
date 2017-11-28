@@ -1,0 +1,21 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+Congratulations! You have been accepted into the MathWorks Connections Program with your product, {!Partner_Agreement__c.Partner_Agreement_Name__c}. I will be creating a draft of your Connections Program Web page and sending it to you for review shortly. 
+
+Access our Partner Resources site - Connections Help Desk
+===========================================
+As a member of the Connections Program, you have access to the Connections Help Desk, a Web site created for our partners with information on marketing and sales oriented program benefits, technical information, and request forms. Available to you 24 hours a day, you can get immediate answers to your questions.
+
+To access the Connections Help Desk, visit www.mathworks.com/products/connections and choose “Partner Resources” located at the bottom of the left hand navigation.  Or you can bookmark or add the direct link of  https://www.mathworks.com/partners/products/ to your "favorites" listing.
+
+You will be prompted for a user name and password that are case sensitive. 
+
+User name: CNXproduct
+Password: Ima#1p                      (I'm a number one partner)
+
+Login access to the Connections Help Desk can be shared with others in your organization who support your Connections Program-approved product. We hope you find the Connections Help Desk useful and informative. 
+
+If you have any questions or suggestions about the Connections Program, Connections Help Desk, or how we can work together, please contact us at connections@mathworks.com.
+
+Regards,
+{!User.Email_Template_Signature__c}

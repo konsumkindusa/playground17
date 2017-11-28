@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>used for RAC auto reply for JO</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC JP Auto Reply</name>
+    <style>freeForm</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>＊本メールは送信専用アドレスより自動返信でお送りしております。ご連絡はお問合せ窓口までお願いします＊
+
+番号： {!Case.CaseNumber}
+
+MathWorks Japan受注窓口です。この度はお問い合わせ頂きありがとうございました。
+
+ご注文の場合は、受注処理が完了し次第、ライセンス管理者様へ”Order Confirmation Mail”を送付させていただきます。
+ 
+本件に関するご質問は、上記記載の受付番号をご用意いただき、【お問い合わせ窓口】へご連絡ください。
+
+どうぞよろしくお願い申し上げます。
+
+
+MathWorks Japan
+受注窓口</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

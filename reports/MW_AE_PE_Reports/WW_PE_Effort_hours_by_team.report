@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12737685</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Project_Time_Card__c.Created_By_Area__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>JP - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>JP Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>IN - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>IN Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>KR - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>KR Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CN - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>CN Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DE - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>DE Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SE - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>SE Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UK - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FR - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>UK + FR Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US - Pilot Engineering</sourceValue>
+            </sourceValues>
+            <value>US Team</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>Project_Time_Card__c.Hours__c</columnName>
+        <highBreakpoint>40.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>30.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project_Time_Card__c.Hours__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>PE Effort hours by team for the past 90 days</description>
+    <filter>
+        <criteriaItems>
+            <column>Project_Time_Card__c.Created_By_Area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Pilot Engineering</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Steve Toeppe</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project_Time_Card__c.Week_Ending__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_12737685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CHILD_CREATED_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>WW PE Effort hours by team</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MW_Project__c$Project_Time_Card__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Project_Time_Card__c.Week_Ending__c</dateColumn>
+        <interval>INTERVAL_LAST90</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,14 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  Our records indicate that XXXX is listed as the Administrator for license XXXXX.  It is company policy that only Administrators be allowed to administer and receive passcodes for professional licenses.  Please contact the Administrator if you wish to obtain passcodes for license XXXXX.
+
+If the Administrator is assigned incorrectly, or you believe you should be associated to this license as an additional Administrator, please reply to this email.  Please note that we may seek out approval from the current Administrator for any proposed license changes.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

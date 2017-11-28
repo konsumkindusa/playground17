@@ -1,0 +1,15 @@
+Hello {!Case.Contact} and XXXXX,
+
+Thank you for contacting MathWorks. Per the request of XXXXX, XXXXXX is now associated to License XXXXXX as a Licensed End User. If you log into your MathWorks Account at mathworks.com you will see the updated changes in the "My Licenses" section.
+
+Click on this link to learn more about activation (Log in required): 
+www.mathworks.com/support/activation/index.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

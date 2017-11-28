@@ -1,0 +1,18 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName},  
+
+Quite some time ago you had been in contact with the MathWorks Book Program regarding the development of your book project, {!Book_Project__c.Book_Title__c}. Please let us know its current status so we can continue our support.
+
+
+Regards,
+
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

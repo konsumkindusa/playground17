@@ -1,0 +1,50 @@
+{!Partner_Agreement__c.Primary_Contact__c}　様
+
+いつもお世話になっております。
+誠に残念ながら、{!Partner_Agreement__c.Partner_Agreement_Name__c}のMathWorks Connections Program登録は失効となります。
+Connections Programは、MathWorks の製品群に関連した一般に販売されているサードパーティ製品のためのプログラムです。メンバーシップの継続には、いくつかの条件をお願いしております。
+
+[LICENSE]
+Connections Program登録ご継続のためには、貴社の Connections Program 製品の開発やサポートのために MathWorks ソフトウェア製品のコマーシャルライセンスを保有し、ソフトウェア保守サービスを有効に保つことをお願いしております。誠に残念ながら、貴社のライセンスのソフトウェア保守サービスは失効しております。
+
+[T&C RE-ACK]
+Connections Program登録ご継続のためには、年1回、Terms and Conditionsのご承諾をお願いしております。誠に残念ながら、現在のところ、ご承諾の確認が取れておりません。
+
+[PRE-PROD CHECK] 
+Connections Program登録ご継続のためには、貴社の{!Partner_Agreement__c.Partner_Agreement_Name__c}開発の近況を確認させていただく必要がございます。Connections Programプリ・プロダクト登録ご継続のためには、MathWorks の製品群に関連した製品・サービスの継続的な開発、年2回の近況のご連絡をお願いしております。誠に残念ながら、現在のところ、近況の確認が取れておりません。
+
+
+本メールにて、[Service Agreement.Name]のConnections Programご登録解除の手続きについてご案内いたします。
+本お手続きにより、Connections Programのベネフィットのご利用が失効いたします。
+
+[Choose relevant partner components below] 
+・貴社製品Webページ
+[DATE]をもちまして、{!Partner_Agreement__c.Partner_Agreement_Name__c}のWebページは削除されます。
+
+・パートナーロゴ
+[Service Agreement.Name]に関するConnections Programパートナーロゴはご利用いただけなくなります。
+製品カタログ、Webサイト、展示会のサインなどが対象ですが、印刷済の資料を修正いただく必要はございません。
+新規作成の際のみ、ご利用をお控えください。なお、Webサイトは、即時修正をお願いいたします。
+
+・貴社プロスペクトへのMathWorks製品評価版ライセンスの貸与
+ご利用いただけなくなります。今後ご希望の際には営業担当へお問い合わせください。
+
+・開発用ライセンス
+ [Service Agreement.Name]の開発に際し、開発用ライセンスの割引は適用されなくなります。
+製品の購入に関しては、営業担当へお問い合わせください。
+
+・セールスサポートライセンス
+ご利用中のセールスサポートライセンス[デモンストレーション用のセールスサポートライセンス、テクニカルサポート、トレーニング、リグレッションテスト]は失効いたします。
+ライセンスとご登録のエンドユーザーは添付のLicense Termination Agreementに記載しております。ご利用の機器からのソフトウェアの削除、DVD等の廃棄をお願いいたします。完了後、添付のLicense Termination Agreementにご署名いただき、ご返送ください。なお、このプロセスはセールスサポートライセンスのみを対象といたします。
+
+・MathWorks製品の再販
+過去にLicense Assignment Processを利用し、MathWorks製品の再販を行っていただきましたが、今後は行えなくなります。
+
+{!Partner_Agreement__c.Partner_Agreement_Name__c}のConnections Programご登録再開のご希望や、
+ご不明な点がございましたら、ご連絡ください。
+
+どうぞよろしくお願いいたします。
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

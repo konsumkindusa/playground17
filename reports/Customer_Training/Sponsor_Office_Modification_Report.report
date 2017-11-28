@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Display_Name__c</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Region__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CURRENCY_ISO_CODE</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Default_Class_Language__c</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Email__c</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Phone__c</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Training_URL__c</field>
+    </columns>
+    <columns>
+        <field>Sponsor_Office__c.Signature__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>List of sponsor offices modified within the last 7 days.</description>
+    <format>Tabular</format>
+    <name>Sponsor Office Modification Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityAuditHistory$Sponsor_Office__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_LAST_UPDATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_LAST_UPDATE</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

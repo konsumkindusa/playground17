@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FAQ__ka$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka.FAQ__kav$Title</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FAQ__ka$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Christian Bernardo,Peter Masoero,Chris Moore,Jon Sun,Kyle Perry,Guillermo Velasco,Colin McDonald,Chris Hacunda,Brendan Lee,Taylor Nelson,Justin Ghetti,Chris Zabriskie</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>INSTALL - Articles Created Last Wk</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>View_All_Articles__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>FAQ__ka$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

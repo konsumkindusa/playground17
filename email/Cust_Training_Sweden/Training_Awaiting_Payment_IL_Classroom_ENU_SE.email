@@ -1,0 +1,13 @@
+Dear {!Contact.Name},
+
+Thank you for contacting The MathWorks Training Department.  Your enrollment in the following class, {!Enrollment__c.Class__c}, is not confirmed until we have received full payment.  In order to secure a seat, your payment must be received prior to the start of class.
+
+For payment instructions please visit the following page:
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+To ensure proper processing, please include attendee name(s), course name(s), location, and dates on all Purchase Orders and Checks. Due to the popularity of our courses, we suggest that you send your payment via overnight delivery. 
+
+You will be sent a confirmation email with all the course details once your payment is processed successfully. If we experience any problems, you will be notified immediately.
+
+Thank you, 
+{!Class__c.Sponsor_Office_Signature__c}

@@ -1,0 +1,17 @@
+Dear {!Contact.FirstName},
+
+I am responding to your request for pricing information on MATLAB Parallel Cloud and MATLAB Distributed Computing Server on Amazon EC2.
+
+Detailed pricing information for MATLAB Parallel Cloud can be found on our website at https://www.mathworks.com/products/parallel-computing/matlab-parallel-cloud/pricing.html
+
+MATLAB Parallel Cloud is ($4.32 per hour), and it covers both hardware and software in one bill (No Amazon Web Services account is required).   
+
+Detailed pricing information for MATLAB Distributed Computing Server on Amazon EC2 from MathWorks can be found on our website at: http://www.mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html
+
+The fees from MathWorks is for software usage only.  The monthly charge is based on the total usage for the previous month.  The total number of workers/per hour is calculated for the month and charged to the credit card kept on file.  Pricing per month is based on the country where the license is being used.
+
+* PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of the EC2 instances that you use. You and other users that provide Amazon credentials for Cloud Center should periodically checking your active Amazon resources through your Amazon Web Services account 
+
+Please don't hesitate to contact me if you have further questions.
+
+Best regards,

@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div><br><table border="0" cellpadding="5" width="600" cellspacing="5" height="400"><tbody><tr valign="top" height="50"><td teditid="c1r1" aeditid="c1r1" locked="0" style="font-size: 12pt; background-color: rgb(255, 255, 255);"></td></tr><tr valign="top" height="300"><td teditid="c1r2" aeditid="c1r2" locked="0" style="font-size: 12pt; background-color: rgb(255, 255, 255);">Dear&nbsp;{!Book_Project__c.Primary_Contact__c},<div><br></div><div>Quite some time ago you had been in contact with the MathWorks Book regarding the development of your book project&nbsp;{!Book_Project__c.Book_Title__c}. &nbsp;Please fill out the survey at the link below to update on the current status of your book project so that we may support it appropriately.</div><div><a href="https://mathworks.getfeedback.com/r/ZRcp5L1U?BookProjectID={!Book_Project__c.Id}&amp;ContactID={!Book_Project__c.Primary_ContactId__c}"><br></a></div><div><a href="https://mathworks.getfeedback.com/r/ZRcp5L1U?BookProjectID={!Book_Project__c.Id}&amp;ContactID={!Book_Project__c.Primary_ContactId__c}">Status Update Survey</a></div><div><br></div><div>Regards,</div><div>Mathworks Book Program Team</div><div><br></div><div>(Please do not reply to this email, if you have questions, please contact bookprogram@mathworks.com</div></td></tr></tbody></table></div><div><br></div><div><br></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

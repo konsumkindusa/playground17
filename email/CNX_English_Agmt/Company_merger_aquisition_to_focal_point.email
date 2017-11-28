@@ -1,0 +1,16 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+{!Partner_Agreement__c.Account__c} has been acquired by or merged with <Company name>. 
+
+Press Release: <http://www.electronicstalk.com/news/asa/asa124.html>
+
+{!Partner_Agreement__c.Account__c} is currently a Connections Program partner with the product, {!Partner_Agreement__c.Partner_Agreement_Name__c}  (A/B level).  This partner currently has a restricted use license agreement for <Sales Support, Regression Testing, Technical Support>.
+
+My standard process is to have the new company sign all of the agreements that the acquired company signed (t’s and C's, Sales Support, etc.) as long as the new company also acquired the product that is in the Connections Program.  Since you are the focal point for their product I wanted to check in with you to make sure we want them to remain in the program.
+
+Please let me know if I should proceed.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

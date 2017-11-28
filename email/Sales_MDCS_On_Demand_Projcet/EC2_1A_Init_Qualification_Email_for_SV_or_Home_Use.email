@@ -1,0 +1,58 @@
+Hi {!Contact.FirstName},
+
+Thank you for contacting us in regards to MATLAB Distributed Computing Server on Amazon EC2.
+
+MATLAB Distributed Computing Server on EC2 is not available for use with a MATLAB Student Version license or MATLAB Home Use license.  You need to have access to a standard Academic or Commercial license running MATLAB R2015a.  Please provide me with the academic/commercial standard license number that you are associated with.
+
+MATLAB Distributed Computing Server on Amazon EC2 tests new capabilities designed for MATLAB users that let users run their applications on Amazon EC2 resources. These new capabilities are available through Parallel Computing Toolbox and MATLAB Distributed Computing Server (MDCS).  
+
+You can develop your program or model on a multicore desktop computer using our Parallel Computing Toolbox and then scale up to many computers by running it on MATLAB Distributed Computing Server. The server supports batch jobs, parallel computations, and distributed large data. 
+
+MATLAB Distributed Computing Server on Amazon EC2 allows you to pay for software resources as you use them with an on demand license.   The MATLAB Distributed Computing Server license allows you to use the products for which your desktop is licensed, and the software for all toolboxes is already installed with the exception of a few items listed here: 
+https://www.mathworks.com/products/ineligible_programs/ 
+
+Would you please answer the following questions allow us to better understand your needs and to confirm that you meet the program requirements?
+
+1. What is your role (Sys Admin, MATLAB user, or both)? 
+
+2. What is your application (general overview)?
+
+3. What is your MATLAB License Number (standard academic/commercial license required)?  
+       What version of MATLAB are you currently running? (Must be running 2015a or higher) 
+4. Are you currently using the Parallel Computing Toolbox (matlabpool, parpool, parfor, spmd)?   Please provide details of how you are using the toolbox.
+
+5. Are you using any Windows or Mac-specific executables such as user-defined
+   MEX-files, Excel spreadsheets, databases, third-party applications, etc.? 
+   (The cloud solution only runs on Linux servers.) 
+
+6. Which Cloud providers are you interested in using? Select all that apply: 
+     Amazon, Internal, Other
+
+Software costs (to MathWorks) 
+* On-demand rate is $0.18 per worker per hour (Commercial US pricing) 
+* MathWorks only accepts credit card payment. 
+* Customers will provide a credit card via the MathWorks License Center which will be kept on file. 
+* Billing is completed monthly. 
+* Credit card will be charged for usage in the previous month 
+* Detailed information on billing can be found on our web site at http://www.mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html 
+
+*** MATLAB Distributed Computing Server on Amazon EC2 is compatible with MATLAB R2015a or higher. 
+
+
+Perpetual/Annual license option
+MathWorks also offers licenses that can be purchased for a specific number of workers.  If you are interested in a perpetual or annual license I will have your Account Manager contact you to provide pricing and licensing information.
+
+Hardware costs (to Amazon) 
+PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of any AWS resources. If needed, you can navigate to aws.amazon.com to create an account. You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account. 
+
+* Please confirm with aws.amazon.com for current pricing 
+* The list of MathWorks' supported instances (Linux only) can be found at 
+http://www.mathworks.com/help/cloudcenter/ug/cloud-computing-console.html#bvlyxe_ 
+
+You might need to contact Amazon Web Services to raise your service limits for the specific on-demand Linux instances that you wish to use. (See: http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) Please note that Amazon Web Services has a policy regarding a waiting period before increasing limits for new customers. Cloud Center does not support the instance types available for the free tier. 
+
+NOTE: Fees for use of Amazon instances started by Cloud Center on your behalf are billed directly from Amazon Web Services. You will incur fees for any instances you use, regardless of whether you have actually used MATLAB Distributed Computing Server. This applies to on-demand licensing, perpetual licensing, and trials. 
+
+I look forward to your hearing from you soon.
+
+Regards,

@@ -1,0 +1,14 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks and your interest in the MATLAB® & Simulink® Student software.
+
+We have received your request regarding placing an order for the MATLAB® & Simulink® Student software.  Due to multiple attempts to purchase the software from the MathWorks webstore, it is possible that your bank or credit card company has temporarily reserved the funds for the failed order(s).  We want to assure you that your credit card was not charged and no funds were taken from your account at this time. The bank or credit card company is not immediately aware the order failed authorization on our end.  On your credit card statement you will most likely see a Pending Transaction from MathWorks.  These funds will be released back to your account within a few days, typically 3-5 business days.  If you have questions about reserved funds, please contact your Bank/Credit Card Company.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

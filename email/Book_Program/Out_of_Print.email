@@ -1,0 +1,24 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName},
+
+Quite some time ago you had been in contact with the MathWorks Book Program regarding your book project, {!Book_Project__c.Book_Title__c}.
+
+We have discovered that the book is no longer in print.
+
+For every new edition we encourage you to fill out a Book Program Application. If you have a recent new edition or new book project you are developing, please complete a book program application so that we can help support it at: www.mathworks.com/support/books/join.html
+
+Please feel free to contact us with any questions.
+
+
+Regards, 
+
+
+{!User.FirstName} {!User.LastName}  
+=============================  
+MathWorks Book Program  
+3 Apple Hill Drive, Natick, MA 01760  
+bookprogram@mathworks.com  
+mathworks.com/support/members  
+============================= 
+
+Book Project: {!Book_Project__c.Name}

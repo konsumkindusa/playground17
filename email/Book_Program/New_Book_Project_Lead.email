@@ -1,0 +1,28 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+I recently learned about your book {!Book_Project__c.Book_Title__c} which is based on MATLAB. We would like to introduce to you to MathWorks Book Program and point you to our application so that we can support your book development.
+
+Benefits of membership in MathWorks Book Program include complimentary access to relevant products for book development, technical support, publisher referrals, and book promotion. 
+
+So that we may learn more about the book project, please complete a book project application at:
+
+www.mathworks.com/support/books/join.html
+
+Here, you can learn about other benefits of being a Book Program member and follow the link to the “Book Program Application” to get started.
+
+After we receive your application, we will contact you to discuss your book project further.
+
+
+
+Sincerely, 
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

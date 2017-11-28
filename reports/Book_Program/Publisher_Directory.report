@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Account</field>
+    </columns>
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact$Phone</field>
+    </columns>
+    <columns>
+        <field>Contact$Title</field>
+    </columns>
+    <columns>
+        <field>Contact$Department</field>
+    </columns>
+    <columns>
+        <field>Contact$Contact_Role__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Directory of editorial contacts for authors seeking a publisher.</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Contact$Contact_Role__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Book Program Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Title</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>marketing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Title</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Editorial Assistant</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$MailingCountry</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Publisher Directory</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Only__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Contact$Email</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

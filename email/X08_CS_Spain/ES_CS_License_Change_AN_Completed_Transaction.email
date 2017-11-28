@@ -1,0 +1,22 @@
+Estimados/as {!Case.Contact} y XXXXXX,
+
+Os contacto para confirmar que la Licencia ###### ha sido  transferida de XXXXX a XXXXXXX.
+
+Adjunto a este email  verán el Acuerdo definitivo firmado por todas las partes intervinientes. La transferencia ya ha sido registrada en nuestras bases de datos.  Por favor notifiquen a todos los usuarios finales de XXXXXXXX que ya no están autorizados a usar la Licencia y que deben desinstalarla de sus sistemas. 
+
+XXXXXXXX es actualmente el Administrador de la licencia.  El Administrador gestiona los usuarios de la Licencia y puede realizar tareas de administración desde el License Center. Todas las licencias MathWorks requieren un Administrador como fuente principal de comunicación. 
+
+Por favor tenga en cuenta que el Administrador es responsable de asignar los usuarios autorizados a hacer Uso de la Licencia.  
+
+Actualmente XXXXXXXX está asociado a la licencia.  Para aprender más acerca de añadir o eliminar Usuarios haga click en el siguiente link:    http://www.mathworks.com/support/solutions/en/data/1-6092ZT/    
+
+Para aprender más acerca de la activación de su licencia, puede seguir el link que figura a continuación, que requiere que se conecte a su Cuenta MathWorks:   http://www.mathworks.com/support/activation/index.html?BB=1    
+
+Si necesita más ayuda en relación a este Caso, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml 
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

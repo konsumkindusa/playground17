@@ -1,0 +1,29 @@
+Dear {!Contact.Name},
+
+Thank you for contacting The MathWorks Training Department.  
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+
+Your enrollment is not confirmed until we have received your purchase order.  In order to secure a seat, your purchase order must be received prior to the start of class.
+
+Please fax or mail your purchase order to the address or fax number indicated below
+
+The MathWorks AB
+Box 1023
+164 21 Kista
+Sweden
+{!Class__c.Sponsor_Office_Email__c} 
+Fax: +46 8 5053 17 10
+Tel: {!Class__c.Sponsor_Office_Phone__c} 
+
+To ensure proper processing, please include the Quote number or webstore order number you have received, attendee name(s), your invoice address, VAT no, course name(s), location, and dates on all Purchase Orders.  Due to the popularity of our courses, we suggest that you send your purchase order as soon as possible. 
+
+You will be sent a confirmation email with all the course details once your purchase order is received confirming your seat in the class. If we experience any problems, you will be notified immediately.
+
+Thank you,  
+Training Services
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

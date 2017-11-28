@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Account_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Accounts__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Accounts__r$Has_License__c</field>
+    </columns>
+    <columns>
+        <field>Account.Accounts__r$Account_Sector__c</field>
+    </columns>
+    <columns>
+        <field>Account.Accounts__r$Account_City_Latin__c</field>
+    </columns>
+    <columns>
+        <field>Account.Accounts__r$Country_State_Code__c</field>
+    </columns>
+    <columns>
+        <field>Account$Siebel_Account_Id__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>View CPN Account Child Accounts with detaled information</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Account$Id</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>001i000000Oimn8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Id</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>001i000000OjUl1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>View CPN Account Hierarchy</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CPN_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

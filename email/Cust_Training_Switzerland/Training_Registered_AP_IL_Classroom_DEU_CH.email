@@ -1,0 +1,26 @@
+Sehr geehrte(r)  {!Contact.Name}!
+
+Ihre Anmeldung ist bestätigt. Allerdings konnten wir bisher keinen Zahlungseingang verbuchen. Eine vollständige Bezahlung ist jedoch Voraussetzung für die Teilnahme an der Schulung. 
+
+Kurs: {!Enrollment__c.Class__c}  
+Datum: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+Ort: {!Class__c.City__c}, {!Class__c.Country__c}   
+Zeit: {!Class__c.Start_Time__c} - {!Class__c.End_Time__c} 
+
+Stellen Sie bitte die Bezahlung vor Schulungsbeginn sicher. Um per Kreditkarte zu zahlen, sprechen Sie bitte unter {!Class__c.Sponsor_Office_Phone__c} mit einem unserer Mitarbeiter. Um per Kaufauftrag zu zahlen, senden Sie uns diesen als E-Mail-Anhang an {!Class__c.Sponsor_Office_Email__c}  oder per Post an:
+
+MathWorks GmbH
+Murtenstrasse 143
+3008 Bern
+Switzerland
+
+Um eine korrekte Verbuchung sicherzustellen, nennen Sie bitte immer Kursteilnehmer, Kurstitel, Schulungsort und -datum. 
+
+Sie erhalten eine Bestätigungs-E-Mail mit allen Details zur Schulung sobald Ihr Zahlungseingang verbucht wurde. Über etwaige Probleme werden wir Sie umgehend informieren. 
+
+Mit freundlichen Grüßen 
+Training Services 
+
+{!Class__c.Sponsor_Office_Signature__c}  
+
+Stornierungsrichtlinien: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

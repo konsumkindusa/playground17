@@ -1,0 +1,22 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für die in Ihrem MathWorks Account bekanntgegebene Datenänderung. Hierbei geben Sie als neue Email Domain XXX an.
+
+- Ist dies die neue Email Domain Ihrer Firma/Hochschule, geben Sie uns bitte eine kurze Rückmeldung und belegen diese mit einem Pressrelease/Link.
+
+- Haben Sie Ihre bisherige Firma/Hochschule gewechselt, nennen Sie uns bitte die neuen Firmadaten, inkl. Adresse, und teilen Sie uns auch mit, ob Sie die Ihnen gegenwärtig zugewiesene/n Lizenz/en # dorthin mitnehmen möchten (+ nur für Comm Accounts: und wie Ihre bisherige und die neue Firma prozentual zusammengehören). 
+Soll/en die Lizenz/en einem neuen Administrator am/an (alter Account)  XXX zugeordnet werden, nennen Sie uns  bitte die neuen Kontaktdaten.
+
+Ist keine der oben genannten Optionen zutreffend, kann eine Änderung Ihrer bisherigen Email Domain nicht ausgeführt werden, da diese die lizensierte Firma/Hochschule ausweisen muss.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen und besten Dank
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

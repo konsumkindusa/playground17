@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12737685</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Project_Time_Card__c.Created_by_Role_Name__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>APAC  PE Rep Report Linghui Zhang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APAC PE  Manager Linghui Zhang</sourceValue>
+            </sourceValues>
+            <value>Linghui Zhang Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CN  PE Manager Hualong Yu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CN PE Rep Report Hualong Yu</sourceValue>
+            </sourceValues>
+            <value>Hualong Yu Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DE PE  Manager Martin Ritt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DE PE  Rep Report  Martin Ritt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DE AE Rep Report Martin Ritt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DE AE Rep Report Frank Graeber</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DE AE Rep Report Stephan Myschik</sourceValue>
+            </sourceValues>
+            <value>Martin Ritt/German Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US PE  Manager Siva Nadarajah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US PE  Rep Siva Nadarajah</sourceValue>
+            </sourceValues>
+            <value>Siva Nadarajah Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US PE  Manager Mark McBroom</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US PE Rep Report Mark McBroom</sourceValue>
+            </sourceValues>
+            <value>Mark McBroom Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US PE  Manager Steve Kuznicki</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US PE  Rep Report  Steve Kuznicki</sourceValue>
+            </sourceValues>
+            <value>Steve Kuznicki Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JP PE Manager Kenji Kawasaki</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>JP PE Rep Report Kenji Kawasaki</sourceValue>
+            </sourceValues>
+            <value>Kenji Kawasaki Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>IN PE Manager Gaurav Dubey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IN PE Rep Report Gaurav Dubey</sourceValue>
+            </sourceValues>
+            <value>Gaurav Dubey Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JP PE Manager Tatsuya Higashi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>JP PE Rep Report Tatsuya Higashi</sourceValue>
+            </sourceValues>
+            <value>Tatsuya Higashi Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SE AE Rep Report Peter Sandberg</sourceValue>
+            </sourceValues>
+            <value>Peter Sandberg Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UK AE Rep Report Mark Walker</sourceValue>
+            </sourceValues>
+            <value>Mark Walker Team</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>Project_Time_Card__c.Hours__c</columnName>
+        <highBreakpoint>40.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>30.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project_Time_Card__c.Hours__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Effort hours for the whole PE team</description>
+    <filter>
+        <criteriaItems>
+            <column>Project_Time_Card__c.Created_By_Area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Pilot Engineering</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Steve Toeppe</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project_Time_Card__c.Week_Ending__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_12737685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CHILD_CREATED_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PE Effort hours by team</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MW_Project__c$Project_Time_Card__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Project_Time_Card__c.Week_Ending__c</dateColumn>
+        <endDate>2015-09-25</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-09-05</startDate>
+    </timeFrameFilter>
+</Report>

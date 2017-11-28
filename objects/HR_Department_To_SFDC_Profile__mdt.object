@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mapping between HR Department and SFDC Profiles. Also HR Department field used by Informatica as lookup to create/update SFDC Employees</description>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>comments</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Comments</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Data_Admin_Profile__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Data Admin flag is on on Manager&apos;s role</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Data Admin Profile</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Installation_Profile__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Manager&apos;s profile Installation</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Installation Profile</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MW_User_Profile__c</fullName>
+        <description>List of the current SFDC Profiles</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>MW User Profile</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MathWorks Data Management</fullName>
+                    <default>true</default>
+                    <label>MathWorks Data Management</label>
+                </value>
+                <value>
+                    <fullName>MW AE/PE Manager</fullName>
+                    <default>false</default>
+                    <label>MW AE/PE Manager</label>
+                </value>
+                <value>
+                    <fullName>MW AE/PE User</fullName>
+                    <default>false</default>
+                    <label>MW AE/PE User</label>
+                </value>
+                <value>
+                    <fullName>MW Article PDF User</fullName>
+                    <default>false</default>
+                    <label>MW Article PDF User</label>
+                </value>
+                <value>
+                    <fullName>MW Customer Service Standard User</fullName>
+                    <default>false</default>
+                    <label>MW Customer Service Standard User</label>
+                </value>
+                <value>
+                    <fullName>MW Data Administrator</fullName>
+                    <default>false</default>
+                    <label>MW Data Administrator</label>
+                </value>
+                <value>
+                    <fullName>MW DataLoader</fullName>
+                    <default>false</default>
+                    <label>MW DataLoader</label>
+                </value>
+                <value>
+                    <fullName>MW Edu Mkt and Connections</fullName>
+                    <default>false</default>
+                    <label>MW Edu Mkt and Connections</label>
+                </value>
+                <value>
+                    <fullName>MW Eloqua Integration</fullName>
+                    <default>false</default>
+                    <label>MW Eloqua Integration</label>
+                </value>
+                <value>
+                    <fullName>MW Install User (pilot)</fullName>
+                    <default>false</default>
+                    <label>MW Install User (pilot)</label>
+                </value>
+                <value>
+                    <fullName>MW KCS Coach User - not used</fullName>
+                    <default>false</default>
+                    <label>MW KCS Coach User - not used</label>
+                </value>
+                <value>
+                    <fullName>MW Marketing User</fullName>
+                    <default>false</default>
+                    <label>MW Marketing User</label>
+                </value>
+                <value>
+                    <fullName>MW RAC Standard User</fullName>
+                    <default>false</default>
+                    <label>MW RAC Standard User</label>
+                </value>
+                <value>
+                    <fullName>MW Sales Standard User</fullName>
+                    <default>false</default>
+                    <label>MW Sales Standard User</label>
+                </value>
+                <value>
+                    <fullName>MW Social Mission</fullName>
+                    <default>false</default>
+                    <label>MW Social Mission</label>
+                </value>
+                <value>
+                    <fullName>MW Sourcecontrol</fullName>
+                    <default>false</default>
+                    <label>MW Sourcecontrol</label>
+                </value>
+                <value>
+                    <fullName>MW Standard Delegated Admin</fullName>
+                    <default>false</default>
+                    <label>MW Standard Delegated Admin</label>
+                </value>
+                <value>
+                    <fullName>MW Standard Read Only</fullName>
+                    <default>false</default>
+                    <label>MW Standard Read Only</label>
+                </value>
+                <value>
+                    <fullName>MW Support Read Only User</fullName>
+                    <default>false</default>
+                    <label>MW Support Read Only User</label>
+                </value>
+                <value>
+                    <fullName>MW Technical Evangelist Manager</fullName>
+                    <default>false</default>
+                    <label>MW Technical Evangelist Manager</label>
+                </value>
+                <value>
+                    <fullName>MW Technical Evangelist User</fullName>
+                    <default>false</default>
+                    <label>MW Technical Evangelist User</label>
+                </value>
+                <value>
+                    <fullName>MW Technical Support Standar User (pilot)</fullName>
+                    <default>false</default>
+                    <label>MW Technical Support Standar User (pilot)</label>
+                </value>
+                <value>
+                    <fullName>MW Technical Support Standard Use</fullName>
+                    <default>false</default>
+                    <label>MW Technical Support Standard Use</label>
+                </value>
+                <value>
+                    <fullName>MW TS Audit</fullName>
+                    <default>false</default>
+                    <label>MW TS Audit</label>
+                </value>
+                <value>
+                    <fullName>System Administrator</fullName>
+                    <default>false</default>
+                    <label>System Administrator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SFDC_HR_Department__c</fullName>
+        <description>MW SFDC Department - only users from those departments created in SF</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>SFDC Standard Department</inlineHelpText>
+        <label>SFDC HR Department</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_HR_Division__c</fullName>
+        <description>HR Division</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SFDC HR Division</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>is_Manager__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HR Manager Flag</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>is Manager</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>HR Department To SFDC Profile</label>
+    <pluralLabel>HR Department To SFDC Profiles</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

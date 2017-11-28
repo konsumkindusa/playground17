@@ -1,0 +1,28 @@
+{!Case.Account} 
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c} と申します。
+この度はお問い合わせ頂き、誠にありがとうございます。
+
+ご依頼頂きましたMaintenance  Groupの設定について、下記の通り完了致しましたので、
+お知らせ致します。
+
+■License No. ○○○○○○,○○○○○○
+■Maintenance Contact（見積送付先）：○○    様
+
+尚、ご登録内容 及び ライセンス内容 等は、下記「MathWorksアカウント」より  
+ご確認頂けます。
+www.mathworks.co.jp/licensecenter
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のReference IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.co.jp/contact_cs.html
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,29 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Je vous écris concernant votre dossier n°{!Case.CaseNumber} : {!Case.Subject}.
+
+Afin que je puisse vous assister au mieux, merci de bien vouloir me faire parvenir les informations suivantes: 
+
+1) Le résultat complet, selon votre version de MATLAB, de l’execution de la commande suivante dans le propmt MATLAB:
+
+Pour les versions post-R2012a:
+>> ver -support
+
+Pour les versions pre-R2012b:
+>> ver
+
+celui-ci indique le numéro de licence, ainsi que des informations supplémentaires sur votre plateforme, système d'exploitation et les versions de produits MathWorks installés.
+ 
+2) Une description détaillée du problème. 
+
+3) Tout fichier MATLAB et fichier de données pertinent. 
+
+4) La procédure exacte à suivre pour exécuter votre programme.
+ 
+5) Le message d'erreur exact reçu, s'il y en a. 
+
+Merci de bien vouloir conserver le Reference ID en bas de cet e-mail dans toute correspondance future concernant ce dossier.
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

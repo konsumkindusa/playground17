@@ -1,0 +1,28 @@
+Buenos días {!Case.Contact},    
+
+Gracias por contactar con MathWorks. Para poder procesar su solicitud necesitamos que nos proporcione la siguiente información por email a service@mathworks.com.
+
+Número de Licencia MATLAB:
+
+(Puede encontrar el número de licencia escribiendo el comando 'VER' en MATLAB)
+
+Su Nombre:  
+Título:
+Nombre de la Empresa o Universidad:  
+Dirección de la Empresa o Universidad:  
+Departamento:  
+Número de Teléfono:  
+Número de Fax:  
+Dirección de Correo Electrónico:  
+País:  
+Productos de interés:   
+Motivo de su Consulta:
+
+Si necesita más ayuda en relación a esta solicitud, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml    
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

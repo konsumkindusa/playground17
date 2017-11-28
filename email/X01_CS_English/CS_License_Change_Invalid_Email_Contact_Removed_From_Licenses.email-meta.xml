@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Confirmation to send to original case requestor when an Admin no longer has a valid eamil</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - License Change - Invalid Email Contact Removed From Licenses</name>
+    <style>none</style>
+    <subject>Administrator Removed From Licenses - No Longer has a Valid Email Address</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

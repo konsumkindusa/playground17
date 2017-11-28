@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>TS Rep Report to Yasuaki Shinto</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>TS Rep Report to Yasuaki Shinto</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Tech_Support_Manager_Shinto_Ya</parentRole>
+</Role>

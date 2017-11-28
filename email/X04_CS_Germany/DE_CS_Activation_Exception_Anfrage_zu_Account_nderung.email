@@ -1,0 +1,22 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für die in Ihrem MathWorks Account bekanntgegebene Datenänderung zu Ihrer Firma/Hochschule auf XXX.
+
+Um diese auszuführen, benötigen wir folgende Information/en:
+
+- Handelt es sich hierbei um eine Firmen-/Hochschul-Umbenennung oder um einen Firmen/Hochschul-Übergang, lassen Sie uns bitte ein/en diesbezügliches/en Press Release/Link zukommen.
+
+- Handelt es sich hierbei um Ihren Wechsel von XXX (alter Account) zu XXX (neuer Account), lassen Sie uns bitte wissen, ob Sie die Ihnen gegenwärtig zugewiesenen Lizenz/en XXX dorthin mitnehmen möchten  (+ bei Comm Kunden: und wie Ihre bisherige Firma und die neue Firma prozentual zusammengehören). 
+Soll/en die Lizenz/en einem neuen Administrator am/an (alter Account)  XXX zugeordnet werden, nennen Sie uns  bitte die neuen Kontaktdaten.
+
+Antworten Sie dazu bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen und bestem Dank
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

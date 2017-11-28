@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+As a current member of The MathWorks Connections Program, you can add additional products and services to the Connections Program.  In order to do so, we ask that you fill out an application for each product or service that you would like us to consider. Depending on the relationship between the multiple products and services, we may add them to your existing page or list additional pages for each. 
+
+For example, if your additional products are sold separately from one another and are not directly related, we would list separate pages for each.  If, in fact, they are part of a suite of tools that work together, we would most likely list them on the same Web page.
+
+The applications are used to evaluate each offering separately to make this determination and to use as foundation for the draft Web page.  You can find the applications on our Web site at <http://www.mathworks.com/products/connections/join/index.html>.
+
+If you have any questions, please let me know.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

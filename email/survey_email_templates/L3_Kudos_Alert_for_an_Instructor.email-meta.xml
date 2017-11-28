@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>L3 Kudos Alert for an Instructor</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>L3 Kudos Alert for an Instructor</name>
+    <style>freeForm</style>
+    <subject>L3 Kudos Alert for {!Training_Get_Feedback__c.L3_Instructor__c}</subject>
+    <textOnly>Kudos for: {!Training_Get_Feedback__c.L3_Instructor__c}
+Customer Name: {!Training_Get_Feedback__c.Contact__c},({!Training_Get_Feedback__c.Enrollee_Email__c})
+Customer Company: {!Training_Get_Feedback__c.Enrollee_Account__c}
+NPS: {!Training_Get_Feedback__c.NPS__c}
+-----
+Additional Customer Comments:
+{!Training_Get_Feedback__c.Additional_comments__c}
+-----
+You may click on the url to view this survey response.
+{!Training_Get_Feedback__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

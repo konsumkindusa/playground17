@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Support Production Information from Product Master</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Is Active flag</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BASE_PRDCT__c</fullName>
+        <description>Base Product</description>
+        <externalId>false</externalId>
+        <label>Base Product</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CODE__c</fullName>
+        <description>SUPPRT_SFTWR  CODE
+Use this CODE as it is maintained in Product Master only in the SUPPRT_SFTWR table.</description>
+        <externalId>false</externalId>
+        <label>CODE</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GR_Release_Name__c</fullName>
+        <description>General Release Name</description>
+        <externalId>false</externalId>
+        <label>GR Release Name</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <description>Product Support Package Name</description>
+        <externalId>false</externalId>
+        <label>Full Name</label>
+        <length>200</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SUPPRT_SFTWR_ID__c</fullName>
+        <description>Support Software ID from the Product Master
+This is not unique as the same Support Software is used across General Releases</description>
+        <externalId>false</externalId>
+        <label>SUPPRT_SFTWR_ID</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SUPPRT_SFTWR_VER_ID__c</fullName>
+        <description>Support Software Version ID.  This is Unique as it is the Support package for the Versioned software for the release.</description>
+        <externalId>true</externalId>
+        <label>SUPPRT_SFTWR_VER_ID</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>VER_FULL__c</fullName>
+        <description>Full Version</description>
+        <externalId>false</externalId>
+        <label>Full Version</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Product Support Package</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Name__c</columns>
+        <columns>VER_FULL__c</columns>
+        <columns>BASE_PRDCT__c</columns>
+        <columns>GR_Release_Name__c</columns>
+        <columns>SUPPRT_SFTWR_VER_ID__c</columns>
+        <columns>Active__c</columns>
+        <columns>CODE__c</columns>
+        <columns>SUPPRT_SFTWR_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>NAME</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Product Support Packages</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>GR_Release_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>VER_FULL__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>BASE_PRDCT__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

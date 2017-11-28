@@ -1,0 +1,290 @@
+<apex:page StandardController="Lead"
+    extensions="LeadConversionController"
+    action="{!getLeadRecordToConvert}">
+
+    <Script type="text/javascript" src="{!$Resource.jQueryLatest}" />
+
+    <script>
+         var j$ = jQuery.noConflict();
+    
+        //For scrolling up page    
+        window.onload = function(){
+            window.scrollTo(0,0);
+        };        
+    
+
+         function changeValue(input, textid) {
+         
+             document.getElementById(textid).value = input.value;
+         }
+        
+         function hideSection() {
+        
+             j$('[class$=accountlookup]').val('');
+             j$('[class$=accLookup]').css("display", "block");
+             j$('[class$=list]').css("display", "none");
+             j$('[id$=msg]').html('');
+         }
+        
+         function hideOtherSection() {
+         
+          
+             j$('[class$=accountlookup]').val('');
+             j$('[class$=accLookup]').css("display", "None");
+             j$('[class$=list]').css("display", "none");
+             j$('[id$=msg]').html('');
+         }
+        
+         function hideLookupSection() {
+        
+             j$('[class$=accountlookup]').val('');
+             j$('[class$=accLookup]').css("display", "None");
+             j$('[class$=list]').css("display", "block");
+               j$('[id$=msg]').html('');
+         }
+         
+         function checkOptions(){
+         
+           j$('[class$=accOptions]').each(function() {
+           
+             alert(j$(this));
+             
+             return false;
+           
+           });
+         
+           
+        
+         
+         }
+    </script>
+    <apex:form >
+        <apex:pageMessages id="msg" escape="false"/>
+        <!-- Page section header -->
+        <apex:sectionHeader title="Convert Lead" subtitle="{!Lead.name}" />
+
+        <!-- Visualforce Component with custom page header text -->
+        <!--<c:LeadConversionHeader /> -->
+        <apex:outputPanel rendered="{!IF(( LeadObj.owner.type!='Queue' && LeadObj.isConverted!=true),true,false)}">
+
+            <apex:pageBlock >
+
+                <apex:pageBlockSection columns="2"
+                    rendered="{!IF((LeadObj.RecordTypeId==unKnownContRT), true, false)}">
+                    <img class="waitingImage" src="/img/msg_icons/info16.png"
+                        title="Info" />&nbsp; <h
+                        style="Color:Blue;font-style: italic;font-weight: bold;">{!$label.UnknownContactLeadIndicatorAccountOptionLabel}</h>
+                </apex:pageBlockSection>
+
+                <!--<apex:pageBlockSection columns="2"
+                    rendered="{!IF((accObjList.size==0 && accountFound==false && LeadObj.RecordTypeId==unKnownContRT && LeadObj.Account__c==null), true, false)}">
+                    <img src="/img/msg_icons/info16.png" title="Info" />&nbsp;<h
+                        style="Color:Blue;font-style: italic;font-weight: bold;">{!$label.UnknownContactLeadIndicatorForCreatingNewAccandCon}</h>
+                </apex:pageBlockSection>-->
+
+               <apex:pageBlockSection columns="2"
+                    rendered="{!IF(( LeadObj.RecordTypeId==knownContRT), true, false)}">
+                    <img src="/img/msg_icons/info16.png" title="Info" />&nbsp;
+                            <h
+                        style="Color:Blue;font-style: italic;font-weight: bold;">{!$label.KnownContactLeadIndicatorForConvertingExistingAccountContact}</h>
+                </apex:pageBlockSection>
+
+                <!-- <apex:pageBlockSection columns="2"
+                    rendered="{!IF((accObjList.size!=0 && accountFound==false && LeadObj.RecordTypeId==unKnownContRT && LeadObj.Account__c==null), true, false)}">
+                    <img src="/img/msg_icons/info16.png" title="Info" />&nbsp;
+                            <h
+                        style="Color:Blue;font-style: italic;font-weight: bold;">{!$label.UnknownContactLeadIndicatorForPartialAccountMatch}</h>
+                </apex:pageBlockSection>-->
+
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!convertLeadObj}" value="Convert" rerender="msg"  status="loading"/>
+                    <apex:commandButton action="{!Cancel}" value="Cancel" />
+                </apex:pageBlockButtons>
+                
+                   <apex:actionstatus id="loading">
+                         <apex:facet name="start">
+                            <div class="waitingSearchDiv" id="el_loading"
+                                style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                                <div class="waitingHolder"
+                                    style="top: 74.2px; opacity: 1.0; width: 91px;">
+                                    <img class="waitingImage" src="/img/loading.gif"
+                                        title="Please Wait..." /> <span class="waitingDescription">Processing.....</span>
+                                </div>
+                            </div>
+                        </apex:facet>
+                    </apex:actionstatus>
+              
+
+                <apex:pageBlockSection columns="1" id="LeadConversionSection"
+                    title="Convert Lead" collapsible="false">
+
+
+                    <apex:pageBlockSection rendered="{!If(LeadObj.RecordTypeId==unKnownContRT,true,false)}"
+                        columns="1">
+                        <apex:outputtext value="{!LeadObj.Company}" escape="true"
+                            label="Lead Company name">
+                        </apex:outputtext>
+                        <apex:outputtext value="{!LeadObj.Name}" label="Lead Contact name"></apex:outputtext>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection rendered="{!If((LeadObj.RecordTypeId==knownContRT),true,false)}"
+                        columns="1">
+                        <apex:outputField value="{!LeadObj.Account__c}" label="Account"></apex:outputField>
+                        <apex:outputField value="{!LeadObj.Contact__c}" label="Contact"
+                            rendered="{!If((LeadObj.RecordTypeId==knownContRT) && (accountFound==false),true,false)}"></apex:outputField>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection rendered="{!IF((accountFound==false && LeadObj.RecordTypeId==unKnownContRT), true, false)}">
+                        <apex:outputPanel >
+                            <input type="radio" name="options" value="newAccCon" class="accOptions"
+                                onclick="changeValue(this,'{!$Component.RadioButtonValue}');hideOtherSection();" />
+                            <apex:outputLabel style="font-weight:bold">{!$Label.UnknownContactCreateNewContactAndAccountLabel}</apex:outputLabel>
+                        </apex:outputPanel>
+                    </apex:pageBlockSection>
+                    
+                     <apex:pageBlockSection rendered="{!If((LeadObj.RecordTypeId==unKnownContRT && accountFound==true),true,false)}"
+                        columns="1">
+                        <apex:outputPanel >
+                            <input type="radio" name="options" value="exactAccount" class="accOptions"
+                                onclick="changeValue(this,'{!$Component.RadioButtonValue}');hideLookupSection();" />
+                            <apex:outputLabel style="font-weight:bold" >{!$Label.UnknownContactLead_Exact_Account_found_label} </apex:outputLabel>
+                            &nbsp;&nbsp;
+                      
+                        </apex:outputPanel>
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection rendered="{!If((LeadObj.RecordTypeId==unKnownContRT),true,false)}"
+                        columns="1">
+                        <apex:outputPanel >
+                            <input type="radio" name="options" value="exsAcc" class="accOptions"
+                                onclick="changeValue(this,'{!$Component.RadioButtonValue}');hideSection();" />
+                            <apex:outputLabel style="font-weight:bold" >{!$Label.Unknown_Contact_Select_Account_for_Conversion_Label} </apex:outputLabel>
+                            &nbsp;&nbsp;
+                       <apex:outputPanel style="display:none"
+                                styleClass="accLookup">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <apex:inputField value="{!LeadObj.Account__c}" style="font-weight:bold" styleclass="accountlookup"></apex:inputField>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                    </apex:pageBlockSection>
+
+
+                   
+
+                    <apex:pageBlockSection rendered="{!accObjList.size>0}">
+                        <apex:outputPanel >
+                            <input type="radio" name="options" value="reccAccs"  class="accOptions"
+                                onclick="changeValue(this,'{!$Component.RadioButtonValue}');hideLookupSection();" />&nbsp;<apex:outputLabel rendered="{!accObjList.size>0}" style="font-weight:bold">{!$Label.Unknown_Contact_Lead_Choose_from_Reccomended_Accounts_label}</apex:outputLabel>
+                            <br></br>
+                            <br></br>
+                            <apex:outputPanel styleClass="recaccs">
+                                <apex:pageBlockTable value="{!accObjList}" var="accList"
+                                    title="Set Account for Conversion">
+                                    <apex:column headervalue="Select Account" width="50px">
+                                        <apex:actionsupport action="{!selectAccount}" event="onclick" status="loading"
+                                            rerender=" ">
+
+                                            <input type="radio" name="<strong>selectRadio</strong>" />
+                                            <apex:param name="accountId" value="{!accList.Id}">
+                                            </apex:param>
+                                        </apex:actionsupport>
+                                    </apex:column>
+                                    <apex:repeat value="{!$ObjectType.Account.FieldSets.Account_Field_On_Lead_Conversion}"
+                                        var="fieldsToShow">
+                                        <apex:column value="{!accList[fieldsToShow]}">
+                                        </apex:column>
+                                    </apex:repeat>
+                                </apex:pageBlockTable>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                        <br></br>
+                    </apex:pageBlockSection> 
+                    <apex:pageBlockSection id="taskInfo" columns="1">
+
+<!--FG-->
+
+                        <apex:pageBlockSectionItem helpText="{!$Label.helpText_doNotCreateOpty}">
+                            <apex:outputlabel value="{!$Label.Do_Not_Create_Opportunity}" />
+                           
+                            <apex:inputcheckbox value="{!doNotCreateOpty}"
+                                label="{!$Label.Do_Not_Create_Opportunity}" 
+                                disabled="{!isExistingOpty}">
+                                <apex:actionSupport event="onchange"
+                                    rerender="taskInfo" />
+                            </apex:inputcheckbox>
+                        </apex:pageBlockSectionItem>
+                   
+                    
+                  
+
+                    <apex:outputPanel rendered="{!(doNotCreateOpty=false)}">
+                        <apex:pageBlockSection columns="1">
+                            <apex:pageBlockSectionItem id="ownerSection"
+                                rendered="{!!$Setup.General_Settings__c.HideOpportunityOwnerSearchBox__c}">
+                                <apex:outputlabel value="Opportunity Owner" />
+                                <apex:inputfield value="{! acc.ownerid}" id="leadOwnerId"
+                                    required="false" />
+                            </apex:pageBlockSectionItem>
+                            
+                            
+
+                            <apex:pageBlockSectionItem rendered="{!!$Setup.General_Settings__c.HideCheckBoxForDoNotCreateActivity__c}">
+                                <apex:outputlabel value="Do Not Create Activity" />
+                                <apex:inputcheckbox value="{!doNotCreateActivity}"
+                                    label="Do Not Create Activity">
+                                    <apex:actionSupport event="onchange"
+                                        rerender="LeadConversionSection" />
+                                </apex:inputcheckbox>
+                            </apex:pageBlockSectionItem>
+
+                        </apex:pageBlockSection>
+                        
+                       
+                            <apex:pageBlockSection title="Task Information" collapsible="no" rendered="{!(doNotCreateOpty=false)}"
+                                columns="2"  >
+
+                                <!--<apex:inputField id="taskSubject" value="{!taskId.Subject}"  required="true"/>-->
+
+                                <apex:repeat value="{!$ObjectType.Task.FieldSets.Task_Fields_On_Lead_Conversion}"
+                                    var="fieldsToShow">
+                                    <apex:inputfield value="{!Taskid[fieldsToShow]}"
+                                        required="{!OR(fieldsToShow.required, fieldsToShow.dbrequired)}">
+
+                                    </apex:inputfield>
+
+                                </apex:repeat>
+                                
+                                 <apex:selectList value="{!selectedStatus}" multiselect="false" size="1" label="Status" required="true">
+                                    <apex:selectOptions value="{!statusOptions}"/>
+                                 </apex:selectList>
+                                <!-- Checkbox indicating if there will be a notification sent -->
+
+                                <apex:pageBlockSectionItem rendered="{!!$Setup.General_Settings__c.HideCheckBoxForSendEmailNotification__c}">
+                                    <apex:outputlabel value="Send Email Notification" />
+                                    <apex:inputcheckbox value="{!sendNotificationEmail}"
+                                        label="Send Email Notification" />
+
+                                </apex:pageBlockSectionItem>
+                            </apex:pageBlockSection>
+                       
+                    </apex:outputPanel> </apex:pageBlockSection>
+                 </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!IF(LeadObj.owner.type=='Queue',true,false)}">
+            <apex:pageBlock >
+                <h2 style="color: red">{!$Label.Lead_has_to_be_owned_by_a_Person_and_not_a_Queue_for_Lead_conversion_Label}</h2>
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!IF(LeadObj.isConverted==true,true,false)}">
+            <apex:pageBlock >
+                <h2 style="color: red">{!$Label.Lead_has_been_converted_Label}</h2>
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+        <apex:inputHidden value="{!selectedValue}" id="RadioButtonValue" />
+    </apex:form>
+
+
+
+</apex:page>

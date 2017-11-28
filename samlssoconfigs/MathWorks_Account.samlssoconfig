@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <errorUrl>http://www.mathworks.com/error_sso.html</errorUrl>
+    <executionUserId>005i0000002AgjD</executionUserId>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>http://www.mathworks.com</issuer>
+    <loginUrl>http://www.mathworks.com/support/servicerequests/index.html</loginUrl>
+    <logoutUrl>http://www.mathworks.com/accesslogin/logout.do</logoutUrl>
+    <name>MathWorks Account</name>
+    <oauthTokenEndpoint>https://mathworks--autoRabitP.cs19.my.salesforce.com/services/oauth2/token?so=00D29000000DVWC</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>0</requestSignatureMethod>
+    <requestSigningCertId>0P10Z000000Gnc9</requestSigningCertId>
+    <salesforceLoginUrl>https://mathworks--autoRabitP.cs19.my.salesforce.com?so=00D29000000DVWC</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlJitHandlerId>01p31000006GPya</samlJitHandlerId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>true</userProvisioning>
+    <validationCert>MIIDgTCCAmmgAwIBAgIENVTgfDANBgkqhkiG9w0BAQsFADBxMQswCQYDVQQGEwJVUzELMAkGA1UECBMCTUExDzANBgNVBAcTBk5hdGljazESMBAGA1UEChMJTWF0aFdvcmtzMRQwEgYDVQQLEwtTU09Qcm92aWRlcjEaMBgGA1UEAxMRbWF0aHdvcmtzIGFjY291bnQwHhcNMTYwNDI4MTgzOTMxWhcNMTgwNTI4MTgzOTMxWjBxMQswCQYDVQQGEwJVUzELMAkGA1UECBMCTUExDzANBgNVBAcTBk5hdGljazESMBAGA1UEChMJTWF0aFdvcmtzMRQwEgYDVQQLEwtTU09Qcm92aWRlcjEaMBgGA1UEAxMRbWF0aHdvcmtzIGFjY291bnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCL2y4w2q7ktiVOOZD/i8r8NfM4NlkB1vgjD7IuQ0Jb5W86n0GZYauF5FVBjPj3AtNkeck13z7pil5vIn8FR59fEKVSoCc+rCoWT5IHskqnRblVxY/JYMmLowMohxk5skJQXuRVPvm6HkjALuZAJnkqg5xhB7Utw9BqFntBBAQp0ojSyzQSl3nDge27affMCCrCpOQH8kzFl74LzSVW0X344GJ8NNQ86QkopvA9Mtmo/h+HTO/pLbXwJ7w/5hc7F/dtHct44mZcndLfHH3b7GUHmapMyth04hgF31VN+lfSIVVKiaV9tPodfzQgAT0G1ZIIsR9RfzpDHKKE0VPYE8UlAgMBAAGjITAfMB0GA1UdDgQWBBTCQ7ap8ssvYcAoXrMU8WtCSZPn8DANBgkqhkiG9w0BAQsFAAOCAQEADchc4wOcuWVT5wb2bPqRryEWeMlFrp/5cKGVFIdJtk2qe+2jYd7IVlC8MZljVbGsrQs7fmqPOoAUPOEeDKmmUf6Yrk2PV/gGnth/Mte6VWVP5aU0CRiR5RoqJy1MqbudIpVE/2FiqXDEM7j9+9+qkTh8eu8DZkcQkXVSvjE+YwvnFrSiX6ZEQTb3yPR4LfplFvNtbyJJOrTSV09+mOh1V0M7lXPzHeLgjsufj/9Zu8doRfWSoODwRIAHufW7oq+7lyoPJwiCnJ92CJzBoU6EE184VuOozDzjBbm/05YRQ+ebItiaO6btIREZBwNacw2ySyJD95icA4hlz7XH5vKe3A==</validationCert>
+</SamlSsoConfig>

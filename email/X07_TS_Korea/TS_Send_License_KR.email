@@ -1,0 +1,35 @@
+{!Contact.LastName}{!Contact.FirstName}님, 안녕하세요. 
+
+문의하신 '{!Case.Subject}'에 대한 기술 지원 케이스 번호 {!Case.CaseNumber}에 대하여 이메일 드립니다.
+
+기술 지원 시 고객님의 매트랩 사용 정보가 필요하여 아래와 같이 요청 드립니다. MATLAB command 창에서 다음의 명령어를 입력하여 나온 모든 결과를 이메일로 회신하여 주시기 바랍니다.
+
+MATLAB R2012b 이후 버전:
+>> ver -support
+
+MATLAB R2012a 이전 버전:
+>> ver
+
+위의 전체 결과 내용으로 라이선스, OS, 매트랩 버전 및 설치된 제품을 확인할 수 있습니다.
+
+[Polyspace license information] 
+기술 지원 시 고객님의 폴리스페이스 사용 정보가 필요하여 아래와 같이 요청 드립니다. 
+폴리스페이스를 띄우신 뒤 메뉴의 Help의 About 에 나오는 모든 결과를 이메일로 회신하여 주시기 바랍니다. 
+
+기술 지원 쪽으로 연결을 원하실 경우에는 유지보수 기간 내에 있는 라이선스를 보유하고 계셔야 합니다.
+[Request available contact number] 추후 원활한 기술 지원을 위해, 유선상으로 연락이 가능한 전화번호를 함께 회신하여 주시기 바랍니다. 
+
+위에 요청 드린 정보에 대한 회신을 기다리겠습니다.
+
+다음의 링크를 사용하면 현재 케이스를 보실 수 있으며 업데이트가 가능합니다.
+https://mathworksservicerequest.secure.force.com/apex/cp_case_detail?id={!Case.Id}
+문의 내용과 관련하여 추가 회신 시 아래의 참조 ID를 유지 시켜주시기 바랍니다. 이러한 시스템으로 해당 케이스에 자동으로 지정됩니다.
+
+향후 기술지원 시 http://www.mathworks.co.kr/support/contact_us/index.html 의 주소로 요청하여 주시거나 매트랩 상단 Home 툴스트립의 Request Support 버튼을 통하여 요청하여 주시면 보다 빠른 지원이 가능합니다.
+
+감사합니다. 
+xxx 드림, 
+MathWorks Technical Support Department 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

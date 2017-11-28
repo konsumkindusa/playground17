@@ -1,0 +1,25 @@
+Dear {!Social_Action__c.Contact__c},
+
+We are pleased to inform you that your application for a MathWorks community grant in support of {!Social_Action__c.Event_Program_Name__c} has been approved for the amount of $ {!Social_Action__c.Mathworks_Monetary_Contribution__c}.    
+
+All community grant applications are reviewed quarterly by the MathWorks Community Grant Review Team, who award grants based on budget, number of qualified applications received, and alignment with our strategic Social Mission criteria.
+
+MathWorks is committed to actively supporting our communities and promoting social and environmental responsibility. Our core values and conviction to "Do the Right Thing" guide us in leveraging our unique company strengths for meaningful outcomes. We believe that investing in our Social Mission Program helps us to lead in both our communities and the field of technical computing.
+
+In order to process the grant payment, we will need the following from you:
+  1)	A copy of your organization's W-9 
+  2)	IRS Letter of Determination 
+  3)	A completed copy of the attached EFT Payment Information form
+
+Our Finance team requires these documents on file. By completing the EFT form you will see the payment hit directly to the bank account you provide us. 
+
+You should expect the donation to arrive within 2-3 weeks of receiving all of the requested documents above. 
+
+Thank you again for applying and, on behalf of MathWorks, I wish you continued success in your efforts.
+
+Sincerely,
+{!Social_Action__c.OwnerFullName} 
+Social Mission
+socialmission@mathworks.com
+
+{!Social_Action__c.Thread_ID__c}

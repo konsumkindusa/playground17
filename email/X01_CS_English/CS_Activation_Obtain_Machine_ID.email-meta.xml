@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Obtain Machine ID</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - Activation - Obtain Machine ID</name>
+    <style>none</style>
+    <subject>Obtain Machine ID</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

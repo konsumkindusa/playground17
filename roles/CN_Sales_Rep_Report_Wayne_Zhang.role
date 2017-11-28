@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>CN Sales Rep Report Wayne Zhang</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>CN Sales Rep Report Wayne Zhang</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>CN_Sales_Manager_Wayne_Zhang</parentRole>
+</Role>

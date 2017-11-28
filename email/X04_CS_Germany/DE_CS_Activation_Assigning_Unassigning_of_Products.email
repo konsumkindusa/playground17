@@ -1,0 +1,61 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage. 
+
+Sie können Produkte zwischen/zu Einzellizenzen selbst transferieren, wenn: 
+
+a. sich die betreffenden Produkte/Lizenzen in derselben Master Lizenz befinden 
+b. die zu transferierenden Produkte unter aktueller Wartung sind und 
+c. die Produkte/Lizenzen dieselbe Option (Designated Computer oder Individual) aufweisen. 
+
+Sollte die Option des Produkts/der Lizenzen nicht übereinstimmen, müssten Sie solche Änderungen über uns durchführen lassen. 
+
+Die Zuweisung von Produkten wird von einem Administrator über das eigene MathWorks Account License Center wie folgt ausgeführt: 
+
+A. Zuweisung verfügbarer Produkte aus einer Master Lizenz 
+- Öffnen der gewünschten Empfangslizenz direkt oder über die Option: ‚View additional Licenses or Trials' 
+- Zuweisung der verfügbaren Toolbox (grüner Pfeil) unter “Assignable Products” 
+-> Danach Entnahme des aktualisierten License Files und File Installation Keys unter dem 'Install and Activate' Tab der jeweiligen Lizenzen. 
+
+B. Verschiebung von Produkten zwischen Einzellizenzen
+- Öffnen der Ausgangslizenz direkt oder über die Option: ‚View additional Licenses or Trials' 
+- Öffnen des „Remove/Assign Products“ Buttons 
+-> „Remove“ gewünschtes Product 
+- Öffnen der gewünschten Empfangslizenz unter „Licenses“ 
+- Öffnen des „Remove/Assign Products“ Buttons 
+- Zuweisung der verfügbaren Toolbox (grüner Pfeil) unter “Assignable Products”:  
+-> Danach Entnahme des aktualisierten License Files und File Installation Keys unter dem 'Install and Activate' Tab der jeweiligen Lizenzen
+
+Passcodes für Release 2007b oder älter müssen nach Anfrage über uns generiert werden.
+
+Ist das ‚Unassignen‘ von Tools in Ihrem License Center nicht möglich, weist dies auf die fehlende nötige ‚Validierung‘ = Abbildung der aktuellen Lizenz- und Usersituation der Lizenz vor einer angestrebten Änderung, hin.
+Unter Validierung versteht man dabei den Abgleich der Lizenz mit unserem Zentralserver und damit die Aktualisierung der Lizenz auf den tatsächlichen Ist-Zustand bzw. die Umsetzung inzwischen möglicherweise erfolgter Lizenzänderungen. 
+
+Um zu 'validieren', d.h. die nötige aktuelle Produkt- und User-Situation der Lizenz vor einer angestrebten Lizenzänderung abzubilden, ist dann entweder vom Administrator oder Licensed End User mit Activation Permission das neueste License Files zur Lizenz aus geöffnetem MathWorks Account License Center abzurufen oder ein Update der Lizenz aus geöffnetem MATLAB auszuführen. 
+
+A. Validierung aus geöffnetem MathWorks Account License Center: 
+- Öffnen des MathWorks Account License Center: 
+- Öffnen der gewünschten Lizenznummer direkt oder über die Option: ‚View additional Licenses or Trials‘ 
+- Öffnen des darunter aufscheinenden ‚Install and Activate‘ Tab 
+- Auswahl: 'Get License File’ zu jeder direkt oder über den rechtsseitigen Tab: 'Deactivate a Computer' gelisteten Aktivierung 
+- Auswahl des aktuellsten Releases 
+- Email Versand des erzeugten License Files an sich selbst 
+
+B. Validierung aus geöffnetem MATLAB: 
+- Auswahl (Select) Help -> Licensing 
+- Auswahl (Select) Update -> Current License 
+- Neustart MATLAB bzw. Bestätigung einer diesbezügl. Fehlermeldung beim Starten von MATLAB. 
+
+Danach lässt sich der gewünschte Tooltransfer ausführen.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

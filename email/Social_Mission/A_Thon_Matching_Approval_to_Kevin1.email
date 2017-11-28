@@ -1,0 +1,176 @@
+<p>Hi Kevin,</p>
+<p>Below is an A-thon Matching Donation Request for your approval. Please let me know if you have any questions.</p>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Event:</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Event_Program_Name__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Event Date:</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Start_Date__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Staff Member:</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Contact__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Match Amount:</strong></p>
+</td>
+<td>
+<p>${!Social_Action__c.Mathworks_Monetary_Contribution__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>GL Account:</strong></p>
+</td>
+<td>3010.705100 
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>AP Code:</strong></p>
+</td>
+<td>
+<p>Athon {!Social_Action__c.Contact_Last_Name__c}, {!Social_Action__c.Contact_First_Name__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Organization Address:</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Account__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Account_Address__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Account_City__c}, {!Social_Action__c.Account_State__c}, {!Social_Action__c.Account_Zip__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Email EFT Remittance to:</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Contact__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>W-9 & IRS Letter:</strong></p>
+</td>
+<td>
+<p><a href="http://sharepoint.mathworks.com/marketing/marcomm/teams/corpcomm/socialmission/Tax%20Documents/Forms/AllItems.aspx"><strong>Tax Documents</strong></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>A-thon form, EFT form, &amp; proof of payments:</strong></p>
+</td>
+<td>
+<p>{!Social_Action__c.Supporting_Files_URL__c}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Thank You,</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Caitlin Brosnihan</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Social Mission</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="mailto:socialmission@mathworks.com">socialmission@mathworks.com</a></p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>{!Social_Action__c.Thread_ID__c}

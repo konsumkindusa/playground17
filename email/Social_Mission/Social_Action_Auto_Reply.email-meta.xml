@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>auto reply for Social Aciton</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Social Action Auto Reply</name>
+    <style>none</style>
+    <subject>RE:  {!Social_Action__c.Event_Program_Name__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

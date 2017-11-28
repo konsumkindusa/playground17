@@ -1,0 +1,43 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Your MATLAB Distributed Computing Server On Demand license {!Case.License__c} has been set up and is ready to use.
+
+As the Administrator of the license, your next steps are:
+
+1. Enter your Credit Card information 
+a) Log into the License Center (https://www.mathworks.com/licensecenter)
+b) Select your new MDCS On Demand License {!Case.License__c}
+c) Select the Set up On-Demand Tab
+d) Click the Start Using On-Demand button
+e) Enter Credit Card Billing Address
+f) Accept Terms & Conditions at bottom of page
+g) Click the Continue to Payment Information button
+h) Enter Credit Card details - (Cardholder Name, Card Number, Exp Date, Security Code)
+i) Click Send
+
+
+2. Review the MATLAB Distributed Computing Server Cloud Center documentation  (https://www.mathworks.com/help/cloudcenter/) 
+This guide provides information about:
+- Creating and managing MATLAB Distributed Computing Server clusters using our Cloud Center web application
+- Accessing clusters created by Cloud Center from a MATLAB with Parallel Computing Toolbox client
+- Transferring data to/from a cluster created with Cloud Center
+- Using AWS Management Console to create an Identity and Access Management (IAM) Role
+
+
+3. Give users On-Demand access to the software by adding them as Licensed End-users
+- The On-Demand permission for new users is set to "Yes".  This allows Users can get access to the product immediately.  You can change permissions within the License Center
+- Licensed end-users can use Cloud Center to start their own clusters or they can use clusters which you have created for them
+- Detailed usage logs are available for download from the “On-Demand” tab in the License Center
+
+4. If you are the Administrator on the license and will also be a user, you need to associate yourself to the license as a Licensed End User
+
+PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of the EC2 instances that you use.  You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

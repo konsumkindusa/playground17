@@ -1,0 +1,34 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  Below you will find instructions on how to obtain your Machine ID.    
+
+For Windows:  
+1) Click the "Start Menu" (Usually located in the lower left corner)  
+2) Scroll over "All Programs"  
+3) Scroll over "Accessories"  
+4) Select "Command Prompt"
+5) Type "vol c:" and press Enter Your Host ID is the Volume Serial Number.    
+
+For Macintosh:  
+1) Open terminal window  
+2) Enter the following command:     ifconfig en0  Your Host ID is the "ether" information and should be entered as your Host ID without the colons.    
+
+For Linux:  
+1) Open terminal window  
+2) Enter the following command:  ifconfig eth0  Your Host ID is the "HWaddr" information and should be entered as your Host ID without the colons.    
+
+Instructions to locate Computer Login Name (Case Sensitive):    
+For Windows:  
+In DOS type "set username" and press enter.  The UserName is your computer Login Name for that Machine.  Keep in mind it is case sensitive.    
+
+For Macintosh or Linux:  
+In a terminal window type "whoami" and press enter. This will give you your computer Login Name for that Machine.  Keep in mind it is case sensitive.  
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object where user is set flag when rules are ready to be published in CDS Assignment. The flag has been monitoring by BODI job . Once rules are published in CDS, the record will be updated by MW Integration user</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Pending_Rule_Publish__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Rule Publish</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>REQUESTED</fullName>
+                    <default>false</default>
+                    <label>REQUESTED</label>
+                </value>
+                <value>
+                    <fullName>IN PROGRESS</fullName>
+                    <default>false</default>
+                    <label>IN PROGRESS</label>
+                </value>
+                <value>
+                    <fullName>COMPLETE</fullName>
+                    <default>false</default>
+                    <label>COMPLETE</label>
+                </value>
+                <value>
+                    <fullName>ERROR</fullName>
+                    <default>false</default>
+                    <label>ERROR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rule_Identifier__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique identifier used by CDS to update the record once it&apos;s published</description>
+        <externalId>false</externalId>
+        <label>Rule Identifier</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Rules_Last_Published_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>User who last published assignment rules to be recalculated by CDS Assignment engine</description>
+        <externalId>false</externalId>
+        <label>Rules Last Published By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Territory_Publish_Rules</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rules_Last_Published_On__c</fullName>
+        <defaultValue>NOW()</defaultValue>
+        <externalId>false</externalId>
+        <label>Rules Last Published On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Territory Publish Rule</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Rule_Identifier__c</columns>
+        <columns>Pending_Rule_Publish__c</columns>
+        <columns>Rules_Last_Published_On__c</columns>
+        <columns>Rules_Last_Published_By__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>TPR-{0000}</displayFormat>
+        <label>Territory Publish Rule Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Territory Publish Rules</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

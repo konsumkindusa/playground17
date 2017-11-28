@@ -1,0 +1,20 @@
+Dear {!Contact.FirstName},
+
+Thank you for your request for a trial of xxx 
+
+I need some further information from you before I can issue the codes.
+
+* Could you please tell me if the trial is for you? (if it is for someone else please could you provide the name and contact details of that person) 
+
+* What is the purpose of the trial? Is it an evaluation to see if you can use the tool with a view to purchasing or something else?
+
+* Do you currently have a personal MATLAB License? Or are you using the university site license?
+
+Once I receive these details I will issue you an evaluation code.
+
+Kind regards,
+{!Opportunity.OwnerFullName}
+Support Specialist 
+Tel:  +44 1223
+E-mail: sales@mathworks.co.uk
+Visit our Webstore: https://www.mathworks.com/accesslogin/login.do

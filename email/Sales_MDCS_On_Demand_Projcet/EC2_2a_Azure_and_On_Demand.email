@@ -1,0 +1,30 @@
+Dear {!Contact.FirstName},
+
+I am following up with you in regard to your interest in scaling parallel MATLAB applications to Azure using MATLAB Distributed Computing Server and an on-demand software license.
+
+I will provide you with an on-demand license for MATLAB Distributed Computing Server. This license allows you to use the products for which your desktop is licensed, with the exception of a few items listed here: https://www.mathworks.com/products/ineligible_programs/. 
+
+
+Prerequisites for your new license: 
+
+Before we provide the license that you need, you will need to: 1) be familiar with Parallel Computing Toolbox, 2) be able to connect to cloud resources, 3) have access to Microsoft Azure, and 4) be prepared to install and integrate MATLAB Distributed Computing Server on Azure.
+
+We have had multiple customers successfully install and integrate MATLAB Distributed Computing Server on Azure, and Microsoft has published a blog post that describes one installation option in detail. 
+
+If you are already working with a Cloud Solution Architect, you will likely be OK with support from our Installation Support team, who can answer questions related to standard installation procedure. If you need a deeper level of assistance, please consider working with our Consulting group. 
+
+
+Software costs (to MathWorks): 
+
+Detailed information on software billing and options can be found on our web site at https://www.mathworks.com/mdcs-on-demand-pricing. You will not be charged any fees for this license unless you associate a credit card to the license and use MATLAB Distributed Computing Server.   
+
+You will be billed separately by Microsoft for your use of any Azure resources. 
+
+
+Next Steps: 
+
+When you let me know that you have fulfilled the prerequisites above, I will provide an on-demand license for MATLAB Distributed Computing Server. 
+
+To learn more about MathWorks Consulting Services, you can contact your account manager at @mathworks.com or 508-647-xxxx. 
+
+Best regards,

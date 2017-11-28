@@ -1,0 +1,67 @@
+<apex:page standardController="Training_Location__c" extensions="TrainingLocationPageXC">
+    <apex:form id="formId">
+        <apex:pageMessages id="pageMsgs"/>
+        <apex:pageBlock title="Training Location">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Training Location Detail">
+                <apex:repeat value="{!reqDetailFieldSet}" var="reqDetailFSObj">
+                    <apex:inputField value="{!trainingLocationObj [reqDetailFSObj]}" required="true"/>
+                </apex:repeat>
+                <apex:repeat value="{!detailFieldSet}" var="detailFSObj">
+                    <apex:inputField value="{!trainingLocationObj [detailFSObj]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Address" columns="1">                
+                    <apex:repeat value="{!addressFieldSet}" var="addressFSObj">
+                        <apex:inputField value="{!trainingLocationObj [addressFSObj]}"/>
+                    </apex:repeat>
+                     <apex:actionRegion immediate="true">
+                        <c:CountryStatePickListComponent compData="{!compDataObj}" selectedCountryEdit="{!compDataObj.countryCode}" selectedStateEdit="{!compDataObj.stateCode}" showStates="true"/>
+                     </apex:actionRegion>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Contact Info">
+                <apex:repeat value="{!contacInfoFieldSet}" var="contactInfoFSObj">
+                    <apex:inputField value="{!trainingLocationObj [contactInfoFSObj]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Description and Notes" columns="1">
+                <apex:inputField value="{!trainingLocationObj.Location_URL__c}"/>
+                <!-- HW 1909048
+                <apex:repeat value="{!descandNotesFieldSet}" var="descotesFSObj">
+                    <apex:inputTextarea value="{!trainingLocationObj [descotesFSObj]}" cols="70" rows="6"/>
+                </apex:repeat>
+                 -->
+                 <apex:inputTextarea value="{!trainingLocationObj.Notes__c}" cols="70" rows="6"/>
+                 <apex:inputTextarea value="{!trainingLocationObj.Directions__c}" cols="70" rows="6"/>
+                 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <style>
+    .Custom23Tab .secondaryPalette, .individualPalette .Custom23Block .secondaryPalette {
+    border-color: #f8f8f8;
+    }
+
+    .Custom23Tab .listViewport .subNav .linkBar, .Custom23Tab .mComponent .cHeader, .Custom23Tab .genericTable, .Custom23Tab .bSubBlock, .Custom23Tab .bPageBlock {
+        border-top: 0px solid #7325c2;
+    }
+    body .bPageBlock, body #bodyCell .bResource .secondaryPalette, body .secondaryPalette.bPageBlock, body .individualPalette .secondaryPalette.bPageBlock, body .bodyDiv .genericTable, body .genericPageBlockTable, body .bodyDiv .bSubBlock, body .bComponentBlock .bPageBlock, body .bMyDashboard .bPageBlock, body.rlHoverFrame .bPageBlock, body.subjectSelectionPopup div.choicesBox, body.lookupTab .secondaryPalette.bPageBlock, body.popupTab .secondaryPalette.bPageBlock, body.UserTagStatsPage .secondaryPalette.bPageBlock {
+        background-color: #f8f8f8;
+        border-bottom: 0px solid #eaeaea;
+        border-left: 0px solid #eaeaea;
+        border-right: 0px solid #eaeaea;
+    }   
+    .bPageBlock .detailList .data2Col {
+        padding-right: 99px;
+    }
+    body .bPageBlock .pbBody .labelCol, body .bPageBlock .pbBody .dataCol, body .bPageBlock .pbBody .data2Col, body .print .topics-label, body .print .topics-list {
+    padding-bottom: 2px;
+    }
+    
+    </style>
+    
+</apex:page>

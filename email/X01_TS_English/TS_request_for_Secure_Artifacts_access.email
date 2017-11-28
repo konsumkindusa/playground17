@@ -1,0 +1,20 @@
+Hello,
+
+I need to escalate this case to a development team in one of our international offices. Would anyone be able to provide access to the Secure Artifacts folder? 
+
+The case and team information is as follows:
+
+Name of development team and their location: [TO BE FILLED OUT BY ASE]
+
+Case number: {!Case.CaseNumber}
+
+Link to case in Salesforce: https://mathworks.my.salesforce.com/console#/{!Case.Id}
+
+
+Link to secure artifacts folder: {!Case.Attachments_Folder__c}
+
+Link to Admin Instructions: https://sharepoint.mathworks.com/salesservice/tech_support/tech_support_teams/TSMgmt/_layouts/15/WopiFrame2.aspx?sourcedoc={22CE98DF-B1D2-4DA9-92F3-9193856C9D3B}&file=Secure%20Artifacts%20Admin%20Instructions%20comments%202015.12.14.doc&action=default&DefaultItemOpen=1
+
+
+Thanks,
+{!Case.OwnerFullName}

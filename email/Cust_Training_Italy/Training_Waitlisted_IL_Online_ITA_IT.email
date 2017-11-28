@@ -1,0 +1,23 @@
+Gentile [Contact Full Name],
+
+a seguito della sua richiesta di iscrizione, le comunichiamo che il suo nominativo è stato inserito nella lista di attesa per il seguente corso :
+
+DENOMINAZIONE CORSO:{!Enrollment__c.Class__c} 
+DATA:{!Enrollment__c.Display_Start_Date__c} -{!Enrollment__c.Display_End_Date__c}
+SEDE:{!Class__c.City__c}, {!Class__c.State__c} 
+ORARIO: dalle {!Class__c.Start_Time__c} fino alle {!Class__c.End_Time__c}
+
+
+Sarà nostra premura contattarla non appena si renda disponibile un posto. 
+
+Qualora fosse interessato a partecipare ad un'altra sessione di formazione, la preghiamo di consultare il nostro calendario dei corsi disponibili all'indirizzo sotto indicato o di contattarci telefonando al numero {!Class__c.Sponsor_Office_Phone__c}  o inviando un email all'indirizzo {!Class__c.Sponsor_Office_Email__c} 
+
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+
+Ci scusiamo per l'inconveniente.
+
+Cordiali saluti,
+Training Services - The MathWorks srl
+{!Class__c.Sponsor_Office_Signature__c} 

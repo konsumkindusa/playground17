@@ -1,0 +1,23 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.
+
+Due to system changes to the Student software, your release of the Student license is no longer supported.  As a result you are entitled to a free upgrade to the R2008b version.  We have created License #XXXXXX and it is now associated to your MathWorks account.  To download your Student license software:
+
+1. Log into your MathWorks Account
+2. Under "My Licenses" view the License Number you would like to download
+3. Select "Download"
+4. Select the correct Operating System
+5. Select the products to download
+6. Follow the Wizard as you are prompted
+
+To learn more about activation you can follow the link below, which we require you to log into your MathWorks Account.  http://www.mathworks.com/support/solutions/en/data/1-3YZBZ6/
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

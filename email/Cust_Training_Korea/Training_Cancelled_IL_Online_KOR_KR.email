@@ -1,0 +1,19 @@
+{!Contact.LastName} {!Contact.FirstName}님께,
+
+안녕하십니까?
+고객님의 수업 취소를 확인하여 드리겠습니다.
+
+
+수업명 : {!Enrollment__c.Class__c} 
+일자 :{!Enrollment__c.Display_Start_Date__c}-{!Enrollment__c.Display_End_Date__c}
+
+
+귀하께서 이 수업에 대한 수강료를 이미 결제하셨다면, 결제하신 금액과 동일하거나 그 이하의 다른 수업으로 대체하실 수 있으며 환불은 불가하다는 점 양해를 부탁드립니다. 
+
+문의사항이 있으시면 {!Class__c.Sponsor_Office_Phone__c}  로 전화주시거나 {!Class__c.Sponsor_Office_Email__c} 로 메일을 보내주시기 바랍니다. 
+
+
+감사합니다.
+
+{!Class__c.Sponsor_Office_Signature__c} 
+{!Class__c.Sponsor_Office_Training_URL__c}

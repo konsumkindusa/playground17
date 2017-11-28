@@ -1,0 +1,23 @@
+Estimado {!Contact.Name},
+
+
+Este email es para comunicarle que su solicitud de inscripción al curso se encuentra en estos momentos en lista de espera. Los datos del curso son:
+
+NOMBRE DEL CURSO: {!Enrollment__c.Class__c} 
+FECHAS:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LUGAR: {!Class__c.City__c}, {!Class__c.Country__c} 
+HORARIO: {!Class__c.Start_Time__c} - {!Class__c.End_Time__c}
+
+
+
+Nos pondremos en contacto con Ud. tan pronto como dispongamos de plazas libres.
+
+Mientras tanto, le enviamos el listado completo de cursos, por si estuviese interesado en algún otro curso.
+
+Para más información, puede ponerse en contacto con nosotros en el teléfono {!Class__c.Sponsor_Office_Phone__c}, o enviarnos un email a: {!Class__c.Sponsor_Office_Email__c}. 
+
+Gracias por el interés mostrado en los Servicios de Formación de The MathWorks.
+
+
+
+{!Class__c.Sponsor_Office_Signature__c} 

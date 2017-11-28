@@ -1,0 +1,13 @@
+Dear {!Case.Contact}, 
+
+Recently I sent you information about joining our third-party program, The MathWorks Connections Program.  To date, I have not received an application from you.  This is a just reminder about the program should you be interested in joining.
+
+The MathWorks Connections Program is available, at no charge, to third-party organizations who develop and distribute complementary, commercially-available products and services based on the MATLAB technical computing environment.  The Connections Program provides our third-party organizations with such benefits as a page in our Connections Web directory, access to "Connections Partner only" logos to display in your collateral, and early access to new versions of our products.
+
+If you are interested in the Connections Program, please take a few moments to complete the appropriate application, located at http://www.mathworks.com/products/connections/join .
+If you should have any questions about the application or the Connections Program, please feel free to contact me.  I look forward to receiving your application.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

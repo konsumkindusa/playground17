@@ -1,0 +1,18 @@
+Hello [Service Request.Contact First Name],    
+
+Currently, MathWorks is prohibited by the U.S. Department of Commerce, Bureau of Industry & Security, from selling or supporting our products in XXXX.  
+
+In the future, if this status changes we will then be able to respond to your request. 
+
+MathWorks licensed software is controlled under U.S. Export Administration Regulations.  It is unlawful to export or re-export software contrary to U.S. law or permit the use of software by denied parties.  Software may also be subject to non-U.S. export and import laws and regulations.  It is the licensee’s responsibility to comply with all applicable export and import regulations.
+
+EXPORT CONTROL STATEMENT: ‘‘These items are controlled by the U.S. Government and authorized for export only to the country of ultimate destination for use by the ultimate consignee or end-user(s) herein identified. They may not be resold, transferred, or otherwise disposed of, to any other country or to any person other than the authorized ultimate consignee or end-user(s), either in their original form or after being incorporated into other items, without first obtaining approval from the U.S. government or as otherwise authorized by U.S. law and regulations’’
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

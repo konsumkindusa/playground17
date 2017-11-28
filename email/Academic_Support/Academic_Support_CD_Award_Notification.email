@@ -1,0 +1,14 @@
+Hello{!Contact.FirstName} {!Contact.LastName},
+
+I am pleased to inform you that your MathWorks Curriculum Development monetary support has been mailed out today.  XX will be following up with you in the next few weeks to see how the project is going.  We look forward to seeing the results!
+
+Best Regards,
+{!User.FirstName}{!User.LastName}
+
+MathWorks Academic Support Program
+E.  academicsupport@mathworks.com
+F.  508.652.8740
+
+MathWorks
+3 Apple Hill Drive 
+Natick, MA 01760

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification Email to approver that an article has been submitted for approval</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Article Approval Assignment</name>
+    <style>none</style>
+    <subject>Article: &quot;{!FAQ__kav.Title}&quot; is ready for approval with a Validation Status of {!FAQ__kav.ValidationStatus}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

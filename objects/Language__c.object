@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>ISO_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>ISO Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Language Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_Display_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name that should be displayed to external users when viewing the Language of a Course/Class</inlineHelpText>
+        <label>Language Display Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Locale_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Locale Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Multibyte__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Multibyte</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SF_ISO_Code__c</fullName>
+        <description>The universal ISO language code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The universal ISO language code.</inlineHelpText>
+        <label>Salesforce ISO Code</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Show_Names_By__c</fullName>
+        <description>Determines the order in which to display Contact names.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines the order in which to display Contact names.</inlineHelpText>
+        <label>Show Names By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First, Last</fullName>
+                    <default>true</default>
+                    <label>First, Last</label>
+                </value>
+                <value>
+                    <fullName>Last, First</fullName>
+                    <default>false</default>
+                    <label>Last, First</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Training_L1_Survey_Link__c</fullName>
+        <description>Training level 1 survey</description>
+        <externalId>false</externalId>
+        <label>Training L1 Survey Link</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Language</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Language_Display_Name__c</columns>
+        <columns>Language_Code__c</columns>
+        <columns>Locale_Code__c</columns>
+        <columns>SF_ISO_Code__c</columns>
+        <columns>ISO_Code__c</columns>
+        <columns>Multibyte__c</columns>
+        <columns>Training_L1_Survey_Link__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Language</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Languages</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>ISO_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Language_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Locale_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Multibyte__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ISO_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Language_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Locale_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Multibyte__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>ISO_Code__c</searchFilterFields>
+        <searchFilterFields>Language_Code__c</searchFilterFields>
+        <searchFilterFields>Locale_Code__c</searchFilterFields>
+        <searchFilterFields>Multibyte__c</searchFilterFields>
+        <searchResultsAdditionalFields>ISO_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Language_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Locale_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Multibyte__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

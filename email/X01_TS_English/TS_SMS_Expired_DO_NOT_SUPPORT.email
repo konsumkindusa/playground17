@@ -1,0 +1,18 @@
+Hello {!Contact.FirstName}, 
+
+I am writing in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+Our records indicate that license #{!Case.License__c} is out of maintenance. 
+
+Telephone and e-mail access to our Technical Support staff is one of the benefits of having a current Software Maintenance Service (SMS) subscription. Renewal of the SMS subscription on this license will provide you with access to our Technical Support staff. 
+
+Someone from our Product and Pricing Team will be sending you a quotation for renewal of your license. If you have questions, please contact your local Sales team: 
+http://www.mathworks.com/company/worldwide/ 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange and MATLAB Answers: http://www.mathworks.com/matlabcentral/ 
+
+{!User.Disclosure__c}

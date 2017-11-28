@@ -1,0 +1,31 @@
+Dear {!Contact.FirstName},
+
+Thank you for your interest in the MATLAB Distributed Computing Server for Amazon EC2 Early Adopter Program (mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2.html). 
+
+The Early Adopter Program provides access to new capabilities designed to let you scale your MATLAB applications to MATLAB Distributed Computing Server  resources running on Amazon EC2 instances.  These new capabilities are accessed through your local desktop session of MATLAB and Parallel Computing Toolbox.  
+
+I have provided a set of links below to help you get started with Parallel Computing Toolbox.  If you have additional technical questions about Parallel Computing, your Account Manager can arrange a conference call with one of our Application Engineers.
+
+Resources:
+    1) What is Parallel Computing?
+            http://www.mathworks.com/help/distcomp/what-is-parallel-computing.html
+
+    2) Choose a Parallel Computing solution:
+            http://www.mathworks.com/help/distcomp/choosing-a-parallel-computing-solution.html
+
+    3) Key functions to help you get started
+            http://www.mathworks.com/help/distcomp/parfor.html
+                http://www.mathworks.com/help/distcomp/introduction-to-parfor.html
+            http://www.mathworks.com/help/distcomp/parpool.html
+            http://www.mathworks.com/help/distcomp/batch-processing-1.html
+                Note:  you must use the "Pool" option if your batch job should use multiple workers    
+
+    4) Tutorials (short videos and code samples):
+            http://www.mathworks.com/videos/series/parallel-and-gpu-computing-tutorials-97719.html
+
+    5) What can I do to optimize my serial code first?
+            http://blogs.mathworks.com/loren/2008/06/25/speeding-up-matlab-applications/
+
+Once you are up and running with the Parallel Computing Toolbox, please let me know and we will move forward with getting you access to MATLAB Distributed Computing Server for Amazon EC2. 
+
+Best regards,

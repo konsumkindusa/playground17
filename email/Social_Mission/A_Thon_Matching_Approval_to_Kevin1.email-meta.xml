@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A-Thon Payment Request to Kevin (HTML)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>A-Thon Payment Request to Kevin (HTML)</name>
+    <style>none</style>
+    <subject>Payment Request: A-thon Matching for {!Social_Action__c.Contact__c}</subject>
+    <textOnly>Hi Kevin,
+
+Below is an A-thon Matching Donation Request for your approval. Please let me know if you have any questions.
+
+
+Event:    {!Social_Action__c.Event_Program_Name__c}
+
+Event Date:    {!Social_Action__c.Start_Date__c}
+
+Staff Member:    {!Social_Action__c.Contact__c}
+
+
+
+Match Amount:    ${!Social_Action__c.Mathworks_Monetary_Contribution__c}
+
+GL Account:    3010.705100
+
+AP Code:    Athon {!Social_Action__c.Contact_Last_Name__c}, {!Social_Action__c.Contact_First_Name__c}
+
+
+
+Organization Address:    {!Social_Action__c.Account__c}
+                                       {!Social_Action__c.Account_Address__c}
+                                       {!Social_Action__c.Account_City__c}, {!Social_Action__c.Account_State__c}, {!Social_Action__c.Account_Zip__c}
+
+
+
+Email EFT Remittance to:    {!Social_Action__c.Contact__c}
+
+
+
+
+W-9 &amp; IRS Letter:    Tax Documents
+
+
+A-thon form, EFT form, &amp; proof of payments:    {!Social_Action__c.Supporting_Files_URL__c}
+
+
+
+
+Thank You,
+
+Caitlin Brosnihan
+Social Mission
+socialmission@mathworks.com
+
+{!Social_Action__c.Thread_ID__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

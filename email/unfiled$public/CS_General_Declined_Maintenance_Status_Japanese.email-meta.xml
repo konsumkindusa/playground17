@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - License Change - Declined Maintenance Status</name>
+    <style>none</style>
+    <subject>【MATLAB】保守更新停止設定完了のご連絡</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

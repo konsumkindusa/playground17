@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Pre_product_send__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Pre_Product_Status__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Pre_product_no_response__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Pre_Product_Response__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Pre_Product_Response_date__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Pre_Product_sent_date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Partner_Agreement__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>3b - Pre-Product</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Pre-product survey to send</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Partner_Agreement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

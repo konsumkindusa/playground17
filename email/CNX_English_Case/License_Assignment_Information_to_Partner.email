@@ -1,0 +1,18 @@
+Dear {!Case.Contact},
+
+As we discussed, you have indicated that you need to resell MathWorks software to support a customer need.  To address needs such as yours, the MathWorks Connections Program has developed a license assignment process that authorizes a Connections Program Product Partner to purchase a license for delivery to another organization on a case-by-case basis.  Please be aware that MathWorks software license agreement explicitly restricts purchase of our software with the intention to resell and companies that do not use this assignment process or negotiate a formal distribution agreement may face legal action.
+
+This license will be set up with the contact you provide as the license administrator (your customer). The license administrator will receive an e-mail confirmation once the order has been processed.  
+
+If someone in your organization needs to the install MathWorks products prior to sending it to the end user we will need the name and e-mail of the individual who will be installing the software so that we can associate them with the license. This person will be identified as an administrator on the license. The administrator will receive an e-mail order confirmation once the order is processed. They will also receive another e-mail notifying them that they have been associated to the new license. This will enable them to download and activate the software prior to shipping your product.
+
+The attached document describes the expectations and requirements of partners who choose to deliver software using the license assignment process. Please review this document in detail and follow all the instructions.  Orders cannot be processed with incomplete or inconsistent information.  If you need any software pricing for locations outside your local area, I can provide you with a quotation.  Please submit all required paperwork to me as indicated in the attachment.  
+
+Let me know if you have any questions.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}
+
+[Attached File:  License_Assignment_Process.pdf]

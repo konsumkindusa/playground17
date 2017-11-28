@@ -1,0 +1,382 @@
+<!-- 
+/**
+* @author Original: Archana Lohar - Cloud Sherpas/Mathworks, Last Modified:Archana Lohar - Cloud Sherpas/Mathworks
+* @date Original: 13 Oct 2014, Last Modified: 13 Oct 2014
+* @date Mod: 20 August 2015, Task:1043291 - Donna Latte
+* @description page for displaying list of Trials related to Contact
+*/ 
+-->
+<apex:page standardController="Contact"
+    extensions="ContactViewTrialController" id="pageId" showHeader="false">
+
+    <apex:stylesheet value="{!$Resource.CssForViewTrialsPages}" />
+    <apex:includeScript value="/soap/ajax/26.0/connection.js" />
+    <apex:includeScript value="/support/console/32.0/integration.js" />
+    <Script type="text/javascript" src="{!$Resource.JqueryUINew}" />
+    <Script type="text/javascript" src="{!$Resource.JqueryUIMin}" />
+
+    <script>
+     function showProdustAndContacts(){
+     
+       var j$ = jQuery.noConflict();
+       
+       j$('#toPopup').dialog({model:true});
+    
+       j$('#disableBack').css("display","block"); 
+     }
+     
+     
+      $(".tablesorter").tablesorter(); 
+    
+     function closePopup(){
+     
+       var j$ = jQuery.noConflict();
+       
+       j$('#toPopup').dialog('close');
+       
+       j$('#disableBack').css("display","none"); 
+     }
+     
+     function openTab(url,name, tabname){        
+        if (sforce.console.isInConsole())
+        {
+        sforce.console.openPrimaryTab(null,url, true, name, null,tabname);
+        }
+        else {
+        window.open(url,"_blank","height=1000,width=1300");
+        }
+      }
+
+     function openWindowTab(url){
+        window.open(url,"_blank","height=1000,width=1300");
+      }
+    
+    </script>
+    <apex:form ID="TheForm">
+
+        <apex:pageMessages id="pageError" />
+
+        <apex:actionStatus id="OnLoadLoadingImage">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading"
+                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif"
+                            title="Please Wait..." /> <span class="waitingDescription">Fetching
+                            Trials.....</span>
+                    </div>
+                </div>
+            </apex:facet>
+            <apex:facet name="stop">
+                <apex:pageBlock rendered="{!trialList.size>0}">
+
+                    <apex:pageBlockButtons location="top">
+                        <apex:outputPanel id="myButtons">
+                            <h1>Showing {!pageNumberToSet} of {!mod} pages</h1>&nbsp;&nbsp;
+                            <apex:commandButton value="First Page"
+                                rerender="details,paginationloadingImage,pageNo,myButtons"
+                                action="{!FirstPage}" disabled="{!prev}"
+                                status="paginationloadingImage" />
+                            <apex:commandButton value="Previous"
+                                rerender="details,paginationloadingImage,pageNo,myButtons"
+                                action="{!previous}" disabled="{!prev}"
+                                status="paginationloadingImage" />
+                            <apex:commandButton value="Next"
+                                rerender="details,paginationloadingImage,pageNo,myButtons"
+                                action="{!next}" disabled="{!nxt}"
+                                status="paginationloadingImage" />
+                            <apex:commandButton value="Last Page"
+                                rerender="details,paginationloadingImage,pageNo,myButtons"
+                                action="{!LastPage}" disabled="{!nxt}"
+                                status="paginationloadingImage" />
+
+                        </apex:outputPanel>
+                    </apex:pageBlockButtons>
+
+
+                    <apex:actionstatus id="paginationloadingImage">
+                        <apex:facet name="start">
+                            <div class="waitingSearchDiv" id="el_loading"
+                                style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                                <div class="waitingHolder"
+                                    style="top: 74.2px; opacity: 1.0; width: 91px;">
+                                    <img class="waitingImage" src="/img/loading.gif"
+                                        title="Please Wait..." /> <span class="waitingDescription">Processing.....</span>
+                                </div>
+                            </div>
+                        </apex:facet>
+                    </apex:actionstatus>
+                    <apex:pageBlockSection title="{!$Label.TrialHeaderTitle}"
+                        columns="1" rendered="{!trialList.size>0}">
+
+
+                        <apex:actionFunction name="readCell" action="{!selectTrial}"
+                            oncomplete="showProdustAndContacts()" immediate="true"
+                            rerender="RelatedList" status="LoadingImageTillModel">
+                            <apex:param name="trialId" value="" assignTo="{!selTrialid}">
+                            </apex:param>
+                        </apex:actionFunction>
+
+                        <apex:outputPanel >
+
+
+
+                            <apex:pageBlockTable value="{!trialList}" var="trial"
+                                width="100%" rendered="{!trialList.size>0}" id="details">
+
+
+
+                                <apex:column value="{!trial.id}"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_TrialId}"
+                                    onclick="readCell('{!trial.id}')" />
+
+                                <apex:column headerValue="{!$Label.ViewTrialHeaderLabel_Releases}"
+                                    onclick="readCell('{!trial.id}')">
+                                    <apex:variable var="idx" value="{!0}" />
+                                    <apex:repeat value="{!trial.releases.entitlementReleaseBean}"
+                                        var="releases">
+                                        <apex:outputPanel rendered="{!(idx == 0)}"> {!releases.name} </apex:outputPanel>
+                                        <apex:variable var="idx" value="{!idx + 1}" />
+                                    </apex:repeat>
+
+                                </apex:column>
+
+                                <apex:column value="{!trial.activationType}"
+                                    onclick="readCell('{!trial.id}')"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_ActivationType}" />
+                                <apex:column value="{!trial.entitlementStatus}"
+                                    onclick="readCell('{!trial.id}')"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_TrialStatus}" />
+                                <apex:column value="{!trial.userDefinedLabel}"
+                                    onclick="readCell('{!trial.id}')"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_TrialLabel}" />
+                                <apex:column value="{!totalRecs}"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_Count}"
+                                    onclick="readCell('{!trial.id}')" />
+                                <apex:column value="{!trial.firstActivationDate}"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_ActivationDate}"
+                                    onclick="readCell('{!trial.id}')" />
+                                <apex:column value="{!trial.tsurInitialExpirationDate}"
+                                    onclick="readCell('{!trial.id}')"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_ExpirationDate}" />
+                                <apex:column headerValue="{!$Label.ViewTrialHeaderLabel_TrialExtnDate}"
+                                    onclick="readCell('{!trial.id}')">
+                                    <apex:repeat value="{!trial.tsurExtendTrialHistory.tsurExtendTrialHistoryBean}"
+                                        var="extdateBean">{!extdateBean.extendDate}
+                                     </apex:repeat>
+                                </apex:column>
+                                <apex:column value="{!trial.createdDateTime}"
+                                    onclick="readCell('{!trial.id}')"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_DateCreated}" />
+                                <apex:column value="{!trial.createdById}"
+                                    onclick="readCell('{!trial.id}')"
+                                    headerValue="{!$Label.ViewTrialHeaderLabel_CreatedBy}" />
+
+                            </apex:pageBlockTable>
+
+                            <apex:actionstatus id="LoadingImageTillModel">
+                                <apex:facet name="start">
+                                    <div class="waitingSearchDiv" id="el_loading"
+                                        style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                                        <div class="waitingHolder"
+                                            style="top: 74.2px; opacity: 1.0; width: 91px;">
+                                            <img class="waitingImage" src="/img/loading.gif"
+                                                title="Please Wait..." /> <span class="waitingDescription">Processing.....</span>
+                                        </div>
+                                    </div>
+                                </apex:facet>
+                            </apex:actionstatus>
+                        </apex:outputPanel>
+
+
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+            </apex:facet>
+
+        </apex:actionStatus>
+        <apex:actionFunction name="showLoadingImage"
+            action="{!getshowTrialsRelatedToOpportunityTest}" rerender="TheForm"
+            status="OnLoadLoadingImage" />
+        <div class="waitingSearchDiv" id="disableBack"
+            style="display: none; background-color: #808080; height: 100%; opacity: 0.65; width: 100%;"></div>
+
+        <div id="toPopup" style="display: none">
+
+            <div class="close">
+                <img src="{!$Resource.close}" width="23" id="closewindow"
+                    onclick="closePopup()" height="23" />
+            </div>
+
+            <div id="popup_content">
+                <!--your content start-->
+                <apex:pageBlock id="RelatedList">
+
+                    <apex:pageBlockSection title="{!$Label.TrialHeaderTitle}"
+                        columns="1" rendered="{!selectedTrialList.size>0}">
+                        <apex:pageBlockTable value="{!selectedTrialList}" var="trial"
+                            width="100%">
+
+                            <apex:column headerValue="{!$Label.ViewTrialHeaderLabel_TrialId}">
+                                <apex:outputlink onclick="javascript:openWindowTab('{!$Setup.TrialsIntegrationSetting__c.UrlForShowingTrials__c}{!trial.id}');return false;">{!trial.id}</apex:outputLink>
+                            </apex:column>
+                            <apex:column headerValue="{!$Label.ViewTrialHeaderLabel_Releases}">
+                                <apex:variable var="idx" value="{!0}" />
+                                <apex:repeat value="{!trial.releases.entitlementReleaseBean}"
+                                    var="releases">
+                                    <apex:outputPanel rendered="{!(idx == 0)}"> {!releases.name} </apex:outputPanel>
+                                    <apex:variable var="idx" value="{!idx + 1}" />
+                                </apex:repeat>
+                            </apex:column>
+                            <apex:column value="{!trial.activationType}"
+                                onclick="readCell('{!trial.id}')"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_ActivationType}" />
+                            <apex:column value="{!trial.entitlementStatus}"
+                                onclick="readCell('{!trial.id}')"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_TrialStatus}" />
+                            <apex:column value="{!trial.userDefinedLabel}"
+                                onclick="readCell('{!trial.id}')"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_TrialLabel}" />
+                            <apex:column value="{!totalRecs}"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_Count}"
+                                onclick="readCell('{!trial.id}')" />
+                            <apex:column value="{!trial.firstActivationDate}"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_ActivationDate}"
+                                onclick="readCell('{!trial.id}')" />
+                            <apex:column value="{!trial.tsurInitialExpirationDate}"
+                                onclick="readCell('{!trial.id}')"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_ExpirationDate}" />
+                            <apex:column headerValue="{!$Label.ViewTrialHeaderLabel_TrialExtnDate}"
+                                onclick="readCell('{!trial.id}')">
+                                <apex:repeat value="{!trial.tsurExtendTrialHistory.tsurExtendTrialHistoryBean}"
+                                    var="extdateBean">{!extdateBean.extendDate}
+                                     </apex:repeat>
+                            </apex:column>
+                            <apex:column value="{!trial.createdDateTime}"
+                                onclick="readCell('{!trial.id}')"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_DateCreated}" />
+                            <apex:column value="{!trial.createdById}"
+                                onclick="readCell('{!trial.id}')"
+                                headerValue="{!$Label.ViewTrialHeaderLabel_CreatedBy}" />
+
+
+
+                        </apex:pageBlockTable>
+
+
+                    </apex:pageBlockSection>
+                    <apex:pageBlock >
+                        <apex:pageBlockButtons location="top">
+                            <apex:outputPanel id="myButtonsForContacts">
+                                <h1>Showing {!pageNumberToSetforContact} of
+                                    {!noOfPagesForContactToShow} pages</h1>&nbsp;&nbsp;
+                                <apex:commandButton value="First Page"
+                                    rerender="contactdetails,pageNo,myButtonsForContacts"
+                                    action="{!firstConPage}" disabled="{!Conprev}"
+                                    status="loadingImagePaginationContact" />
+                                <apex:commandButton value="Previous"
+                                    rerender="contactdetails,pageNo,myButtonsForContacts"
+                                    action="{!previousCon}" disabled="{!Conprev}"
+                                    status="loadingImagePaginationContact" />
+                                <apex:commandButton value="Next"
+                                    rerender="contactdetails,pageNo,myButtonsForContacts"
+                                    action="{!nextCon}" disabled="{!Connxt}"
+                                    status="loadingImagePaginationContact" />
+                                <apex:commandButton value="Last Page"
+                                    rerender="contactdetails,pageNo,myButtonsForContacts"
+                                    action="{!LastConPage}" disabled="{!Connxt}"
+                                    status="loadingImagePaginationContact" />
+
+                            </apex:outputPanel>
+                            <apex:actionstatus id="loadingImagePaginationContact">
+                                <apex:facet name="start">
+                                    <div class="waitingSearchDiv" id="el_loading"
+                                        style="background-color: #FFFFFF; height: 100%; opacity: 0.65; width: 100%;">
+                                        <div class="waitingHolder"
+                                            style="top: 200px; opacity: 1.0; width: 91px;">
+                                            <img class="waitingImage" src="/img/loading.gif"
+                                                style="top: 78px;" title="Please Wait..." /> <span
+                                                class="waitingDescription">Processing.....</span>
+                                        </div>
+                                    </div>
+                                </apex:facet>
+                            </apex:actionstatus>
+                        </apex:pageBlockButtons>
+
+
+                        <apex:pageBlockSection title="{!$Label.ViewTrialContactHeaderLabel}" columns="1"
+                            rendered="{!relatedPeopleList.size>0}">
+                            <apex:pageBlockTable value="{!relatedPeopleList}" var="peoples"
+                                width="100%" rendered="{!relatedPeopleList.size>0}"
+                                styleclass="tablesorter" id="contactdetails">
+                                 
+                                
+                                <apex:column headerValue="{!$Label.ViewTrialContactHeaderLabel_ContactName}" >
+                                <apex:outputlink target="_self" rendered="{!If(mapContact[peoples.webprofileid].LastName='DummyContact',false,true)}" onClick="javascript:openTab('/{!mapContact[peoples.webprofileid].Id}', '{!mapContact[peoples.webprofileid].Name}', '{!mapContact[peoples.webprofileid].Name}');return false;"> 
+                                     {!if((mapContact[peoples.webprofileid].First_Name_Latin__c != null ||
+                                              mapContact[peoples.webprofileid].Last_Name_Latin__c != null),
+                                              mapContact[peoples.webprofileid].First_Name_Latin__c+' '+mapContact[peoples.webprofileid].Last_Name_Latin__c,
+                                              mapContact[peoples.webprofileid].Name)} 
+                                 </apex:outputlink>
+                                 <apex:outputText rendered="{!If(mapContact[peoples.webprofileid].LastName='DummyContact',true,false)}">
+                                            <apex:outputText rendered="{!IF((peoples.latinFirstName!='' || peoples.latinLastName!=''),true,false)}">
+                                                  {!peoples.latinFirstName}   {!peoples.latinLastName}</apex:outputText>
+                                            <apex:outputText rendered="{!IF((peoples.latinFirstName='' || peoples.latinLastName=''),true,false)}">
+                                                 {!peoples.firstName}   {!peoples.lastname}</apex:outputText>
+                                        </apex:outputText>
+                                        <apex:outputText rendered="{!IF(listSize=0,true,false)}">
+
+                                        <apex:outputText rendered="{!IF((peoples.latinFirstName!='' || peoples.latinLastName!=''),true,false)}">
+                                {!peoples.latinFirstName}   {!peoples.latinLastName}</apex:outputText>
+                                        <apex:outputText rendered="{!IF((peoples.latinFirstName='' || peoples.latinLastName=''),true,false)}">
+                                {!peoples.firstName}   {!peoples.lastname}</apex:outputText>
+                                    </apex:outputText>
+                                </apex:column>
+
+                                <apex:column headerValue="{!$Label.ViewTrialContactHeaderLabel_HasLicense}">
+                                    <apex:repeat value="{!mapContact}" var="key">
+                                        <apex:outputText rendered="{!key==peoples.webprofileid}">
+                                            <apex:inputCheckbox value="{!mapContact[peoples.webprofileid].Has_Licenses__c}"
+                                                disabled="true" />
+                                        </apex:outputText>
+                                    </apex:repeat>
+                                </apex:column>
+
+                                <apex:column value="{!peoples.role}" headerValue="{!$Label.ViewTrialContactHeaderLabel_ContactType}" />
+                            </apex:pageBlockTable>
+
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+
+                    <apex:pageBlockSection title="{!$Label.ViewTrialProductHeaderLabel}" columns="1"
+                        rendered="{!relatedProductList.size>0}">
+
+                        <apex:repeat value="{!relatedProductList}" var="entReleaseBean"
+                            rendered="{!relatedProductList.size>0}">
+                            <apex:pageBlockTable value="{!entReleaseBean.products.entitlementProductBean}"
+                                var="products">
+
+                                <apex:column value="{!products.ProductName}"
+                                    headerValue="{!$Label.ViewTrialProductHeaderLabel_ProductName}" />
+                                <apex:column value="{!products.ProductBaseCode}"
+                                    headerValue="{!$Label.ViewTrialProductHeaderLabel_ProductCode_Base_Code}" />
+
+                            </apex:pageBlockTable>
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+            </div>
+            <!--your content end-->
+
+        </div>
+        <!--toPopup end-->
+
+
+    </apex:form>
+    <!--
+    Call the sayHello JavaScript function using a script element
+    -->
+    <script>
+    showLoadingImage();</script>
+</apex:page>

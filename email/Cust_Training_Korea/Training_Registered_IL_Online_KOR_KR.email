@@ -1,0 +1,25 @@
+매스웍스 온라인 교육 과정에 참여하게 되신 것을 환영합니다. 
+
+귀하께서는 {!Enrollment__c.Class__c} 온라인 교육 과정에 등록되었습니다.
+
+일자: {!Enrollment__c.Display_Start_Date__c}-{!Enrollment__c.Display_End_Date__c} 
+시간: {!Class__c.Start_Time__c}-{!Class__c.End_Time__c} 
+
+온라인 교육에 대한 시스템 사항을 확인하기 위해 아래의 링크를 사용하십시오. http://www.mathworks.com/services/training/policies/requirements.html 
+
+************************************************************ 
+교육 시작 전 확인 사항
+************************************************************ 
+** 전자 사본 형태의 교육 자료를 제공받습니다.. 
+
+** 교육 시작일 기준 5~7일 전에 두 가지 이메일을 받게 됩니다. 
+
+첫 번째 이메일에는 온라인 교육 페이지에 접속하기 위한 링크 및 로그인 정보가 포함되어 있으며, 교육에 필요한 모든 프로그램이 설치되어 있는 가상의 온라인 강의실인 ReadyTech의 고유 액세스 코드 또한 포함되어 있습니다. 두 번째 이메일에는 전자 사본 형태의 교육 자료를 제공받기 위한 링크가 포함되어 있습니다. 해당 링크를 통해 교육 자료를 보기 위해서 새로운 계정을 생성하기 위한 메시지가 표시될 것입니다. 
+
+취소 및 환불 정책을 확인하기 위해 아래의 링크를 사용하십시오. https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor 
+
+저희 매스웍스가 진행하는 다른 교육 과정에 대한 정보를 원하시면, 당사 홈페이지 http://www.mathworks.co.kr 을 참조하여 주시기 바랍니다. 
+
+감사합니다. 
+
+{!Class__c.Sponsor_Office_Signature__c}

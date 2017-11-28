@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Quick Action to create Self-Paced Classes</description>
+    <fieldOverrides>
+        <field>Class_Format__c</field>
+        <literalValue>Self-Paced Online</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Class_Type__c</field>
+        <literalValue>Public</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Course_Code__c</field>
+        <formula>Course__c.Course_Code__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>Course__c.Name</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Send_Certificate__c</field>
+        <formula>TRUE</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Send_Email__c</field>
+        <formula>TRUE</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Inactive</literalValue>
+    </fieldOverrides>
+    <label>Self-Paced</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Sponsor_Office__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>Class__c</targetObject>
+    <targetParentField>Course__c</targetParentField>
+    <targetRecordType>Class__c.Self_Paced</targetRecordType>
+    <type>Create</type>
+</QuickAction>

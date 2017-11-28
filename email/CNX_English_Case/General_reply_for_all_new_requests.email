@@ -1,0 +1,8 @@
+Dear {!Case.Contact}, 
+
+Thank you for contacting the MathWorks Connections Program. We've opened a case to track this request. For the fastest response, please include the Reference ID listed below for all future correspondence regarding this issue. 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Case: ({!Case.CaseNumber})

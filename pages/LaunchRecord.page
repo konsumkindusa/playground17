@@ -1,0 +1,14 @@
+<!-- 
+/**
+* @author Original: Haigang Wu - Mathworks, Last Modified: Haigang Wu - Mathworks
+* @date Original: 24 Feb 2016, Last Modified: 24 Feb 2016
+* @description: Commerce Integration - Allow users to open Salesforce Contacts, Accounts and opportunities from Commerce and Licensing Apps
+*/ 
+-->
+<apex:page Controller="LaunchRecordController" action="{!redirect}" showHeader="false" sideBar="false">
+    <apex:form >
+        <apex:outputPanel >
+            <apex:pageMessages />
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

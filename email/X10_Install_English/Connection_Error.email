@@ -1,0 +1,33 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. The first error you encountered indicating that the MATLAB installer is unable to connect to MathWorks is usually caused by a firewall or proxy server running on your network. The second error you encountered, "unable to locate installation files," is occurring because the MATLAB installer you have downloaded does not contain installation data. (As of R2014a, the MATLAB installer must connect to the internet to retrieve this data.)
+
+There are two ways you can work around this problem: you can attempt to resolve the connection error, or you can treat the installation as if you are installing MATLAB on machine that is completely offline and has no internet connection whatsoever.
+
+Resolving the connection error (recommended) - http://www.mathworks.com/matlabcentral/answers/92634
+
+In most cases if you are being blocked by a firewall or proxy server, the firewall or proxy server is located on your network, not your local machine. If disabling your local firewall does not enable the MATLAB installer to connect to MathWorks then you will need to work with your network administrator to make an exception for the MATLAB installer in your firewall or on your proxy server. Detailed information about getting the MATLAB installer to work behind a firewall and/or proxy server can be found here:
+
+Why do I get a connection error when installing or activating MATLAB or another MathWorks product? - http://www.mathworks.com/matlabcentral/answers/92634
+
+Installing MATLAB as if this is an offline machine - http://www.mathworks.com/matlabcentral/answers/105854
+
+If you are unable to get the MATLAB installer to work with your network security, then you will need to treat this as if it is a completely offline installation. Instructions for installing MATLAB on an offline machine can be found here:
+
+How can I install MATLAB or other MathWorks products on an offline machine? - http://www.mathworks.com/matlabcentral/answers/105854
+
+Please note that MATLAB offline installation files can only be downloaded by your license administrator. Your license administrator is XXXXXX, their email address is XXXXX@XXXXX.XXX.
+
+If you have any further questions, please do not hesitate to email me back. 
+Please be sure to keep the REF ID included at the bottom of this email intact when replying to this message.  
+
+Your Case Number is {!Case.CaseNumber}.
+
+If you have a new technical support question, please submit a new request here:
+
+http://www.mathworks.com/contact_TS.html
+
+Regards,
+
+{!Case.OwnerFullName}
+MathWorks Installation Support

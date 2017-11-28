@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>27.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Used for refreshing Customer Portal New Page, allowing the case to redirected to the Detail Page</description>
+    <label>cp_case_new_ts_attachments_fix</label>
+</ApexPage>

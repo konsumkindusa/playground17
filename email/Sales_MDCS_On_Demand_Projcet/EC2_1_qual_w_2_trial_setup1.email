@@ -1,0 +1,53 @@
+Dear {!Contact.FirstName},
+
+I am following up with you in regards to your interest in running MATLAB Distributed Computing Server on Amazon EC2 (mathworks.com/ec2).  
+
+MATLAB Distributed Computing Server on Amazon EC2 is a parallel computing solution for cloud clusters that allows you to pay for software resources as you use them with an On Demand license.  The MATLAB Distributed Computing Server license allows you to use the products for which your desktop is licensed, and the software for all toolboxes is already installed with the exception of a few items listed here:
+https://www.mathworks.com/products/ineligible_programs/
+
+
+ Software costs (to MathWorks) 
+* On-demand rate is $0.18 per worker per hour (Commercial US pricing)
+ * MathWorks only accepts credit card payment.  
+ * Customers will provide a credit card via the MathWorks License Center which will be kept on file. 
+ * Billing is completed monthly.
+ * Credit card will be charged for usage in the previous month
+ *  Detailed information on billing can be found on our web site at http://www.mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html
+
+  ***  MATLAB Distributed Computing Server on Amazon EC2 is compatible with MATLAB R2015a or higher.  
+
+
+ Hardware costs (to Amazon)
+ PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of any AWS resources.  If needed, you can navigate to aws.amazon.com to create an account.    You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account.
+
+ * Please confirm with aws.amazon.com for current pricing
+ * The list of MathWorks' supported  instances (Linux only) can be found at 
+http://www.mathworks.com/help/cloudcenter/ug/cloud-computing-console.html#bvlyxe_
+      
+You might need to contact Amazon Web Services to raise your service limits for the specific on-demand Linux instances that you wish to use. (See: http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)   Please note that Amazon Web Services has a policy regarding a waiting period before increasing limits for new customers.  Cloud Center does not support the instance types available for the free tier.
+
+NOTE:  Fees for use of Amazon instances started by Cloud Center on your behalf are billed directly from Amazon Web Services.   You will incur fees for any instances you use, regardless of whether you have actually used MATLAB Distributed Computing Server.   This applies to on-demand licensing, perpetual licensing, and trials.
+
+MATLAB Distributed Computing Server on Amazon EC2 Trial
+I would like to provide you with a one-day trial of MATLAB Distributed Computing Server. You can familiarize yourself with Cloud Center by viewing the documentation at http://www.mathworks.com/help/cloudcenter
+
+The purpose of the trial is to ensure that you can create, connect, and submit jobs to a cluster on Amazon. In order to trial the software, you need to run the Connectivity Checker and set up an Amazon Web Services account. 
+
+Connectivity Checker 
+If you are running MATLAB R2015a or lower, you will need to download and run Cloud Connectivity Checker. Instructions can be found at the following URL: http://www.mathworks.com/matlabcentral/fileexchange/48290-cloudconnectivitychecker
+
+If you are running MATLAB R2015b or higher, you can access the Cloud Connectivity Checker directly in the MATLAB desktop. 
+
+1.	Select the “Home” tab in the MATLAB Toolstrip 
+2.	Click on “Parallel” 
+3.	Select “Test Cloud Connection” 
+
+If you receive an error and are unable to connect to the Cloud, please contact our Installation Support team at support@mathworks.com, and copy me on the email. Be sure to add in the exact error message you receive. 
+
+After Amazon confirms that your AWS account is set up and you have passed the connectivity checker please let me know the date you would like to trial MATLAB Distributed Computer Server for Amazon EC2. 
+
+Once your AWS account is created, and you have a trial or license to allow access to Cloud Center,  you will then use the AWS Management Console to create an Identity and Access Management (IAM) Role.  Details on the IAM Role creation can be found in the Create and Manage Clusters section of the Cloud Center documentation (http://www.mathworks.com/help/cloudcenter). 
+
+I look forward to hearing from you on when you would like to have your trial. 
+
+Best regards,

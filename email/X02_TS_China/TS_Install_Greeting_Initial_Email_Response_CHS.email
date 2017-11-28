@@ -1,0 +1,6 @@
+{!Contact.LastName} {!Contact.FirstName}您好，      
+
+我正在处理您编号为#{!Case.CaseNumber}的关于“{!Case.Subject}”的技术支持申请。  
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

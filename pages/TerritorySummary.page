@@ -1,0 +1,230 @@
+<!-- 
+   /**
+    * @author Original: Archana Lohar- Cloud Sherpas/Mathworks, Last Modified: Archana Lohar - Cloud Sherpas/Mathworks
+    * @date Original: 19 Feb 2016 , Last Modified: 10 March 2016
+    * @description: Page for Territory Summary
+-->
+<apex:page standardController="Territory_Shadow__c" extensions="TerritorySummaryController" action="{!getTerritory2Id}" sidebar="false">
+
+   <Script type="text/javascript" src="{!$Resource.JqueryUINew}" />
+   <Script type="text/javascript" src="{!$Resource.JqueryUIMin}" />
+        <script language="JavaScript">     
+        var j$ = jQuery.noConflict();
+        
+        function actionComplete() { j$(".waitingSearchDiv").css("display", "none"); return false; }
+        
+        function deleteComplete() { location.reload();  }
+        
+        function colorPageBlock(pageblock, color) {
+       
+                if (pageblock != null){ 
+                    pageblock.firstChild.style.cssText ="background-color:" + color + ";";
+                }
+        }
+        var previousOnload = window.onload; 
+        
+        window.onload = function() {
+        
+        var reload ={!needreloadAgain};
+            
+        if(reload==true){
+        
+            if (previousOnload){ previousOnload(); setTimeout(loadDataFromServer,2000);  }   
+            
+            }
+            else{
+                j$(".waitingSearchDiv").css("display", "none");
+            }       
+        
+        }
+       </script>
+
+    <!-- HW 1825744 -->
+	<apex:includeScript value="/support/console/20.0/integration.js"/>
+    <script type="text/javascript">
+        function testSetTabTitle() {
+            //Set the current tab's title
+            sforce.console.setTabTitle('{!Territory_Shadow__c.name}');
+        }
+        var pageLoad = window.onload;
+          window.onload = function() {
+                if (pageLoad) {
+                        pageLoad();
+                }
+                  testSetTabTitle();
+          }
+    </script>
+    <!-- HW 1825744 -->
+
+   <apex:pageBlock id="block1">
+      <apex:form id="theForm">
+       <div class="waitingSearchDiv" id="el_loading1"
+            style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+            <div class="waitingHolder"
+               style="top: 74.2px; opacity: 1.0; width: 91px;">
+               <img class="waitingImage" src="{!$Resource.LoadingImage}"
+                  title="Please Wait..." /> 
+            </div>
+         </div>
+        
+        
+         <apex:actionFunction name="loadDataFromServer" action="{!getTerritory2Id}" rerender="TerritoryInfoSection" status="counterStatus" rendered="{!needreloadAgain}" oncomplete="actionComplete()" />
+         
+         <apex:pageBlockSection title="{!$Label.Territory_Info_Label} : {!Territory_Shadow__c.name}"  columns="1" id="TerritoryInfoSection">
+               <script>  
+                 twistSection(document.getElementById('img_{!$Component.TerritoryInfoSection}')); 
+                  colorPageBlock(document.getElementById("{!$Component.TerritoryInfoSection}"), "rgb(214, 220, 228)");
+               </script>
+            <apex:pageBlockSection columns="1">
+               <apex:commandButton value="{!$Label.Edit_Territory_Button_Label}" action="{!redirectToTerritory2Edit}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="2">
+               <apex:repeat value="{!$ObjectType.Territory_Shadow__c.FieldSets.TerritorySummeryFieldset}" var="f" >
+                  <apex:outputfield value="{!Territory_Shadow__c[f]}" />
+               </apex:repeat>
+            </apex:pageBlockSection>
+            
+            <apex:actionstatus id="counterStatus" >
+               <apex:facet name="start">
+                  <div class="waitingSearchDiv" id="el_loading"
+                     style=" height: 100%; opacity: 0.65; width: 100%;">
+                     <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="{!$Resource.LoadingImage}"
+                           title="Please Wait..." /> 
+                     </div>
+                  </div>
+               </apex:facet>
+            </apex:actionstatus>
+            
+         </apex:pageBlockSection>
+         <apex:pageBlockSection title="{!$Label.Territory_Sales_Team_Label} : {!Territory_Shadow__c.name}"  columns="1" id="TerritoryTeam">
+               <script>  
+                  twistSection(document.getElementById('img_{!$Component.TerritoryTeam}')); 
+                  colorPageBlock(document.getElementById("{!$Component.TerritoryTeam}"), "rgb(214, 220, 228)");
+               </script>
+            <apex:commandButton value="{!$Label.Manage_Territory_Users_Label}" action="{!redirectToManageTerritoryUsersEdit}" styleClass="ManagetTeamBtn"/>
+            <c:TerritorySalesTeamMemberComponent territory2RecId="{!territory2Id}" territoryShadowRecId="{!TerritoryShadowObjId}"/>
+         </apex:pageBlockSection><br></br>
+         
+         <apex:actionfunction name="getTerritoryCriteriaValues" reRender="panelRule,panelRule1"  action="{!getCriteriaValueObjs}" status="actStatusId1">
+            <apex:param name="CriteriaId" value=""/>
+            <apex:param name="showCriteriaObj" value=""/>
+         </apex:actionfunction>
+         
+         <apex:actionfunction name="showCriterias" reRender="criteriasSections"  action="{!getCriteriaObjs}" status="actStatusId1">
+            <apex:param name="AssignmentRuleId" value=""/>
+            <apex:param name="isShowCriteriaObj" value=""/>
+         </apex:actionfunction>
+         
+         <apex:actionStatus id="actStatusId1" >
+            <apex:facet name="start" >
+               <div class="se-pre-con" >
+                  <img class="waitingImageText" src="{!$Resource.LoadingImage}"  
+                     title="Please Wait..." ></img>
+               </div>
+            </apex:facet>
+         </apex:actionStatus>
+         <apex:commandLink action="{!newAssignmentRule}"  value="New Assignment Rule" styleClass="btn" style="text-decoration:none;margin-left: 503px;"/>
+         
+        
+         <apex:repeat value="{!assignmentRuleList}" var="ruleId" id="alldata" >
+            <apex:pageBlockSection title="Assignment Rule : {!ruleId.name} | Criteria Types Used:{!ruleId.Rule_Criteria_Types_Used__c}"  columns="1"  id="AssignmentRuleSection" >
+               <script>  
+                  <!--twistSection(document.getElementById('img_{!$Component.AssignmentRuleSection}')); -->
+                  colorPageBlock(document.getElementById("{!$Component.AssignmentRuleSection}"), "rgb(239, 228, 252)");
+               </script>
+               <apex:pageBlockSection columns="1" >
+                  <apex:commandLink action="{!editAssignmentRule}"  value="Edit Rule" styleClass="btn" style="text-decoration:none;margin-left:440px;">
+                     <apex:param name="assignmentRuleIdValue" value="{!ruleId.Id}" assignTo="{!assignmentRuleIdToEdit}"/>
+                  
+                  <apex:commandLink value="Delete Rule" action="{!deleteAssignmentRule}"  reRender="alldata" styleClass="btn" style="text-decoration:none;margin-left:14px" status="actStatusId1" oncomplete="deleteComplete();">
+                     <apex:param name="assignmentRuleIdValue1" value="{!ruleId.Id}" assignTo="{!assignmentRuleIdToEdit}"/>
+                  </apex:commandLink>
+                  <apex:commandLink value="Clone Rule" action="{!CloneAssignmentRule}"   styleClass="btn" style="text-decoration:none;margin-left: 13px" >
+                  <apex:param name="assignmentRuleIdValue2" value="{!assignmentRuleList[0].Id}" assignTo="{!assignmentRuleIdToEdit}"/>
+               </apex:commandLink></apex:commandLink>
+               </apex:pageBlockSection>
+               
+               
+               <c:TerritoryAssignmnetRuleComponent AssignmentRuleObj="{!ruleId}" id="comp" showdownarrow="true"/>
+               
+               <apex:outputPanel styleClass="RulesCriterias" id="criteriasSections">
+
+              
+               <apex:pageBlockSection columns="1" title="Rule Criteria" id="CriteriaSections" rendered="{!showHideCriteriasMap[ruleId.id]}">
+                <script>  
+                 colorPageBlock(document.getElementById("{!$Component.CriteriaSections}"), "rgb(214, 220, 228)");
+                </script>
+                 <c:TerritoryRuleCriteriaComponent TerritoryAssignmentId="{!ruleId.id}" territoryShadowObjId="{!TerritoryShadowObjId}" />
+                  
+                  <apex:outputPanel styleClass="RulesCriterias" id="panelRule">
+                     <apex:pageBlockSection title="Criteria Values"  rendered="{!showCriteriaValue && (ruleObjIdMatched == ruleId.id) && showCriteria }" columns="1" id="CriteriaValues">
+                        <script>  
+                         colorPageBlock(document.getElementById("{!$Component.CriteriaValues}"), "rgb(214, 220, 228)");
+                        </script>
+                        <c:TerritoryRuleCriteriaValueComponent RuleCriteriaId="{!criteriaObjId}" territoryShadowObjId="{!TerritoryShadowObjId}"/>
+                     </apex:pageBlockSection>
+                  </apex:outputPanel>
+               </apex:pageBlockSection> </apex:outputPanel>
+            </apex:pageBlockSection>
+         </apex:repeat>
+         <script>  
+            twistSection(document.getElementById('img_{!$Component.AssignmentRuleSection}')); 
+         </script>
+      </apex:form>
+   </apex:pageBlock>
+   <style>  
+      input.btn.ManagetTeamBtn {
+      margin-left: 37.5%;
+      }
+      body input.btn, body input.btnDisabled, body input.btnCancel {
+      padding: 4px 3px;
+      margin-left: 40%;
+      }
+      .Custom61Tab .tertiaryPalette, .individualPalette .Custom61Block .tertiaryPalette, .layoutEdit .individualPalette .Custom61Block .tertiaryPalette {
+      background-color: #36a0fe;
+      border-color: #36a0fe;
+      }
+      .waitingSearchDiv{
+      display:block;
+      }
+      img.arrow {
+      width: 8px;
+      }
+      input.btn.DeleteRule {
+      margin-left: -159px;
+      }
+      .ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active{
+      height: 250px;
+      }
+      }
+      }
+      .no-js #loader { display: none;  }
+      .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+      .se-pre-con {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      text-align: center;
+      background: rgba(242, 242, 242, 0.5);
+      }
+      .waitingImageText{
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      }
+      
+      
+      .apexp .bPageBlock.apexDefaultPageBlock .pbBody .pbSubheader {
+    border-top: 0;
+    color: rgb(67, 110, 169);
+}
+   </style>
+</apex:page>

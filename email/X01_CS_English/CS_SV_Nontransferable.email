@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. MATLAB® & Simulink® Student software is published and distributed directly by MathWorks and is available worldwide.  Students in the U.S., Canada, China, Japan, Korea and India can purchase the MATLAB® & Simulink® Student software directly from MathWorks Webstore (www.mathworks.com/store) or at campus bookstores for US $99.   International students can purchase the MATLAB® & Simulink® Student software directly from MathWorks Webstore (www.mathworks.com/store) in their local currency.  
+
+Please note the Student Licensee must be a student currently enrolled in a degree-granting educational institution or participating in a continuing education program at a degree-granting educational institution.  The Student software permits the Licensee to use the Programs at any time during the term in accordance with the Agreement on two computers that the Licensee owns or leases provided the Programs are only accessible to, and operated by the Licensee ONLY.   Therefore, Student License is not transferable.
+
+Please visit our website at http://www.mathworks.com/academia/student_version/details.html for additional product information about the Student License of MATLAB® and add-on products.  Activation is required to use the software. 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.htmlhtml
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

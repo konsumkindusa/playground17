@@ -1,0 +1,45 @@
+Notes:
+CC the Internal Sponsor and/or Technical Lead
+Edit the template to reflect the need for EFT information (US only) or wire information (international only)
+
+Attach the signed agreement and DEUL
+Attach the EFT New Vendor Request Form if University is in US
+
+
+Hello Professor {!Academic_Support_Project__c.Primary_Contact__c}, 
+
+MathWorks is excited to be supporting the project entitled '{!Academic_Support_Project__c.Name}'.  Attached is your signed legal document.  
+
+In addition I have attached our legal document outlining the intended use of the software support. Please review, sign and email back the entire document to my attention at academicsupport@mathworks.com. 
+
+
+If US:
+
+In order to move forward with the support payment, please provide us with your company’s bank information for EFT payments using the attached form.     
+
+Please include an Accounts Receivable contact and email.  EFT remittance details will be emailed to the Accounts Receivable email provided each time an EFT payment is made.  
+
+The completed EFT Payment Information Form should be emailed to Accounts.Payable@mathworks.com. 
+
+If your University cannot provide EFT information, please reply to this email and explain why payment must be made by check or wire transfer. 
+
+Monetary Support (If International)
+In order to move forward with the support payment, please provide the following information in the form of an invoice via email: 
+
+1. Bank name & complete mailing address 
+2. Account number (IBAN): 
+3. SWIFT/BIC code 
+
+Once I receive all of the information requested above, I will initiate your support. If you have any questions, please contact me.
+
+
+Best Regards,
+{!User.FirstName} {!User.LastName}
+
+MathWorks Academic Support Program
+E. academicsupport@mathworks.com
+F. 508.652.8740
+
+MathWorks
+3 Apple Hill Drive 
+Natick, MA 01760

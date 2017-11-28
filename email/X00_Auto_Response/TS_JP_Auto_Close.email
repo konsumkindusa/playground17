@@ -1,0 +1,23 @@
+{!Account.Name} 
+{!Contact.LastName}{!Contact.FirstName} 様 
+
+いつもお世話になっております。 MathWorks テクニカルサポート窓口です。 お問い合わせ頂いておりましたサービスリクエスト（Case# {!Case.CaseNumber}）に関して、ご連絡いたします。
+
+本件に関して、追加の情報をご連絡いただくようお願いしておりましたが、まだご返信を確認できておりません。このため、現在はサポートが不要という認識で、本Case をクローズさせていただきました。
+
+引き続き、弊社からのテクニカルサポートを希望される場合は、大変お手数ですが、本メールの最後に記述されている Reference ID を削除せずに、ご依頼している追加情報についてご返信ください。 内容を確認でき次第、再度Caseをオープンとして対応いたします。
+
+お問い合わせの Case を閲覧、また更新するには、以下の URL をご利用ください。
+http://www.mathworks.com/support/servicerequests/index.html
+
+新規の技術的ご質問がございましたら、下記 URL よりお問い合わせフォームをご利用いただけます。ご活用頂けましたら幸いです。 
+http://www.mathworks.com/support/servicerequests/create.html 
+
+以上、宜しくお願い致します。 
+
+MathWorks　テクニカルサポート窓口 
+jp.mathworks.com
+
+※　このメールは、自動送信されています。 
+
+{!Case.Thread_Id}

@@ -1,0 +1,21 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName} 様 
+
+いつもお世話になっております。MathWorks の{!User.Email_Template_Signature__c} と申します。 
+お問い合わせ頂きました "{!Case.Subject}" の件でご連絡いたします。 
+
+確認しましたところ、ライセンス番号が記載されておりませんでした。お手数をお掛けしますが、ご連絡くださいますようお願い致します。 
+
+ライセンス番号は、Polyspace の GUI 画面上のメニュー から、 [Help] > [About] と進んでいただきますと、Polyspace Client および Polyspace Server のライセンス番号をご確認いただけますので、結果をそのままご連絡ください。
+ 
+なお、テクニカルサポートサービスは、ソフトウェア保守サービスにて提供されるサービスであり、テクニカルサポートを受けるためには、保守が有効である必要があります。 
+
+このサービスリクエストに対して追加の情報をお知らせいただく場合には、下記に記載されている Reference ID を削除せずに、本メールにご返信ください。これにより、弊社システム内で自動的に以前のお問い合わせ内容と紐付けされます。
+ 
+以上、宜しくお願い致します。 
+
+MathWorks テクニカルサポート窓口 
+{!User.Email_Template_Signature__c} 
+TEL: 03-6367-6707 
+テクニカルサポートメインページ: http://www.mathworks.co.jp/support
+ファイルエクスチェンジサービスとニュースグループ: http://www.mathworks.com/matlabcentral/

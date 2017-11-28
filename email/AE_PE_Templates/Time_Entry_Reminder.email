@@ -1,0 +1,14 @@
+Dear _____
+
+You are a team member for the Project "{!MW_Project__c.Project_Name__c}"  , {!MW_Project__c.Name}
+
+Please add your time entries into your Time Card for the Project  "{!MW_Project__c.Project_Name__c}"    as soon as possible, no later than Friday.
+
+Link to Project: {!MW_Project__c.Name} 
+{!MW_Project__c.Project_Link__c} 
+
+
+Each team member is required to enter at least some time on the project or be removed from the project in order for the project to be completed.
+
+Thank you,
+{!User.FirstName} {!User.LastName}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>to not allow the validation rule to run for data admin type users 
+the following profiles to not have validation rule run 
+&quot;MW Data Administrator&quot;, 
+&quot;System Administrator&quot;, 
+&quot;MathWorks Data Management&quot;</description>
+    <label>Allow Employee Data changes</label>
+</CustomPermission>

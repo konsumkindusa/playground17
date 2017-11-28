@@ -1,0 +1,27 @@
+Buenos días {!Case.Contact},
+
+Gracias por contactar con MathWorks. Para poder transferir la licencia XXXX de XXXXXX a XXXXXX, es necesario que representantes de ambas partes firmen un Acuerdo de Cesión.  Para comenzar este proceso, es necesario que provean la siguiente información: 
+-La razón que motiva la transmisión de la licencia
+-Todos los números de licencia que desean transferir a la nueva empresa  
+-El nombre y domicilio de la nueva empresa 
+-Datos del nuevo administrador (nombre, teléfono y correo electrónico)
+
+Si XXXXXX no está más en el mercado debido a bancarrota, por favor envíenos una carta del Fideicomisario de XXXXXX indicando que le han dado permiso para transferir la/s licencia/s a la empresa XXXXXX.
+
+Si se trata de una fusión o adquisición de XXXXXX por favor envíenos una copia por fax, o un link a una página web, o una nota de prensa relacionada al cambio.
+
+Tenga en cuenta las siguientes Instrucciones aplicables a la Comunidad Académica:
+*Las licencias MathWorks categorizadas como "Uso Académico"  no pertenecen a individuos sino a la Universidad, con determinados miembros como usuarios primarios de las herramientas. Para poder transferir la licencia es necesario que representantes de ambas Universidades firmen un Acuerdo de Cesión. 
+*Instituciones que otorgan títulos de grado (y/o sus afiliados) deben poseer el software. Los precios académicos están reservados a un uso no comercial apoyando la enseñanza y la investigación académica en campus. 
+
+Por favor envíe un email a info@mathworks.es o un fax al +34 91 799 4710 con toda la información requerida haciendo  referencia al Caso {!Case.CaseNumber}. Cuando recibamos la información y documentación requerida, un representante de atención al cliente le enviará el Acuerdo de Cesión para que ambas partes lo firmen.
+
+Si necesita más ayuda en relación a esta solicitud, por favor responda a este email preservando el Reference ID incluido debajo.    Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: 
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

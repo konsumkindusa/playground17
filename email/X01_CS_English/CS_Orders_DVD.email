@@ -1,0 +1,23 @@
+Hello {!Case.Contact}
+
+Thank you for contacting MathWorks. Installation DVDs are no longer available for request through the License Center as the necessary installation files have been made available directly through your MathWorks Account using the instructions below:
+
+If you are an administrator on a license, you can download an ISO archive of the installation DVD's for MATLAB. The MATLAB ISO archive is useful for installing MATLAB on an offline machine. In order to access the ISO image, follow the steps below:
+
+How to Download a MATLAB ISO archive:
+https://www.mathworks.com/matlabcentral/answers/101103-how-do-i-download-a-matlab-iso-archive
+
+Install MathWorks Products using an ISO Image:
+https://www.mathworks.com/matlabcentral/answers/94021-how-do-i-install-mathworks-products-using-an-iso-image 
+
+If you are able to connect to the internet, the preferred method of installation initiates directly through your MathWorks Account using the instructions in the link below:
+http://www.mathworks.com/matlabcentral/answers/98268-how-do-i-download-matlab-and-other-mathworks-products
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

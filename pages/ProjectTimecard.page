@@ -1,0 +1,445 @@
+<apex:page title="Project Timecards"
+    standardController="Project_Time_Card__c"
+    extensions="TimecardController" tabStyle="Project_Time_Card__c"
+    action="{!initialise}"
+    id="pTimeCardPage" >
+  <head>
+    <Script type="text/javascript" src="{!$Resource.jQueryLatest}" />
+    <apex:includeScript value="/support/console/22.0/integration.js"/>
+    <apex:outputPanel id="ScriptPannel">
+    <script type="text/javascript">
+
+      function openlink() {
+            
+
+            var WeekStart= new Date(' {!Project_Time_Card__c.Week_Ending__c-6}');
+            var WeekEnd = new Date(' {!Project_Time_Card__c.Week_Ending__c}');
+            var TodayDate = new Date(' {!Today()}');
+    
+            var strWeekStart = '{!Project_Time_Card__c.Week_Ending__c-6}';
+            var strWeekEnd = '{!Project_Time_Card__c.Week_Ending__c}';
+            var Today = ' {!Today()}';
+           
+            var dateWeekStart = strWeekStart.slice(8,10);
+            var dateWeekEnd = strWeekEnd.slice(8,10);
+            var Datetoday = Today.slice(9,11) ;
+       
+            WeekStart =  (WeekStart.getMonth()+1)  +'/'+ dateWeekStart  + '/' + WeekStart.getFullYear();
+            WeekEnd   =  (WeekEnd.getMonth()+1) +'/'+ dateWeekEnd   + '/' + WeekEnd.getFullYear();
+            TodayDate =  (TodayDate.getMonth()+1) +'/'+ Datetoday  + '/' + TodayDate.getFullYear();
+           
+            var openURl = '/{!$Setup.Dynamic_Report_Settings__c.TimeCardTotalWeekHours__c}?pv0='+WeekStart+'&pv1='+WeekEnd+'&pv2='+TodayDate;
+            if (typeof(srcUp) == 'function')
+               {
+                  srcUp(openURl);
+               }
+               else{
+                 window.open(openURl,'_blank');    
+                }
+             return false;
+
+             }
+    
+    
+    var openSuccess = function openSuccess(result) {
+
+            //Report whether opening the new tab was successful
+
+            if (result.success == true) {
+
+                
+
+            } else {
+
+                alert('Primary tab cannot be opened');
+
+            }
+
+        };
+
+
+    var j$ = jQuery.noConflict();
+    var totalHours = 0.00;
+
+    j$('[class$=hoursClass]').live("blur", function() {
+
+        showTotalHours();
+
+    });
+
+    j$(function() {
+
+        showTotalHours();
+
+        j$('[class$=saveButton]').click(function(e) {
+
+
+            j$('[class$=IsModified]').each(function() {
+
+                if (j$(this).prev().prev().find('input:text').val() != undefined) {
+
+                    var hours = j$(this).prev().prev().find('input:text').val();
+                    var floatHrs = hours.replace(',', '.');
+                    var hoursFloat = parseFloat(floatHrs);
+                    var hoursLength = j$(this).prev().prev().find('input:text').val().length;
+                    var prodgrp = j$(this).prev().prev().prev().find('select').val();
+                    var projactivity = j$(this).prev().prev().prev().prev().find('select').val();
+                    var proj = j$(this).prev().prev().prev().prev().prev().find('select').val();
+                    var activityType = "{!activityTypeToInclude}";
+
+                    j$(this).parent().css('background-color', '#FFFFFF');
+
+
+                    if ((hoursFloat === 0 || hoursLength == 0) && proj != 'None') {
+
+                        j$('[id$=errorkey]').html("<lable style='color:red;font-weight:bold;'> Highlighted rows below requires hours added before saving");
+                        j$(this).parent().css('background-color', '#F78181');
+                        e.preventDefault();
+
+                    }
+                    if (prodgrp.length == 0 && proj != 'None' && !(activityType.indexOf(projactivity) >= 0)) {
+
+                        j$('[id$=errorkey]').html("<lable style='color:red;font-weight:bold;'> Highlighted rows below requires Product Group selected before saving");
+                        j$(this).parent().css('background-color', '#F78181');
+                        e.preventDefault();
+
+                    }
+                    if (projactivity == 'None' && proj != 'None') {
+
+                        j$('[id$=errorkey]').html("<lable style='color:red;font-weight:bold;'> Highlighted rows below requires Activity Type selected before saving");
+                        j$(this).parent().css('background-color', '#F78181');
+                        e.preventDefault();
+
+                    }
+                    //j$(this).parent().css('background-color','#F78181');
+                }
+            });
+
+        });
+
+    });
+
+    function setFocusOnLoad() {}
+    function showTotalHours() {
+
+    j$('[id$=errorkey]').html("");
+
+    totalHours = 0.00;
+
+    j$('[class$=IsModified]').each(function() {
+      
+        var hoursentered = 0;
+        var hoursInput = 0;
+        if (j$(this).prev().prev().find('input:text').val() != undefined) {
+            hoursInput = j$(this).prev().prev().find('input:text').val();
+            hoursentered = hoursInput.replace(',', '.');
+        }
+
+        var proj = j$(this).prev().prev().prev().prev().prev().find('select').val();
+
+        if (proj === undefined) {
+            hoursInput = j$(this).prev().prev().text();
+            hoursentered = hoursInput.replace(',', '.');
+
+            if (hoursentered.length === 0) {
+                hoursInput = j$(this).prev().prev().find('input:text').val();
+                hoursentered = hoursInput.replace(',', '.');
+            }
+
+            if (hoursentered.length === 0) {
+
+                hoursentered = 0;
+
+            }
+
+        } else {
+
+            hoursInput = j$(this).prev().prev().find('input:text').val();
+            hoursentered = hoursInput.replace(',', '.');
+            
+             if (hoursentered.length === 0) {
+
+                hoursentered = 0;
+
+            }
+
+        }
+
+        if (proj != 'None') {
+
+            totalHours = (parseFloat(totalHours) + parseFloat(hoursentered)).toFixed(2);
+        }
+
+    });
+
+    j$('[class$=Total]').html(totalHours);
+
+
+}
+    function loading(val) {
+        if (val) {
+            document.getElementById('contentLoading').style.display = 'block';
+            document.getElementById('contentLoaded').style.display = 'none';
+        } else {
+            document.getElementById('contentLoading').style.display = 'none';
+            document.getElementById('contentLoaded').style.display = 'block';
+        }
+    }
+
+    //disable Enter key, except for Notes field (textarea inputs) and the Hours field (class=hoursClass)
+    j$('html').bind('keypress', function(e){
+        if(e.keyCode == 13 && !j$(e.target).is('textarea') && !j$(e.target).is('.hoursClass')){ 
+           return false;
+        }
+    });
+    
+
+    
+</script>
+</apex:outputPanel>
+    </head>
+
+    <style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .8) url('/img/loading.gif') 50% 50%
+        no-repeat;
+}
+.Totallabel{
+
+  
+    font-weight: Bold;
+    font-size: 13px;
+    text-align: right;
+
+}
+
+.Total {
+   
+    font-weight: Bold;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 115px;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .modal {
+    display: block;
+}
+
+body .pbBody table.list tr th, body .pbBody table.list tr td {
+
+border:none;
+bgcolor:white;
+}
+
+.apexp .totalRow {
+
+background-color: #e8e8e9;
+}
+</style>
+    <apex:sectionheader title="Project Time Cards" />
+
+    <apex:actionStatus id="loading" onstart="loading(true)"
+        onstop="loading(false)" />
+
+ <apex:form id="timecardForm">
+    <apex:pageMessages id="pageMsg" />
+
+        <apex:pageBlock >
+            <table>                             
+                <tr><td><b>Week Date:                        
+                    <apex:outputText value="{0,date, EEEE}" id="wDay">
+                    <apex:param value="{!Project_Time_Card__c.Week_Date__c}"/></apex:outputText></b></td>                   
+                    <td align="left" valign="middle"><apex:commandlink action="{!GotoPrev}" reRender="wDay, wEnd,timecards, pageMsg,errorkey,ScriptPannel,"
+                            status="loading" onComplete="showTotalHours();">
+                            <apex:image value="/img/func_icons/cal/leftArrow.gif" />
+                        </apex:commandlink></td>                    
+                    <td align="center"><apex:inputField value="{!Project_Time_Card__c.Week_Date__c}" required="true"
+                            id="wEnd">
+                            
+                            <apex:actionSupport event="onchange"
+                                rerender="wDay, wEnd,timecards, pageMsg,ScriptPannel" action="{!changeWeekEnding}"
+                                onComplete="showTotalHours();" status="loading" />
+                    
+                        </apex:inputField></td>
+                    <td align="left" valign="middle"><apex:commandlink action="{!GotoNext}" reRender="wDay, wEnd,timecards, pageMsg,errorkey,ScriptPannel"
+                            status="loading" onComplete="showTotalHours();">
+                            <apex:image value="/img/func_icons/cal/rightArrow.gif" />
+                        </apex:commandlink></td>
+                    <td width="50%"></td>
+                    <td align="right"><b>{!$Label.AE_PE} </b> <apex:outputField label="{!$Label.AE_PE}" value="{!Project_Time_Card__c.AE_PE__c}" /></td>
+                </tr>
+            </table>
+        </apex:pageBlock>
+        <table>
+            <tr>
+                <td id='errorkey'></td>
+            </tr>
+        </table>
+        <apex:pageBlock title="{!$Label.Timecard_Entries}" id="timecards">
+
+            <apex:pageBlockButtons >
+                <apex:commandButton value="{!$Label.Button_Add_Entry}"
+                    action="{!addRow}" reRender="table, pageMsg" status="loading"
+                    immediate="true" onComplete="showTotalHours();" />
+
+                <apex:commandButton value="{!$Label.Button_Save_to_Draft}"
+                    action="{!saveEntries}" styleclass="saveButton">
+                    <apex:param name="groupidToAssign" assignTo="{!saveStatus}"
+                        value="Draft" />
+                </apex:commandButton>
+                <apex:commandButton value="{!$Label.Button_Cancel}" onclick="window.close()" rendered="{!$CurrentPage.parameters.projectID != null}"/>
+                <apex:commandButton value="{!$Label.Button_Cancel}" action="{!cancel}" status="loading" rendered="{!$CurrentPage.parameters.projectID == null}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!timecardWrapperList}" var="page"
+                id="table" width="100%">
+                <apex:column headerValue="{!$Label.Header_Action}">
+
+                    <apex:commandLink action="{!removingRow}" reRender="table, pageMsg"
+                        status="loading" onComplete="showTotalHours()"
+                        rendered="{!page.timecard.project__r.Project_Status__c != 'Closed'}">
+                        <apex:param name="index" value="{!page.counterWrap}" />
+                        <apex:image url="{!$Resource.RemoveRowFromTimeCard}" width="11"
+                            height="11" />
+                    </apex:commandLink>&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                <apex:commandLink action="{!cloneRow}"
+                        reRender="table, pageMsg" immediate="true" status="loading"
+                        rendered="{!page.timecard.project__r.Project_Status__c != 'Closed'}"  onComplete="showTotalHours();">
+                        <apex:param name="CloneRow" value="{!page.counterWrap}" />
+                        <apex:image url="{!$Resource.CopyRowFromTimeCard}" width="14"
+                            height="14" />
+                    </apex:commandLink>
+
+                </apex:column>
+                <apex:column headerValue="{!$Label.Header_Project}">
+                    <apex:selectList id="projects" value="{!page.selectedProj}"
+                        styleclass="projectClass" size="1" title="Projects"
+                        style="width:250px;"
+                        rendered="{!AND(page.timecard.project__r.Project_Status__c != 'Closed', NOT(page.savedTC))}">
+                        <apex:selectOptions value="{!page.projectList}">
+                        </apex:selectOptions>
+
+                        <apex:actionsupport event="onchange" rerender="table,pageMsg"
+                            status="loading" action="{!getDependentActivityPicklist}"
+                            onComplete="showTotalHours();">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                            <apex:param name="rowCounter" value="{!page.counterWrap}" />
+                        </apex:actionsupport>
+
+                    </apex:selectList>
+                    <apex:outputField value="{!page.timecard.Project__r.Project_Name__c}"
+                        rendered="{!OR(page.timecard.project__r.Project_Status__c == 'Closed', page.savedTC)}" />
+                </apex:column>
+
+                <apex:column headerValue="{!$Label.Header_Activity}"
+                    id="ActivityPicklist">
+                    <apex:selectList id="activities"
+                        value="{!page.timecard.Activity_Type__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c != 'Closed'}"
+                        styleclass="activityClass" multiselect="false" size="1"
+                        style="width:150px;">
+
+                        <apex:selectOptions value="{!page.activityList}">
+                        </apex:selectOptions>
+                        <apex:actionsupport event="onchange" rerender="pageMsg">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                        </apex:actionsupport>
+                    </apex:selectList>
+
+                    <apex:outputField value="{!page.timecard.Activity_Type__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c == 'Closed'}" />
+                </apex:column>
+
+                <apex:column headerValue="{!$Label.Header_Product}">
+                    <apex:inputField id="productgroups"
+                        value="{!page.timecard.Product_Group__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c != 'Closed'}"
+                        styleclass="productClass" style="width:280px;">
+                        <apex:actionsupport event="onchange" rerender="pageMsg">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                            <apex:param name="index2" value="{!page.counterWrap}" />
+                        </apex:actionsupport>
+                    </apex:inputField>
+                    <apex:outputField value="{!page.timecard.Product_Group__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c == 'Closed'}" />
+                     <apex:facet name="footer" >
+                        <div class="Totallabel">{!$Label.TimeCardTotalHoursLabel}</div>
+                    </apex:facet>
+                </apex:column>
+
+                <apex:column width="5%" headerValue="{!$Label.Header_Hours}">
+                    <apex:inputField value="{!page.timecard.Hours__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c != 'Closed'}"
+                        styleclass="hoursClass" style="width:40px;">
+                        <apex:actionsupport event="onkeypress" rerender="pageMsg">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                        </apex:actionsupport>
+                    </apex:inputField>
+                    <apex:outputField value="{!page.timecard.Hours__c}" styleclass="hoursClass"
+                        rendered="{!page.timecard.project__r.Project_Status__c == 'Closed'}" />
+                    
+                    
+                    <apex:facet name="footer">
+                        <div class="Total"> </div>
+                    </apex:facet>
+                    
+                </apex:column>
+
+                <apex:column headerValue="{!$Label.Header_Notes}">
+                    <apex:inputField value="{!page.timecard.Notes__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c != 'Closed'}"
+                        styleclass="" style="width:350px;">
+                        <apex:actionsupport event="onkeypress" rerender="pageMsg">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                        </apex:actionsupport>
+                         <apex:actionsupport event="onchange" rerender="pageMsg">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                        </apex:actionsupport>
+                        <apex:actionsupport event="onkeyup" rerender="pageMsg">
+                            <apex:param name="isModified" assignto="{!page.isModified}"
+                                value="true" />
+                        </apex:actionsupport>
+                    </apex:inputField>
+                    <apex:outputField value="{!page.timecard.Notes__c}"
+                        rendered="{!page.timecard.project__r.Project_Status__c == 'Closed'}" />
+               <!-- Added by Jaspreet for Attask story # 905412 -->
+                    <apex:facet name="footer">
+                    <apex:outputpanel >
+                        <apex:outputLink value="#" onclick="openlink();">
+                            Total Weekly Hours
+                        </apex:outputLink>
+                     </apex:outputpanel>   
+                    </apex:facet>
+                                        
+                    <apex:param name="Weekend" id="WeekStart" value="{!Project_Time_Card__c.Week_Ending__c}" />
+                    <apex:param name="Weekend" id="WeekEnd" value="{!Project_Time_Card__c.Week_Ending__c}" />
+                    
+                </apex:column>
+                
+                <apex:column styleClass="IsModified" rendered="true">
+                    <input type="hidden" value="{!page.isModified}" />
+                </apex:column>
+            </apex:pageBlockTable>
+            <br></br>
+        </apex:pageBlock>
+    </apex:form>
+    <div id="contentLoading" class="modal"></div>
+</apex:page>

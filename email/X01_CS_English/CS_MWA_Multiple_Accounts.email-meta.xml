@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Multiple Accounts</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - MWA - Multiple Accounts</name>
+    <style>none</style>
+    <subject>Multiple Accounts</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,8 @@
+Hallo {!Contact.LastName}, 
+
+
+{!User.Email_Template_Signature__c} 
+
+Bitte Rückfragen/Rückmeldungen mit dieser Email unter Beibehalt der unten verzeichneten Reference ID an den Absender info@ zurücksenden. Danke.
+
+{!Case.CaseNumber}

@@ -1,0 +1,19 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. MathWorks has been notified by FedEx that they were unable to deliver your recent order ###### due to an invalid or incomplete address.  The package was scheduled to be delivered to the following address:
+
+XXX
+XXX
+XXX 
+
+Please contact us to either correct any mistakes with this address, or to confirm that this address is accurate.  We would like to reship this package at the earliest date if possible.  Your correspondence is greatly appreciated.  You can track this package online at FedEx.com.  Reference tracking number  XXXXXXXXXX .
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

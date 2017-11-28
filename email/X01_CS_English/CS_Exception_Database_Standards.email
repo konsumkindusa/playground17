@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+Thank you for contacting MathWorks. We received a request to update your company via your MathWorks Account on our web site. Your request was to make the following change to your company name:    XXXXX XXXXXXXX    
+
+The change you have requested conflicts with our database standards <INSERT STANDARD>. These standards are in place to aid in search capabilities so we can better serve you. For that reason, your account will continue to reflect the information as previously shown.   
+
+If you have any more questions, feel free to contact us at service@mathworks.com.    
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

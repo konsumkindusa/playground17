@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TAH Email Korea English</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TAH Email English Korea</name>
+    <style>none</style>
+    <subject>MathWorks Follow Up:  Your Campus-wide Access to MATLAB</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,1 @@
+{"pid": -1,"cid": -1,"rid": -1,"repoName": "bodiAppTest","returnCode": null,"errorMessage": "User bodiwrapper does not have full access control on repository bodiAppTest. "}

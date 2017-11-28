@@ -1,0 +1,37 @@
+Dear {!Contact.Name},
+
+Welcome to the MathWorks Training!
+
+This is to confirm that you are enrolled in {!Enrollment__c.Class__c}, however your place is not yet secured. To secure your place a Purchase Order or Payment must be received before the commencement of the course.
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LOCATION:  {!Class__c.City__c}, {!Class__c.Country__c} 
+
+TIME: {!Class__c.Start_Time__c}  until {!Class__c.End_Time__c} 
+
+To pay by Credit Card or Wire Transfer, please call {!Class__c.Sponsor_Office_Phone__c}  to speak with a representative.
+
+To pay by Purchase Order, email {!Class__c.Sponsor_Office_Email__c}  or please fax the PO to us at +44 (0)1223 226710 Attn: Training
+
+To pay by cheque, please make the cheque payable to The MathWorks Ltd and mail it to:
+
+Attention: Customer Training
+The MathWorks Ltd
+Matrix House
+Cambridge Business Park
+Cambridge  CB4 0HH
+United Kingdom
+
+To ensure proper processing, please include attendee name(s), course name(s), location, and dates on all Purchase Orders and Cheques.
+
+You will be sent a confirmation with all the course details once your Purchase Order or Payment is processed successfully. If we experience any problems, you will be notified immediately.
+
+Please use the link below for directions to The MathWorks Ltd and details on local hotels & accommodation: 
+http://www.mathworks.co.uk/services/training/policies/directions.html?lid=1-17LSWC
+
+Thank you,
+Training Services
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

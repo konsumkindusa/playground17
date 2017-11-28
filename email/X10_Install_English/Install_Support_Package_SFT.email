@@ -1,0 +1,17 @@
+I have uploaded the files you will need to our Secure File Transfer site. Start by clicking the link below and login with the username and password:
+
+<SFT LINK> 
+Username: support
+Password: simulink
+
+You will see a download button on this page. Click this to get started downloading. 
+
+Once downloaded, perform the following steps:
+
+1. Unzip the downloaded file.
+
+2. Open the HTML file that is located inside of the unzipped folder. The HTML document lists the third-party support package files that you will need to download for this installation to work.
+
+3. Control-Click on each of the blue links individually and save that link to the “Target Location” that is listed to the right of it. (Do not change the default name of the file when saving.) Do not unzip any of the third-party zip files that you just downloaded.
+
+4. After all the listed third-party files have been downloaded and placed in their corresponding folders, run the “install_supportsoftware” application and follow the on-screen prompts.

@@ -1,0 +1,41 @@
+Dear {!Case.Contact},
+
+I'm contacting you to discuss your potential interest in developing MATLAB or Simulink based products or services.  My department manages all external product development, third-party partnerships, and textbook projects. 
+
+The MathWorks provides several options for working with third-party developers. These include: 
+1) development of a MathWorks marketed toolbox 
+2) third-party support for independently developed and marketed products and partnerships through our Connections Program, including the reselling of MathWorks products if appropriate
+3) support for authors of books that incorporate MathWorks products 
+4) access to MATLAB Central to distribute free software
+
+Below is a brief description of each of these options. Please review this information and let us know which path or paths you are interested in evaluating by following the instructions provided in the appropriate section.
+
+THIRD-PARTY PRODUCT OPTIONS
+
+1) Products that The MathWorks sells and supports 
+
+On occasion, The MathWorks works with external developers to create and maintain products that are then sold and supported by The MathWorks. Externally developed products need to be complementary to the entire MathWorks product line and have sufficient technical content and market opportunity to warrant such a relationship. 
+
+To propose a product for consideration in this area, please complete the Product Questionnaire available at: https://www.mathworks.com/products/connections/forms/prodques.html
+
+2) Products and services that are sold and marketed independently by you
+
+The MathWorks Connections Program is available to third-party organizations who develop and distribute complementary, commercially-available products and services based on the MATLAB technical computing environment. Membership in this program includes a listing in the Web-based Connections Program Directory, access to special "Connections Program Partner only" logos, and support programs from The MathWorks.
+
+To see the current online version of the Connections Program directory, point your browser to: http://www.mathworks.com/products/connections.  To view the partner benefits and apply for membership, select "Become a Partner" from the navigation bar.
+
+3) Support for book authors
+
+The MathWorks supports authors of books that incorporate MATLAB, Simulink, toolboxes, or blocksets in the text. If you are writing or are considering writing a MATLAB based book, please visit our Web site at: http://www.mathworks.com/support/books for eligibility and benefit information. To apply to The MathWorks Book Program, select "Join Book Program” at the bottom of the page. 
+
+4) Products for free distribution
+
+Within MATLAB Central, The MathWorks maintains a file exchange area for user contributed MATLAB and Simulink based tools. Once loaded into the file exchange, these products are available to anyone. For more information and to submit contributions to the file exchange area, please visit http://www.mathworks.com/matlabcentral/fileexchange/
+
+If you have any questions regarding these options, please feel free to contact me.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}
+{!EmailMessage.TextBody}

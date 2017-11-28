@@ -1,0 +1,14 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage #{!Case.CaseNumber} - "{!Case.Subject}".    
+
+Der MathWorks Technische Support kann leider keine rechtlichen Angaben betreffend Ihrer Anwendungen machen. Das sog. "Deployment Addendum of The MathWorks, Inc. Software License Agreement" beinhaltet Rechte und Pflichten in diesem Zusammenhang.      
+
+Falls Sie Fragen bezüglich der Lizenzvereinbarungen haben können Sie diese an contracts@mathworks.com stellen.    
+
+Bitte fügen Sie keine Informationen bei, die Sie als vertraulich einstufen. MathWorks wird nur zu Fragen, die die generellen Lizenzvereinbarungen betreffen, Stellung nehmen.    
+
+Mit freundlichen Grüßen   
+{!User.Email_Template_Signature__c}   
+
+{!User.Disclosure__c}

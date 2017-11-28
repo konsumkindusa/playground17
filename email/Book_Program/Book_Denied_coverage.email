@@ -1,0 +1,24 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+We recently received a promotional copy of your book, {!Book_Project__c.Book_Title__c}, to evaluate for inclusion in the MathWorks Book Program. However, we were not able to locate any MATLAB content or other MathWorks product related material in the text. Therefore, your book does not currently qualify for promotion through the Book Program. 
+
+If there is material that we missed in the book or if there are supplemental MATLAB code available for download on a Web site, please let us know as this may count as qualifying material for the program.  
+
+If you have not yet published supplemental MATLAB code, please consider posting them on our Web site in the MATLAB Central File Exchange area.  This will help your book qualify for your program and will make your files visible to MathWorks Web visitors.
+
+www.mathworks.com/matlabcentral/fileexchange/loadCategory.do 
+
+Please feel free to contact me if you have any questions. 
+
+Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

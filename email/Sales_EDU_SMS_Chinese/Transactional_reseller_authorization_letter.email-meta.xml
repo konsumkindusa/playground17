@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>代理授权信  Transactional reseller authorization letter</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>代理授权信  Transactional reseller authorization letter</name>
+    <style>none</style>
+    <subject>代理授权函</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

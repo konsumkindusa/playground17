@@ -1,0 +1,2553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>ActualCountofEnrollments__c</fullName>
+        <description>Actual Count of Enrollments regardless of the Status.  This Rollup Summary Field is used in Validation Rule.  The rule will prevent the deletion of a Class if there are any enrollments associated to the class.</description>
+        <externalId>false</externalId>
+        <label>Actual Count of Enrollments</label>
+        <summaryForeignKey>Enrollment__c.Class__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Seats_Taken__c</fullName>
+        <description>This field will be used by training admins to enter the additional seats taken if the contact details are not available</description>
+        <externalId>false</externalId>
+        <label>Additional Seats Taken</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancel_Venue_By__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Training_Location__c)),Start_Date__c -  Training_Location__r.Cancellation_Lead_Time__c,null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date that venue must be cancelled by if the class will not be offered</inlineHelpText>
+        <label>Cancel Venue By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Training_Location__r.City__c</formula>
+        <label>City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClassCriteriaBE__c</fullName>
+        <externalId>false</externalId>
+        <formula>Course__r.Course_Code__c+Format_Of_Class__c+Language__r.Language_Code__c</formula>
+        <label>ClassCriteriaBE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Format_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF
+  (
+    ISPICKVAL(Class_Format__c, &quot;Instructor Led Classroom&quot;), &quot;ILC&quot; 
+     ,IF
+       (ISPICKVAL(Class_Format__c, &quot;Instructor Led Online&quot;), &quot;ILO&quot; 
+       , IF
+          (ISPICKVAL(Class_Format__c, &quot;Self-Paced Online&quot;), &quot;SPO&quot; 
+        ,  IF
+           (ISPICKVAL(Class_Format__c, &quot;Certification&quot;), &quot;CERT&quot; , &quot;&quot;
+           )
+          )
+        )
+  )</formula>
+        <label>Class Format Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Format_Email_Template__c</fullName>
+        <description>This field will be used to derive the email template name</description>
+        <externalId>false</externalId>
+        <formula>IF
+  (
+    ISPICKVAL(Class_Format__c, &quot;Instructor Led Classroom&quot;), &quot;IL_Classroom&quot; 
+     ,IF
+       (ISPICKVAL(Class_Format__c, &quot;Instructor Led Online&quot;), &quot;IL_Online&quot; 
+       , IF
+          (ISPICKVAL(Class_Format__c, &quot;Self-Paced Online&quot;), &quot;Self_Paced_Online&quot; 
+        ,  IF
+           (ISPICKVAL(Class_Format__c, &quot;Certification&quot;), &quot;Certification&quot; , &quot;&quot;
+           )
+          )
+        )
+  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Class Format Email Template</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Format__c</fullName>
+        <externalId>false</externalId>
+        <label>Class Format</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Instructor Led Classroom</fullName>
+                    <default>false</default>
+                    <label>Instructor Led Classroom</label>
+                </value>
+                <value>
+                    <fullName>Instructor Led Online</fullName>
+                    <default>false</default>
+                    <label>Instructor Led Online</label>
+                </value>
+                <value>
+                    <fullName>Self-Paced Online</fullName>
+                    <default>false</default>
+                    <label>Self-Paced Online</label>
+                </value>
+                <value>
+                    <fullName>Certification</fullName>
+                    <default>false</default>
+                    <label>Certification</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Class_Type__c</fullName>
+        <description>To determine if the class is Public training or Customer Site Training</description>
+        <externalId>false</externalId>
+        <label>Class Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Public</fullName>
+                    <default>false</default>
+                    <label>Public</label>
+                </value>
+                <value>
+                    <fullName>Onsite</fullName>
+                    <default>false</default>
+                    <label>Onsite</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Class_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Class URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Commerce_Orderable__c</fullName>
+        <description>Commerce orderable should be set to true if Class and Location and Course are all active.</description>
+        <externalId>false</externalId>
+        <formula>AND(
+	OR(
+		ISPICKVAL(Status__c , &apos;Active&apos;)
+		,ISPICKVAL(Status__c , &apos;Completed&apos;)
+	)
+	,ISPICKVAL(Class_Type__c , &apos;Public&apos;)        
+	,ISPICKVAL(Course__r.Status__c , &apos;Active&apos;)
+	,OR(
+		OR( 
+			ISPICKVAL(Class_Format__c, &apos;Instructor Led Online&apos;)
+			,ISPICKVAL(Class_Format__c, &apos;Self-Paced Online&apos;)	 
+		)
+		,AND(
+			OR( 
+				ISPICKVAL(Class_Format__c, &apos;Instructor Led Classroom&apos;)
+				,ISPICKVAL(Class_Format__c, &apos;Certification&apos;) 
+			)
+			,ISPICKVAL(Training_Location__r.Status__c, &apos;Active&apos;)
+		)
+	)
+)</formula>
+        <label>Commerce Orderable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Training_Location__r.Country__c</formula>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Course_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Course__c</fullName>
+        <externalId>false</externalId>
+        <label>Course</label>
+        <referenceTo>Course__c</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>Classes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Currency__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CurrencyIsoCode)</formula>
+        <label>Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Days</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Duration__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Default duration of enrollments (in days) when not registered through a Training Agreement</inlineHelpText>
+        <label>Default Duration</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(DAY(  End_Date__c  )) +&apos;-&apos;+ CASE( MONTH(  End_Date__c  ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos;-&apos;+ Text(YEAR(  End_Date__c  ))</formula>
+        <label>Display End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Exam_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(DAY(   Exam_Date__c  )) +&apos;-&apos;+ CASE( MONTH(  Exam_Date__c  ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos;-&apos;+ Text(YEAR(  Exam_Date__c  ))</formula>
+        <label>Display Exam Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(DAY(  Start_Date__c  )) +&apos;-&apos;+ CASE( MONTH(  Start_Date__c  ) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;) +&apos;-&apos;+ Text(YEAR(  Start_Date__c  ))</formula>
+        <label>Display Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>End Date to be used on the Quick Action. End Date/Time will be on the Layouts with the Time defaulted based on Sponsor Office.</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>End Time</label>
+        <length>8</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>English_Survey_URL__c</fullName>
+        <description>English Survey URL unique to the Class</description>
+        <externalId>false</externalId>
+        <formula>IF ((OR(ISPICKVAL( Class_Format__c , &quot;Instructor Led Online&quot;), ISPICKVAL( Class_Format__c , &quot;Instructor Led Classroom&quot;))), $Setup.Training_Agreement_Settings__c.Training_L1_English_Survey_Link__c + &apos;?ClassID=&apos; + Id +&apos;&amp;Instructor=&apos; +Primary_Instructor__c , &apos;&apos;)</formula>
+        <inlineHelpText>English Survey URL unique to the Class</inlineHelpText>
+        <label>English Survey URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enrollee_Seats_Taken__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollee Seats Taken</label>
+        <summaryFilterItems>
+            <field>Enrollment__c.Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed, Registered, Registered - Awaiting Payment</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Enrollment__c.Class__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Survey_Sent_Date__c</fullName>
+        <description>The minimum value of survey sent date from child enrollments</description>
+        <externalId>false</externalId>
+        <label>Enrollment Survey Sent Date</label>
+        <summarizedField>Enrollment__c.Survey_Training_Survey_Last_Sent__c</summarizedField>
+        <summaryForeignKey>Enrollment__c.Class__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Date_For_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MONTH(Exam_Date__c) , 
+1, &quot;Jan&quot;, 
+2, &quot;Feb&quot;, 
+3, &quot;Mar&quot;, 
+4, &quot;Apr&quot;, 
+5, &quot;May&quot;, 
+6, &quot;Jun&quot;, 
+7, &quot;Jul&quot;, 
+8, &quot;Aug&quot;, 
+9, &quot;Sep&quot;, 
+10, &quot;Oct&quot;, 
+11, &quot;Nov&quot;, 
+&quot;Dec&quot;)+&apos; &apos;+text(DAY(Exam_Date__c))+&apos;, &apos;+Text(YEAR( Exam_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Exam Date For Template</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exam_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Exam Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Revenue</label>
+        <summarizedField>Enrollment__c.Seat_Price__c</summarizedField>
+        <summaryFilterItems>
+            <field>Enrollment__c.Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed, Registered - Awaiting Payment, Registered</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Enrollment__c.Class__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Reminder__c</fullName>
+        <defaultValue>30</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Days before the class enrollment expires that an email reminder should be sent to the enrollee</inlineHelpText>
+        <label>Expiration Reminder</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Format_Of_Class__c</fullName>
+        <externalId>false</externalId>
+        <formula>RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Format Of Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Guaranteed_to_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Guaranteed to Run</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Instructor_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Instructor User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Classes_Instructor</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Language__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <referenceTo>Language__c</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>Classes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Training_Location__r.Location_Type__c)</formula>
+        <label>Location Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_Seats__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Seats</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Open_Seats__c</fullName>
+        <externalId>false</externalId>
+        <formula>Max_Seats__c  -   Total_Seats_Taken__c</formula>
+        <label>Open Seats</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Instructor_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Instructor__r.Email</formula>
+        <label>Primary Instructor Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Instructor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Instructor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>PrimInstClasses</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Proctor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Proctor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Classes (Proctor)</relationshipLabel>
+        <relationshipName>Classes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Publish_To_Web__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Publish To Web</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Seat_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Seat Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Instructor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Instructor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Classes (Secondary Instructor)</relationshipLabel>
+        <relationshipName>SecInstClasses</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Send_Certificate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Certificate</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Email__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Enrollment_Surveys__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Enrollment Surveys</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_to_TDS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will use to send data to TDS</description>
+        <externalId>false</externalId>
+        <label>Send to TDS</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>Siebel ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Table__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;Class&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source Table</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Display_Name__c</fullName>
+        <description>Sponsor Office Display Name to be used for Enrollment Email Notifications. (The related object Sponsor Office cannot be accessed from the email Template).</description>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Display_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sponsor Office Display Name to be used for Enrollment Email Notifications.</inlineHelpText>
+        <label>Sponsor Office Display Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Email__c</fullName>
+        <description>Sponsor Office Email to be used for Enrollment Email Notifications. (The related object Sponsor Office cannot be accessed from the email Template).</description>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Email__c</formula>
+        <inlineHelpText>Sponsor Office Email to be used for Enrollment Email Notifications.</inlineHelpText>
+        <label>Sponsor Office Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Phone__c</fullName>
+        <description>Sponsor Office Name to be used for Enrollment Email Notifications. (The related object Sponsor Office cannot be accessed from the email Template).</description>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Phone__c</formula>
+        <inlineHelpText>Sponsor Office Phone to be used for Enrollment Email Notifications.</inlineHelpText>
+        <label>Sponsor Office Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Sponsor_Office__r.Region__c )</formula>
+        <label>Sponsor Office Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Signature__c</fullName>
+        <description>Sponsor Office Signature to be used for Enrollment Email Notifications. (The related object Sponsor Office cannot be accessed from the email Template).</description>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(Sponsor_Office__r.Signature__c, &apos;&lt;br/&gt;&apos;, &apos;&apos;)</formula>
+        <inlineHelpText>Sponsor Office Signature to be used for Enrollment Email Notifications.</inlineHelpText>
+        <label>Sponsor Office Signature</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office_Training_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sponsor_Office__r.Training_URL__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sponsor Office Training URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sponsor Office</label>
+        <referenceTo>Sponsor_Office__c</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>Classes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>Start Date to be used on the Quick Action. Start Date/Time will be on the Layouts with the Time defaulted based on Sponsor Office.</description>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Time</label>
+        <length>8</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Training_Location__r.State__c</formula>
+        <label>State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Mark for Deletion</fullName>
+                    <default>false</default>
+                    <label>Mark for Deletion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time_Zone_Canonical__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Zone Canonical</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Training_Time_Zone</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Seats_Taken__c</fullName>
+        <externalId>false</externalId>
+        <formula>Additional_Seats_Taken__c  +  Enrollee_Seats_Taken__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Seats Taken</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Training_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Training Location</label>
+        <referenceTo>Training_Location__c</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>Classes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Virtual_Meeting_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Virtual Meeting Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Waitlist_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Waitlist Count</label>
+        <summaryFilterItems>
+            <field>Enrollment__c.Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Waitlisted</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Enrollment__c.Class__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Webstore_Orderable__c</fullName>
+        <description>Webstore orderable flag should be set to true if Class and location and course are active and published to web</description>
+        <externalId>false</externalId>
+        <formula>AND(
+	ISPICKVAL(Status__c , &apos;Active&apos;)
+	,ISPICKVAL(Class_Type__c , &apos;Public&apos;)        
+	,ISPICKVAL(Course__r.Status__c , &apos;Active&apos;)
+	,Course__r.Publish_to_Web__c
+	,Publish_To_Web__c
+	,OR(
+		OR( 
+			ISPICKVAL(Class_Format__c, &apos;Instructor Led Online&apos;)
+			,ISPICKVAL(Class_Format__c, &apos;Self-Paced Online&apos;)	 
+		)
+		,AND(
+			OR( 
+				ISPICKVAL(Class_Format__c, &apos;Instructor Led Classroom&apos;)
+				,ISPICKVAL(Class_Format__c, &apos;Certification&apos;) 
+			)
+			,ISPICKVAL(Training_Location__r.Status__c, &apos;Active&apos;)
+			,Training_Location__r.Publish_To_Web__c
+		)
+	)
+)</formula>
+        <label>Webstore Orderable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>local_language_survey_url__c</fullName>
+        <description>displays the Survey URL for the Survey in the language of the Calss</description>
+        <externalId>false</externalId>
+        <formula>IF ((OR(ISPICKVAL( Class_Format__c , &quot;Instructor Led Online&quot;), ISPICKVAL( Class_Format__c , &quot;Instructor Led Classroom&quot;))), Language__r.Training_L1_Survey_Link__c +&apos;?ClassID=&apos;+Id +&apos;&amp;Instructor=&apos; + Primary_Instructor__c , &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Local Language Survey URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Class</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Course__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Language__c</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>Seat_Price__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Max_Seats__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Self_Paced_Online_Classes</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Status__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Class_URL__c</columns>
+        <columns>Total_Seats_Taken__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Self-Paced Online</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Self_Paced</value>
+        </filters>
+        <label>Self Paced Online Classes</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Certification_Exams</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Certification</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_N_DAYS:180</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Exam</value>
+        </filters>
+        <label>Upcoming Certification Exams</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Classroom</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>Status__c</columns>
+        <columns>Publish_To_Web__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Classroom</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Instructor_Led</value>
+        </filters>
+        <label>Upcoming Instructor Led Classroom</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Classroom_AMER</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Status__c</columns>
+        <columns>Publish_To_Web__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Classroom</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Instructor_Led</value>
+        </filters>
+        <filters>
+            <field>Sponsor_Office_Region__c</field>
+            <operation>equals</operation>
+            <value>AMER</value>
+        </filters>
+        <label>Upcoming Instructor Led Classroom (AMER)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Classroom_APAC</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>City__c</columns>
+        <columns>Status__c</columns>
+        <columns>Publish_To_Web__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Classroom</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Instructor_Led</value>
+        </filters>
+        <filters>
+            <field>Sponsor_Office__c</field>
+            <operation>equals</operation>
+            <value>AU,JP,KR,IN,CN</value>
+        </filters>
+        <label>Upcoming Instructor Led Classroom (APAC)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Classroom_EMEA</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>City__c</columns>
+        <columns>Status__c</columns>
+        <columns>Publish_To_Web__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Classroom</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Instructor_Led</value>
+        </filters>
+        <filters>
+            <field>Sponsor_Office_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </filters>
+        <label>Upcoming Instructor Led Classroom (EMEA)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Online</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Total_Seats_Taken__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Online</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Distance_Learning</value>
+        </filters>
+        <label>Upcoming Instructor Led Online</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Online_AMER</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Total_Seats_Taken__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Online</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Distance_Learning</value>
+        </filters>
+        <filters>
+            <field>Sponsor_Office_Region__c</field>
+            <operation>equals</operation>
+            <value>AMER</value>
+        </filters>
+        <label>Upcoming Instructor Led Online (AMER)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Online_APAC</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Total_Seats_Taken__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Online</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Distance_Learning</value>
+        </filters>
+        <filters>
+            <field>Sponsor_Office_Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </filters>
+        <label>Upcoming Instructor Led Online (APAC)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Upcoming_Instructor_Led_Online_EMEA</fullName>
+        <columns>NAME</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Type__c</columns>
+        <columns>Guaranteed_to_Run__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Open_Seats__c</columns>
+        <columns>Total_Seats_Taken__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Class_Format__c</field>
+            <operation>equals</operation>
+            <value>Instructor Led Online</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT_90_DAYS</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Class__c.Distance_Learning</value>
+        </filters>
+        <filters>
+            <field>Sponsor_Office_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </filters>
+        <label>Upcoming Instructor Led Online (EMEA)</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>X2018_NA_Public_Class_Load</fullName>
+        <columns>Course__c</columns>
+        <columns>NAME</columns>
+        <columns>Language__c</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Status__c</columns>
+        <columns>Sponsor_Office__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Max_Seats__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>Training_Location__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>equals</operation>
+            <value>SFDCADMIN2</value>
+        </filters>
+        <label>2018  NA Public Class Load</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Class Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Classes</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Distance_Learning</fullName>
+        <active>true</active>
+        <label>Distance Learning</label>
+        <picklistValues>
+            <picklist>Class_Format__c</picklist>
+            <values>
+                <fullName>Instructor Led Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Paced Online</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class_Type__c</picklist>
+            <values>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mark for Deletion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Time_Zone__c</picklist>
+            <values>
+                <fullName>Australia Adelaide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Brisbane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Hobart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Melbourne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Perth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Sydney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Atlantic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Eastern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Mountain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Costa Rica</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iceland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luxembourg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Zealand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peru</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portugal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Eastern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Indianapolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Mountain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Exam</fullName>
+        <active>true</active>
+        <label>Exam</label>
+        <picklistValues>
+            <picklist>Class_Format__c</picklist>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Paced Online</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class_Type__c</picklist>
+            <values>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mark for Deletion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Time_Zone__c</picklist>
+            <values>
+                <fullName>Australia Adelaide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Brisbane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Hobart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Melbourne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Perth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Sydney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Atlantic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Eastern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Mountain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Costa Rica</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iceland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luxembourg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Zealand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peru</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portugal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Eastern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Indianapolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Mountain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Instructor_Led</fullName>
+        <active>true</active>
+        <label>Instructor Led</label>
+        <picklistValues>
+            <picklist>Class_Format__c</picklist>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Paced Online</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class_Type__c</picklist>
+            <values>
+                <fullName>Onsite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mark for Deletion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Time_Zone__c</picklist>
+            <values>
+                <fullName>Australia Adelaide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Brisbane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Hobart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Melbourne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Perth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia Sydney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Atlantic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Eastern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Mountain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Costa Rica</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iceland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luxembourg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Zealand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peru</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portugal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Central</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Eastern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Indianapolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Mountain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Self_Paced</fullName>
+        <active>true</active>
+        <label>Self-Paced</label>
+        <picklistValues>
+            <picklist>Class_Format__c</picklist>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Classroom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructor Led Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Paced Online</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Class_Type__c</picklist>
+            <values>
+                <fullName>Public</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mark for Deletion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Course_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Class_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Class_Format__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Open_Seats__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Seat_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Training_Location__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Course_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Language__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Class_Format__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Open_Seats__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Training_Location__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>City__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Country__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Training_Location__c</lookupFilterFields>
+        <lookupFilterFields>Course_Code__c</lookupFilterFields>
+        <lookupFilterFields>Language__c</lookupFilterFields>
+        <lookupFilterFields>Country__c</lookupFilterFields>
+        <lookupFilterFields>Start_Date__c</lookupFilterFields>
+        <lookupFilterFields>End_Date__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Class_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Class_Format__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Open_Seats__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Start_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>End_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Seat_Price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Training_Location__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Sponsor_Office__c</searchFilterFields>
+        <searchFilterFields>Training_Location__c</searchFilterFields>
+        <searchFilterFields>Course_Code__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>City__c</searchFilterFields>
+        <searchFilterFields>Class_Format__c</searchFilterFields>
+        <searchFilterFields>Class_Type__c</searchFilterFields>
+        <searchFilterFields>Country__c</searchFilterFields>
+        <searchFilterFields>Start_Date__c</searchFilterFields>
+        <searchResultsAdditionalFields>Course_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Language__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Class_Format__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Class_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Open_Seats__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Training_Location__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>City__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Certification_Exam_Proctor_Rule</fullName>
+        <active>true</active>
+        <description>A Certification Exam cannot be marked as Completed if there is no Proctor assigned.</description>
+        <errorConditionFormula>ISCHANGED( Status__c ) &amp;&amp;  ISBLANK( Proctor__c ) &amp;&amp;  ISPICKVAL( Class_Format__c , &apos;Certification&apos;) &amp;&amp; ISPICKVAL(Status__c, &apos;Completed&apos;)</errorConditionFormula>
+        <errorMessage>Certification Exam cannot be marked Completed without a Proctor assigned.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Activate_Rule</fullName>
+        <active>true</active>
+        <description>Allow class to be activated if the course and location are active. Do not allow to</description>
+        <errorConditionFormula>AND 
+(
+  ISPICKVAL(Status__c, &quot;Active&quot;)
+ , OR
+  (
+     NOT(ISPICKVAL(Course__r.Status__c, &quot;Active&quot;))  
+    ,AND( 
+        OR(
+             $RecordType.Name = &quot;Instructor Led&quot;
+            , $RecordType.Name = &quot;Exam&quot;
+          ) 
+      , OR(
+             ISBLANK(Training_Location__c) 
+            , NOT(ISPICKVAL(Training_Location__r.Status__c, &quot;Active&quot;))
+          ) 
+        )    
+  )
+, not($Permission.Allow_Training_Data_Changes) 
+)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Associated Course and Location (if applicable) should be active before setting Class Status to Active</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Complete_Rule</fullName>
+        <active>true</active>
+        <description>Do not allow the Class to marked as Complete if Total Seats taken is 0 and there is no Primary Instructor assigned.</description>
+        <errorConditionFormula>AND( (ISCHANGED(Status__c)),(ISPICKVAL(Status__c, &apos;Completed&apos;)), (Total_Seats_Taken__c = 0))</errorConditionFormula>
+        <errorMessage>Class cannot be marked as Completed as Total Seats Taken are 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Date_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR( End_Date__c &lt;  Start_Date__c)</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>Class End Date should be greater than Class Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Max_Seats_Greater_Total_Seats</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+   (
+	Max_Seats__c &gt;= 0  
+	,Max_Seats__c &lt; Total_Seats_Taken__c 
+	,NOT(RecordType.DeveloperName = &quot;Self_Paced&quot;)
+   )</errorConditionFormula>
+        <errorMessage>Cannot register more enrollees as Class is already full</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Primary_Instructor_Rule</fullName>
+        <active>true</active>
+        <description>Class cannot be marked as Completed as there is no Primary Instructor assigned.</description>
+        <errorConditionFormula>AND( ISCHANGED(Status__c),  ISPICKVAL(Status__c, &apos;Completed&apos;),  ISBLANK( Primary_Instructor__c ), OR( ISPICKVAL( Class_Format__c , &apos;Instructor Led Classroom&apos;) , ISPICKVAL( Class_Format__c, &apos;Instructor Led Online&apos;)) )</errorConditionFormula>
+        <errorMessage>Class cannot be marked Completed without a Primary Instructor assigned.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Publish_To_Web_Rule</fullName>
+        <active>true</active>
+        <description>Do not allow users to Publish Class to Web if the associated Course and Location are not Published to web</description>
+        <errorConditionFormula>AND 
+(
+   NOT(ISNEW())  
+ , Publish_To_Web__c = TRUE
+ , OR
+  (
+     Course__r.Publish_to_Web__c = FALSE   
+    ,AND( 
+        OR(
+             $RecordType.Name = &quot;Instructor Led&quot;
+            , $RecordType.Name = &quot;Exam&quot;
+          ) 
+      , OR(
+             ISBLANK(Training_Location__c) 
+            , Training_Location__r.Publish_To_Web__c = FALSE  
+          ) 
+        )    
+  )
+, not($Permission.Allow_Training_Data_Changes) 
+)</errorConditionFormula>
+        <errorDisplayField>Publish_To_Web__c</errorDisplayField>
+        <errorMessage>Associated Course and Location (if applicable) should be published before publishing the class</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+(
+	ISPICKVAL( Class_Type__c, &quot;&quot;)  
+	,ISPICKVAL(Status__c , &quot;Active&quot;)
+        , not($Permission.Allow_Training_Data_Changes)
+)</errorConditionFormula>
+        <errorDisplayField>Class_Type__c</errorDisplayField>
+        <errorMessage>Class Type is required when Status is Active</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Class_creation_rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+	NOT(ISPICKVAL( Course__r.Status__c , &quot;Active&quot;)), 
+	ISNEW() , 
+        not($Permission.Allow_Training_Data_Changes)
+)</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Cannot create new class if Course is not Active</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Invalid_Status_for_Class_with_Enrollment</fullName>
+        <active>true</active>
+        <description>Setting the status to &apos;Mark for Deletion&apos; is invalid if the class has enrollments and is published to the web.</description>
+        <errorConditionFormula>AND (
+      OR (ISCHANGED(Status__c),ISCHANGED(Publish_To_Web__c)), 
+      ISPICKVAL( Status__c , &apos;Mark for Deletion&apos;), 
+       OR (
+           Publish_To_Web__c = true
+           ,ActualCountofEnrollments__c &gt; 0
+          )
+    )</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Cannot set status to Mark for Deletion when class has Enrollments or Class is Published to the Web.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Max_Seats_Zero</fullName>
+        <active>true</active>
+        <description>Validation rule to check that max seats are &gt;=0</description>
+        <errorConditionFormula>AND 
+( 
+	NOT(RecordType.DeveloperName  = &quot;Self-Paced&quot;)
+	,Max_Seats__c &lt;0
+)</errorConditionFormula>
+        <errorDisplayField>Max_Seats__c</errorDisplayField>
+        <errorMessage>Max Seats should be greater than or equal to 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Read_Only_Fields_ClassStatus</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND 
+( 
+	NOT(ISCHANGED(Status__c))
+	,OR
+	(
+	 ISPICKVAL(Status__c, &quot;Completed&quot;)
+	)
+	,OR 
+	(	 
+	   PRIORVALUE( Name ) &lt;&gt; Name
+	  ,PRIORVALUE(Default_Duration__c) &lt;&gt; Default_Duration__c 
+	  ,PRIORVALUE(End_Date__c) &lt;&gt;  End_Date__c 
+	  ,PRIORVALUE(End_Time__c) &lt;&gt; End_Time__c 
+	  ,PRIORVALUE(Start_Date__c) &lt;&gt; Start_Date__c
+	  ,PRIORVALUE(Start_Time__c) &lt;&gt; Start_Time__c 
+	  ,PRIORVALUE( Language__c ) &lt;&gt; Language__c
+	  ,PRIORVALUE(Publish_To_Web__c ) &lt;&gt; Publish_To_Web__c
+	  ,PRIORVALUE(Sponsor_Office__c) &lt;&gt; Sponsor_Office__c
+	  ,PRIORVALUE(Max_Seats__c) &lt;&gt; Max_Seats__c 
+	  ,PRIORVALUE(Send_Email__c) &lt;&gt; Send_Email__c
+	  ,PRIORVALUE(Training_Location__c) &lt;&gt;  Training_Location__c
+	),
+        not($Permission.Allow_Training_Data_Changes) 
+)</errorConditionFormula>
+        <errorMessage>Cannot change Class Name, Default Duration, Start Date, Start Time, End Date , End Time, Sponsor Office, Location, Language, Max Seats, Publish to Web, Send Email when Status is Active or Completed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Seat_Price</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR 
+( AND
+  (
+     ISPICKVAL( Status__c , &quot;Active&quot;)
+    ,ISPICKVAL(Class_Type__c, &quot;Public&quot;)
+    ,Publish_To_Web__c = True
+    ,not($Permission.Allow_Training_Data_Changes)
+    ,OR (ISBLANK( Seat_Price__c), Seat_Price__c  &lt;= 0)
+  ) 
+  , Seat_Price__c  &lt; 0
+ )</errorConditionFormula>
+        <errorDisplayField>Seat_Price__c</errorDisplayField>
+        <errorMessage>Please enter valid amount in Seat Price</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Time_Format_Validation_Rule_End_Time</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT ISBLANK(  End_Time__c ) ,
+NOT(REGEX(  End_Time__c , &apos;^((([0][0-9]|[1][0-1])|[0-9]):([0-5][0-9])( *)(AM))|((([0][0-9]|[1][0-2])|[0-9]):([0-5][0-9])( *)(PM))$&apos;)))</errorConditionFormula>
+        <errorDisplayField>End_Time__c</errorDisplayField>
+        <errorMessage>Must be HH:MM AM/PM format and be a valid time</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Time_Format_Validation_Rule_Start_Time</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT ISBLANK(  Start_Time__c ) ,
+NOT(REGEX(  Start_Time__c , &apos;^((([0][0-9]|[1][0-1])|[0-9]):([0-5][0-9])( *)(AM))|((([0][0-9]|[1][0-2])|[0-9]):([0-5][0-9])( *)(PM))$&apos;)))</errorConditionFormula>
+        <errorDisplayField>Start_Time__c</errorDisplayField>
+        <errorMessage>Must be HH:MM AM/PM format and be a valid time</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

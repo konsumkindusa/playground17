@@ -1,0 +1,30 @@
+Dear {!Case.Contact},
+
+As the Administrator contact you can use the License Center to remove the current end user on any group member license, and deactivate the software. A redesignation is simply done by first removing the existing user, and then adding a new user to the member license.  Below are the steps for removing and adding an end user to a group member license.
+
+1)      Removing an existing end user on a Group Member Sales Support License
+a)      Go to the License Center. 
+b)      Select the Group Member license.
+Note: When you select a Group license in the license table, only the License Details tab shows. Select a Group Member license to display all tabs with information about the Group Member licenses. 
+c)      In the Manage Users and License Contacts tab, click Remove User
+
+
+2)      Adding a new end user on a Group Member Sales Support License
+a)      Go to the License Center. 
+b)      Select the Group Member license.
+Note: When you select a Group license in the license table, only the License Details tab shows. Select a Group Member license to display all tabs with information about the Group Member license. 
+
+c)      In the Manage Users and License Contacts tab, click Add User. 
+d)      In the Add User dialog, type the user’s e-mail address and first and last names, and click Continue. 
+e)      Choose whether to grant this user permission to download licensed products and activate software, and click Continue. 
+f)        In the Add User confirmation dialog, click done. 
+
+If a MathWorks Account is created, the login information will be e-mailed to the end user. 
+
+If you have any questions, please contact support@mathworks.com
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

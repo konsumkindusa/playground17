@@ -1,0 +1,8 @@
+Hi Gary, 
+
+{!Account.Name} wants to make the following updates to their web page. Please see attached doc. 
+
+Thanks, 
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

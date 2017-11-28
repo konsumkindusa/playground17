@@ -1,0 +1,17 @@
+Dear {!Contact.Name},
+
+Your enrollment in the following course is confirmed: 
+
+         Course Name: {!Enrollment__c.Class__c} 
+
+NOTE: You have {!Class__c.Default_Duration__c} days from your purchase date to access and complete the course content. 
+
+To gain access to the course content, visit {!Class__c.Class_URL__c} and login with your MathWorks Account username and password.
+If you don't have a MathWorks Account, please create one to access the course content.
+There may be a 10-15 minute delay before you can access the course after creating your MathWorks Account.
+
+If you have any questions, contact us at training@mathworks.com.
+
+For more information on additional MathWorks Training offerings, visit mathworks.com/training. 
+
+{!Class__c.Sponsor_Office_Signature__c} 

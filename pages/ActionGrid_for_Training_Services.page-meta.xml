@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>AG_Class__c;AG_Course__c;AG_Training_Location__c;AG_Enterprise_Training_Agreement__c;AG_Enrollment__c
+ActionGrid for Training Services includes Classes, Courses, Training Locations, Enterprise Training Agreements, and Enrollments</description>
+    <label>ActionGrid for Training Services</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>65</minorNumber>
+        <namespace>CRMC_PP</namespace>
+    </packageVersions>
+</ApexPage>

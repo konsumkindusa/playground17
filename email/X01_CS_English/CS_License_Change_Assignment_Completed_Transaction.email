@@ -1,0 +1,27 @@
+Hello {!Case.Contact} and XXXXXX,
+
+This email is to confirm that the Account associated to license number ###### has been transferred from XXXXX to XXXXXXX.  
+
+Attached please find the fully executed agreement. The transfer has been recorded in our database.  Please notify XXXXXXXX’s end user that s/he is no longer entitled to use the license and associated technology, and it must be uninstalled from their system.
+
+The Administrator of the License is currently listed as XXXXXXX . The Administrator manages end users and can perform license administration tasks in the License Center.  All MathWorks licenses require an Administrator to serve as the main source of communication for the license.  
+
+Please note that the Administrator is responsible for assigning Licensed End Users to this License.  
+
+Currently XXXXXXXX is listed as the License End User.  To learn more about adding and removing End Users: www.mathworks.com/matlabcentral/answers/94405#answer_103757
+
+Click on this link to learn more about activation (Log in required):
+www.mathworks.com/support/activation/index.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+
+{!Case.CaseNumber}
+
+
+EXPORT CONTROL:  This software is controlled under U.S. Export Administration Regulations.  It is unlawful to export or re-export this software contrary to U.S. law or permit the use of software by denied parties.  This software may also be subject to non-U.S. export and import laws and regulations.  It is the licensee’s responsibility to comply with the latest export and import regulations.

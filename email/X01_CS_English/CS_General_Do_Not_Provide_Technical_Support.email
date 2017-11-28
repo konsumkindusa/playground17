@@ -1,0 +1,27 @@
+Dear {!Case.Contact},
+
+I am writing in reference to your Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+There are many resources available on the MathWorks website which may help answer your questions:    
+Online Technical Support:  http://www.mathworks.com/support/    
+
+Student Version FAQ:  Installation and Online Technical Support  http://www.mathworks.com/academia/student_version/start.html      
+
+MATLAB Student access to the MathWorks technical support team is primarily for installation issues and bug reporting.  However, there are many support resources available on MathWorks.com which may help resolve your issue.
+
+The MathWorks Documentation Center features complete documentation of all MATLAB and Simulink products, including hundreds of demos and examples:
+http://www.mathworks.com/help/
+
+MATLAB Answers features over 100,000 questions about MATLAB and Simulink asked and answered by the MATLAB Central online community:
+http://www.mathworks.com/matlabcentral/answers/
+
+After checking the available MathWorks sources listed above for help, if you still cannot resolve the issue, you should contact your instructor.        
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,14 @@
+Estimado/a {!Case.Contact}
+
+Hemos recibido su solicitud para cambiar la información de contacto de una Cuenta MathWorks preexistente.  Lamentablemente, esta solicitud no puede ser completada. Cada Cuenta MathWorks es individual, única, intransferible y creada para cada uno de los clientes de nuestra base de datos.  Por esta razón, la Cuenta Mathworks no se modificará y continuará mostrando la información original.
+
+Una vez que haya creado su propia Cuenta MathWorks, podrá asociarse a la licencia. Si desea crear una nueva Cuenta MathWorks asociada a su email, haga click en el siguiente link: http://www.mathworks.com/accesslogin/createProfile.do    
+
+Si tiene más preguntas por favor contáctenos escribiendo a service@mathworks.com.
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

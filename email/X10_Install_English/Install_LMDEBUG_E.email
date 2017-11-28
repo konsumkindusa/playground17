@@ -1,0 +1,13 @@
+To obtain your lmdebug.out file:
+
+1. open a terminal window
+
+2. Type the following:
+
+      cd $MATLAB/etc (Where $MATLAB is the path to your root MATLAB directory)
+
+3. run the LMDEBUG script by typing:
+
+      ./lmdebug
+
+4. send the file lmdebug.out located in your \$MATLAB\etc directory to me as an e-mail attachment

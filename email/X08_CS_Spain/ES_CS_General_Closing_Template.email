@@ -1,0 +1,15 @@
+Buenos días {!Case.Contact},    
+
+
+
+
+Si necesita más ayuda en relación a esta solicitud, por favor responda a este email preservando el Reference ID incluido debajo.
+
+Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,25 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. In order to associate to a Student License, you will need to have your Serial Number/Activation Key from your Student software purchase.
+
+Instructions to find your Activation Key/Serial Number:
+
+1. If you purchased from The MathWorks web store, you can find your Activation Key/Serial Number in your MathWorks Account by clicking View Orders and then clicking into the order number and scrolling to the bottom of the page
+
+2. If you purchased from another authorized source, your Activation Key/Serial Number should be listed on the packaging
+
+To Associate to a License:
+1. Log into your MathWorks Account
+2. Click “My Account” in the top right-hand corner
+3. Click on the “Add a License” button
+4. Enter your Serial Number/Activation Key in the gray box and click Submit
+5. You will now see your Student Version License listed in your MathWorks Account
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

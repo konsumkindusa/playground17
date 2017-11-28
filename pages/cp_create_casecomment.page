@@ -1,0 +1,295 @@
+<apex:page standardController="CaseComment" extensions="cp_CaseCommentControllerExtension" standardStylesheets="true" sidebar="false" showHeader="false" language="{!language}">
+    
+<!-- HW 1762123 remove the original style -->
+<!-- 
+    <apex:stylesheet value="{!$Resource.MWHeaderStyles}"/>
+    <apex:stylesheet value="{!$Resource.MWExternalStyle960}"/>
+    <apex:stylesheet value="{!$Resource.MWcreatecasestyles}"/>
+    <apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+    <apex:includeScript value="{!$Resource.jquery_191}"/>
+<!-- HW 1762123 remove the original style -->
+    
+    <head>
+    <title>
+      My Service Request - Comment
+    </title>
+    </head>
+<!--     
+    <style>
+    
+     html body {
+        background: #D6D6D6 url({!$Resource.BodyBackground}) repeat-x top left;
+       }
+       
+      .mwa-nav a
+      {
+      font-size: 1.1em;
+      }  
+     
+       
+     h1 {
+      font-weight: bold !important;
+      letter-spacing: 0em !important;
+      }
+      .pbSubsection
+      {
+          width: 101%;
+      }
+      
+      .section_image h1{
+          font-size:20px;
+          font-weight: normal!important;
+      }
+    
+    </style>
+ -->       
+    <apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block">
+        <apex:outputPanel layout="block" id="content_container">
+            <h1 class="mwheader">{!$Label.MySR_Title}</h1>
+           
+            <apex:form >
+            <script>
+            var visitorChoice = 'cc';
+            var fieldsNotPopulated ='';
+            var invalidLicenseFields ='';
+            
+            function checkRequiredFields(choicevalue,selTask,ihSelTask){
+                document.getElementById('notficationSection').innerHTML ='';
+                document.getElementById('notficationSection').style.display ="none";
+                var infoMessage = '<br/><p>{!$Label.Create_case_Warning_Message}</p><ul>';
+          
+                clearCssOnFields(requiredFieldArr[visitorChoice]);
+                clearCssOnFields(licenseFieldArr[visitorChoice]);
+                
+                invalidLicenseFields =''
+                fieldsNotPopulated='';
+                //Check required field if not blank
+                if(requiredFieldArr[choicevalue] != null && requiredFieldArr[choicevalue] != ''){
+                    reqFields = requiredFieldArr[choicevalue].split(',');
+                    if(reqFields.length>0){
+                        for(ctr=0;ctr<reqFields.length;ctr++){
+                            if(document.getElementById(reqFields[ctr]) != null){
+                                if(document.getElementById(reqFields[ctr]).value=='' ){
+                                    var shouldBeRequired = true;
+                                    if(dependencyField[reqFields[ctr]]!=null){
+                                        
+                                        shouldBeRequired = false;
+                                        dependentFieldId = dependencyField[reqFields[ctr]].split('%2C');
+                                        for(ctr2=0;ctr2<dependentFieldId.length;ctr2++){
+                                            if(document.getElementById(dependentFieldId[ctr2])!=null){
+                                                currentRadioButtonState = document.getElementById(dependentFieldId[ctr2]).checked
+                                                shouldBeRequired=shouldBeRequired||currentRadioButtonState;
+                                            }
+                                        }
+                                    }
+                                    if(shouldBeRequired){
+                                        if(fieldsNotPopulated.length>0){
+                                            fieldsNotPopulated+=',';
+                                        }
+                                        fieldsNotPopulated+=reqFields[ctr];
+                                    }
+                                }
+                            }else{
+                                //alert('Missing:'+reqFields[ctr]);
+                            }
+                        }
+                    }
+                }
+                // License entry validation
+                if(licenseFieldArr[choicevalue] != null && licenseFieldArr[choicevalue] != ''){
+                    licFields = licenseFieldArr[choicevalue].split(',');
+                    if(licFields.length>0){
+                        for(ctr=0;ctr<licFields.length;ctr++){
+                            if(document.getElementById(licFields[ctr]) != null){
+                                var licenseVal = document.getElementById(licFields[ctr]).value
+                                
+                                if(licenseVal!='' ){
+                                    var licNotValid = true;
+                                    if((licenseVal.toUpperCase() == "STUDENT" || licenseVal.toUpperCase() == "DEMO" || !(isNaN(licenseVal))) && ((licenseVal.replace(/\s/g, '').length)>0) && ((licenseVal.length)==(licenseVal.replace(/\s/g, '').length)) ){
+                                        licNotValid = false;
+                                    }
+                                    if(licNotValid){
+                                        if(invalidLicenseFields.length>0){
+                                            invalidLicenseFields+=',';
+                                        }
+                                        invalidLicenseFields+=licFields[ctr];
+                                    }
+                                    
+                                }
+                            }else{
+                                alert('Missing:'+licFields[ctr]);
+                            }
+                        }
+                    }
+                }
+                
+                if(fieldsNotPopulated.length==0 && choicevalue!='' && invalidLicenseFields.length==0 ){
+                    if (ihSelTask != ''){
+                        document.getElementById(ihSelTask).value = selTask;
+                    }
+                    document.getElementById('submitbutton').disabled = 'true'; //HW 1904967
+                    if (selTask != ''){
+                        //Action function from Create New Case option pages
+                        createcase(selTask);
+                    }
+                    else {
+                        //Action function from Create Case Comment page
+                        createcasecomment();
+                    }
+                }else{
+                    if(fieldsNotPopulated.length>0){
+                        unPopulatedfields = fieldsNotPopulated.split(',');
+                        for(ctr=0;ctr<unPopulatedfields.length;ctr++){
+                            //document.getElementById(unPopulatedfields[ctr]).setAttribute("class","textfield required");
+                            textlength = unPopulatedfields[ctr].split(':').length;
+                            originalId = (unPopulatedfields[ctr].split(':'))[textlength-1];
+                            document.getElementById(originalId+'div').setAttribute("class","form_element field_error");
+                            document.getElementById(originalId+'span').setAttribute("style","display:none");
+                            infoMessage+='<li>{!$Label.MySR_Please_Enter_Part_1} '+document.getElementById(originalId+'div').getAttribute("name")+' {!$Label.MySR_Please_Enter_Part_2}</li>';
+                        }
+                    }
+                    if(invalidLicenseFields.length>0){
+                        invalidLicenses = invalidLicenseFields.split(',');
+                        for(ctr=0;ctr<invalidLicenses.length;ctr++){
+                            //document.getElementById(invalidLicenses[ctr]).setAttribute("class","textfield required");
+                            textlength = invalidLicenses[ctr].split(':').length;
+                            originalId = (invalidLicenses[ctr].split(':'))[textlength-1];
+                            document.getElementById(originalId+'div').setAttribute("class","form_element field_error");
+                            var element = document.getElementById(originalId+'span');
+                            if (element != null) {
+                                document.getElementById(originalId+'span').setAttribute("style","display:none");
+                            }
+                            infoMessage+='<li>Invalid '+document.getElementById(originalId+'div').getAttribute("name")+' value</li>';
+                        }
+                    }
+                    infoMessage+='</ul>';
+                    document.getElementById('notficationSection').innerHTML = infoMessage;
+                    document.getElementById('notficationSection').style.display="block";
+                }
+            }
+            
+            function clearCssOnFields(fields2Clear){
+                fieldIdToClearList = fields2Clear;
+                fieldIdToClear = fieldIdToClearList.split(',');
+                for(ctr=0;ctr<fieldIdToClear.length;ctr++){
+                    //document.getElementById(fieldIdToClear[ctr]).setAttribute("class","");
+                    textlength = fieldIdToClear[ctr].split(':').length;
+                    originalId = (fieldIdToClear[ctr].split(':'))[textlength-1];
+                    var elementdiv = document.getElementById(originalId+'div');
+                    if (elementdiv != null) {
+                        document.getElementById(originalId+'div').setAttribute("class","form_element");
+                    }
+                    var element = document.getElementById(originalId+'span');
+                    if (element != null) {
+                        document.getElementById(originalId+'span').setAttribute("style","");
+                    }
+                }
+            }
+            
+            function openWindow(filepath){
+                var filename = '{!$Label.mw_domain_url}'+filepath;
+                window.open(filename, '_blank','350','300','scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes');
+                return false;
+            }
+    </script>
+    <div class="warning" id="notficationSection" style="display:none"></div><br/>
+    <div class="table_header" style="width:94%"><h3>{!$Label.MySR_Add_Case_Comment}</h3></div>
+    <apex:actionFunction action="{!save}" name="createcasecomment" status="saving" rerender="none" />
+    <apex:pageBlock mode="maindetail" >
+            <apex:pageBlockSection showHeader="false" columns="1">
+            <apex:outputField value="{!caseObj.CaseNumber}"/> 
+            <apex:outputField value="{!caseObj.Subject}"/>            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock mode="edit"> 
+        <div>
+            <div class="form_element pbSubsection" id="casecommentdiv" name="{!$Label.MySR_Case_Comment}">
+                    <span class="req" id="casecommentspan"></span>
+                    <apex:inputTextArea richtext="false" label="" id="casecomment" value="{!ccObj.commentBody}" styleClass="caseComment" rows="8" cols="173" style="resize: none;width:96%" />
+            </div>
+             <script> 
+                var requiredFieldId = '';
+                var requiredFieldArr = new Array();
+                requiredFieldArr['cc'] = '{!$Component.casecomment}';
+                var dependencyField = new Array();
+                var licenseFieldArr = new Array();
+                licenseFieldArr['cc'] = '';
+            </script>
+        </div>
+        <div style="float:right">
+            <input type="button" value="{!$Label.TS_Submit_Button}" id="submitbutton" class="mwbutton rounded btn secondary" style="position: relative;" onclick="checkRequiredFields(visitorChoice,'','');" />
+            <apex:commandButton action="{!cancel}" value="{!$Label.TS_Cancel_Button}"  styleClass="mwbutton rounded"/>
+            <apex:actionstatus id="saving">
+                <apex:facet name="start">
+                    <img alt="waiting" src="http://mathworks.com/images/spinner.gif" border="0" /> Saving...
+                </apex:facet>
+            </apex:actionstatus>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </apex:pageBlock>
+    <script>
+        // $(".mwheader").css("padding-left","30px");
+        /*
+        $("html body").css("background-color","white");
+        $("html body").css("background-image","none");
+        $("html body").css("border","1px solid #d1d1d1");
+        $("html body").css("border-top","0px solid #d1d1d1");
+        */
+        $(".labelCol").css("text-align","left");
+        
+        /*
+        $(".btn").css("color","#3C3C3C");
+        $(".btn").css("background-image","none");
+        $(".btn").css(" background-color","#33FF00");
+        $(".btn").css("font-size","11px");
+        $(".btn").css("padding","5px 5px");
+        $(".btn").css("font-family","Arial, Helvetica, sans-serif");        
+        $(".btn").css("-moz-border-radius","5px");
+        $(".btn").css("-webkit-border-radius","5px");
+        */
+        //$(".btn").css("border-radius","5px");
+        //$(".btn").css("font-weight","bold");
+        
+        
+       // $(".detailList tbody tr:nth-child(even)").css("background-color","white");
+       /*
+        $(".pbTitle h3").css("font-size","13px");
+        $(".pbTitle h3").css("margin-left","30px");
+        $(".pbTitle h3").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif"); 
+        
+        $(".pbTitle h2").css("font-size","15px");
+        $(".pbTitle h2").css("margin-left","30px");
+        $(".pbTitle h2").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif");
+        $(".pbTitle h2").css("color","#666");
+        
+        $(".bPageBlock .pbBody").css("padding","0px 30px");
+        $(".bPageBlock").css("margin-bottom","0px");
+        $(".bPageBlock").css("padding-bottom","0px"); 
+        
+        $(".detailList").css("border-top","1px solid #d6d4d4");
+        $(".detailList .data2Col").css("padding-left","0px");
+        
+        
+         if (document.documentMode == 7) {
+             $(".caseComment").css("margin-left","15px"); 
+         }
+         */      
+    </script>
+  </apex:form>
+  </apex:outputPanel>    
+  </apex:outputPanel>  
+  </apex:outputPanel> 
+  </apex:outputPanel> 
+  </div> 
+  </apex:outputPanel> 
+  </apex:outputPanel> 
+  <apex:include pageName="cp_footer" />
+</apex:page>

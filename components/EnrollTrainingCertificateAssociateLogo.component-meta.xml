@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>35.0</apiVersion>
+    <description>This component is use for attachment of training certificate professional logo attached for Trainig Certificate Associate visual force emial template</description>
+    <label>EnrollTrainingCertificateAssociateLogo</label>
+</ApexComponent>

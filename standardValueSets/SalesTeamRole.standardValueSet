@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advanced Support</fullName>
+        <default>false</default>
+        <label>Advanced Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Application Engineer</fullName>
+        <default>false</default>
+        <label>Application Engineer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Application Engineer Primary</fullName>
+        <default>false</default>
+        <label>Application Engineer Primary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Model Support</fullName>
+        <default>false</default>
+        <label>Business Model Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultant</fullName>
+        <default>false</default>
+        <label>Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultant Primary</fullName>
+        <default>false</default>
+        <label>Consultant Primary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Support</fullName>
+        <default>false</default>
+        <label>Customer Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Education Marketing</fullName>
+        <default>false</default>
+        <label>Education Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industry Marketing</fullName>
+        <default>false</default>
+        <label>Industry Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pilot Engineer</fullName>
+        <default>false</default>
+        <label>Pilot Engineer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pilot Engineer Primary</fullName>
+        <default>false</default>
+        <label>Pilot Engineer Primary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Marketing</fullName>
+        <default>false</default>
+        <label>Product Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Evangelist</fullName>
+        <default>false</default>
+        <label>Technical Evangelist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Support</fullName>
+        <default>false</default>
+        <label>Technical Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trainer</fullName>
+        <default>false</default>
+        <label>Trainer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trainer Primary</fullName>
+        <default>false</default>
+        <label>Trainer Primary</label>
+    </standardValue>
+</StandardValueSet>

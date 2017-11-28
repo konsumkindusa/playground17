@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Tab is Eloqua Engage</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Eloqua Engage</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom96: Street Sign</motif>
+    <url>https://login.eloqua.com/auth/saml2/autologin?LoginPrefix={!$Setup.Eloqua_Settings__c.LoginPrefix__c}&amp;Idp={!$Setup.Eloqua_Settings__c.Idp__c}&amp;ReturnUrl=apps%2FsalesTools%2Fengage%3FemailId%3D5213</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

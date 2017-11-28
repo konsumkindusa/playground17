@@ -1,0 +1,31 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+This is in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+Thank you for reporting the issue. This seems to be a problem with your graphics hardware or your graphic drivers. For the best results with graphics, use graphics hardware that is compliant with OpenGL 2.1 or later. Please check if your drivers are up to date and update them to the latest version available. 
+
+Additionally please try other OpenGL renderer settings. Run the following MATLAB command in the command line:
+>> opengl hardwarebasic
+
+This uses a hardware-accelerated version of OpenGL, but disables some advanced graphics features that are unstable with certain graphics drivers. After changing this settings run your code again and check if the issue persists. 
+
+Also try the Software mode of OpenGL renderer by running:
+>> opengl software
+
+If this does not make a change to your plot issues please provide the output of the following MATLAB command:
+>> opengl info
+
+As well as a detailed description of your hardware and settings and a reproducible code example in order to reproduce the issue on my machine. Also check whether your code runs without error on a different computer. Please provide the output of opengl info for all computers you have tested your code on. 
+
+
+We look forward to getting the above information from you. 
+
+Use the following link to view and update your Case online: 
+http://www.mathworks.com/support/servicerequests/index.html 
+
+Please preserve the Reference ID in any further correspondence on this query. This will allow our systems to automatically assign your reply to the appropriate Case. 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

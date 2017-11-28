@@ -1,0 +1,33 @@
+Dear {!Contact.FirstName}, 
+
+I am following up with you in regard to your interest in scaling Parallel MATLAB Applications to Amazon EC2 using Cloud Center. (https://www.mathworks.com/ec2)
+
+To get started with Cloud Center we will provide you with an on-demand license for MATLAB Distributed Computing Server.  This license allows you to use the products for which your desktop is licensed.  Clusters configured with Cloud Center will have MATLAB Distributed Computing Server and all toolboxes already installed with the exception of a few items listed here: https://www.mathworks.com/products/ineligible_programs/. 
+
+
+Prerequisites for your new license: 
+
+Before we provide the license that you need to enable access to Cloud Center, you will need to: 1) be familiar with Parallel Computing Toolbox, 2) be using one of the latest four releases of MATLAB, 3) be able to connect to cloud resources, and 4) have a fully activated Amazon Web Services account.  Full details for requirements and set-up can be found in the “Getting Started with Cloud Center” section of the online documentation:  http://www.mathworks.com/help/cloudcenter. 
+       
+If necessary, you can navigate to aws.amazon.com to create an Amazon Web Services account.  New accounts might not have immediate access to a large number of the specific on-demand Linux instances that you wish to use.  You can contact Amazon Web Services to raise your limits, as needed. 
+
+If you run into any problems or have technical questions, please contact your local Technical Support Team directly.  Be sure to include the exact error message you receive.  Your local Technical Support contact information can be found at this link: https://www.mathworks.com/support/contact_us/ 
+
+
+Hardware costs (to Amazon Web Services): 
+
+You will be billed separately by Amazon Web Services for your use of any AWS resources.  Cloud Center does not support the instance types available for the free tier.  You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account. 
+
+
+Software costs (to MathWorks): 
+
+Detailed information on software billing and options can be found on our web site at https://www.mathworks.com/mdcs-on-demand-pricing.   You will not be charged any fees for this license unless you associate a credit card to the license and use MATLAB Distributed Computing Server.
+
+
+Next Steps: 
+
+When you let me know that you have fulfilled the prerequisites above, I will provide an on-demand license for MATLAB Distributed Computing Server.
+
+
+
+Best regards,

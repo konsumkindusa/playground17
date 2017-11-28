@@ -1,0 +1,5 @@
+<apex:page standardController="Contact" extensions="AUIConnectController" action="{!redirectToAUI}" showheader="false">
+
+    <apex:pageMessages escape="false" />
+
+</apex:page>

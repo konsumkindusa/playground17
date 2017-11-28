@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Help us invest in your MathWorks training success - L3 - Spanish</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>L3 Enrollment Training Survey - Spanish</name>
+    <style>freeForm</style>
+    <subject>¿Le ayudó la formación de MathWorks a utilizar nuestras herramientas? ¡Cuéntenos más!</subject>
+    <textOnly>{!Enrollment__c.Enrollee_Name__c},
+
+Gracias por asistir a la formación de MathWorks. Nuestro objetivo es garantizar su éxito utilizando en sus aplicaciones MATLAB, Simulink y las herramientas asociadas.
+
+Nos gustaría mejorar la experiencia del aprendizaje, y por eso su opinión es importante para nosotros.Agradeceríamos que nos ayudara y contestara una breve encuesta sobre la formación recibida, sólo le llevará unos cinco minutos.
+
+Evaluación de la transferencia de conocimientos en la formación (Español)
+Training knowledge transfer survey (English)
+
+Gracias de antemano por su tiempo y esperamos poder ayudarle con su
+
+aprendizaje en elfuturo.
+
+Atentamente,
+
+Craig Santos
+
+Training Business Manager
+The MathWorks, Inc.
+
+To update your address, send e-mail to: service@mathworks.com
+
+© 2017 The MathWorks, Inc. MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See mathworks.com/trademarks for a list of additional trademarks. Other product or brand names may be trademarks or registered trademarks of their respective holders.
+
+
+OPT-OUT:
+Click on the link to remove this e-mail address from the MathWorks commercial electronic mailing list.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

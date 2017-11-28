@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Custom settings related around territory</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Assignment_Status__c</fullName>
+        <description>The value of the Account territory status(Assignment Error, Pending Retry, etc) to be processed for retry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value of the Account territory status(Assignment Error, Pending Retry, etc) to be processed for retry</inlineHelpText>
+        <label>Assignment Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Character_Set__c</fullName>
+        <description>Character Set that will be used to generate unique Territory Master Id on territory2 object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Character Set that will be used to generate unique Territory Master Id on territory2 object</inlineHelpText>
+        <label>Character Set</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Generate_Master_Territory_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The flag controls the process of generation unique Master Territory Id field  of the Territory 2 Object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag Controls the generation of the Master Territory Id field of the Territory 2 objects</inlineHelpText>
+        <label>Generate Master Territory Flag</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Max_TA_Attempts__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Maximum number of attempts to try to run the territory assignment on the account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of attempts to try to run the territory assignment on the account</inlineHelpText>
+        <label>Max TA Attempts</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publish_Territory_Assignment_URL__c</fullName>
+        <description>End point url to the CDS web service Publish Assignment Rules. Used when publish rule buttons presses on UI , SFDC posts the call and get back the response from CDS Publish Territory Web service. Contact Salim if url is not working</description>
+        <externalId>false</externalId>
+        <label>Publish Territory Assignment URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TA_Retry_Batch_Size__c</fullName>
+        <description>Batch size of the job when executing the territory assignment retry logic</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Batch size of the job when executing the territory assignment retry logic</inlineHelpText>
+        <label>TA Retry Batch Size</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Assignment_Lookup_Field__c</fullName>
+        <defaultValue>&quot;Siebel&quot;</defaultValue>
+        <description>Switch to use for changing between using Master Territory ID and Siebel Territory ID for looking up corresponding Salesforce Territory2 ID for assignment.  Should not be needed and can be removed after TM solution based on Salesforce/CDS engine goes live - sometime in 2017.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to use for looking up the Salesforce Territory2 record for doing assignments.  Valid options are &quot;Master&quot; or &quot;Siebel&quot;.</inlineHelpText>
+        <label>Territory Assignment Lookup Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Master_Id_Length__c</fullName>
+        <description>The length of the random territory master id generated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The length of the random territory master id generated</inlineHelpText>
+        <label>Territory Master Id Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Territory Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

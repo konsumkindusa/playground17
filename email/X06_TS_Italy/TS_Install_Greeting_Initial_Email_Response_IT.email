@@ -1,0 +1,12 @@
+Gentile {!Contact.Salutation} {!Contact.LastName},    
+
+Le scrivo in merito alla sua richiesta #{!Case.CaseNumber} riguardante '{!Case.Subject}'.
+
+
+Se necessita di ulteriore assistenza attinente a questo argomento, La prego di rispondere a questa mail mantenendo il Reference ID. Nel caso avesse una nuova domanda per il supporto tecnico, può inoltrare una nuova richiesta alla pagina:
+
+http://www.mathworks.it/support/service_requests/contact_support.do
+
+Cordiali Saluti,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

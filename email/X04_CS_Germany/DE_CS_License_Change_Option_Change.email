@@ -1,0 +1,24 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+gemäß Antrag/unseres Salesteams wurde die Option der Lizenz/en # von "Individual" auf "Designated Computer" (von „Designated Computer“ auf „Individual“) geändert.
+
+Damit müssen die bisherigen Installationen der Lizenz/en gelöscht und die Lizenz/en neu aktiviert werden.
+
+Um mehr über die Aktivierung einer Lizenz zu erfahren, besuchen Sie bitte aus Ihrem geöffneten MathWorks Account den Link ‘Activation‘: http://www.mathworks.com/support/activation/index.html?BB=1 
+
+Um mehr über die Deaktivierung einer Lizenz zu erfahren besuchen Sie bitte den Link: 
+http://www.mathworks.com/support/solutions/data/1-698KQP.html?solution=1-698KQP 
+
+Um mehr über die Verwaltung der Licensed End User zu erfahren, besuchen Sie bitte den Link ‘Add/Remove Licensed End User‘: http://www.mathworks.com/support/solutions/en/data/1-6092ZT/ 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

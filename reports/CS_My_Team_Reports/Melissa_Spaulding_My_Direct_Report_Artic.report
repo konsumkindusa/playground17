@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>KnowledgeArticleVersion$CreatedBy</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>KnowledgeArticleVersion$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$Summary</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleType</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR  6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17)</booleanFilter>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$PublishStatus</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Avalon Livernois</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Caitlyn Jameson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>David Hernandez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Devin Behenna</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Elaine Edmonds</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Eric Hollis</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Fran Kizer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>James Clover</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>JJ Jennings</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Mary Donahue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Mike Guerra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Sarah Steele</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Steve Myette</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Xandra Roman</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Brad	McIrney</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Julia	Andrews</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticleVersion$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Melissa Spaulding My Direct Report Artic</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Article_Versions_Not_to_Deploy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticleVersion$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

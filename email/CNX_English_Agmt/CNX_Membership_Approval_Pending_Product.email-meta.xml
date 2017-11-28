@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Approved for membership. Follow up additional requirements.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>3a - Membership Approval Pending - Product</name>
+    <style>none</style>
+    <subject>Preliminary Approval in the Connections Program</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+Gentile {!Contact.Name},
+
+siamo spiacenti di comunicarle la cancellazione del seguente corso:
+
+DENOMINAZIONE CORSO: {!Enrollment__c.Class__c}   
+DATA:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+SEDE: {!Class__c.City__c}, {!Class__c.Country__c} 
+
+Per partecipare ad un'altra sessione di formazione, la preghiamo di consultare il nostro calendario dei corsi disponibili all'indirizzo sotto indicato o di contattarci telefonando al numero {!Class__c.Sponsor_Office_Phone__c}  o inviando un email all'indirizzo {!Class__c.Sponsor_Office_Email__c}.
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+Ci scusiamo per l'inconveniente.
+
+Cordiali saluti,
+Training Services
+
+The MathWorks srl
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Nota. Se una sessione di training non può essere effettuata per circostanze indipendenti dalla volontà di The MathWorks, la sola responsabilità di The MathWorks sarà quella di rimborsare, in caso di avvenuto pagamento, il costo del/i corso/i al quale è iscritto o di trasferirla ad un'altra sessione di ugual costo o inferiore. Tuttavia, The MathWorks non rimborserà alcun costo al di fuori di quello relativo al corso stesso.

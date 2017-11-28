@@ -1,0 +1,12 @@
+Dear {!Partner_Agreement__c.MW_Focal_Point__c},
+
+It's our understanding that you plan to submit a no-charge proposal for {!Partner_Agreement__c.Account__c}. In order to move forward with the process, we need to know if you have communicated this with them.
+
+Since membership to the MathWorks Connections Program requires that all members have an active development license, this no-charge license must be in place before we can complete the application process and make {!Partner_Agreement__c.Account__c} a full member of the program. 
+
+We may follow up with you occasionally regarding the status of the license, and would appreciate you keeping us informed of its progress. In the event we receive a status update request from the applicant, we will direct them to you for follow up. Thank you for your assistance. Please feel free to contact us if you have any questions.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

@@ -1,0 +1,26 @@
+<apex:component access="global">
+<html>
+ <style>
+  @page
+                   {
+                    //size:8in 12in;
+                    size: landscape;
+                    margin-top: 0.00cm;
+                    margin-bottom: 0.00cm;
+                    margin-left: 0.00cm;
+                    margin-right: 0.00cm;
+                  
+                  }
+                    body 
+                    {
+                        //background-color:blue;//#FFFFFF; 
+                        //border: solid 1px black ;
+                        margin: 0px;  /* this affects the margin on the content before sending to printer */
+                   }
+ </style>
+ 
+ 
+     <img src="{!$resource.EnrollmentTrainingCertificateProfessinalLogo}" style="position: fixed;z-index:-1" width="1055" height="813" >
+         </img>
+         </html>
+</apex:component>

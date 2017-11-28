@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response when new case is submitted</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC CN Auto Reply</name>
+    <style>freeForm</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>本邮件为系统自动生成的回复邮件，请勿回复此邮件。
+
+您此次邮件的案例号为: !Case.CaseNumber}
+
+非常感谢您联系迈斯沃克的订单部门，我们已经收到了您的申请。
+
+如果您要下订单，我们会尽快处理，并在完成后邮件回复通知您订单已经完成。
+
+如果您有任何问题，请联系我们，并请在您的邮件中备注上面提供的案例号，我们会据此查询.
+
+
+谢谢，
+
+迈斯沃克软件（北京）有限公司
+
+订单部门
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

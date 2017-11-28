@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Response to sales regarding partner eligibility of third party dev discount</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Develop License - Discount - Request</name>
+    <style>none</style>
+    <subject>Connections Program Developer Discount Request - {!Account.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

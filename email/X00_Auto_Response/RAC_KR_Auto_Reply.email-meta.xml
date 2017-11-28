@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response when new case is submitted</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC KR Auto Reply</name>
+    <style>freeForm</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>본 메일은 귀하의 요청에 대해 자동으로 발신되는 이메일이므로 이 메시지에 회신하지 마시기 바랍니다.
+
+
+케이스 ID: {!Case.CaseNumber}
+
+
+매스웍스의 주문접수창구에 연락 주셔서 감사합니다. 귀하의 요청이 접수되었음을 확인합니다. 만약 귀하께서 주문을 하신 경우라면, 해당 주문이 처리된 후 바로 주문 확인서(Order Confirmation) 이메일을 귀하께 보내 드릴 것입니다.
+
+이 케이스에 대해 궁금하신 점이 있으시면, 저희에게 문의하여 주시기 바라며, 문의하실 때 위의 케이스 ID가 필요하오니 이를 제공하여 주시기 바랍니다.
+
+
+감사합니다.
+
+MathWorks
+
+주문접수창구
+
+
+{!Case.Thread_Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

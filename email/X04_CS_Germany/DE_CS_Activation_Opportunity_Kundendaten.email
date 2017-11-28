@@ -1,0 +1,15 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage bei MathWorks.
+
+Um Ihren Auftrag zu bearbeiten, benötigen wir noch die genauen Daten Ihres Kunden: Kontakt Vor- und Nachnamen, Firma/Hochschule, Anschrift, Email Adresse, Tel./ Fax so vorhanden.
+Bitte lassen Sie uns diese unter Beibehalt der unten verzeichneten Reference ID zukommen. 
+Danke.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

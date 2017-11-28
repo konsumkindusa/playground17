@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template is used to notify a contact that the MathWorks cannot conduct business with the client because their country is on the US Embargo list.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>U.S. Embargoes List</name>
+    <style>none</style>
+    <subject>U.S. Embargoes List</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

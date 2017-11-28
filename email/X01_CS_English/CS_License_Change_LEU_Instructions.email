@@ -1,0 +1,29 @@
+Hello {!Case.Contact}, 
+
+Thank you for contacting MathWorks. You have requested that the End User be changed on License XXXX. Below you will find the procedure for changing a Licensed End User. 
+
+If you are an Administrator, you can change the User associated to a license in the License Center of your MathWorks Account. Please note that this action will also deactivate all previous activations. 
+
+Log in to your MathWorks Account: www.mathworks.com/login 
+Navigate to the License Center: www.mathworks.com/licensecenter 
+Click on the License Number 
+Switch to the “Manage Users” tab 
+To add a User, click on the button that reads "Add User" 
+To remove a User, click on the X icon under "Remove User" 
+
+Once all previous activations have been deactivated and the software removed from all previous machines, an Administrator can initiate activation for the new End User. 
+
+Click on this link to learn more about activation (Log in required): 
+www.mathworks.com/support/activation/index.html 
+
+To learn more about Deactivation you can follow the link below: 
+http://www.mathworks.com/matlabcentral/answers/100663#answer_110012 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

@@ -1,0 +1,16 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+We’d like to remind you, that according to our records, your annual low-cost {demonstration and technical support, training, regression testing} license(s) of MathWorks products (license#  XXXXX) will expire on XXXX.  To continue to use these licenses, you must renew prior to the expiration date.  
+
+If you are planning to renew these license(s), please consider renewing before the maintenance end date.  After this date, annual licenses of MathWorks products will stop working and they will not be renewable. After the maintenance expiration date, you will need to provide updated information on all end-users and purchase new licenses. This will also mean that your end users all receive new license numbers, and will need to all re-download, re-install, and re-activate the software. 
+
+If you are planning to renew your license(s) without any changes, please send in your order to your sales representative.
+	
+If you are planning to update your users or products, please send you request to connections@mathworks.com as soon as possible.
+
+Let me know if you have any questions.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

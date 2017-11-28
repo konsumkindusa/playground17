@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to Training Operations to request value of no charge training being offered</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support - Request for Training Support Information</name>
+    <style>none</style>
+    <subject>Request for Training Support Info - {!Academic_Support_Project__c.Class__c} - ({!Academic_Support_Project__c.Name})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

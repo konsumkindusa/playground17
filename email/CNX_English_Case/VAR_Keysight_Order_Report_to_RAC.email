@@ -1,0 +1,13 @@
+<orders@mathworks.com>
+
+
+Hi RAC,
+
+Attached are this week’s orders from Keysight for order entry.  There are <<#>> orders for this week.
+
+Order completion date:  These should be complete by this Friday.  If this is not possible or you have any questions, please let me know.
+
+Thank you,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}

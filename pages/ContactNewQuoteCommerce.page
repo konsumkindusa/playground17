@@ -1,0 +1,15 @@
+<apex:page StandardController="Contact"
+    extensions="ContactNewQuoteCommerceController"
+    action="{!getContactRecord}" id="pageId"
+    showHeader="false">
+
+    <apex:form >
+      
+        <apex:outputPanel id="counterStatus">
+            <apex:pageMessages />
+        </apex:outputPanel>
+       
+           
+    </apex:form>
+
+</apex:page>

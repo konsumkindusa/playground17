@@ -1,0 +1,29 @@
+From = US Partner Academic Profile
+
+To = Terri.Velez@mathworks.com
+
+CC = Internal Sponsor and/or Technical Lead; Direct Line Manager; maureen.maher@mathworks.com; Jackie.Christiano@mathworks.com; Sean.Kimball@mathworks.com; Richard.Rovner@mathworks.com; Sherri.Sweeney@mathworks.com; Accounts.Payable@mathworks.com
+
+
+All documents related to the Academic Support award distribution request for the {!Academic_Support_Project__c.Class__c} project at {!Academic_Support_Project__c.Account__c} are linked below. 
+
+Invoice 
+
+Payment Request (only needed if no invoice provided)
+
+Business Case
+
+DEUL/Agreement
+
+
+Best Regards,
+
+{!User.FirstName} {!User.LastName}
+
+MathWorks Academic Support Program
+E. academicsupport@mathworks.com
+F. 508.652.8740
+
+MathWorks
+3 Apple Hill Drive 
+Natick, MA 01760

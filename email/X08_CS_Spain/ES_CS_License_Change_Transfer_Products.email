@@ -1,0 +1,19 @@
+Buenos días {!Case.Contact},
+
+En base a la solicitud de XXXXXX, los productos listados debajo han sido transferidos de la licencia XXXXX a la licencia XXXXX:
+<LISTPRODUCTS>
+
+Conectándose a su Cuenta MathWorks Account y yendo al License Center en mathworks.com/licensecenter verá los cambios realizados en las licencias.    
+
+Una nueva Activación es requerida para todas las versiones R2008a o superiores en todos los ordenadores afectados por esta Transferencia de Productos.  Para aprender más acerca de la activación de su licencia, puede seguir el link que figura a continuación, que requiere que se conecte a su Cuenta MathWorks:   http://www.mathworks.com/support/activation/index.html?BB=1
+
+El titular de la licencia no debe intentar acceder o usar Programas, o copias de Programas, a los cuales no está autorizado a usar. El titular de la licencia debe borrar de sus sistemas todas las copias archivadas de los programas mencionados arriba, relacionados a la licencia XXXXXX, así como también debe abstenerse de usarlos nuevamente sin antes firmar un Acuerdo de Uso de Licencia de Software válido con MathWorks.
+
+Si necesita más ayuda en relación a este Caso, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml 
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RNL 1st Cust Contact Quote attached</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>RNL 1st Cust Contact Quote Attached</name>
+    <style>none</style>
+    <subject>Renew your MathWorks Software Maintenance Service</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
