@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This custom setting is use for Publish rules for rerritory Management</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Add_users_To_Territory_URL__c</fullName>
+        <description>This will be used on Page Territory Summary for redirecting to Add users To Territory 2 standard functionality from  Manage Sales Team Member button</description>
+        <externalId>false</externalId>
+        <label>Add users To Territory URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Criteria_Value_Page_Size__c</fullName>
+        <description>Territory Rule Criteria Value Custom VF Page list size</description>
+        <externalId>false</externalId>
+        <label>Criteria Value Page Size</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pending_Rules_Publish__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field indicates that the rule is published for Pending</description>
+        <externalId>false</externalId>
+        <label>Pending Rules Publish</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rules_Last_Published_By__c</fullName>
+        <description>This field stores the value of the user who last  published the rule</description>
+        <externalId>false</externalId>
+        <label>Rules Last Published By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rules_Last_Published_On__c</fullName>
+        <description>This field stores  last rule published date and time</description>
+        <externalId>false</externalId>
+        <label>Rules Last Published On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Territory_Assignment_Rule_field_Id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Territory_Rule_Criteria__c.Territory_Assignment_Rule__c Field ID</inlineHelpText>
+        <label>Territory Assignment Rule  field Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Rule_Criteria_Metadata_Id__c</fullName>
+        <description>Store the Territory Rule Criteria Object Metadata Id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Territory_Rule_Criteria__c Object ID</inlineHelpText>
+        <label>Territory Rule Criteria Metadata Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Rule_Criteria_field_Id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Territory_Rule_Criteria_Value__c.Territory_Rule_Criteria__c Field ID</inlineHelpText>
+        <label>Territory Rule Criteria field Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Shadow_Field_Id__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Territory_Assignment_Rule__c.Territory__c</inlineHelpText>
+        <label>Territory Shadow Field Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Record__c</fullName>
+        <description>Unique record name will be used by CDS to query published rule flag from custom object Territory Publish Rule</description>
+        <externalId>false</externalId>
+        <label>Unique Record</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Territory Management Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

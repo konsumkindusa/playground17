@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EC2 1ba Takeback  Ready to Trial? if no response to Trial set up email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EC2 1ba Takeback Ready to Trial?</name>
+    <style>none</style>
+    <subject>Status Check In - Ready to trial MATLAB Distributed Computing Server on Amazon EC2?</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

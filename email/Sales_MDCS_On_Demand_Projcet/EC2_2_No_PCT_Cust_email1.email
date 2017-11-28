@@ -1,0 +1,44 @@
+Dear {!Contact.FirstName},
+
+Thank you for your interest in the MATLAB Distributed Computing Server for Amazon EC2 Early Adopter Program (mathworks.com/ec2). 
+
+As you may know, the program tests new capabilities designed for MATLAB users to run their applications on Amazon EC2 cluster resources. These new capabilities are available through Parallel Computing Toolbox and MATLAB Distributed Computing Server.  
+
+Please take a look at the resources below.  If you have technical questions about Parallel Computing, your Account Manager can arrange a conference call with one of our Application Engineers.
+
+Resources:
+What is Parallel Computing?
+	http://www.mathworks.com/help/distcomp/what-is-parallel-computing.html
+
+Choose a Parallel Computing solution
+http://www.mathworks.com/help/distcomp/choosing-a-parallel-computing-solution.html
+	
+What can I do to optimize my serial code first?
+Programming Techniques
+	http://blogs.mathworks.com/loren/2008/06/25/speeding-up-matlab-applications/
+	
+MATLAB multicore
+http://www.mathworks.com/discovery/matlab-multicore.html
+
+Key functions
+     parfor – execute iterations of a for loop in parallel
+http://www.mathworks.com/help/distcomp/parfor.html
+
+When to use parfor
+	http://www.mathworks.com/help/distcomp/introduction-to-parfor.html
+
+Getting up and running (This post is old, but still very helpful.  Note that matlabpool has been replaced by parpool.)
+http://blogs.mathworks.com/loren/2009/10/02/using-parfor-loops-getting-up-and-running/
+	
+Parpool
+http://www.mathworks.com/help/distcomp/parpool.html
+
+batch – offload applications to a remote workers (applications can include parfor)
+http://www.mathworks.com/help/distcomp/batch-processing-1.html
+
+Tutorials (short videos and code samples)
+	http://www.mathworks.com/videos/series/parallel-and-gpu-computing-tutorials-97719.html
+
+Once you are up and running with the Parallel Computing Toolbox, please let me know and we will move forward with MATLAB Distributed Computing Server on Amazon EC2. 
+
+Best regards,

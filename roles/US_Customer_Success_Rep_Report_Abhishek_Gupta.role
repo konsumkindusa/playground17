@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>US Customer Success Rep Report Abhishek Gupta</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>US Customer Success Rep Report Abhishek Gupta</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>US_Customer_Success_Manager_Abhishek_Gupta</parentRole>
+</Role>

@@ -1,0 +1,30 @@
+Gentile {!Contact.Salutation} {!Contact.LastName},    
+
+Le scrivo in merito alla sua richiesta  # {!Case.CaseNumber} riguardante '{!Case.Subject}'.    
+
+Per poterLe fornire  assistenza sono indispensabili le seguenti informazioni:    
+
+1)  Il risultato completo che si ottiene con il comando, 
+
+per le versioni di MATLAB dalla R2012b in poi:
+>> ver -support
+
+per le versioni di MATLAB R2012a e precedenti:
+>> ver
+
+digitato nella riga di comando del prompt di  MATLAB. 
+Questo ci fornirà i dettegli della sua licenza, versione e sistema operativo.
+
+2) Una descrizione dettagliata del problema.   
+ 
+3) Un esempio che riproduca il problema segnalato.    
+
+4) I passi necessari per eseguire il codice.    
+
+5) I messaggi di errore ottenuti (se presenti).    
+
+La prego di rispondere a questa mail mantenendo il Reference ID.    
+
+Cordiali Saluti,   
+{!User.Email_Template_Signature__c}  
+{!User.Disclosure__c}

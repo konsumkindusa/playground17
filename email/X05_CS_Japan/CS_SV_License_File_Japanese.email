@@ -1,0 +1,38 @@
+{!Case.Account} 
+{!Case.Contact}様 
+
+大変お世話になっております。 
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c} と申します。 
+この度はお問い合わせ頂き、誠にありがとうございます。 
+
+ご依頼いただきました MATLAB Student Version のライセンスファイルは以下のようになります。 
+該当ファイルを使用する前に、必ず MATLAB & Simulink Student Version のインストールを行ってください。 
+インストールが完了したら、以下のフォルダに保存されているlicense.dat ファイルを開きます。 
+※以下 $MATLAB は MATLAB インストールディレクトリーを表します。 
+
+■MATLAB のバージョン R2008a 以降の場合： 
+$MATLAB/licenses 
+■MATLAB のバージョン R2007b 以前の場合： 
+$MATLAB\bin\win32 
+(Windows の場合) 
+$MATLAB/etc 
+(その他の OS の場合) 
+注意：Mac OS Xの場合、$MATLAB/licenses フォルダにアクセスするには、 
+MATLAB application アイコン上CTRL+クリックして、 
+「パッケージの内容を表示」をクリックすると、「Licenses」というフォルダを含めMATLABのインストール内容が表示されます。 
+以下のライセンスファイルの内容を既存のライセンスファイル（license.dat）上コピーし上書き保存します。 
+＜＜ここにライセンスファイルの内容を貼り付けます＞＞ 
+ライセンスファイルのアップデートが終了したら、MATLAB & Simulink Student Version を起動し、 
+正常起動を確認してください。 
+
+本件についてその他ご不明な点や追加のご質問がございましたら、 
+下記のReference IDを削除せずにご返信にてお問合せ下さい。 
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。 
+http://jp.mathworks.com/support/contact_us/ 
+
+どうぞよろしくお願い致します。 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

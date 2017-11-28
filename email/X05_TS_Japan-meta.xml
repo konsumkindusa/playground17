@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>TS Japan</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Email_Template_Management_Eric_daSilva</group>
+        <roleAndSubordinates>Tech_Support_Manager_Shinto_Ya</roleAndSubordinates>
+        <roleAndSubordinatesInternal>TS_Manager_Takashi_Chikamasa</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Tech_Support_Manager_Shinto_Ya</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

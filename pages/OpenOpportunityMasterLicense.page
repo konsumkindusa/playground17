@@ -1,0 +1,5 @@
+<apex:page standardController="Opportunity" extensions="MasterLicenseOpenController" action="{!redirectToMasterLicenseApp}" showheader="false">
+
+    <apex:pageMessages escape="false" />
+
+</apex:page>

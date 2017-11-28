@@ -1,0 +1,18 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage "Case {!Case.CaseNumber}" - "{!Case.Subject}". 
+
+
+
+Bitte belassen Sie die Reference ID unten intakt für jede Kommunikation zu dieser Anfrage. Diese erlaubt es unserem System, Ihre Antwort automatisch dem richtigen Case zuzuordnen. 
+
+Eine neue Anfrage an den Technischen Support können Sie über folgenden Link erstellen: 
+http://www.mathworks.de/support/servicerequests/create.html 
+
+Mit freundlichen Grüßen,
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.de/support 
+File Exchange und MATLAB Answers: http://www.mathworks.de/matlabcentral/ 
+
+{!User.Disclosure__c}

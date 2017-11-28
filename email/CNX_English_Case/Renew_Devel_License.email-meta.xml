@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send 30 days prior to the expiration date of the license SMS date.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Develop License - Renewal</name>
+    <style>none</style>
+    <subject>Connections Program Membership Requirement</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

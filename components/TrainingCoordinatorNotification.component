@@ -1,0 +1,42 @@
+<apex:component access="global" controller="TCNotificationController">
+    <apex:attribute access="global" name="enterpriseId" assignTo="{!etaId }" description="EnterpriseTraningAgreementId" type="String" required="true"/>
+    <apex:attribute access="global" assignTo="{!lang}" name="langu" type="String" required="true" description="Language Of ETA"/>
+    <html>
+        <style>
+            #Text {
+                        text-align:left;
+                        padding :7cm 0.5cm 2cm 6cm;
+                        width : auto;
+                        height : 400px;
+                        position : fixed;
+                        color: black;
+                        font-size :15px;
+                        font-family : "Arial Unicode MS";
+                        margin-left : 40px;
+            
+            }
+        </style>
+        <div id = "Text">
+            <apex:outputText value="{!$Label.CP_ENROLL_Coordinator_Notification_Part1}" escape="false">
+                <apex:param value="{!EnrollName}" />
+                <apex:param value="{!etaObj.Account_Name__r.Name}" />
+                <apex:param value="{!EtaStartDate}" />
+                <apex:param value="{!EtaExpiryDate}" />   
+                <apex:param value="{!RelatedEtaCourses}" />  
+                <apex:param value="{!etaObj.Sponsor_Office_Phone__c}" />
+                <apex:param value="{!etaObj.Sponsor_Office_Email__c}" />
+                <apex:param value="{!etaObj.Sponsor_Office_Signature__c}" />
+            </apex:outputText>
+            <apex:outputText value="{!$Label.CP_ENROLL_Coordinator_Notification_Part2}" escape="false">
+                <apex:param value="{!EnrollName}" />
+                <apex:param value="{!etaObj.Account_Name__r.Name}" />
+                <apex:param value="{!EtaStartDate}" />
+                <apex:param value="{!EtaExpiryDate}" />   
+                <apex:param value="{!RelatedEtaCourses}" />  
+                <apex:param value="{!etaObj.Sponsor_Office_Phone__c}" />
+                <apex:param value="{!etaObj.Sponsor_Office_Email__c}" />
+                <apex:param value="{!etaObj.Sponsor_Office_Signature__c}" />
+            </apex:outputText>
+        </div>
+    </html>
+</apex:component>

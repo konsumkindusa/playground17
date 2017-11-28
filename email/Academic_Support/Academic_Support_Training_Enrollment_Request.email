@@ -1,0 +1,54 @@
+Template Name:  Academic Support Training Award Enrollment Request
+
+To: Select appropriate training manager depending on the country of request: 
+
+Germany/Switzerland – Wolfgang Schweizer
+
+Italy – Paolo Panarese
+
+Benelux – Marlies Terlouw
+
+UK – Sonia Bridge
+
+France – Christophe De Morais
+
+Sweden – Erik Stalberg
+
+Spain – Paz Tarrega
+
+US – Melissa Berkov
+
+Japan – Kaz Toida
+
+China – Hong Yang
+
+India – Jayaraj Lakshmanan
+
+S. Korea – Nathan Choi
+
+Australia – Nick Ngo
+
+
+
+CC:  Craig Santos; Melissa Berkov; technical lead from internal application
+
+
+
+Hello,
+
+An Academic Support Training Award has been approved for {!Academic_Support_Project__c.Name} course. 
+
+Please enroll {!Contract.OwnerFullName}, {!Contract.OwnerEmail} in this course. 
+
+
+
+Once enrolled reply all that the request is complete. 
+
+
+Thank you, 
+
+
+
+{!User.FirstName} {!User.LastName}
+
+Academic Support

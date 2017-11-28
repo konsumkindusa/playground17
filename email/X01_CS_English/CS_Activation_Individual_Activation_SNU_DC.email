@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Please see the following articles for activation instructions: 
+
+How do I activate MATLAB?
+https://www.mathworks.com/matlabcentral/answers/99457 
+
+Activate an Installation Without the Internet
+http://www.mathworks.com/help/install/ug/activate-without-the-internet.html 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

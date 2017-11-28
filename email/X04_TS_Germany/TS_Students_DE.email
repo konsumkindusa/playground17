@@ -1,0 +1,27 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},    
+
+vielen Dank für Ihre Anfrage #{!Case.CaseNumber} - "{!Case.Subject}".    
+
+Für Nutzer der Studentenversion ist der Technische Support primär auf Probleme rund um die Installation und Aktivierung sowie das Berichten von Software-Bugs begrenzt. Unsere Website bietet Ihnen folgende Möglichkeiten in englischer Sprache:    
+
+Das MathWorks Documentation Center enthält die komplette Dokumentation aller MATLAB und Simulink Produkte, einschließlich vieler Beispiele:
+http://www.mathworks.com/help/ 
+
+In MATLAB Answers finden Sie mehr als 100000 Fragen zu MATLAB und Simulink, die von der MATLAB Central Community gestellt und beantwortet wurden:
+http://www.mathworks.com/matlabcentral/answers/ 
+
+Auch im deutschsprachigen goMATLAB Forum helfen sich MATLAB Anwender gegenseitig:
+http://www.gomatlab.de
+
+Konkret zu Ihrer Fragen finden Sie im Folgenden einige Informationen, die als Startpunkt dienen können:
+
+
+
+
+
+  
+
+Mit freundlichen Grüßen    
+{!User.Email_Template_Signature__c}  
+
+{!User.Disclosure__c}

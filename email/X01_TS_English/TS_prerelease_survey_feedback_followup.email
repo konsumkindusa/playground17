@@ -1,0 +1,20 @@
+Hello {!Contact.FirstName}, 
+
+Thank you for providing feedback on the {!Get_Feedback__c.Prerelease_Survey_Prerelease__c} Prerelease. We have created a Technical Support case for you based on your responses to the survey, Case  #{!Case.CaseNumber}. 
+
+
+<Customize response based on the feedback provided.>
+
+
+Please preserve the Reference ID in further correspondence on this query. This allows our systems to automatically associate your reply to the appropriate Case. 
+
+If you have a new technical support question, please submit a new request here: 
+http://www.mathworks.com/support/servicerequests/create.html 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange and MATLAB Answers: http://www.mathworks.com/matlabcentral/ 
+
+{!User.Disclosure__c}

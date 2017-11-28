@@ -1,0 +1,12 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  Your MathWorks Account with email address XXXX is now active again and you will be able to log into this account.  However, it is best for you to use one MathWorks Account for all of your MathWorks activity.  Currently, you have two active accounts.  Please let us know which email address you prefer to use so that we can combine your two accounts. 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

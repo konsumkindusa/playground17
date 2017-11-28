@@ -1,0 +1,38 @@
+Dear {!Contact.Name},
+
+Welcome to the MathWorks Training!
+
+This is to confirm that you are enrolled in {!Enrollment__c.Class__c}, however your place is not yet secured. To secure a seat in this class, we must receive payment by way of a demand draft, 10 days in advance of the class start date, {!Enrollment__c.Display_Start_Date__c}.
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LOCATION:  {!Class__c.City__c}, {!Class__c.Country__c} 
+
+TIME: {!Class__c.Start_Time__c}  until {!Class__c.End_Time__c} 
+
+To pay by Purchase Order, please fax the PO to us at +91 80 6632 6000  Attn: Training
+
+To pay by cheque, please make the cheque payable to MathWorks India Private Limited and mail it to:
+
+Attention: Customer Training
+MathWorks India Private Limited
+9th Floor, ‘B’ Wing, Etamin Block 
+Prestige Technology Park II
+Marathahalli – Sarjapur Ring Road
+Bangalore – 560103, Karnataka
+India
+
+To ensure proper processing, please include attendee name(s), course name(s), location, and dates on all Purchase Orders and Cheques.
+
+Please note, a 15%  service tax will be applicable on the training service fees.
+
+You will be sent a confirmation with all the course details once your Purchase Order or Payment is processed successfully. If we experience any problems, you will be notified immediately.
+
+Please use the link below for directions to MathWorks India Private Limited and details on local hotels & accommodation: 
+http://www.mathworks.in/services/training/policies/directions
+
+Thank you,
+Training Services
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

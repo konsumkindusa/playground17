@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_48994188</developerName>
+        <masterLabel>Status Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Partner_Agreement__c.Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Inactive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inactive - overlap</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Denied - overlap</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Denied</sourceValue>
+            </sourceValues>
+            <value>Inactive &amp; Denied</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1a - App Received</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1b - Incomplete App</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1c - Additional App Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3a - Terms &amp; Conditions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3b - Pre-Product</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3c - References</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4a - Draft Web Page</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4a - Agmt with Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4b - Web Page Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4b - Agmt with Legal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4c - Prep for Copy Edit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4c - Agmt Signed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4d - At Copy Edit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4e - Make Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Active</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Active - No Web Page</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Active - Out of Compliance</sourceValue>
+            </sourceValues>
+            <value>Active &amp; In-Process</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Partner_Agreement__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Days_From_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Partner_Agreement_Name__c</field>
+    </columns>
+    <columns>
+        <field>Partner_Agreement__c.Status_Action__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Partner_Agreement__c.Type__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Connections</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Partner_Agreement__c.Primary_Office__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>MathWorks Natick</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Partner_Agreement__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2a - In Review,2b - Evaluating</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>In Review &amp; Evaluating</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Partner_Agreement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Partner_Agreement__c.Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Partner_Agreement__c.Action_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

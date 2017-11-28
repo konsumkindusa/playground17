@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FAQ__ka.FAQ__kav$Title</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka.FAQ__kav$PublishStatus</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka.FAQ__kav$ValidationStatus</field>
+    </columns>
+    <columns>
+        <field>FAQ__ka.FAQ__kav$GeckId__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FAQ__ka$CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Shridhar Shah</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>AllArticlesPerAgentCustomDateRange</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>View_All_Articles__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>FAQ__ka$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

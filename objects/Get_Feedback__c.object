@@ -1,0 +1,4753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>used to capture survey results from Get Feedback</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>ASP__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Academic Support Project</label>
+        <referenceTo>Academic_Support_Project__c</referenceTo>
+        <relationshipLabel>Get Feedback</relationshipLabel>
+        <relationshipName>Get_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>llok up to the accoutn from teh Get Feedback object</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Get Feedback</relationshipLabel>
+        <relationshipName>Get_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Comments__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Additional Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Amazon_listing__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Amazon listing</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author1_Info_Company_University__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author1 Info - Company/University</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author1_Info_Last_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author1 Info - Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author1_Info_Middle_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author1 Info - Middle Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author2_Info_Company_University__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author2 Info - Company/University</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author2_Info_First_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author2 Info - First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author2_Info_Last_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author2 Info - Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author2_Info_Middle_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author2 Info - Middle Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author_Info__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Author1 Info - First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Author_s_License__c</fullName>
+        <description>this is a licnse that will be used to include in an email when the Survey to the COntact is sent for the License Renewal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This may not be an accurate license number associated with the contact.  This license is only used in an email template</inlineHelpText>
+        <label>Author&apos;s License</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BookProject__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>look up from Get Feedback to Get Feedback</description>
+        <externalId>false</externalId>
+        <label>Book Project</label>
+        <referenceTo>Book_Project__c</referenceTo>
+        <relationshipLabel>Get Feedback</relationshipLabel>
+        <relationshipName>Get_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Book_Info_Copyright_Year__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Info - Copyright Year</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Info_English_Title__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Info - English Title</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Book_Info_Full_Title_of_Book__c</fullName>
+        <description>Book Prom Survey rResults</description>
+        <externalId>false</externalId>
+        <label>Book Info - Full Title of Book</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Book_Info_ISBN_13__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Info - ISBN - 13</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Info_Language__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Info - Language</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>BookProject__r.Book_Title__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Book Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Title_and_Edition_Number_Confirm__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>Book Title and Edition Number (Confirm)</label>
+        <length>750</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Book_Title_and_Edition_Number__c</fullName>
+        <description>author license</description>
+        <externalId>false</externalId>
+        <label>Book Title and Edition Number</label>
+        <length>750</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Book_Topic_Covered_1__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Topic Covered 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Topic_Covered_2__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Topic Covered 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Topic_Covered_3__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Topic Covered 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Topic_Covered_4__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Topic Covered 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Topic_Covered_5__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Book Topic Covered 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bug_Report_BugID__c</fullName>
+        <description>To capture the Bug Report ID that the survey is completed for</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To capture the Bug Report ID that the survey is completed for</inlineHelpText>
+        <label>Bug Report - BugID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bug_Report_How_to_improve_report__c</fullName>
+        <description>What can we do to improve the quality of this bug report?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What can we do to improve the quality of this bug report?</inlineHelpText>
+        <label>Bug Report - How to improve report</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bug_Report_MWA_ID__c</fullName>
+        <description>Captures the MWA ID that is passed thru the Bug Report Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures the MWA ID that is passed thru the Bug Report Survey</inlineHelpText>
+        <label>Bug Report - MWA ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bug_Report_Product__c</fullName>
+        <description>The Product of the Bug Report from which the Survey was completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Product of the Bug Report from which the Survey was completed</inlineHelpText>
+        <label>Bug Report - Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Bug_Report_Reason_not_effective__c</fullName>
+        <description>If you did not find this Bug Report effective, please select any of these that apply: (check all that apply)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you did not find this Bug Report effective, please select any of these that apply: (check all that apply)</inlineHelpText>
+        <label>Bug Report - Reason not effective</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bug_Report__c</fullName>
+        <description>How effective was this Bug Report in answering your question?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How effective was this Bug Report in answering your question?</inlineHelpText>
+        <label>Bug Report - Effectiveness</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>to identify who the terms and conditions should be sent to for this account</description>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Get Feedback</relationshipLabel>
+        <relationshipName>Get_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Development_to_be_complete__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Development to be complete</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Editor_Info_Email__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Editor Info - Email</label>
+        <length>75</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Editor_Info_First_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Editor Info - First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Editor_Info_Last_Name__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Editor Info - Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Editor_Info_Phone__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Editor Info - Phone</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Publication_Date__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>Expected Publication Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Has_your_book_been_published__c</fullName>
+        <description>Book Promo Survey results</description>
+        <externalId>false</externalId>
+        <label>Has your book been published?</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_license_still_needed__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>Is license still needed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>Job Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>License_Survey_Received__c</fullName>
+        <description>Author license</description>
+        <externalId>false</externalId>
+        <label>License Survey Received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>License_Survey_Status__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>License Survey Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location_of_the_code_files__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>Location of the code files (confirm)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>MathWorks_product1_were_used_to_create_t__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>MathWorks product1 were used to create t</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MathWorks_product2_were_used_to_create_t__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>MathWorks product2 were used to create t</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MathWorks_product3_were_used_to_create_t__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>MathWorks product3 were used to create t</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>One_sentence_summary_of_the_bookBook_Pro__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>One-sentence summary of the bookBook Pro</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Partner_Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Agreement</label>
+        <referenceTo>Partner_Agreement__c</referenceTo>
+        <relationshipLabel>Get Feedback</relationshipLabel>
+        <relationshipName>Get_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Available_references__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product:  Available references</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Email__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product:  Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Name__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product:  Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Ref_1_Company__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product: Ref 1 Company</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Ref_1_Email__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product: Ref 1 Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Ref_1_Name__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product:  Ref 1 Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Ref_2_Company__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product: Ref 2 Company</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Ref_2_Email__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product: Ref 2 Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Product_Ref_2_Name__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Pre-Product: Ref 2 Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Activation_Date__c</fullName>
+        <description>Date the Customer activated the Prerelease</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the Customer activated the Prerelease</inlineHelpText>
+        <label>Prerelease - Activation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Ease_of_Transition__c</fullName>
+        <description>Ease of Transition</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Ease of Transition</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_OS_Platform__c</fullName>
+        <description>prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - OS/Platform</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Overall_Experience__c</fullName>
+        <description>Overall Experience</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Overall Experience</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Performance__c</fullName>
+        <description>prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Performance</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Stability__c</fullName>
+        <description>prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Stability</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Survey_Date_Survey_Received__c</fullName>
+        <description>Get Feedback to update this date when the Survey is received</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Get Feedback to update this date when the Survey is received</inlineHelpText>
+        <label>Prerelease Survey - Date Survey Received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Survey_Prerelease__c</fullName>
+        <description>Identify the Prerelease the survey was sent for</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify the Prerelease the survey was sent for</inlineHelpText>
+        <label>Prerelease Survey - Prerelease</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Survey_Send_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Prerelease Survey - indicator to send the survey via email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prerelease Survey - indicator to send the survey via email</inlineHelpText>
+        <label>Prerelease Survey - Send Survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Upgrade_when__c</fullName>
+        <description>Prerelease syrvey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Upgrade when?</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_Upgrade_when_comments__c</fullName>
+        <description>Prerelease Survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Upgrade when comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prerelease_comment_on_experience__c</fullName>
+        <description>Prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - comment on experience</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prerelease_crash_issues__c</fullName>
+        <description>prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - crash / issues?</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelease_previous_release__c</fullName>
+        <description>prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Previous release</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prerelesae_Incompatibility_comment__c</fullName>
+        <description>Prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Incompatibility comment</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prerelesae_incompatibility_encountered__c</fullName>
+        <description>prerelease survey</description>
+        <externalId>false</externalId>
+        <label>Prerelease - Incompatibility encountered</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_audience_for_the_book__c</fullName>
+        <description>Book Promo Survey</description>
+        <externalId>false</externalId>
+        <label>Primary audience for the book</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Graduate students</fullName>
+                    <default>false</default>
+                    <label>Graduate students</label>
+                </value>
+                <value>
+                    <fullName>Undergraduate students</fullName>
+                    <default>false</default>
+                    <label>Undergraduate students</label>
+                </value>
+                <value>
+                    <fullName>Professionals</fullName>
+                    <default>false</default>
+                    <label>Professionals</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product1_used_in_Book__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Product1 used in Book</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product2_used_in_Book__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Product2 used in Book</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product3_used_in_Book__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Product3 used in Book</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publisher_Info_Web_Page__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Publisher Info - Web Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publisher_Info__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Publisher Info - Company</label>
+        <length>75</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publisher_Info_web_site__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Publisher Info - web site</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publisher__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>Publisher</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_the_license__c</fullName>
+        <description>Author license</description>
+        <externalId>false</externalId>
+        <label>Purpose of the license</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>I am actively planning or developing a book project or new edition</fullName>
+                    <default>false</default>
+                    <label>I am actively planning or developing a book project or new edition</label>
+                </value>
+                <value>
+                    <fullName>I am maintaining content and/or code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                    <default>false</default>
+                    <label>I am maintaining content and/or code files for an existing published book project that is part of the MathWorks Book Program</label>
+                </value>
+                <value>
+                    <fullName>I am an editor at a publishing company</fullName>
+                    <default>false</default>
+                    <label>I am an editor at a publishing company</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_not_accepting_T_C_s__c</fullName>
+        <description>Partners and Connections - indicates why they did not accept the T&amp;C&apos;s</description>
+        <externalId>false</externalId>
+        <label>Reason for not accepting T&amp;C&apos;s</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Relevant_Industries__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Relevant Industries</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aerospace and Defense</fullName>
+                    <default>false</default>
+                    <label>Aerospace and Defense</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Biotech and Pharmaceutical</fullName>
+                    <default>false</default>
+                    <label>Biotech and Pharmaceutical</label>
+                </value>
+                <value>
+                    <fullName>Chemical and Petroleum</fullName>
+                    <default>false</default>
+                    <label>Chemical and Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Computer Electronics</fullName>
+                    <default>false</default>
+                    <label>Computer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Communication Infrastructure</fullName>
+                    <default>false</default>
+                    <label>Communication Infrastructure</label>
+                </value>
+                <value>
+                    <fullName>Communication Devices</fullName>
+                    <default>false</default>
+                    <label>Communication Devices</label>
+                </value>
+                <value>
+                    <fullName>Consumer Goods</fullName>
+                    <default>false</default>
+                    <label>Consumer Goods</label>
+                </value>
+                <value>
+                    <fullName>Consumer Electronics</fullName>
+                    <default>false</default>
+                    <label>Consumer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Earth and Ocean Sciences</fullName>
+                    <default>false</default>
+                    <label>Earth and Ocean Sciences</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Food and Beverage</fullName>
+                    <default>false</default>
+                    <label>Food and Beverage</label>
+                </value>
+                <value>
+                    <fullName>Industrial Automation and Machinery</fullName>
+                    <default>false</default>
+                    <label>Industrial Automation and Machinery</label>
+                </value>
+                <value>
+                    <fullName>Instrumentation</fullName>
+                    <default>false</default>
+                    <label>Instrumentation</label>
+                </value>
+                <value>
+                    <fullName>Medical Devices</fullName>
+                    <default>false</default>
+                    <label>Medical Devices</label>
+                </value>
+                <value>
+                    <fullName>Metals, Materials, and Mining</fullName>
+                    <default>false</default>
+                    <label>Metals, Materials, and Mining</label>
+                </value>
+                <value>
+                    <fullName>Pulp and Paper</fullName>
+                    <default>false</default>
+                    <label>Pulp and Paper</label>
+                </value>
+                <value>
+                    <fullName>Railway Systems</fullName>
+                    <default>false</default>
+                    <label>Railway Systems</label>
+                </value>
+                <value>
+                    <fullName>Rails, Ships and Other Transportation</fullName>
+                    <default>false</default>
+                    <label>Rails, Ships and Other Transportation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Approved_Product_is__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support  - Approved Product is?</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Comments__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Demo_to_AE_Users__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Demo to AE Users</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Demo_to_Marketing_Users__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Demo to Marketing Users</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Demo_to_Other_Users__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Demo to Other Users</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Demo_to_Sales_Users__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Demo to Sales Users</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_How_You_Distribute_Demos__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - How You Distribute Demos</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_How_You_Promote_MW__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - How You Promote MW</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_How_You_Train_employees__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - How You Train employees</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Key_Account_1__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Key Account 1</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Key_Account_2__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Key Account 2</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Key_Account_3__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Key Account 3</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Key_Account_4__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Key Account 4</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Key_Account_5__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Key Account 5</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_MW_Products_You_Demo__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - MW Products You Demo</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_MW_Release__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - MW Release</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_MW_benefits__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - MW benefits</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Primary_Industry_cont__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Primary Industry (cont)</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Prinary_Industry__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Prinary Industry</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Tool_Chains__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Tool Chains</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Trad_Shows_You_DId_a_Dem__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Trad Shows You DId a Dem</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Units_Shipped__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Units Shipped</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Where_You_Demo_MW__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Where You Demo MW</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Your_Total_New_Users__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - Your Total New Users</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_of_MW_demos__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - # of MW demos</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_of_Revenue_Commercial__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - % of Revenue(Commercial)</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_of_Revenue_Edu__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - % of Revenue(Edu)</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_of_Revenue_Gov__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - % of Revenue(Gov)</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_provide_info_E_mail__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - provide info - E-mail</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_provide_your_info_Name__c</fullName>
+        <description>CNX Sales Support Survey</description>
+        <externalId>false</externalId>
+        <label>Sales Support - provide your info - Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Author_License_Renewal_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>when checked it will send a Contact License Renewal Surrvey</description>
+        <externalId>false</externalId>
+        <label>Send Author License Renewal Survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Service_Accurate_understanding_rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Accurate understanding rating</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Additional_comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Additional comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Service_Case_Closed__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Case Closed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>예</fullName>
+                    <default>false</default>
+                    <label>예</label>
+                </value>
+                <value>
+                    <fullName>아니요</fullName>
+                    <default>false</default>
+                    <label>아니요</label>
+                </value>
+                <value>
+                    <fullName>Ja</fullName>
+                    <default>false</default>
+                    <label>Ja</label>
+                </value>
+                <value>
+                    <fullName>Nee</fullName>
+                    <default>false</default>
+                    <label>Nee</label>
+                </value>
+                <value>
+                    <fullName>Nein</fullName>
+                    <default>false</default>
+                    <label>Nein</label>
+                </value>
+                <value>
+                    <fullName>可以</fullName>
+                    <default>false</default>
+                    <label>可以</label>
+                </value>
+                <value>
+                    <fullName>不可以</fullName>
+                    <default>false</default>
+                    <label>不可以</label>
+                </value>
+                <value>
+                    <fullName>Oui</fullName>
+                    <default>false</default>
+                    <label>Oui</label>
+                </value>
+                <value>
+                    <fullName>Non</fullName>
+                    <default>false</default>
+                    <label>Non</label>
+                </value>
+                <value>
+                    <fullName>はい</fullName>
+                    <default>false</default>
+                    <label>はい</label>
+                </value>
+                <value>
+                    <fullName>いいえ</fullName>
+                    <default>false</default>
+                    <label>いいえ</label>
+                </value>
+                <value>
+                    <fullName>Sí</fullName>
+                    <default>false</default>
+                    <label>Sí</label>
+                </value>
+                <value>
+                    <fullName>Si</fullName>
+                    <default>false</default>
+                    <label>Si</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Service_Case_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service - Case Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Get_Feedback1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Courtesy_of_rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Courtesy of rep</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Effectiveness_solution_rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Effectiveness solution rating</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Initial_Response_Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Initial Response Rating</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Overall_Satisfaction_rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Overall Satisfaction rating</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Owner_Manager_email__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Owner Manager email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Primary_Sales_Rep_email__c</fullName>
+        <description>to capture the Primary Sales Rep&apos;s email address for the Account on the associated case.  the address will be used to send an email to the rep on the creation of a Service Survey</description>
+        <externalId>false</externalId>
+        <label>Service - Primary Sales Rep email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Reason_for_overall_sat__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Reason for Overall Sat</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Service_Technical_knowledge_of_rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Technical knowledge of rep</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Template_Survey_Response__c</fullName>
+        <description>Used for Status Survey in emails to managers, sales, and Case Owners</description>
+        <externalId>false</externalId>
+        <formula>IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;No&quot;), &quot;Still Open&quot;,
+IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;아니요&quot;), &quot;Still Open&quot;,
+IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;Nee&quot;), &quot;Still Open&quot;,
+IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;Nein&quot;), &quot;Still Open&quot;,
+IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;Non&quot;), &quot;Still Open&quot;,
+IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;不可以&quot;), &quot;Still Open&quot;,
+IF (CONTAINS((TEXT(Service_Case_Closed__c )), &quot;いいえ&quot;), &quot;Still Open&quot;,
+IF (Service_Overall_Satisfaction_rating__c=5, &quot;Excellent&quot;, 
+IF (Service_Overall_Satisfaction_rating__c&lt;3, &quot;Dissatisfied&quot;, 
+IF (Service_Overall_Satisfaction_rating__c=5, &quot;Excellent&quot;, 
+IF (Service_Overall_Satisfaction_rating__c=3, &quot;OK&quot;, 
+IF (Service_Overall_Satisfaction_rating__c=4, &quot;OK&quot;,
+  &quot;&quot;))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service - Template Survey Response</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Time_to_solution_rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Time to solution rating</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Timely_updates_rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - Timely updates rating</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_why_still_open__c</fullName>
+        <externalId>false</externalId>
+        <label>Service - why still open</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Status_of_project__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update - Status of project</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Published</fullName>
+                    <default>false</default>
+                    <label>Published</label>
+                </value>
+                <value>
+                    <fullName>In Development</fullName>
+                    <default>false</default>
+                    <label>In Development</label>
+                </value>
+                <value>
+                    <fullName>Cancelled/No longer pursuing</fullName>
+                    <default>false</default>
+                    <label>Cancelled/No longer pursuing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Additional_Commen__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Additional Commen</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Company_name__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Company name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Do_you_have_a_pub__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Do you have a pub</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Editorial_contact__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Editorial contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_Editorial_email__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - Editorial email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_expected_pub_date__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - expected pub date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Update_Survey_when_a_publisher__c</fullName>
+        <description>Status Update Survey field</description>
+        <externalId>false</externalId>
+        <label>Status Update Survey - when a publisher?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_of_product_development__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Status of product development</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Still in Development</fullName>
+                    <default>false</default>
+                    <label>Still in Development</label>
+                </value>
+                <value>
+                    <fullName>Complete and Shipping</fullName>
+                    <default>false</default>
+                    <label>Complete and Shipping</label>
+                </value>
+                <value>
+                    <fullName>Project on Hold or Cancelled</fullName>
+                    <default>false</default>
+                    <label>Project on Hold or Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subjects_listed_witho_n_website__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>Subjects listed witho n website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bioscience and Biomedical</fullName>
+                    <default>false</default>
+                    <label>Bioscience and Biomedical</label>
+                </value>
+                <value>
+                    <fullName>Chemistry and Chemical Engineering</fullName>
+                    <default>false</default>
+                    <label>Chemistry and Chemical Engineering</label>
+                </value>
+                <value>
+                    <fullName>Communications Systems</fullName>
+                    <default>false</default>
+                    <label>Communications Systems</label>
+                </value>
+                <value>
+                    <fullName>Control Systems</fullName>
+                    <default>false</default>
+                    <label>Control Systems</label>
+                </value>
+                <value>
+                    <fullName>Digital Signal Processing</fullName>
+                    <default>false</default>
+                    <label>Digital Signal Processing</label>
+                </value>
+                <value>
+                    <fullName>Earth Sciences</fullName>
+                    <default>false</default>
+                    <label>Earth Sciences</label>
+                </value>
+                <value>
+                    <fullName>Economics and Computational Finance</fullName>
+                    <default>false</default>
+                    <label>Economics and Computational Finance</label>
+                </value>
+                <value>
+                    <fullName>Electronics</fullName>
+                    <default>false</default>
+                    <label>Electronics</label>
+                </value>
+                <value>
+                    <fullName>General Interest</fullName>
+                    <default>false</default>
+                    <label>General Interest</label>
+                </value>
+                <value>
+                    <fullName>Image and Video Processing</fullName>
+                    <default>false</default>
+                    <label>Image and Video Processing</label>
+                </value>
+                <value>
+                    <fullName>Mathematics</fullName>
+                    <default>false</default>
+                    <label>Mathematics</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Engineering</fullName>
+                    <default>false</default>
+                    <label>Mechanical Engineering</label>
+                </value>
+                <value>
+                    <fullName>Neural Networks and Fuzzy Logic</fullName>
+                    <default>false</default>
+                    <label>Neural Networks and Fuzzy Logic</label>
+                </value>
+                <value>
+                    <fullName>Physics</fullName>
+                    <default>false</default>
+                    <label>Physics</label>
+                </value>
+                <value>
+                    <fullName>Programming and Computer Science</fullName>
+                    <default>false</default>
+                    <label>Programming and Computer Science</label>
+                </value>
+                <value>
+                    <fullName>Statistics and Probability</fullName>
+                    <default>false</default>
+                    <label>Statistics and Probability</label>
+                </value>
+                <value>
+                    <fullName>System Identification</fullName>
+                    <default>false</default>
+                    <label>System Identification</label>
+                </value>
+                <value>
+                    <fullName>System Modeling and Simulation</fullName>
+                    <default>false</default>
+                    <label>System Modeling and Simulation</label>
+                </value>
+                <value>
+                    <fullName>Test and Measurement</fullName>
+                    <default>false</default>
+                    <label>Test and Measurement</label>
+                </value>
+                <value>
+                    <fullName>Using MATLAB and Simulink</fullName>
+                    <default>false</default>
+                    <label>Using MATLAB and Simulink</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Survey_Completed__c</fullName>
+        <description>indicated the date and time teh survey was completed</description>
+        <externalId>false</externalId>
+        <label>Survey Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Link__c</fullName>
+        <description>to display the Get Feedback Survey link</description>
+        <externalId>false</externalId>
+        <label>Survey Link</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_completed_by__c</fullName>
+        <description>email of who completed the survey</description>
+        <externalId>false</externalId>
+        <label>Survey completed by</label>
+        <length>75</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_C_Name__c</fullName>
+        <description>Name provided in survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name provided in survey</inlineHelpText>
+        <label>T&amp;C Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_C_Reason_for_not_accepting_terms__c</fullName>
+        <description>Why the customer did not accept the T&amp;C from the survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Why the customer did not accept the T&amp;C from the survey</inlineHelpText>
+        <label>T&amp;C - Reason for not accepting terms</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>T_C_accept_membership_term__c</fullName>
+        <description>Indicates if the customer accepts the T&amp;C from the Survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the customer accepts the T&amp;C from the Survey</inlineHelpText>
+        <label>T&amp;C - accept membership term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>T_C_email__c</fullName>
+        <description>email provided in the survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>email provided in the survey</inlineHelpText>
+        <label>T&amp;C email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_and_conditions_accepted__c</fullName>
+        <description>Partners and Connections- indicates if teh terms and conditions were accepted for</description>
+        <externalId>false</externalId>
+        <label>Terms and conditions accepted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>URL_or_location_to_the_supplemental_MATL__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>URL or location to the supplemental MATL</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Was_an_application_submitted__c</fullName>
+        <description>Author license</description>
+        <externalId>false</externalId>
+        <label>Was an application submitted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>What_is_the_expected_publication_date__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>What is the expected publication date?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>What_makes_this_book_different_from_othe__c</fullName>
+        <description>Book Promo Survey Results</description>
+        <externalId>false</externalId>
+        <label>What makes this book different from othe</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Get Feedback</relationshipLabel>
+        <relationshipName>Get_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>developemnt_to_be_complete_month__c</fullName>
+        <description>Pre-Product Survey</description>
+        <externalId>false</externalId>
+        <label>Developemnt to be complete - month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>needs_and_intended_use_for_license__c</fullName>
+        <description>Author License</description>
+        <externalId>false</externalId>
+        <label>needs and intended use for license.</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <label>Get Feedback</label>
+    <listViews>
+        <fullName>Author_Surveys</fullName>
+        <columns>NAME</columns>
+        <columns>License_Survey_Received__c</columns>
+        <columns>License_Survey_Status__c</columns>
+        <columns>Author_s_License__c</columns>
+        <columns>Contact__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Send_Author_License_Renewal_Survey__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>License_Survey_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Get_Feedback__c.Book_Program</value>
+        </filters>
+        <label>Author Surveys</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>EBR</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>case__c</columns>
+        <columns>Prerelease_Survey_Date_Survey_Received__c</columns>
+        <columns>Prerelease_comment_on_experience__c</columns>
+        <columns>Prerelease_crash_issues__c</columns>
+        <columns>Prerelease_Ease_of_Transition__c</columns>
+        <columns>Prerelesae_Incompatibility_comment__c</columns>
+        <columns>Prerelesae_incompatibility_encountered__c</columns>
+        <columns>Prerelease_Overall_Experience__c</columns>
+        <columns>Prerelease_Performance__c</columns>
+        <columns>Prerelease_Stability__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Bug</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>12/25/2016 12:00 AM</value>
+        </filters>
+        <label>EBR</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Get Feedback Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Get Feedback</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Book_Program</fullName>
+        <active>true</active>
+        <description>to capture Book Program Surveys</description>
+        <label>Book Program</label>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Connections</fullName>
+        <active>true</active>
+        <description>for all Connection Surveys</description>
+        <label>Connections</label>
+        <picklistValues>
+            <picklist>Is_license_still_needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pre_Product_Available_references__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_the_license__c</picklist>
+            <values>
+                <fullName>I am actively planning or developing a book project or new edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am an editor at a publishing company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am maintaining content and%2For code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_of_product_development__c</picklist>
+            <values>
+                <fullName>Complete and Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project on Hold or Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Still in Development</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_an_application_submitted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>EBR</fullName>
+        <active>true</active>
+        <description>to capture EBR feedback</description>
+        <label>EBR</label>
+        <picklistValues>
+            <picklist>Is_license_still_needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pre_Product_Available_references__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_the_license__c</picklist>
+            <values>
+                <fullName>I am actively planning or developing a book project or new edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am an editor at a publishing company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am maintaining content and%2For code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Update_Status_of_project__c</picklist>
+            <values>
+                <fullName>Cancelled%2FNo longer pursuing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Published</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Update_Survey_Do_you_have_a_pub__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_of_product_development__c</picklist>
+            <values>
+                <fullName>Complete and Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project on Hold or Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Still in Development</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_C_accept_membership_term__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_an_application_submitted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Hardware_Package</fullName>
+        <active>true</active>
+        <label>Hardware Package</label>
+        <picklistValues>
+            <picklist>Is_license_still_needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pre_Product_Available_references__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_the_license__c</picklist>
+            <values>
+                <fullName>I am actively planning or developing a book project or new edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am an editor at a publishing company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am maintaining content and%2For code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Si</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Update_Status_of_project__c</picklist>
+            <values>
+                <fullName>Cancelled%2FNo longer pursuing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Published</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Update_Survey_Do_you_have_a_pub__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_of_product_development__c</picklist>
+            <values>
+                <fullName>Complete and Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project on Hold or Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Still in Development</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_C_accept_membership_term__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_an_application_submitted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Prerelease_Survey</fullName>
+        <active>true</active>
+        <description>for Prerelease survey info</description>
+        <label>Prerelease Survey</label>
+        <picklistValues>
+            <picklist>Is_license_still_needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pre_Product_Available_references__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_the_license__c</picklist>
+            <values>
+                <fullName>I am actively planning or developing a book project or new edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am an editor at a publishing company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am maintaining content and%2For code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_of_product_development__c</picklist>
+            <values>
+                <fullName>Complete and Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project on Hold or Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Still in Development</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_an_application_submitted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>get_feedback</fullName>
+        <active>true</active>
+        <label>Get Feedback</label>
+        <picklistValues>
+            <picklist>Is_license_still_needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_the_license__c</picklist>
+            <values>
+                <fullName>I am actively planning or developing a book project or new edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am an editor at a publishing company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am maintaining content and%2For code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_an_application_submitted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>service</fullName>
+        <active>true</active>
+        <label>Service</label>
+        <picklistValues>
+            <picklist>Is_license_still_needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>License_Survey_Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_audience_for_the_book__c</picklist>
+            <values>
+                <fullName>Graduate students</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undergraduate students</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_of_the_license__c</picklist>
+            <values>
+                <fullName>I am actively planning or developing a book project or new edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am an editor at a publishing company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I am maintaining content and%2For code files for an existing published book project that is part of the MathWorks Book Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relevant_Industries__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials%2C and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rails%2C Ships and Other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Railway Systems</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Case_Closed__c</picklist>
+            <values>
+                <fullName>Ja</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nein</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oui</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Si</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>いいえ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>はい</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>不可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>可以</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>아니요</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>예</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subjects_listed_witho_n_website__c</picklist>
+            <values>
+                <fullName>Bioscience and Biomedical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry and Chemical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Signal Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economics and Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image and Video Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neural Networks and Fuzzy Logic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Programming and Computer Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statistics and Probability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Identification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Modeling and Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Using MATLAB and Simulink</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Terms_and_conditions_accepted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Was_an_application_submitted__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

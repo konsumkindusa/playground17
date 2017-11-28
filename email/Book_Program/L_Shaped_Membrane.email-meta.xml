@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>If an author is using the L-shaped membrane in their work (without explicit permission from MathWorks), send this email. The email tells them to remove the L-shaped membrane otherwise they might face legal action.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>L-Shaped Membrane</name>
+    <style>none</style>
+    <subject>Improper use of MathWorks trademarked materials</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

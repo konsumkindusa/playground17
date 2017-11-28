@@ -1,0 +1,21 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+The MathWorks Book Program has approved your request for a license to MathWorks products for use in developing your book materials.  Please note that complimentary software access provided by the MathWorks must be used solely for the planning, development, and/or support of book material based on MathWorks products.
+
+A separate email regarding that license will be sent to you shortly.  At that time, you can download the specific products from your MathWorks Account via the license center (mathworks.com/accesslogin/).
+
+Please keep the MathWorks Book Program updated on the status of your project throughout the year so we can continue our support of your project: mathworks.com/support/books/members/project-updates.html
+
+Regards,
+
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

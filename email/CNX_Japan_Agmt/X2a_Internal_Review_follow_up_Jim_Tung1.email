@@ -1,0 +1,15 @@
+Hi Jim, 
+
+Just following up on this application. 
+
+[There haven't been any comments.] 
+
+[The applicant is asking for a status.] 
+
+Thanks, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name} 
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

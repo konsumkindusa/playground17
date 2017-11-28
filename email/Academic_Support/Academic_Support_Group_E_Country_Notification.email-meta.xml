@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to requestor to let them know that the request is for a Group E country that we can not support.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support - Group E Country Notification</name>
+    <style>none</style>
+    <subject>MathWorks Academic Support Notification</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+Dear {!Contact.FirstName},
+
+Thank you for contacting us requesting information on MATLAB Distributed Computing Server for Penguin Computing POD.     Penguin Computing maintains pre-configured MATLAB Distributed Computing Server infrastructure which you can use if you bring your own software license.  When you use MATLAB Distributed Computing Server with Penguin Computing POD,  you will pay Penguin Computing for the infrastructure they provide, and you will pay MathWorks for the license for MATLAB Distributed Computing Server. 
+
+Penguin Computing can provide details of the current software versions supported. (contact podsales@penguincomputing.com).
+
+You have multiple options for licensing MATLAB Distributed Computing Server when you are using Penguin Computing POD.    We recommend starting with an on-demand (pay-as-you-go) license (mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html.)   There is no up-front charge for an on-demand license, and you will need to provide a valid credit card for the monthly billing.    If you have interest in long term usage and want to explore other options, please let me know, and I will have your Account Manager contact you to discuss.
+
+To use MATLAB Distributed Computing Server, you will also need to run a session of MATLAB and Parallel Computing Toolbox, which will serve as a gateway for both interactive and batch jobs.  Penguin Computing can discuss options for hosting MATLAB on their infrastructure or for providing access between on-premise MATLAB and Penguin Computing POD.
+
+Best regards,

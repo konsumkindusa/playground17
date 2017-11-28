@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Initiate process to renew a no charge license</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Renewal Process Kickoff</name>
+    <style>freeForm</style>
+    <subject>No Charge Renewal Proposal Due [DUE DATE] - {!Contact.Account_Name_Latin__c}</subject>
+    <textOnly>Hello,
+
+The no charge licenses for {!Contact.Account_Name_Latin__c} are set to expire on {!Partner_Agreement__c.Extended_End_Date__c}. This message is to initiate the renewal process, should you want to continue the no charge relationship for another year.
+
+To try and ease the effort on the renewal proposals, please update last year’s approved proposal with any changes for the upcoming year and send it back to me by [DUE DATE].
+
+Tools
+Last Approved Proposal
+Current License Configuration Spreadsheet
+Activation Data Spreadsheet
+
+Please let me know if you have any questions.
+
+Thank you,
+-Justin
+
+Justin Tumeinski
+MathWorks No Charge Team
+partnernocharge@mathworks.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

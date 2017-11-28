@@ -1,0 +1,19 @@
+亲爱的 {!Contact.FirstName},
+
+我们还没有收到您对服务请求ID[Service Request.SR Number]的回复信息，所以我们不确定您的问题是否已经解决或您仍然需要帮助。
+
+如果您还需要进一步的帮助，请您在{!Case.Auto_Close_Date_Time__c}前回复这封邮件并保留底下的Reference ID。
+
+
+谢谢，
+
+迈斯沃克软件（北京）有限公司
+电话：+86 10-59827000               
+电子邮件：info@mathworks.cn
+公司网址：www.mathworks.cn
+
+
+
+这是一封自动生成的邮件
+
+{!Case.Thread_Id}

@@ -1,0 +1,20 @@
+{!Contact.Name},
+
+Annulation session de formation
+
+Course Name: {!Enrollment__c.Class__c}   
+Dates:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+Location: {!Class__c.City__c}, {!Class__c.Country__c} 
+
+Afin de recevoir un remboursement ou un avoir pour une formation annulée et prépayée, veuillez contacter notre service Formation muni des informations concernant le paiement de cette formation. Un lien vers notre calendrier/agenda de formation vous est indiqué ci-dessous. Merci de prendre quelques instants pour consulter cet agenda. Si une autre formation vous intéresse et vous souhaiteriez vous y inscrire veuillez nous contacter au {!Class__c.Sponsor_Office_Phone__c} ou tout simplement répondre à ce message en indiquant le nom et la date de la formation choisie.
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+Si une formation ne peut avoir lieu comme prévu en raison de circonstances échappant à la maîtrise raisonnable de The MathWorks, la seule et unique obligation de The MathWorks consistera à rembourser le montant correspondant à la ou les formations annulées dans lesquelles vous êtes inscrits ou à vous inscrire dans une autre formation de valeur identique ou inférieure. The MathWorks ne rembourse pas les frais et dépenses en dehors du coût de la formation.
+
+Nous vous prions d'accepter nos excuses pour les désagréments causés par l'annulation de cette formation.
+
+Sincères Salutations
+Le Service Formation
+
+{!Class__c.Sponsor_Office_Signature__c} 

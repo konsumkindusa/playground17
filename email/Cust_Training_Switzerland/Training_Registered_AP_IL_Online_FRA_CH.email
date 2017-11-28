@@ -1,0 +1,22 @@
+Chèr(e) {!Contact.Name}, 
+
+Votre inscription est confirmée mais nous n'avons cependant pas reçu votre paiement. Il est requis de s'acquitter du règlement de la formation afin de pouvoir y participer. 
+
+FORMATION: {!Enrollment__c.Class__c}  
+DATES: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+
+Merci d'effectuer le paiement avant le début de la formation. Pour régler par carte de crédit, veuillez contacter {!Class__c.Sponsor_Office_Phone__c}. Pour régler par Bon de Commande, veuillez l'adresser à orders@mathworks.fr. 
+
+Pour un règlement par chèque, merci de l'adresser par courrier à : 
+[local office mailing address]
+
+Pour un traitement rapide de votre demande, merci de préciser le nom du participant, la formation, le lieu et les dates sur votre commande ou chèque. 
+
+Un email de confirmation sera envoyé avec toutes les informations nécessaires dès que le règlement aura été effectué. Si nous rencontrons des difficultés dans le traitement de votre demande, vous serez informé dans les plus brefs délais. 
+
+Nous vous remercions, 
+Le Service Formation
+
+{!Class__c.Sponsor_Office_Signature__c}  
+
+Conditions d'annulation : https://fr.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

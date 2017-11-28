@@ -1,0 +1,33 @@
+Hello {!Case.Contact},
+     
+Thank you for contacting MathWorks. Deactivating an installation renders MathWorks software unusable on a particular computer. After deactivating an installation, you might want to also remove the installation from your computer. Deactivating an installation and removing the software are separate steps. You can deactivate an installation without removing the software from your computer. 
+
+To use the deactivation application on your computer, you can choose one of the following steps:    
+For Windows 
+A. There are several ways to start the deactivation application:     
+1. Click the Windows Start menu and choose Programs>MATLAB>R2XXXX>Deactivate MATLAB R2XXXX.      
+2. Choose to start deactivation after running the uninstaller.     
+3. Choose to start deactivation after a validation check that finds the installation is inactive.     
+4. Choosing the deactivate option from the Help> Licensing>Deactivate Current License menu in the MATLAB desktop.     
+5. Navigate to your MATLAB installation folder, open the uninstall folder, and double-click deactivate_matlab.exe.    The deactivation application displays the licenses you currently have installed and activated on your system. If you start this from within MATLAB, the deactivation application assumes the current license.    
+
+B. Select the license that you want to deactivate and click Deactivate Now. The deactivation application contacts MathWorks to deactivate the license. If it can deactivate the license at MathWorks, the deactivation application displays the License Deactivation Complete dialog box. Click Finish to exit the application.    If it cannot contact MathWorks, the deactivation application displays the Deactivation Next Steps dialog box. This dialog box contains the deactivation string. To complete deactivation, you must go to MathWorks Web site, log in to your account, click Manage Licenses, deactivate the license in the License Center, and enter the deactivation string.    
+
+For Mac/Linux/Solaris  --------------------------  
+A. There are 3 ways to launch the deactivation application:     
+1. Choose the Help>Licensing>Deactivate Current License option on the MATLAB desktop.    
+2. Choose to start deactivation after a validation check that finds the installation is inactive.     
+3. Navigate to the matlabroot/bin directory by running the following command in a command window:          cd MATLABROOT/bin (where MATLABROOT represents your MATLAB installation directory)       
+Run the deactivate_matlab.sh script:         ./deactivate_matlab.sh    
+
+B. Select the license you want to deactivate in the deactivation application welcome dialog box (if you start this from within MATLAB, the deactivation application assumes the current license) and click Deactivate Now.    
+If the deactivation client cannot contact MathWorks, it displays the Deactivation Next Steps dialog box. This dialog box contains the deactivation string. To complete deactivation, you must go to MathWorks Web site, log in to your account, click Manage Licenses, deactivate the license in the License Center by entering in the deactivation string.  
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

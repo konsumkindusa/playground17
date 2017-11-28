@@ -1,0 +1,28 @@
+<apex:page controller="TimecardController">
+<apex:includeScript value="/support/console/26.0/integration.js"/>
+<apex:includeScript value="/soap/ajax/26.0/connection.js"/>
+<apex:form > 
+  <apex:actionFunction name="RedirectToTimeCard" action="{!PageRedirect}"/>  
+ </apex:form> 
+<script type="text/javascript">
+  
+   if (sforce.console.isInConsole()) // if it is console open a new tab 
+   {
+       openPrimaryTab();
+   } 
+   else
+   {
+     callRedirectToTimeCard(); // if it is not console then just open page
+   }   
+     
+   function openPrimaryTab() {
+            sforce.console.openPrimaryTab(null, 
+               '/apex/ProjectTimecard', true, 'TimeCard');
+        }  
+        
+    function callRedirectToTimeCard(){
+         RedirectToTimeCard(); // calling apex function to load the page instead of opening in a new window
+    }
+    </script> 
+ 
+</apex:page>

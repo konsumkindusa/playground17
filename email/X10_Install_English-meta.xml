@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Install English</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Email_Template_Management_Eric_daSilva</group>
+        <group>tuttle_install_templates</group>
+        <role>CS_Rep_Report</role>
+        <role>CS_Rep_Report_Kumar_Bakthavatchalu</role>
+        <role>CS_Sykes_Rep</role>
+        <role>MathWorks_Customer_Services</role>
+        <role>RAC_Rep_Report_Hiroyasu_Kitakami</role>
+        <role>TS_Rep_Report_Abel_D_Sa</role>
+        <role>TS_Rep_Report_Andre</role>
+        <roleAndSubordinatesInternal>CS_Installation_and_Licensing_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Manager_Susan_Gagnon</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Rep_Report_Jason_Lee</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MW_Customer_Support_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

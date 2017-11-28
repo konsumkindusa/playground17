@@ -1,0 +1,19 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},    
+
+wir haben Ihre Anfrage Case #{!Case.CaseNumber} mit dem Titel "{!Case.Subject}" erhalten und beschäftigen uns gerade damit.    
+
+Können Sie uns bitte kurzfristig eine Email mit Ihrer Lizenznummer schicken? Bitte senden Sie uns die komplette Ausgabe nach Eingabe des folgenden Befehls
+Für MATLAB R2012b und neuere Versionen:
+>> ver -support
+Für MATLAB R2012a und ältere Versionen:
+>> ver
+Diese Kommandoausgabe gibt auch an welche MATLAB Version Sie auf welchem Betriebssystem nutzen. 
+
+Ihre Lizenz sollte einen Wartungsvertrag haben, da die Nutzung des Technischen Supports einer der Vorteile unseres "Software Maintenance Services" ist.     
+
+Bitte lassen Sie die REFERENCE ID bei weiterer Kommunikation zu dieser Anfrage intakt. Sie ermöglicht unserem System die automatische Zuweisung Ihrer Antwort zur korrekten Anfrage.    
+
+Mit freundlichen Grüßen    
+{!User.Email_Template_Signature__c}  
+
+{!User.Disclosure__c}

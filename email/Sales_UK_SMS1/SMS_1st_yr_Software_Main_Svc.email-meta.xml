@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>1st yr Rev 2 Software Main Svc – new ML update 2014b – October release</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SMS 1st yr Software Main Svc</name>
+    <style>none</style>
+    <subject>MathWorks - Follow Up on new MATLAB License</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

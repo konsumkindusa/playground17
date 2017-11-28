@@ -1,0 +1,41 @@
+The following customer has requested technical support or service via The MathWorks Web site.
+
+We are forwarding this request to the appropriate distributor for assistance. Please reply directly to the customer.
+
+We are also providing a copy of the request to the customer for their records. If the customer requires additional assistance, we ask that they contact the distributor directly.
+
+{!Contact.Name}
+{!Contact.Email}
+{!Contact.Country_Code__c}
+Salutation: {!Contact.Salutation}
+Department: {!Contact.Department}
+Title: {!Contact.Title}
+Is Student?: {!Contact.Student__c}
+Company Name: {!Contact.Account}
+Sector: {!Contact.Self_Defined_Sector__c}
+Phone: {!Contact.Phone}
+Address: {!Contact.MailingAddress}
+Country: {!Contact.MailingCountry}
+County: {!Contact.MailingState}
+State: {!Contact.MailingState}
+City: {!Contact.MailingCity}
+Zip: {!Contact.MailingPostalCode}
+Mail Stop: {!Contact.Mail_Stop__c}
+
+
+Title: {!Case.Subject}
+
+Release: {!Case.Release__c}
+
+Product: {!Case.Product_Lookup__c}
+
+Product Version: {!Case.Version__c}
+
+Platform: {!Case.Platform__c}
+
+Operating System: {!Case.OS__c}
+
+License: {!Case.License__c}
+
+Details:
+{!Case.Description}

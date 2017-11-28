@@ -1,0 +1,19 @@
+Dear {!Case.Contact},
+
+We received your web page edits, thank you. Your edits are currently under review. This process can take several weeks and I may be in touch with you with clarification questions.
+
+Web page image and company logo - If you have not submitted an image and logo with your edits, we strongly encourage you to do so as this can greatly enhance your page. Please submit color graphics in the HIGHEST resolution possible, since the Webpages support a ‘zoom’ to a full size product image when visitors click on the product image.  The Connections Team can create lower resolution images based on your high-res versions. 
+
+Image dimensions:
+Company Logo:   We will typically re-size these to about 200 pixels wide to fit the page template
+Product Graphic Small: We will typically re-size these to about 350 pixels wide to fit the page template. 
+Product Graphic Large:  We may re-size these to about 1000 pixels wide.
+
+If you would like The MathWorks to include a link to your Web site on your Connections Program Web page, please mention MATLAB or The MathWorks somewhere on your Web site and link it, or a Connections Program Partner Logo back to http://www.mathworks.com. Partner Logos may be obtained via our Connections Help Desk. If you have already done so, please send us the URL of the page where it's located. 
+
+If you have questions about the format or appropriate content for this Web page, please visit the Connections Help Desk Web site and review the instructions for updating your web page listed in the Marketing section. If you have misplaced the login information, please send a message to connections@mathworks.com to receive another copy. 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Case: {!Case.CaseNumber}

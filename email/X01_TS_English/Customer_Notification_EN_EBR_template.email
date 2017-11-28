@@ -1,0 +1,22 @@
+Dear {! BLANKVALUE(Contact.First_Name_Latin__c, BLANKVALUE(Contact.FirstName, "MW Customer"))}, 
+
+Please see below for more information about the issue you reported, that has been addressed in the product:  
+
+Our records indicate that on {!Case.Customer_Notification_Case_CreateDate__c}, you contacted technical support regarding {!Case.Product_Lookup__c} {!Case.Version__c} ({!IF(Case.Release__c = "No Release", "", Case.Release__c )}). The topic of the issue was: 
+"{!Case.Customer_Notification_Answer_T__c}" 
+
+You can find out more information about this issue here: 
+http://www.mathworks.com/support/bugreports/{!Case.Customer_Notification_Geck_ID__c}?ref=ts_{!Case.Customer_Notificaiton_Release__c} 
+
+For more information about {!Case.Customer_Notificaiton_Release__c}, you may go here: 
+http://www.mathworks.com/products/new_products/latest_features.html?ref=ts_{!Case.Customer_Notificaiton_Release__c} 
+
+If you have additional questions contact technical support at: 
+http://www.mathworks.com/support/contact_us/index.html?ref=ts_{!Case.Customer_Notificaiton_Release__c} 
+
+and for reference your earlier service request ID: {!Case.CaseNumber} 
+
+Technical Support 
+Mathworks 
+
+{!Case.Email_Ref_Id__c}

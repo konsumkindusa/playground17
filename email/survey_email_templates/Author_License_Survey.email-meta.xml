@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sent when sending the license survey to authors</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Author License Survey</name>
+    <style>freeForm</style>
+    <subject>Response Required: MathWorks Book Program License</subject>
+    <textOnly>Dear {!Get_Feedback__c.Contact__c},
+
+In support of your book project the MathWorks Book Program provided you with the following complimentary license to use MathWorks products.
+
+License {!Get_Feedback__c.Author_s_License__c}
+
+Periodically, the MathWorks Book Program will check in with members to see if they still need their Book Program license to support a new or existing book project. Please let us know if you still need your license so we can continue our support of your project by responding to a set of questions at the link below:
+
+
+Mathworks Book Program License Survey
+
+If we do complete the questions within 2 weeks the license will become inactive and you will no longer receive software updates or technical support for this specific license. This will not affect any other active personal or university/company licenses you may have.
+
+We are always interested in learning about new editions or translations of your book or new book projects featuring MATLAB or Simulink materials. Please keep us updated on new projects atbookprogram@mathworks.com.
+
+Thank you for your efforts writing about MATLAB and please feel free to contact us with any questions.
+
+Kind regards,
+
+MathWorks Book Program Team
+
+bookprogram@mathworks.com
+www.mathworks.com/support/books/members</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

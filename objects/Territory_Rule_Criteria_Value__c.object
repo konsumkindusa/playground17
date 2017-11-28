@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>TerritoryRuleCriteriaValuesRedirectPage</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>TerritoryRuleCriteriaValuesRedirectPage</content>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object stores the value for territory Rule Criteria</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>Account_City_FieldSet</fullName>
+        <description>This field set is used in the Apex class as well as in Visual force page of Territory Rule Criteria Value</description>
+        <displayedFields>
+            <field>City__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>Account City FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Account_CountryCode_FieldSet</fullName>
+        <description>Account Country Code field Set</description>
+        <label>Account CountryCode FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Account_Name_FieldSet</fullName>
+        <description>Field set for Account name record type of Criteria Object Value</description>
+        <displayedFields>
+            <field>Case_Sensitive__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Location__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Account Name FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Account_Postal_Code_FieldSet</fullName>
+        <description>This field set is used in the Apex class as well as in Visual force page of Territory Rule Criteria Value</description>
+        <displayedFields>
+            <field>Postal_Code_Low__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Postal_Code_High__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Account Postal Code FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Account_Sector_FieldSet</fullName>
+        <description>This field set is used in the Apex class as well as in Visual force page of Territory Rule Criteria Value</description>
+        <displayedFields>
+            <field>Sector__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>Account Sector FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Account_StateCode_FieldSet</fullName>
+        <description>Field set for Account StateCode</description>
+        <label>Account StateCode FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Edit_TRCVViewFieldSet</fullName>
+        <description>Use to show territory assignment rule, Territory Field when Territory Rule Criteria Value Record is edited.</description>
+        <displayedFields>
+            <field>Territory_Rule_Criteria__r.Territory__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Territory_Rule_Criteria__r.Territory_Assignment_Rule__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Territory_Rule_Criteria__r.Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Territory_Rule_Criteria__r.RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Edit_TRCVViewFieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TS_Account_City_FieldSet</fullName>
+        <description>TerritorySummaryPage, TerritoryRuleCriteriaValueComponentCC</description>
+        <displayedFields>
+            <field>City__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TS_Account City FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TS_Account_CountryCode_FieldSet</fullName>
+        <description>TerritorySummaryPage, TerritoryRuleCriteriaValueComponentCC</description>
+        <displayedFields>
+            <field>Country_LongName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Country_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TS_Account CountryCode FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TS_Account_Name_FieldSet</fullName>
+        <description>TerritorySummaryPage, TerritoryRuleCriteriaValueComponentCC</description>
+        <displayedFields>
+            <field>Account_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Case_Sensitive__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Location__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Country_LongName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Country_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>State_LongName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>State_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TS_Account Name FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TS_Account_Postal_Code_FieldSet</fullName>
+        <description>TerritorySummaryPage, TerritoryRuleCriteriaValueComponentCC</description>
+        <displayedFields>
+            <field>Postal_Code_Low__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Postal_Code_High__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TS_Account Postal Code FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TS_Account_Sector_FieldSet</fullName>
+        <description>TerritorySummaryPage, TerritoryRuleCriteriaValueComponentCC</description>
+        <displayedFields>
+            <field>Sector__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TS_	Account_Sector_FieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TS_Account_StateCode_FieldSet</fullName>
+        <description>TerritorySummaryPage, TerritoryRuleCriteriaValueComponentCC</description>
+        <displayedFields>
+            <field>Country_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Country_LongName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>State_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>State_LongName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Score__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TS_Account_StateCode_FieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Sensitive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Case Sensitive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <description>Country code to save country code from Custom meta data Type.</description>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_LongName__c</fullName>
+        <externalId>false</externalId>
+        <label>Country LongName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Migration_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Migration ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_High__c</fullName>
+        <description>Store the high postal code of a area.</description>
+        <externalId>false</externalId>
+        <label>Postal Code High</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_Low__c</fullName>
+        <description>Store the lower postal code of the country.</description>
+        <externalId>false</externalId>
+        <label>Postal Code Low</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Score__c</fullName>
+        <description>Store the score for the criteria value.</description>
+        <externalId>false</externalId>
+        <label>Additional Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sector__c</fullName>
+        <description>This is a picklist field contains a value for territory Rule Criteria</description>
+        <externalId>false</externalId>
+        <label>Sector</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial</fullName>
+                    <default>false</default>
+                    <label>Commercial</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>State_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>State Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_LongName__c</fullName>
+        <externalId>false</externalId>
+        <label>State LongName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Rule_Criteria__c</fullName>
+        <description>This field used for Master detail relationship with Territory Rule Criteria</description>
+        <externalId>false</externalId>
+        <label>Territory Rule Criteria</label>
+        <referenceTo>Territory_Rule_Criteria__c</referenceTo>
+        <relationshipName>Territory_Rule_Criteria_Values</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Unique_Territory_Value__c</fullName>
+        <description>Prevent duplicate rule entries for territory, rule, criteria and value
+should be a unique value but we are not enforcing uniqueness as of 7/2016 because we know we have a lot of data to clean up before we can enforce uniqueness</description>
+        <externalId>false</externalId>
+        <label>Unique Territory Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Criteria Value</label>
+    <nameField>
+        <displayFormat>TRCV-{0000}</displayFormat>
+        <label>Territory Rule Criteria Value Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Criteria Values</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Score_Value_Should_be_in_Range_Of_1to200</fullName>
+        <active>true</active>
+        <description>Prevent Score value to get exceed by 200.</description>
+        <errorConditionFormula>IF(NOT(ISBLANK(Score__c)),NOT(AND(Score__c &gt;= 1, Score__c &lt;= 200)),False)</errorConditionFormula>
+        <errorDisplayField>Score__c</errorDisplayField>
+        <errorMessage>Score value should be in between 1-200.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

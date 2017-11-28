@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Recently you received a Customer Service survey in regards to your interaction with MathWorks. Within the survey, you noted that you still considered your service request, {!Case.Subject}, {!Case.CaseNumber} open. 
+
+I want to confirm that your request to/for <XXXXRequest detailsXXXX>, was resolved on <XXXXDateXXXX>.
+
+Is there another request for which you are awaiting a response?  If so, please let me know and I will follow up on your behalf.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,14 @@
+Beste {!Contact.FirstName} {!Contact.LastName},
+
+Deze e-mail is een reactie op uw vraag #{!Case.CaseNumber} betreffende '{!Case.Subject}'.
+
+Volgens onze gegevens is uw licentie #{!Case.License__c} niet langer in onderhoud.
+
+Technische telefoon en e-mail support is een van de voordelen van onze Software Maintenance Service (SMS). Om u verder van dienst te kunnen zijn met uw technische vraag, dient u daarom een geldige licentie inclusief onderhoud te hebben.
+
+Neem alstublieft contact op met ons Sales team voor het vernieuwen van uw licentie:
+http://www.mathworks.com/company/worldwide/
+
+Met vriendelijke groet,
+{!User.Email_Template_Signature__c}
+{!User.Disclosure__c}

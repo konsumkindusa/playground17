@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_82474708</developerName>
+        <masterLabel>Created by Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity.Opp_Creator_Role__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Inside Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inside Sales Rep non primary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>National Account Sales Specialist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product Overlay Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Development Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Maintenance Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Rep Primary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Specialist</sourceValue>
+            </sourceValues>
+            <value>Sales User</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Opportunity_Amount_User_Currency__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Role of User who Created the Opportunity by Territory in the Current Quarter</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_82474708</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Territory_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opportunity Created By Role</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURRENTQ</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,22 @@
+Hello,
+
+Below is a new Connections Program {!Partner_Agreement__c.Class__c} application from {!Partner_Agreement__c.Account__c}.
+
+Please review this application within the next week and Reply-All with your responses to the following questions to help us evaluate whether they should be accepted into the Connections Program.
+
+If you have concerns, then please raise them promptly as no response may be interpreted as approval of the application.
+
+1) Do you feel that this product/service is complementary to our offerings?  If no, please Reply-All and provide a few sentences describing your concerns. If you need additional information, tell us what to request from the applicant. - If you think a live discussion would better facilitate a decision, please call a meeting.
+
+2) Are you comfortable with this product/service and company being in the Connections Program? - If not, please specify your concerns.
+
+3) Should this application be sent to anyone else for review? Feel free to name a proxy as appropriate. Please let me know if you have any questions. Thank you for your help with the review process.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+ 
+Agreement: {!Partner_Agreement__c.Name}
+
+{!Partner_Agreement__c.Thread_Id__c}
+
+COPY AND PASTE INTO OUTLOOK AND SEND USING RTF

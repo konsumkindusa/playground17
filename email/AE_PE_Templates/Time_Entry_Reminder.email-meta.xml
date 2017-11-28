@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Time Entry Reminder</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Time Entry Reminder</name>
+    <style>none</style>
+    <subject>Please submit your time entries for Project {!MW_Project__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

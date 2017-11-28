@@ -1,0 +1,27 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+Thank you for letting us know about your plans.  
+
+Please complete a book program application about your new project at:  www.mathworks.com/support/books/program.html 
+This will enable us to evaluate your project and continue our support of your license.
+
+Regards, 
+
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}
+
+From: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Name__c} [{!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Address__c}] 
+Sent: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Message_Date__c} 
+To: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__To_Address__c} 
+Subject: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Subject__c} 
+ 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

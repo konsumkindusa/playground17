@@ -1,0 +1,18 @@
+Estimado Sr./Sra. {!Contact.LastName}:
+
+Hemos recibido su cuestión sobre "{!Case.Subject}" y estamos trabajando en ella.
+
+Por favor, envíenos el contenido completo de la información mostrada después de introducir el comando,
+para las versiones de MATLAB R2012b y superiores:
+>> ver -support
+para las versiones de MATLAB R2012a e inferiores:
+>> ver
+en la línea de comandos de MATLAB. Esto nos proporciona información acerca de tu licencia, la versión de MATLAB y el sistema operativo.
+
+Su número de licencia tiene que estar bajo mantenimiento ya que el acceso a soporte técnico es uno de los beneficios de haber contratado nuestro servicio de mantenimiento del software o Software Maintenance Service (SMS) en inglés. 
+
+Por favor conserve el número de referencia (Reference ID)  indicado al final de este email en cualquier correspondencia relacionada con esta cuestión. Esto permitirá a nuestros sistemas asignar automáticamente su respuesta con la petición de servicio adecuada.
+
+Atentamente, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

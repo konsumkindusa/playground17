@@ -1,0 +1,13 @@
+Gentile  {!Contact.Salutation} {!Contact.LastName},    
+
+Le scrivo in merito alla sua richiesta  #{!Case.CaseNumber} riguardante '{!Case.Subject}'.    
+
+I dati in nostro possesso indicano che la licenza #{!Case.License__c}, non è più in Maintenance.    
+
+L’accesso telefonico e via e-mail al nostro  Supporto Tecnico è uno dei servizi riservati agli iscritti al Software Maintenance Service (SMS). Di conseguenza, per poter contattare il nostro staff di Supporto Tecnico le è richiesto di rinnovare l’iscrizione al Software Maintenance Service o fornirci una licenza attualmente in Maintenance.    
+
+Per il rinnovo della sua iscrizione al programma SMS la invito a contattare il suo commerciale di riferimento.    
+
+Cordiali saluti,    
+{!User.Email_Template_Signature__c}   
+{!User.Disclosure__c}

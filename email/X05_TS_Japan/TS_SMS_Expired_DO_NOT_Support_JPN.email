@@ -1,0 +1,22 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName} 様 
+
+いつもお世話になっております。MathWorks の {!User.Email_Template_Signature__c} と申します。 
+お問い合わせ頂いておりましたサービスリクエスト（“{!Case.Subject}”, Case #{!Case.CaseNumber}) に関して、ご連絡いたします。 
+
+弊社データベースにて確認しましたところ、今回ご連絡頂きましたライセンス番号 #{!Case.License__c}  は、ソフトウェア保守サービスが満了しているようです。
+
+電話や電子メールによるテクニカルサポートは、ソフトウェア保守サービス期間中にご利用いただけるサービスの一環となりますので、是非、この機会に更新をご検討いただきますよう、お願い致します。
+
+本ライセンスのソフトウェア保守サービスを更新するための手続きについて、追って、担当者より別途連絡させていただきます。ご不明な点がございましたら、以下のフォームより弊社営業担当までご連絡ください。
+https://jp.mathworks.com/company/aboutus/contact_us/contact_sales.html 
+
+以上、宜しくお願い致します。 
+
+MathWorks テクニカルサポート
+{!User.Email_Template_Signature__c} 
+
+テクニカルサポートメインページ: 
+http://jp.mathworks.com/support/ 
+File Exchange and MATLAB Answers: 
+http://www.mathworks.com/matlabcentral/

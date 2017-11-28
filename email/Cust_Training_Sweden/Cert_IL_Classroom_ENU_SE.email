@@ -1,0 +1,17 @@
+<messaging:emailTemplate subject="MathWorks Training Course Certificate" recipientType="Contact" relatedToType="Enrollment__c">
+<messaging:htmlEmailBody > 
+<p>Dear {!relatedTo.Enrollee_Name__r.name},</p>
+
+<p>Thank you for your recent participation in our training event.  Attached is a certificate confirming your participation.<br/>
+Please consider us for your future training needs. To learn more about the courses we offer visit our website at {!relatedTo.Class__r.Sponsor_Office__r.Training_URL__c}.<br/>
+If we may be of further assistance, please contact us at {!relatedTo.Class__r.Sponsor_Office__r.Email__c}.</p><br/>
+
+<p>Thank you,<br/>
+MathWorks Training Services Team</p>
+
+</messaging:htmlEmailBody>
+
+    <messaging:attachment renderAs="pdf" filename="Training_Certificate"> <!-- Use the renderAs attribute here.-->    
+   <c:EnrollmentCompletionCert enrollmentId="{!relatedTo.Id}"></c:EnrollmentCompletionCert>
+  </messaging:attachment>
+</messaging:emailTemplate>

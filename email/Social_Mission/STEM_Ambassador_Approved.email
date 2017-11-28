@@ -1,0 +1,16 @@
+Hello {!Social_Action__c.Contact__c},
+
+Thank you for your interest in being a MathWorks STEM Ambassador. I am happy to inform you that your request to become a STEM Ambassador has been approved! You have been accepted on the STEM Ambassadors Yammer Page and should now have access. On the STEM Ambassadors SharePoint Page you will find some additional resources that will provide with you more information on what being a STEM Ambassador consists of.  Also, I would suggest viewing the STEM Ambassador Guidelines which will provide you with tips for success and rules of engagement. Please feel free to reach out if you have any questions.
+
+STEM Ambassadors SharePoint Page:
+http://sharepoint.mathworks.com/marketing/marcomm/teams/corpcomm/socialmission/STEM%20Ambassadors/default.aspx
+
+STEM Ambassador Guidelines:
+http://sharepoint.mathworks.com/marketing/marcomm/teams/corpcomm/socialmission/STEM%20Ambassadors/STEM%20Ambassador%20Documents/STEM%20Ambassador%20Guidelines.pptx
+
+Thank You,
+{!Social_Action__c.OwnerFullName}
+Social Mission
+socialmission@mathworks.com
+
+{!Social_Action__c.Thread_ID__c}

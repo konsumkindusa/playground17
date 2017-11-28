@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Latin America,NA Comm-Aero,NA Comm-Auto,NA Comm-CES-Geo Northwest,NA Comm-Fin,NA Comm-Geo East,NA Comm-Gov-Geo Beltway,NA Comm-IAM-EP-Geo Southwest,NA EDU</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Australia,MathWorks China,MathWorks India,MathWorks Japan,MathWorks Korea</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks France,MathWorks Germany,MathWorks Italy,MathWorks Netherlands,MathWorks Nordic,MathWorks Spain,MathWorks Switzerland,MathWorks UK,EMEA Other</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>EMEA Other</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Latin America</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Australia</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks China</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks France</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Germany</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks India</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Italy</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Japan</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Korea</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Netherlands</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Nordic</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Spain</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks Switzerland</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>MathWorks UK</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-Aero</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-Auto</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-CES-Geo Northwest</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-Fin</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-Geo East</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-Gov-Geo Beltway</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA Comm-IAM-EP-Geo Southwest</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA EDU</values>
+        </dashboardFilterOptions>
+        <name>Office or Region</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>UK-C-N-AERO 01,UK-C-M-FIN 01,UK-C-G-CROSS 02</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-C-N-AUTO 06,JP-C-N-AUTO 05,JP-C-M-AUTO 08,JP-C-M-AUTO 03</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>IN-E-N-EDU Overlay 9,IN-E-N-EDU 07,IN-E-N-EDU Overlay 6,IN-E-N-EDU 04,IN-E-N-EDU Overlay 2,IN-E-N-EDU 01,IN-E-G-EDU Overlay 8,IN-E-G-EDU Overlay 5,IN-E-G-EDU Overlay 3,IN-E-G-EDU Overlay 10</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-N-FIN 05,NA-C-N-FIN 04,NA-C-N-FIN 01,NA-C-B-FIN 07,NA-C-B-FIN 06</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>CN-E-G-EDU 02,CN-E-G-EDU 01,CN-C-M-CES 01,CN-C-G-AERO Overlay 2,CN-C-G-AERO Overlay 1,CN-C-B-CROSS 04,CN-C-B-CROSS 02,CN-C-B-CROSS 01,CN-C-B-AERO Overlay 3</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>UK-C-N-CROSS 09,UK-C-N-AUTO 01,UK-C-M-AUTO 02,UK-C-M-AERO 02,UK-C-G-FIN 05,UK-C-G-CROSS 08,UK-C-G-CROSS 07,UK-C-G-CROSS 03,UK-C-B-CROSS 06</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>DE-C-N-CROSS 11,DE-C-G-CROSS 10,DE-C-G-CROSS 09,DE-C-G-CROSS 08,DE-C-G-CROSS 07,DE-C-G-CROSS 04,DE-C-G-CROSS 03,DE-C-G-CROSS 02,DE-C-G-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-N-MED 01,NA-C-N-IAM 02,NA-C-N-IAM 01,NA-C-N-EP 04,NA-C-N-EP 03,NA-C-G-CROSS 29,NA-C-G-CROSS 21,NA-C-G-CROSS 13,NA-C-G-CROSS 06</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-M-GOV 01-E,NA-C-M-GOV 01-D,NA-C-M-GOV 01-C,NA-C-M-GOV 01-B,NA-C-M-GOV 01-A</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NRD-C-N-CES 01,NRD-C-N-AUTO 01,NRD-C-G-CROSS 06,NRD-C-G-CROSS 05,NRD-C-G-CROSS 04,NRD-C-G-CROSS 01,NRD-C-B-FIN 01,NRD-C-B-CROSS 07,NRD-C-B-CROSS 03</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>FR-C-N-AUTO 01,FR-C-N-AERO 01,FR-C-M-AERO 02,FR-C-G-CROSS 06,FR-C-G-CROSS 05,FR-C-G-CROSS 02,FR-C-G-CROSS 01,FR-C-B-FIN 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>IE-C-G-CROSS 01,IE-E-G-EDU 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>DE-E-G-EDU 04,DE-E-G-EDU 02,DE-E-G-EDU 01,DE-E-B-EDU 03</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>CH-C-G-CROSS 04,CH-C-G-CROSS 03,CH-C-G-CROSS 02,CH-C-G-CROSS 01,CH-C-N-FIN FR,CH-C-N-FIN DE</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>KR-C-N-IAM 01,KR-C-G-CROSS 03,KR-C-G-CROSS 02,KR-C-G-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-Sciences,NA-E-N-EDU 13,NA-E-N-EDU 11,NA-E-N-EDU 09,NA-E-N-EDU 08,NA-E-N-EDU 07,NA-E-N-EDU 04,NA-E-N-EDU 02</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-M-AERO 14,NA-C-M-AERO 13,NA-C-M-AERO 12,NA-C-M-AERO 04</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>KR-E-G-EDU 02,KR-E-G-EDU 01,KR-C-N-AERO 01,KR-C-M-CES 01,KR-C-M-AUTO 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-N-AERO 06,NA-C-M-AERO 20,NA-C-M-AERO 15,NA-C-M-AERO 05</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>contains</operator>
+            <values>EDU</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>notContain</operator>
+            <values>EDU</values>
+        </dashboardFilterOptions>
+        <name>Territory Manager (List 1)</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>DE-C-N-AUTO 06,DE-C-N-AUTO 05,DE-C-M-AUTO 07,DE-C-M-AUTO 04,DE-C-M-AUTO 03,DE-C-M-AUTO 02,DE-C-M-AUTO 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>AU-E-G-EDU 01,AU-C-N-CROSS 02,AU-C-N-AERO 03,AU-C-G-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-N-AUTO 07,NA-C-M-IAM 03,NA-C-M-AUTO 05,NA-C-M-AUTO 02,NA-C-M-AUTO 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-C-N-IAM 09,JP-C-N-IAM 01,JP-C-N-CROSS 12,JP-C-N-CROSS 11,JP-C-N-CES 08,JP-C-N-CES 02,JP-C-M-CES 03,JP-C-M-CES 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-E-G-EDU 12,NA-E-G-EDU 10,NA-E-G-EDU 06,NA-E-G-EDU 05,NA-E-G-EDU 03,NA-E-G-EDU 01,LA-E-G-EDU 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-C-N-AUTO 04,JP-C-M-AUTO 10,JP-C-M-AUTO 07,JP-C-B-CROSS 03</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>IN-C-N-CROSS 05,IN-C-G-GOV Overlay 2,IN-C-G-GOV Overlay 1,IN-C-G-CROSS 04,IN-C-G-CROSS 02,IN-C-G-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-G-CROSS 28,NA-C-G-CROSS 20,NA-C-G-CROSS 18,NA-C-G-CROSS 09,NA-C-G-CROSS 07,NA-C-G-CROSS 04,NA-C-G-CROSS 02,NA-C-G-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>ES-E-G-EDU 01,ES-C-G-CROSS 02,ES-C-G-CROSS 01,ES-C-B-CROSS 03</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-C-G-CROSS 05</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-C-N-AUTO 09,JP-C-M-AUTO 02,JP-C-M-AUTO 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-C-G-CROSS 08,JP-C-G-CROSS 06,JP-C-G-CROSS 01,JP-C-B-CROSS 07</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>IN-C-N-AUTO 03,IN-C-N-AUTO 02,IN-C-M-AUTO 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-N-GOV 07,NA-C-N-GOV 06,NA-C-M-GOV 05,NA-C-M-GOV 04,NA-C-G-CROSS 32,NA-C-G-CROSS 30</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NRD-E-N-EDU 01,NRD-E-G-EDU 02,IT-E-G-EDU 01,FR-E-G-EDU 02,FR-E-G-EDU 01,BX-E-N-EDU 02</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>BX-C-N-FIN 01,BX-C-M-IAM 01,BX-C-G-CROSS 04,BX-C-G-CROSS 02,BX-C-G-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>DE-C-N-IAM 03,DE-C-N-IAM 01,DE-C-N-FIN 01,DE-C-N-CES 01,DE-C-M-IAM 02,DE-C-N-AERO 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-N-CES 06,NA-C-N-CES 03,NA-C-M-CES 07,NA-C-M-CES 05,NA-C-G-CROSS 16,NA-C-G-CROSS 12,NA-C-G-CES 08</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>UK-E-G-EDU 03,UK-E-B-EDU 02,UK-E-B-EDU 01,BX-E-G-EDU 01,CH-E-G-EDU 01,IE-E-G-EDU 01,EMEA-DIRECT-EDU 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LA-MX Overlay 1,LA-C-G-CROSS 27,LA-C-G-CROSS 25</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>JP-E-N-EDU 03,JP-E-N-EDU 01,JP-E-B-EDU 05,JP-E-B-EDU 04,JP-E-B-EDU 02</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>CN-C-N-AUTO 03,CN-C-N-AUTO 02,CN-C-N-AUTO 01,CN-C-G-CROSS 05,CN-C-G-CROSS 03,CN-C-B-CROSS 06</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>EMEA-DIRECT-CROSS 01</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>contains</operator>
+            <values>EDU</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>notContain</operator>
+            <values>EDU</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NA-C-G-AUTO 06,NA-C-G-CROSS 03,NA-C-G-CROSS 10,NA-C-M-AUTO 08,NA-C-N-AUTO 03</values>
+        </dashboardFilterOptions>
+        <name>Territory Manager (List 2)</name>
+    </dashboardFilters>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>ColumnStacked</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>All Opportunities with a Close Date in the Current Month. (Includes All Revenue Classes)</footer>
+            <header>Active Funnel</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/Current_Month_Active_Funnel1</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current Month Funnel by Revenue Class</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>true</drillToDetailEnabled>
+            <footer>Excludes SMS</footer>
+            <header>Performance</header>
+            <indicatorBreakpoint1>24999.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>99999.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C2C254</indicatorLowColor>
+            <indicatorMiddleColor>#8BC254</indicatorMiddleColor>
+            <maxValuesDisplayed>10</maxValuesDisplayed>
+            <report>MW_Sales_Reports/Top_10_Opps_Territory</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Top 10 Open Opportunities</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Active opportunities with a close date in the current year</footer>
+            <header>Active Perpetual Funnel Stratification</header>
+            <legendPosition>Bottom</legendPosition>
+            <maxValuesDisplayed>10</maxValuesDisplayed>
+            <report>MW_Sales_Reports/WIP_Active_Funnel_by_Rev_Class3</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Closed opportunities in the current quarter</footer>
+            <header>Closed Opportunity Analysis</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/Closed_Opportunity_Analysis_Manager</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <useReportChart>true</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>All Opportunities with a Close Date in the Current Quarter. (Includes All Revenue Classes)</footer>
+            <header>Active Funnel</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/Current_Quarter_Active_Funnel1</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current Quarter Funnel by Revenue Class</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/Perp_Opp_Creation</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Perp &amp; Term New Funnel Created By Month</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardTableColumn>
+                <column>FULL_NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <calculatePercent>false</calculatePercent>
+                <column>Opportunity.Opportunity_Amount_User_Currency__c</column>
+                <decimalPlaces>0</decimalPlaces>
+                <showTotal>false</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <calculatePercent>false</calculatePercent>
+                <column>RowCount</column>
+                <decimalPlaces>0</decimalPlaces>
+                <showTotal>false</showTotal>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>true</drillToDetailEnabled>
+            <footer>Top 5 Salespeople - Current Month&apos;s Won Opps</footer>
+            <header>Performance</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <maxValuesDisplayed>5</maxValuesDisplayed>
+            <report>MW_Sales_Reports/Opportunity_Leader_Board</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <title>Closed Deals Leader Board</title>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>All Opportunities with a Close Date in the Current Year. (Includes All Revenue Classes)</footer>
+            <header>Active Funnel</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/Current_Year_Active_Funnel</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Current Year Funnel by Revenue Class</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>All E-Opportunities</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/E_Aging</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>E-Aging</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Sales_Group__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Account.Territory_Name__c</column>
+            </dashboardFilterColumns>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>true</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Primary Purpose for C, B, and A Stage opportunities</footer>
+            <header>Funnel Breakdown</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>MW_Sales_Reports/Primary_Purpose</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Primary Purpose</title>
+            <useReportChart>true</useReportChart>
+        </components>
+    </rightSection>
+    <runningUser>sathan@mathworks.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Sales Manager Territory Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

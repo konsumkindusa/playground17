@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>cp_error</authorizationRequiredPage>
+    <bandwidthExceededPage>cp_error</bandwidthExceededPage>
+    <changePasswordPage>ChangePassword</changePasswordPage>
+    <clickjackProtectionLevel>AllowAllFraming</clickjackProtectionLevel>
+    <customWebAddresses>
+        <certificate>Service_Request</certificate>
+        <domainName>servicerequest.mathworks.com</domainName>
+        <primary>false</primary>
+    </customWebAddresses>
+    <favoriteIcon>MathworksIcon</favoriteIcon>
+    <fileNotFoundPage>cp_error</fileNotFoundPage>
+    <genericErrorPage>cp_error</genericErrorPage>
+    <inMaintenancePage>cp_error</inMaintenancePage>
+    <inactiveIndexPage>CPOutage</inactiveIndexPage>
+    <indexPage>cp_case_home</indexPage>
+    <masterLabel>support</masterLabel>
+    <portal>Customer Portal</portal>
+    <requireHttps>false</requireHttps>
+    <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
+    <siteAdmin>jmonga@mathworks.com</siteAdmin>
+    <siteTemplate>SiteTemplate</siteTemplate>
+    <siteType>Visualforce</siteType>
+    <subdomain>mathworksservicerequest</subdomain>
+</CustomSite>

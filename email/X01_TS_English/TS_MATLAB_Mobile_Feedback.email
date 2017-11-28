@@ -1,0 +1,32 @@
+Dear {!Contact.FirstName},  
+ 
+This is in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'.  
+ 
+In order to better assist you, please send us the following information:  
+ 
+1) The license number associated to your MathWorks account, if any. If you are connected to a computer using the MATLAB Connector, this can be found by entering the following command: 
+ 
+>> ver -support 
+ 
+2) The version of the MATLAB Mobile application you are using. On an iOS device, this can be found by scrolling to the bottom of the "Settings" page. On an Android device, this can be found at the top of the "Help" page. 
+ 
+3) The device being used, including the operating system version. 
+ 
+4) A detailed description of the issue or request. 
+ 
+5) The exact error messages you are receiving, if any. 
+ 
+6) The precise steps needed to reproduce the issue, including any relevant files. 
+ 
+We look forward to getting the above information from you. 
+ 
+Use the following link to view and update your Case online: 
+https://www.mathworks.com/support/servicerequests/index.html 
+ 
+ 
+Sincerely,  
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c} 
+
+Please preserve the Reference ID in any further correspondence on this query. This will allow our systems to automatically assign your reply to the appropriate Case.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reply to partner asking for application status</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>2a - Application Status to Partner - Internal Review</name>
+    <style>none</style>
+    <subject>Connections Program Application Status</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

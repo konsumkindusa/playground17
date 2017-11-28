@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Generic Email Request</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - MWA - Generic Email Request</name>
+    <style>none</style>
+    <subject>Generic Email Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

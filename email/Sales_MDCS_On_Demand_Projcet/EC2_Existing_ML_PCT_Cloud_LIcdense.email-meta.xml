@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EC2 Customer already has an existing ML Parallel Cloud License</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EC2 Existing ML PCT Cloud License</name>
+    <style>none</style>
+    <subject>MathWorks Follow Up - Running MATLAB Distributed Computing Server on Amazon EC2</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email that is sent to teams in CHINA to let them know that they are not eligible to receive software</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>*SC - Notification of Export Compliance Hit - CHINA</name>
+    <style>none</style>
+    <subject>MathWorks Student Competition Support Notification</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

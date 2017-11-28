@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$Topic__c</field>
+    </columns>
+    <columns>
+        <field>Case$Sub_Topic__c</field>
+    </columns>
+    <columns>
+        <field>Case$Release__c</field>
+    </columns>
+    <columns>
+        <field>Case$OS__c</field>
+    </columns>
+    <columns>
+        <field>Case$Description</field>
+    </columns>
+    <description>Used for Binning</description>
+    <filter>
+        <booleanFilter>(1) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Case$Category__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>MEX and External Language Interfaces</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>AU - Technical Support,Natick - Technical Support</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>External Interface Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Activity_and_Emails__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <endDate>2013-12-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-11-01</startDate>
+    </timeFrameFilter>
+</Report>

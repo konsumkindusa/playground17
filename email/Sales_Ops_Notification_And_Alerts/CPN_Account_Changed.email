@@ -1,0 +1,2 @@
+The new name is {!Account.Name}
+{!Account.Link_to_Account__c}{!Account.Id}

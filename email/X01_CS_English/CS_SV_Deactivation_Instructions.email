@@ -1,0 +1,55 @@
+Dear {!Case.Contact},
+
+Thank you for contacting MathWorks.  Deactivating an installation renders MathWorks software unusable on a particular computer.  Before deactivating, you must uninstall the program from your machine.  Below you will find instructions on how to uninstall and how to deactivate your software.
+
+To Uninstall on Windows:
+1. Shut down the MATLAB Software
+
+2. Start the uninstaller, using any of the following methods.
+- On systems running Windows 7, click the Start menu, and select Control Panel.  In the Control Panel, select Programs and Features.  From the list of products displayed, click MATLAB.
+-On systems running Windows XP, click the Start menu, select Settings>Control Panel>Add or Remove Programs.  Select MATLAB from the list of products and click Change/Remove.
+-Navigate to the matlabroot/uninstall/bin$ARCH folder, where matlabroot is your MATLAB installation folder and $ARCH is a platform-specific subfolder, such as win32.  Double-click the uninstaller executable, uninstall.exe.
+
+3. In the Uninstall Products dialog box, select the products you want to remove and click Uninstall.
+            -If you select MATLAB, you automatically remove all other MathWorks products.
+
+4. (Optional) Choose whether to delete downloaded archive files.  If your MATLAB installation folder contains the archive files for downloaded products, the uninstaller displays a message asking if you want to delete these archive files.  The install stores these archive files in the matlabroot/archives folder of your installation.  To remove these files, click yes.
+
+5. To proceed with the removal, click the Uninstall button.  The uninstaller displays the status of the operation as it progresses and displays a dialog box when the operation is complete.  Click Finish to exit the uninstaller.  
+
+To Uninstall on Linux Systems:
+1. Exit the MATLAB program
+
+2. Stop the license manager.  To stop the license manager, use the lmdown utility in the matlabroot/etc folder.
+
+3. Enter this command at the Linux prompt:
+            rm –rf matlabroot
+            Where matlabroot represents the name of your top-level MATLAB    installation folder.
+
+To Uninstall on Macintosh Systems:
+
+1. Get the user name and password of the administrator account on the Macintosh systems.  Depending on where you installed MATLAB software, you might need administrator privileges to remove it.
+
+2. Exit MATLAB and stop the license manager before removing a MATLAB installation.   You can use the lmdown command to stop the license manager.
+
+3. Navigate to your MATLAB installation folder.  For example, the installation folder might be named MATLAB_R20011a.app in your Applications folder.
+
+4. Drag your MATLAB installation folder to the trash, and then select Empty Trash from the Finder menu.
+
+After uninstalling your software, you must begin the deactivation process:
+
+To Deactivate MATLAB:
+1. Log into your MathWorks Account
+2. Select “Manage License” for the license you wish to deactivate
+3. Under the activation you wish to deactivate click “deactivate”
+4. Confirm deactivation by clicking the Deactivate Button
+5. Click Done
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

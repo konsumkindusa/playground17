@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>to track benefits we receive and contributions we make for Social Misison</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Optional: capture additional details. E.g. tickets received on 5/6/2017, Sponsorship installment 1 of 2, LIC#</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional: capture additional details. E.g. tickets received on 5/6/2017, Sponsorship installment 1 of 2, LIC#</inlineHelpText>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contribution_Amount__c</fullName>
+        <description>Monetary award from MathWorks. This amount is what is reflected the Social Mission budget expense reports.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Monetary award from MathWorks. This amount is what is reflected the Social Mission budget expense reports.</inlineHelpText>
+        <label>Contribution Amount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Short description of the benefit OR contribution. E.g. Press Release, Tickets for staff members, Sponsorship payment, giveaways for event, software</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Short description of the benefit OR contribution. E.g. Press Release, Tickets for staff members, Sponsorship payment, giveaways for event, software</inlineHelpText>
+        <label>Description</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount_Percentage__c</fullName>
+        <description>the disount In knid percentage given to MathWorks</description>
+        <externalId>false</externalId>
+        <label>Discount Percentage</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>License_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>License Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Migration_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>for migration purposes</description>
+        <externalId>true</externalId>
+        <label>Migration ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Social_Action__c</fullName>
+        <externalId>false</externalId>
+        <label>Social Action</label>
+        <referenceTo>Social_Action__c</referenceTo>
+        <relationshipLabel>Social Benefits and Contributions</relationshipLabel>
+        <relationshipName>Social_Benefits</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Sub_Type__c</fullName>
+        <description>Selection dependent on &quot;Type&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Selection dependent on &quot;Type&quot;</inlineHelpText>
+        <label>Sub Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Tickets</fullName>
+                    <default>false</default>
+                    <label>Tickets</label>
+                </value>
+                <value>
+                    <fullName>Staff Discount</fullName>
+                    <default>false</default>
+                    <label>Staff Discount</label>
+                </value>
+                <value>
+                    <fullName>Venue Rental</fullName>
+                    <default>false</default>
+                    <label>Venue Rental</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>In-Kind</controllingFieldValue>
+                <valueName>Tickets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-Kind</controllingFieldValue>
+                <valueName>Staff Discount</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-Kind</controllingFieldValue>
+                <valueName>Venue Rental</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In-Kind</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tickets_Received__c</fullName>
+        <description>If benefit involved tickets (e.g. museums), track the number MathWorks receives. Otherwise, leave blank.  Useful for reporting on admission benefits across all partnerships.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If benefit involved tickets (e.g. museums), track the number MathWorks receives. Otherwise, leave blank.  Useful for reporting on admission benefits across all partnerships.</inlineHelpText>
+        <label>Tickets Received</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tickets_Redeemed__c</fullName>
+        <description>Optional: Used to calculate redemption rates. Track the number of passes MathWorks redeemed.  If redemption is not known, track the number of passes distributed. Useful for tracking utilization of benefits.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional: Used to calculate redemption rates. Track the number of passes MathWorks redeemed.  If redemption is not known, track the number of passes distributed. Useful for tracking utilization of benefits.</inlineHelpText>
+        <label>Tickets Redeemed</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Type of Benefit MathWorks receives as part of this relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Benefit OR Contribution MathWorks receives as part of this relationship</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monetary Award</fullName>
+                    <default>false</default>
+                    <label>Monetary Award</label>
+                </value>
+                <value>
+                    <fullName>In-Kind</fullName>
+                    <default>false</default>
+                    <label>In-Kind</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Software / License Number</fullName>
+                    <default>false</default>
+                    <label>Software / License Number</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Social Benefits and Contributions</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Contribution_Amount__c</columns>
+        <columns>Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SB - {0000000}</displayFormat>
+        <label>Benefit ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Social Benefits and Contributions</pluralLabel>
+    <recordTypes>
+        <fullName>Benefits</fullName>
+        <active>true</active>
+        <description>What MathWorks receives as part of this relationship.</description>
+        <label>Benefits</label>
+        <picklistValues>
+            <picklist>Sub_Type__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Venue Rental</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>In-Kind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Contributions</fullName>
+        <active>true</active>
+        <description>What MathWorks gives as part of this relationship.</description>
+        <label>Contributions</label>
+        <picklistValues>
+            <picklist>Sub_Type__c</picklist>
+            <values>
+                <fullName>Staff Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>In-Kind</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monetary Award</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software %2F License Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Require_contribution</fullName>
+        <active>true</active>
+        <description>require a contribution amount if the type is monetary</description>
+        <errorConditionFormula>AND (ISPICKVAL( Type__c, &quot;Monetary Award&quot;), ISBLANK(Contribution_Amount__c))</errorConditionFormula>
+        <errorDisplayField>Contribution_Amount__c</errorDisplayField>
+        <errorMessage>A contribution amount is required for benefits of type Monetary Award.  Please enter a contribution amount to save this record.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

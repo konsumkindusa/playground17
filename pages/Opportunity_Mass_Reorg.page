@@ -1,0 +1,17 @@
+<apex:page controller="OpportunityMassReOrgController" action="{!UpdateCustomSetting}" tabStyle="Opportunity">
+    <apex:form >
+        <apex:pageBlock title="Mass Opportunity ReOrg">
+            <apex:pageBlockSection columns="2" >
+               <apex:outputText value="{!$Setup.Opportunity_Mass_Reorg__c.Last_Run_Time__c}" label="Last Execution Date/Time"/>  
+               <apex:outputText value="{!$Setup.Opportunity_Mass_Reorg__c.Reorg_Job_Id__c}" label="Job Id"/> 
+               <apex:outputText value="{!$Setup.Opportunity_Mass_Reorg__c.Last_Running_User__c}" label="Last Executed By"/> 
+                <apex:outputText value="{!$Setup.Opportunity_Mass_Reorg__c.Job_Status__c}" label="Job Status"/> 
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="Start Opportunity Reorg" action="{!ReOrgOpty }" disabled="{!isDisabled}"/>
+       
+             <apex:commandButton value="Refresh" action="{!UpdateCustomSetting }"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

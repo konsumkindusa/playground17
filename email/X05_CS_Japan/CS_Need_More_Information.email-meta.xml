@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - General - Need More Information</name>
+    <style>none</style>
+    <subject>【MATLAB】追加情報ご提供のお願い</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

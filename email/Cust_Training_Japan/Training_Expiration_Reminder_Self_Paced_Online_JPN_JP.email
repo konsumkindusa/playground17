@@ -1,0 +1,10 @@
+{!Contact.FirstName} {!Contact.LastName} 様
+
+このメールは、ご受講いただいている [{!Enrollment__c.Class__c} オンラインコースへのアクセス可能な日数が30日以内であることをお知らせするものです。もし、コース全体を終了していない場合は、引き続き残りのコンテンツを学習してください。
+
+ご不明な点がございましたら {!Sponsor_Office__c.Email__c}までお問い合わせください。
+
+以上、よろしくお願い申し上げます。
+
+Training Services
+{!Class__c.Sponsor_Office_Signature__c}

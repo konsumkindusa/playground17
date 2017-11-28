@@ -1,0 +1,24 @@
+<!--
+ * @author      Pranav Raulkar
+ * @date        9-May-2016
+ * @description Self Enrollment Page
+ * @revision    1.0 - Initial version
+-->
+<apex:component controller="CourseController">
+    <apex:attribute name="etaId" assignTo="{!etAgreementID}" type="String" required="true" description="ETA Id" />
+    <apex:attribute name="lang" assignTo="{!language}" type="String" required="true" description="Page Language" />
+
+    <div class="accordion">
+        <apex:repeat value="{!courseLanguageList}" var="courseLangObj">  
+            <h3>
+                <div class="slds-text-heading--small slds-m-left--medium"><apex:outputText value="{!courseLangObj.Localized_Course_Name__c}" /></div>              
+            </h3>
+            <apex:outputPanel layout="block" styleClass="slds-text-body--regular" >
+                <apex:outputText value="{!courseLangObj.Localized_Short_Description__c}" escape="false"/>
+            </apex:outputPanel>
+        </apex:repeat>
+    </div>
+
+    <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/jquery-1.10.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/course-component.js')}" />
+</apex:component>

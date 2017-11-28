@@ -1,0 +1,45 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanインストールサポートの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせ頂き、 誠にありがとうございます。
+
+環境変数を設定するためには、つぎのコマンドを実行します。
+UNIX の場合：
+-------------
+Bourne シェルの場合：
+* sh の場合： <VARIABLE NAME>="value"; export <VARIABLE NAME>
+* ksh/bash の場合：
+ export <VARIABLE NAME>="value"
+C シェルの場合：
+* csh/tcsh の場合：
+setenv <VARIABLE NAME> "value"
+
+どのシェルを利用しているか確認するためには、
+つぎのコマンドを実行します。
+finger -m <username>
+
+Windows の場合：
+-------------
+Windows XP, 2000, 2003 の場合、
+つぎの手順で環境変数を設定します。
+
+1.　"マイコンピュータ" を右クリックし、"プロパティ" を選択します。
+2.　"詳細設定" タブをクリックします。
+3.　"環境変数" ボタンをクリックします。
+4.　"システム環境変数" に以下の手順で変数を設定します。
+5.　新規 をクリックして追加します。
+6.　変数名と変数値を定義します。
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のThread IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+よろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Case ID: {!Case.CaseNumber}

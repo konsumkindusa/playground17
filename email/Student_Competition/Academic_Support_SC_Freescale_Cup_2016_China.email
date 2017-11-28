@@ -1,0 +1,99 @@
+cc:racinglounge@mathworks.com 
+bcc: nxpcup@mathworks.com
+
+您好,
+
+非常荣幸的通知您，您的MathWorks许可证已创建成功。烦请将此信息分享给您的团队成员。 
+  
+
+许可证编号：40604038
+  
+激活密钥: 83917-35466-09539-70844-26586 
+  
+您需要通过以下步骤使用本软件：
+  
+将您的MathWorks账户与许可证关联
+
+下载软件
+
+安装软件
+
+激活软件
+
+您也可以：
+  
+安装可用于飞思卡尔FRDM-KL25Z 的Embedded Coder支持包
+  
+安装飞思卡尔杯指南APP
+  
+关联许可证
+  
+如果您还未创建MathWorks账户，您可在这里进行操作：
+  
+https://www.mathworks.com/accesslogin/createProfile.do 
+  
+当您的MathWorks账户创建好后，您需要将其与您的许可证关联。您需要使用此邮件中包含的激活密钥来完成您的关联步骤。更多关于许可证关联的说明，请详见：
+  
+http://www.mathworks.com/matlabcentral/answers/102871
+
+下载与安装
+  
+当您将MathWorks账户与许可证成功关联后，您需要进行软件下载。下载说明，请详见：
+  
+http://www.mathworks.com/matlabcentral/answers/98268
+  
+一旦下载完成后，便会开始进行安装。
+  
+激活您的软件
+  
+  
+一旦软件成功安装，MATLAB将会尝试自行激活。系统将会再次提示要求输入您的MathWorks账户认证信息以便进行激活。 如果软件未能自动尝试激活，您需要启动激活客户端：
+  
+http://www.mathworks.com/matlabcentral/answers/94781
+  
+在某些情况下，例如防火墙的设置或代理服务器对所有网络请求的过滤，您便需要手动激活MATLAB。关于手动激活软件的操作说明，请详见：
+    
+http://www.mathworks.com/matlabcentral/answers/105854
+  
+  
+安装支持包
+   
+当您的MATLAB和Simulink 安装并激活之后，您可以安装可用于飞思卡尔FRDM-KL25Z 的Embedded Coder支持包。为此，您需要前往飞思卡FRDM-KL25Z 硬件支持页： 
+  
+http://www.mathworks.com/hardware-support/frdm-kl25z.html
+  
+并且点击 “Get Support Package Now” 按钮.  这将会下载文件 “freedomboard.mlpkginstall”.  
+  
+双击该文件将会打开MATLAB并加载支持包安装程序，这将会指导您支持包的安装过程。
+  
+Install the Companion App
+  
+安装指南APP
+  
+MathWorks 目前对飞思卡尔FRDM-KL25Z 板卡提供可用于飞思卡尔杯竞赛的专有支持。如果您正在使用该硬件，您可以在您的MATLAB和Simulink安装并激活之后安装飞思卡尔FRDM-KL25Z板卡的Embedded Coder支持包。为此，您可以前去飞思卡尔FRDM-KL25Z 硬件支持页:
+  
+http://www.mathworks.com/hardware-support/frdm-kl25z.html
+  
+并且点击“Get Support Package Now” 按钮.  这将会下载文件 “freedomboard.mlpkginstall”.  
+  
+双击该文件将会打开MATLAB并加载支持包安装程序，这将会指导您支持包的安装过程。
+  
+
+顺颂商祺
+  
+
+MathWorks Student Competition Program 
+  
+studentcompetitions@mathworks.com
+    
+更多相关资源请访问:
+
+Computer Vision Training: https://www.mathworks.com/academia/student-competitions/computer-vision-training.html  
+Physical Modeling Training: https://www.mathworks.com/academia/student-competitions/physical-modeling-training.html
+Mobile Robot Control Basics Training: https://www.mathworks.com/academia/student-competitions/mobile-robotics-training.html 
+
+MATLAB and Simulink Robotics Arena: https://www.mathworks.com/roboticsarena  
+Facebook group: https://www.facebook.com/groups/roboticsarena  
+Logo Files: http://www.mathworks.com/brandguide/visual/logos.html  
+Student Competition Blog: http://blogs.mathworks.com/racing-lounge/
+Student Competition Support: http://www.mathworks.com/academia/student-competitions/

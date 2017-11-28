@@ -1,0 +1,3 @@
+<apex:page standardController="Lead">
+<apex:iframe src="https://login.eloqua.com/auth/saml2/autologin?LoginPrefix={!$Setup.Eloqua_Settings__c.LoginPrefix__c}&Idp={!$Setup.Eloqua_Settings__c.Idp__c}&ReturnUrl=apps%2FsalesTools%2Fprofiler%3FemailAddress%3D{!lead.email}"/> 
+</apex:page>

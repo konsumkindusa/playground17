@@ -1,0 +1,13 @@
+<!-- 
+/**
+* @author Original: Robbie Macatbag - Cloud Sherpas/Mathworks, Last Modified: Jesfer Baculod - Cloud Sherpas/Mathworks
+* @date Original: 06 May 2013, Last Modified: 09 May 2013
+* @description page that redirects the user to ACE tool link when creating Contact records  
+*/ 
+-->
+<apex:page standardController="Contact"  action="{!ACEonNew}" extensions="OverrideForACEExtension" showheader="false">
+    <apex:outputpanel id="opACE" rendered="{!if(URLpath != null,true,false)}">
+        <!-- DISPLAY ACE create link -->
+        <apex:iframe src="{!URLpath}"/> 
+    </apex:outputpanel>
+</apex:page>

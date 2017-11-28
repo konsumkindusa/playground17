@@ -1,0 +1,23 @@
+Dear {!Contact.FirstName}, 
+
+Thank you for downloading a trial of our products. I wanted to introduce myself and also to highlight some useful resources. 
+
+Documentation for our products is available on our website, at:
+http://www.mathworks.com/access/helpdesk/help/helpdesk.shtml
+
+New animated tutorials for MATLAB are available at:
+http://www.mathworks.co.uk/products/matlab/demos.html
+
+MATLAB Videos
+http://www.mathworks.com/videos/
+
+We would like an opportunity to discuss your requirements and how MathWorks can help your design goals.    MathWorks have an extensive range of application specific toolboxes,   we have dedicated support to advise which products are the best fit for your project. 
+
+I will call you within the next 24 hours,   if you need support in the meantime please contact me directly.
+
+Kind regards,
+
+{!Opportunity.OwnerFullName}
+Support Specialist 
+Tel:  +44 1223
+E-mail: sales@mathworks.co.uk

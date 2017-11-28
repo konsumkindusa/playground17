@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Technical Support ActionGrid: Cases, Contacts, Article Feedback, Tasks</description>
+    <label>TS ActionGrid</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom81: Musical Note</motif>
+    <page>TS_MultiTab_ActionGrid</page>
+</CustomTab>

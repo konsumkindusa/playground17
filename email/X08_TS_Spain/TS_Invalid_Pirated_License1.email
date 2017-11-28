@@ -1,0 +1,13 @@
+Estimado Sr./Sra. {!Contact.LastName}:
+
+La licencia con número {!Case.License__c} no es una licencia válida. Para usar MATLAB y cualquier otro producto, una licencia valida es necesaria.  
+
+Por favor, enviarme la siguiente información para verificar su instalación de los productos de MathWorks: 
+
+1) ¿Tiene una licencia particular para los productos de MathWorks o está usando la licencia de la empresa para la que trabaja? 
+2) Si no usa su propia licencia, ¿cuál es la empresa para la que trabaja? 
+3) Un número de teléfono donde podamos contactar con usted o con la persona en la empresa que administra las licencias de los productos de MathWorks. 
+
+Atentamente, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

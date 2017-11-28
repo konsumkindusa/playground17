@@ -1,0 +1,58 @@
+<apex:page standardController="Case" extensions="cp_CaseControllerExtension" standardStylesheets="true" sidebar="false" showHeader="false">
+    <apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+    <apex:includeScript value="{!$Resource.jquery_172}"/>
+
+    <h1 class="mwheader">My Service Requests</h1>
+   
+    
+    <div class="table_header"><h2>Case Description</h2></div>
+    <apex:pageBlock mode="maindetail">
+            <apex:pageBlockSection showHeader="false" columns="1">
+            <apex:outputField value="{!case.Description}"/>                      
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+   
+   
+  <script>
+        
+          
+        $("html body").css("background-color","white");
+        $("html body").css("background-image","none");
+        $("html body").css("border","1px solid #d1d1d1");
+        $("html body").css("border-top","0px solid #d1d1d1");
+        
+        //$(".mwheader").css("padding-left","30px");
+        
+       /* $(".btn").css("color","#3C3C3C");
+        $(".btn").css("background-image","none");
+        $(".btn").css(" background-color","#33FF00");
+        $(".btn").css("font-size","11px");
+        $(".btn").css("padding","5px 5px");
+        $(".btn").css("font-family","Arial, Helvetica, sans-serif");        
+        $(".btn").css("-moz-border-radius","5px");
+        $(".btn").css("-webkit-border-radius","5px");
+        */
+        $(".btn").css("border-radius","5px");
+        //$(".btn").css("font-weight","bold");
+        
+        
+       // $(".detailList tbody tr:nth-child(even)").css("background-color","white");
+        /*
+        $(".pbTitle h3").css("font-size","13px");
+        $(".pbTitle h3").css("margin-left","30px");
+        $(".pbTitle h3").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif"); 
+        
+        $(".pbTitle h2").css("font-size","15px");
+        $(".pbTitle h2").css("margin-left","30px");
+        $(".pbTitle h2").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif");
+        $(".pbTitle h2").css("color","#666");
+        */
+        $(".detailList").css("border-top","1px solid #d6d4d4"); 
+        
+        $(".bPageBlock .pbBody").css("padding","0px 30px");
+        $(".bPageBlock").css("margin-bottom","0px");
+        
+        $(".labelCol").css("text-align","left");
+        
+  </script>
+</apex:page>

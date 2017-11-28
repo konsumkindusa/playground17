@@ -1,0 +1,59 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal"><span lang="ES">POR FAVOR NO
+CONTESTE A ESTE MENSAJE- Esta es una respuesta generada automáticamente.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES">Caso Nº:&nbsp; {!Case.CaseNumber}</span><b><span lang="FR-BE" style="font-size:12.0pt;
+line-height:107%;mso-ansi-language:FR-BE"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><span lang="ES"><br></span></p><p class="MsoNormal"><span lang="ES">Muchas gracias
+por contactar con el Departamento de Pedidos de MathWorks. Hemos recibido su
+solicitud.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES"><br></span></p><p class="MsoNormal"><span lang="ES">Si usted está
+enviando un pedido, le informamos que recibirá una confirmación de pedido tan
+pronto como el mismo sea procesado.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES"><br></span></p><p class="MsoNormal"><span lang="ES">Si usted tiene
+alguna pregunta sobre este caso, por favor <a href="https://es.mathworks.com/company/aboutus/contact_us/?s_tid=gn_cntus">contáctenos</a>. Por favor
+tenga en cuenta que le preguntaremos su número de caso, por lo que es necesario
+que lo anote para cualquier comunicación.<o:p></o:p></span></p><p class="MsoNormal"><span lang="ES"><br></span></p>
+
+<p class="MsoNormal"><span lang="ES">Atentamente,<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES">MathWorks SL<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES">Departamento de
+Pedidos<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES">&nbsp;</span></p><p class="MsoNormal"><span lang="ES"><br></span></p><p class="MsoNormal"><span lang="ES"><br></span></p>
+
+<p class="MsoNormal">PLEASE DO NOT REPLY TO THIS MESSAGE. This is an
+auto-generated reply to your request. <o:p></o:p></p>
+
+<p class="MsoNormal">CASE ID:&nbsp; {!Case.CaseNumber}<o:p></o:p></p>
+
+
+
+<p class="MsoNormal"><br></p><p class="MsoNormal">Thank you very much for contacting the MathWorks Order
+Receipt Desk.&nbsp; We have received your request.<o:p></o:p></p>
+
+<p class="MsoNormal"><br></p><p class="MsoNormal">If you are placing an order, we will email you an Order Confirmation
+as soon as we process your order.<o:p></o:p></p>
+
+<p class="MsoNormal"><br></p><p class="MsoNormal">If you have any questions about this case, please <a href="http://www.mathworks.com/company/aboutus/contact_us/?s_tid=gn_cntus">contact
+us</a>. We will ask you for the above mentioned Case ID, so please make a note of
+it.<o:p></o:p></p>
+
+<p class="MsoNormal"><span lang="ES">&nbsp;</span></p>
+
+<p class="MsoNormal">Sincerely, <o:p></o:p></p>
+
+<p class="MsoNormal">MathWorks<o:p></o:p></p>
+
+<p class="MsoNormal">Order Receipt Desk<o:p></o:p></p><p class="MsoNormal"><br></p><p class="MsoNormal"><br></p>
+
+<span style="font-size: 9pt; line-height: 107%; font-family: Arial, sans-serif; background: white;">{!Case.Thread_Id}</span>]]></td>
+</tr>
+</table>

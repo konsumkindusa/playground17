@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to Marketing Lead when new Ind Student Team Request is received</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>*SC - Individual Student Team Request</name>
+    <style>none</style>
+    <subject>Individual Student Team Request - {!Academic_Support_Project__c.Class__c} - {!Academic_Support_Project__c.Name} - {!Academic_Support_Project__c.Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

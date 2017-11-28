@@ -1,0 +1,40 @@
+{!Contact.LastName} {!Contact.FirstName} 様, 
+
+この度は、MathWorks トレーニングにお申込頂き、誠にありがとうございます。 
+本 E-mail は以下のトレーニングコースへのご登録完了をお知らせするものです。 
+
+コース名: {!Enrollment__c.Class__c}  
+日付: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+開催地: {!Class__c.State__c},{!Class__c.City__c} 
+受付開始: 9:00
+開催時間: {!Class__c.Start_Time__c} - {!Class__c.End_Time__c} 
+昼食: 12:00-13:00　お弁当をご用意いたします。なお、昼食時間は進行状況により前後いたします。
+
+以下のリンクから、会場へのアクセス方法をご確認いただけます。
+
+東京会場：https://jp.mathworks.com/company/aboutus/directions/tokyo--japan.html
+名古屋会場：https://jp.mathworks.com/company/aboutus/directions/nagoya--japan.html
+大阪会場：https://jp.mathworks.com/company/aboutus/directions/osaka--japan.html
+当日の持ち物について
+お客様にお持ちいただくものは特にございません。パソコンや筆記用具（ノートおよびペン）はMathWorks にてご用意いたします。
+
+キャンセルと返金ポリシー 
+講師によるトレーニング: https://jp.mathworks.com/services/training/policies.html
+
+荒天時の開催について 
+MathWorks は、荒天時においても、可能な限り中止せず、予定通りにトレーニングを
+開催することを基本としています。しかしながら、気象条件の回復が見込めない場合は、
+当日のクラスを中止することがあります。荒天による中止の情報については、トレーニング担当まで
+お問い合わせください。中止が確定した場合、スケジュール変更案を含むE-mail を MathWorks より
+お送りいたします。 この E-mail は中止 をお知らせするものではなく、中止に伴うスケジュール変更案を
+ご案内するものです。ご質問は
+{!Class__c.Sponsor_Office_Phone__c} または 
+{!Class__c.Sponsor_Office_Email__c}  までお問い合わせ ください。 
+
+その他のトレーニング コースの詳細については、MathWorks Web サイト 
+www.mathworks.co.jp をご覧ください。 
+
+よろしくお願い申し上げます。 
+--------------------------------------- 
+{!Class__c.Sponsor_Office_Signature__c}  
+---------------------------------------

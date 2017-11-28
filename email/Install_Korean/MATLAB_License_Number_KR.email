@@ -1,0 +1,18 @@
+참고: 라이선스 센터 (http://www.mathworks.co.kr/licensecenter)는 My Account->View My License로도 이동 가능
+- 자세한 OS 이름 및 운영 시스템 정보
+- 문제에 대한 자세한 설명
+- 에러가 발생한 경우, 정확한 에러 메세지 또는 스크린샷
+- 라이선스 파일(첨부 요망, MATLAB 설치폴더\licenses 또는 탐색기에 %appdata% 입력 후 Mathworks\MATLAB\R20xxx_license 폴더 내용)
+- 가능한 경우 에러 로그 파일
+탐색기에서 %temp% 를 입력한 후 나오는 임시 폴더에서 아래와 같은 파일
+matlab_crash_dump.XXXX
+java.log.XXXX
+hs_error_pidXXXX.log
+- 위 로그가 없을 경우 윈도우 이벤트 뷰어(시작메뉴->프로그램 및 파일 검색에서 이벤트뷰어) -> Windows 로그->응용프로그램을 눌러 이벤트 뷰어를 킨 상태로 다시 MATLAB을 Crash 시키고 이후 새로 생긴 에러 로그 내용
+- 윈도우 환경 정보
+http://www.mathworks.com/matlabcentral/answers/92336
+위 링크 내용에 첨부된 profiler.exe 파일을 실행 시킨 후 표시된 정보를 본 메일에 제목 변경 없이 라이선스 파일과 같이 붙여넣기 하여 보내주시기 바랍니다.
+
+위 정보를 보내주시면 자세한 검토 후 답변 보내드리겠습니다.
+
+답변은 가이드와 제안 사항 또는 필요시 추가 정보 요청을 포함하여 메일로 전송됩니다.

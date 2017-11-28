@@ -1,0 +1,60 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+To join the MathWorks Connections Program we ask Instrument Vendors to do the following steps as part of the development of their MATLAB Instrument Drivers. These steps are designed to ensure that our mutual customers can easily determine which instruments are supported, and can easily find the required drivers in consistent locations. 
+
+1.	Create and publish MATLAB Instrument Driver
+Create either an instrument driver wrapper (when based on an industry standard instrument driver such as IVI or VXIplug&play) or a native MATLAB instrument driver (when based on a communications protocol). Make it available for download on your (vendor) website and on MATLAB Central.  MATLAB Central is The MathWorks on-line forum where MATLAB instrument drivers are available (see link above). 
+
+2.	Publish industry standard driver (if applicable)
+If creating a MATLAB instrument driver wrapper, create an industry standard instrument driver (such as IVI or VXIplug&play) and make it available for download on your (vendor) website and on MATLAB Central.  If possible, make the industry standard instrument driver available on the relevant standard’s web page such as IVI Foundation's driver page (see links above). 
+
+3.	Test the MATLAB instrument driver
+Test the MATLAB instrument driver (native or wrapper based on industry standard driver) on the instruments that you will claim are going to be supported.  Keep a list instruments which have been successfully qualified with the driver(s) and/or wrapper. The list must include the specific model numbers tested as well as the model numbers (or product lines) that you will claim are supported.
+	
+4.	Create on-line documentation
+Create either an application note or other user documentation specifying the supported devices, install procedure, and user instructions for using MATLAB, Instrument Control Toolbox, the industry standard driver, and the native driver or driver wrapper with your qualified instruments. 
+
+5.	Send material to The MathWorks for final review
+Send the following materials to connections@mathworks.com so that a final review of your completed Connections Program product can be performed. You can send materials as they become available, or all at once. If possible, please reply to this email so that the materials can quickly be tied to your original application.
+
+1)	MATLAB Instrument Drivers
+(Either the MATLAB instrument driver wrapper or native MATLAB instrument driver)
+
+2)	Web URLs to drivers available for download:
+a)	If creating a MATLAB instrument driver wrapper based on an industry standard driver (such as IVI or VXIplug&play),  provide URLs to:  
+       •	Industry standard instrument driver (within your website)
+       •	MATLAB instrument driver wrapper (within your website)
+       •	Industry standard instrument driver (on MATLAB Central)
+       •	MATLAB instrument driver wrapper (on MATLAB Central)
+b)	If creating a native MATLAB instrument driver, provide URLs to:
+       •	Native MATLAB instrument driver (within your website)
+       •	Native MATLAB instrument driver (on MATLAB Central)
+
+3)	Testing & supported instruments list (as described above)
+
+4)	Documentation – soft copy of the user guide or application note (as described above)
+
+Note: During the review of your application, if the MathWorks needs to perform additional testing, we may request the applicant to loan one instrument to the MathWorks free-of-charge for the purpose of evaluating the instrument drivers. The period of the loan will typically be 4 weeks or less.
+
+Please feel free to contact me if you have any questions. 
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+
+Useful Links for Instrument Vendor Partners
+================================
+Instrument Control Toolbox - Product webpage
+    http://www.mathworks.com/products/instrument/
+
+Instrument Control Toolbox - Documentation webpage
+    http://www.mathworks.com/access/helpdesk/help/toolbox/instrument/
+
+Example MATLAB Instrument Drivers (MATLAB Central)
+<http://www.mathworks.com/matlabcentral/fileexchange/loadCategory.do?objectType=category&objectId=123&objectName=Instrument%20Drivers>
+
+Industry Standard Driver sites
+IVI : http://www.ivifoundation.org/
+VXIplug&play : http://www.vxipnp.org/
+  LXI : http://www.lxistandard.org/

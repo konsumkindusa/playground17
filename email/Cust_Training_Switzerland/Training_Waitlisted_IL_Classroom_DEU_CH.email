@@ -1,0 +1,30 @@
+Sehr geehrt  {!Contact.Name},
+
+wir danken Ihnen für die Anmeldung zu folgender Schulung, allerdings ist der Kurs ausgebucht, so dass Sie auf einer Warteliste vorgemerkt wurden:
+
+KURSNAME: {!Enrollment__c.Class__c} 
+DATUM:  {!Enrollment__c.Display_Start_Date__c}- {!Enrollment__c.Display_End_Date__c}
+ORT: {!Class__c.City__c}, {!Class__c.Country__c} 
+
+Wir werden Sie darüber informieren, sobald ein Teilnehmerplatz für Sie frei wird.
+
+Informationen über den Schulungsort finden Sie unter
+
+http://www.mathworks.de/services/training/policies/directions.html
+
+Bitte nutzen Sie die Gelegenheit zu schauen, ob ggf. auch ein anderer Ort/Termin für Sie in Frage kommt:
+
+http://www.mathworks.de/services/training/sch_programm.html
+
+Die Schulung beginnt jeweils um 09.00 Uhr, Ende um 17.00 Uhr.
+
+Stornierungsbedingungen
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+
+Die Schulungsunterlagen erhalten Sie am 1. Schulungstag. Die Rechnungstellung erfolgt separat an die von Ihnen angegebene Adresse.
+
+
+Mit freundlichen Grüßen aus München
+
+{!Class__c.Sponsor_Office_Signature__c} 

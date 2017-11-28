@@ -1,0 +1,43 @@
+{!Partner_Agreement__c.Primary_Contact__c} 様
+
+いつもお世話になっております。
+
+おめでとうございます！この度、MathWorks Connections Program に貴社サービスの
+[Service Agreement.Name]の登録が承認されました。
+社内レビューにお時間を頂戴し、ありがとうございました。
+2-3週間以内に、御社ページのドラフト版を作成しお送りしますので
+ご確認いただきますようお願いします。
+
+パートナー専用サイト、Connections Help Deskへアクセス
+===========================================
+Connections Program のメンバーは、Connections Help Deskへアクセスすることが出来ます。Connections Help Deskは、マーケティングや営業向けのベネフィット、
+技術情報、リクエスト申込フォームなどの情報が掲載された、
+パートナー専用のウェブサイトです。すべての情報は24時間利用可能で、
+ご質問に対する答えを得ることが可能です。
+
+
+Connections Help Deskをご利用いただくには、下記のURLへアクセスして下さい。
+ブックマークや ”お気に入り” に追加されることをお勧めします。
+https://www.mathworks.co.jp/partners/services/
+
+下記のユーザネームとパスワードを入力して下さい。
+大文字と小文字を区別しますのでご注意下さい。
+
+User Name: CNXservices
+Password: T&cr4all
+
+Connections Help Desk は、貴社において Connections Program に承認された製品を
+サポートする方であれば、どなたでもご利用いただくことが出来ます。
+本情報をご自由にご利用下さい。Connections Help Desk がお役に立てると幸いです。
+サイトは定期的に更新し、新しいパートナーベネフィットや技術情報を提供しています。
+
+Connections Help Desk、また提携業務へのご質問、ご要望などがございましたら、
+connections@mathworks.co.jp　までご連絡下さい。
+
+
+以上、よろしくお願い申し上げます。
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

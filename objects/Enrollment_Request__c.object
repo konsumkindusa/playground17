@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Staging object to ingest requests for class enrollment under Enterprise Training Agreements from multiple sources including manual internal enrollments, self-enrollments via a portal and bulk enrollments via a file load. Records that are processed through this object will ultimately result in records being created in the Enrollment object.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Batch_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifier used to group enrollment requests together for purposes of creating summary email notifications once all requests have been processed</inlineHelpText>
+        <label>Batch ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Class_Format__c</fullName>
+        <description>Current use case is Self-Paced only but adding additional options for future expansion</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Format of the Class this Enrollment Request is for -  combined with the Course Code and Language to identify the specific Class to enroll in</inlineHelpText>
+        <label>Class Format</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Self-Paced</fullName>
+                    <default>false</default>
+                    <label>Self-Paced</label>
+                </value>
+                <value>
+                    <fullName>Distance Learning</fullName>
+                    <default>false</default>
+                    <label>Distance Learning</label>
+                </value>
+                <value>
+                    <fullName>Instructor Led</fullName>
+                    <default>false</default>
+                    <label>Instructor Led</label>
+                </value>
+                <value>
+                    <fullName>Exam</fullName>
+                    <default>false</default>
+                    <label>Exam</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Class to enroll Contact in</inlineHelpText>
+        <label>Class</label>
+        <referenceTo>Class__c</referenceTo>
+        <relationshipLabel>Enrollment Requests</relationshipLabel>
+        <relationshipName>Enrollment_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact to be enrolled</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Enrollment Requests</relationshipLabel>
+        <relationshipName>Enrollment_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Course_Code__c</fullName>
+        <description>Not a direct lookup to Course object so requests can be made via the Code rather than requiring the Salesforce ID of the Course</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Code used to identify the Course the Enrollment Code is being made for - this code plus the Language and Format will identify the specific Class to enroll in</inlineHelpText>
+        <label>Course Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Address of the Enrollee - used to find the Contact in Salesforce or CDS if the Contact is not identified explicitly</inlineHelpText>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Code__c</fullName>
+        <description>This is not a direct lookup to the Enrollment Code object so it can support querying for records by the Code itself rather than requiring the Salesforce ID of the Code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Code used to identify the Enterprise Training Agreement the Enrollment Request should be made for</inlineHelpText>
+        <label>Enrollment Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enrollment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Resulting Enrollment record from this Enrollment Request - should be set after email notification is sent</inlineHelpText>
+        <label>Enrollment</label>
+        <referenceTo>Enrollment__c</referenceTo>
+        <relationshipLabel>Enrollment Requests</relationshipLabel>
+        <relationshipName>Enrollment_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Enterprise_Training_Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Training agreement the Enrollment should be created under</inlineHelpText>
+        <label>Enterprise Training Agreement</label>
+        <referenceTo>Enterprise_Training_Agreement__c</referenceTo>
+        <relationshipLabel>Enrollment Requests</relationshipLabel>
+        <relationshipName>Enrollment_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Exception_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Details if an exception occurred during processing</inlineHelpText>
+        <label>Exception Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>First Name of the Enrollee</inlineHelpText>
+        <label>First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>ISO Code of the Language the Enrollment Request is for - used to identify the correct Class when combined with the Course Code and Format</inlineHelpText>
+        <label>Language Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_ISO_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Enterprise_Training_Agreement__r.Language__r.ISO_Code__c</formula>
+        <label>Language ISO Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Name of the Enrollee</inlineHelpText>
+        <label>Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How did this Enrollment Request get added to the queue?</inlineHelpText>
+        <label>Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bulk Enrollment</fullName>
+                    <default>false</default>
+                    <label>Bulk Enrollment</label>
+                </value>
+                <value>
+                    <fullName>Manual Enrollment</fullName>
+                    <default>false</default>
+                    <label>Manual Enrollment</label>
+                </value>
+                <value>
+                    <fullName>Self-Enrollment Portal</fullName>
+                    <default>false</default>
+                    <label>Self-Enrollment Portal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Processing</fullName>
+                    <default>false</default>
+                    <label>Processing</label>
+                </value>
+                <value>
+                    <fullName>Pending Notification</fullName>
+                    <default>false</default>
+                    <label>Pending Notification</label>
+                </value>
+                <value>
+                    <fullName>Process Manually</fullName>
+                    <default>false</default>
+                    <label>Process Manually</label>
+                </value>
+                <value>
+                    <fullName>No Action Planned</fullName>
+                    <default>false</default>
+                    <label>No Action Planned</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Exception</fullName>
+                    <default>false</default>
+                    <label>Exception</label>
+                </value>
+                <value>
+                    <fullName>Reprocess</fullName>
+                    <default>false</default>
+                    <label>Reprocess</label>
+                </value>
+                <value>
+                    <fullName>Pending CDS Lookup</fullName>
+                    <default>false</default>
+                    <label>Pending CDS Lookup</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Enrollment Request</label>
+    <listViews>
+        <fullName>All_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>First_Name__c</columns>
+        <columns>Last_Name__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Email__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Enterprise_Training_Agreement__c</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Language_Code__c</columns>
+        <columns>Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Enrollment__c</columns>
+        <columns>Exception_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Requests</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>First_Name__c</columns>
+        <columns>Last_Name__c</columns>
+        <columns>Email__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Enrollment_Code__c</columns>
+        <columns>Enterprise_Training_Agreement__c</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Language_Code__c</columns>
+        <columns>Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Source__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>Completed Requests</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Exceptions</fullName>
+        <columns>Batch_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Enterprise_Training_Agreement__c</columns>
+        <columns>Status__c</columns>
+        <columns>Exception_Reason__c</columns>
+        <columns>Class__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Exception</value>
+        </filters>
+        <label>Exceptions</label>
+    </listViews>
+    <listViews>
+        <fullName>InProgress_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>First_Name__c</columns>
+        <columns>Last_Name__c</columns>
+        <columns>Email__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Enrollment_Code__c</columns>
+        <columns>Enterprise_Training_Agreement__c</columns>
+        <columns>Course_Code__c</columns>
+        <columns>Class_Format__c</columns>
+        <columns>Language_Code__c</columns>
+        <columns>Class__c</columns>
+        <columns>Status__c</columns>
+        <columns>Source__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New,Processing,Pending Notification</value>
+        </filters>
+        <label>In Progress Requests</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>ER-{0}</displayFormat>
+        <label>Enrollment Request ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Enrollment Requests</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Email__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Class__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Enrollment_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Enterprise_Training_Agreement__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Source__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

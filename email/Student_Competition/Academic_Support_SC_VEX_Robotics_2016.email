@@ -1,0 +1,96 @@
+cc:  vexrobotics@mathworks.com; 
+
+Hello, 
+
+I am pleased to inform you that your MathWorks license has been created. Please share this information with your team members.   
+
+License Number: 40610189 
+
+Activation Key: 76920-30322-88200-17889-44243
+
+To use MATLAB and Simulink you need to:
+ 
+1. Associate your MathWorks account with this license
+ 
+2. Download and Install the software
+ 
+3. Activate the software
+ 
+In addition, you need to:
+ 
+4. Install the VEX Microcontroller Support Package
+ 
+5. Install the VEX Microcontroller Companion App
+ 
+IMPORTANT: Obtain administrative privileges for your machine (Windows and Mac) to download and install the software.
+ 
+1. Associate to License
+ 
+If you have not yet created a MathWorks account, you can do so here: https://www.mathworks.com/accesslogin/createProfile.do
+ 
+Once you have a MathWorks account, you need to associate it with a license. Your activation key is included in this email and is required to complete the association process. Instructions for associating with a license are available here: http://www.mathworks.com/matlabcentral/answers/102871
+ 
+2. Download and Install (takes approx. 40 mins. to complete)
+ 
+For system admins: To perform a silent installation on multiple computers simultaneously, follow the instructions here: https://www.mathworks.com/help/install/ug/install-noninteractively-silent-installation.html
+ 
+Once you are associated with a license you need to download the software. Download instructions are available here: http://www.mathworks.com/matlabcentral/answers/98268
+ 
+The installation will begin as soon as the download is complete.
+ 
+3. Activate your Software:
+ 
+For system admins: To perform a silent activation on multiple computers simultaneously, contact us at support@mathworks.com for the instructions.
+ 
+Once the software is installed MATLAB will attempt to activate itself. You will be required to enter your MathWorks account credentials again for activation. If the software does not automatically attempt to activate, you will need to launch the activation client: https://www.mathworks.com/matlabcentral/answers/259627-how-do-i-activate-matlab-without-an-internet-connection 
+ 
+In some setups, such as one where a firewall is in place or a proxy is filtering all network activity, you may need to activate MATLAB manually. Instructions for manual activation can be found here: http://www.mathworks.com/matlabcentral/answers/105854
+ 
+4. Install the VEX Support Package (takes approx. 15 mins. to complete) 
+Watch the video linked below to learn how to install the VEX Support Package in MATLAB. 
+https://www.mathworks.com/videos/installing-a-support-package-using-add-on-explorer-1498063814825.html 
+
+If you don't watch the video, follow the instructions below instead: 
+
+Once you have MATLAB and Simulink installed and activated you can install the Simulink Coder Support package for ARM Cortex-based VEX Microcontroller. To do this, 
+
+i. Go to http://www.mathworks.com/hardware-support/vex-arm-cortex.html 
+ii. Click on the “Get Support Package Now” button. This will download the .mlpkginstall file. 
+iii. Right-click and open this file with MATLAB Application. This should launch MATLAB and bring up the Add-on Explorer or the Installer Wizard. 
+iv. Follow the dialog prompts to complete the installation. 
+ 
+IMPORTANT: If you are installing the support package on a computer with an internet connection that has download restrictions due to firewall or proxy server settings (a common issue with internet connection at school), contact your system admin and provide them the instructions at the following link to work around this issue: https://www.mathworks.com/matlabcentral/answers/339542-how-do-i-install-a-support-package-for-matlab-r2016b-and-above-using-add-on-explorer-on-a-computer-t
+ 
+5. Install the VEX Microcontroller Companion App (takes approx. 5 mins. to complete)
+ 
+Once you have the VEX Support Packages installed you can install the Companion App. To do this,
+ 
+i.	Go to https://www.mathworks.com/matlabcentral/fileexchange/47903-vex-microcontroller-companion-app
+ii.	Click on the “Download" button. This will download a .zip file.
+iii.	Un-zip the file and extract its content to a local folder. 
+iv.	Double-click to open the .mlappinstall file in this folder. This will launch MATLAB and bring up the Installer Wizard.
+v.	Follow the prompt to complete installation of the app. The app will now appear in the APPS tab in the MATLAB Desktop.
+ 
+ 
+To start using Simulink -
+ 
+Select the APPS tab located at the top in the MATLAB Desktop window and click on the VEX Companion icon to launch the VEX Support Package Companion App.
+ 
+ 
+NOTE: For detailed description on the above steps, please refer to the following: http://www.mathworks.com/academia/student-competitions/best-robotics/best-robotics-mathworks-software-installation-instructions.html
+ 
+If you need any assistance with the installation process or with using Simulink for the VEX Robotics competition, please contact us at vexrobotics@mathworks.com.
+ 
+"Getting Started with MATLAB and Simulink for VEX Robotics" Courseware containing detailed lesson plans and companion videos for instructors can also be found here: https://www.mathworks.com/academia/highschool/courseware/getting-started-with-matlab-and-simulink-for-vex-robotics.html
+ 
+Best Regards,
+ 
+MathWorks Student Competition Program
+studentcompetitions@mathworks.com
+ 
+Additional resources:
+ 
+http://www.mathworks.com/academia/student-competitions/best
+Link to the MathWorks logo: http://www.mathworks.com/brandguide/visual/logos.html
+
+Racing Lounge Blog: Best practices and teamwork for student competitions - http://blogs.mathworks.com/racing-lounge/

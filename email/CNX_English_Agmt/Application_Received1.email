@@ -1,0 +1,17 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+Your company is currently a member of The MathWorks Connections Program with {!Partner_Agreement__c.Partner_Agreement_Name__c}.
+
+Per [REQUESTOR] request, the role of primary contact for this membership has been changed to you. 
+
+Primary Contact’s Responsibilities:
+=========================
+Comply with requests to continue eligibility in the Connections Program including:
+1) Reaccepting the Connections Program terms and conditions annually (September)
+2) Maintain a commercial license of MathWorks products current on Software Maintenance Service
+3) Act as liaison between your company and the MathWorks for all partner related issues
+
+If you have any questions on these responsibilities please let me know.
+
+Best Regards,
+{!User.Email_Template_Signature__c}

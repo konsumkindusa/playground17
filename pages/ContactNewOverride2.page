@@ -1,0 +1,6 @@
+<apex:page standardController="Contact" showheader="false">
+
+        <!-- DISPLAY ACE create link -->
+        <apex:iframe src="http://inside-apps-dev2.mathworks.com/ace/newContact.do"/> 
+
+</apex:page>

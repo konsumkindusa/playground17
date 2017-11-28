@@ -1,0 +1,26 @@
+Dear {!Case.Contact}, 
+
+Thank you for contacting MathWorks.  Below are instructions for sending End User Statements (EUS) to the proper MathWorks department based on your request.
+
+Option 1 - License changes not associated to a new order
+All requests associated to license changes but not associated to a new order should be directed to ihelp@mathworks.com  along with the copy of the End Use Statement. This includes:
+End User changes
+Adding Licensed users
+Product transfer 
+License mergers or splits
+Company transfers
+License upgrades or downgrades with no cost associated
+
+Option 2 – New Orders
+All requests for new orders must be emailed to omt_international@mathworks.com along with the proper End Use Statement.
+
+Following the appropriate option will help to assure your requests are processed in a timely manner.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

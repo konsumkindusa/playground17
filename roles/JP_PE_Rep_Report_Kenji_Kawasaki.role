@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>JP PE Rep Report Kenji Kawasaki</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>JP PE Rep Report Kenji Kawasaki</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>JP_PE_Manager_Kenji_Kawasaki</parentRole>
+</Role>

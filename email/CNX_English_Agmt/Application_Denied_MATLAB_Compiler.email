@@ -1,0 +1,22 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+Recently you applied to The MathWorks Connections Program with {!Partner_Agreement__c.Partner_Agreement_Name__c}. 
+
+We regret to inform you that your application has not been accepted for membership. However, this decision does not prevent you from going to market with this service.
+
+Strong candidates for membership as System Integrators must meet the following criteria: 
+
+* Deliver MATLAB or Simulink based content some of the time 
+* Have significant technical expertise with MathWorks products 
+* Have at least 4 employees with MATLAB/Simulink experience 
+* Have delivered at least 10 projects based on MATLAB and Simulink 
+* Provide 4 references (The Connections Program Team will enforce this requirement) 
+
+Based on the answers provided in your application your company does not meet these requirements. However, you may wish to re-apply as a Consultant Service member. https://se.mathworks.com/products/connections/join/application/cnx_consult.html
+
+Though we are denying this application, we encourage you to continue working with MathWorks products. In addition, we would be happy to consider other applications for potential inclusion in the MathWorks Connections Program. 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

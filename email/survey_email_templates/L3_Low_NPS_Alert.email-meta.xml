@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A customer submitted a Level 3 evaluation response with a low NPS.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>L3 Low NPS Alert</name>
+    <style>freeForm</style>
+    <subject>L3 Low NPS Alert</subject>
+    <textOnly>A customer submitted a Level 3 evaluation response with an NPS of {!Training_Get_Feedback__c.NPS__c}.
+Customer Name: {!Training_Get_Feedback__c.Contact__c}, ({!Training_Get_Feedback__c.Enrollee_Email__c})
+Customer Company: {!Training_Get_Feedback__c.Enrollee_Account__c}
+Instructor Name: {!Training_Get_Feedback__c.L3_Instructor__c}
+-----
+Additional Comments: {!Training_Get_Feedback__c.Additional_comments__c}
+-----
+You may click on the url to view this survey response.
+{!Training_Get_Feedback__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

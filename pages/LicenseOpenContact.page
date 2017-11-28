@@ -1,0 +1,5 @@
+<apex:page standardController="Contact" extensions="LicenseOpenController" action="{!redirectToLicenseApp}" showheader="false">
+
+    <apex:pageMessages escape="false" />
+
+</apex:page>

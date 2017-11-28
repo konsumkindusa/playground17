@@ -1,0 +1,45 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage.
+Um die HostID Ihres Rechners zu bestimmen, gehen Sie bitte wie unten beschrieben vor:
+
+For Windows:
+1) Click the “Start Menu” (Usually located in the lower left corner)
+2) Scroll over “All Programs”
+3) Scroll over “Accessories”
+4) Select “Command Prompt”
+5) Type “vol c:” and press Enter (= For Individual Licenses only)
+Your Host ID is the Volume Serial Number.
+6) Type “getmac” and press Enter (= For all License Types)
+Your Host ID is the first physical address in the list.
+
+
+For Macintosh:
+1) Open terminal window
+2) Enter the following command:     ifconfig en0
+Your Host ID is the "ether" information and should be entered as your Host ID without the colons.
+
+For Linux:
+1) Open terminal window
+2) Enter the following command:     ifconfig eth0
+Your Host ID is the "HWaddr" information and should be entered as your Host ID without the colons.
+
+**Instructions to locate Computer Login Name (Case Sensitive):
+
+For Windows:
+In DOS type "set username" and press enter.  The UserName is your computer Login Name for that Machine.  Keep in mind it is case sensitive.
+
+For Macintosh or Linux:
+In a terminal window type "whoami" and press enter.  This will give you your computer Login Name for that Machine.  Keep in mind it is case sensitive.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

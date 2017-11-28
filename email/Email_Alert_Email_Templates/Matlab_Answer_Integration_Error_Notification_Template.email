@@ -1,0 +1,7 @@
+Hi,
+
+Please view the error message below for more details:
+
+Log: {!Log__c.Link}
+
+Message: {!Log__c.Message__c}

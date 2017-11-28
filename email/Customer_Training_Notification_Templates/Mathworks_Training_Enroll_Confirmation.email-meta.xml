@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>37.0</apiVersion>
+    <available>true</available>
+    <description>This email template use for generating Training Enrollment Confirmation - SYSTEM USE ONLY</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Mathworks_Training_Enroll_Confirmation</name>
+    <style>none</style>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

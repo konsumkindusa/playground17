@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+Thank you for contacting MathWorks. The charge for $$$$$ you are seeing on your bank account is an authorization. This is a common bank practice for handling credit card transactions to ensure sufficient funds are available.  
+
+An authorization hold (also card authorization, preauthorization, or preauth) is the practice within the banking industry of authorizing and validating funds for electronic transactions done with a debit card or credit card. Bank Institutions ‘hold’ this balance as unavailable from the individuals account until either the merchant completes the transaction (also called settlement), or the hold "falls off." A ‘fall off’ is when banks render the balance available to the individuals account again. Debit card authorization holds can fall off the account anywhere from 1–5 days after the transaction date depending on the bank's policy. Credit card holds may last as long as 30 days, depending on the issuing bank. We want to assure you that your credit card was not yet charged and the amount of $$$$$ was not debited from your account. Once the transaction becomes complete, this amount will be removed from your banking account only once for the final amount.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

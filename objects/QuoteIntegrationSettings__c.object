@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Quote Integration custom setting of the org</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CommerceQuoteURL__c</fullName>
+        <externalId>false</externalId>
+        <label>CommerceQuoteURL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GQOQuoteBaseURL__c</fullName>
+        <externalId>false</externalId>
+        <label>GQOQuoteBaseURL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mathwork_Quote_Url__c</fullName>
+        <externalId>false</externalId>
+        <label>Mathwork Quote Url</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PageSizeForPaginationToShowQuotes__c</fullName>
+        <externalId>false</externalId>
+        <label>PageSizeForPaginationToShowQuotes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Integration Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

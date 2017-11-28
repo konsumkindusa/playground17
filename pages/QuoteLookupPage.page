@@ -1,0 +1,280 @@
+<!-- 
+/**
+* @author Original: Archana Lohar- Cloud Sherpas/Mathworks, Last Modified: Archana Lohar - Cloud Sherpas/Mathworks
+* @date Original: 17 Feb 2015, Last Modified: 17 Feb 2015
+* @date Mod: 20 August 2015, Task:1043291 - Donna Latte
+* @description: Page for QuoteLookup
+*/ 
+-->
+<apex:page showHeader="{!$CurrentPage.parameters.noHeader}"
+    sidebar="{!$CurrentPage.parameters.noSidebar}"
+    standardController="Opportunity" extensions="QuoteLookupController"
+    action="{!viewQuote}">
+    <apex:includeScript value="/soap/ajax/26.0/connection.js" />
+    <apex:includeScript value="/support/console/32.0/integration.js" />
+    <Script type="text/javascript" src="{!$Resource.JqueryUINew}" />
+    <Script type="text/javascript" src="{!$Resource.JqueryUIMin}" />
+
+    <style>
+body .bRelatedList .pbTitle h3,body .bPageBlock .pbTitle h2,body .bPageBlock .pbTitle h3,body .bSubBlock h3.lbHeader
+    {
+    font-size: 19px;
+    color: rgb(17, 166, 227);
+    font-style: oblique;
+    ont-family: inherit;
+    "
+}
+</Style>
+
+    <script>
+    
+    
+    function clearError(){ 
+    
+         var j$ = jQuery.noConflict();
+    
+        j$('#errorMessageQuoteId').html('');
+    }
+    
+    
+    function openTab(url,name, tabname){ 
+           
+        if (sforce.console.isInConsole()){
+           sforce.console.openPrimaryTab(null,url, true, name, null,tabname);
+         }
+        else {
+           window.open(url,"_blank","height=1000,width=1300");
+         }
+    }
+      
+    function openPage(url,name, tabname){ 
+       
+        var j$ = jQuery.noConflict();
+       
+        var quoteIdToPass=j$('#QuoteIdValue').val().trim();
+       
+        if(quoteIdToPass.length===0){
+       
+            j$('#errorMessageQuoteId').html('{!$label.quoteIdErrorMessage}');
+            j$('#QuoteIdValue').focus();
+      
+            return false;
+        }
+       
+        j$('#errorMessageQuoteId').html('');
+       
+        var url=url+quoteIdToPass+'&showDetails=true';
+              
+        if (sforce.console.isInConsole())
+        {
+            sforce.console.openPrimaryTab(null,url, true, name+'-'+quoteIdToPass, null,tabname+'-'+quoteIdToPass);
+        }
+        else {
+            window.open(url,"_blank","height=1000,width=1300");
+        }
+      }
+      
+      
+      function openWindowTab(url){
+        window.open(url,"_blank","height=1000,width=1300");
+      }
+      
+    </script>
+
+    <apex:form id="frm">
+
+        <apex:outputPanel id="lookup">
+
+            <apex:pageBlock title="Quote Lookup" rendered="{!showLookupInput}">
+
+                <apex:pageBlockButtons id="btpg">
+
+                    <apex:commandButton value="View Quote" id="btn"
+                        reRender="details,pageError,ok"
+                        onClick="javascript:openPage('/apex/QuoteLookupPage?Quoteid=', 'Quote Details', 'Quote Details');return false;"
+                        status="status" />
+
+                    <apex:commandButton value="Clear" reRender="pageError,ok"
+                        oncomplete="this.form.reset();clearError();return false;"
+                        action="{!hideQuoteDetailSection}" status="Clear" />
+
+                </apex:pageBlockButtons>
+
+                <apex:pageblockSection >
+
+                    <apex:pageBlockSectionItem helpText="{!$Label.QuoteIdErrorMessage}">
+
+                        <apex:outputlabel value="{!$Label.QuoteIDHeader}" />
+
+                        <input value="{!quoteId}"
+                            onkeydown="if(event.keyCode==13){this.blur();doSearchQuote();}"
+                            id="QuoteIdValue" />&nbsp;
+             
+              <h1 id="errorMessageQuoteId" style="Color: red;"></h1>
+
+
+                    </apex:pageBlockSectionItem>
+
+                </apex:pageblockSection>
+
+                <apex:actionFunction name="doSearchQuote" status="status"
+                    reRender="details,pageError,ok" action="{!viewQuote}" />
+
+
+            </apex:pageBlock>
+
+        </apex:outputPanel>
+
+
+        <apex:outputPanel id="details">
+
+            <apex:pageBlock rendered="{!showDetails}"
+                title="Quote Details- {!quoteObjToShow.Id} ">
+
+                <apex:pageblockSection title="Quote Details">
+
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="{!$Label.QuoteIDHeader}" />
+                        <apex:outputlink onclick="javascript:openWindowTab('{!$Setup.QuoteIntegrationSettings__c.Mathwork_Quote_Url__c}&QuoteId={!quoteObjToShow.Id}');return false;">{!quoteObjToShow.Id}</apex:outputLink>
+                    </apex:pageBlockSectionItem>
+                    
+                    
+                    <apex:pageBlockSectionItem rendered="{!If(mapAccount[quoteObjToShow.accountId].Name='DummyAccount',false,true)}">
+                        <apex:outputLabel value="Account" />
+                        <apex:outputlink target="_self"
+                            onClick="javascript:openTab('/{!mapAccount[quoteObjToShow.accountId].Id}', '{!mapAccount[quoteObjToShow.accountId].Name}', '{!mapAccount[quoteObjToShow.accountId].Name}');return false;">
+                                   {!if((mapAccount[quoteObjToShow.accountId].Account_Name_Latin__c!= null),mapAccount[quoteObjToShow.accountId].Account_Name_Latin__c,mapAccount[quoteObjToShow.accountId].Name)}
+                        </apex:outputlink>
+                    </apex:pageBlockSectionItem>
+
+
+                    <apex:outputText value="{!quoteObjToShow.accountId}"
+                        label="Account Id"
+                        rendered="{!If(mapAccount[quoteObjToShow.accountId].Name='DummyAccount',true,false)}" />
+
+                    <apex:pageBlockSectionItem rendered="{!If(mapOpportunity[quoteObjToShow.opportunityId].name='DummyOpportunity',false,true)}">
+                        <apex:outputLabel value="Opportunity" />
+                        <apex:outputlink value="Opportunity" target="_self" id="opId"
+                            onClick="javascript:openTab('/{!mapOpportunity[quoteObjToShow.opportunityId].Id}', '{!mapOpportunity[quoteObjToShow.opportunityId].Name}', '{!mapOpportunity[quoteObjToShow.opportunityId].Name}');return false;"> 
+                                     {!(mapOpportunity[quoteObjToShow.opportunityId].name)}
+                        </apex:outputlink>
+                    </apex:pageBlockSectionItem>
+
+
+                    <apex:outputText value="{!quoteObjToShow.opportunityId}"
+                        label="Opportunity Id"
+                        rendered="{!If(mapOpportunity[quoteObjToShow.opportunityId].name='DummyOpportunity',true,false)}" />
+
+                    <apex:pageBlockSectionItem rendered="{!If(mapContact[quoteObjToShow.contactid].lastname='DummyContact',false,true)}">
+                        <apex:outputLabel value="Contact" />
+                        <apex:outputlink value="Contact" target="_self"
+                            onClick="javascript:openTab('/{!mapContact[quoteObjToShow.contactid].Id}', '{!mapContact[quoteObjToShow.contactid].Name}', '{!mapContact[quoteObjToShow.contactid].Name}');return false;"> 
+                                     {!if((mapContact[quoteObjToShow.contactid].First_Name_Latin__c != null ||
+                                              mapContact[quoteObjToShow.contactid].Last_Name_Latin__c != null),
+                                              mapContact[quoteObjToShow.contactid].First_Name_Latin__c+' '+mapContact[quoteObjToShow.contactid].Last_Name_Latin__c,
+                                              mapContact[quoteObjToShow.contactid].Name)} 
+                        </apex:outputlink>
+                    </apex:pageBlockSectionItem>
+
+                    <apex:outputText value="{!quoteObjToShow.contactid}"
+                        label="Contact Id"
+                        rendered="{!If(mapContact[quoteObjToShow.contactid].lastname='DummyContact',true,false)}" />
+
+                    
+
+
+                </apex:pageblockSection>
+
+                <apex:pageblockSection title="">
+
+                    <apex:outputText label="{!$Label.QuoteStatusHeader}"
+                        value="{!quoteObjToShow.quoteStatus}">
+                    </apex:outputText>                        
+                     
+                    <apex:outputText value="{0, number, ###,##0.00}" label="{!$Label.QuoteTotalHeader}">
+                        <apex:param value="{!quoteObjToShow.productTotal}" />
+                    </apex:outputText>
+                        
+                     <apex:outputText label="Quote Created Date"
+                        value="{!quoteObjToShow.dateCreated}"></apex:outputText>                        
+                        
+                    <apex:outputText label="Quote Currency Code"
+                        value="{!quoteObjToShow.currencyCode}"></apex:outputText>
+                        
+                    <apex:outputText label="Quote Expire Date"
+                        value="{!quoteObjToShow.expirationDate}"></apex:outputText>                        
+                     
+                    <apex:outputText value="{0, number, ###,##0.00}" label="Quote Sub Total">
+                   <apex:param value="{! quoteObjToShow.productTotal - quoteObjToShow.handlingTotal - quoteObjToShow.taxTotal }" />
+                   </apex:outputText>
+                    
+                      <apex:outputText label="Quote Order Date"
+                        value="{!quoteObjToShow.orderDate}"></apex:outputText>                        
+                     
+                        
+                      <apex:outputText value="{0, number, ###,##0.00}" label="Quote Handling Total">
+                          <apex:param value="{!quoteObjToShow.handlingTotal}" />
+                      </apex:outputText>
+                        
+                      <apex:inputCheckbox label="Quote Allow Web View"
+                        value="{!quoteObjToShow.webViewable}" disabled="true" />                        
+                  
+                        
+                    <apex:outputText value="{0, number, ###,##0.00}" label="Quote Tax Total">
+                        <apex:param value="{!quoteObjToShow.taxTotal}" />
+                    </apex:outputText>
+                        
+                    <br></br>                    
+                  
+                   <apex:outputText value="{0, number, ###,##0.00}" label="Quote Discounted Total">
+                   <apex:param value="{!quoteObjToShow.discountTotal}" />
+                </apex:outputText>
+                  
+                    
+                </apex:pageblockSection>
+
+
+
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+        <apex:outputPanel id="pageError">
+            <apex:pageBlock rendered="{!isError}">
+                <apex:pageMessages />
+            </apex:pageBlock>
+        </apex:outputPanel>
+
+
+
+        <apex:actionstatus id="status">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading"
+                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif"
+                            title="Please Wait..." /> <span class="waitingDescription">{!$label.WaitMessageForQuotes}</span>
+                    </div>
+                </div>
+            </apex:facet>
+            <apex:facet name="stop">
+            </apex:facet>
+        </apex:actionstatus>
+
+        <apex:actionstatus id="Clear">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading"
+                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif"
+                            title="Please Wait..." /> <span class="waitingDescription">Please
+                            Wait...</span>
+                    </div>
+                </div>
+            </apex:facet>
+            <apex:facet name="stop">
+            </apex:facet>
+        </apex:actionstatus>
+    </apex:form>
+</apex:page>

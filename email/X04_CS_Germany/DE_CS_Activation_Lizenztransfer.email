@@ -1,0 +1,30 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage. 
+
+gemäß Antrag/unseres Salesteams haben wir die folgende(n) Lizenz/en (entsprechende Nr. einfügen) in die Lizenz (Nummer eintragen) transferiert. 
+
+Somit sind alle Produktkopien der transferierten Lizenz/en unter der/n alten Lizenznummer/n zu entfernen und nicht zu nutzen, so lange sie dort nicht wieder in ein gültiges Software License Agreement mit MathWorks eingeschlossen wurden. 
+Ebenso entfällt die Gültigkeit dazu vorhandener alter Passcodes. 
+
+A) 
+Die aktuellen License Files und File Installation Keys entnehmen Sie bitte Ihrem License Center/den jeweiligen License Centern unter dem 'Install and Activate' Tab der entsprechenden Lizenzen, Option: 'Get License File', bzw. generieren Sie mit Aktivierung der neuen Lizenz/en.
+
+B) 
+Die aktuellen License Files und File Installation Keys entnehmen Sie bitte Ihrem License Center/den jeweiligen License Centern unter der/n entsprechenden Lizenz/en über den 'Install and Activate' Tab, Option: 'Get License File'. 
+
+Hilfreiche Informationen dazu finden Sie auch in Ihrem MathWorks Account unter http://www.mathworks.com/support/activation/index.html?BB=1. 
+
+Passcodes für Release 2007b oder älter müssen nach Anfrage über uns generiert werden. 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email  unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

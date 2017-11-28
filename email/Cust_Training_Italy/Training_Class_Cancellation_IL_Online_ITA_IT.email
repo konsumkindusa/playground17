@@ -1,0 +1,19 @@
+Gentile {!Contact.Name},
+
+Ci dispiace doverla informare della cancellazione del Corso seguente: 
+
+NOME DEL CORSO: {!Enrollment__c.Class__c}   
+DATE: dal {!Enrollment__c.Display_Start_Date__c} al {!Enrollment__c.Display_End_Date__c}
+
+Per ricevere il rimborso completo del corso cancellato, per favore contatti il Dipartimento Training con le informazioni di pagamento. 
+Troverà qui sotto un link alle altre date disponibili dei nostri corsi pubblici. Per favore, dedichi un momento per rivedere la schedulazione dei corsi. Se le interessasse un altro corso e volesse iscriversi, per favore chiami il numero {!Class__c.Sponsor_Office_Phone__c} , oppure semplicemente risponda a questa email con il nome ed il luogo del corso desiderato. 
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+Ci scusiamo per l’inconveniente.
+Grazie
+Training Services
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Se un corso non può aver luogo come previsto a causa di circostanze al di là del ragionevole controllo di MathWorks, l’unica responsabilità di The MathWorks sarà di rimborsare il costo del corso o dei corsi a cui siete iscritti, oppure di trasferirvi in un altro corso di eguale o minor valore. The MathWorks non rimborsa alcuna spesa avvenuta al di là del costo del corso.

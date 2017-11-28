@@ -1,0 +1,34 @@
+Dear {!Case.Contact}
+
+You are receiving this email because you recently activated MathWorks {!Case.Prerelease_Survey_Prerelease__c} prerelease software. In an ongoing effort to improve the quality of MathWorks products, we would appreciate your feedback by taking this short survey.  We ask that you use the software for a period of time before responding to the survey. 
+
+This survey link may be used only once by the recipient of this email. 
+
+https://mathworks.getfeedback.com/r/pmO17W1D?CaseID={!Case.Id}&ContactID={!Case.ContactId}&Prerelease=2017b
+ 
+You will receive one reminder to complete the survey if you have not responded within one week. We will not be able to provide you with this link upon request so it is important that you save this email if you wish to participate in the survey. 
+ 
+Key Technical Information
+--------------------------------------
+For information about potential bug fixes and updates on key known issues in the {!Case.Prerelease_Survey_Prerelease__c} Prerelease, check: http://www.mathworks.com/support/install/dl_instructions/prerelease/known-issues.html
+ 
+Reporting Issues 
+----------------------------
+To report any issues found in the {!Case.Prerelease_Survey_Prerelease__c} Prerelease, visit www.mathworks.com/support/service_requests/contact_support.do
+
+We will consider all feedback, although we cannot ensure that every issue will be resolved in the upcoming release.
+ 
+Thank you,
+MathWorks Prerelease Team
+
+
+
+
+© 2017 The MathWorks, Inc. 
+MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See www.mathworks.com/trademarks for a list of additional trademarks. Other product or brand names may be trademarks or registered trademarks of their respective holders.  http://www.mathworks.com/
+
+
+OPT-OUT Click the link to remove this e-mail address from MathWorks commercial electronic mailing list.  https://go2.mathworks.com/preference-center 
+
+
+The MathWorks, Inc. - 3 Apple Hill Drive, Natick, MA 01760 - 508-647-7000

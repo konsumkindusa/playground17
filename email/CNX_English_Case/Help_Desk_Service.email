@@ -1,0 +1,22 @@
+Dear {!Case.Contact},
+
+The partner information you are looking for is available on the MathWorks Connections Program Help Desk on our Web site. All the partner benefits, datasheets, technical papers, request forms, and general information are available to you 24 hours a day.
+
+To access the Connections Help Desk, point your browser to the following URL.  Because this is an unusual URL, we recommend that you take the time right away to bookmark or add it to your favorites listing.
+
+  https://www.mathworks.com/partners/
+
+You will be prompted for a user name and password.  Please note that the user name and password are case sensitive.  
+
+User Name:  CNXservices
+Password:   T&cr4all                                       (Training & consulting are 4 all)
+
+After logging in, use the navigation on the left hand side to obtain the link to the information you require.  The Connections Help Desk can be shared with others in your organization responsible for supporting your Connections Program approved product.  
+
+If you have any questions or suggestions about the Connections Help Desk, please contact us at connections@mathworks.com.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+Your case id is: {!Case.CaseNumber}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Training_Registered_AP_IL_Classroom_FRA_CH</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Training_Registered_AP_IL_Classroom_FRA_CH</name>
+    <style>none</style>
+    <subject>Préinscription formation MathWorks – attente réception bon de commande</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

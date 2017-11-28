@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Service Survey - CN</name>
+    <style>freeForm</style>
+    <subject>MathWorks服务支持调查问卷</subject>
+    <textOnly>尊敬的 {!Case.Contact},
+
+您于{!Case.CreatedDate} 联系我们寻求服务支持，我们期待您能够就此次服务提供反馈意见。您的服务请求 {!Case.CaseNumber}, {!Case.Subject} 于{!Case.ClosedDate}被 {!Case.OwnerFullName} 关闭。
+
+下面是调查问卷的链接。它大约花费您不到五分钟的时间。
+
+Link to Survey
+
+感谢您花费时间完成此次问卷。您的反馈意见十分重要，这将帮助我们提高对客户的服务水平。
+此致敬礼，
+迈斯沃克软件有限公司服务支持团队
+http://www.mathworks.com/support/
+
+请不要回复此邮件。本邮箱没有被监控，所以对此邮件的回复很可能无法被我们及时阅读。
+如果在将来您不希望收到来自我们公司的问卷调查，请您访问此网址，以更新您的联系设置：
+https://go2.mathworks.com/preference-center
+如果您希望阅读我们公司的保密规定，请访问此网址：
+http://www.mathworks.com/company/aboutus/policies_statements/</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

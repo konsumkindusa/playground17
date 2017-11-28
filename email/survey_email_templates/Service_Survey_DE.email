@@ -1,0 +1,30 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="font-family: arial; font-size: 12pt;"><font face="Times New Roman, serif" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);">Sehr geehrte(r) Herr/Frau
+{!Case.Contact},</font><br>
+<font face="Times New Roman, Times, serif"><br><font style="color: rgb(0, 0, 0);">
+am&nbsp;</font><span style="color: rgb(84, 84, 84); background: white;">{!Case.CreatedDate}</span><font style="color: rgb(0, 0, 0);">&nbsp;kontaktierten
+Sie uns bezüglich technischer Unterstützung. Wir interessieren uns welche
+Erfahrung Sie dabei gemacht haben. Ihre Meinung ist uns wichtig. Ihr Service
+Request&nbsp;</font><span style="color: rgb(84, 84, 84); background: white;">{!Case.CaseNumber},&nbsp;{!Case.Subject}</span><font style="color: rgb(0, 0, 0);">,
+wurde am&nbsp;&nbsp;</font><span style="color: rgb(84, 84, 84); background: white;">{!Case.ClosedDate}</span><font style="color: rgb(0, 0, 0);">&nbsp;durch&nbsp;</font><font>{!Case.OwnerFullName}&nbsp;</font><font style="color: rgb(0, 0, 0);">geschlossen.</font></font></p><p class="MsoNormal" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);"><font face="Times New Roman, Times, serif"><br></font></p><p class="MsoNormal" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);"><font face="Times New Roman, Times, serif"><span style="background-color: rgb(255, 255, 255);">Um</span><span style="background-color: rgb(255, 255, 255);">&nbsp;die Umfrage auszufüllen, klicken Sie bitte hier</span><span style="background-color: rgb(255, 255, 255);">:<font>&nbsp;</font></span></font></p><p class="MsoNormal" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-size: 12pt;">
+<br><a href="https://mathworks.getfeedback.com/r/EZEPSv6q?CaseID={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}&amp;CaseOwnerID={!Case.OwnerId}" style="font-family: &quot;Times New Roman&quot;, Times, serif; background-color: rgb(255, 255, 255);">Link to Survey</a>&nbsp;- </span><font size="2">English version</font></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0);"><span style="font-size: 12pt;"><font face="Times New Roman, Times, serif"><span style="background-color: rgb(255, 255, 255);"><a href="https://mathworks.getfeedback.com/r/dvwTZ1bk?CaseID={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}&amp;CaseOwnerID={!Case.OwnerId}">Link to Survey</a></span></font>&nbsp;- </span><font size="2" style="font-size: 12pt;">German version<br></font>
+<br><font face="Times New Roman, serif" style="font-size: 12pt; font-family: arial;">
+Mit freundlichem Gruß,</font><br><font face="Times New Roman, serif" style="font-size: 12pt; font-family: arial;">
+das MathWorks Technical Support Team</font><br><font face="Times New Roman, serif" style="font-size: 12pt; font-family: arial;">
+http://www.mathworks.com/support/</font><br>
+<br>
+<br><font face="Times New Roman, serif" style="font-size: 12pt; font-family: arial;">
+Falls Sie jetzt und zukünftig nicht an unseren Kundenzufriedenheitsumfragen
+teilnehmen möchten, dann können Sie sich über folgenden Link davon abmelden:</font><br><a href="https://go2.mathworks.com/preference-center" target="_blank" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">https://go2.mathworks.com/preference-center</a><span style="font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">&nbsp;</span></p><p class="MsoNormal" style="color: rgb(0, 0, 0);"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;"><br></span></font><font face="Times New Roman, serif" style="font-family: arial; font-size: 12pt;">
+Weitere Informationen über die MathWorks Datenschutz Regelung finden Sie auf
+der folgenden Seite:</font><br><font face="Times New Roman, serif" style="font-family: arial; font-size: 12pt;">
+http://www.mathworks.com/company/aboutus/policies_statements/</font><br>
+<br><font face="Times New Roman, serif" style="font-family: arial; font-size: 12pt;">
+The MathWorks GmbH | Friedlandstr.18 | 52064 Aachen | Amtsgericht Aachen | HRB
+8082 | Geschäftsführer: Andreas Schindler, Steven D. Barbo, Jeanne O’Keefe<o:p></o:p></font></p>
+
+<p class="MsoNormal" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);"><span style="font-family: Arial, sans-serif;">&nbsp;</span></p>]]></td>
+</tr>
+</table>

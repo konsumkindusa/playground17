@@ -1,0 +1,14 @@
+{!Case.Account}
+{!Case.Contact}様
+
+いつもお世話になっております。
+MathWorks Japan管理部の{!User.Email_Template_Signature__c}です。
+
+E-mail請求書の件、ご返信頂きまして誠にありがとうございました。 
+
+従来通り紙での郵送を今後もご希望との旨、承知致しました。 
+今後ともどうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+Case ID: {!Case.CaseNumber}

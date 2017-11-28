@@ -1,0 +1,22 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+I am writing in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+MATLAB Home access to the MathWorks technical support team is primarily for installation issues and bug reporting. However, there are many support resources available on MathWorks.com which may help resolve your issue. 
+
+The MathWorks Documentation Center features complete documentation of all MATLAB and Simulink products, including hundreds of demos and examples: 
+http://www.mathworks.com/help/ 
+
+MATLAB Answers features over 100,000 questions about MATLAB and Simulink asked and answered by the MATLAB Central online community: 
+http://www.mathworks.com/matlabcentral/answers/ 
+
+Specifically about your question, here is some initial information to help you get started: 
+
+
+
+
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

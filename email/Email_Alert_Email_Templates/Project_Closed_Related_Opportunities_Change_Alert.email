@@ -1,0 +1,6 @@
+The related opportunities list on project {!MW_Project__c.Name}: {!MW_Project__c.Project_Name__c} has been modified – a new opportunity has been added to the list.
+
+Modified By: {!MW_Project__c.LastModifiedBy}
+Modified Date: {!MW_Project__c.LastModifiedDate}
+
+Project Link: {!MW_Project__c.Project_Link__c}

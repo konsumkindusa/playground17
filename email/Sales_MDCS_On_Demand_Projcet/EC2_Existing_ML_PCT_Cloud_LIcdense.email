@@ -1,0 +1,45 @@
+Dear {!Contact.FirstName},
+
+Thank you for your interest in using MATLAB Distributed Computing Server for Amazon EC2.  
+
+I noticed that you are already set up to use MATLAB Parallel Cloud.   The set-up process for MATLAB Parallel Cloud provides you with an on-demand license for MATLAB Distributed Computing Server.
+
+From a licensing perspective, you have everything you need.   You can use both services on a single license. 
+
+If you have successfully been able to use MATLAB Parallel Cloud, then you should have no problems connecting to Cloud Center or clusters created by Cloud Center.
+
+In order to use MATLAB Distributed Computing Server On Demand, , you will need to configure an Amazon Web Services account for use with MathWorks Cloud Center as described in the attached document. 
+
+Please be aware that the on-demand billing rates for MATLAB Distributed Computing Server for Amazon EC2 is for software-only. 
+
+Software costs (to MathWorks) 
+* On-demand rate is $0.18 per worker per hour (Commercial US pricing) 
+* MathWorks only accepts credit card payment. 
+* Customers will provide a credit card via the MathWorks License Center which will be kept on file. 
+* Billing is completed monthly. 
+* Credit card will be charged for usage in the previous month 
+* Detailed information on billing can be found on our web site at http://www.mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html 
+
+*** MATLAB Distributed Computing Server on Amazon EC2 is compatible with MATLAB R2015a or higher. 
+
+
+Hardware costs (to Amazon) 
+PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of any AWS resources. If needed, you can navigate to aws.amazon.com to create an account. You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account. 
+
+* Please confirm with aws.amazon.com for current pricing 
+* The list of MathWorks' supported instances (Linux only) can be found at 
+http://www.mathworks.com/help/cloudcenter/ug/cloud-computing-console.html#bvlyxe_ 
+
+You might need to contact Amazon Web Services to raise your service limits for the specific on-demand Linux instances that you wish to use. (See: http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) Please note that Amazon Web Services has a policy regarding a waiting period before increasing limits for new customers. Cloud Center does not support the instance types available for the free tier. 
+
+NOTE: Fees for use of Amazon instances started by Cloud Center on your behalf are billed directly from Amazon Web Services. You will incur fees for any instances you use, regardless of whether you have actually used MATLAB Distributed Computing Server. This applies to on-demand licensing, perpetual licensing, and trials. 
+
+Once your AWS account is created, and you have a trial or license to allow access to Cloud Center, you will then use the AWS Management Console to create an Identity and Access Management (IAM) Role. Details on the IAM Role creation can be found in the Create and Manage Clusters section of the Cloud Center documentation (http://www.mathworks.com/help/cloudcenter). 
+
+Learn more about on-demand billing for MATLAB Distributed Computing Server at our website ( http://www.mathworks.com/products/parallel-computing/parallel-computing-on-the-cloud/distriben-ec2-pricing.html ) .  The license center report will indicate usage by service.  
+
+Learn more about Cloud Center here: http://www.mathworks.com/help/cloudcenter
+
+If you have any technical questions, please contact Installation Support.
+
+Best regards,

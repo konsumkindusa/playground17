@@ -1,0 +1,34 @@
+Dear {!Contact.FirstName},
+  
+Thank you for responding to my previous email and answering the qualification questions in regards to running MATLAB Distributed Computing Server on Amazon EC2.  
+
+I would like to provide you with a one-day trial of MATLAB Distributed Computing Server. You can familiarize yourself with Cloud Center by viewing the documentation at http://www.mathworks.com/help/cloudcenter
+
+The purpose of the trial is to ensure that you can create, connect, and submit jobs to a cluster on Amazon.  In order to trial the software, you need to run the Connectivity Checker and set up an Amazon EC2 account. For your convenience, I have attached instructions on how to set up your AWS account.
+
+Connectivity Checker
+If you are running MATLAB R2015a or lower, you will need to download and run Cloud Connectivity Checker.  Instructions can be found at the following URL: http://www.mathworks.com/matlabcentral/fileexchange/48290-cloudconnectivitychecker 
+
+If you are running MATLAB R2015b or higher, you can access the Cloud Connectivity Checker directly in the MATLAB desktop.   
+
+    1.	Select the “Home” tab in the MATLAB Toolstrip
+    2.	Click on “Parallel”
+    3.	Select “Test Cloud Connection”
+
+If you receive an error and are unable to connect to the Cloud, please contact our Installation Support team at support@mathworks.com, and copy me on the email.   Be sure to add in the exact error message you receive.
+
+
+Amazon Web Services (AWS) Account:
+* PLEASE NOTE: You will be billed separately by Amazon Web Services for your use of the EC2 instances that you use.    You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account
+
+Please follow these steps below to create or update your Amazon Web Service (AWS) account.
+
+You will need to connect to aws.amazon.com to create an account.  Once the account is created, you will then use the AWSS Management Console to create an Identity and Access Management (IAM) User.  
+
+Details on the AWS Identity and Access Management (IAM) can be found in the Create and Manage Clusters section of the Cloud Center documentation at http://www.mathworks.com/help/cloudcenter
+
+After Amazon confirms that your AWS is set up and you have passed the connectivity checker please let me know the date you would like to trial MATLAB Distributed Computer Server on Amazon EC2.   
+
+I look forward to hearing from you on when you would like to have your trial.  
+
+Best regards,

@@ -1,0 +1,19 @@
+Chèr(e){!Contact.Name},
+
+Nous avons le regret de vous annoncer l'annulation de la formation suivante :
+
+FORMATION : {!Enrollment__c.Class__c}   
+DATES :  {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c}
+
+Afin d'être remboursé intégralement, veuillez prendre contact avec notre Service Formation muni des informations de paiment. Vous trouverez ci-dessous un lien vers notre calendrier de formation que nous vous conseillons de consulter. Si une autre formation ou session vous intéresse et que vous souhaiteriez y participer, veuillez nous appeler au {!Class__c.Sponsor_Office_Phone__c}  ou répondre à ce message en indiquant la formation qui vous intéresse.   
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+Nous vous prions d'accepter nos excuses pour la gêne occasionnée.
+
+Nous vous remercions,
+Le Service Formation
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Si une formation ne peut avoir lieu en raison de circonstances exceptionnelles, le seul engagement de The MathWorks est le remboursement de la formation ou l'inscription à une autre formation d'un montant équivalent. The MathWorks ne rembourse pas les frais annexes en dehors du montant de la formation.

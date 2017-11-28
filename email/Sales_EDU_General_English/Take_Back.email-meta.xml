@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Take Back</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Take Back</name>
+    <style>none</style>
+    <subject>MathWorks Contact Info</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,15 @@
+Dear {!Case.Contact},
+
+Thank you for purchasing MATLAB software from Keysight or a Keysight partner.  
+
+Also, thank you for completing the MATLAB Software Entitlement Certificate Registration form to obtain your MATLAB license.  Unfortunately, we are missing some information to successfully assign the license to you.  
+
+Can you please fill in the missing fields noted below which are required for me to assign you as the administrator on your MathWorks License?
+
+
+<<INSERT MISSING FIELDS>>
+Please let me know if you have any questions
+Thank you,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}

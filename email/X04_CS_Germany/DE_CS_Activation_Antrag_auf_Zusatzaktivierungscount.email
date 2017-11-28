@@ -1,0 +1,20 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage.
+
+Um den von Ihnen gewünschten Zusatzaktivierungscount für Lizenz XXX zu beantragen, schildern Sie uns bitte in einem kurzen Satz in Englisch (lassen Sie uns vom Administrator in einem kurzen Satz in Englisch schildern), weshalb Sie alle 4 für den Zeitraum von 12 Monaten verfügbaren Computerumzüge bereits konsumieren mussten.
+Wir werden Ihre Rückmeldung dann an die zuständigen Kollegen weitergeben und Sie abschließend über deren Antwort oder eine erfolgte Genehmigung eines Zusatzcounts informieren, sodass Sie ggf. erneut aktivieren können. 
+
+Bitte beachten Sie auch, dass dies ein Kulanzcount bis zur automatischen Rücksetzung Ihrer bisher verbrauchten Aktivierungen auf wieder verfügbar wäre und lassen Sie uns daher auch wissen, wenn der Aktivierungstyp der Lizenz (Designated Computer) nicht der für Ihre Nutzung geeignete ist und Sie eine Umstellung auf "Individual" wünschen.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

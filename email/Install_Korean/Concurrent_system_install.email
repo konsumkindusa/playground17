@@ -1,0 +1,42 @@
+Concurrent(네트워크 방식)은 두개의 프로그램으로 돌아갑니다.
+1. FLEXnet 라이선스 매니저(서버 프로그램, 서버 컴퓨터에서 구동)
+2. Matlab (클라이언트 프로그램, 서버 컴퓨터 또는 그외 컴퓨터에서 구동)
+
+Concurrent 구동을 위해서는 Client와 서버간 네트워크 통신이 되어야 합니다.
+Ping 등으로 통신이 되는지 확인 부탁 드립니다.
+
+*참고* 설치 단계에서는 반드시 방화벽과 보안 프로그램을 일시 정지 하시고 설치를 하셔야 문제가 발생하지 않습니다.
+
+Concurrent 서버 설치 절차는 아래와 같습니다.
+
+1. Activation (라이선스 파일 생성)
+라이선스 센터 (http://www.mathworks.co.kr/licensecenter) 에서 서버 정보 등록 (첨부 파일 참조)
+- 라이선스 번호 클릭 후 하단에 나오는 Activation and Installation 탭 클릭
+- Activate 아이콘 클릭 후 관련 정보 입력
+- HOST ID는 Mac address
+Windows: CMD 창에서 getmac 후 나오는 번호를 대쉬 없이 입력
+Linux: eth0 의 Mac address
+Mac: terminal 에서 ifconfig en0 | grep ether 입력 후 나오는 주소 (10.8 이상. 이전 OS 는 en1)
+참고 : http://www.mathworks.com/matlabcentral/answers/101892
+
+
+2. 서버 프로그램 (라이선스 매니저) 설치
+
+- 온라인 설치 가이드 (기본 설정 방식. 계정 이메일, 로그인 암호 필요)
+http://www.mathworks.co.kr/kr/help/install/ug/installing-the-license-manager-on-a-server.html?s_tid=gn_loc_drop
+
+- 오프라인 설치 가이드 (인터넷 연결이 안될 시, File Installation Key, license.lic 파일, 설치할 제품 필요)
+http://www.mathworks.co.kr/kr/help/install/ug/install-license-manager-using-a-file-installation-key.html
+
+FIK, license.lic 파일 : Activation 절차 완료 시 또는 라이선스 센터에서 다운 가능
+설치할 제품 : ISO 이미지 다운 ( http://www.mathworks.com/matlabcentral/answers/142267 )
+
+
+서버 설치 후 클라이언트 설치법은 다음과 같습니다.
+
+- 클라이언트 설치법 (FIK, license.dat, 설치할 제품 필요)
+http://www.mathworks.co.kr/kr/help/install/ug/install-mathworks-software-on-client-systems-in-network-configurations.html
+
+- FIK : 서버 설치법 참조
+- license.dat : MATLAB 서버 설치 폴더 안의 etc 폴더에 생성됨
+- 설치할 제품 : 서버 설치법 참조

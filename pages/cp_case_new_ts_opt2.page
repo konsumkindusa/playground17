@@ -1,0 +1,350 @@
+<apex:page Controller="cp_Case_new_ControllerExtension" standardStylesheets="true" sidebar="false" showHeader="false" language="{!language}">
+    <apex:include pageName="cp_case_new_style" />
+    <style>
+        .content_container{
+        padding-left:0px !important;
+        width:99%;
+        }
+        .warning{margin-left:0px;margin-top:15px;}
+        h3{font-family: Arial, Helvetica, sans-serif;} 
+    </style>
+    <body>
+        <apex:form id="mainForm">
+            <script>
+            var visitorChoice = 'b2';
+            var fieldsNotPopulated ='';
+            function checkRequiredFields(choicevalue,selTask,ihSelTask){
+                document.getElementById('notficationSection').innerHTML ='';
+                document.getElementById('notficationSection').style.display ="none";
+                var infoMessage = '<br/><p>{!$Label.Create_case_Warning_Message}</p><ul>';
+                
+                clearCssOnFields();
+                requiredFieldId ='';
+                fieldsNotPopulated='';
+                AttachmentFileSizeError = '';
+                
+                if(requiredFieldArr[choicevalue] != null && requiredFieldArr[choicevalue] != ''){
+                    reqFields = requiredFieldArr[choicevalue].split(',');
+                    
+                    if(reqFields.length>0){
+                        for(ctr=0;ctr<reqFields.length;ctr++){
+                            if(document.getElementById(reqFields[ctr]) != null){
+                                if(document.getElementById(reqFields[ctr]).value=='' ){
+                                    var shouldBeRequired = true;
+                                    if(dependencyField[reqFields[ctr]]!=null){
+                                        
+                                        shouldBeRequired = false;
+                                        dependentFieldId = dependencyField[reqFields[ctr]].split('%2C');
+                                        for(ctr2=0;ctr2<dependentFieldId.length;ctr2++){
+                                            if(document.getElementById(dependentFieldId[ctr2])!=null){
+                                                currentRadioButtonState = document.getElementById(dependentFieldId[ctr2]).checked
+                                                shouldBeRequired=shouldBeRequired||currentRadioButtonState;
+                                            }
+                                        }
+                                    }
+                                    if(shouldBeRequired){
+                                        if(fieldsNotPopulated.length>0){
+                                            fieldsNotPopulated+=',';
+                                        }
+                                        fieldsNotPopulated+=reqFields[ctr];
+                                    }
+                                }
+                            }else{
+                                //alert('Missing:'+reqFields[ctr]);
+                            }
+                        }
+                    }
+                }
+                
+                //Attachment File Size validation
+                for (ctr=0;ctr<AttachmentFieldArr.length;ctr++){
+                    var maxSize = 5242880;
+                    if (AttachmentFieldArr[ctr] != ''){
+                        var Att = document.getElementById(AttachmentFieldArr[ctr]);
+                        //Determine File Size
+                        if(navigator.appName=="Microsoft Internet Explorer"){
+                            if(Att.value){
+                                
+                                try{
+                                    var oas=new ActiveXObject("Scripting.FileSystemObject");
+                                    var e=oas.getFile(Att.value); // Replaced by Jaspreet  var e=oas.getFile(component.value); component is undefined
+                                    var size=e.size;
+                                }
+                                catch(exception)
+                                {
+                                }                              
+                            }
+                        }
+                        else{
+                            if(Att.files[0]!=undefined){
+                                size = Att.files[0].size;
+                            }
+                        }
+                        if(size!=undefined && size>maxSize){
+                            if (AttachmentFileSizeError.length > 0){
+                                AttachmentFileSizeError+= ',';
+                            }
+                            if (size != 0){
+                                AttachmentFileSizeError+= Att.value;
+                            }
+                        }
+                    }
+                    size = 0;
+                }
+                if(fieldsNotPopulated.length==0 & choicevalue!='' && AttachmentFileSizeError.length == 0){
+                    if (ihSelTask != ''){
+                        document.getElementById(ihSelTask).value = selTask;
+                    }
+                    document.getElementById('submitbutton').disabled = 'true'; //HW 1904967
+                    createcase(selTask);
+                }else{
+                    if(fieldsNotPopulated.length>0){
+                        unPopulatedfields = fieldsNotPopulated.split(',');
+                        for(ctr=0;ctr<unPopulatedfields.length;ctr++){
+                            //document.getElementById(unPopulatedfields[ctr]).setAttribute("class","textfield required");
+                            textlength = unPopulatedfields[ctr].split(':').length;
+                            originalId = (unPopulatedfields[ctr].split(':'))[textlength-1];
+                            document.getElementById(originalId+'div').setAttribute("class","form_element field_error");
+                            document.getElementById(originalId+'span').setAttribute("style","display:none");
+                            infoMessage+='<li id="infoMessage'+ctr+'">{!$Label.MySR_Please_Enter_Part_1} '+document.getElementById(originalId+'div').getAttribute("name")+' {!$Label.MySR_Please_Enter_Part_2}</li>';
+                        }
+                    }
+                    if (AttachmentFileSizeError.length>0){
+                        AttachmentFileSizeError = AttachmentFileSizeError.split(',');
+                        for(ctr=0;ctr<AttachmentFileSizeError.length;ctr++){
+                            var AttachmentName = AttachmentFileSizeError[ctr].replace('C:\\fakepath\\','');
+                            infoMessage+='<li id="infoMessageAttError'+ctr+'">File size must be below 5MB. - <b>'+AttachmentName+'</b></li>';
+                        }
+                    }
+                    infoMessage+='</ul>';
+                    document.getElementById('notficationSection').innerHTML = infoMessage;
+                    document.getElementById('notficationSection').style.display="block";
+                }
+                
+            }
+            
+            function clearCssOnFields(){
+                fieldIdToClearList = requiredFieldArr[visitorChoice];
+                fieldIdToClear = fieldIdToClearList.split(',');
+                for(ctr=0;ctr<fieldIdToClear.length;ctr++){
+                    //document.getElementById(fieldIdToClear[ctr]).setAttribute("class","");
+                    textlength = fieldIdToClear[ctr].split(':').length;
+                    originalId = (fieldIdToClear[ctr].split(':'))[textlength-1];
+                    document.getElementById(originalId+'div').setAttribute("class","form_element");
+                    var element = document.getElementById(originalId+'span');
+                    if(element !=null){                
+                        document.getElementById(originalId+'span').setAttribute("style","");
+                    }
+                }
+                
+            }
+            
+            function openWindow(filepath){
+                var filename = '{!$Label.mw_domain_url}'+filepath;
+                window.open(filename, '_blank','width=1000,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes');
+                return false;
+            }
+            
+            
+            function createcancel() { 
+                var loc = parent.location.href.split("?")[0];           
+                if({!isssoenabled}){            
+                    if({!isDistributor}){            
+                        window.parent.location.href = loc + '?page=cp_case_home';
+                        window.top.location.href = '/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}';
+                    }else if({!NOT(isDistributor)} && {!NOT(hasMWOffice)}){
+                        window.top.location.href = '{!$Label.mw_domain_url}/company/aboutus/contactus.html';
+                    }
+                        else{
+                            window.parent.location.href = loc + '?page=cp_case_home';
+                            window.top.location.href = '/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}';
+                        }
+                }else{
+                    window.top.location.href = '/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}';
+                }
+            }
+            
+            </script>
+            <apex:actionFunction action="{!createcase}" status="saving" name="createcase" >
+                <apex:param name="selTask" value="{!selTask}" assignTo="{!selTask}" />
+            </apex:actionFunction>
+            <apex:inputHidden id="ihSelTask" value="{!selTask}"/>
+            <div class="warning" id="notficationSection" style="display:none;"></div>
+            <!-- apex:messages styleClass="warning" id="notficationSection"/ -->
+            <!-- form starts -->
+            <br/>
+            <div class="content_container">
+                <p><span class="req">*</span><strong>{!$Label.TS_Request_Install_Required_Info}</strong></p>
+                <div class="form_container wide">
+                    <div class="form_module">
+                        <h3>{!$Label.TS_Request_Install_Step_2}</h3>
+                        <div class="form_element" id="summary_8div" name="{!$Label.TS_Request_Title}">
+                            <label for="summary_8"><span class="req" id="summary_8span">*</span>{!$Label.TS_Request_Title}</label>
+                            <!--<input property="title" value="" styleid="requestTitle" size="60" maxlength="59" id="summary_8"  class="placeholder"  displaytext="Type a one-line title describing your request." readonly="" />-->
+                            <apex:inputText value="{!caseObj.Subject}" id="summary_8" maxlength="59" size="60" styleClass="textfield"/>
+                        </div>
+                        <div class="form_element" id="description_8div" name="{!$Label.TS_Request_Description}">
+                            <div style="float:left">
+                                <label for="description_8"><span class="req" id="description_8span">*</span>{!$Label.TS_Request_Description}</label>
+                            </div>
+                            <div style="float:right">
+                                <img src="{!URLFOR($Resource.helpicon)}" width="11" height="11" alt="" />
+                                <a href="#" onClick="javascript:openWindow('/support/contact_us/ts/popups/description.html','350','300','scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" tabindex="-1">{!$Label.TS_Request_Include_in_Discription}</a>
+                            </div>
+                            <!--<textarea  id="description_8" cols="60" rows="8" class="placeholder"  displaytext="Provide a detailed description of the issue you are facing." readonly=""></textarea>-->
+                            <apex:inputTextArea richtext="false" id="description_8" value="{!caseObj.Description}" cols="60" rows="8" style="width: 99%;resize:none" styleClass="textarea"/>
+                        </div>
+                        <apex:outputPanel id="opSelTaskTS22" rendered="true">
+                            <apex:outputpanel id="ProductRelease">
+                                <apex:actionRegion >
+                                    <div class="form_element" id="ver_8div" name="{!$Label.TS_Request_Ver_Command_Missing}">
+                                        <div style="float:left">
+                                            <label for="ver_8"><span class="req" id="ver_8span">* </span>{!$Label.TS_Request_Ver_Command}</label>
+                                        </div>
+                                        <div style="float:right">
+                                            <img src="{!URLFOR($Resource.helpicon)}" width="11" height="11" alt="" />
+                                            <a href="#" onClick="javascript:openWindow('/support/contact_us/ts/popups/ver.html','350','300','scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes')" tabindex="-1"><apex:outputText value="{!$Label.TS_Request_Ver_Command_Link}" escape="false"/></a>
+                                        </div>
+                                        <apex:inputTextArea richText="false" id="ver_8" value="{!outputver}" cols="60" rows="8" styleClass="textarea" style="width: 99%;resize:none" >
+                                            <apex:actionSupport action="{!refreshProductRelease}" event="onchange" rerender="ProductRelease" />
+                                        </apex:inputTextArea> 
+                                    </div>
+                                    <div class="form_element" id="release_8div" name="{!$Label.TS_Request_Install_Release}">
+                                        <label for="release_8"><span class="req" id="release_8span">* </span>{!$Label.TS_Request_Install_Release}</label>
+                                        <apex:selectList value="{!SelectedRelease}" id="release_8" size="1" rendered="{!Releases.size != 0}" styleClass="picklist">
+                                            <apex:selectOptions value="{!Releases}"/>
+                                            <apex:actionSupport action="{!refreshProductList}" event="onchange" rerender="ProductRelease" />
+                                        </apex:selectList>
+                                    </div>
+                                    <div id="Prodwaiting" style="display:none;">
+                                        <br/>
+                                        <img alt="waiting" src="http://mathworks.com/images/spinner.gif" border="0" /> Form is loading
+                                    </div>
+                                    <div id="product_failure_message"></div>
+                                    <div class="form_element" id="product_8div" name="{!$Label.TS_Request_Install_Product}">              
+                                        <label for="product_8"><span class="req" id="product_8span">* </span>{!$label.TS_Request_Install_Product}</label>
+                                        <apex:selectList value="{!CaseObj.Product_Lookup__c}" id="product_8" size="1" rendered="{!allProductList.size != 0}" styleClass="picklist">
+                                            <apex:selectOptions value="{!allProductList}"/>
+                                        </apex:selectList>
+                                        <br/>{!$label.TS_Request_Product}
+                                    </div>
+                                    <label for="version" style="display:none" id="versionLabel">Version:</label>
+                                    <div id="displayVersion"></div>
+                                    <input type="hidden" name="version" id="version" /><br/>
+                                    <div id="version_failure_message"></div>
+                                </apex:actionRegion>
+                            </apex:outputpanel>
+                        </apex:outputpanel>
+                        
+                        <div class="form_element"> 
+                            
+                            <label for="attach"> {!$Label.TS_Request_Attach_File}</label>
+                            
+                            <apex:outputpanel id="Opattachments">
+                                <script>
+                                var ctr = 0;
+                                var actr = 1;
+                                </script>
+                                <apex:repeat value="{!attwrapperlist}" var="newAtt" id="repAtt">
+                                    <apex:outputpanel id="opAtt">
+                                        <apex:inputFile id="ifAtt"  contentType="{!newAtt.attContType}"  value="{!newAtt.attBody}" onchange="document.getElementById('{!$Component.ihAtt}').value = this.value;"/>
+                                        <br/>
+                                        <apex:inputHidden value="{!newAtt.attName}" id="ihAtt" />
+                                        <script> 
+                                        if (ctr > 0){
+                                            document.getElementById('{!$Component.opAtt}').style.display = 'none';
+                                        }
+                                        ctr++;
+                                        </script>
+                                    </apex:outputpanel>
+                                </apex:repeat>
+                                <p>{!$Label.TS_Request_File_Size_Limit}</p> 
+                                <a href="#{!$Component.repAtt}" onclick="document.getElementById('{!$Component.repAtt}:'+actr+':opAtt').style.display = 'block'; actr++; if (actr > 4) { this.style.display = 'none'; }" >{!$Label.TS_Request_Attachment_Add_More}</a>
+                            </apex:outputpanel>
+                            
+                        </div>
+                        
+                        
+                        <div class="submit_module">
+                            <input type="button" value="{!$Label.TS_Submit_Button}"  id="submitbutton"  class="mwbutton rounded" onclick="checkRequiredFields(visitorChoice,'Producthelp','{!$Component.ihSelTask}');" />
+                            <input type="button" value="{!$Label.TS_Cancel_Button}" id="cancelButton" class="mwbutton rounded" onclick="createcancel();"/>
+                            <!--<apex:commandButton value="Cancel" styleclass="mwbutton rounded" onclick="createcancel();" style="margin-left:10px;margin-top:2px" rendered="{!isDistributor}" />-->
+                            
+                            <apex:actionstatus id="saving">
+                                <apex:facet name="start">
+                                    <img alt="waiting" src="http://mathworks.com/images/spinner.gif" border="0" /> {!$Label.MySR_Saving}
+                                </apex:facet>
+                            </apex:actionstatus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+            var requiredFieldId = '';
+            var requiredFieldArr = new Array();
+            if ( '{!isStudent}' == 'false' ){
+                requiredFieldArr['a1'] = '{!$Component.title_1},{!$Component.License__c_1},{!$Component.add_additional_details_1}';
+                requiredFieldArr['a2'] = '{!$Component.title_2}'+','+'{!$Component.service_license___2}'+','+'{!$Component.what_would_you_like_to_do__2}'+','+'{!$Component.ihPassCodeRelease_2}'+','+'{!$Component.Add_additional_details_to_your_request__2}';
+                requiredFieldArr['a2b'] = '{!$Component.title_2},{!$Component.service_license___2},{!$Component.what_would_you_like_to_do__2},{!$Component.ihPassCodeRelease_2},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email},{!$Component.Add_additional_details_to_your_request__2}';
+                requiredFieldArr['a3'] = '{!$Component.ihCSLicenseContact_3},{!$Component.ihCSContactRequest_3},{!$Component.license_3},{!$Component.first_name_a_3},{!$Component.last_name_a_3},{!$Component.email_a_3},{!$Component.selCountry_a_3},{!$Component.first_name_b_3},{!$Component.last_name_b_3},{!$Component.companyUniversity_b_3},{!$Component.newStreetAddress1_b_3},{!$Component.newCity_b_3},{!$Component.zip_code_b_3},{!$Component.email_b_3},{!$Component.phone_b_3}';
+                requiredFieldArr['a4'] = '{!$Component.title_4},{!$Component.Transfer_product1_4},{!$Component.quantity1_4},{!$Component.from1_4},{!$Component.to1_4}';
+                requiredFieldArr['a4b'] = '{!$Component.title_4},{!$Component.Transfer_product1_4},{!$Component.quantity1_4},{!$Component.from1_4},{!$Component.to1_4},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email}';
+                requiredFieldArr['a5'] = '{!$Component.title_5},{!$Component.license_5},{!$Component.listLicensesToCombine_5}';
+                requiredFieldArr['a5b'] = '{!$Component.title_5},{!$Component.license_5},{!$Component.listLicensesToCombine_5},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email}';
+                requiredFieldArr['a6'] = '{!$Component.title_6},{!$Component.csgcslicense_6},{!$Component.add_additional_details_6}';
+                requiredFieldArr['a6b'] = '{!$Component.title_6},{!$Component.csgcslicense_6},{!$Component.cus_firstname},{!$Component.cus_lastname},{!$Component.cus_email},{!$Component.add_additional_details_6}';
+                requiredFieldArr['b1'] = '{!$Component.license_7},{!$Component.platform_7},{!$Component.OS_7},{!$Component.releaselists_7},{!$Component.allproductlist_7},{!$Component.title_7},{!$Component.how_can_we_assist_7}';
+                requiredFieldArr['b2'] = '{!$Component.summary_8},{!$Component.description_8},{!$Component.ver_8},{!$Component.product_8},{!$Component.release_8}';
+            }
+            else{
+                requiredFieldArr['a1'] = '{!$Component.title_1}'+','+'{!$Component.add_additional_details_1}';
+                requiredFieldArr['a2'] = '{!$Component.title_2}'+','+'{!$Component.service_license___2}'+','+'{!$Component.what_would_you_like_to_do__2}'+','+'{!$Component.ihPassCodeRelease_2}'+','+'{!$Component.Add_additional_details_to_your_request__2}';
+                requiredFieldArr['a2b'] = '{!$Component.title_2}'+','+'{!$Component.service_license___2}'+','+'{!$Component.what_would_you_like_to_do__2}'+','+'{!$Component.ihPassCodeRelease_2}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}'+','+'{!$Component.Add_additional_details_to_your_request__2}';
+                requiredFieldArr['a3'] = '{!$Component.ihCSLicenseContact_3}'+','+'{!$Component.ihCSContactRequest_3}'+','+'{!$Component.license_3}'+','+'{!$Component.first_name_a_3}'+','+'{!$Component.last_name_a_3}'+','+'{!$Component.email_a_3}'+','+'{!$Component.selCountry_a_3}'+','+'{!$Component.first_name_b_3}'+','+'{!$Component.last_name_b_3}'+','+'{!$Component.companyUniversity_b_3}'+','+'{!$Component.newStreetAddress1_b_3}'+','+'{!$Component.newCity_b_3}'+','+'{!$Component.zip_code_b_3}'+','+'{!$Component.email_b_3}'+','+'{!$Component.phone_b_3}';
+                requiredFieldArr['a4'] = '{!$Component.title_4}'+','+'{!$Component.Transfer_product1_4}'+','+'{!$Component.quantity1_4}'+','+'{!$Component.from1_4}'+','+'{!$Component.to1_4}';
+                requiredFieldArr['a4b'] = '{!$Component.title_4}'+','+'{!$Component.Transfer_product1_4}'+','+'{!$Component.quantity1_4}'+','+'{!$Component.from1_4}'+','+'{!$Component.to1_4}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}';
+                requiredFieldArr['a5'] = '{!$Component.title_5}'+','+'{!$Component.license_5}'+','+'{!$Component.listLicensesToCombine_5}';
+                requiredFieldArr['a5b'] = '{!$Component.title_5}'+','+'{!$Component.license_5}'+','+'{!$Component.listLicensesToCombine_5}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}';
+                requiredFieldArr['a6'] = '{!$Component.title_6}'+','+'{!$Component.add_additional_details_6}';
+                requiredFieldArr['a6b'] = '{!$Component.title_6}'+','+'{!$Component.cus_firstname}'+','+'{!$Component.cus_lastname}'+','+'{!$Component.cus_email}'+','+'{!$Component.add_additional_details_6}';
+                requiredFieldArr['b1'] = '{!$Component.platform_7}'+','+'{!$Component.OS_7}'+','+'{!$Component.releaselists_7}'+','+'{!$Component.allproductlist_7}'+','+'{!$Component.title_7}'+','+'{!$Component.how_can_we_assist_7}';
+                requiredFieldArr['b2'] = '{!$Component.summary_8},{!$Component.description_8},{!$Component.ver_8},{!$Component.product_8},{!$Component.release_8}';
+            }
+            
+            var dependencyField = new Array();// index is the id of the required field and value is the dependent radio button id seperated by '%2C'.
+            dependencyField['{!$Component.ihPassCodeRelease_2}'] = "Request a passcode/license file";
+            dependencyField['{!$Component.first_name_a_3}'] = "changeContact%2CremoveContact";
+            dependencyField['{!$Component.last_name_a_3}'] = "changeContact%2CremoveContact";
+            dependencyField['{!$Component.email_a_3}'] = "changeContact%2CremoveContact";
+            dependencyField['{!$Component.selCountry_a_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.first_name_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.last_name_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.companyUniversity_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.newStreetAddress1_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.newCity_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.zip_code_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.email_b_3}'] = "changeContact%2CaddContact";
+            dependencyField['{!$Component.phone_b_3}'] = "changeContact%2CaddContact";
+            
+            var licenseFieldArr = new Array();
+            licenseFieldArr['a1'] = '{!$Component.License__c_1}';
+            licenseFieldArr['a2'] = '{!$Component.service_license___2}';
+            licenseFieldArr['a2b'] = '{!$Component.service_license___2}';
+            licenseFieldArr['a3'] = '{!$Component.license_3}';
+            licenseFieldArr['a4'] = '{!$Component.from1_4},{!$Component.to1_4},{!$Component.from2},{!$Component.to2},{!$Component.from3},{!$Component.to3},{!$Component.from4},{!$Component.to4},{!$Component.from5},{!$Component.to5}';
+            licenseFieldArr['a4b'] = '{!$Component.from1_4},{!$Component.to1_4},{!$Component.from2},{!$Component.to2},{!$Component.from3},{!$Component.to3},{!$Component.from4},{!$Component.to4},{!$Component.from5},{!$Component.to5}';
+            licenseFieldArr['a5'] = '{!$Component.license_5}';
+            licenseFieldArr['a5b'] = '{!$Component.license_5}';
+            licenseFieldArr['a6'] = '{!$Component.csgcslicense_6}';
+            licenseFieldArr['a6b'] = '{!$Component.csgcslicense_6}';
+            licenseFieldArr['b1'] = '{!$Component.license_7}';
+            
+            var AttachmentFieldArr = [ '{!$Component.nr_license_dat}', '{!$Component.nr_lmdebug}'];
+            for (ctr=0; ctr<5; ctr++){
+                AttachmentFieldArr.push('{!$Component.repAtt}:'+ctr+':ifAtt');
+            }  
+            </script>
+        </apex:form>
+    </body>
+    <apex:includeScript value="{!URLFOR($Resource.iframeResizer_min, '/iframeResizer.contentWindow.min.js')}"/>
+</apex:page>

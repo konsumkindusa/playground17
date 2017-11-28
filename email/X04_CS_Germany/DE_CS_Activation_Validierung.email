@@ -1,0 +1,35 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage. 
+
+Der Grund, weshalb Sie die von Ihnen gewünschte Aktion nicht durchführen können, ist die fehlende sog. ‚Validierung‘ der Lizenz, die alle 30 Tage vom System eingefordert wird, wenn eine Lizenz länger nicht aufgerufen wurde bzw. die Validierung der Lizenz auf ‚Disabled“ gesetzt ist.
+Unter Validierung versteht man dabei den Abgleich der Lizenz mit unserem Zentralserver und damit die Aktualisierung der Lizenz auf den tatsächlichen Ist-Zustand bzw. die Umsetzung inzwischen möglicherweise erfolgter Lizenzänderungen. 
+
+Um zu 'validieren', d.h. die nötige aktuelle Produkt- und User-Situation der Lizenz vor einer angestrebten Lizenzänderung abzubilden, ist dann entweder vom Administrator oder Licensed End User mit Activation Permission das neueste License File zur Lizenz aus geöffnetem MathWorks Account License Center abzurufen oder ein Update der Lizenz aus geöffnetem MATLAB auszuführen. 
+
+A. Validierung aus geöffnetem MathWorks Account License Center:
+- Öffnen des MathWorks Account License Center:
+- Öffnen der gewünschten Lizenznummer direkt oder über die Option: ‚View additional Licenses or Trials‘
+- Öffnen des darunter aufscheinenden ‚Install and Activate‘ Tab
+- Auswahl: 'Get License File’ zu jeder direkt oder über den rechtsseitigen Tab: 'Deactivate a Computer' gelisteten Aktivierung
+- Auswahl des aktuellsten Releases
+- Email Versand des erzeugten License Files an sich selbst
+
+B. Validierung aus geöffnetem MATLAB:
+- Auswahl (Select) Help -> Licensing
+- Auswahl (Select) Update -> Current License
+- Neustart MATLAB bzw. Bestätigung einer diesbezügl. Fehlermeldung beim Starten von MATLAB. 
+
+Danach ist es möglich, die gewünschten Änderungen vorzunehmen.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

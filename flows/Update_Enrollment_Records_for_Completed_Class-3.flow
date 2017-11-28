@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Update Enrollment Records for Completed Class {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Enrollment Records for Completed Class</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Insert_Error_to_Log</name>
+        <label>Insert Error to Log</label>
+        <locationX>613</locationX>
+        <locationY>418</locationY>
+        <inputAssignments>
+            <field>ExceptionType__c</field>
+            <value>
+                <stringValue>Enrollment Update Flow Exception</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log__c</object>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_Enrollment_Records</name>
+        <label>Update Enrollment Records</label>
+        <locationX>613</locationX>
+        <locationY>273</locationY>
+        <connector>
+            <targetReference>Insert_Error_to_Log</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Insert_Error_to_Log</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Class__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_CompClassId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Registered</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Enrollment_Status__c</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Enrollment__c</object>
+    </recordUpdates>
+    <startElementReference>Update_Enrollment_Records</startElementReference>
+    <variables>
+        <name>var_CompClassId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>

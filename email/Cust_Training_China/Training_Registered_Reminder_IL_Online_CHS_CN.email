@@ -1,0 +1,36 @@
+尊敬的 {!Contact.Name}: 
+
+本电子邮件是提醒您已注册参加下列培训课程的学习： 
+
+课程名称：{!Enrollment__c.Class__c}  
+日期：{!Enrollment__c.Display_Start_Date__c}至{!Enrollment__c.Display_End_Date__c} 
+地点：{!Class__c.State__c},{!Class__c.City__c} 
+时间：{!Class__c.Start_Time__c} to {!Class__c.End_Time__c} 
+
+使用下列链接查看地址、指示和推荐的膳宿： 
+http://www.mathworks.cn/services/training/policies/directions.html 
+
+退课/退款政策 
+有教师授课的培训： 
+如果我们在开课前 7 个业务日（含）之前收到正式退课通知（通过邮件或电子邮件），我们将全额退款。 
+
+如果在开课前 7 个业务日内退课，我们将按该课程学费的 25% 收费。如果在没有书面通知的情况下缺课，我们将按全额收费。这种情况您可以免费索要教学资料。 
+
+如果培训课程因超出 The MathWorks 所能控制的因素而无法如期开课，The MathWorks 唯一能做的就是退还您已入学注册的课程成本，或将您转移到等价值或较低价值的课程。但是，The MathWorks 不退还任何超出课程成本而发生的费用。 
+
+培训场所地点可以通知变更。 
+
+我们会在开课前尽我们所能地通知您地点变更。同时，我们建议您在赴课前再次访问此页面，以确认准确的培训地点。 
+
+有关培训场所信息，请访问：http://www.mathworks.cn/services/training/policies/directions.html 
+
+险恶气候政策 
+The MathWorks 的宗旨是维持如期开课，尽力避免因任何险恶气候而停课。但是，如果气候因素不可避免，我们会取消当日课程。有关因险恶气候而导致课程取消的信息，请直接与培训机构联系。如果课程取消不可避免，您会收到来自 The MathWorks 的电子邮件，内含课程重排选项。请注意，此邮件不是通知您课程取消，而是为您提供课程因取消而重排选项。 
+
+如果您有任何疑问，请致电 +86 10-59827000 或通过 training@mathworks.cn 与我们联系。 
+
+有关 The MathWorks 提供的其他培训服务的更多详情，请访问我们的 Web 站点：http://www.mathworks.cn。 
+
+谢谢！ 
+
+{!Class__c.Sponsor_Office_Signature__c}

@@ -1,0 +1,34 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage. 
+In beigefügtem Attachment finden Sie
+a. den Release X PLP
+b. das/die HostID-bezogenen Release X License File/s für die gegenwärtige/n Aktivierung/en Ihrer Lizenz# XXX.
+
+Bitte nehmen Sie die Installation(en) wie folgt vor:
+If you are installing MATLAB R2007b or an earlier release, follow the steps below.
+(NOTE: If you are installing R2008a or a newer release, the steps below are not required.)
+- Download the license file attached to this email and save it to your desktop
+- Start the MATLAB installer
+- Select Install
+- Enter your Name and Organization information
+- Enter the following Passcode: xx-XXXXX-XXXXXX-XXXXXX-XXXXX-XXXXX
+- Browse to the license.dat on your desktop The installer should guide you through the rest of the installation process.
+After the installation is finished, follow the steps below:
+- Browse to your installation folder (by default, C:\Program Files\MATLAB\R20XXx)
+- Open the folder "bin\win64" or "bin\win32"
+- Look for a file called "license.dat"
+- Replace the "license.dat" file in this folder with the one attached to this email 
+After following these steps, you should be able to start MATLAB.
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

@@ -1,0 +1,10 @@
+Dear {!Case.Contact},
+
+We received your press release. Your submission is currently under review. I will contact you once the review has been completed. Thank you. 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Case: ({!Case.CaseNumber})
+
+{!Case.Email_Thread}

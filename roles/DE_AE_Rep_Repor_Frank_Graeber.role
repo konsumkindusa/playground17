@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>DE AE Rep Report Frank Graeber</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>DE AE Rep Report Frank Graeber</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>DE_AE_Manager_Frank_Graeber</parentRole>
+</Role>

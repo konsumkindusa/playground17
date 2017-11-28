@@ -1,0 +1,52 @@
+{!Case.Account} 
+{!Case.Contact}様 
+
+大変お世話になっております。
+MathWorks Japan カスタマーサービスの{!User.Email_Template_Signature__c} と申します。 
+この度はお問い合わせ頂き、誠にありがとうございます。
+
+ご依頼頂きましたライセンス形態について、下記のとおり変更が完了いたしましたので、お知らせ致します。
+
+■License No. XXXXX
+■ライセンス形態：YYYYからZZZZへ変更
+
+ご登録内容 及び ライセンス内容 等は、下記より「MathWorks アカウント」へログインをし、ライセンスセンターにてご確認頂けます。
+https://www.mathworks.com/licensecenter
+
+本形態変更によって、R2008a版以降のソフトウェアがインストールされた全てのマシンは、以下手順により再度アクティベーションが必要となります。
+
+1）旧ライセンス形態で利用していたマシンのMATLAB全てのアクティベーション停止
+
+【アクティベーション停止手順】
+http://www.mathworks.com/matlabcentral/answers/100695-
+
+2-1）同じマシンを新しいライセンス形態でご利用いただく場合：アクティベーション
+
+【MATLAB上でのアクティベーション手順】
+http://jp.mathworks.com/matlabcentral/answers/103912-matlab
+
+2-2）新しいマシンでご利用いただく場合：ダウンロード及びインストール／アクティベーション
+
+【MATLAB関連製品のダウンロード方法】
+http://www.mathworks.com/matlabcentral/answers/94903
+【MATLABをインストールする方法】
+（インターネット接続可能な場合）
+http://www.mathworks.com/matlabcentral/answers/103468
+（インターネット接続不可の場合）
+http://www.mathworks.com/matlabcentral/answers/103796 
+
+作業の上でご不明な点、ご質問等ございましたら、弊社までご連絡頂ければと存じます。
+
+The Licensee shall not attempt to access or use Programs, or copies of Programs, that Licensee are not currently licensed to use. Licensee is required to remove all archival copies of the programs mentioned above under the previous license configuration of License XXXX from their systems, and refrain from using again without first entering into a valid Software License Agreement with MathWorks. 
+
+本件についてその他ご不明な点や追加のご質問がございましたら、 
+下記のReference IDを削除せずにご返信にてお問合せ下さい。 
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。 
+http://jp.mathworks.com/support/contact_us/ 
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

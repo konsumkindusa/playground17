@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To restrict Non AE users to change project ownership if it&apos;s assigned to AE users</description>
+    <label>Object Project_Allow Project Ownership</label>
+</CustomPermission>

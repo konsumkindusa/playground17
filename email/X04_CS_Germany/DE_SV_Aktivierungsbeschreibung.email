@@ -1,0 +1,27 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+seit Mitte August 2013 sind die ehemaligen Studenten- Version- Seriennummern in reguläre Lizenznummern gewandelt worden, welche Sie über Ihr MathWorks Account License Center unter: 
+https://www.mathworks.com/accesslogin/login.do?uri=http://www.mathworks.com/ 
+sehen und verwalten. 
+
+(+ für konvertierte Serialnumbers: Die uns zugesandte Serialnumber gehört noch einem älteren Release an, welches nicht mehr in diese Wandlung einbezogen war. Diese haben wir nun in eine gebräuchliche, neue Lizenznummer (#XXX) konvertiert und das Release von 7a auf 8b erhöht. Um die Lizenz nun zu installieren, ist jedoch vorab eine kostenpflichtige Verlängerung der Maintenance nötig. Diese, wie auch den Download der Produkte und die nötige, anschließende Aktivierung, nehmen Sie bitte über Ihren mit der Lizenz assoziierten Mathworks Account unter der Email Adresse XXX vor. Sollten Sie diese Wartungsverlängerung nicht wünschen, müsste die Studenten Version neu erworben werden.) 
+
+Gemäß Policy können Sie die Studentenversion während Ihres Studiums pro 12 Monate 2 mal aktivieren und jede der Aktivierungen bei Bedarf einmal umziehen, Bitte beachten Sie, dass immer nur 1 Session der Studenteversion zeitbezogen zu nutzen ist, 
+Desweiteren stellen sich einmal verbrauchte Aktivierungen ebenfalls nach Jahresfrist wieder auf 'verfügbar* zurück bzw. kann diese Rücksetzung bei uns angefragt werden. All dies ist, wie auch ein erneuter Download einer erworbenen Lizenz, nicht erneut kostenpflichtig. 
+
+Um mehr über die Aktivierung einer Lizenz zu erfahren, besuchen Sie bitte aus Ihrem geöffneten MathWorks Account den Link ‘Activation‘: http://www.mathworks.com/support/activation/index.html?BB=1
+
+Um mehr über die Deaktivierung einer Lizenz zu erfahren besuchen Sie bitte den Link:
+http://www.mathworks.com/support/solutions/data/1-698KQP.html?solution=1-698KQP
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,55 @@
+Notes:
+CC the Technical Lead
+
+Edit the template to reflect the support being provided (e.g. software only or software and monetary).
+
+Edit the template to reflect the need for EFT information (US only) or wire information (international only)
+
+Attach EFT (if US)
+
+Hello Professor {!Academic_Support_Project__c.Primary_Contact__c},
+
+MathWorks is excited to be supporting the research project entitled '{!Academic_Support_Project__c.Name}'.  In order to move forward with your support please respond to this email with the following information: 
+
+1. Attached is a legal document outlining the intended use of the monetary and software support.  Please review, sign and fax/email back the entire document to my attention at 508-652-8740 or academicsupport@mathworks.com. 
+
+2. Monetary support -
+Monetary support (if US)
+
+MathWorks is excited to be funding the development of curriculum for the course entitled '{!Academic_Support_Project__c.Name}'.  Attached is an award letter that describes the support.
+
+In order to move forward with the support payment, please provide us with your company’s bank information for EFT payments using the attached form.     
+
+Please include an Accounts Receivable contact and email.  EFT remittance details will be emailed to the Accounts Receivable email provided each time an EFT payment is made.  
+
+The completed EFT Payment Information Form should be emailed to Accounts.Payable@mathworks.com. 
+
+If your University cannot provide EFT information, please reply to this email and explain why payment must be made by check or wire transfer. 
+
+Once I receive all of the information requested above, I will initiate your support.  If you have any questions, please contact me at academicsupport@mathworks.com.
+
+Best Regards,
+{!User.FirstName} {!User.LastName}
+
+MathWorks Academic Support Program
+E.  academicsupport@mathworks.com
+F.  508.652.8740
+
+
+
+Monetary Support (If International)
+In order to move forward with the support payment, please provide the following information via email: 
+
+Wire information: 
+1. Bank name & complete mailing address 
+2. Account number (IBAN): 
+3. SWIFT/BIC code 
+
+Once I receive all of the information requested above, I will initiate your support.  If you have any questions, please contact me at academicsupport@mathworks.com.
+
+Best Regards,
+{!User.FirstName} {!User.LastName}
+
+MathWorks Academic Support Program
+E.  academicsupport@mathworks.com
+F.  508.652.8740

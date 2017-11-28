@@ -1,0 +1,23 @@
+{!Contact.LastName}{!Contact.FirstName}님, 안녕하세요. 
+
+문의하신 '{!Case.Subject}'에 대한 기술 지원 케이스 번호 {!Case.CaseNumber}에 대하여 이메일 드립니다.
+
+
+
+
+문의 내용과 관련하여 추가 회신 시 아래의 참조 ID를 유지 시켜주시기 바랍니다. 이러한 시스템으로 해당 케이스에 자동으로 지정됩니다.
+
+[BELOW R2010b & Polyspace] 
+향후 기술 지원 요청 시 http://www.mathworks.co.kr/support/contact_us/index.html 의 주소로 요청하여 주시거나www.mathworks.co.kr에 로그인 후 오른쪽 상단의 My Account 클릭 > 왼쪽 메뉴의 Create Service Request 를 통하여 요청하여 주시면 보다 빠른 지원이 가능합니다. 
+
+[OVER R2011a] 
+향후 기술지원 시 http://www.mathworks.co.kr/support/contact_us/index.html 의 주소로 요청하여 주시거나 매트랩 상단 Home 툴스트립의 Request Support 버튼을 통하여 요청하여 주시면 보다 빠른 지원이 가능합니다.
+
+감사합니다. 
+xxx 드림, MathWorks Technical Support Department 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange and MATLAB Answers: http://www.mathworks.com/matlabcentral/
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

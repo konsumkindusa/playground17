@@ -1,0 +1,35 @@
+この度はMathWorks トレーニングにお申込頂き、誠にありがとうございます。
+
+コース名: {!Enrollment__c.Class__c}
+日付:  {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+開催地: {!Class__c.City__c}, {!Class__c.Country__c} 
+時間: {!Class__c.Start_Time__c}午前 - {!Class__c.End_Time__c}午後 
+
+お支払い方法について:
+
+- クレジットカードによるお支払いをご希望の場合は、オンラインで簡単かつ安全に手続き可能なMathWorks Storeで、『取得済の見積内容で購入する』よりお手続きください。
+
+-請求書によるお支払いをご希望の場合は、注文書をFAX、Emailで下記までお送りください。
+FAX：03-6367-6710 
+Email: orders@mathworks.co.jp
+
+ご注文書には、以下の情報を明記してください。 
+•	貴社ご注文番号 
+•	弊社見積書番号 
+•	ご注文合計金額 
+•	消費税額 
+•	トレーニング受講者氏名
+•	請求先住所、担当者氏名
+•	支払条件：月末締め翌月末払い
+•	ご発注権限のある方の署名・捺印
+
+キャンセルと返金ポリシー 
+https://jp.mathworks.com/services/training/policies.html?s_tid=srchtitle
+
+その他のトレーニング コースの詳細については、MathWorks Web サイト
+www.mathworks.co.jp をご覧ください。
+
+よろしくお願い申し上げます。 
+
+--------------------------------------- 
+{!Class__c.Sponsor_Office_Signature__c}

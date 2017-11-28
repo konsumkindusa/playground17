@@ -1,0 +1,17 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+Due to [country's]current placement on the U.S. embargoes list, The US Department of Commerce, Bureau of Industry and Security, prohibits U.S. companies or U.S. persons from conducting business with a company or individual from [country]. If in the future your country’s prohibited status changes we would be happy to fulfill your request.
+
+
+Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

@@ -1,0 +1,7 @@
+The following article has been marked with a validation status of {!FAQ__kav.ValidationStatus}.  Please review and validate the article is ready for publishing with this status.
+
+Article Title: {!FAQ__kav.Title}
+Question: {!FAQ__kav.Question_RT__c}
+Article Link: {!FAQ__kav.Link}
+Created by: {!FAQ__kav.CreatedBy}
+Last Modified by: {!FAQ__kav.LastModifiedBy}

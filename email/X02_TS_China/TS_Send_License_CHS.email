@@ -1,0 +1,25 @@
+{!Contact.LastName}{!Contact.FirstName}您好， 
+
+我正在处理您编号为#{!Case.CaseNumber}的关于“{!Case.Subject}”的技术支持案例。  
+
+请在MATLAB命令行窗口键入命令
+
+在MATLAB R2012b以及新版本中：
+>>ver -support
+
+在MATLAB R2012a以及老版本中：
+>>ver
+
+并将全部返回结果发送给我们。这可以给我们提供您的MATLAB许可证、安装产品和操作系统信息。 
+
+和技术支持部门沟通，是订购我们软件维护服务（SMS）的权益之一。我们期待获得这些信息以便更好地协助您解决技术问题。 
+
+请访问以下链接在线查询和更新您的技术支持案例：
+http://www.mathworks.com/support/servicerequests/index.html
+
+如果您想要提交这个案例的其它信息，请保留邮件底部的技术支持案例编号（Reference ID）。我们的系统会自动将您的回复关联到这个案例。 
+
+谨启， 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

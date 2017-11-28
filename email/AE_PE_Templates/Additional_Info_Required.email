@@ -1,0 +1,12 @@
+Dear Requestor for AE/PE Assistance,
+
+The Applications & Details that you have provided with your request for Project “{!MW_Project__c.Project_Name__c}” - {!MW_Project__c.Name} do not contain sufficient information to make a Technical Resource assignment. 
+
+Please, edit the Application & Details field in this project - {!MW_Project__c.Project_Link__c}
+to add the following details:
+What is the opportunity? (details about the request, 5P)
+What is the revenue potential? (likelihood of success & expected $$, short or long-term?)
+What is the primary purpose of this event? (what are you trying to achieve & what does the customer want out of it) 
+ 
+Thank you,
+{!User.FirstName} {!User.LastName}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to request payment info for Research Other Requests - $$ and/or sw</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support – Research Other Request for Support Info</name>
+    <style>none</style>
+    <subject>MathWorks Academic Support Research Support - {!Academic_Support_Project__c.Account__c} ({!Academic_Support_Project__c.Name})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

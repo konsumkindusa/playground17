@@ -1,0 +1,22 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+We recently learned that you are improperly using the L-Shaped membrane in your book materials for {!Book_Project__c.Book_Title__c}. The L-shaped membrane is a trademark of The MathWorks in continuous use since 1984.  The image may be used only with authorization of The MathWorks and is also subject to the usage restrictions and guidelines.  The most current version of our trademark guidelines is attached for your review.  
+
+Please remove any reproductions of the L-shaped membrane that do not adhere to our guidelines from reprints and future editions of your book. Failure to comply with these guidelines may result in legal action.
+
+Thank you for your cooperation.  If you have any questions, please contact us at bookprogram@mathworks.com
+
+
+Regards,
+
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

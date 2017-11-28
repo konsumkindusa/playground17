@@ -1,0 +1,23 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Installing a trial license is the same as installing a professional MATLAB license. See the following articles for instructions:
+
+How do I install MATLAB automatically using the Internet?
+http://www.mathworks.com/matlabcentral/answers/98886
+
+How do I activate MATLAB?
+https://www.mathworks.com/matlabcentral/answers/99457
+
+If you do not see the trial listed in the License Center, the trial may not be associated to your MathWorks Account. In that case, you will need to contact the owner of the trial. Note that all trials of MATLAB products will require you to activate. If the machine where MATLAB will be installed does not have Internet access, or if you have a Concurrent or Network Named User trial, you will need to activate before installing. 
+
+Activate an Installation Without the Internet
+http://www.mathworks.com/help/install/ug/activate-without-the-internet.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

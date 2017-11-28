@@ -1,0 +1,39 @@
+<apex:component controller="CaseArticleInfoEmailTemplateController" access="global">
+<apex:attribute name="myId" type="String" description="ID of Case record" assignTo="{!cseId}" />
+<apex:repeat value="{!cse.CaseNumber}">
+</apex:repeat>
+<!--Case Details:
+--
+{!$ObjectType.Case.fields.CaseNumber.label}: {!cse.CaseNumber}
+{!$ObjectType.Case.fields.Owner_Name__c.label}: {!cse.Owner_Name__c}
+{!$ObjectType.Case.fields.Siebel_SR__c.label}: {!cse.Siebel_SR__c}
+{!$ObjectType.Case.fields.Status.label}: {!cse.Status}
+{!$ObjectType.Contact.fields.Name.label}: {!cse.Contact.Name}
+{!$ObjectType.Case.fields.SubStatus__c.label}: {!cse.SubStatus__c}
+{!$ObjectType.Contact.fields.Phone.label}: {!cse.Contact.Phone}
+{!$ObjectType.Case.fields.Area__c.label}: {!cse.Area__c}
+{!$ObjectType.Contact.fields.Email.label}: {!cse.Contact.Email}
+{!$ObjectType.Case.fields.Sub_Area__c.label}: {!cse.Sub_Area__c}
+
+{!$Setup.General_Settings__c.Current_Domain__c}{!cse.Id}
+-->
+
+Case Articles:
+
+<apex:repeat value="{!ArticleWrList}" var="awr" >
+
+==================================================================
+[{!$ObjectType.FAQ__ka.fields.ArticleNumber.label}: {!awr.faqka.ArticleNumber}] 
+{!$ObjectType.FAQ__kav.fields.Title.label}: {!awr.faqkav.Title}
+{!$ObjectType.FAQ__kav.fields.Question__c.label}: {!awr.faqkav.Question__c}
+{!$ObjectType.FAQ__kav.fields.Answer__c.label}: {!awr.faqkav.Answer__c}
+<!--{!$ObjectType.FAQ__kav.fields.Release__c.label}: {!awr.faqkav.Release__c}-->
+{!$ObjectType.FAQ__kav.fields.Tags__c.label}: {!awr.faqkav.Tags__c}
+<apex:outputText escape="false">
+
+
+
+</apex:outputText>
+</apex:repeat>
+
+</apex:component>

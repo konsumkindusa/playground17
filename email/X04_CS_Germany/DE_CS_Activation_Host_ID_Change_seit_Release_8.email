@@ -1,0 +1,38 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage.
+
+Um eine Lizenz umzuziehen und die derzeitige HostID zu ändern bzw. um ein License File zu einer neuen HostID zu generieren, ist die Deaktivierung und Deinstallation der Lizenz und die Neuaktivierung und Installation auf die neue HostID durch den Administrator nötig und bei Einzel- Lizenzen auch durch den Licensed End User mit entsprechender Permission möglich. Dabei werden die korrekten Serverdaten eingesetzt und ein upgedatetes License File erzeugt. 
+Bitte beachten Sie, dass ein Licensed End User ausschließlich von ihm selbst vorgenommene Aktivierungen deaktivieren kann. Alle anderen Aktivierungen sind vom Administrator zu löschen. 
+
+Um über den geöffneten MathWorks Account zu deaktivieren, gehen Sie bitte wie folgt vor: 
+- Öffnen der gewünschten Lizenznummer direkt oder unter der Option: 'View additional Licenses or Trials‘
+- Öffnen des darunter aufscheinenden ‚Install and Active‘ Tab 
+-> Auswahl der zu löschenden Aktivierung direkt oder unter dem rechtsseitigen Tab: 'Deactivate a Computer'
+-> ‘Deactivate‘ 
+-  Bestimmung, ob Deaktivierung mit oder ohne ‚Deactivation String‘ 
+-> Ausführung der Deaktivierung über die sich danach öffnenden Deactivation-Menu-Optionen 
+
+Alternativ erfolgt bei einer Online-Deinstallation automatisch die Weiterleitung in das Deaktivierungsmenü der Lizenz. 
+Hilfreiche Informationen zur Deaktivierung auch unter dem Link: http://www.mathworks.com/support/solutions/data/1-698KQP.html? 
+
+Um über den geöffneten MathWorks Account erneut zu aktivieren, gehen Sie bitte wie folgt vor: 
+- Verbleib unter dem ‚Install and Active‘ Tab  
+-> Auswahl: ‘Activate‘ 
+-> Verwendung des dabei erzeugten neuen License Files und File Installation Keys zur neuen Installation 
+
+Alternativ erfolgt bei einer Online-Installation automatisch die Weiterleitung in das Aktivierungsmenü der Lizenz. 
+Hilfreiche Informationen zur Aktivierung dort auch unter dem Link: 
+http://www.mathworks.com/support/activation/index.html. 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

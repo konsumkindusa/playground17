@@ -1,0 +1,46 @@
+<!-- 
+   /**
+    * @author Original: Archana Lohar- Cloud Sherpas/Mathworks, Last Modified: Archana Lohar - Cloud Sherpas/Mathworks
+    * @date Original: 19 Feb 2016 , Last Modified: 29 March 2016
+    * @description: Component for Showing Territory Summary 
+   -->
+
+<apex:component >
+   <script>
+      var j$ = jQuery.noConflict();
+      
+      function getCriteriaObjValue(Id,Img){
+       
+       if((Img.src).indexOf("Downarrow")!=-1){
+           Img.src='{!$Resource.SideArrow}';
+           Img.style.width='10px';
+           showCriterias(Id,false);
+       
+           
+       }
+       else{
+           Img.src='{!$Resource.Downarrow}';
+           Img.style.width='13px';
+           showCriterias(Id,true);
+       
+       }     
+      }
+  </script>
+   <form>
+      <apex:attribute name="AssignmentRuleObj" type="sObject" description="Assignment Rule object" />
+      <apex:attribute name="showdownarrow" type="Boolean" description="show down arrow " />
+      <apex:pageBlock id="pageblock">
+         <apex:pageBlockTable style="width:100%" id="pageBlockTable"  var="rule" value="{!AssignmentRuleObj}">
+            <apex:column width="6%">
+               <apex:image rendered="{!!showdownarrow }" styleclass="edit" url="{!$Resource.SideArrow}" width="10px" style="cursor:pointer" onclick="getCriteriaObjValue('{!rule.Id}',this);" > 
+               </apex:image>
+               <apex:image rendered="{!showdownarrow }" styleclass="edit" url="{!$Resource.Downarrow}" width="13px" style="cursor:pointer" onclick="getCriteriaObjValue('{!rule.Id}',this);" > 
+               </apex:image>
+            </apex:column>
+            <apex:repeat value="{! $ObjectType.Territory_Assignment_Rule__c.Fieldsets.AssignmentRuleFieldSet}" var="varFieldName">
+               <apex:column value="{!rule[varFieldName]}" style="width:10%"/>
+            </apex:repeat>
+         </apex:pageBlockTable>
+      </apex:pageBlock>
+   </form>
+</apex:component>

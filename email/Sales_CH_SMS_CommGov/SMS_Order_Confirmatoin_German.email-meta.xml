@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SMS Order Confirmation German</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SMS Order Confirmatoin German</name>
+    <style>none</style>
+    <subject>MathWorks - Danke für Ihre Bestellung</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

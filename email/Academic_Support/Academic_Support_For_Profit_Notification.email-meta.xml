@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to inform VP of Mktg re: support for a for-profit organization via Academic Support</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support - For Profit Notification</name>
+    <style>none</style>
+    <subject>Notification of support for a for-profit organization via Academic Support Program (A#: {!Academic_Support_Project__c.Name})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

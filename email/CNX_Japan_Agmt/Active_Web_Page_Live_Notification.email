@@ -1,0 +1,22 @@
+{!Partner_Agreement__c.Primary_Contact__c} 様
+
+いつもお世話になっております。
+
+貴社製品のConnections Program ページがMathWorks Japan のウェブサイト上に公開されました。
+下記URLからページをご覧頂くことが出来ます。
+{!Partner_Agreement__c.Web_Page_URL__c}. 
+
+ぜひ、貴社のWebサイトからも、弊社へのリンクを設置いただけますと幸いです。
+その際には、 MATLAB または MathWorks について明記しリンクを作成いただくか
+Connections Program パートナーロゴを掲載し、リンク先を http://jp.mathworks.com/index.html と
+していただければと存じます。
+
+ご質問やご要望などございましたら、お気軽にお問合せ下さい。
+また、修正や変更などがありましたら、connections@mathworks.co.jp　へご連絡下さい。
+
+今後ともどうぞよろしくお願い申し上げます。
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

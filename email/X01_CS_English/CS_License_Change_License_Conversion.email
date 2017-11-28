@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Per the request of XXXX, License XXXX has been converted into (ENTER new License type).
+
+If you log into your MathWorks Account and go into the License Center at mathworks.com/licensecenter you will see the changes reflected on the appropriate licenses.
+
+A new Activation is required for all R2008a or newer releases on all machines affected by this License Conversion.  Click on this link to learn more about activation (Log in required): www.mathworks.com/support/activation/index.html
+
+The Licensee shall not attempt to access or use Programs, or copies of Programs, that Licensee are not currently licensed to use. Licensee is required to remove all archival copies of the programs mentioned above under the previous license configuration of License XXXX from their systems, and refrain from using again without first entering into a valid Software License Agreement with MathWorks.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

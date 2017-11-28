@@ -1,0 +1,156 @@
+<apex:page >
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<apex:includeScript value="{!URLFOR($Resource.MySR, '/scripts/jquery-latest.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.MySR, '/scripts/bootstrap.min.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.MySR, '/scripts/global.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.MySR, '/scripts/anchor.js')}"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/bootstrap.min.css')}" rel="stylesheet" type="text/css"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/site6.css')}" rel="stylesheet" type="text/css"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/site6_lg.css')}" rel="stylesheet" media="screen and (min-width: 1200px)"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/site6_md.css')}" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/site6_sm+xs.css')}" rel="stylesheet" media="screen and (max-width: 991px)"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/site6_sm.css')}" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/site6_xs.css')}" rel="stylesheet" media="screen and (max-width: 767px)"/>
+        <link href="{!URLFOR($Resource.MySR, '/styles/mw_salesforce.css')}" rel="stylesheet" type="text/css"/>
+        <script>try{Typekit.load();}catch(e){}</script>
+        <meta name="description" content="Online support for MATLAB, Simulink, and other MathWorks products. Access documentation, examples, solutions to common issues, and community forums."/>
+        <style type="text/css">.tk-museo-slab{font-family:"museo-slab",serif;}.tk-futura-pt{font-family:"futura-pt","Arial","Helvetica",sans-serif;}.tk-automate{font-family:"automate",sans-serif;}.tk-minion-pro-subhead{font-family:"minion-pro-subhead",serif;}</style>
+        <style>
+            .content_container { min-height: 10px !important;}
+        </style>
+    </head>
+
+    <body id="responsive_b" class="">
+        <div class="mboxDefault" id="mbox-target-global-mbox-beb42af9808b451a83b2ec1fc680acd6" style="visibility: visible; display: block;"></div>
+
+        <!-- Mobile TopNav: Start -->
+        <div class="header visible-xs visible-sm" id="header_mobile" translate="no">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="navbar-header content_container1">
+                                <button type="button" class="navbar-toggle topnav_toggle" data-toggle="collapse" data-target="#topnav_collapse">
+                                    <span class="sr-only">Toggle Main Navigation</span>
+                                    <img src="{!URLFOR($Resource.MySR, 'images/icon-menu.png')}" alt="Meun"/>
+                                </button>
+                                <a href="http://www.mathworks.com/index.html?s_tid=gn_logo" class="svg_link navbar-brand">
+                                    <img src="{!URLFOR($Resource.MySR, 'images/pic-header-mathworks-logo.svg')}" class="mw_logo" alt="MathWorks"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row visible-xs visible-sm">
+                        <div class="col-xs-12">
+                            <div class="navbar-collapse collapse  content_container1" id="topnav_collapse">
+                                <ul class="nav navbar-nav" id="topnav">
+                                    <li class="headernav_login dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            {!$User.FirstName}
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mwa-nav_account "><a href="{!$Label.MySR_Header_My_Account_Url}">{!$Label.MySR_Header_My_Account}</a></li>
+                                            <li class="mwa-nav_associate"><a href="{!$Label.MySR_Header_Associate_License_Url}">{!$Label.MySR_Header_Associate_License}</a></li>
+                                            <li class="mwa-nav_logout"><a href="{!$Label.MySR_Header_Log_Out_Url}" id="mwa-log_out">{!$Label.MySR_Header_Log_Out}</a></li>
+                                        </ul>
+	                                    <li class="headernav_contact"><a href="{!$Label.MySR_Header_Contact_Us_Url}">{!$Label.MySR_Header_Contact_Us}</a></li>
+	                                    <li class="headernav_store"><a href="{!$Label.MySR_Header_How_To_Buy_Url}">{!$Label.MySR_Header_How_To_Buy}</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile TopNav: End -->
+        <!-- Desktop TopNav: Start -->
+        <div class="header hidden-xs hidden-sm" id="header_desktop" translate="no">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="collapse navbar-collapse" id="headernav_collapse">
+                                <ul class="nav navbar-nav navbar-right" id="headernav">
+                                    <li class="headernav_contact"><a href="{!$Label.MySR_Header_Contact_Us_Url}">{!$Label.MySR_Header_Contact_Us}</a></li>
+                                    <li class="headernav_store"><a href="{!$Label.MySR_Header_How_To_Buy_Url}">{!$Label.MySR_Header_How_To_Buy}</a></li>
+                                    <li class="headernav_login dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            {!$User.FirstName}
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mwa-nav_account"><a href="{!$Label.MySR_Header_My_Account_Url}">{!$Label.MySR_Header_My_Account}</a></li>
+                                            <li class="mwa-nav_associate"><a href="{!$Label.MySR_Header_Associate_License_Url}">{!$Label.MySR_Header_Associate_License}</a></li>
+                                            <li class="mwa-nav_logout"><a href="{!$Label.MySR_Header_Log_Out_Url}" id="mwa-log_out">{!$Label.MySR_Header_Log_Out}</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="navbar-header">
+                                <div class="logo_container hidden-xs hidden-sm">
+                                    <a href="http://www.mathworks.com/index.html?s_tid=gn_logo" class="svg_link pull-left">
+                                        <img src="{!URLFOR($Resource.MySR, 'images/pic-header-mathworks-logo.svg')}" class="mw_logo" alt="MathWorks"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Desktop TopNav: End -->
+        <!-- Conjoined Header: Start -->
+        <div class="sticky_header_container includes_subnav affix-top">
+            <!-- Section Header: Start -->
+            <div class="section_header level_3">
+                <div class="container">
+                    <div class="row" id="mobile_search_row">
+                        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7" id="mobile_search">
+                            <div class="search_nested_content_container">
+                                <div id="search_scope_support" class="collapse in">
+                                    <form id="supportsearch_form" action="https://www.mathworks.com/support/search_results.html" method="get" accept-charset="utf-8" onsubmit="return submitURL();">
+                                    </form>
+                                </div>
+                                <div id="search_scope_site" class="collapse">
+                                    <form name="search" id="site_search" class="site_search" action="https://www.mathworks.com/search/site_search.html" method="get">
+                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 content_container1" id="section_header_title">
+                            <div class="section_header_content add_cursor_pointer">
+                                <div class="section_header_title" onclick="window.open('{!$Label.Support_Link}','_self');">
+                                    <p class="h1">{!$Label.MySR_Support}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Header: End -->
+                    <!-- Mobile Local Nav: Start -->
+                    <!-- Mobile Local Nav: End -->
+                </div>
+            </div>
+            <!-- Horo Nav: Start -->
+
+            <!-- Horo Nav: End -->
+        </div>
+        <!-- Conjoined Header: End -->
+		<script>
+			/* Go to top button */
+			$("<a class=\"btn btn_primary\" id=\"go-top\" style=\"z-index:2;\"><img src=\"{!URLFOR($Resource.MySR, 'images/icon-arrow-open-up.png')}\" style=\"width:24px; height:24px;\"/></a>").on("click", function(event) {
+				event.preventDefault();
+				$('html, body').animate({scrollTop: 0}, 300);
+			}).appendTo("body");
+		</script>
+    </body>
+
+</apex:page>

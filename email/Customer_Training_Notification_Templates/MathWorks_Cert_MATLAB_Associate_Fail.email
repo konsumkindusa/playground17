@@ -1,0 +1,23 @@
+<messaging:emailTemplate subject="MathWorks Certified MATLAB Associate Exam Results {!relatedTo.Class__r.Exam_Date_For_Template__c}, {!relatedTo.Class__r.Training_Location__r.Location_Name__c}" recipientType="Contact" relatedToType="Enrollment__c">
+<messaging:htmlEmailBody > 
+<p>Dear {!relatedTo.Enrollee_Name__r.name},</p>
+
+<p>Thank you for participating in the MathWorks Certification Program. We regret to inform you that your score for the MathWorks Certified MATLAB Associate Exam offering on {!relatedTo.Class__r.Exam_Date_For_Template__c} in {!relatedTo.Class__r.Training_Location__r.Location_Name__c} did not result in a passing grade.</p>
+
+<p>Unfortunately, we are unable to discuss the specifics of the exam or provide a detailed breakdown of questions missed.  We have included a link to our MATLAB Fundamentals course schedule below. Should you decide to register for the exam again, this course offers an opportunity to review the concepts covered.  We have also included a link to the certification exam schedule.</p>
+<p>
+https://www.mathworks.com/training-schedule/matlab-fundamentals
+</p>
+<p>
+https://www.mathworks.com/training-schedule/certifications/
+</p>
+<p>
+Any further questions or communication regarding the program can be directed to certification@mathworks.com
+</p>
+<p>
+Best Regards,<br></br>
+MathWorks Certification Team <br></br>
+508-647-700<br></br>
+</p>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

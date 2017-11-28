@@ -1,0 +1,32 @@
+Dear {!Case.Contact},
+
+The pricing and ordering information you are looking for is available on the MathWorks Connections Program Help Desk on our Web site.  This is available to you 24 hours a day.
+
+Step 1: Log into the Connections Program Help Desk:
+==========================================
+To access the Connections Help Desk, point your browser to the following URL. Because this is an unusual URL, we recommend that you take the time to bookmark or add it to your "favorites" listing now.  The Connections Help Desk can be shared with others in your organization responsible for supporting your Connections approved product. Feel free to forward this information.
+
+https://www.mathworks.com/partners/
+
+You will be prompted for a user name and password. Please note that the user name and password are case sensitive. 
+
+User Name: CNXproduct
+Password: Ima#1p
+
+Step 2: Obtain VAR ordering & pricing information:
+====================================================
+Once you have logged into the Connections Help Desk click on the blue left-hand navigation button entitled "Get Software."  At the bottom of the resulting page is a section entitled "Authorized VARs Only." In that section, click on the "VAR process/ordering for MathWorks products" link. 
+
+There you will see information on:
+* Pricing
+* Ordering 
+* Installation and Activation
+
+Follow the instructions provided to place orders for your resale licenses. 
+
+If you have any questions or suggestions about the Connections Help Desk, please contact us at connections@mathworks.com.  
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+{!Case.CaseNumber}

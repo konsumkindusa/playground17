@@ -1,0 +1,15 @@
+Dear {!Case.Contact},
+
+To add additional products to your Sales Support License you must send in your request to connections@mathworks.com along with list of products you would like to add.
+
+These demo licenses are restricted to sales and marketing activities for your Connections Program-product [Service Agreement.Name] along with MathWorks products MATLAB and Simulink. We allow products on your development license to be purchased for your demo licenses. If any of the additional products are not currently on your development license please explain in detail why you need these additional products.  Please be specific as this request will be reviewed here internally to get approved. Once approved I will send a new sales support agreement which will need to be signed before I can send a quote.
+
+Please remember each end user must have the same product configuration as the existing end users so the additional products must be purchased for all end users on you sales support licenses.  
+
+If you have any questions, please contact me at connections@mathworks.com.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

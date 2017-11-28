@@ -1,0 +1,4074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>ActualCost</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Eloqua_Campaign_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Eloqua Campaign ID</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Eloqua_Parent_Campaign__c</fullName>
+        <description>Field from Eloqua that provides information about the parent campaign categorization.</description>
+        <externalId>false</externalId>
+        <label>Eloqua Parent Campaign</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>4G LTE</fullName>
+                    <default>false</default>
+                    <label>4G LTE</label>
+                </value>
+                <value>
+                    <fullName>Computer Vision</fullName>
+                    <default>false</default>
+                    <label>Computer Vision</label>
+                </value>
+                <value>
+                    <fullName>Data Analytics for EP</fullName>
+                    <default>false</default>
+                    <label>Data Analytics for EP</label>
+                </value>
+                <value>
+                    <fullName>Edu Hardware Initiative</fullName>
+                    <default>false</default>
+                    <label>Edu Hardware Initiative</label>
+                </value>
+                <value>
+                    <fullName>HDL Coder</fullName>
+                    <default>false</default>
+                    <label>HDL Coder</label>
+                </value>
+                <value>
+                    <fullName>MATLAB Coder</fullName>
+                    <default>false</default>
+                    <label>MATLAB Coder</label>
+                </value>
+                <value>
+                    <fullName>MBD for Controls</fullName>
+                    <default>false</default>
+                    <label>MBD for Controls</label>
+                </value>
+                <value>
+                    <fullName>MDCS</fullName>
+                    <default>false</default>
+                    <label>MDCS</label>
+                </value>
+                <value>
+                    <fullName>PCT blitz</fullName>
+                    <default>false</default>
+                    <label>PCT blitz</label>
+                </value>
+                <value>
+                    <fullName>PID Controls Made Easy</fullName>
+                    <default>false</default>
+                    <label>PID Controls Made Easy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Event_Date__c</fullName>
+        <description>Event Date</description>
+        <externalId>false</externalId>
+        <label>Event Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <description>Industry</description>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aerospace and Defense</fullName>
+                    <default>false</default>
+                    <label>Aerospace and Defense</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Biotech and Pharmaceutical</fullName>
+                    <default>false</default>
+                    <label>Biotech and Pharmaceutical</label>
+                </value>
+                <value>
+                    <fullName>Chemical and Petroleum</fullName>
+                    <default>false</default>
+                    <label>Chemical and Petroleum</label>
+                </value>
+                <value>
+                    <fullName>Communication Devices</fullName>
+                    <default>false</default>
+                    <label>Communication Devices</label>
+                </value>
+                <value>
+                    <fullName>Communication Infrastructure</fullName>
+                    <default>false</default>
+                    <label>Communication Infrastructure</label>
+                </value>
+                <value>
+                    <fullName>Computer Electronics</fullName>
+                    <default>false</default>
+                    <label>Computer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Consumer Electronics</fullName>
+                    <default>false</default>
+                    <label>Consumer Electronics</label>
+                </value>
+                <value>
+                    <fullName>Consumer Goods</fullName>
+                    <default>false</default>
+                    <label>Consumer Goods</label>
+                </value>
+                <value>
+                    <fullName>Earth and Ocean Sciences</fullName>
+                    <default>false</default>
+                    <label>Earth and Ocean Sciences</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Food and Beverage</fullName>
+                    <default>false</default>
+                    <label>Food and Beverage</label>
+                </value>
+                <value>
+                    <fullName>Industrial Automation and Machinery</fullName>
+                    <default>false</default>
+                    <label>Industrial Automation and Machinery</label>
+                </value>
+                <value>
+                    <fullName>Instrumentation</fullName>
+                    <default>false</default>
+                    <label>Instrumentation</label>
+                </value>
+                <value>
+                    <fullName>Medical Devices</fullName>
+                    <default>false</default>
+                    <label>Medical Devices</label>
+                </value>
+                <value>
+                    <fullName>Metals, Materials and Mining</fullName>
+                    <default>false</default>
+                    <label>Metals, Materials and Mining</label>
+                </value>
+                <value>
+                    <fullName>Other/Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Other/Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Pulp and Paper</fullName>
+                    <default>false</default>
+                    <label>Pulp and Paper</label>
+                </value>
+                <value>
+                    <fullName>Rail, Ships and other Transportation</fullName>
+                    <default>false</default>
+                    <label>Rail, Ships and other Transportation</label>
+                </value>
+                <value>
+                    <fullName>Semiconductor</fullName>
+                    <default>false</default>
+                    <label>Semiconductor</label>
+                </value>
+                <value>
+                    <fullName>Software and Internet</fullName>
+                    <default>false</default>
+                    <label>Software and Internet</label>
+                </value>
+                <value>
+                    <fullName>Technical Services and Consulting</fullName>
+                    <default>false</default>
+                    <label>Technical Services and Consulting</label>
+                </value>
+                <value>
+                    <fullName>Utilities and Energy</fullName>
+                    <default>false</default>
+                    <label>Utilities and Energy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Interated_Campaign__c</fullName>
+        <description>Integrated campaign</description>
+        <externalId>false</externalId>
+        <label>Interated Campaign</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Integrating MATLAB &amp; Simulink with low cost HW</fullName>
+                    <default>false</default>
+                    <label>Integrating MATLAB &amp; Simulink with low cost HW</label>
+                </value>
+                <value>
+                    <fullName>Model-Based Design for Small Workgroups</fullName>
+                    <default>false</default>
+                    <label>Model-Based Design for Small Workgroups</label>
+                </value>
+                <value>
+                    <fullName>Data Analytics</fullName>
+                    <default>false</default>
+                    <label>Data Analytics</label>
+                </value>
+                <value>
+                    <fullName>Wireless</fullName>
+                    <default>false</default>
+                    <label>Wireless</label>
+                </value>
+                <value>
+                    <fullName>Risk Management</fullName>
+                    <default>false</default>
+                    <label>Risk Management</label>
+                </value>
+                <value>
+                    <fullName>Image Processing and Computer Vision</fullName>
+                    <default>false</default>
+                    <label>Image Processing and Computer Vision</label>
+                </value>
+                <value>
+                    <fullName>Motor and Power Control</fullName>
+                    <default>false</default>
+                    <label>Motor and Power Control</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>Location</description>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Activity__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Activity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Joint Sponsored</fullName>
+                    <default>false</default>
+                    <label>Joint Sponsored</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Sponsored</fullName>
+                    <default>false</default>
+                    <label>MathWorks Sponsored</label>
+                </value>
+                <value>
+                    <fullName>Partner Sponsored</fullName>
+                    <default>false</default>
+                    <label>Partner Sponsored</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partner_Cluster__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Cluster</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Value 1</fullName>
+                    <default>false</default>
+                    <label>Value 1</label>
+                </value>
+                <value>
+                    <fullName>Value 2</fullName>
+                    <default>false</default>
+                    <label>Value 2</label>
+                </value>
+                <value>
+                    <fullName>Value 3</fullName>
+                    <default>false</default>
+                    <label>Value 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partner_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adafruit</fullName>
+                    <default>false</default>
+                    <label>Adafruit</label>
+                </value>
+                <value>
+                    <fullName>Altera</fullName>
+                    <default>false</default>
+                    <label>Altera</label>
+                </value>
+                <value>
+                    <fullName>Analog Devices</fullName>
+                    <default>false</default>
+                    <label>Analog Devices</label>
+                </value>
+                <value>
+                    <fullName>ARM</fullName>
+                    <default>false</default>
+                    <label>ARM</label>
+                </value>
+                <value>
+                    <fullName>Arrow Electronics</fullName>
+                    <default>false</default>
+                    <label>Arrow Electronics</label>
+                </value>
+                <value>
+                    <fullName>Avnet</fullName>
+                    <default>false</default>
+                    <label>Avnet</label>
+                </value>
+                <value>
+                    <fullName>B&amp;R</fullName>
+                    <default>false</default>
+                    <label>B&amp;R</label>
+                </value>
+                <value>
+                    <fullName>Beckhoff</fullName>
+                    <default>false</default>
+                    <label>Beckhoff</label>
+                </value>
+                <value>
+                    <fullName>Bloomberg</fullName>
+                    <default>false</default>
+                    <label>Bloomberg</label>
+                </value>
+                <value>
+                    <fullName>EBV Elektronik</fullName>
+                    <default>false</default>
+                    <label>EBV Elektronik</label>
+                </value>
+                <value>
+                    <fullName>element14</fullName>
+                    <default>false</default>
+                    <label>element14</label>
+                </value>
+                <value>
+                    <fullName>FactSet</fullName>
+                    <default>false</default>
+                    <label>FactSet</label>
+                </value>
+                <value>
+                    <fullName>FLIR</fullName>
+                    <default>false</default>
+                    <label>FLIR</label>
+                </value>
+                <value>
+                    <fullName>Freescale</fullName>
+                    <default>false</default>
+                    <label>Freescale</label>
+                </value>
+                <value>
+                    <fullName>Gamma Technologies</fullName>
+                    <default>false</default>
+                    <label>Gamma Technologies</label>
+                </value>
+                <value>
+                    <fullName>Keysight Technologies</fullName>
+                    <default>false</default>
+                    <label>Keysight Technologies</label>
+                </value>
+                <value>
+                    <fullName>Mentor Graphics</fullName>
+                    <default>false</default>
+                    <label>Mentor Graphics</label>
+                </value>
+                <value>
+                    <fullName>Numerix</fullName>
+                    <default>false</default>
+                    <label>Numerix</label>
+                </value>
+                <value>
+                    <fullName>NVIDIA</fullName>
+                    <default>false</default>
+                    <label>NVIDIA</label>
+                </value>
+                <value>
+                    <fullName>Omron</fullName>
+                    <default>false</default>
+                    <label>Omron</label>
+                </value>
+                <value>
+                    <fullName>Rockwell Automation</fullName>
+                    <default>false</default>
+                    <label>Rockwell Automation</label>
+                </value>
+                <value>
+                    <fullName>Rohde &amp; Schwarz</fullName>
+                    <default>false</default>
+                    <label>Rohde &amp; Schwarz</label>
+                </value>
+                <value>
+                    <fullName>Silica</fullName>
+                    <default>false</default>
+                    <label>Silica</label>
+                </value>
+                <value>
+                    <fullName>SparkFun</fullName>
+                    <default>false</default>
+                    <label>SparkFun</label>
+                </value>
+                <value>
+                    <fullName>Speedgoat</fullName>
+                    <default>false</default>
+                    <label>Speedgoat</label>
+                </value>
+                <value>
+                    <fullName>STMicroelectronics</fullName>
+                    <default>false</default>
+                    <label>STMicroelectronics</label>
+                </value>
+                <value>
+                    <fullName>Tektronix</fullName>
+                    <default>false</default>
+                    <label>Tektronix</label>
+                </value>
+                <value>
+                    <fullName>Teledyne LeCroy</fullName>
+                    <default>false</default>
+                    <label>Teledyne LeCroy</label>
+                </value>
+                <value>
+                    <fullName>Texas Instruments</fullName>
+                    <default>false</default>
+                    <label>Texas Instruments</label>
+                </value>
+                <value>
+                    <fullName>Thomson Reuters</fullName>
+                    <default>false</default>
+                    <label>Thomson Reuters</label>
+                </value>
+                <value>
+                    <fullName>Trading Technologies</fullName>
+                    <default>false</default>
+                    <label>Trading Technologies</label>
+                </value>
+                <value>
+                    <fullName>Vector Software</fullName>
+                    <default>false</default>
+                    <label>Vector Software</label>
+                </value>
+                <value>
+                    <fullName>Xilinx</fullName>
+                    <default>false</default>
+                    <label>Xilinx</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <description>Product Category</description>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MATLAB Product Family</fullName>
+                    <default>false</default>
+                    <label>MATLAB Product Family</label>
+                </value>
+                <value>
+                    <fullName>Application Deployment</fullName>
+                    <default>false</default>
+                    <label>Application Deployment</label>
+                </value>
+                <value>
+                    <fullName>Code Generation</fullName>
+                    <default>false</default>
+                    <label>Code Generation</label>
+                </value>
+                <value>
+                    <fullName>Computational Biology</fullName>
+                    <default>false</default>
+                    <label>Computational Biology</label>
+                </value>
+                <value>
+                    <fullName>Computational Finance</fullName>
+                    <default>false</default>
+                    <label>Computational Finance</label>
+                </value>
+                <value>
+                    <fullName>Control System Design &amp; Analysis</fullName>
+                    <default>false</default>
+                    <label>Control System Design &amp; Analysis</label>
+                </value>
+                <value>
+                    <fullName>Database Access and Reporting</fullName>
+                    <default>false</default>
+                    <label>Database Access and Reporting</label>
+                </value>
+                <value>
+                    <fullName>Event-Based Modeling</fullName>
+                    <default>false</default>
+                    <label>Event-Based Modeling</label>
+                </value>
+                <value>
+                    <fullName>Fixed-Point Modeling</fullName>
+                    <default>false</default>
+                    <label>Fixed-Point Modeling</label>
+                </value>
+                <value>
+                    <fullName>Image Processing and Computer Vision</fullName>
+                    <default>false</default>
+                    <label>Image Processing and Computer Vision</label>
+                </value>
+                <value>
+                    <fullName>Math, Statistics &amp; Optimization</fullName>
+                    <default>false</default>
+                    <label>Math, Statistics &amp; Optimization</label>
+                </value>
+                <value>
+                    <fullName>Multi-Product Category</fullName>
+                    <default>false</default>
+                    <label>Multi-Product Category</label>
+                </value>
+                <value>
+                    <fullName>Parallel Computing</fullName>
+                    <default>false</default>
+                    <label>Parallel Computing</label>
+                </value>
+                <value>
+                    <fullName>Physical Modeling</fullName>
+                    <default>false</default>
+                    <label>Physical Modeling</label>
+                </value>
+                <value>
+                    <fullName>Polyspace Product Family</fullName>
+                    <default>false</default>
+                    <label>Polyspace Product Family</label>
+                </value>
+                <value>
+                    <fullName>Rapid Prototyping and HIL Simulation</fullName>
+                    <default>false</default>
+                    <label>Rapid Prototyping and HIL Simulation</label>
+                </value>
+                <value>
+                    <fullName>Signal Processing and Communications</fullName>
+                    <default>false</default>
+                    <label>Signal Processing and Communications</label>
+                </value>
+                <value>
+                    <fullName>Simulation Graphics and Reporting</fullName>
+                    <default>false</default>
+                    <label>Simulation Graphics and Reporting</label>
+                </value>
+                <value>
+                    <fullName>Simulink Product Family</fullName>
+                    <default>false</default>
+                    <label>Simulink Product Family</label>
+                </value>
+                <value>
+                    <fullName>Test &amp; Measurement</fullName>
+                    <default>false</default>
+                    <label>Test &amp; Measurement</label>
+                </value>
+                <value>
+                    <fullName>Verification, Validation, and Test</fullName>
+                    <default>false</default>
+                    <label>Verification, Validation, and Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Region</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER</fullName>
+                    <default>false</default>
+                    <label>AMER</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>WW</fullName>
+                    <default>false</default>
+                    <label>WW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sector__c</fullName>
+        <description>Sector</description>
+        <externalId>false</externalId>
+        <label>Sector</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Com/Gov</fullName>
+                    <default>false</default>
+                    <label>Com/Gov</label>
+                </value>
+                <value>
+                    <fullName>Edu</fullName>
+                    <default>false</default>
+                    <label>Edu</label>
+                </value>
+                <value>
+                    <fullName>Cross Sector</fullName>
+                    <default>false</default>
+                    <label>Cross Sector</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Office__c</fullName>
+        <description>Office sponsoring the event</description>
+        <externalId>false</externalId>
+        <label>Sponsor Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Nordic</fullName>
+                    <default>false</default>
+                    <label>MathWorks Nordic</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Worldwide</fullName>
+                    <default>false</default>
+                    <label>MathWorks Worldwide</label>
+                </value>
+                <value>
+                    <fullName>Natick - AMER</fullName>
+                    <default>false</default>
+                    <label>Natick - AMER</label>
+                </value>
+                <value>
+                    <fullName>Natick - APAC</fullName>
+                    <default>false</default>
+                    <label>Natick - APAC</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Type__c</fullName>
+        <description>Campaign Sub Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Campaign Sub Type</inlineHelpText>
+        <label>Sub Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Advertisement | Ad Print</fullName>
+                    <default>false</default>
+                    <label>Advertisement | Ad Print</label>
+                </value>
+                <value>
+                    <fullName>Conference | Advisory Board</fullName>
+                    <default>false</default>
+                    <label>Conference | Advisory Board</label>
+                </value>
+                <value>
+                    <fullName>Conference | Expo</fullName>
+                    <default>false</default>
+                    <label>Conference | Expo</label>
+                </value>
+                <value>
+                    <fullName>Conference | Symposium</fullName>
+                    <default>false</default>
+                    <label>Conference | Symposium</label>
+                </value>
+                <value>
+                    <fullName>Conference | Virtual Event</fullName>
+                    <default>false</default>
+                    <label>Conference | Virtual Event</label>
+                </value>
+                <value>
+                    <fullName>Contact Lists | Contact Lists</fullName>
+                    <default>false</default>
+                    <label>Contact Lists | Contact Lists</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Customer Activity Report</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Customer Activity Report</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Demand Generation</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Demand Generation</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | MOOC</fullName>
+                    <default>false</default>
+                    <label>Direct Email | MOOC</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Other</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Other</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Partner Notification</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Partner Notification</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Product General Release</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Product General Release</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Product Prerelease</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Product Prerelease</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Product Price Notification</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Product Price Notification</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Product Transition</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Product Transition</label>
+                </value>
+                <value>
+                    <fullName>Direct Email | Product Web Release</fullName>
+                    <default>false</default>
+                    <label>Direct Email | Product Web Release</label>
+                </value>
+                <value>
+                    <fullName>In Product Trials | Trial Download</fullName>
+                    <default>false</default>
+                    <label>In Product Trials | Trial Download</label>
+                </value>
+                <value>
+                    <fullName>In Product Trials | Trial Request</fullName>
+                    <default>false</default>
+                    <label>In Product Trials | Trial Request</label>
+                </value>
+                <value>
+                    <fullName>Lead Nurturing | Accelerator</fullName>
+                    <default>false</default>
+                    <label>Lead Nurturing | Accelerator</label>
+                </value>
+                <value>
+                    <fullName>Lead Nurturing | Post-purchase</fullName>
+                    <default>false</default>
+                    <label>Lead Nurturing | Post-purchase</label>
+                </value>
+                <value>
+                    <fullName>Lead Nurturing | Qualification</fullName>
+                    <default>false</default>
+                    <label>Lead Nurturing | Qualification</label>
+                </value>
+                <value>
+                    <fullName>Lead Nurturing | Welcome</fullName>
+                    <default>false</default>
+                    <label>Lead Nurturing | Welcome</label>
+                </value>
+                <value>
+                    <fullName>Live Webinar | Partner/3rd Party</fullName>
+                    <default>false</default>
+                    <label>Live Webinar | Partner/3rd Party</label>
+                </value>
+                <value>
+                    <fullName>Live Webinar | Private</fullName>
+                    <default>false</default>
+                    <label>Live Webinar | Private</label>
+                </value>
+                <value>
+                    <fullName>Live Webinar | Public</fullName>
+                    <default>false</default>
+                    <label>Live Webinar | Public</label>
+                </value>
+                <value>
+                    <fullName>Newsletter | MATLAB Digest</fullName>
+                    <default>false</default>
+                    <label>Newsletter | MATLAB Digest</label>
+                </value>
+                <value>
+                    <fullName>Newsletter | News &amp; Notes</fullName>
+                    <default>false</default>
+                    <label>Newsletter | News &amp; Notes</label>
+                </value>
+                <value>
+                    <fullName>Pay Per Click | Collateral Download</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click | Collateral Download</label>
+                </value>
+                <value>
+                    <fullName>Pay Per Click | Other Video</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click | Other Video</label>
+                </value>
+                <value>
+                    <fullName>Pay Per Click | Pricing Information</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click | Pricing Information</label>
+                </value>
+                <value>
+                    <fullName>Pay Per Click | Recorded Webinar</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click | Recorded Webinar</label>
+                </value>
+                <value>
+                    <fullName>Pay Per Click | Trial Request</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click | Trial Request</label>
+                </value>
+                <value>
+                    <fullName>Pay Per Click | Web Contact Request</fullName>
+                    <default>false</default>
+                    <label>Pay Per Click | Web Contact Request</label>
+                </value>
+                <value>
+                    <fullName>Referral | Connections Partner</fullName>
+                    <default>false</default>
+                    <label>Referral | Connections Partner</label>
+                </value>
+                <value>
+                    <fullName>Referral | Technical Support</fullName>
+                    <default>false</default>
+                    <label>Referral | Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Referral | Trial Request</fullName>
+                    <default>false</default>
+                    <label>Referral | Trial Request</label>
+                </value>
+                <value>
+                    <fullName>Seminar | CME</fullName>
+                    <default>false</default>
+                    <label>Seminar | CME</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Partner</fullName>
+                    <default>false</default>
+                    <label>Seminar | Partner</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Partner Roadshow</fullName>
+                    <default>false</default>
+                    <label>Seminar | Partner Roadshow</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Private</fullName>
+                    <default>false</default>
+                    <label>Seminar | Private</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Private Workshop</fullName>
+                    <default>false</default>
+                    <label>Seminar | Private Workshop</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Public</fullName>
+                    <default>false</default>
+                    <label>Seminar | Public</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Public Workshop</fullName>
+                    <default>false</default>
+                    <label>Seminar | Public Workshop</label>
+                </value>
+                <value>
+                    <fullName>Seminar | Tour</fullName>
+                    <default>false</default>
+                    <label>Seminar | Tour</label>
+                </value>
+                <value>
+                    <fullName>SMS | Lead Generation</fullName>
+                    <default>false</default>
+                    <label>SMS | Lead Generation</label>
+                </value>
+                <value>
+                    <fullName>Student Competition | Corporate</fullName>
+                    <default>false</default>
+                    <label>Student Competition | Corporate</label>
+                </value>
+                <value>
+                    <fullName>Student Competition | Individual</fullName>
+                    <default>false</default>
+                    <label>Student Competition | Individual</label>
+                </value>
+                <value>
+                    <fullName>Test and Target | A/B Test</fullName>
+                    <default>false</default>
+                    <label>Test and Target | A/B Test</label>
+                </value>
+                <value>
+                    <fullName>Test and Target | Personalization</fullName>
+                    <default>false</default>
+                    <label>Test and Target | Personalization</label>
+                </value>
+                <value>
+                    <fullName>Trade Show | Research Show</fullName>
+                    <default>false</default>
+                    <label>Trade Show | Research Show</label>
+                </value>
+                <value>
+                    <fullName>Trade Show | Trade Show</fullName>
+                    <default>false</default>
+                    <label>Trade Show | Trade Show</label>
+                </value>
+                <value>
+                    <fullName>Trade Show | Vendor Fair</fullName>
+                    <default>false</default>
+                    <label>Trade Show | Vendor Fair</label>
+                </value>
+                <value>
+                    <fullName>Training Course | Promotion</fullName>
+                    <default>false</default>
+                    <label>Training Course | Promotion</label>
+                </value>
+                <value>
+                    <fullName>Video | Other Video</fullName>
+                    <default>false</default>
+                    <label>Video | Other Video</label>
+                </value>
+                <value>
+                    <fullName>Video | Recorded Webinar</fullName>
+                    <default>false</default>
+                    <label>Video | Recorded Webinar</label>
+                </value>
+                <value>
+                    <fullName>Video | Recorded Webinar Partner</fullName>
+                    <default>false</default>
+                    <label>Video | Recorded Webinar Partner</label>
+                </value>
+                <value>
+                    <fullName>Web Contact Request | Contact Maintenance</fullName>
+                    <default>false</default>
+                    <label>Web Contact Request | Contact Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Web Contact Request | Contact Sales</fullName>
+                    <default>false</default>
+                    <label>Web Contact Request | Contact Sales</label>
+                </value>
+                <value>
+                    <fullName>Web Contact Request | Quote Request</fullName>
+                    <default>false</default>
+                    <label>Web Contact Request | Quote Request</label>
+                </value>
+                <value>
+                    <fullName>Web Contact Request | Trial Request</fullName>
+                    <default>false</default>
+                    <label>Web Contact Request | Trial Request</label>
+                </value>
+                <value>
+                    <fullName>Web Info Request | Collateral Download</fullName>
+                    <default>false</default>
+                    <label>Web Info Request | Collateral Download</label>
+                </value>
+                <value>
+                    <fullName>Web Info Request | Email Sign Up Request</fullName>
+                    <default>false</default>
+                    <label>Web Info Request | Email Sign Up Request</label>
+                </value>
+                <value>
+                    <fullName>Web Info Request | Event Proceedings</fullName>
+                    <default>false</default>
+                    <label>Web Info Request | Event Proceedings</label>
+                </value>
+                <value>
+                    <fullName>Web Info Request | New Web Profile</fullName>
+                    <default>false</default>
+                    <label>Web Info Request | New Web Profile</label>
+                </value>
+                <value>
+                    <fullName>Web Info Request | Other Download</fullName>
+                    <default>false</default>
+                    <label>Web Info Request | Other Download</label>
+                </value>
+                <value>
+                    <fullName>Web Info Request | Pricing Information</fullName>
+                    <default>false</default>
+                    <label>Web Info Request | Pricing Information</label>
+                </value>
+                <value>
+                    <fullName>Web Trials | Trial Download</fullName>
+                    <default>false</default>
+                    <label>Web Trials | Trial Download</label>
+                </value>
+                <value>
+                    <fullName>Web Trials | Trial Request</fullName>
+                    <default>false</default>
+                    <label>Web Trials | Trial Request</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Training Course</controllingFieldValue>
+                <valueName>Training Course | Promotion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Video</controllingFieldValue>
+                <valueName>Video | Other Video</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Video</controllingFieldValue>
+                <valueName>Video | Recorded Webinar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Video</controllingFieldValue>
+                <valueName>Video | Recorded Webinar Partner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Contact Request</controllingFieldValue>
+                <valueName>Web Contact Request | Contact Maintenance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Contact Request</controllingFieldValue>
+                <valueName>Web Contact Request | Contact Sales</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Contact Request</controllingFieldValue>
+                <valueName>Web Contact Request | Quote Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Contact Request</controllingFieldValue>
+                <valueName>Web Contact Request | Trial Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Info Request</controllingFieldValue>
+                <valueName>Web Info Request | Collateral Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Info Request</controllingFieldValue>
+                <valueName>Web Info Request | Email Sign Up Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Info Request</controllingFieldValue>
+                <valueName>Web Info Request | Event Proceedings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Info Request</controllingFieldValue>
+                <valueName>Web Info Request | New Web Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Info Request</controllingFieldValue>
+                <valueName>Web Info Request | Other Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Info Request</controllingFieldValue>
+                <valueName>Web Info Request | Pricing Information</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Trials</controllingFieldValue>
+                <valueName>Web Trials | Trial Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Web Trials</controllingFieldValue>
+                <valueName>Web Trials | Trial Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Product Trials</controllingFieldValue>
+                <valueName>In Product Trials | Trial Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Product Trials</controllingFieldValue>
+                <valueName>In Product Trials | Trial Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Conference</controllingFieldValue>
+                <valueName>Conference | Advisory Board</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Conference</controllingFieldValue>
+                <valueName>Conference | Expo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Conference</controllingFieldValue>
+                <valueName>Conference | Symposium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Conference</controllingFieldValue>
+                <valueName>Conference | Virtual Event</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contact Lists</controllingFieldValue>
+                <valueName>Contact Lists | Contact Lists</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Customer Activity Report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Demand Generation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | MOOC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Partner Notification</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Product General Release</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Product Prerelease</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Product Price Notification</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Product Transition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Direct Email</controllingFieldValue>
+                <valueName>Direct Email | Product Web Release</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Nurturing</controllingFieldValue>
+                <valueName>Lead Nurturing | Accelerator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Nurturing</controllingFieldValue>
+                <valueName>Lead Nurturing | Post-purchase</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Nurturing</controllingFieldValue>
+                <valueName>Lead Nurturing | Qualification</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Nurturing</controllingFieldValue>
+                <valueName>Lead Nurturing | Welcome</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Live Webinar</controllingFieldValue>
+                <valueName>Live Webinar | Partner/3rd Party</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Live Webinar</controllingFieldValue>
+                <valueName>Live Webinar | Private</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Live Webinar</controllingFieldValue>
+                <valueName>Live Webinar | Public</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Test and Target</controllingFieldValue>
+                <valueName>Test and Target | A/B Test</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Test and Target</controllingFieldValue>
+                <valueName>Test and Target | Personalization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Newsletter</controllingFieldValue>
+                <valueName>Newsletter | MATLAB Digest</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Newsletter</controllingFieldValue>
+                <valueName>Newsletter | News &amp; Notes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pay Per Click</controllingFieldValue>
+                <valueName>Pay Per Click | Collateral Download</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pay Per Click</controllingFieldValue>
+                <valueName>Pay Per Click | Pricing Information</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pay Per Click</controllingFieldValue>
+                <valueName>Pay Per Click | Recorded Webinar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pay Per Click</controllingFieldValue>
+                <valueName>Pay Per Click | Trial Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pay Per Click</controllingFieldValue>
+                <valueName>Pay Per Click | Web Contact Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Referral</controllingFieldValue>
+                <valueName>Referral | Connections Partner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Referral</controllingFieldValue>
+                <valueName>Referral | Technical Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Referral</controllingFieldValue>
+                <valueName>Referral | Trial Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | CME</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Partner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Partner Roadshow</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Private</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Private Workshop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Public</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Public Workshop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seminar</controllingFieldValue>
+                <valueName>Seminar | Tour</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advertisement</controllingFieldValue>
+                <valueName>Advertisement | Ad Print</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMS</controllingFieldValue>
+                <valueName>SMS | Lead Generation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trade Show</controllingFieldValue>
+                <valueName>Trade Show | Research Show</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trade Show</controllingFieldValue>
+                <valueName>Trade Show | Trade Show</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trade Show</controllingFieldValue>
+                <valueName>Trade Show | Vendor Fair</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supporting_Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Supporting Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MathWorks Australia</fullName>
+                    <default>false</default>
+                    <label>MathWorks Australia</label>
+                </value>
+                <value>
+                    <fullName>MathWorks China</fullName>
+                    <default>false</default>
+                    <label>MathWorks China</label>
+                </value>
+                <value>
+                    <fullName>MathWorks France</fullName>
+                    <default>false</default>
+                    <label>MathWorks France</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Germany</fullName>
+                    <default>false</default>
+                    <label>MathWorks Germany</label>
+                </value>
+                <value>
+                    <fullName>MathWorks India</fullName>
+                    <default>false</default>
+                    <label>MathWorks India</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Italy</fullName>
+                    <default>false</default>
+                    <label>MathWorks Italy</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Japan</fullName>
+                    <default>false</default>
+                    <label>MathWorks Japan</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Korea</fullName>
+                    <default>false</default>
+                    <label>MathWorks Korea</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Natick</fullName>
+                    <default>false</default>
+                    <label>MathWorks Natick</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Netherlands</fullName>
+                    <default>false</default>
+                    <label>MathWorks Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Nordic</fullName>
+                    <default>false</default>
+                    <label>MathWorks Nordic</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Spain</fullName>
+                    <default>false</default>
+                    <label>MathWorks Spain</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Switzerland</fullName>
+                    <default>false</default>
+                    <label>MathWorks Switzerland</label>
+                </value>
+                <value>
+                    <fullName>MathWorks UK</fullName>
+                    <default>false</default>
+                    <label>MathWorks UK</label>
+                </value>
+                <value>
+                    <fullName>MathWorks Worldwide</fullName>
+                    <default>false</default>
+                    <label>MathWorks Worldwide</label>
+                </value>
+                <value>
+                    <fullName>Natick - AMER</fullName>
+                    <default>false</default>
+                    <label>Natick - AMER</label>
+                </value>
+                <value>
+                    <fullName>Natick - APAC</fullName>
+                    <default>false</default>
+                    <label>Natick - APAC</label>
+                </value>
+                <value>
+                    <fullName>Natick - EMEA</fullName>
+                    <default>false</default>
+                    <label>Natick - EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time_Zone__c</fullName>
+        <description>Time Zone</description>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>America/Buenos Aires</fullName>
+                    <default>false</default>
+                    <label>America/Buenos Aires</label>
+                </value>
+                <value>
+                    <fullName>America/Chicago</fullName>
+                    <default>false</default>
+                    <label>America/Chicago</label>
+                </value>
+                <value>
+                    <fullName>America/Denver</fullName>
+                    <default>false</default>
+                    <label>America/Denver</label>
+                </value>
+                <value>
+                    <fullName>America/Los Angeles</fullName>
+                    <default>false</default>
+                    <label>America/Los Angeles</label>
+                </value>
+                <value>
+                    <fullName>America/New York</fullName>
+                    <default>false</default>
+                    <label>America/New York</label>
+                </value>
+                <value>
+                    <fullName>America/Santiago</fullName>
+                    <default>false</default>
+                    <label>America/Santiago</label>
+                </value>
+                <value>
+                    <fullName>Asia/Calcutta</fullName>
+                    <default>false</default>
+                    <label>Asia/Calcutta</label>
+                </value>
+                <value>
+                    <fullName>Asia/Seoul</fullName>
+                    <default>false</default>
+                    <label>Asia/Seoul</label>
+                </value>
+                <value>
+                    <fullName>Asia/Shanghai</fullName>
+                    <default>false</default>
+                    <label>Asia/Shanghai</label>
+                </value>
+                <value>
+                    <fullName>Asia/Tokyo</fullName>
+                    <default>false</default>
+                    <label>Asia/Tokyo</label>
+                </value>
+                <value>
+                    <fullName>Australia/Adelaide</fullName>
+                    <default>false</default>
+                    <label>Australia/Adelaide</label>
+                </value>
+                <value>
+                    <fullName>Australia/Brisbane</fullName>
+                    <default>false</default>
+                    <label>Australia/Brisbane</label>
+                </value>
+                <value>
+                    <fullName>Australia/Melbourne</fullName>
+                    <default>false</default>
+                    <label>Australia/Melbourne</label>
+                </value>
+                <value>
+                    <fullName>Australia/Perth</fullName>
+                    <default>false</default>
+                    <label>Australia/Perth</label>
+                </value>
+                <value>
+                    <fullName>Australia/Sydney</fullName>
+                    <default>false</default>
+                    <label>Australia/Sydney</label>
+                </value>
+                <value>
+                    <fullName>Europe/Amsterdam</fullName>
+                    <default>false</default>
+                    <label>Europe/Amsterdam</label>
+                </value>
+                <value>
+                    <fullName>Europe/Berlin</fullName>
+                    <default>false</default>
+                    <label>Europe/Berlin</label>
+                </value>
+                <value>
+                    <fullName>Europe/Helsinki</fullName>
+                    <default>false</default>
+                    <label>Europe/Helsinki</label>
+                </value>
+                <value>
+                    <fullName>Europe/London</fullName>
+                    <default>false</default>
+                    <label>Europe/London</label>
+                </value>
+                <value>
+                    <fullName>Europe/Madrid</fullName>
+                    <default>false</default>
+                    <label>Europe/Madrid</label>
+                </value>
+                <value>
+                    <fullName>Europe/Paris</fullName>
+                    <default>false</default>
+                    <label>Europe/Paris</label>
+                </value>
+                <value>
+                    <fullName>Europe/Rome</fullName>
+                    <default>false</default>
+                    <label>Europe/Rome</label>
+                </value>
+                <value>
+                    <fullName>Europe/Stockholm</fullName>
+                    <default>false</default>
+                    <label>Europe/Stockholm</label>
+                </value>
+                <value>
+                    <fullName>Europe/Zurich</fullName>
+                    <default>false</default>
+                    <label>Europe/Zurich</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Workfront_ID__c</fullName>
+        <description>Workfront ID</description>
+        <externalId>false</externalId>
+        <label>Workfront ID</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ortoo_e2a__Thread_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;
+LEFT( $Organization.Id , 4 )&amp;
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;), RIGHT($Organization.Id,4),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;), RIGHT($Organization.Id,5),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;), RIGHT($Organization.Id,6),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;), RIGHT($Organization.Id,7),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;), RIGHT($Organization.Id,8),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;), RIGHT($Organization.Id,9),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;), RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11)
+)))))))
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp;
+
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4),
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5),
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6),
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7),
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8),
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9),
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10),
+RIGHT(Id,11)
+))))))) &amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Marketing_Campaign</fullName>
+        <active>true</active>
+        <description>Represents campaigns created in Eloqua</description>
+        <label>Marketing Campaign</label>
+        <picklistValues>
+            <picklist>Eloqua_Parent_Campaign__c</picklist>
+            <values>
+                <fullName>4G LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Analytics for EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edu Hardware Initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Coder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Coder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBD for Controls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCT blitz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PID Controls Made Easy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other%2FMiscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail%2C Ships and other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software and Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Services and Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities and Energy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interated_Campaign__c</picklist>
+            <values>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image Processing and Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrating MATLAB %26 Simulink with low cost HW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Model-Based Design for Small Workgroups</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motor and Power Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Risk Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Activity__c</picklist>
+            <values>
+                <fullName>Joint Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Sponsored</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Cluster__c</picklist>
+            <values>
+                <fullName>Value 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Name__c</picklist>
+            <values>
+                <fullName>ARM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adafruit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Altera</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analog Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arrow Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Avnet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%26R</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beckhoff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bloomberg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EBV Elektronik</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FactSet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freescale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gamma Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keysight Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mentor Graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NVIDIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Numerix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omron</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rohde %26 Schwarz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STMicroelectronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silica</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SparkFun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speedgoat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tektronix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teledyne LeCroy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas Instruments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thomson Reuters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trading Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vector Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Xilinx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>element14</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>Application Deployment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control System Design %26 Analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Database Access and Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event-Based Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed-Point Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image Processing and Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Product Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Math%2C Statistics %26 Optimization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-Product Category</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parallel Computing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polyspace Product Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rapid Prototyping and HIL Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signal Processing and Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulation Graphics and Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink Product Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test %26 Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verification%2C Validation%2C and Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WW</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sector__c</picklist>
+            <values>
+                <fullName>Com%2FGov</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edu</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsor_Office__c</picklist>
+            <values>
+                <fullName>MathWorks Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Worldwide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Type__c</picklist>
+            <values>
+                <fullName>Advertisement %7C Ad Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Expo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Symposium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Virtual Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Lists %7C Contact Lists</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Customer Activity Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Demand Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C MOOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Partner Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product General Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Prerelease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Price Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Web Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Product Trials %7C Trial Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Product Trials %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Accelerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Post-purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Welcome</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar %7C Partner%2F3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar %7C Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar %7C Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newsletter %7C MATLAB Digest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newsletter %7C News %26 Notes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Collateral Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Pricing Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Recorded Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Web Contact Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral %7C Connections Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral %7C Technical Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS %7C Lead Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C CME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Partner Roadshow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Private Workshop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Public Workshop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competition %7C Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competition %7C Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Target %7C A%2FB Test</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Target %7C Personalization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show %7C Research Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show %7C Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show %7C Vendor Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Course %7C Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video %7C Other Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video %7C Recorded Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video %7C Recorded Webinar Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Contact Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Contact Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Quote Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Collateral Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Email Sign Up Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Event Proceedings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C New Web Profile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Other Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Pricing Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Trials %7C Trial Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Trials %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Supporting_Office__c</picklist>
+            <values>
+                <fullName>MathWorks Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Worldwide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Time_Zone__c</picklist>
+            <values>
+                <fullName>America%2FBuenos Aires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FChicago</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FDenver</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FLos Angeles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FNew York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FSantiago</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FCalcutta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FSeoul</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FShanghai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FTokyo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FAdelaide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FBrisbane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FMelbourne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FPerth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FSydney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FAmsterdam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FBerlin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FHelsinki</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FLondon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FMadrid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FParis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FRome</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FStockholm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FZurich</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Lists</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Product Trials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newsletter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test and Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Trials</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sales_Campaign</fullName>
+        <active>true</active>
+        <description>Used by Sales users to create and track call lists</description>
+        <label>Sales Campaign</label>
+        <picklistValues>
+            <picklist>Eloqua_Parent_Campaign__c</picklist>
+            <values>
+                <fullName>4G LTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Analytics for EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edu Hardware Initiative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HDL Coder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Coder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBD for Controls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MDCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCT blitz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PID Controls Made Easy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Aerospace and Defense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech and Pharmaceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical and Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communication Infrastructure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Earth and Ocean Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food and Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Automation and Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metals%2C Materials and Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other%2FMiscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp and Paper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rail%2C Ships and other Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software and Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Services and Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities and Energy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interated_Campaign__c</picklist>
+            <values>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image Processing and Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrating MATLAB %26 Simulink with low cost HW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Model-Based Design for Small Workgroups</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motor and Power Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Risk Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Activity__c</picklist>
+            <values>
+                <fullName>Joint Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Sponsored</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Sponsored</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Cluster__c</picklist>
+            <values>
+                <fullName>Value 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Name__c</picklist>
+            <values>
+                <fullName>ARM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adafruit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Altera</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analog Devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arrow Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Avnet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%26R</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beckhoff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bloomberg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EBV Elektronik</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FactSet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freescale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gamma Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keysight Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mentor Graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NVIDIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Numerix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omron</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rohde %26 Schwarz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STMicroelectronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silica</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SparkFun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speedgoat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tektronix</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teledyne LeCroy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas Instruments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thomson Reuters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trading Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vector Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Xilinx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>element14</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Category__c</picklist>
+            <values>
+                <fullName>Application Deployment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Computational Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Control System Design %26 Analysis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Database Access and Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event-Based Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed-Point Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Image Processing and Computer Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATLAB Product Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Math%2C Statistics %26 Optimization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi-Product Category</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parallel Computing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Modeling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polyspace Product Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rapid Prototyping and HIL Simulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signal Processing and Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulation Graphics and Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Simulink Product Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test %26 Measurement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verification%2C Validation%2C and Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WW</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sector__c</picklist>
+            <values>
+                <fullName>Com%2FGov</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edu</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsor_Office__c</picklist>
+            <values>
+                <fullName>MathWorks Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Worldwide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Type__c</picklist>
+            <values>
+                <fullName>Advertisement %7C Ad Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Expo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Symposium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference %7C Virtual Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Lists %7C Contact Lists</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Customer Activity Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C MOOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Partner Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product General Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Prerelease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Price Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Email %7C Product Web Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Accelerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Post-purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Nurturing %7C Welcome</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar %7C Partner%2F3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar %7C Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Webinar %7C Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newsletter %7C MATLAB Digest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newsletter %7C News %26 Notes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Collateral Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Pricing Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Recorded Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay Per Click %7C Web Contact Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral %7C Technical Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS %7C Lead Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C CME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Partner Roadshow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Private Workshop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Public Workshop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar %7C Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competition %7C Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Competition %7C Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show %7C Research Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show %7C Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show %7C Vendor Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Course %7C Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video %7C Other Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video %7C Recorded Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video %7C Recorded Webinar Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Contact Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Contact Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Quote Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Contact Request %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Collateral Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Email Sign Up Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Event Proceedings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C New Web Profile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Other Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Info Request %7C Pricing Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Trials %7C Trial Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Trials %7C Trial Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Supporting_Office__c</picklist>
+            <values>
+                <fullName>MathWorks Australia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks India</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Japan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Korea</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Natick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Nordic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks UK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MathWorks Worldwide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - AMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natick - EMEA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Time_Zone__c</picklist>
+            <values>
+                <fullName>America%2FBuenos Aires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FChicago</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FDenver</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FLos Angeles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FNew York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FSantiago</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FCalcutta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FSeoul</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FShanghai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FTokyo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FAdelaide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FBrisbane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FMelbourne</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FPerth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Australia%2FSydney</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FAmsterdam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FBerlin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FHelsinki</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FLondon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FMadrid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FParis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FRome</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FStockholm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe%2FZurich</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Calling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Generated Prospecting</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Restrict_Sales_Users_Edit_MKt_Campaigns</fullName>
+        <active>true</active>
+        <description>This validation rule will restrict Sales users to edit Marketing campaigns.</description>
+        <errorConditionFormula>AND(RecordType.DeveloperName = &quot;Marketing_Campaign&quot;,  NOT($Permission.Allow_Campaign_Edits))</errorConditionFormula>
+        <errorMessage>This is a marketing created campaign and cannot be edited.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Campaign_Influence_Report</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/support/console/36.0/integration.js&quot;)}
+var openURL = &apos;/{!$Setup.Dynamic_Report_Settings__c.Campaign_View_campaign_influence_report__c}?pv1={!Campaign.Id}&apos;;
+if (sforce.console.isInConsole()) 
+{ 
+sforce.console.openPrimaryTab(null,openURL , true, 
+&apos;View Campaign Influence&apos;); 
+}
+else {
+window.open(openURL,&quot;_blank&quot;,&quot;height=1000,width=1300, scrollbars=1&quot;);
+}</url>
+    </webLinks>
+</CustomObject>

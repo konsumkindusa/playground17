@@ -1,0 +1,22 @@
+Buenos días {!Case.Contact} y XXXXXX,
+
+Tal como lo ha solicitado XXXXX, el rol de Administrador de la Licencia ###### ha sido transferido de XXXXX a XXXXXXX.  Al conectarse a su Cuenta MathWorks en www.mathworks.com verán la actualización de estos datos en la sección "My Licenses".
+
+El Administrador asigna los usuarios finales y realiza acciones relacionadas a la administración de las licencias desde el License Center. Todas las licencias MathWorks requieren un Administrador que sirva como fuente principal de comunicación.
+
+Por favor, tenga en cuenta que el Administrador es responsable de asignar los usuarios autorizados a hacer Uso de la Licencia. Actualmente XXXXXXXX está asociado a la licencia. Si la licencia está activada actualmente, deberán desactivarla antes de poder cambiar el usuario o Licensed End User. Para verificar si hay alguna activación, puede ir al License Center, elegir una licencia, y hacer click en la pestaña "Activation and Installation".
+
+Si quiere ver las instrucciones para desactivar su licencia haga click en: http://mathworks.com/support/solutions/en/data/1-698KQP/index.html?solution=1-698KQP
+
+Para aprender más acerca de añadir y eliminar usuarios haga click en: http://www.mathworks.com/support/solutions/en/data/1-6092ZT/    
+
+Para aprender más acerca de la activación de su licencia, puede seguir el link que figura a continuación, que requiere que se conecte a su Cuenta MathWorks:   http://www.mathworks.com/support/activation/index.html?BB=1    
+
+Si necesita más ayuda en relación a este Caso, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

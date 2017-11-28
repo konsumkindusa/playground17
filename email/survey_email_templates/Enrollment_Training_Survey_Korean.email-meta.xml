@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>Enrollment Training Survey - Korean</name>
+    <style>freeForm</style>
+    <subject>MathWorks 교육 평가</subject>
+    <textOnly>유 주형 귀하,
+
+MathWorks 교육에 참여해 주셔서 감사합니다. 본 교육의 목적은 MATLAB 및 Simulink와 그외 각종 응용 분야 관련 툴들을 사용하여 귀하의 성공을 돕는데 있습니다.
+
+귀하의 학습 경험을 향상시키는 데 지속적으로 노력하고 있으며, 귀하의 피드백은 당사의 교육 개발에 매우 중요한 자료가 될 것입니다. 잠시 시간을 내어 교육 후 설문조사를 완료해 주시면 감사하겠습니다. 이 설문조사는 약 5분의 시간이 소요됩니다.
+
+교육 후 설문조사
+
+
+
+귀중한 시간을 내주셔서 감사 드리며, 향후 귀하의 교육 요구를 충족하도록 노력하겠습니다.
+
+감사합니다.
+
+Craig Santos
+Training Business Manager
+The MathWorks, Inc.
+Craig.Santos@mathworks.com
+
+사용자의 주소를 업데이트하려면 다음 주소로 전자 우편을 보내십시오. service@mathworks.com
+
+© 2009 by The MathWorks, Inc. MATLAB, Simulink, Stateflow, Handle Graphics, Real-Time Workshop, SimBiology, SimHydraulics 및 xPC TargetBox는 The MathWorks, Inc.의 등록 상표이고 SimEvents는 The MathWorks, Inc.의 상표입니다. 기타 제품 또는 상표명은 각 해당사의 상표 또는 등록 상표입니다.
+
+
+수신 거부:
+MathWorks의 상용 전자 우편 발송 목록에서 본 전자 우편 주소를 제거하려면 다음 링크를 누르십시오.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

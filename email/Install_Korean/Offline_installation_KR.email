@@ -1,0 +1,30 @@
+오프라인 설치법 보내 드립니다.
+
+공식 홈페이지 가이드: 파일 설치 키로 제품 설치(홈페이지 위치가 한국일 경우 한글로 열람 가능) http://www.mathworks.co.kr/help/install/ug/install-and-activate-without-an-internet-connection.html
+
+위 온라인 가이드 또는 첨부된 PDF 가이드를 참조 바랍니다.
+
+설치 절차는 아래와 같습니다.
+
+1. 홈페이지 License Center에서 Activation 후 파일 설치키와 라이선스 파일 다운로드 2. 인스톨러 외 추가로 설치 파일 다운로드 3. 설치할 컴퓨터로 라이선스 파일, 파일설치키, 설치 파일을 복사하여 설치
+
+참고로 오프라인 설치 전에 설치에 필요한 파일은 아래의 방법으로 미리 준비 하셔야 합니다.
+아래 내용을 참조하셔서 설치 전 설치 파일 (최소 600M이상)을 준비하시기 바랍니다. 
+설치 파일 다운로드는 관리자 계정에서만 가능합니다.
+
+* 제품 다운로드 방법
+관리자는 다운 받은 인스톨러로 인터넷이 되는 환경에서 로그인 후 제품을 다운로드 받을 수 있습니다.
+
+제품 다운로드 받는 방법
+https://www.mathworks.com/matlabcentral/answers/98268
+
+인스톨러를 사용하여 설치 파일만 다운받는 방법
+https://kr.mathworks.com/help/install/ug/download-only.html
+
+만약 인스톨러에서 다운로드가 불가능 할 경우 ISO 이미지를 다운 받아 설치 가능합니다.
+1. ISO는 압축 프로그램으로 압축해제가 가능하며 알집등 국산 소프트웨어를 사용하지 마시고 7zip (무료)이나 Winzip등을 사용하시기 바랍니다.
+2. ISO를 두장 받으신 경우 둘 다 압축해제 후 DVD2 내용을 DVD1 폴더로 덮어쓰기 하시면 됩니다.
+
+ISO 이미지 다운로드 방법
+- 관리자 계정으로 로그인하여 제품 다운로드->버전 선택->OS 선택 후 나오는 다운로드 화면 하단의 Helpful links에서 GET R20xxx ISO 클릭
+https://www.mathworks.com/matlabcentral/answers/101103

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send when a partner requests trial for their prospects.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Request Form - Setup Info</name>
+    <style>none</style>
+    <subject>Connections Program Trial Request Form Set Up Info</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

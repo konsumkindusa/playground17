@@ -1,0 +1,11 @@
+Gentile {!Contact.Salutation} {!Contact.LastName},    
+
+Il numero di licenza {!Case.License__c} non risulta valido. La prego di inviarmi le seguenti informazioni per permettermi di verificare la corretta installazione dei prodotti MathWorks:    
+
+1)      Utilizza una licenza personale dei prodotti MathWorks oppure una licenza della Sua compagnia/organizzazione?    
+2)      Nel caso non stia utilizzando una licenza personale, quale è il nome della compagnia o dell’organizzazione per cui lavora?    
+3)      Mi può fornire un numero di telefono per contattare la persona che si occupa di gestire le licenze dei prodotti all’interno della Sua compagnia?    
+
+Cordiali Saluti,    
+{!User.Email_Template_Signature__c}  
+{!User.Disclosure__c}

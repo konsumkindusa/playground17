@@ -1,0 +1,62 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><span style="font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">{!Enrollment__c.Enrollee_Name__c},<o:p></o:p></span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><span style="font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;"><br></span></p><p style="color: rgb(0, 0, 0); font-family: arial;"><span lang="ZH-CN" style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">感谢您参加</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">MathWorks</span><span lang="ZH-CN" style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">培训。我们的目标是确保您在应用中成功使用</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">MATLAB,Simulink</span><span lang="ZH-CN" style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">和相关工具。</span><span style="font-size: 12pt; font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;">
+
+</p><p style="line-height: 19.2pt;"><span lang="ZH-CN" style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei UI&quot;, sans-serif; font-size: 12pt;">我们致力于不断改善您的学习体验，您的反馈对我们非常重要。请花费</span><span lang="DE" style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei UI&quot;, sans-serif; font-size: 12pt;">5</span><span lang="ZH-CN" style="font-size: 12pt;"><font face="Microsoft YaHei UI, sans-serif">分钟时间填写调查问卷，帮助我们了解您参加培训后的效果。<br><br></font></span><a href="https://mathworks.getfeedback.com/r/Een4s7tP/?EnrollID={!Enrollment__c.Id}&amp;Account={!Enrollment__c.Account__c}&amp;Class={!Enrollment__c.ClassId__c}&amp;Contact={!Enrollment__c.Enrollee_NameId__c}" style="color: rgb(0, 0, 0); font-family: DengXian; font-size: 12pt;">培训效果调查（中文）</a><br><br><a href="https://mathworks.getfeedback.com/r/FDuo1uqQ/?EnrollID=%7b!Enrollment__c.Id%7d&amp;Account=%7b!Enrollment__c.Account__c%7d&amp;Class=%7b!Enrollment__c.ClassId__c%7d&amp;Contact=%7b!Enrollment__c.Enrollee_NameId__c%7d" style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">Training
+knowledge transfer survey (English)</a><br><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;"><br>感</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">谢您宝贵</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">的</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">时间，期待满足您未来的学习需求</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">。</span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;"><br></span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">敬上</span><span style="font-size: 12pt; font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">,&nbsp;</span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><span style="font-family: &quot;Microsoft YaHei UI&quot;, sans-serif; font-size: 12pt;">Craig Santos</span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><font face="Microsoft YaHei UI, sans-serif">Training Business Manager</font></p><p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: medium;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0in 0in 0.0001pt;"><span style="font-family: &quot;Microsoft YaHei UI&quot;, sans-serif;">The MathWorks, Inc.<o:p></o:p></span></p>
+
+<div class="MsoNormal" align="center" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: center; line-height: 19.2pt;"><span style="font-size:8.5pt;font-family:&quot;Verdana&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;">
+
+<hr size="1" width="100%" noshade="" align="center">
+
+</span></div>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background: white;" id="footer">
+ <tbody><tr>
+  <td style="padding:3.0pt 3.0pt 3.0pt 3.0pt">
+  <p><span style="font-size: 7.5pt; font-family: Verdana, sans-serif;">To
+  update your address, send e-mail to: <a href="mailto:service@mathworks.com" title="mailto:service@mathworks.com">service@mathworks.com</a><o:p></o:p></span></p>
+  <p><span style="font-size: 7.5pt; font-family: Verdana, sans-serif;">©&nbsp;2017 The MathWorks, Inc. MATLAB and Simulink are registered trademarks of The
+  MathWorks, Inc. See <a href="http://mathworks.com/trademarks">mathworks.com/trademarks</a>
+  for a list of additional trademarks. Other product or brand names may be
+  trademarks or registered trademarks of their respective holders. <br>
+  <br>
+  <a href="http://www.mathworks.com/accesslogin/optOutEmail.do?emailAddress=%5bField:%20Contact%20Email%20Address%5d"><br></a><a href="https://go2.mathworks.com/preference-center">
+  OPT-OUT</a><a href="http://www.mathworks.com/accesslogin/optOutEmail.do?emailAddress=%5bField:%20Contact%20Email%20Address%5d">:</a><br>
+  Click on the link to remove this e-mail address from the MathWorks commercial
+  electronic mailing list.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>]]></td>
+</tr>
+</table>

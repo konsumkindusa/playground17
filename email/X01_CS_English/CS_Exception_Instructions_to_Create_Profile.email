@@ -1,0 +1,14 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. We have received your request to change the contact information on an existing MathWorks Account.  Unfortunately, this request cannot be completed.  An individual's MathWorks Account is unique and created for each customer we maintain in our database.  These accounts are not transferable and are designed to stay with an individual throughout his or her career.  For that reason, the account will continue to reflect the contact information as previously shown.    
+
+Once you have created your account you will be able to associate it with your license(s). To create your own MathWorks Account under a unique e-mail address please visit:  http://www.mathworks.com/accesslogin/createProfile.do    
+
+If you have any more questions, feel free to contact us at service@mathworks.com.   
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

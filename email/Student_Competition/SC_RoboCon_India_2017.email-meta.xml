@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to teams requesting software for Robocon India competition</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SC - RoboCon India 2018</name>
+    <style>none</style>
+    <subject>***waiting on legal agreement*** MATLAB and Simulink Software for Robocon India 2018</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

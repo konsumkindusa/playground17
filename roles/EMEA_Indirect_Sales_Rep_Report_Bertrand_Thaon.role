@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>EMEA Indirect Sales Rep Report Bertrand Thaon</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>EMEA Indirect Sales Rep Report Bertrand Thaon</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>EMEA_Indirect_Sales_Manager_Bertrand_Thaon</parentRole>
+</Role>

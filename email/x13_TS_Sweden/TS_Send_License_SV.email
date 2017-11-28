@@ -1,0 +1,25 @@
+Hej {!Contact.FirstName}, 
+
+Detta är med anledning av ditt tekniska supportärende #{!Case.CaseNumber} som gäller '{!Case.Subject}'. 
+
+Vänligen skicka oss det fullständiga resultatet från kommandot,
+
+för MATLAB version R2012b och senare:
+>> ver -Support
+
+för MATLAB version R2012a och tidigare:
+>> ver
+
+som du skriver på kommandoraden i MATLAB. Detta ger oss information om din licens, produkt och plattform.
+
+En av fördelarna med att upprätthålla ett giltigt underhållsavtal (Software Maintenance Service (SMS)) på din license är tillgången till vår Tekniska Support. Vi ser fram emot att få denna information från dig så att vi kan hjälpa dig med ditt tekniska problem.
+
+Använd följande länk för att visa och uppdatera ditt ärende online:
+http://www.mathworks.com/support/servicerequests/index.html
+
+Vänligen bevara referens ID nedan i vidare korrespondens i denna fråga. Detta gör det möjligt för våra system att automatiskt associera ditt svar med rätt ärende.
+
+Vänliga hälsningar, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

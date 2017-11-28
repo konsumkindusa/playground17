@@ -1,0 +1,10 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+[We received your signed Terms and Conditions, thank you.] We are in the process of contacting the references that you provided in your application. We have sent two messages to each reference,  and still have not received a reply from either reference. Once we have received responses from both contacts, I will be in touch with a status update.
+
+We appreciate your decision to build products and services using the MATLAB technical computing environment. I am looking forward to working with you to complete the application review process.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

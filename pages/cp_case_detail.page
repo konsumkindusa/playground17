@@ -1,0 +1,399 @@
+<!-- 
+/**
+* @author Original: Limo Sadalla - Cloud Sherpas/Mathworks, Last Modified: kishore AN, Robbie Macatbag, Kishore AN,Jaspreet Monga
+* @date Original:26 June 2013,Last Modified: 31 July 2013, 08 August 2013, 03 Oct 2013,29 May 2014
+* @description page on Customer Portal for Case detail
+* @ added styles for close case button - Jaspreet Monga
+*/ 
+-->
+
+<apex:page standardController="Case" extensions="cp_CaseControllerExtension"  standardStylesheets="true" sidebar="false" showHeader="false" language="{!language}">
+<!-- 
+<apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+<apex:includeScript value="{!$Resource.jquery_191}"/>
+<apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+<apex:stylesheet value="{!$Resource.MWExternalStyle960}"/>
+<apex:stylesheet value="{!$Resource.MWcreatecasestyles}"/>
+<apex:stylesheet value="{!$Resource.MWHeaderStyles}"/>
+ -->
+<head>
+    <title>
+      My Service Request - Detail
+    </title>
+</head>
+
+<script>
+         
+
+        $(function()
+        {            
+            //setUrl(window.top.location.href.split("?")[0]);
+            setUrl(parent.location.href.split("?")[0]);
+       });
+        
+         
+       function showHideDesc(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+          
+          trimDescription();
+        
+      }
+      
+      function trimDescription(){
+         var description = $("[id$='description']").html();
+         description =description.substring(0, 150)+'...';
+         $("[id$='description']").html(description); 
+      
+      }
+      
+      $(document).ready(function(){
+        trimDescription();
+      });
+            
+   
+ </script>
+<!-- 
+ <style>
+ #j_id0:j_id54:j_id65:descrption{margin-left:16px;}
+ 
+   h1 {
+      font-weight: bold !important;
+      letter-spacing: 0em !important;
+      }
+      
+      .mwa-nav a
+      {
+      font-size: 1.1em;
+      }
+      form {
+        font-size: 1.2em;
+      }  
+      html body {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        //font-size: 62.5%;
+        color: #3C3C3C;
+        line-height: 140%;
+        background: #D6D6D6 url({!$Resource.BodyBackground}) repeat-x top left;
+        overflow-y: scroll;
+        -webkit-font-smoothing: antialiased;
+      }
+      .section_image h1{
+          font-size:20px;
+          font-weight: normal!important;
+      }
+     .table_header{
+          height: 25px;
+        }
+        .success{margin-left:0px!important;margin-top:15px!important;width:90%;}
+            
+        input[disabled]:hover {
+            color: #888;
+        }
+
+     .form_element .dropdown, .dropdown {width:auto; border:none;}
+     .mwbutton, .btn {float:none;}
+	 .fat_footer {background: #333; border: none;}
+	 .logo_container {position: relative;}
+	 .footer .social_media_icons {width: auto;}     
+
+ </style> 
+  -->
+  
+<apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block">
+        <apex:outputPanel layout="block" id="content_container">
+  
+    
+       <h1 class="mwheader">{!$Label.MySR_Title}</h1>
+       
+        <apex:form >
+        <apex:actionFunction action="{!setUrl}" name="setUrl" rerender="none">
+            <apex:param name="PageUrl" assignTo="{!PageUrl}" value="" />
+        </apex:actionFunction>
+           
+            <apex:commandLink action="/apex/cp_case_home?cc={!$CurrentPage.parameters.CC}" value="<< {!$Label.MySR_View_All}" styleClass="return_link" target="_self"/>
+            
+          
+        </apex:form>     
+    
+    <apex:pageblock rendered="{!showconfirmmsg}">
+    <div class="success">
+    <h3 id="confmMessage">{!$Label.case_created_confirmation_message}</h3>
+    </div>
+    </apex:pageblock>
+    <br/>
+    <div class="table_header">
+        <table width="100%">
+        <tr>
+        <td>
+            <h3>{!$Label.MySR_Details}</h3>
+        </td>
+        <td>    
+            <apex:form >                    
+             <apex:commandButton action="{!closecasePage}" id="CloseCase" value="{!$Label.MySR_Close_Case_Button}" style="display:{!IF(showcaseclose, '', 'none')}" styleClass="mwbutton rounded"/>
+            </apex:form>
+        </td>    
+        </tr>
+        </table>
+    </div>
+    <apex:pageBlock mode="maindetail">
+        
+        
+        <apex:pageBlockSection showHeader="false" columns="1">
+            <apex:outputField value="{!Case.CaseNumber}"/>
+            <apex:outputField value="{!Case.Subject}"/>             
+        </apex:pageBlockSection>
+        <div id="hidediv" style="display:block">
+        <apex:pageBlockSection showHeader="false" columns="1" rendered="{!IF((LEN(Case.Description)>150),true, false)}">        
+                <apex:outputField label="{!$Label.MySR_Description}" value="{!Case.Description}" id="description"/>
+                <apex:OutputText id="trimDescription">
+                    <br/><a href="#" style="float:right" onClick="showHideDesc('hidediv');showHideDesc('showdiv');">  {!$Label.MySR_More}</a>
+                </apex:OutputText>   
+        </apex:pageBlockSection>
+        </div>
+        
+        <div id="showdiv" style="display:none">
+        <apex:pageBlockSection showHeader="false" columns="1">             
+                 <apex:outputField label="{!$Label.MySR_Description}" value="{!Case.Description}" id="description3" styleClass="description" />              
+                <br/><a href="#" style="float:right" onClick="showHideDesc('hidediv');showHideDesc('showdiv');">  {!$Label.MySR_Less}</a>                          
+        </apex:pageBlockSection>
+        </div>        
+        <apex:pageblocksection rendered="{!IF((LEN(Case.Description)<= 150),true, false)}" columns="1">
+             <apex:outputField label="{!$Label.MySR_Description}" value="{!Case.Description}" id="descrption" styleClass="description" />
+        </apex:pageblocksection>      
+      
+        <apex:pageBlockSection showHeader="false" columns="2">
+            <apex:outputField label="{!$Label.MySR_Status}" value="{!Case.Case_Status__c}"/>
+             <apex:outputField label="{!$Label.MySR_Product}" value="{!Case.Product_Lookup__r.Name}"/>
+             <apex:outputText value="{0,date,dd MMM YYYY h:mm a z}" label="{!$Label.MySR_Date_Time_Opened}">
+                 <apex:param value="{!Case.CreatedDate}" />
+             </apex:outputText>            
+            <apex:outputField label="{!$Label.MySR_Product_Release}" value="{!Case.Release__c}"/>           
+           
+            <apex:outputText value="{0,date,dd MMM YYYY h:mm a z}" label="{!$Label.MySR_Date_Time_Closed}">
+                 <apex:param value="{!Case.ClosedDate}" />
+            </apex:outputText>
+            <apex:outputField label="{!$Label.MySR_Product_Version}" value="{!Case.Version__c}"/>
+            <apex:outputField value="{!Case.License__c}" Label="{!$Label.MySR_License_Number}"/>
+            <apex:outputField label="{!$Label.MySR_Platform}" value="{!Case.Platform__c}"/>
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >
+            <apex:image value="{!$Resource.helpicon}" width="11px" height="11px"/>
+                <a href='#' onClick="javascript:window.open('{!$Label.mw_domain_url}/licensecenter/loader/index?s_cid=mysrs','_blank','width=1000,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,resizable=yes');return false;">{!$Label.MySR_View_My_Licenses}</a>
+            </apex:outputLabel>
+            <apex:outputLabel ></apex:outputLabel>
+            </apex:pageBlockSectionItem>          
+            <apex:outputField label="{!$Label.MySR_Operating_System}" value="{!Case.OS__c}"/>              
+            </apex:pageBlockSection>
+            
+    </apex:pageBlock>   
+    
+    
+    <apex:outputText value="{!case.ContactId}{!case.contact.Email}" rendered="false"/>
+    
+    
+    <div class="table_header">
+    <table width="100%" >
+     <tr>
+      <td>
+        <h3>{!$Label.MySR_Communication_History}</h3>
+      </td>
+      <td> 
+        <apex:form >
+                    <apex:commandButton action="{!createComment}" id="CreateComment" value="{!$Label.MySR_Add_Comment_Button}" styleClass="mwbutton rounded"/>
+                    
+        </apex:form>
+     </td>
+     </tr>
+     </table>   
+    </div>
+    
+    <apex:pageBlock >
+   
+        <apex:pageblockTable value="{!AllCaseActivities}" var="em">
+                  
+            <apex:column Headervalue="{!$Label.MySR_Subject}" width="66%">
+                <apex:outputtext rendered="{!IF(em.activityType = 'Comment',true,false)}">{!em.activitySubject}</apex:outputText>
+                <apex:outputLink rendered="{!IF(em.activityType != 'Comment',true,false)}" value="/apex/cp_case_email?Id={!em.activityId}&cc={!$CurrentPage.parameters.CC}&&parentId={!$CurrentPage.parameters.id}">{!em.activitySubject}</apex:outputLink>
+            </apex:column>
+            <apex:column Headervalue="{!$Label.MySR_Type}" value="{!em.activityType}"/>             
+            <apex:column Headervalue="{!$Label.MySR_Message_Date}">
+                <apex:outputText value="{0,date,dd MMM YYYY h:mm a}">
+                 <apex:param value="{!em.activitycreatedDate}" />
+                </apex:outputText>
+            </apex:column>
+        </apex:pageblockTable>
+    </apex:pageBlock>
+    
+	<!-- HW, 1832966, Build Prototype -->
+    <div class="table_header">
+    <table width="100%" >
+     <tr>
+      <td>
+        <h3>{!$Label.MySR_Suggested_Answers}</h3>
+      </td>
+     </tr>
+     </table>   
+    </div>
+    
+    <apex:pageBlock >
+        <apex:pageblockTable value="{!results}" var="r">
+            <apex:column Headervalue="{!$Label.MySR_Suggested_Answers_Title}">
+				<apex:outputlink value="{!r.Answers_URL__c}" target="_blank" style="cursor:pointer">{!r.Title}</apex:outputLink>
+            </apex:column>
+        </apex:pageblockTable>
+
+    <!-- Show bullet instead of table
+    <apex:repeat value="{!results}" var="r" >
+    	 <li class="sideBarListLink">
+    	   <a href="{!r.Answers_URL__c}" target="_blank">{!r.Title}</a>
+    	 </li>
+    </apex:repeat>
+     -->
+
+    </apex:pageBlock>
+
+	<!-- HW, 1832966, end -->
+    
+        <div class="table_header">
+        
+        <table width="100%" >
+         <tr>
+          <td>
+            <h3>{!$Label.MySR_Attachments}</h3>
+          </td>
+          <td>  
+            <apex:form >
+                   <apex:commandButton action="{!attachfile}" id="AttachFile" onclick="onload();" value="{!$Label.MySR_Attach_File_Button}" styleClass="mwbutton rounded"/>
+             </apex:form>
+          </td>
+          </tr>
+          </table>   
+    </div>
+    <apex:pageBlock >
+        <apex:pageblockTable value="{!caseAttachments}" var="ca">
+            <apex:column Headervalue="{!$Label.MySR_FileName}" style="width:70%">
+               <apex:outputText value="{!ca.Name}"> </apex:outputText>
+            </apex:column>
+            <apex:column Headervalue="{!$Label.MySR_Uploaded_Date}">
+                <apex:outputText value="{0,date,dd MMM YYYY h:mm a z}">
+                 <apex:param value="{!ca.createddate}" />
+                </apex:outputText>
+            </apex:column>
+            <!-- apex:column HeaderValue="Description" value="{!ca.description}" / -->
+        </apex:pageblockTable>        
+        
+    <apex:form >
+        <apex:commandButton value="{!$Label.MySR_New_SR_Button}" id="CreateRequest" action="/apex/cp_case_new?cc={!$CurrentPage.parameters.CC}" style="float:right" styleClass="mwbutton rounded secondary"/>
+    </apex:form>
+    <br/>
+    <br/>
+    </apex:pageBlock>
+    
+        <!--<apex:relatedList list="Attachments"/> -->
+        <script>
+        $(".pbButton").css("float","right");
+        //$(".pbButton").css("margin-left","220px");
+       
+       /*
+        $(".btn").css("color","#3C3C3C");
+        $(".btn").css("background-image","none");
+        $(".btn").css(" background-color","#33FF00");
+        $(".btn").css("font-size","11px");
+        $(".btn").css("padding","5px 5px");
+        $(".btn").css("font-family","Arial, Helvetica, sans-serif");        
+        $(".btn").css("-moz-border-radius","5px");
+        $(".btn").css("-webkit-border-radius","5px");
+        
+         $(".btn").css("font-weight","bold");
+        */
+        //$(".btn").css("border-radius","5px");
+       /*
+        $(".btnDisabled").css("color","#3C3C3C");
+        $(".btnDisabled").css("background-image","none");
+        $(".btnDisabled").css(" background-color","#33FF00");
+        $(".btnDisabled").css("font-size","11px");
+        $(".btnDisabled").css("padding","5px 5px");
+        $(".btnDisabled").css("font-family","Arial, Helvetica, sans-serif");        
+        $(".btnDisabled").css("-moz-border-radius","5px");
+        $(".btnDisabled").css("-webkit-border-radius","5px");
+        */
+        //$(".btnDisabled").css("border-radius","5px");
+        
+        
+        //$(".mwheader").css("padding-left","30px");
+       
+        //$(".mwbutton").css("letter-spacing","1px");                
+        //$(".mwbutton").css("padding","6px 10px");
+       /* 
+        $("html body").css("background-color","white");
+        $("html body").css("background-image","none");
+        $("html body").css("border","1px solid #d1d1d1");
+        $("html body").css("border-top","0px solid #d1d1d1");
+        */
+        $(".labelCol").css("text-align","left");
+        
+        /*
+        $(".pbTitle h3").css("font-size","13px");
+        $(".pbTitle h3").css("margin-left","30px");
+        $(".pbTitle h3").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif"); 
+        
+        $(".pbTitle h2").css("font-size","15px");
+        $(".pbTitle h2").css("margin-left","30px");
+        $(".pbTitle h2").css("font-family","'futura-pt-n5', 'futura-pt','Arial','Helvetica', sans-serif");
+        $(".pbTitle h2").css("color","#666");
+        */
+        //$(".list td a").css("color","#004aa0 !important");
+        
+        /*
+         $(".bPageBlock .pbBody").css("padding","0px 30px");
+         $(".bPageBlock").css("margin-bottom","0px"); 
+         
+         if (document.documentMode == 7) {
+         $(".mwbutton").css("border","0px"); 
+         $(".mwbutton").css("line-height","10px"); 
+         
+         var iEVer = getInternetExplorerVersion();
+         if(iEVer == 8 || iEVer == 9){
+            $(".mwbutton").css("padding-left","0px"); 
+            $(".mwbutton").css("padding-right","0px");
+           }
+         } 
+         */
+         function getInternetExplorerVersion()
+         {
+           var rv = -1; // Return value assumes failure.
+           if (navigator.appName == 'Microsoft Internet Explorer')
+           {
+             var ua = navigator.userAgent;
+             var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+             if (re.exec(ua) != null)
+                rv = parseFloat( RegExp.$1 );
+             }
+             return rv;
+        }
+     
+    </script>
+   
+</apex:outputPanel>    
+</apex:outputPanel>  
+</apex:outputPanel> 
+</apex:outputPanel>  
+</div>
+</apex:outputPanel> 
+</apex:outputPanel> 
+ <apex:include pageName="cp_footer" />
+    
+</apex:page>

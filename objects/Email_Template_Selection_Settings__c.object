@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This custom setting is used to select the correct Customer Training notification email template based on the event</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Email_Template_Name__c</fullName>
+        <description>This field stores the value of base email template with respect to field name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The base email template name related to the event. Example API Name &quot;Test_Enrollment_Emails_Self_Paced_ENU_Natick&quot; - only &quot;Test_Enrollment_Emails&quot; would go in this field.  The rest is added dynamically.</inlineHelpText>
+        <label>Email Template Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Name__c</fullName>
+        <description>this field stores the value of events</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Friendly name of the event the notification will be sent for (ie: Enrollment Confirmation - Registered)</inlineHelpText>
+        <label>Event Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FieldName__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This field stores the field name for respective Email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Name of the checkbox field on the Enrollment object used to map to the template specified.</inlineHelpText>
+        <label>FieldName</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Email Template Selection Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

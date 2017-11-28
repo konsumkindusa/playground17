@@ -1,0 +1,107 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanインストールサポートの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせ頂き、 誠にありがとうございます。
+
+MATLAB の起動時に問題が発生し、ライセンスマネージャに関連するエラーが表示されていない場合は、
+つぎの手順にてご確認ください。
+
+ソリューション #1  
+================= 
+ご利用のバージョンのための MATLAB プリファレンスを削除します。
+下記の手順で削除します。
+
+Windows の場合：
+1.　スタートメニューから実行を選択します。
+%APPDATA% と入力し、OK します。
+（Vista の場合、%APPDATA% を検索フィールドに入力し、実行します。）
+2.　MathWorks フォルダに移動し、ご利用のバージョンのフォルダを削除します。（例：R2008a）
+3.　削除後、MATLAB を再起動することで、再度プリファレンスが作成されます。
+
+Linux/Unix/Mac の場合：
+1.　ターミナルをオープンし（Mac の場合、アプリケーション > ユーティリティ から起動します）、
+つぎのコマンドを実行します。
+cd ~.matlab
+2.　.matlab フォルダにて、ご利用の MATLAB バージョンのフォルダを削除します。
+例えば、R2008a の場合、つぎのコマンドを実行します。
+rm -rf R2008a
+3.　削除後、MATLAB を再起動することで、再度プリファレンスが作成されます。
+
+ソリューション #2
+=================
+Java や MATLAB デスクトップを無効にして MATLAB を起動します。
+これらを無効にするために、-nodesktop や -nojvm フラグを追加します。
+下記の手順で追加します。
+
+Windows の場合：
+1.　MATLAB ショートカットを右クリックし、プロパティを選択します。
+2.　リンク先の実行コマンドの最後に -nodesktop フラグを追加します。
+例：　リンク先： "C:\Program Files\Matlab\R2008a\bin\matlab.exe" -nodesktop
+OK を押して、変更を保存します。
+3.　再度 MATLAB を起動します。MATLAB が起動できたら、
+"desktop" コマンドを実行し、デスクトップがオープンされることを確認します。
+4.　もしもうまく起動できない場合、-nodesktop の代わりに -nojvm を利用して、
+再度 MATLAB を起動します。
+このモードで MATLAB が起動できたら、Java の問題であることが予想されます。
+エラーの原因を確認するために、Temp フォルダを確認します。
+（場合によっては、Temp フォルダは隠しフォルダかもしれません）
+XP/2000 の場合： C:\Documents and Settings\<username>\Local Settigns\Temp
+
+Vista の場合：
+ C:\Users\<username>\Local\Temp
+つぎのファイルを確認します。
+matlab_crash*.dmp      
+java.log.*
+これらのファイルのどちらかが存在する場合、
+このソリューションの最後に記載されているフォームから、
+これらのファイルをご送付ください。
+5.　Java 機能を無効にしても MATLAB が起動しない場合、
+ -nojvm の代わりに -shield none を利用して、再度ご確認ください。
+
+Linux/Unix の場合：
+1.　デスクトップを無効にするために、MATLAB 起動時に -nodesktop フラグを追加します。
+例えば、つぎのように実行します。
+$MATLAB/bin/matlab -nodesktop
+(ここで、$MATLAB は MATLAB インストールディレクトリを意味します。)
+2.　-nodesktop フラグで MATLAB が起動した場合、MATLAB コマンドウィンドウから "desktop" とタイプインします。
+3.　-nodesktop フラグで起動しなかった場合、つぎのように実行して java を無効にして確認します。
+$MATLAB/bin/matlab -nojvm
+
+Mac OS X の場合：
+MATLAB デスクトップと Java を無効にして MATLAB を起動します。
+1.　X11 ターミナルアプリケーションを起動します。
+（/Applications/Utilities/にあります）  
+2.　X11 にて、つぎのコマンドを実行します。
+$MATLAB/bin/matlab -nodesktop
+ここで、$MATLAB は、MATLAB インストールディレクトリを意味します。
+MATLAB R2008b の場合、通常、
+/Applications/MATLAB_R2008b.app となります。
+R2008b 以前のバージョンの場合、R2008b と類似していますが、
+".app" がパスに含まれません。
+正確にパスを確認するためには、インストールディレクトリをご確認ください。
+3.　-nodesktop フラグで MATLAB が起動できた場合、
+MATLAB コマンドウィンドウで "desktop" とタイプインしてください。
+4.　-nodesktop モードでも MATLAB が起動できない場合は、
+java を無効にするために、つぎのように起動します。
+$MATLAB/bin/matlab -nojvm
+
+以上のステップを踏んでもMATLAB が起動できない場合、
+各ステップの実行結果を、つぎの情報を添えてご連絡ください。
+-　表示されるエラーメッセージ
+-　ご利用の MATLAB バージョン
+-　ご利用のオペレーションシステム
+-　ライセンス番号
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のThread IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+よろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>4b - Web Page send to Copy Edit</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>4b - Web Page send to Copy Edit</name>
+    <style>none</style>
+    <subject>CNX Page for Copy Editing: {!Partner_Agreement__c.Partner_Agreement_Name__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.End__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Description__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Class__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Student Competitions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Sub_Class__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Individual Student Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Spam,Active,Not Started,Sponsor Updating Proposal,Review by VP of Marketing,Review by Other MathWorkers,Review by Legal,Customer Signature,MathWorks Signature,Closed - No Response,Complete,Denied,No Action</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Implementation</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Active Individual Teams Supported</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Academic_Support_Project__c$Academic_Support_Role__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Academic_Support_Project__c.Description__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Academic_Support_Project__c.End__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

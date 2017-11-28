@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>mw install user</profile>
+        </profiles>
+        <users>
+            <user>edasilva@mathworks.com</user>
+            <user>jschmidt@mathworks.com</user>
+        </users>
+    </assignments>
+    <label>Install</label>
+</Skill>

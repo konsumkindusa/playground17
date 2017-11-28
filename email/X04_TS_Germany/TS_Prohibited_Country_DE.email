@@ -1,0 +1,10 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für Ihre Anfrage #{!Case.CaseNumber} - "{!Case.Subject}". 
+
+Es tut mir leid Ihnen mitteilen zu müssen, dass es MathWorks und allen weltweiten Niederlassungen aufgrund von Bestimmungen der Vereinigten Staaten von Amerika untersagt ist unsere Produkte in Ihr Land zu vertreiben oder zu unterstützen. Aus diesem Grund ist es uns nicht möglich diese Anfrage zu bearbeiten. 
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

@@ -1,0 +1,25 @@
+Hello {!Case.Contact},    
+
+Thank you for contacting MathWorks. To transfer a license to a new machine, you can update the Host ID in the License Center of your MathWorks Account: www.mathworks.com/licensecenter (Login Required)    
+
+For R2008a or later:  
+1) Click to select the license that you need to transfer  
+2) Click on the "Install and Activate" tab  
+3) Under Related Tasks, click "Deactivate a computer"
+A list of the machine activations will appear
+4) To deactivate the machine you are no longer using, click on the 'X' icon under Deactivate
+5) Once the previous activation is deactivated, click the "Activate" button and provide the new computer machine information including Host ID
+6) Once activation is complete, you will be able to download the new License File and File Installation Key
+
+Please note that if you enter three Host IDs, you will need to run three servers in a redundant configuration.  For more information about redundant servers, please see the related article: www.mathworks.com/matlabcentral/answers/92975
+
+For R2007b or earlier, contact Customer Service with your Host ID(s), Operating System, Release, and License Number(s) for assistance. 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

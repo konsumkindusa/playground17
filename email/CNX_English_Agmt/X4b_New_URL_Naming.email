@@ -1,0 +1,18 @@
+Hi Gary, 
+
+I'm about to create a web page for {!Partner_Agreement__c.Account__c} for their product {!Partner_Agreement__c.Partner_Agreement_Name__c}.
+
+My suggested URL is as follows: 
+
+===========
+
+Below is their application for reference. Please let me know if you have any comments or suggestions.
+
+Thanks, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name} 
+
+--------------- Original Message ---------------
+ 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

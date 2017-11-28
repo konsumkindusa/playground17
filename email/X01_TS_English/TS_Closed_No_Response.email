@@ -1,0 +1,14 @@
+Hello {!Contact.FirstName}, 
+
+This is in response to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+A few days ago  I sent you a reply requesting some additional information to help us resolve the problem you reported. Since I have not yet heard back from you, I am not sure whether you received my e-mail or whether you still need assistance. As a reminder, the additional information I previously requested was: 
+
+<**Missing Information**> 
+
+If you have already resolved your issue please disregard this message. Otherwise, please reply to let me know and I will be glad to reopen your case. Please be sure to keep the Reference ID included at the bottom of this email intact when replying to this message. 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

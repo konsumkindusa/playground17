@@ -1,0 +1,34 @@
+Dear {!Case.Contact},
+
+As a member of The MathWorks Connections Program, you are eligible to purchase limited quantities of low cost Sales Support Licenses of MathWorks products for pre-sales and marketing activities related to your Connections Program-approved offering.  In order to streamline the administration of these licenses, and offer them at significantly reduced prices, we have required partners to establish a single point of contact to administer the licenses and be responsible for the purchase of new licenses for all of their worldwide promotional needs. 
+
+You are currently the administrator contact for your company’s group Sales Support License of MathWorks products.  We have received an inquiry from your distributor/local office in Japan, requesting one or more new users on your  Sales Support license.  There is a limit of 25 Sales Support licenses that you can purchase for worldwide promotion of your product. You currently have <XX> end users and therefore still have <25-XX> more available to purchase.  If you would like to add these new end users to the license please provide their contact information to the attached spreadsheet and I will send you a quote for adding them.   
+
+If you have any questions, please let me know.
+
+Regards,
+[Service Agreement.MW Login Full Name]
+MathWorks Connections Program
+
+
+
+
+
+
+Administrator Contact’s Responsibilities:
+=========================
+The administrator contact is responsible for:
+·   Coordinating set up of the initial license and subsequent orders for additional end users products 
+·   Tracking existing end users and ensuring they adhere to the use limitations of the license
+·   Receiving Subscription Maintenance Service renewal quotes
+·   Downloading product updates released and forwarding the files to the individual end users OR enabling end users to access product updates themselves by changing the Set User Permission option on the MathWorks Website
+·   Act as liaison between your company and MathWorks for all end user Sales Support License issues  
+·    Respond to the Annual Sales Support License Usage report request. 
+
+If you have any questions on your responsibilities or the licenses, please let me know.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

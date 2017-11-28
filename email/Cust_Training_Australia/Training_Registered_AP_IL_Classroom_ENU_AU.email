@@ -1,0 +1,37 @@
+Dear {!Contact.Name},
+
+Thank you for contacting The MathWorks Training Department.  
+
+Your enrollment is not confirmed until we have received full payment.
+
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LOCATION:  {!Class__c.City__c}, {!Class__c.Country__c} 
+
+TIME:  {!Class__c.Start_Time__c} until {!Class__c.End_Time__c}
+
+
+In order to secure a seat, your payment must be received prior to the start of class.
+
+To pay by credit card, please call {!Class__c.Sponsor_Office_Phone__c}  to speak with a representative.  
+To pay by Purchase Order, please fax the Purchase Order (PO) to us at +02 8669 4710 Attn: Training
+
+To pay by check, please mail it to:
+The MathWorks Australia, Pty Ltd 
+Level 6, Tower 2 
+475, Victoria Avenue
+Chatswood NSW 2067
+Attention: Customer Training
+
+To ensure proper processing, please include attendee name(s), course name(s), location, and dates on all Purchase Orders and Checks. Due to the popularity of our courses, we suggest that you send your payment via overnight delivery. 
+
+You will be sent a confirmation email with all the course details once your payment is processed successfully. If we experience any problems, you will be notified immediately.
+
+Thank you,  
+Training Services
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

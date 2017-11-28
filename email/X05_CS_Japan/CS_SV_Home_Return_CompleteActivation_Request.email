@@ -1,0 +1,29 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c} と申します。
+この度はお問い合わせ頂き、誠にありがとうございます。
+
+ご注文いただきましたOrder Number: ○○○○○○ の件について、
+Order Number: △△△△△△△ にて返品処理が完了致しましたので、
+ご連絡致します。
+詳細に関しましては、下記URLページにてご確認ください。
+https://www.mathworks.com/accesslogin/orderDetails.do?orderId=△△△△△△△
+
+尚、クレジットカード会社を通して購入手続きを行っております為、
+再度クレジットカード会社を通して返金させて頂く形となります。
+返金に関しましては直接クレジットカード会社様へお問い合わせ
+いただきますよう、お願い致します。
+
+本件についてその他ご不明な点や追加のご質問がございましたら、 
+下記のReference IDを削除せずにご返信にてお問合せ下さい。 
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。 
+http://jp.mathworks.com/support/contact_us/ 
+
+どうぞよろしくお願い致します。 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

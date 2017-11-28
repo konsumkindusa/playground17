@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings to manage the custom logging using Logger framework</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Debug_Record_Type__c</fullName>
+        <description>This is the name of the record type which is used to present debug information on the log object.</description>
+        <externalId>false</externalId>
+        <label>Debug Record Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exception_Record_Type__c</fullName>
+        <description>This is the name of the record type which is used to present exception information on the log object</description>
+        <externalId>false</externalId>
+        <label>Exception Record Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exceptions_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is a flag to denote if exceptions should be logged to the database</description>
+        <externalId>false</externalId>
+        <label>Exceptions Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Logging_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is a flag to denote if debuf information should be logged to the database</description>
+        <externalId>false</externalId>
+        <label>Logging Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>LogConfig</label>
+    <visibility>Protected</visibility>
+</CustomObject>

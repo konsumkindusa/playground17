@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="{!$Label.CP_ENROLL_Renewal_Template_Subject}" recipientType="Contact" relatedToType="Enterprise_Training_Agreement__c" language="{!relatedTo.Language__r.ISO_Code__c}">
+    <messaging:HtmlEmailBody >
+        <c:TrainingCoordinatorRenewal enterpriseId="{!relatedTo.Id}" langu="{!relatedTo.Language__r.ISO_Code__c}">
+        </c:TrainingCoordinatorRenewal>
+    </messaging:HtmlEmailBody>
+</messaging:emailTemplate>

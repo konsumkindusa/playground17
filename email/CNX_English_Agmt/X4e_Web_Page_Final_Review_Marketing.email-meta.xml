@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Web Page Final Review - Marketing</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>4e - Web Page Final Review - Internal</name>
+    <style>none</style>
+    <subject>CNX Web page for Final Review: {!Partner_Agreement__c.Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Industry_Vetted_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Industry_Vetted_Login__c</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Sector__c</field>
+    </columns>
+    <columns>
+        <field>Account.Territory__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Account Industry Audit Report managed by MW users</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Industry_Vetted_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Account Industry Audit Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Industry_Vetted_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-11-01</startDate>
+    </timeFrameFilter>
+</Report>

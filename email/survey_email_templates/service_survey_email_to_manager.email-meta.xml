@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Service survey email to manager</name>
+    <style>none</style>
+    <subject>{!Get_Feedback__c.Service_Template_Survey_Response__c} Survey Response for {!Get_Feedback__c.Service_Case_Owner__c} {!Get_Feedback__c.Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

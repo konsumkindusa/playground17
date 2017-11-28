@@ -1,0 +1,35 @@
+Beste {!Contact.FirstName}, 
+
+Deze e-mail is een reactie op je Technical Support case #{!Case.CaseNumber} betreffende '{!Case.Subject}'.
+
+Om je beter van dienst te kunnen zijn, zou ik graag de volgende gegevens van je ontvangen:
+
+1. De volledige uitvoer wanneer je het volgende commando intypt op de MATLAB command prompt:
+
+voor MATLAB versies R2012b en nieuwer:
+>> ver -support
+
+voor MATLAB versies R2012a en ouder:
+>> ver
+
+Hierin staan o.a. details over je licentie, de geïnstalleerde producten en het besturingssysteem.
+
+2) Een gedetailleerde beschrijving van het probleem.
+
+3) Relevante MATLAB-files en data files.
+
+4) De precieze stappen waarmee ik je code kan uitvoeren.
+
+5) De precieze foutmeldingen die je ziet, indien van toepassing.
+
+We zien bovenstaande informatie graag tegemoet zodat we je kunnen helpen met je technische vraag.
+
+Met de volgende link kun je online je case bekijken:
+http://www.mathworks.com/support/servicerequests/index.html 
+
+Wanneer je antwoordt op deze e-mail, zorg er dan alsjeblieft voor dat onderstaand Reference ID intact blijft.
+
+Met vriendelijke groet, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

@@ -1,0 +1,27 @@
+<apex:page showHeader="true" sidebar="false" controller="DisplayLinkedCasesContoller">
+
+ <apex:form >
+ <apex:pageBlock title="Cases Linked to the Article" >
+
+    <apex:pageBlockTable value="{!Req}" var="cl">
+        
+        <apex:column headerValue="Case Number" >
+                <apex:outputLink value="/{!cl.Id}" target="_blank">{!cl.CaseNumber} </apex:outputLink>
+            
+                </apex:column>
+        <apex:column value="{!cl.Subject}" />
+        <apex:column value="{!cl.Description}" />
+        <apex:column value="{!cl.Status}" />
+        <apex:column value="{!cl.CreatedDate}" />
+    </apex:pageBlockTable>   
+
+ 
+<apex:pageblockButtons >
+            <apex:commandButton value="<<" rerender="details" action="{!beginning}" disabled="{!prev}"/>
+            <apex:commandButton value="<" rerender="details" action="{!previous}" disabled="{!prev}"/>
+            <apex:commandButton value=">" rerender="details" action="{!next}" disabled="{!nxt}"/>
+            <apex:commandButton value=">>" rerender="details" action="{!end}" disabled="{!nxt}"/>                                    
+        </apex:pageblockButtons>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

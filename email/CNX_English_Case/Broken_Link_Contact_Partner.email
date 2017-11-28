@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+Your company currently has a Web page listed on the MathWorks Web site at:
+
+Recently we noticed that the URL [URL] no longer works. As a result, we have removed this link from these pages. 
+
+Would you please confirm whether or not your products are still available and being supported? 
+
+If any changes are need to your Web page, please send an email to connections@mathworks.com and we will send you the information to do so. I look forward to hearing from you. 
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

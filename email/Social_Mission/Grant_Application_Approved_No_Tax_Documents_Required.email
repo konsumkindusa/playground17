@@ -1,0 +1,23 @@
+Dear {!Social_Action__c.Contact__c},
+
+We are pleased to inform you that your application for a MathWorks community grant in support of {!Social_Action__c.Event_Program_Name__c} has been approved for the amount of ${!Social_Action__c.Mathworks_Monetary_Contribution__c}.    
+
+All community grant applications are reviewed quarterly by the MathWorks Community Grant Review Team, who award grants based on budget, number of qualified applications received, and alignment with our strategic Social Mission criteria.
+
+MathWorks is committed to actively supporting our communities and promoting social and environmental responsibility. Our core values and conviction to "Do the Right Thing" guide us in leveraging our unique company strengths for meaningful outcomes. We believe that investing in our Social Mission Program helps us to lead in both our communities and the field of technical computing.
+
+A check will be sent to you at the following address:
+
+{!Social_Action__c.Contact__c}
+{!Social_Action__c.Account__c} 
+[Account Street Address]
+[Account City], [Account State] [Account Postal Code]
+
+You should expect the donation to arrive within 2-3 weeks. Please contact me as soon as possible if the information above is incorrect.  Thank you again for applying and, on behalf of MathWorks, I wish you continued success in your efforts.
+
+Sincerely,
+{!Social_Action__c.OwnerFullName}
+Social Mission
+socialmission@mathworks.com
+
+{!Social_Action__c.Thread_ID__c}

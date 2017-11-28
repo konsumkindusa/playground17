@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>used to audit Service Cases</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Anticipated_problems__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Anticipated problems</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Area__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Area</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Article__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Article</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ask_pertinent_questions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Ask pertinent questions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Audit_Comments__c</fullName>
+        <description>for auditor to add comments</description>
+        <externalId>false</externalId>
+        <label>Audit Comments</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Case_INformation_questions__c</fullName>
+        <defaultValue>12</defaultValue>
+        <description>hard coded number of Case info questions to calculate error rate</description>
+        <externalId>false</externalId>
+        <label>Case Information questions</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Information_Error__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case_Information_Errors__c /  Case_INformation_questions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Information Error %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Case_Information_Errors__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Customer_Name__c = FALSE, 0,1)+ 
+if(Account_Name__c = FALSE, 0,1)+ 
+if(Phone_Number__c = FALSE, 0,1)+ 
+if(Email_Address__c = FALSE,0,1)+ 
+if(License_Number_Product_and_Release__c = FALSE,0,1)+ 
+if(Substatus__c = FALSE, 0,1)+ 
+if(Status__c = FALSE, 0,1)+ 
+if(Area__c = FALSE, 0,1)+ 
+if(Environment__c = FALSE, 0,1)+ 
+if(Article__c = FALSE, 0,1)+ 
+if(Details__c = FALSE, 0,1)+
+if (Topic_SubTopic__c = FALSE, 0, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Information Errors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case__r.Owner:User.FirstName + &quot; &quot; + Case__r.Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Owner</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>case look up to associate a Case Audit</description>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Case Audits</relationshipLabel>
+        <relationshipName>Case_Audits</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Correct_Answer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Correct Answer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Communication_Error__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Communication_Errors__c  /  Customer_Communication_questions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Communication Error %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Communication_Errors__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Email_Details__c = False, 0,1)+
+if(Timely_Response__c = FALSE,0,1)+
+if(Professionalism__c = FALSE, 0,1)+
+if(Spelling_Grammar__c = FALSE,0,1)+
+if(Ask_pertinent_questions__c = FALSE,0,1)+
+if(Anticipated_problems__c = FALSE,0,1)+
+if(Take_ownership__c = FALSE,0,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Communication Errors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Communication_questions__c</fullName>
+        <defaultValue>7</defaultValue>
+        <description>hard coded number of questions to use for error rate calculation</description>
+        <externalId>false</externalId>
+        <label>Customer Communication questions</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Details__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Details</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Details__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Email Details</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Environment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Environment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_contact_reason__c</fullName>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>First contact reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A&amp;A/EUS Information needed</fullName>
+                    <default>false</default>
+                    <label>A&amp;A/EUS Information needed</label>
+                </value>
+                <value>
+                    <fullName>Asking irrelevant information from customer/internal</fullName>
+                    <default>false</default>
+                    <label>Asking irrelevant information from customer/internal</label>
+                </value>
+                <value>
+                    <fullName>Customer followed up about original issue</fullName>
+                    <default>false</default>
+                    <label>Customer followed up about original issue</label>
+                </value>
+                <value>
+                    <fullName>Customer refuses suggested support</fullName>
+                    <default>false</default>
+                    <label>Customer refuses suggested support</label>
+                </value>
+                <value>
+                    <fullName>Escalated</fullName>
+                    <default>false</default>
+                    <label>Escalated</label>
+                </value>
+                <value>
+                    <fullName>Incorrect response provided by Rep</fullName>
+                    <default>false</default>
+                    <label>Incorrect response provided by Rep</label>
+                </value>
+                <value>
+                    <fullName>Needed more information from customer to complete request</fullName>
+                    <default>false</default>
+                    <label>Needed more information from customer to complete request</label>
+                </value>
+                <value>
+                    <fullName>Customer followed up with a new question</fullName>
+                    <default>false</default>
+                    <label>Customer followed up with a new question</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>First_contact_resolution__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>First contact resolution</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_contact_resolution_percentage__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(First_contact_resolution__c = FALSE, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>First contact resolution %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>License_Number_Product_and_Release__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>License Number / Product and Release</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Manager_Comments__c</fullName>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for amanger to add comments on the audit</inlineHelpText>
+        <label>Manager Comments</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Manager_Reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicator if the manager has reviewed the Audit</description>
+        <externalId>false</externalId>
+        <label>Manager Reviewed?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Policy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Policy</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Procedure_and_Workflow_Error__c</fullName>
+        <externalId>false</externalId>
+        <formula>Procedure_and_Workflow_Errors__c /  Procedure_and_workflow_questions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Procedure and Workflow Error %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Procedure_and_Workflow_Errors__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(Correct_Answer__c = FALSE, 0, 1)+
+If(Policy__c = FALSE, 0, 1)+
+if(Standards__c = FALSE, 0, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Procedure and Workflow Errors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Procedure_and_workflow_questions__c</fullName>
+        <defaultValue>3</defaultValue>
+        <description>hard coded number of procedure questions to calculate error %</description>
+        <externalId>false</externalId>
+        <label>Procedure and workflow questions</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professionalism__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Professionalism</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Spelling_Grammar__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Spelling / Grammar</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Standards__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Standards</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Substatus__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Substatus</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Take_ownership__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Take ownership</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Timely_Response__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for audits</description>
+        <externalId>false</externalId>
+        <label>Timely Response</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Topic_SubTopic__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Topic/SubTopic</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_Error__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Errors__c /  Total_Questions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Error %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Total_Errors__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Communication_Errors__c + Case_Information_Errors__c + Procedure_and_Workflow_Errors__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Errors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Questions__c</fullName>
+        <defaultValue>22</defaultValue>
+        <description>hard coded the number of audit questions</description>
+        <externalId>false</externalId>
+        <label>Total Questions</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Case Audit</label>
+    <nameField>
+        <displayFormat>Audit {000000}</displayFormat>
+        <label>Case Audit Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Case Audits</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgement of receipt of web page edits from partner</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Web Page Edits Received - Update existing page</name>
+    <style>none</style>
+    <subject>Connections Program Web Page Edits Received</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

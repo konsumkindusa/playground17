@@ -1,0 +1,14 @@
+Please send me the output of running the following commands from a terminal window:
+
+To determine the Kernel version on your platform, you may issue the following command at your Linux terminal:
+uname -a
+
+To find out the version of glibc, you may use
+/lib/libc.so.6
+
+or on RedHat-based systems:
+
+rpm -qa|grep glibc
+
+To determine your processor information:
+cat /proc/cpuinfo

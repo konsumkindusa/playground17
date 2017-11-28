@@ -1,0 +1,15 @@
+PSP Proposal Document Link: 
+
+Summary: 
+
+Account Name: {!MW_Project__c.Contact_Account__c} 
+
+Customer Contact: {!MW_Project__c.Customer_Contact__c} 
+
+Office Location: {!MW_Project__c.Office__c}
+
+Date opened: {!MW_Project__c.CreatedDate}
+
+Owner: {!MW_Project__c.OwnerFullName}
+
+Project in Salesforce: {!MW_Project__c.Project_Link__c}

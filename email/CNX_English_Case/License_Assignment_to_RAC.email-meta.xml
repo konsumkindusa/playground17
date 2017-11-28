@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to RAC with License Assignment order attached</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>License Assignment - Order to RAC</name>
+    <style>none</style>
+    <subject>Partner Order - License Assignment Att: Evelyn Pereira</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,31 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  To download your MATLAB software follow the instructions below:
+
+If you are already logged into your MathWorks Account:
+
+1. Select the license from the list provided
+2. Click "Download"
+3. Select the Release
+4. Select the Operating System
+5. Follow the Wizard as you are prompted
+
+If you are NOT logged into your MathWorks Account:
+
+1. Log into your MathWorks Account
+2. Click on Your Name in the top right-hand corner
+3. Click on My Account
+4. Select the license from the list provided
+5. Click "Download" 
+6. Select the Release (Earlier releases displayed on the right)
+7. Select the Operating System
+8. Follow the Wizard as you are prompted
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

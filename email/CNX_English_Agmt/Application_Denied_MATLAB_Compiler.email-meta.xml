@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Application Denial - System Integrator</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Application Denial - System Integrator</name>
+    <style>none</style>
+    <subject>Response from the MathWorks Connections Program</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

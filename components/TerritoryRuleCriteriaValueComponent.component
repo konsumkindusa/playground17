@@ -1,0 +1,59 @@
+<!--
+@author :Abhay Verma - Cloud Sherpas/Mathworks, Last Modified: Faina Gorelik AtTask #2252571 - added pagination buttons
+@Created date : 25-Feb-2016 , Last Modified: 25-Oct-2017,
+@Description : Show the territory rule criteria value associated to the territory rule criteria in the territory summary page
+-->
+
+
+<apex:component controller="TerritoryRuleCriteriaValueComponentCC" AllowDML="true" id="componentId">
+    <apex:attribute name="RuleCriteriaId" type="id" description="Store the Id of the Terriotry Rule Criteria Object." assignTo="{!territoryRuleCriteriaId}"/>
+    <apex:attribute name="territoryShadowObjId" type="Id" description="Store the territory Shadow Object record Id" assignTo="{!territoryShadowId}"/>
+    <apex:pageblock id="pbId">
+        
+        <apex:commandLink action="{!newTerritoryCriteriaValue}"  value="New Criteria Value" styleClass="btn" style="text-decoration:none;margin-left: 468px;"/>
+        
+        
+        <apex:panelGrid columns="1" style="float:left;">
+            
+            <apex:commandButton value="<<" rerender="pbId" action="{!beginning}" disabled="{!prev}"/>
+            
+        </apex:panelGrid>   
+        
+        <apex:panelGrid columns="2" style="float:left;">
+            <apex:commandButton value="<" rerender="pbId" action="{!previous}" disabled="{!prev}"/>
+            
+        </apex:panelGrid>  
+        
+        <apex:panelGrid columns="3" style="float:left;">
+            <apex:commandButton value=">" rerender="pbId" action="{!next}" disabled="{!nxt}"/> 
+        </apex:panelGrid>
+        
+        <apex:panelGrid columns="4" style="float:left;">
+            <apex:commandButton value=">>" rerender="pbId" action="{!end}" disabled="{!nxt}"/> 
+            
+        </apex:panelGrid>
+        
+        <br>
+    </br>
+    <apex:pageMessage severity="Info" summary="{!$Label.No_Criteria_Value_Record}" strength="3" rendered="{!NOT(TerritoryRuleCriteriaValueList != null)}" />
+    <apex:pageBlockTable id="pbtId" value="{!TerritoryRuleCriteriaValueList}" var="territoryRuleCriteriaValueObj" rendered="{!TerritoryRuleCriteriaValueList != null}" >
+        <apex:column headerValue="Action" >            
+            <apex:commandLink action="{!editCriteriaValueObj}" value="Edit" style="text-decoration:underline"> <a>  |  </a>
+                <apex:param name="territoryRuleCriteriaValueId" value="{!territoryRuleCriteriaValueObj.Id}" assignTo="{!territoryRuleCriteriaValueId}"/>
+            </apex:commandLink>
+            <apex:commandLink action="{!deleteruleCriteriaValue}" value="Delete" style="text-decoration:underline">
+                <apex:param name="territoryRuleCriteriaValueId" value="{!territoryRuleCriteriaValueObj.Id}" assignTo="{!territoryRuleCriteriavalueId}"/>
+            </apex:commandLink>
+        </apex:column>
+        <apex:repeat value="{!fieldnames}" var="fname">
+            <apex:column value="{!territoryRuleCriteriaValueObj[fname]}" headerValue="{!fname.Label}"/>   
+        </apex:repeat>
+    </apex:pageBlockTable>
+</apex:pageblock>
+
+<style>
+    a {
+    text-decoration:none;
+    }
+</style>    
+</apex:component>

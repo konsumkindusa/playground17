@@ -1,0 +1,43 @@
+EMAIL TO SALES
+A survey response was received meeting the following conditions: 
+
+CASE INFO 
+============== 
+Case Owner: {!Get_Feedback__c.Service_Case_Owner__c} 
+Case Owner Manager: {!Get_Feedback__c.Service_Owner_Manager_email__c} 
+Case Number: {!Get_Feedback__c.case__c} (https://mathworks.my.salesforce.com/{!Get_Feedback__c.caseId__c}) 
+
+CUSTOMER INFO 
+============== 
+Account: {!Get_Feedback__c.Account__c} - https://mathworks.my.salesforce.com/{!Get_Feedback__c.AccountId__c} 
+Contact: {!Get_Feedback__c.Contact__c} - https://mathworks.my.salesforce.com/{!Get_Feedback__c.ContactId__c} 
+Primary Sales Rep: {!Get_Feedback__c.Service_Primary_Sales_Rep_email__c} 
+
+RATINGS 
+======== 
+Rating Scale: 
+5 = Very satisfied 
+4 = Satisfied 
+3 = Neither Satisfied nor Dissatisfied 
+2 = Dissatisfied 
+1 = Very Dissatisfied 
+NA = Not Applicable 
+___________________________________________ 
+
+Do you consider your Case closed?: {!Get_Feedback__c.Service_Case_Closed__c} 
+Why do you consider it open: {!Get_Feedback__c.Service_why_still_open__c} 
+
+Initial response time: {!Get_Feedback__c.Service_Initial_Response_Rating__c} 
+Courtesy of rep: {!Get_Feedback__c.Service_Courtesy_of_rep__c} 
+Accurate understanding: {!Get_Feedback__c.Service_Additional_comments__c} 
+Technical knowledge of rep: {!Get_Feedback__c.Service_Technical_knowledge_of_rep__c} 
+Timely updates: {!Get_Feedback__c.Service_Timely_updates_rating__c} 
+Time to receive Solution: {!Get_Feedback__c.Service_Time_to_solution_rating__c} 
+Effectiveness of Solution: {!Get_Feedback__c.Service_Effectiveness_solution_rating__c} 
+Overall rating: {!Get_Feedback__c.Service_Overall_Satisfaction_rating__c} 
+
+Reason for overall Satisfaction rating: {!Get_Feedback__c.Service_Reason_for_overall_sat__c} 
+
+Additional comments: {!Get_Feedback__c.Service_Additional_comments__c} 
+
+You may click on the url to view this survey response.: {!Get_Feedback__c.Survey_Link__c}

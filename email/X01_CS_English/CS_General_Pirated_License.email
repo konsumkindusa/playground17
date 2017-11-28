@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. According to our records the MATLAB License Number you provided {!Case.License__c} does not appear to be a valid License number. Could you please review the MATLAB License number you have to see if it is accurate?
+
+By typing "ver" at the MatLab prompt you can verify your License number. 
+
+Please verify this number and e-mail it back to us.
+
+Thank you and have a great day,
+
+Sincerely,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

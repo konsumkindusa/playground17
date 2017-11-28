@@ -1,0 +1,31 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+gemäß Ihrem Antrag/dem Antrag von XXX wurde die Rolle des Administrators der Master Lizenz XXX von Ihnen/Frau/Herrn XXX auf Frau/Herrn XXX übertragen. Die entsprechenden Änderungen sehen Sie in Ihrem MathWorks Account unter mathworks.com, Option ‚My Software‘. 
+
+Bitte beachten Sie, dass ab sofort Administratoränderungen von einem aktuellen Administrator über das eigene License Center selbst vorgenommen werden können. Die entsprechende Anleitung finden Sie in dem beigefügten Article und unter folgendem Link: 
+How do I change the Administrators on my License? 
+http://www.mathworks.com/matlabcentral/answers/101101 
+
+Ein Administrator ist der für uns erforderliche Hauptansprechpartner einer Lizenz, der diese über sein License Center verwaltet. Eine Lizenz kann mehrere Administratoren haben. Bitte beachten Sie, dass einem Administrator die Verwaltung der Licensed End User obliegt.
+
+Um mehr über Licensed End User zu erfahren, besuchen Sie bitte den Link ‘Add/Remove Licensed End User‘:http://www.mathworks.com/support/solutions/en/data/1-6092ZT/ 
+
+Um mehr über die Aktivierung einer Lizenz zu erfahren, besuchen Sie bitte aus Ihrem geöffneten MathWorks Account den Link ‘Activation‘: http://www.mathworks.com/support/activation/index.html?BB=1 
+
+Um mehr über die Deaktivierung einer Lizenz zu erfahren besuchen Sie bitte den Link: 
+http://www.mathworks.com/support/solutions/data/1-698KQP.html?solution=1-698KQP 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email  unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+EXPORTBESTIMMUNG:
+Diese Software unterliegt US Exportbestimmungen. Es ist nicht gestattet, die Software entgegen gültiges US Recht zu exportieren, zurück zu exportieren oder ihre Nutzung durch nicht zugelassene Personen oder Länder zu erlauben. Diese Software kann auch Gegenstand nicht US unterworfener Export- und Importregulierungen sein. Es liegt in der Verantwortung des Lizenznehmers die aktuellsten Export- und Import-Regelungen einzuhalten.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

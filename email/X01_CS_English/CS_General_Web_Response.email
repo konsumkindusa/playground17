@@ -1,0 +1,17 @@
+Dear {!Case.Contact},
+
+
+
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}
+
+********************************************
+
+{!Case.Description}

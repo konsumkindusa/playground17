@@ -1,0 +1,23 @@
+[[[INTERNAL]]]
+Attach: Sales Support Datasheet, Sales Support Request Form, and End user spreadsheet
+[[[INTERNAL]]]
+
+Dear {!Case.Contact},
+
+Attached is the four page Sales Support License packet that includes the Sales Support License Options and Requirements, and Approval Request Form.  Please review the packet and let me know if you have any questions.  I will be your contact for setting up these licenses.
+
+Please complete the Approval Request Form on pages three and four (and also attached separately in Word format) and send it to connections@mathworks.com.  This information will enable us to review your request for approval.
+
+Once you have been approved we will provide you with the Sales Support Demonstration License Agreement for your review and signature and further instructions on how to complete your purchase for Sales Support Licenses. 
+
+You will be required to provide complete contact information for each end user for your Sales Support License including name, country, e-mail address, department and Role. Attached is a spreadsheet for you to begin collecting this necessary data.
+
+Note:  On an annual basis, we will be contacting you to review your use of the Sales Support Licenses.  You will be required to respond to this request for information to continue using the Sales Support Licenses.
+
+If you have any questions on this process, please let me know.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

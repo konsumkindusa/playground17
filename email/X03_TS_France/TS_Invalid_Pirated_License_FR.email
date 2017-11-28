@@ -1,0 +1,11 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Le numéro de licence {!Case.License__c} est un numéro de licence invalide. Merci de bien vouloir me faire parvenir les informations suivantes afin que je puisse contrôler votre installation de produits MathWorks:
+
+1) Possédez-vous  d’une licence MathWorks  personnelle ou utilisez-vous une licence fournie par votre société/entreprise?
+2) Si vous ne possédez pas d’une licence personnelle, veuillez-nous envoyer le nom de la société ou de l'entreprise pour laquelle vous travaillez?
+3) Un numéro de téléphone auquel nous pouvons joindre la personne responsable de la gestion de licences dans votre entreprise.
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

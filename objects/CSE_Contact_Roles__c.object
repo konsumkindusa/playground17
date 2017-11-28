@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>CSE Contact Roles</relationshipLabel>
+        <relationshipName>CSE_Contact_Roles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Success_Engagement__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Success Engagement</label>
+        <referenceTo>Customer_Success_Engagement__c</referenceTo>
+        <relationshipLabel>CSE Contact Roles</relationshipLabel>
+        <relationshipName>CSE_Contact_Roles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Department</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Department</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag will indicate which is the primary contact</description>
+        <externalId>false</externalId>
+        <label>Primary</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Contact&apos;s role in the customer success engagement</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Course Coordinator</fullName>
+                    <default>false</default>
+                    <label>Course Coordinator</label>
+                </value>
+                <value>
+                    <fullName>Dean</fullName>
+                    <default>false</default>
+                    <label>Dean</label>
+                </value>
+                <value>
+                    <fullName>Department Chair</fullName>
+                    <default>false</default>
+                    <label>Department Chair</label>
+                </value>
+                <value>
+                    <fullName>Dept Head</fullName>
+                    <default>false</default>
+                    <label>Dept Head</label>
+                </value>
+                <value>
+                    <fullName>Faculty</fullName>
+                    <default>false</default>
+                    <label>Faculty</label>
+                </value>
+                <value>
+                    <fullName>Faculty Advisor</fullName>
+                    <default>false</default>
+                    <label>Faculty Advisor</label>
+                </value>
+                <value>
+                    <fullName>Faculty Development</fullName>
+                    <default>false</default>
+                    <label>Faculty Development</label>
+                </value>
+                <value>
+                    <fullName>Identity Management</fullName>
+                    <default>false</default>
+                    <label>Identity Management</label>
+                </value>
+                <value>
+                    <fullName>Identity Management / IT</fullName>
+                    <default>false</default>
+                    <label>Identity Management / IT</label>
+                </value>
+                <value>
+                    <fullName>Internal - AE</fullName>
+                    <default>false</default>
+                    <label>Internal - AE</label>
+                </value>
+                <value>
+                    <fullName>Internal - ASG</fullName>
+                    <default>false</default>
+                    <label>Internal - ASG</label>
+                </value>
+                <value>
+                    <fullName>Internal - CSE</fullName>
+                    <default>false</default>
+                    <label>Internal - CSE</label>
+                </value>
+                <value>
+                    <fullName>Internal - CSS</fullName>
+                    <default>false</default>
+                    <label>Internal - CSS</label>
+                </value>
+                <value>
+                    <fullName>Internal - Pricing &amp; Licensing Analyst</fullName>
+                    <default>false</default>
+                    <label>Internal - Pricing &amp; Licensing Analyst</label>
+                </value>
+                <value>
+                    <fullName>Internal - Sales</fullName>
+                    <default>false</default>
+                    <label>Internal - Sales</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Key Influencer</fullName>
+                    <default>false</default>
+                    <label>Key Influencer</label>
+                </value>
+                <value>
+                    <fullName>Lab Coordinator</fullName>
+                    <default>false</default>
+                    <label>Lab Coordinator</label>
+                </value>
+                <value>
+                    <fullName>License Admin</fullName>
+                    <default>false</default>
+                    <label>License Admin</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Principal Investigator</fullName>
+                    <default>false</default>
+                    <label>Principal Investigator</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Provost</fullName>
+                    <default>false</default>
+                    <label>Provost</label>
+                </value>
+                <value>
+                    <fullName>Researcher</fullName>
+                    <default>false</default>
+                    <label>Researcher</label>
+                </value>
+                <value>
+                    <fullName>SFT Contact</fullName>
+                    <default>false</default>
+                    <label>SFT Contact</label>
+                </value>
+                <value>
+                    <fullName>Student/Graduate Student</fullName>
+                    <default>false</default>
+                    <label>Student/Graduate Student</label>
+                </value>
+                <value>
+                    <fullName>Student Ambassador</fullName>
+                    <default>false</default>
+                    <label>Student Ambassador</label>
+                </value>
+                <value>
+                    <fullName>Student Leader</fullName>
+                    <default>false</default>
+                    <label>Student Leader</label>
+                </value>
+                <value>
+                    <fullName>Teaching Assistant</fullName>
+                    <default>false</default>
+                    <label>Teaching Assistant</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <description>Contact&apos;s title</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Title</formula>
+        <label>Title</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_CSE_Contact_Role_Association__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>This field will store the customer success engagement id and contact id to determine uniqueness and prevent duplicates</description>
+        <externalId>false</externalId>
+        <label>Unique CSE Contact Role Association</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>CSE Contact Role</label>
+    <nameField>
+        <displayFormat>ECR-{000000}</displayFormat>
+        <label>CSE Contact Roles Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>CSE Contact Roles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

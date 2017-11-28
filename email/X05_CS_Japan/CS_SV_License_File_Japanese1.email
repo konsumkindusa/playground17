@@ -1,0 +1,34 @@
+{!Case.Account} 
+{!Case.Contact}様 
+
+大変お世話になっております。 
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c} と申します。 
+この度はお問い合わせ頂き、誠にありがとうございます。 
+
+MATLAB Student Version を新規マシンに移行する場合、 
+弊社Web サイトの http://www.mathworks.co.jp より MathWorksアカウントにログインし、 
+MathWorksアカウントのメインページ にて、“Activate Another Machine”もしくは“Activate Student Version”をクリックしてください。 
+
+その後 Student Version 新規マシンのアクティベーション作業を画面指示に従って行ってください。 
+Student Version のアクティベーション作業が完了しましたら、 
+更新されたライセンスファイルを取得します。 
+MathWorksアカウント の メインページ に新しいアクティベーションが表示されます。 
+
+その隣にございます "Retrieve License File" をクリックし、ライセンスファイルを取得し、 
+MATLAB Student Version のインストール方法に従って、新規マシンへのインストール作業を行います。 
+
+尚、新規マシンの Machine ID の取得方法は
+「アクティベーションとパスコード発行に必要となる Host ID または Machine ID の確認方法は？」をご参照ください。 
+http://www.mathworks.com/matlabcentral/answers/95120-
+
+本件についてその他ご不明な点や追加のご質問がございましたら、 
+下記のReference IDを削除せずにご返信にてお問合せ下さい。 
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。 
+http://jp.mathworks.com/support/contact_us/ 
+
+どうぞよろしくお願い致します。 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

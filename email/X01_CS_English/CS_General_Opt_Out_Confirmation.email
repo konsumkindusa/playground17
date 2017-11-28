@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Per your request, I have unsubscribed you from our e-mail list. 
+
+Please note, you will still receive e-mails regarding licensing, new releases, and prereleases if you are associated to a license. If you feel that you should no longer be associated to the license(s), please let us or the License Administrator know so you can be removed from the license. 
+
+In the future you can update your contact's email preferences at: https://go2.mathworks.com/preference-center. You will be asked to enter your email address, to which you will receive a response from service@go.mathworks.com containing directions for updating your preferences.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

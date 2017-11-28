@@ -1,0 +1,43 @@
+Dear {!Enrollment__c.Enrollee_Name__c},
+
+This is to confirm that you are enrolled in [Training Class Name], however your place is not yet secured. In order to confirm a place in the exam a Purchase Order or another form of payment must be received before the exam date.  
+
+EXAM NAME:  {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c} LOCATION:  [State], [City]
+TIME:  {!Class__c.Start_Time__c} until {!Class__c.End_Time__c} 
+
+To pay by credit card, please call +86 10 59827088 to speak with a representative. 
+
+To pay by Purchase Order, please fax the PO to us at +86 105982 7010 Attn: Training 
+
+To pay by check, please mail it to: 
+
+
+北京迈斯沃克软件有限公司
+北京市海淀区科学院南路2号
+融科资讯中心C座南楼3层301
+To ensure proper processing, please include attendee name(s), exam name(s), location, and dates on all Purchase Orders and Checks.
+
+You will be sent a confirmation with all the exam details once your Purchase Order or Payment is processed successfully. If we experience any problems, you will be notified immediately.
+
+Cancellation/Return Policies   
+-----------------------------
+Exam fees are fully refundable if we receive written notification of cancellation (via mail or email) at least seven days prior to the exam date. Cancellations made less than seven days prior to the exam will be charged 25% of the exam fee. If you fail to attend a class without written notice, you will be charged the full exam fee.  
+
+If an exam cannot take place as scheduled due to circumstances beyond MathWorks reasonable control, MathWorks sole responsibility shall be to refund the cost of the exam in which you are enrolled or transfer you to a future exam offering.  However, MathWorks does not refund for any expenses incurred beyond the cost of the exam. 
+
+Inclement Weather Policy
+-----------------------------
+The MathWorks intends to maintain its regularly scheduled exam, avoiding closings due to inclement weather whenever possible. However, if weather factors are unfavourable and not expected to improve, courses and exams will be cancelled for the day. For information about cancellations due to inclement weather, please contact the training facility directly. If a cancellation is inevitable, you will receive an email from MathWorks, including options for rescheduling.  
+
+If you have any questions, please contact us at training@mathworks.cn
+
+Thank you,
+
+迈斯沃克软件 (北京) 有限公司
+100190
+中国北京市海淀区
+科学院南路 2 号
+融科资讯中心
+C 座南楼  3 层 301 单元
+传真： +86 10-59827010

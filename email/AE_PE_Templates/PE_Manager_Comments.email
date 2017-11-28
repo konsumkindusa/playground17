@@ -1,0 +1,29 @@
+Comment Date: {!Today} 
+
+~Status (Choose 1 status, [X])
+[  ] On Track
+[  ] At Risk w/ Plan (e.g. losing momentum)
+[  ] At Risk w/o Plan (e.g. momentum lost, no customer engagement)
+
+~Comments: [INPUT] 
+
+~Recommendation: [INPUT]
+
+--------
+~Account Name: {!MW_Project__c.Contact_Account__c} 
+
+~Customer Contact: {!MW_Project__c.Customer_Contact__c} 
+
+~Office Location: {!MW_Project__c.Location_of_Request__c} 
+
+~Owner: {!MW_Project__c.OwnerFullName} 
+
+~Requester: {!MW_Project__c.Requester__c} 
+
+~Project in Salesforce: {!MW_Project__c.Project_Link__c} 
+
+~Project Name: {!MW_Project__c.Project_Name__c}
+
+~Project Description: {!MW_Project__c.Project_Description__c}
+
+~{!MW_Project__c.CreatedBy}

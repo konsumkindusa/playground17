@@ -1,0 +1,41 @@
+{!Partner_Agreement__c.Primary_Contact__c}　様
+
+いつもお世話になっております。
+
+この度は、MathWorks Connections Program へお申込みいただき、
+ありがとうございました。
+お申込み頂いた内容は、現在レビューさせて頂いております。
+レビュープロセスは数週間かかる場合がございますがご了承下さい。
+また不明点についてはご質問させて頂くことがありますので、
+よろしくお願い申し上げます。
+
+プログラムにご参加いただく際に、MathWorks Connections Program の
+Terms & Conditions へ同意いただき、署名を頂く必要があります。
+Connections Program へのメンバーシップが承認される前に、
+ご署名頂いた書類の原本をご郵送ください。
+Terms & Conditions は下記よりご覧頂くことが出来ます:
+http://www.mathworks.com/products/connections/join/CNXTerms_Conditions.pdf
+
+■　郵送先
+107-0052
+東京都港区赤坂4-15-1　赤坂ガーデンシティ7階
+MathWorks Japan 
+マーケティングプログラム部
+Connections Program担当行
+
+■　Terms & Conditionsのご記入の御案内
+print company name:　アルファベットの活字体による御社名
+print name of individual: アルファベットの活字体による承認者氏名
+Signature: 承認者の署名（筆記体や漢字で結構です）
+Title:　英語での役職名
+Date:　ご記入いただいた日付
+
+
+この度は、MATLAB環境を使用した製品およびサービスを開発いただき、
+ありがとうございます。今後ともどうぞよろしくお願い申し上げます。
+
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

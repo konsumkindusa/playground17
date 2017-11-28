@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Service Survey - FR</name>
+    <style>freeForm</style>
+    <subject>Mathworks: Votre avis sur le cas #{!Case.CaseNumber}</subject>
+    <textOnly>Cher/Chère {!Case.Contact},
+
+
+
+Vous avez récemment demandé une assistance technique avec nous le {!Case.CreatedDate}, et nous aimerions avoir vos commentaires à propos de votre expérience. Votre demande de service {!Case.CaseNumber}, {!Case.Subject}, a été fermée le {!Case.ClosedDate}  par {!Case.OwnerFullName}.
+
+
+
+Ci-dessous un lien vers notre sondage. L&apos;enquête devrait prendre moins de 5 minutes à remplir.
+
+
+
+Survey Link
+
+
+
+Merci d&apos;avoir pris le temps de remplir le questionnaire. Vos commentaires sont importants et nous aident à améliorer continuellement le service que nous vous fournissons.
+
+Cordialement,
+
+
+
+
+
+Équipe support technique MathWorks
+
+http://www.mathworks.com/support/
+
+
+
+
+Veuillez ne pas répondre pas à cet email. Cette adresse mail n’est pas utilisée, ainsi les réponses à cet e-mail ne seront pas lues ni répondues.
+
+
+Si vous préférez ne pas recevoir les enquêtes de MathWorks à l&apos;avenir, nous vous invitons à visiter le lien suivant pour mettre à jour vos préférences de communication : https://go2.mathworks.com/preference-center
+
+
+Si vous souhaitez lire la politique de confidentialité MathWorks, veuillez consulter le lien suivant : http://www.mathworks.com/company/aboutus/policies_statements/</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Training_Waitlisted_IL_Classroom_KOR_KR</name>
+    <style>none</style>
+    <subject>매스웍스 트레이닝 대기자명단</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

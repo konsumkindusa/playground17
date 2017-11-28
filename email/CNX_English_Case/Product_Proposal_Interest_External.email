@@ -1,0 +1,11 @@
+Dear {!Case.Contact},
+
+As you are aware, your Toolbox Proposal application for your product, <Insert Product Name> was sent to review recently.  I just received confirmation that our <Insert Dept Name> group has interest in having further discussions with you about your technology.
+
+<INSERT MW PERSON>, <INSERT PERSON'S TITLE>, has your contact information and will be in touch shortly.  Should you not hear from him within the next week or two, please feel free to e-mail him <OR her> directly at <INSERT>@mathworks.com.
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

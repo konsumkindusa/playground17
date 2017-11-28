@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Service Survey - DE</name>
+    <style>freeForm</style>
+    <subject>Survey Request</subject>
+    <textOnly>Sehr geehrte(r) Herr/Frau {!Case.Contact},
+
+am {!Case.CreatedDate} kontaktierten Sie uns bezüglich technischer Unterstützung. Wir interessieren uns welche Erfahrung Sie dabei gemacht haben. Ihre Meinung ist uns wichtig. Ihr Service Request {!Case.CaseNumber}, {!Case.Subject}, wurde am {!Case.ClosedDate} durch {!Case.OwnerFullName} geschlossen.
+
+
+
+Um die Umfrage auszufüllen, klicken Sie bitte hier:
+
+
+Survey
+
+Mit freundlichem Gruß,
+das MathWorks Technical Support Team
+http://www.mathworks.com/support/
+
+
+Falls Sie jetzt und zukünftig nicht an unseren Kundenzufriedenheitsumfragen teilnehmen möchten, dann können Sie sich über folgenden Link davon abmelden:
+https://go2.mathworks.com/preference-center
+
+Weitere Informationen über die MathWorks Datenschutz Regelung finden Sie auf der folgenden Seite:
+http://www.mathworks.com/company/aboutus/policies_statements/
+
+The MathWorks GmbH | Friedlandstr.18 | 52064 Aachen | Amtsgericht Aachen | HRB 8082 | Geschäftsführer: Andreas Schindler, Steven D. Barbo, Jeanne O’Keefe</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

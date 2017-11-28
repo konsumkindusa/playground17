@@ -1,0 +1,13 @@
+Beste {!Contact.FirstName},
+
+Licentienummer {!Case.License__c} is een ongeldig licentienummer. Zou je mij alsjeblieft de volgende gegevens kunnen sturen ter verificatie van de installatie van je MathWorks producten:
+
+1) Heb je je eigen licentie voor het gebruik van MathWorks producten of gebruik je de licentie van je bedrijf/organisatie?
+
+2) Als je niet je eigen licentie gebruikt, wat is de naam van het bedrijf/de organisatie waar je voor werkt?
+
+3) Een telefoonnummer waar jij of de persoon verantwoordelijk voor softwarelicenties binnen je bedrijf/organisatie bereikt kan worden.
+
+Met vriendelijke groet,
+{!User.Email_Template_Signature__c}
+{!User.Disclosure__c}

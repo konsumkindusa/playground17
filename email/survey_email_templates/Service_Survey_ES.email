@@ -1,0 +1,39 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><a href="https://go2.mathworks.com/preference-center" target="_blank" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px;">https://go2.mathworks.com/preference-center</a><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;</span><font face="Times New Roman, Times, serif">Estimado/a {!Case.Contact},<o:p></o:p></font></span></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif"><br></font></span></p>
+
+<p class="MsoNormal" style="font-size: 12pt;"><font size="2"><font face="Times New Roman, Times, serif" style="color: rgb(0, 0, 0); font-family: arial;"><span lang="ES">Nos contactó el&nbsp;</span><span style="background-color: rgb(255, 255, 255); color: rgb(84, 84, 84);">{!Case.CreatedDate}</span>&nbsp;con motivo de una cuestión técnica y nos gustaría que nos dejase
+algún comentario acerca de su experiencia. Su caso&nbsp;<span style="color: rgb(84, 84, 84); background-color: rgb(255, 255, 255);">{!Case.CaseNumber},&nbsp;{!Case.Subject}</span>, fue
+cerrado el&nbsp;<span style="color: rgb(84, 84, 84); background-color: rgb(255, 255, 255);">{!Case.ClosedDate}&nbsp;por&nbsp;</span></font><font color="#545454" face="Times New Roman, Times, serif">{!Case.OwnerFullName}</font></font></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="Times New Roman, Times, serif">.</font></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif">Abajo aparece un
+enlace a nuestra encuesta. Le llevará menos de 5 minutos completarla.<o:p></o:p></font></span></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif"><br></font></span></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span style="font-size: 12pt;"><a href="https://mathworks.getfeedback.com/r/EZEPSv6q?CaseID={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}&amp;CaseOwnerID={!Case.OwnerId}" style="font-family: &quot;Times New Roman&quot;, Times, serif; background-color: rgb(255, 255, 255);">Link to Survey</a>&nbsp;- </span><font size="2">English version</font></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span style="font-size: 12pt;"><font face="Times New Roman, Times, serif"><span style="background-color: rgb(255, 255, 255);"><a href="https://mathworks.getfeedback.com/r/Gr7TBGXd?CaseID={!Case.Id}&amp;ContactID={!Case.ContactId}&amp;AccountID={!Case.AccountId}&amp;CaseOwnerID={!Case.OwnerId}">Link to Survey</a></span></font>&nbsp;-&nbsp;</span><font size="2">Spanish version</font></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font size="2"><br></font></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif">Gracias por
+tomarse el tiempo de completar esta encuesta. Sus comentarios son importantes y
+nos ayudan a mejorar nuestros servicios continuamente.<o:p></o:p></font></span></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif"><br></font></span></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif">Saludos cordiales<o:p></o:p></font></span></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif">Equipo de
+Servicio Técnico de MathWorks<o:p></o:p></font></span></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="Times New Roman, Times, serif"><span lang="ES"><a href="http://www.mathworks.com/support/">http://www.mathworks.com/support/</a></span><span lang="ES"><o:p></o:p></span></font></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="Times New Roman, Times, serif"><br></font></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="Times New Roman, Times, serif"><br></font></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif">Por favor, no
+responda a este mensaje. Esta bandeja de correo no está monitorizada, por lo
+que las respuestas a este email no serán respondidas o leídas.<o:p></o:p></font></span></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif"><br></font></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial;"><span lang="ES" style="font-size: 12pt;"><font face="Times New Roman, Times, serif">Si prefiere no
+recibir encuestas de MathWorks en el futuro, por favor, visite el enlace
+siguiente para poner al día sus preferencias de comunicación:&nbsp;<o:p></o:p></font></span><a href="https://go2.mathworks.com/preference-center" target="_blank" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;"><font size="2">https://go2.mathworks.com/preference-center</font></a><span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">&nbsp;</span></p>
+
+<p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif"><br></font></span></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><span lang="ES"><font face="Times New Roman, Times, serif">Si desea leer la
+política de privacidad de MathWorks, por favor, visite el enlace siguiente:<o:p></o:p></font></span></p>
+
+<font face="Times New Roman, Times, serif" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;">http://www.mathworks.com/company/aboutus/policies_statements/</font><div style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial;"><font face="Times New Roman, Times, serif"><br style="color: rgb(84, 84, 84); background-color: rgb(255, 255, 255);"><span style="background-color: rgb(255, 255, 255);"><font color="#545454"><br></font></span></font></div>]]></td>
+</tr>
+</table>

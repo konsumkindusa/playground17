@@ -1,0 +1,17 @@
+Dear {!Case.Contact},
+
+Because your training has been evaluated as is considered complementary to MathWorks courses, we would be happy to provide you with a time-expiring license of MathWorks products for use during classroom instruction. In exchange, we ask that you give attendees an opportunity to share their names with MathWorks and send us those names at the end of the course in the attached spreadsheet. 
+
+If you are installing the software on attendee’s machines, you are required to uninstall and deactivate all copies of the software once the training is complete. If these terms are agreeable to you, please reply to this e-mail with your acknowledgement. 
+
+You will receive a trial confirmation email on [ENTER DATE]. Once you receive confirmation the trial will be accessible via your MathWorks account. The trial will expire within 1-2 business days after completion of your training.
+
+Please note that the time-expiring license can only be used for classroom instruction and is not provided for course curriculum development.  Partners are required to own and maintain their own license for the development of their course curriculum.  If you need a quotation for a license, please let us know.
+
+Names of course attendees can be sent in to the Connections Program team via e-mail at connections@mathworks.com.  
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

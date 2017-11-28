@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>AG_Case;AG_Contact;AG_Article_Feedback__c;AG_Task
+Technical Support ActionGrid: Cases, Contacts, Article Feedback, and Tasks</description>
+    <label>TS MultiTab ActionGrid</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>65</minorNumber>
+        <namespace>CRMC_PP</namespace>
+    </packageVersions>
+</ApexPage>

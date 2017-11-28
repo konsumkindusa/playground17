@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template to send SSL-Product Survey. To obtain information on the status of their Connections product/service development.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Connections</letterhead>
+    <name>CNX - SSL Survey Template</name>
+    <style>freeForm</style>
+    <subject>Response Required: Connections Program Annual Worldwide Sales Support Use Report</subject>
+    <textOnly>Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+You are the primary contact for these licenses and responsible for responding to the Annual Worldwide Sales Support Use Report describing your company’s use of Sales Support Licenses with your company’s product, {!Partner_Agreement__c.Partner_Agreement_Name__c} obtained through The MathWorks Connections Program for pre-sales, marketing, and demo purposes. In order to continue using the Sales Support Licenses, you or another representative from your company must complete the annual Web-based report discussed below by June 10, 2017.
+
+The report is now available and should take approximately 10-15 minutes to complete.  All responses should be based on activity *during the past year*.  To assist you in answering the Web-based report, we have attached a pdf of the questions you will be asked in the Web report.
+
+Please do not submit your responses using this e-mail.  You will need to average your responses to the report questions for all Sales Support end users worldwide including any distributor end users.
+
+Complete the Annual Worldwide Sales Support Use Report
+
+If you would like to validate that the URL above is from The MathWorks or are unable to complete the Annual Worldwide Sales Support Use Report, please contact connections@mathworks.com.
+
+If you are not the right person to complete the Annual Worldwide Sales Support Use Report, please forward this email to the correct person.
+
+
+Best regards,
+Tina McKay
+The MathWorks Connections Program
+connections@mathworks.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

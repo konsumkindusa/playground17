@@ -1,0 +1,25 @@
+Cher {!Contact.Name},
+
+Nous vous remercions pour votre intérêt envers nos formations.  
+
+Afin de confirmer votre inscription, le paiement doit être reçu au moins une semaine avant la classe. Vous trouverez les instructions de paiement ici:
+
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+Pour faciliter la procédure liée à l'inscription, merci de préciser sur votre commande :
+- Nom, prénom et adresse email du participant
+- Intitulé de la formation, le lieu, et les dates de formation
+- Adresse de facturation et livraison
+- Conditions de paiement à 30 jours net
+
+Nos procédures internes nous obligent de facturer nos clients et non les OPCA. Cependant, des exceptions sont autorisées, à savoir une facturation directe à un OPCA selon les conditions suivantes :
+- A la réception d’une copie de la prise en charge de l'OPCA au plus tard une semaine avant le premier jour de la formation
+- Un email de l'OPCA confirmant qu'à réception de notre facture, le paiement sera effectué dans le délai de 30 jours net
+- Les coordonnées complètes de la personne au service comptabilité de l'OPCA qui sera en charge du dossier pour le paiement
+
+Nous n'acceptons aucune prise en charge du FAFIEC en raison de la prise en charge financière partielle de la formation et des délais administratifs.
+
+En retour, nous vous ferons parvenir une convention de formation et un email de confirmation d'inscription faisant office de convocation.
+
+Sincères salutations,
+{!Class__c.Sponsor_Office_Signature__c}

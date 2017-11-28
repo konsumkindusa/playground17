@@ -1,0 +1,9 @@
+Hi,
+
+Please view the error message below for more details:
+
+Log: {!Log__c.Link}
+
+Stack Trace: {!Log__c.StackTrace__c}
+
+Message: {!Log__c.Message__c}

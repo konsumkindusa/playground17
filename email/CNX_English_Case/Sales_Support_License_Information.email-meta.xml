@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send when partner requests SSL&apos;s for the first time.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sales Support - License Info</name>
+    <style>none</style>
+    <subject>Sales Support License Information</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

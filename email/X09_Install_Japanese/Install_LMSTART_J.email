@@ -1,0 +1,26 @@
+{!Case.Account}
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanインストールサポートの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせ頂き、 誠にありがとうございます。
+
+ライセンスマネージャを再起動するためには、つぎの手順を実行します。
+1.　ターミナルウィンドウをオープンします。
+2.　つぎのコマンドをタイプインします。
+cd $MATLAB/etc
+（ここで、$MATLAB は MATLAB インストールディレクトリを意味します。）
+3.　つぎのコマンドをタイプインします。
+./lmstart
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のThread IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+よろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━
+{!User.Disclosure__c}
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,11 @@
+Estimado Sr./Sra. {!Contact.LastName}:
+
+Hemos recibido su cuestión sobre "{!Case.Subject}" y estamos trabajando en ella.
+
+
+
+Por favor conserve el número de referencia (Reference ID)  indicado al final de este email en cualquier correspondencia relacionada con esta cuestión. Esto permitirá a nuestros sistemas asignar automáticamente su respuesta con la petición de servicio adecuada.
+
+Atentamente, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

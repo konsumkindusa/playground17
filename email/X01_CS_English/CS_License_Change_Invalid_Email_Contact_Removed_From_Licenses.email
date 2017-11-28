@@ -1,0 +1,13 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  While confirming the changes made in this case with the Administrators on the license, I received a bounce back notification from XXXContactNameXXXX, as their email address, XXXEmailXXXX, is no longer valid.  Therefore, I have removed XXXXX as an Administrator.  If there is an updated email for XXXXXX, please let me know and I can update their information and re-associate them to the licenses.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+
+{!Case.CaseNumber}

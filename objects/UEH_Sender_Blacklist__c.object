@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>List of complete or partial email addresses to be used for checking inbound email messages against in order prevent unwanted messages from being further processed in Universal Email Handler</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Email_Address__c</fullName>
+        <description>Contains the Exact, partial Email Address of the user to get evaluate in Black List.</description>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Type__c</fullName>
+        <description>Contains the Match Type of the Email Address from Email Services(Exact to Block particular Email Address , UserName is the user Name from the Email Address and Domain is the Service Provider like gmail.com)</description>
+        <externalId>false</externalId>
+        <label>Match Type</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>UEH_Sender_Blacklist</label>
+    <visibility>Public</visibility>
+</CustomObject>

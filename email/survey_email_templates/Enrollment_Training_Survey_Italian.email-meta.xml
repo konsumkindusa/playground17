@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Customer_Training</letterhead>
+    <name>Enrollment Training Survey - Italian</name>
+    <style>freeForm</style>
+    <subject>La vostra valutazione del Training MathWorks</subject>
+    <textOnly>Gentile {!Enrollment__c.Enrollee_Name__c},
+
+La ringraziamo per aver partecipato alla formazione di MathWorks. Il nostro obiettivo consiste nell&apos;assicurarle risultati di successo grazie all&apos;utilizzo di MATLAB, Simulink e degli strumenti correlati per le sue applicazioni.
+
+Desideriamo migliorare continuamente l&apos;esperienza di formazione dei nostri utenti ed è per questo che il suo feedback è estremamente importante per noi. Le chiediamo cortesemente di compilare il nostro sondaggio post-formazione; saranno sufficienti pochi minuti.
+
+Sondaggio Post-Formazione
+
+
+
+La ringraziamo anticipatamente per averci dedicato parte del suo tempo; faremo del nostro meglio per soddisfare ogni sua esigenza in fatto di formazione.
+
+Distinti saluti,
+
+Craig Santos
+Training Business Manager
+The MathWorks, Inc.
+Craig.Santos@mathworks.com
+
+Per aggiornare l&apos;indirizzo, inviare una e-mail a: service@mathworks.com
+
+© 2009 The MathWorks, Inc. MATLAB, Simulink, Stateflow, Handle Graphics, Real-Time Workshop, SimBiology, SimHydraulics e xPC TargetBox sono marchi registrati e SimEvents è un marchio di The MathWorks, Inc. Gli altri prodotti o marchi sono marchi, o marchi registrati, dei rispettivi proprietari.
+
+
+OPT-OUT:
+
+Fare clic sul collegamento per rimuovere l&apos;indirizzo e-mail dalla lista di distribuzione commerciale di MathWorks.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

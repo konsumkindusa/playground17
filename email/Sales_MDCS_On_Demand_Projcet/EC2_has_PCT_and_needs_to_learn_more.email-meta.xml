@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Qualification email when customers have PCT but are not familiar</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EC2 has PCT and needs to learn more</name>
+    <style>none</style>
+    <subject>MathWorks Product Trial for MATLAB Distributed Computing Server for Amazon EC2</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

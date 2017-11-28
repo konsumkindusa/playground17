@@ -1,0 +1,84 @@
+<!--
+ @author :Abhay Verma - Cloud Sherpas/Mathworks, Last Modified: 
+ @Created date : 25-Feb-2016 , Last Modified: 
+ @Description : Show the territory rule criteria associated to the territory assignment rule in the territory summary page
+-->
+
+<apex:component controller="TerritoryRuleCriteriaComponentController" allowDML="true" >
+   <apex:attribute name="TerritoryAssignmentId" type="Id" description="Store the Id of the Terriotry Assignment Rule Object." assignTo="{!ruleObjId}"/>
+   <apex:attribute name="territoryShadowObjId" type="Id" description="Store the territory Shadow Object record Id" assignTo="{!territoryShadowId}"/>
+   <script>
+      var j$ = jQuery.noConflict();
+      var lastRow;
+      function highlight(elem){
+       if(lastRow != undefined)
+       lastRow.style.backgroundColor = 'white';
+       elem.style.backgroundColor = '#e0e3e5';
+       lastRow = elem;
+      }
+      var lastClicked;
+      function getValue(id,img){
+      
+       if(lastClicked!= undefined){
+       lastClicked.src='{!$Resource.SideArrow}';
+       lastClicked.style.width='10px';
+       }
+       
+       //alert(lastClicked==img);
+       
+       if(lastClicked==img ){
+           
+         
+           img.src='{!$Resource.SideArrow}';
+           img.style.width='10px';
+           getTerritoryCriteriaValues(id,false);
+           lastClicked= img;   
+          
+       }
+       else{
+           
+           img.src='{!$Resource.Downarrow}';
+           img.style.width='13px';
+           getTerritoryCriteriaValues(id,true);
+           lastClicked= img;
+       
+           
+       }     
+        
+          
+      }
+      
+      
+   </script>
+   <form>
+      <apex:pageBlock >
+         <apex:pageMessage severity="Info" summary="{!$Label.No_Territory_Criteria_Record_Found}" strength="3" rendered="{!NOT(TerritoryRuleCriteriaList != null)}" />
+         <apex:commandLink action="{!newTerritoryCriteria}"  value="New Criteria" styleClass="btn" style="text-decoration:none;margin-left: 492px;"/>
+         <br></br><br></br>
+         <apex:outputPanel id="CriteriaPanel">
+            <apex:pageBlockTable value="{!TerritoryRuleCriteriaList}" var="territoryCriteriaObj"  rules="rows" id="myTable1" onRowClick="highlight(this);" style="width:100%" rendered="{!(TerritoryRuleCriteriaList != null)}">
+               <apex:column >
+                  <apex:actionregion >
+                     <apex:image value="{!$Resource.SideArrow}" width="10px" style="cursor:pointer;" onclick="getValue('{!territoryCriteriaObj.Id}',this);" >
+                     </apex:image>
+                  </apex:actionregion>
+               </apex:column>
+               <apex:column headerValue="Action">
+                  <apex:commandLink action="{!editCriteriaObj}" value="Edit" >
+                     <b>  |  </b>
+                     <apex:param name="territoryRuleCriteriaId" value="{!territoryCriteriaObj.Id}" assignTo="{!territoryRuleCriteriaId}"/>
+                  </apex:commandLink>
+                  
+                  <apex:commandLink action="{!deleteCriteriaRule}" value="Delete" >
+                     <apex:param name="deleteTerritoryRuleCriteria"  value="{!territoryCriteriaObj.Id}" assignTo="{!territoryRuleCriteriaId}"/>
+                  </apex:commandLink>
+               </apex:column>
+               <apex:repeat value="{!$ObjectType.Territory_Rule_Criteria__c.FieldSets.TerritoryRuleCriteriaFieldSet}" var="fs">
+                  <apex:column value="{!territoryCriteriaObj[fs]}" />
+               </apex:repeat>
+            </apex:pageBlockTable>
+            <br></br>
+         </apex:outputPanel>
+      </apex:pageBlock>
+   </form>
+</apex:component>

@@ -1,0 +1,20 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. This email is to confirm that we have processed a request to have the RXXXX media mailed to the address you specified below:
+
+XXXXXX
+XXXXXX
+XXXXXX
+
+The reference number for your DVD Order is XXXXXX.  Please allow 7-10 business days for the Media to arrive. Upon shipment you will receive a confirmation email from our warehouse with order details and tracking number included.
+
+Note: Starting with R2009a we no longer send out Media as part of our General Release.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

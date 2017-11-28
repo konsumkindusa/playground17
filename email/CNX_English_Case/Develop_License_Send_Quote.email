@@ -1,0 +1,12 @@
+Dear {!Case.Contact}, 
+
+Here is the quote for your commercial license to support your Connections Program approved-product. Please reference your quote number and approval code {!Case.CaseNumber} on your purchase order.
+
+To complete your order, we must receive a copy of the signed Developer Discount Guidelines (attached), and a purchase order.
+
+Please send your order along with the signed Developer Discount Guidelines directly to your sales rep.
+
+Best Regards, 
+{!User.Email_Template_Signature__c}
+
+Approval Code: {!Case.CaseNumber}

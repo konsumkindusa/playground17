@@ -1,0 +1,16 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName} 様 
+
+いつもお世話になっております。MathWorks の {!User.Email_Template_Signature__c} と申します。
+ お問い合わせ頂いておりましたサービスリクエスト（“{!Case.Subject}”, Case #{!Case.CaseNumber}) に関して、ご連絡いたします。 
+
+MathWorks テクニカルサポートでは、ユーザ作成のアプリケーションに関する法的な助言を行うことはできません。
+
+MathWorks Software License Agreement に関する一般的なご質問がございましたら、contracts@mathworks.com宛にご連絡ください。
+
+なお、MathWorksでは一般的なアプリケーションのSoftware License Agreementに対するご質問のみ、回答させていただきますので、特許や機密に関わる情報を送付しないようにご注意ください。 
+
+以上、宜しくお願い致します。 
+
+MathWorks テクニカルサポート窓口 
+{!User.Email_Template_Signature__c}

@@ -1,0 +1,16 @@
+Hola {!Case.Contact},     
+
+Desde ya que te pedimos disculpas por las molestias que hemos podido ocasionar durante el proceso de compra.
+
+Para poder procesar manualmente tu pedido y desbloquearlo, necesitamos que nos envíes los 8 dígitos del medio de la tarjeta de crédito (que son encriptados por seguridad). También será necesario que nos confirmes las direcciones de facturación y envío. Por favor ten en cuenta que hay dos razones principales por las que puede fallar el cargo en la tarjeta de crédito:    
+1.    Si el domicilio de facturación que has indicado no concuerda con el domicilio informado a la tarjeta de crédito. Es importante que la información que nos has dado al procesar el pedido coincida con la información que tiene tu banco relacionada a la tarjeta de crédito.    
+2.    Si la tarjeta no tiene suficientes fondos, el pedido también será fallido. Tampoco aceptamos tarjetas de débito.    
+
+Si necesitas más ayuda en relación a esta solicitud, por favor responde a este email preservando el ReferenceD ID.    Si tienes una nueva consulta para el equipo de Atención al Cliente, por favor envía tu solicitud desde el siguiente link: http://www.mathworks.com/contact_cs.html        
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Custom setting used for killing or forwarding an email to user&apos;s previous email address on Email To Case Override</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Allow_Email_Logs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allows capturing of email details on Email Logs custom object</description>
+        <externalId>false</externalId>
+        <label>Allow Email Logs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Forward_Change_Email_Request_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enables forwarding of Change Email Request to a specified email address on this custom setting</description>
+        <externalId>false</externalId>
+        <label>Forward Change Email Request Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Forwarding_Email_Address__c</fullName>
+        <description>Forwarding Email Address when the Enable Change Email Request Email is activated.</description>
+        <externalId>false</externalId>
+        <label>Forwarding Email Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <label>Email To Case Override Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,19 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Per your request, the products listed below have been removed from your account as part of the MathWorks Student Version return process:
+
+MATLAB & Simulink Student Version License XXXXXXXX
+<LIST ADDITIONAL PRODUCTS>
+
+We have also submitted a credit to your credit card for a return/refund.  The credit order # XXXXX for $XXXX was issued on XXDATEXX to your card.  It may take your bank from 3-5 business days to post this credit to your account.  You may view or print an invoice from your MathWorks Account.  Click on the link labeled “View Orders” located on the left side of your account page.  
+
+Licensee shall not attempt to access or use Programs, or copies of Programs, that Licensee is not currently licensed to use. Licensee is required to remove and deactivate all archival copies of the programs mentioned above from their systems and refrain from using again without first entering into a valid Software License Agreement with MathWorks.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.Category__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.Event_Program_Name__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.Mathworks_Monetary_Contribution__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.Currency__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.MathWorks_Office__c</field>
+    </columns>
+    <columns>
+        <field>Social_Action__c.End_Date__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Applications reviewed by grant team, includes awards and denials</description>
+    <filter>
+        <criteriaItems>
+            <column>Social_Action__c.Category__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Community Grants</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Social_Action__c.End_Term__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Global Grant Requests - All Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Social_Action__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Social_Action__c.Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Social_Action__c.End_Date__c</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

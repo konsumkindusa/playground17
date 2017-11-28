@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>used by getfeedback for ther book program promo survey</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Book Program promo</name>
+    <style>freeForm</style>
+    <subject>Book Promo Survey</subject>
+    <textOnly>Dear {!Book_Project__c.Primary_Contact__c},
+
+The MathWorks Book Program would like to evaluate your book, {!Book_Project__c.Book_Title__c}, for promotion from our Web site. Please complete the following survey to confirm your book’s publication status and provide us with final information for use in our promotion.
+
+
+Book Promotional Information
+
+
+Regards,
+
+
+MathWorks Book Program Team
+
+
+
+(Please do not reply to this email. If you have questions, please contact bookprogram@mathworks.com)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

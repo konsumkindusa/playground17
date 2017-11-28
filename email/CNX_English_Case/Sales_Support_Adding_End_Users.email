@@ -1,0 +1,11 @@
+Dear {!Case.Contact},
+
+To add a new end user to your Sales Support License you must send in your request to connections@mathworks.com along with the new end users complete contact information in the attached spreadsheet, we will review your request and send you a quote and instructions for adding the additional end users. Each end user must have the same product configuration as the existing end users.  
+
+If you have any questions, please contact me at connections@mathworks.com.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

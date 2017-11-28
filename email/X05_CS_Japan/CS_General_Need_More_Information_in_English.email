@@ -1,0 +1,28 @@
+Hello {!Case.Contact}, 
+
+Thank you for contacting MathWorks Customer Service.
+In order to process your request we require some additional information from you. Please provide us with the following information.
+
+MATLAB License Number: 
+(You can find the license number by typing 'VER' at the MATLAB prompt) 
+
+Your Name: 
+Title: 
+Account or University Name: 
+Account or University Address: 
+Department: 
+Telephone Number: 
+Fax Number: 
+Email Address: 
+Country: 
+Products of Interest: 
+Reason for Contact: 
+
+If you need further assistance regarding this request, please reply to this email preserving the Reference ID listed below. 
+If you have a new Customer Support question, please submit a request here: http://www.mathworks.com/contact_cs.html
+
+Thank you, 
+
+{!User.Disclosure__c} 
+
+Case ID: {!Case.CaseNumber}

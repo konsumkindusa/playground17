@@ -1,0 +1,16 @@
+Estimado Sr./Sra. {!Contact.LastName}:
+
+Le escribo con referencia a su petición de servicio # {!Case.CaseNumber} sobre '{!Case.Subject}'. 
+
+Nuestra base de datos  nos indica que esta licencia # {!Case.License__c}, ya no está bajo mantenimiento. 
+
+El acceso a nuestro equipo de soporte técnico a través de e-mail o teléfono es una de las ventajas de tener una suscripción a nuestro servicio de mantenimiento del software o Software Maintenance Service (SMS) en inglés. 
+
+Por lo tanto, para poder contactar con el equipo de soporte técnico, deberá renovar su suscripción SMS para esta licencia, o darnos otro número de licencia que tenga la suscripción al día.
+
+Un compañero de nuestro departamento de ventas le enviará un presupuesto para renovar la suscripción SMS. Si tiene alguna pregunta, por favor contacte con nuestro departamento de ventas:
+http://www.mathworks.com/company/worldwide/ 
+
+Atentamente, 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

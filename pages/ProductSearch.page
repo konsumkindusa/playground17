@@ -1,0 +1,277 @@
+<!-- 
+/**
+* @author Original: Jesfer Baculod - Cloud Sherpas/Mathworks 
+* @date Original: 22 May 2013, Last Modified: 19 September 2013
+* @description: Displays list of searchable products 
+*/ 
+-->
+<apex:page id="pgProductSearch" showheader="false" controller="ProductSearchController">
+
+	<style>
+	 .Txt{
+		color: #333333;
+    	font-size: 91%;
+    	font-weight: bold;
+    	padding: 0px 8px;
+    	}
+	</style>
+	<body>
+	<apex:form id="mainFrm">
+		<apex:includeScript value="/support/console/27.0/integration.js"/>
+        <apex:outputpanel id="scripts">
+            <script type="text/javascript">
+                var chkboxset = new Array(); 
+                var inputTextSet = new Array();
+                //Disables multiple selection of checkbox and disables License textbox
+                function SelectProduct(prod){
+                    ctr = 0;
+                    for (x=0; x<chkboxset.length;x++){
+                        if (document.getElementById(chkboxset[x]).checked){
+                            ctr++;
+                            document.getElementById('{!$Component.ihChckIndex}').value = x;
+                            document.getElementById(inputTextSet[x]).removeAttribute('disabled');
+                        }else{
+                            document.getElementById(inputTextSet[x]).setAttribute( 'disabled', 'disabled' );
+                        }
+                    }
+                    if (ctr > 1){
+                        for (x=0; x<chkboxset.length;x++){
+                            if (prod == chkboxset[x]){
+                                document.getElementById(prod).checked = true;
+                                document.getElementById('{!$Component.ihChckIndex}').value = x;
+                                document.getElementById(inputTextSet[x]).removeAttribute('disabled');
+                            }
+                            else {
+                                document.getElementById(chkboxset[x]).checked = false;
+                                document.getElementById(inputTextSet[x]).setAttribute( 'disabled', 'disabled' );
+                            }
+                        }
+                    }
+                }
+                //Reidrects the user to Case Detail page
+                function RedirectPage(){
+                    //Case on Service Cloud Console
+                    if (sforce.console.isInConsole()){
+                        var closeSubtab = function closeSubtab(result) {
+                            //Now that we've got the tab ID, we can close it
+                            var tabId = result.id;
+                            setTimeout(ConsoleCloseTab(tabId),{!numDelay});
+                        }; 
+                        //First find the ID of the current tab to close it
+                        sforce.console.getEnclosingTabId(closeSubtab);
+                        //Get Primary Tab Id
+                        var primaryTab = function refreshPrimtab(result){
+                            var tabId = result.id;
+                            sforce.console.refreshPrimaryTabById(tabId, true);
+                        }
+                        //Refresh primary tab
+                        setTimeout(ConsoleRefreshTab(primaryTab),{!numDelay});
+                    } 
+                    //Case on standard page
+                    else{
+                    	document.getElementById('dvRefresh').style.display = 'block';
+                    	setTimeout(GoBackToCase (),{!numDelay});
+                    }
+                }
+                
+                function ConsoleCloseTab (tabId) {
+                	sforce.console.closeTab(tabId);
+                }
+                
+                function ConsoleRefreshTab (primaryTab) {
+                	sforce.console.getEnclosingPrimaryTabId(primaryTab);
+                }
+                
+                function GoBackToCase () {
+                	top.location.href = '/{!cse.Id}';
+                }
+                
+                //Set Keypress Enter Default Action to Product Search (Clicking Go!)
+                function BindEnterOnSearch(e){
+                    if(window.event){ //IE, Chrome 
+                        key = window.event;                 
+                    }
+                    else { //firefox
+                        key = e;
+                    } 
+                    if (key.which == 13 || key.keyCode == 13) {
+                        ProdSearch();
+                        return false; 
+                    }
+                }
+                //Set Keypress Enter Default Action to Save Product (Clicking Ok)
+                function BindEnterOnProductSelect(e){
+                    if(window.event){ //IE, Chrome 
+                        key = window.event;                 
+                    }
+                    else { //firefox
+                        key = e;
+                    } 
+                    if (key.which == 13 || key.keyCode == 13) {
+                        PickProduct();
+                        return false; 
+                    }
+                }
+                
+                function SaveProductOncomplete(pbProd){
+                	var j = '{!ChkIndex}';
+                	if ( '{!LicenseError}' == 'true' ){
+                		//Display License validation error on selected product
+                		document.getElementById(pbProd+':pbsProd:pbtProdSearch').style.display = 'inline-table';
+                		document.getElementById(chkboxset[j]).checked = true;
+                		document.getElementById(inputTextSet[j]).removeAttribute('disabled');
+                		document.getElementById(inputTextSet[j]).className = 'error';
+                		document.getElementById(inputTextSet[j]).value = '{!SelLicenseValue}';
+                		document.getElementById(inputTextSet[j]).focus();
+                		document.getElementById(inputTextSet[j]).select();
+                		document.getElementById(pbProd+':pbsProd:pbtProdSearch:'+j+':LicenseErrMsg').style.display = 'block';
+                	}
+                	else{
+                		//Proceed on saving and redirect user back to case detail
+                		document.getElementById(pbProd+':pbsProd:pbtProdSearch').style.display = 'none';
+                		RedirectPage();
+                	}
+                }
+                
+            </script>
+            
+            <div id="dvServCons1" style="display:none;">
+                <br/>
+                <br/>
+            </div>
+            
+            <apex:actionFunction name="ProdpageFunction" status="loading" action="{!prodSetPageNumber}" rerender="scripts,opProducts,opNavi,opFooter" >
+                <apex:param name="prodpagenum" value="{!selectedpage}" assignTo="{!selectedpage}" />
+            </apex:actionFunction>
+            <apex:actionFunction name="ProdSearch" action="{!ProductSearch}"  status="loading" rerender="opButtons,opProducts,pbsProd,scripts,opNavi" />
+            <apex:actionFunction name="PickProduct" action="{!saveProduct}" status="pickproduct" oncomplete="SaveProductOncomplete('{!$Component.pbProd}');" rerender="scripts,pbProd" />
+        </apex:outputpanel>
+        <!-- FILTER FIELDS AND BUTTON FOR SEARCHING PRODUCTS -->
+        <apex:outputpanel id="opFilterSec" style="padding:0px 0px 0px 0px;">
+            <apex:outputText styleclass="Txt" value="{!$ObjectType.Product2.fields.name.label}" />
+            <apex:inputText onkeypress="return BindEnterOnSearch(event);" tabindex="0" value="{!prodName}" size="17"/>
+            <apex:outputText styleclass="Txt" value="{!$ObjectType.Product2.fields.ProductCode.label}" />
+            <apex:inputText onkeypress="return BindEnterOnSearch(event);" value="{!prodPCode}" size="17" />
+            <apex:outputText styleclass="Txt" value="{!$ObjectType.Product2.fields.Release__c.label}" />
+            <apex:inputText onkeypress="return BindEnterOnSearch(event);" value="{!prodRelease}" size="17" />
+            <apex:outputText styleclass="Txt" value="{!$ObjectType.Product2.fields.Version__c.label}" />
+            <apex:inputText onkeypress="return BindEnterOnSearch(event);" value="{!prodVersion}" size="17" />  
+            <apex:outputpanel style="padding: 0px 0px 0px 5px;">
+                <apex:commandbutton id="cmdGoSearch" value="{!$Label.Button_Go}" action="{!ProductSearch}" status="loading" rerender="opButtons,opProducts,pbsProd,scripts,opNavi" /> 
+            </apex:outputpanel>
+        </apex:outputpanel>
+        
+        <div id="dvServCons2" style="display:none;">
+            <br/>
+        </div>
+        
+        <apex:inputHidden id="ihChckIndex" value="{!ChkIndex}" />
+        
+        <apex:pageBlock id="pbProd">
+            <apex:pageBlockSection columns="1" id="pbsProd">
+                <apex:outputpanel id="opProducts">
+                    <div style="height:370px;">
+                        <!-- LIST OF SEARCHED PRODUCTS -->
+                        <apex:pageBlockTable id="pbtProdSearch" value="{!prodWRlist}" var="pr">
+                            <apex:column >
+                                <apex:inputCheckbox id="chckProd" onclick="this.focus();" onkeydown="return BindEnterOnProductSelect(event);" value="{!pr.isSelected}" onchange="javascript: SelectProduct('{!$Component.chckProd}');" />
+                                <script>
+                                    chkboxset.push('{!$Component.chckProd}');
+                                </script>
+                            </apex:column>
+                            <apex:column value="{!pr.prod.Name}" headervalue="{!$ObjectType.Product2.fields.name.label}" />
+                            <apex:column headervalue="{!$ObjectType.Case.fields.License__c.label}">
+                                <apex:inputText value="{!pr.newLicNum}" id="newLicense" onkeypress="return BindEnterOnProductSelect(event);"/>
+                                <apex:outputLabel id="LicenseErrMsg" style="display:none;"><font color="#d74c3b"><b>Error: </b>{!LicenseMsg}</font></apex:outputLabel>
+                                <script>
+                                    document.getElementById('{!$Component.newLicense}').disabled = 'disabled'; 
+                                    inputTextSet.push('{!$Component.newLicense}');
+                                </script>
+                            </apex:column>
+                            <apex:column value="{!pr.prod.ProductCode}" headervalue="{!$ObjectType.Product2.fields.ProductCode.label}" />
+                            <apex:column value="{!pr.prod.Release__c}" headervalue="{!$ObjectType.Product2.fields.Release__c.label}" />
+                            <apex:column value="{!pr.prod.Version__c}" headervalue="{!$ObjectType.Product2.fields.Version__c.label}" />
+                            <apex:column value="{!pr.prod.IsActive}" headervalue="{!$ObjectType.Product2.fields.IsActive.label}" />
+                        </apex:pageBlockTable>
+                        <!-- DISPLAYS LOADING STATUS -->
+                        <apex:actionstatus id="loading" onstart="document.getElementById('{!$Component.pbtProdSearch}').style.display = 'none';" onstop="document.getElementById('{!$Component.pbtProdSearch}').style.display = 'inline-table';" >
+                            <apex:facet name="start">
+                                <div align="center" style="position:relative; top:185px;">
+                                    <img src="/img/loading.gif" /> <b>{!$Label.Status_Loading}</b>
+                                </div>
+                            </apex:facet>
+                        </apex:actionstatus> 
+                        <!--  DISPLAYS SAVING STATUS -->
+                        <apex:actionstatus id="pickproduct" onstart="document.getElementById('{!$Component.pbtProdSearch}').style.display = 'none';" onstop="" >
+                            <apex:facet name="start">
+                                <div align="center" style="position:relative; top:185px;">
+                                    <img src="/img/loading.gif" /> <b>{!$Label.Status_Saving}</b>
+                                </div>
+                            </apex:facet>
+                        </apex:actionstatus>
+                        <div id="dvRefresh" align="center" style="display:none;position:relative; top:185px;">
+                                    <img src="/img/loading.gif" /> <b>{!$Label.Status_Saving}</b>
+                        </div>
+                    </div>
+                    
+                    <script>
+                    //Add spaces when Product Search is on Service Console
+                    if(sforce.console.isInConsole()){
+                        document.getElementById('dvServCons1').style.display = 'block';
+                        document.getElementById('dvServCons2').style.display = 'block';
+                    }
+                    else {
+                        document.getElementById('dvServCons1').style.display = 'none';
+                        document.getElementById('dvServCons2').style.display = 'none';
+                    }
+                    
+                    //Enable update of License onload on existing Product displayed
+                    if ('{!cse.Product_Lookup__c}' != '' && '{!isOnLoad}' == 'true'){
+                    	document.getElementById(chkboxset[0]).checked = true;
+	                   	document.getElementById(inputTextSet[0]).removeAttribute('disabled');
+	                   	document.getElementById(inputTextSet[0]).focus();
+	                }
+                    
+                    </script>
+                </apex:outputpanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <!-- CONTAINS PAGE NAVIGATION AND OK CANCEL BUTTONS -->
+        <table width="100%" >
+            <tr>
+                <!-- PAGE NAVIGATION -->
+                <td width="90%">
+                <apex:outputpanel id="opNavi" rendered="true" style="display:{!NaviDisp};">
+                    <table>
+                        <tr><td align="left">
+                            <!-- NAVIGATION CONTROLS FOR PRODUCT PAGINATION -->
+                            <apex:PanelGrid columns="7" styleclass="navipag">
+                                <apex:commandLink action="{!prodfirst}" status="loading" rerender="scripts,opProducts,opNavi">{!$Label.Pagi_First}</apex:commandlink> 
+                                <apex:commandLink action="{!prodprevious}" status="loading" rerender="scripts,opProducts,opNavi">{!$Label.Pagi_Previous}</apex:commandlink> 
+                                <apex:commandLink action="{!prodnext}" status="loading" rerender="scripts,opProducts,opNavi">{!$Label.Pagi_Next}</apex:commandlink> 
+                                <apex:commandLink action="{!prodlast}" status="loading" rerender="scripts,opProducts,opNavi">{!$Label.Pagi_Last}</apex:commandlink>
+                                &nbsp; {!$Label.Pagi_GoTo}
+                                <apex:PanelGroup >
+                                    <apex:selectList styleclass="sellist" id="ProdselPageList" size="1" value="{!prodPageNumber}" onchange="ProdpageFunction(this.options[this.selectedIndex].value)" >
+                                        <apex:selectOptions value="{!ProdPageSelect}" />
+                                    </apex:selectList>
+                                </apex:PanelGroup>
+                                <apex:PanelGroup >
+                                        &nbsp; {!$Label.Pagi_Page} {!prodPageNumber} / {!ProdMaxPageNumber}
+                                </apex:PanelGroup>
+                            </apex:PanelGrid>
+                    </td></tr>
+                    </table>
+                </apex:outputpanel>
+                </td>
+                <td width="10%">
+                 <apex:outputpanel id="opButtons" >
+                         <apex:commandbutton id="cmdOk" status="pickproduct" value="{!$Label.Button_OK}" disabled="{!disabledOk}" rerender="scripts,pbProd" action="{!saveProduct}" oncomplete="SaveProductOncomplete('{!$Component.pbProd}');"/>
+                         <apex:commandbutton id="cmdCancel" value="{!$Label.Button_Cancel}" onclick="javascript: RedirectPage();"/>
+                 </apex:outputpanel>
+                </td>
+            </tr>
+        </table>
+	</apex:form>
+	</body>
+</apex:page>

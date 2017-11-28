@@ -1,0 +1,14 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+We received your application for the MathWorks Connections Program via our Web site. However, the application that we received is incomplete. 
+
+Please provide the following information: 
+
+[ADD REQUESTED INFORMATION]
+
+As soon as we receive your response we will begin the review process. I look forward to your reply.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

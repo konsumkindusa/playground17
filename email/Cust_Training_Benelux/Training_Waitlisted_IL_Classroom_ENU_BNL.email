@@ -1,0 +1,31 @@
+Dear {!Contact.Name},
+
+Thank you for your enrollment request. Unfortunately, the course you registered for is fully booked, therefore you have been placed on the waiting list for:
+
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LOCATION: {!Class__c.City__c}, {!Class__c.Country__c} 
+TIME: {!Class__c.Start_Time__c} until {!Class__c.End_Time__c}
+
+
+Use the link below for Address, Directions, and recommended accommodations:
+
+http://www.mathworks.nl/services/training/policies/directions.html
+
+A member of our team will contact you if additional seats become available.  It is our standard practice to notify customers of the availability on a first come first served basis. You will be notified via e-mail if a spot becomes available for you or if we decide to schedule this course at a later date. 
+
+A link to our public training schedule: {!Class__c.Sponsor_Office_Training_URL__c}
+
+
+Please take a moment to review the schedule.  If another training course interests you and you would like to enroll please contact us or simply reply to this email with the COURSE NAME and date.
+
+For our cancellation policies, please visit https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+If you have any questions, please do not hesitate to contact us.
+
+
+
+Kind regards,
+
+{!Class__c.Sponsor_Office_Signature__c} 

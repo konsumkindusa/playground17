@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>MW_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>MW_Layout</fullName>
+        <fields>Account__c</fields>
+        <fields>Contact__c</fields>
+        <fields>Opportunity__c</fields>
+        <fields>Visit_Type__c</fields>
+        <fields>Technical_Resource__c</fields>
+        <fields>Visit_Level__c</fields>
+        <fields>Visit_Date__c</fields>
+        <fields>Length_of_Visit_in_Hours__c</fields>
+        <fields>Number_of_Customer_Attendees__c</fields>
+        <label>MW Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The purpose of this Custom Object is to Track Customer Facing Activities.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Facing Activities</relationshipLabel>
+        <relationshipName>Customer_Facing_Activities</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Customer Facing Activities</relationshipLabel>
+        <relationshipName>Customer_Facing_Activities</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Length_of_Visit_in_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Length of Visit in Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Customer_Attendees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Customer Attendees</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Customer Facing Activities</relationshipLabel>
+        <relationshipName>Customer_Facing_Activities</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Functional_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner:User.Functional_Role__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Functional Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Manager.FirstName &amp;&apos; &apos;&amp; Owner:User.Manager.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Manager Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Activity_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Siebel Activity ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Technical_Resource__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Resource</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Visit_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Technical Resource</fullName>
+                    <default>false</default>
+                    <label>No Technical Resource</label>
+                </value>
+                <value>
+                    <fullName>Application Engineering</fullName>
+                    <default>false</default>
+                    <label>Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>EDU Technical Evangelist</fullName>
+                    <default>false</default>
+                    <label>EDU Technical Evangelist</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Solo</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>No Technical Resource</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>Application Engineering</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>Consulting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>EDU Technical Evangelist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>Marketing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>Pilot Engineering</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Solo with Remote Assistance</controllingFieldValue>
+                <controllingFieldValue>Technical Resource Assisted</controllingFieldValue>
+                <controllingFieldValue>Conference Call with NO Travel</controllingFieldValue>
+                <controllingFieldValue>WebEx with NO Travel</controllingFieldValue>
+                <valueName>Training</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>End User</fullName>
+                    <default>false</default>
+                    <label>End User</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+                <value>
+                    <fullName>Senior Manager</fullName>
+                    <default>false</default>
+                    <label>Senior Manager</label>
+                </value>
+                <value>
+                    <fullName>Director</fullName>
+                    <default>false</default>
+                    <label>Director</label>
+                </value>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Solo</fullName>
+                    <default>false</default>
+                    <label>Solo</label>
+                </value>
+                <value>
+                    <fullName>Solo with Remote Assistance</fullName>
+                    <default>false</default>
+                    <label>Solo with Remote Assistance</label>
+                </value>
+                <value>
+                    <fullName>Technical Resource Assisted</fullName>
+                    <default>false</default>
+                    <label>Technical Resource Assisted</label>
+                </value>
+                <value>
+                    <fullName>Conference Call with NO Travel</fullName>
+                    <default>false</default>
+                    <label>Conference Call with NO Travel</label>
+                </value>
+                <value>
+                    <fullName>WebEx with NO Travel</fullName>
+                    <default>false</default>
+                    <label>WebEx with NO Travel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Customer Facing Activity</label>
+    <nameField>
+        <label>Customer Facing Activity Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Customer Facing Activities</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Visit_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Visit_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Technical_Resource__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Number_of_Customer_Attendees__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Length_of_Visit_in_Hours__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opportunity__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Visit_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Visit_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Technical_Resource__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Number_of_Customer_Attendees__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Length_of_Visit_in_Hours__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Opportunity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Visit_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Visit_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Technical_Resource__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Number_of_Customer_Attendees__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Length_of_Visit_in_Hours__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Opportunity__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATEDBY_USER</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Visit_Date__c</searchFilterFields>
+        <searchFilterFields>Visit_Type__c</searchFilterFields>
+        <searchFilterFields>Technical_Resource__c</searchFilterFields>
+        <searchFilterFields>Number_of_Customer_Attendees__c</searchFilterFields>
+        <searchFilterFields>Length_of_Visit_in_Hours__c</searchFilterFields>
+        <searchFilterFields>Account__c</searchFilterFields>
+        <searchFilterFields>Opportunity__c</searchFilterFields>
+        <searchFilterFields>Contact__c</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Account_cannot_be_blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Account__c )</errorConditionFormula>
+        <errorDisplayField>Account__c</errorDisplayField>
+        <errorMessage>Account must be specified</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

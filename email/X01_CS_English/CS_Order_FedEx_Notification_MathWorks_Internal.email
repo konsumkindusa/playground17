@@ -1,0 +1,19 @@
+Hello {!Case.Contact},
+
+Thank you for contacting the MathWorks. FedEx has notified us that a recent shipment intended for XXRecipient NameXXX was undeliverable due to an incorrect address.  This notification indicated that you were the sender.  If you can, please follow up with XXFirst nameXXX to correct or confirm this address and then have FedEx redirect the package.  I have included the shipping address and tracking number below for your reference.  The telephone number for FedEx is (800)463-3339.  
+
+Tracking Number:  XXXXXXX
+
+Address:
+XXXXXXX
+XXXXXXX
+XXXXXXX
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

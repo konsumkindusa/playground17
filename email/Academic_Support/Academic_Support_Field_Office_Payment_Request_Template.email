@@ -1,0 +1,68 @@
+Notes:
+
+From = US Partner Academic Profile
+
+To = Email address of controller of the Field Office (select from list below) 
+
+·         Asa Welander  - Nordics 
+
+·         Dirk Deutscher - Germany  
+
+·         Jason Lee  - Korea 
+
+·         Kimiko Tachizawa  - Japan  
+
+·         Kumar Bakthavatchalu -  India 
+
+·         Lina Yang  - China  
+
+·         Jason Lee  - Australia 
+
+·         Patrick Tuffy  - France 
+
+·         Simon Cox  Finance and Administration – UK  (cc Nicole Lin)
+
+           Elena Corso - Italy
+
+
+CC = Internal Sponsor and/or Technical Lead; Direct Line Manager; Relevant Country Manager; maureen.maher@mathworks.com; Jackie.Christiano@mathworks.com; Sean.Kimball@mathworks.com; richard.rovner@mathworks.com; Sherri.Sweeney@mathworks.com
+
+
+Relevant Country Manager (use first name on list): http://sharepoint/marketing/edu/academicsupport/Team_Projects/Legal/Updated%20Signing%20Authority%20for%20MathWorks%20Global%20locations%20updated%2002.06.2015.docx
+
+Info in < >:  
+
+
+Links:  Copy and paste the link to the applicable document from the Academic SharePoint Library:  http://sharepoint/marketing/edu/academicsupport/Test%20%20Academic%20Support/Forms/University1.aspx
+
+AP Codes:  Enter the correct code based on the request type:  http://sharepoint/marketing/edu/academicsupport/teamas/Budget/Budget/SMAS%20AP%20Coding%20Structure.xlsx 
+
+
+All documents related to the Academic Support award distribution request for the {!Academic_Support_Project__c.Class__c} project at {!Academic_Support_Project__c.Account__c} are linked below.  
+
+Invoice (if provided)
+
+Payment Information (if no invoice provided and this will be a wire transfer)
+
+DEUL/Agreement
+
+Business Case 
+
+Once the payment has been made, please report the cost to your local Marketing expense account using the GL Code listed below and include the AP code in the GL description.
+
+Oracle EBS/GL Code: 3040-705200
+
+AP Code: <ENTER AP CODE >
+
+Thanks you for your help in advance.  If you have any questions, please contact me at the numbers below.
+
+Best Regards,
+{!User.FirstName} {!User.LastName}
+
+MathWorks Academic Support Program
+E. academicsupport@mathworks.com
+F. 508.652.8740
+
+MathWorks
+3 Apple Hill Drive 
+Natick, MA 01760

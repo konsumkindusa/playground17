@@ -1,0 +1,15 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+Your company currently has a Web page listed on The MathWorks Web site at:
+{!Partner_Agreement__c.Web_Page_URL__c}
+
+We currently have you listed as the primary contact for your company’s relationship with The MathWorks Connections Program. Are you still the correct contact? If not, please provide us with the new contacts name and email.
+
+Please confirm whether or not your product(s) is still available and being supported. 
+
+If any changes are need to your Web page, please send an email to connections@mathworks.com with any updates to correct your Web page.  
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

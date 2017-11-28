@@ -1,0 +1,24 @@
+{!Contact.LastName} {!Contact.FirstName} 様
+
+本E-mail は以下のコースのキャンセルを確認するものです:
+
+コース名: {!Enrollment__c.Class__c} 
+日付: {!Enrollment__c.Display_Start_Date__c} から {!Enrollment__c.Display_End_Date__c}
+開催地: {!Class__c.City__c}, {!Class__c.State__c} 
+
+キャンセルされたクラスの受講料の返金を受けるには、お支払い情報
+をご準備の上、トレーニング担当までご連絡ください。
+以下のリンクから、その他のトレーニングスケジュールが確認いただけ
+ます。他のクラスにご興味をお持ちで、今回お支払い頂いた受講料
+を充当し、ご登録いただく場合、{!Class__c.Sponsor_Office_Phone__c} までお電話いただくか、
+コース名およびご希望の開催地をご記入の上、本メールにご返信ください。
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+6営業日前から受講日までにキャンセルのご連絡を頂いた場合、
+受講料の 25% のキャンセル料が発生します。事前の書面による
+通知なしに参加されなかった場合、受講料は返金されません。
+ただし、お支払いいただいた受講料で、当日別の方に受講頂く
+ことが可能です。  
+よろしくお願い申し上げます。
+
+{!Class__c.Sponsor_Office_Signature__c} 

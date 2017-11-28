@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Setting will be used  to validate the last reorg job status. Based on the status the start reorg button on the page will be enable or disable</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Job_Status__c</fullName>
+        <description>Job status will be updated on VF Page load  . If status is not completed, the button will be be grayed out</description>
+        <externalId>false</externalId>
+        <label>Job Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Run_Time__c</fullName>
+        <description>Last start  time when reorg job was executed</description>
+        <externalId>false</externalId>
+        <label>Last Run Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_Running_User__c</fullName>
+        <description>The last SF user executed the reorg job</description>
+        <externalId>false</externalId>
+        <label>Last_Running User</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reorg_Job_Id__c</fullName>
+        <description>Reorg Job Id will be saved when job starts. Need to query AsynchJob Table to validate the status of the last job when VF Page loaded. If the status Aborted, Completed, Failed</description>
+        <externalId>false</externalId>
+        <label>Reorg Job Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Opportunity Mass Reorg</label>
+    <visibility>Public</visibility>
+</CustomObject>

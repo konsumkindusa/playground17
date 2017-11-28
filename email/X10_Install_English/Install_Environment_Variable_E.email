@@ -1,0 +1,28 @@
+To set environment variables, use the appropriate command below:
+
+UNIX
+----
+
+Bourne shells
+
+    * For sh, enter: <VARIABLE NAME>="value"; export <VARIABLE NAME>
+    * For ksh/bash, enter: export <VARIABLE NAME>="value"
+
+
+C shells
+    * For csh/tcsh, enter: setenv <VARIABLE NAME> "value" 
+
+To determine which shell you are using type:
+
+    finger -m <username>
+
+Windows
+-------
+On Windows XP, 2000, and 2003 you can set the environment variables using the following steps:
+
+1. Right click on “My Computer” and select “Properties”.
+2. Click on the “Advanced” tab.
+3. Click on the “Environment Variables” button.
+4. Set the variables under “System variables”.
+5. Click Add
+6. Define variable name and value

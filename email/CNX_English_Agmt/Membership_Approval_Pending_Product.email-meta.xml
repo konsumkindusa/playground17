@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>No-Charge Software Proposal Next Steps to Sponsor</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>3a - No-Charge Software Proposal Next Steps to Sponsor</name>
+    <style>none</style>
+    <subject>No-Charge Software Proposal Next Steps - {!Partner_Agreement__c.Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

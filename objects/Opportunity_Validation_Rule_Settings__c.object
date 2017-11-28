@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used to manage the profiles and users that are subject to Opportunity validation rules.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Cant_change_stage_on_closed_opportunity__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent changing the stage of a closed opportunity (Default: True)</inlineHelpText>
+        <label>Cant_change_stage_on_closed_opportunity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate_Rule__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Will prevent setting the opportunity stage past C if the Close Date is the default set in a custom setting (Default: True)</inlineHelpText>
+        <label>CloseDate_Rule</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Primary_Purpose_Lookup_Rule__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Requires the user to set value for Opportunity Primary Purpose field when Stage &gt; C (Default: True)</inlineHelpText>
+        <label>Opportunity_Primary_Purpose_Lookup_Rule</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RevenueAmount_Rule__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>When Stage = &quot;C - Evaluation&quot; OR &apos;B - Decision Due&apos; OR &apos;A - Pending Sale&apos; OR &apos;Win&apos; is selected the Revenue amount must be populated AND &gt; 0 (Default: True)</inlineHelpText>
+        <label>RevenueAmount_Rule</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Opportunity Validation Rule Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

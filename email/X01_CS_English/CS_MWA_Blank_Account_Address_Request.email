@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+This email is to confirm that we have received a request to update your Account Name and Address. We are unable to leave the Account Name and Address field empty. The change you have requested conflicts with our database standards. Account Name and Account Address are required fields. These standards are in place to aid in search capabilities so we can better serve you. For that reason, your account will continue to reflect the information as previously shown.   
+
+We were able to update all other changes you requested. Any changes to your data will be visible in your MathWorks Account. 
+
+If you have any more questions, feel free to contact us at service@mathworks.com.    
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

@@ -1,0 +1,20 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c} ,
+
+Your company is currently a member of The MathWorks Connections Program, with your product 
+{!Partner_Agreement__c.Partner_Agreement_Name__c}.
+It has been brought to our attention that {!Partner_Agreement__c.Account__c} has <merged, split, been acquired, changed their corporate name>.   
+
+Could you please confirm the status of your product listed on The MathWorks Web site at:
+http://www.mathworks.com/products/connections/product_main.shtml?prod_id=12345
+
+How has the change affected your product? Will it continue to be supported?
+
+
+If this is a merger or acquisition of your company please send me a link to the press release. Since membership in The MathWorks Connections program is not transferable, the new company that owns the Connections Program-approved product must resign the Terms and Conditions of the program and any other agreements the previous company may have with the Connections Program.
+
+I have attached a hard copy of the Connections Program Terms and Conditions.  If we do not receive a signed agreement, your product page will be removed and your Connections Program membership will be inactivated along with all benefits related to the program including any restricted use licenses.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+(Attach: CNXProgramTerms&Conditions.pdf

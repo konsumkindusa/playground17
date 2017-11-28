@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>All OS</label>
+                <name>All_OS</name>
+            </dataCategory>
+            <label>All Platforms</label>
+            <name>All_Platforms</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Windows Any</label>
+                <name>Windows_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 10 S</label>
+                <name>Windows_10_S_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 10</label>
+                <name>Windows_10_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 8.1</label>
+                <name>Windows_8_1_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 8</label>
+                <name>Windows_8_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows RT</label>
+                <name>Windows_RT_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 7 SP1</label>
+                <name>Windows_7_SP1_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 7</label>
+                <name>Windows_7_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2008 Server</label>
+                <name>Windows_2008_Server_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Vista SP2</label>
+                <name>Windows_Vista_SP2_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Vista SP1</label>
+                <name>Windows_Vista_SP1_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Vista</label>
+                <name>Windows_Vista_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2012 R2</label>
+                <name>Windows_Server_2012_R2_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2012</label>
+                <name>Windows_Server_2012_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2003 R2 SP2</label>
+                <name>Windows_Server_2003_R2_SP2_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2003 Server</label>
+                <name>Windows_2003_Server_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP SP3</label>
+                <name>Windows_XP_SP3_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP SP2</label>
+                <name>Windows_XP_SP2_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP SP1</label>
+                <name>Windows_XP_SP1_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP</label>
+                <name>Windows_XP_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2000</label>
+                <name>Windows_2000_x32</name>
+            </dataCategory>
+            <label>Windows x32</label>
+            <name>Windows_x32</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Windows Any</label>
+                <name>Windows_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 10 S</label>
+                <name>Windows_10_S_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>WIndows 10</label>
+                <name>WIndows_10_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 8.1</label>
+                <name>Windows_8_1_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 8</label>
+                <name>Windows_8_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 7 SP1</label>
+                <name>Windows_7_SP1_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 7</label>
+                <name>Windows_7_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2016</label>
+                <name>Windows_Server_2016_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2012 R2</label>
+                <name>Windows_Server_2012_R2_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2012</label>
+                <name>Windows_Server_2012_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2008 Server R2 SP1</label>
+                <name>Windows_2008_Server_R2_SP1_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2008 Server R2</label>
+                <name>Windows_2008_Server_R2_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2008 Server</label>
+                <name>Windows_2008_Server_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Vista SP2</label>
+                <name>Windows_Vista_SP2_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Vista SP1</label>
+                <name>Windows_Vista_SP1_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Vista</label>
+                <name>Windows_Vista_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows Server 2003 R2 SP2</label>
+                <name>Windows_Server_2003_R2_SP2_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows 2003 Server</label>
+                <name>Windows_2003_Server_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP SP3</label>
+                <name>Windows_XP_SP3_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP SP2</label>
+                <name>Windows_XP_SP2_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP SP1</label>
+                <name>Windows_XP_SP1_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Windows XP</label>
+                <name>Windows_XP_x64</name>
+            </dataCategory>
+            <label>Windows x64</label>
+            <name>Windows_x64</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Mac Any</label>
+                <name>Mac_Any</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.13x (High Sierra)</label>
+                <name>macOS_10_13x_High_Sierra</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.12x (Sierra)</label>
+                <name>macOS_10_12x_Sierra</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.11x (El Capitan)</label>
+                <name>Mac_OS_10_11x_El_Capitan</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.10x (Yosemite)</label>
+                <name>Mac_OS_10_10x_Yosemite</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.9x (Mavericks)</label>
+                <name>Mac_OS_10_9x_Mavericks</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.8x (Mountain Lion)</label>
+                <name>Mac_OS_10_8x_Mountain_Lion</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.7x (Lion)</label>
+                <name>Mac_OS_10_7x_Lion</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.6x (Snow Leopard)</label>
+                <name>Mac_OS_10_6x_Snow_Leopard</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.5x (Leopard)</label>
+                <name>Mac_OS_10_5x_Leopard</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.4x (Tiger)</label>
+                <name>Mac_OS_10_4x_Tiger</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.3x (Panther)</label>
+                <name>Mac_OS_10_3x_Panther</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.2x (Jaguar)</label>
+                <name>Mac_OS_10_2x_Jaguar</name>
+            </dataCategory>
+            <dataCategory>
+                <label>macOS 10.1x (Puma)</label>
+                <name>Mac_OS_10_1x_Puma</name>
+            </dataCategory>
+            <label>Mac</label>
+            <name>Mac</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Linux Any</label>
+                <name>Linux_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Centos Any</label>
+                <name>Centos_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian Any</label>
+                <name>Debian_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora Core Any</label>
+                <name>Fedora_Core_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Mandriva Any</label>
+                <name>Mandriva_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat Any</label>
+                <name>Redhat_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Suse Any</label>
+                <name>Suse_Any_x32</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu Any</label>
+                <name>Ubuntu_Any_x32</name>
+            </dataCategory>
+            <label>Linux x32</label>
+            <name>Linux_x32</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Linux Any</label>
+                <name>Linux_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Centos Any</label>
+                <name>Centos_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Centos 7.x</label>
+                <name>Centos_7_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Centos 6.x</label>
+                <name>Centos_6_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Centos 5.x</label>
+                <name>Centos_5_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian Any</label>
+                <name>Debian_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian 9.x</label>
+                <name>Debian_9_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian 8.x</label>
+                <name>Debian_8_x</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian 7.x</label>
+                <name>Debian_7_x</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian 6.x</label>
+                <name>Debian_6_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Debian 5.x</label>
+                <name>Debian_5_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora Core Any</label>
+                <name>Fedora_Core_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora 26</label>
+                <name>Fedora_26</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora 24</label>
+                <name>Fedora_24</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora Core 17</label>
+                <name>Fedora_Core_17_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora Core 16</label>
+                <name>Fedora_Core_16_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora Core 15</label>
+                <name>Fedora_Core_15_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fedora Core 14</label>
+                <name>Fedora_Core_14_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Mandriva Any</label>
+                <name>Mandriva_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat Any</label>
+                <name>Redhat_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat EL Any</label>
+                <name>Redhat_EL_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat EL7.X</label>
+                <name>Redhat_EL7_X_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat EL6.X</label>
+                <name>Redhat_EL6_X_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat EL5.X</label>
+                <name>Redhat_EL5_X_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Redhat EL4.X</label>
+                <name>Redhat_EL4_X_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Suse Any</label>
+                <name>Suse_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Suse 11.x</label>
+                <name>Suse_11_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Suse 10.x</label>
+                <name>Suse_10_x_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Suse 12.x</label>
+                <name>Suse_12_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu Any</label>
+                <name>Ubuntu_Any_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 17.04</label>
+                <name>Ubuntu_17_04</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 16.10</label>
+                <name>Ubuntu_16_10</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 16.04</label>
+                <name>Ubuntu_16_04</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 15.10</label>
+                <name>Ubuntu_15_10</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 15.04</label>
+                <name>Ubuntu_15_04</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 14.10</label>
+                <name>Ubuntu_14_10_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 14.04</label>
+                <name>Ubuntu_14_04_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 13.10</label>
+                <name>Ubuntu_13_10_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 13.04</label>
+                <name>Ubuntu_13_04_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 12.10</label>
+                <name>Ubuntu_12_10_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 12.04</label>
+                <name>Ubuntu_12_04_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 11.10</label>
+                <name>Ubuntu_11_10_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 11.04</label>
+                <name>Ubuntu_11_04_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 10.10</label>
+                <name>Ubuntu_10_10_x64</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Ubuntu 10.04</label>
+                <name>Ubuntu_10_04_x64</name>
+            </dataCategory>
+            <label>Linux x64</label>
+            <name>Linux_x64</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Solaris Any</label>
+                <name>Solaris_Any</name>
+            </dataCategory>
+            <label>Solaris</label>
+            <name>Solaris</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Unknown</label>
+                <name>Unknown_os</name>
+            </dataCategory>
+            <label>Unknown</label>
+            <name>Unknown</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Other</label>
+                <name>Other_os</name>
+            </dataCategory>
+            <label>Other</label>
+            <name>Other</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Platform &amp; OS</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

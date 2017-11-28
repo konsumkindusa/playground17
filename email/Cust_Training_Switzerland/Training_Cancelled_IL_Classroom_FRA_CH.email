@@ -1,0 +1,15 @@
+Par ce message, nous vous confirmons l'annulation de votre participation à la formation suivante :
+
+FORMATION: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c}
+LIEU:{!Class__c.City__c}, {!Class__c.Country__c} 
+
+Politique d'annulation
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+Si vous souhaitez de plus amples renseignements, vous pouvez nous contacter au {!Class__c.Sponsor_Office_Phone__c}  ou par email à l'adresse {!Class__c.Sponsor_Office_Email__c}.
+
+Sincères salutations,
+Le service formation
+
+{!Class__c.Sponsor_Office_Signature__c} 

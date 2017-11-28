@@ -1,0 +1,21 @@
+Dear {!Contact.Name},
+
+This email is to confirm your cancellation for the following Course(s):
+
+COURSE NAME:{!Enrollment__c.Class__c}    
+DATES: {!Enrollment__c.Display_Start_Date__c} to{!Enrollment__c.Display_End_Date__c}
+LOCATION: {!Class__c.City__c},{!Class__c.Country__c} 
+
+In order to receive a full refund for the canceled course, please contact the Training Department with your payment information.  A link to our public training schedule is below.  Please take a moment to review the schedule.  If another training course interests you and you would like to enroll please call {!Class__c.Sponsor_Office_Phone__c}  or simply reply to this email with the course name and desired location.  
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+
+Classroom and online instructor-led course tuition is fully refundable if we receive written notification (via mail or email) of cancellation on or before 7 business days prior to the course.
+
+If you cancel less than 7 business days prior to the course, we will refund 75% of the course tuition fee. If you fail to show up to the course without providing prior written notice, you will be charged the full tuition. You may send a substitute in your place to avoid a fee
+
+If a training course cannot take place as scheduled due to circumstances beyond MathWorks reasonable control, you will receive a full refund for course fees that you have already paid. 
+
+Thank you, 
+{!Class__c.Sponsor_Office_Signature__c} 

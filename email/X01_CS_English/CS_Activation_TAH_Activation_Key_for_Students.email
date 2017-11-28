@@ -1,0 +1,25 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Only Administrators who are associated to a License can provide you with the Activation Key. Please contact the Administrator of the License you're trying to become associated to for this information. Once you have the Activation Key, if you have problems during Activation please contact us for further assistance. 
+
+For Administrators associated to the TAH:  
+You can obtain the Activation Key through your MathWorks Account.  To retrieve your Activation Key, follow the steps below:    
+1. Log into the License Center here:  www.mathworks.com/licensecenter  
+2. Select the desired license  
+3. Select the "Activation and Installation" tab  
+4. Click on the "Advanced Options" button    
+The Activation Key will be displayed in the pop-up window.    
+
+To obtain the up to date File Installation Key select the Release you require and click the "Generate File Installation Key" button.  The File Installation Key will now be displayed in the pop-up window.    
+
+Click on this link to learn more about activation (Log in required):
+www.mathworks.com/support/activation/index.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,20 @@
+In Salesforce: {!MW_Project__c.Project_Link__c} 
+
+Account Name: {!MW_Project__c.Contact_Account__c} 
+
+Customer Contact: {!MW_Project__c.Customer_Contact__c} 
+
+Owner: {!MW_Project__c.OwnerFullName}
+
+Requester: {!MW_Project__c.Requester__c}
+
+Date opened: {!MW_Project__c.CreatedDate}
+
+Date closed: {!MW_Project__c.LastModifiedDate}
+
+Application & Details: {!MW_Project__c.Application_of_Interest__c}
+
+Total Hours: {!MW_Project__c.Total_Project_Time__c}
+
+Business Rationale:
+{!MW_Project__c.Business_Rationale__c}

@@ -1,0 +1,8 @@
+<apex:page standardController="Case" extensions="CaseCloneOverrideController" showHeader="false" sidebar="false">
+    <apex:form >
+    <apex:actionFunction name="SaveCloneCaseRedirectToEdit" action="{!SaveCloneRedirectToEdit}"/>
+    </apex:form>
+    <script>
+        SaveCloneCaseRedirectToEdit();
+    </script>
+</apex:page>

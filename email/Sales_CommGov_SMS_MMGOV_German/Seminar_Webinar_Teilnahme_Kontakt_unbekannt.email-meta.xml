@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Seminar/ Webinar Teilnahme (Kontakt unbekannt)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Seminar/ Webinar Teilnahme (Kontakt unbekannt)</name>
+    <style>none</style>
+    <subject>Trainingsbroschüre</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

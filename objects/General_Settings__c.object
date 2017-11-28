@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>General custom setting of the org</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ACE_Url__c</fullName>
+        <externalId>false</externalId>
+        <label>ACE Url</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Assignment_Log_Report__c</fullName>
+        <description>Link to BO Report that pulls the selected account assignment log from CDS for the past 20 days</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CDS Account Assignment Log last 20 days</inlineHelpText>
+        <label>Account Assignment Log Report</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AnswersPreviewBaseUrl__c</fullName>
+        <externalId>false</externalId>
+        <label>AnswersPreviewBaseUrl</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>BatchSizeForForwardingCasesToDistributor__c</fullName>
+        <externalId>false</externalId>
+        <label>BatchSizeForForwardingCasesToDistributor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BatchSizeForOpportunityAssignmentManager__c</fullName>
+        <externalId>false</externalId>
+        <label>BatchSizeForOpportunityAssignmentManager</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Batch_Schedule_Time_Territory2Trigge__c</fullName>
+        <externalId>false</externalId>
+        <label>Batch_Schedule_Time_Territory2Trigge</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Batch_Size_For_Territory2Trigger__c</fullName>
+        <description>Batch size for synching account fields related to territory2 when territory2 fields get update.</description>
+        <externalId>false</externalId>
+        <label>Batch_Size_For_Territory2Trigger</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bypass_Assignment_Of_Account_To_Territor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This will be used to bypass calling method &apos;assignAccountsToTerritory&apos;  of TerritoryAssignmentManager from AccountTriggerHandler</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bypass Assignment of Account to territory</inlineHelpText>
+        <label>Bypass Assignment Of Account To Territor</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CDSBaseUrl__c</fullName>
+        <externalId>false</externalId>
+        <label>CDSBaseUrl</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>CDS_IsChanged_Interval__c</fullName>
+        <description>Example: 0.000347222 days = 30 seconds</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of seconds (expressed as a fraction of a day) to allow as a difference between the isAddressChanged and isAccountChanged and the LastModifiedDate and still return true for the flags.</inlineHelpText>
+        <label>CDS IsChanged Interval</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseDeflectionOwnerQueueName__c</fullName>
+        <externalId>false</externalId>
+        <label>CaseDeflectionOwnerQueueName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseDeleteOverride_Excluded_Profile_1__c</fullName>
+        <externalId>false</externalId>
+        <label>CaseDeleteOverride Excluded Profile 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseDeleteOverride_Excluded_Profile_2__c</fullName>
+        <externalId>false</externalId>
+        <label>CaseDeleteOverride Excluded Profile 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Domain__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Opportunity_Owner__c</fullName>
+        <description>Default  opportunity owner will be  used in custom lead conversion page for setting default owner for converted opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should be the User&apos;s Alias (to account for differences in querying by name in different locales)</inlineHelpText>
+        <label>Default Opportunity Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EmailRoutingRule_Current_ResponseTo__c</fullName>
+        <externalId>false</externalId>
+        <label>EmailRoutingRule Current ResponseTo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Emailaddress_Territory2Dml__c</fullName>
+        <description>Email address for sending mail for territory2dml class</description>
+        <externalId>false</externalId>
+        <label>Emailaddress _Territory2Dml</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Escalate_To_Dev_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Escalate To Dev Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ForwardCToDistributorSchedulableInterval__c</fullName>
+        <externalId>false</externalId>
+        <label>ForwardCToDistributorSchedulableInterval</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gecko_Escalation_URL_View__c</fullName>
+        <externalId>false</externalId>
+        <label>Gecko Escalation URL View</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Gecko_Escalation_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Gecko Escalation URL Create</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>HideCheckBoxForDoNotCreateActivity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hide Opportunity Owner Search Box from Lead Conversion Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hide Opportunity Owner Search Box from Lead Conversion Page</inlineHelpText>
+        <label>HideCheckBoxForDoNotCreateActivity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HideCheckBoxForSendEmailNotification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hide check box for &quot;Send Email Notification&quot; from Lead Conversion Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hide check box for &quot;Send Email Notification&quot; from Lead Conversion Page</inlineHelpText>
+        <label>HideCheckBoxForSendEmailNotification</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HideOpportunityOwnerSearchBox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hide &quot;Opportunity Owner&quot; search box from Lead Conversion Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hide &quot;Opportunity Owner&quot; search box from Lead Conversion Page</inlineHelpText>
+        <label>HideOpportunityOwnerSearchBox</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ORC_Url__c</fullName>
+        <description>URL to open ORC Application from the Contact Page</description>
+        <externalId>false</externalId>
+        <label>ORC Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>OnSupportURL__c</fullName>
+        <description>End point URL to call OnSupport REST API service</description>
+        <externalId>false</externalId>
+        <label>OnSupportURL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Open_Preference_Center__c</fullName>
+        <externalId>false</externalId>
+        <label>Open Preference Center</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Close_Date_From_Case__c</fullName>
+        <description>Opportunity Close Date Which is used for populated Opportunity close Date From Button available on Case</description>
+        <externalId>false</externalId>
+        <label>Opportunity Close Date From Case</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Close Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RTToIncludeAddingProjTeamMemberOnInsert__c</fullName>
+        <description>Record type names for Including adding owner to project Team member on Project Insert (Project Trigger Handler-OnAfterInsert)</description>
+        <externalId>false</externalId>
+        <label>RTToIncludeAddingProjTeamMemberOnInsert</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RegEx_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>RegEx_Latin</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RegEx_To_Check_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>RegEx_To_Check_ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Research_Team_Owner__c</fullName>
+        <description>this will be used in role based opportunity assignment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should be the User&apos;s Alias (to account for differences in querying by name in different locales)</inlineHelpText>
+        <label>Research Team Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuggestedContentDisplaySummary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SuggestedContentDisplaySummary</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SuggestedContentLimit__c</fullName>
+        <description>Specifies the limit number of suggested content search</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the limit number of suggested content search</inlineHelpText>
+        <label>SuggestedContentLimit</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuggestedContentRedirectUrl__c</fullName>
+        <externalId>false</externalId>
+        <label>SuggestedContentRedirectUrl</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuggestedContentSummaryLength__c</fullName>
+        <externalId>false</externalId>
+        <label>SuggestedContentSummaryLength</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SuggestedContentUrlPostfix__c</fullName>
+        <externalId>false</externalId>
+        <label>SuggestedContentUrlPostfix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TransferActivitiesIntegrationUserName__c</fullName>
+        <externalId>false</externalId>
+        <label>TransferActivitiesIntegrationUserName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>General Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

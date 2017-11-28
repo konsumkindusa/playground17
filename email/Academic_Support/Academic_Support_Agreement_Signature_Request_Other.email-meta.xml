@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to MW Direct Office contact requesting signature on an agreement for AS</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support – Agreement Signature Request – Other</name>
+    <style>none</style>
+    <subject>Signature Requested by DATE - {!Academic_Support_Project__c.Account__c}- ({!Academic_Support_Project__c.Name})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

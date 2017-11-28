@@ -1,0 +1,34 @@
+{!Case.Account} 
+{!Case.Contact}様
+
+大変お世話になっております。
+MathWorks Japanカスタマーサービスの{!User.Email_Template_Signature__c}と申します。
+この度はお問い合わせ頂き、誠にありがとうございます。
+
+ご依頼頂きましたマスターライセンス番号△△△のAdministratorについて、
+●●様へ変更が完了いたしましたので、お知らせ致します。
+
+エンドユーザ変更作業は新管理者様に行っていただく作業となります。
+変更される場合はアクティベーションを停止した後、エンドユーザ変更を行って下さい。
+
+作業方法は下記URLをご参照下さい。
+アクティベーション停止方法
+http://www.mathworks.com/matlabcentral/answers/100695
+ライセンスエンドユーザ変更方法
+http://www.mathworks.com/matlabcentral/answers/94366-
+
+尚、ご登録内容 及び ライセンス内容 等は、下記「MathWorks アカウント」より  
+ご確認頂けます。
+https://www.mathworks.com/mwaccount/
+
+本件についてその他ご不明な点や追加のご質問がございましたら、
+下記のReference IDを削除せずにご返信にてお問合せ下さい。
+新たなご質問の場合は、下記リンクよりお問い合わせ下さい。
+http://jp.mathworks.com/support/contact_us/
+
+どうぞよろしくお願い致します。
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+{!User.Disclosure__c} 
+━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+Case ID: {!Case.CaseNumber}

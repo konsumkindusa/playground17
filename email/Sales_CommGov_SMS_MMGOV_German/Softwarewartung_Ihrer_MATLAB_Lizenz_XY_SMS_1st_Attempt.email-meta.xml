@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Softwarewartung Ihrer MATLAB Lizenz XY (**SMS 1st Attempt)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Softwarewartung Ihrer MATLAB Lizenz XY (**SMS 1st Attempt)</name>
+    <style>none</style>
+    <subject>MathWorks - Softwarewartung Ihrer MATLAB Lizenz XY</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

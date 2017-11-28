@@ -1,0 +1,17 @@
+Dear {!Contact.FirstName},
+ 
+This is in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'.  
+ 
+The service request that we received contains no information. We believe this request was created in error. If this was not an error, please reply to this message with detailed information about what we may help you with. 
+
+Alternatively, you may create a new service request online: 
+ 
+https://www.mathworks.com/support/servicerequests/index.html 
+ 
+ 
+Sincerely,  
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}
+
+Please preserve the Reference ID in any further correspondence on this query. This will allow our systems to automatically assign your reply to the appropriate Case.

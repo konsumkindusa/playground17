@@ -1,0 +1,60 @@
+<apex:page sidebar="false" showHeader="true" docType="html-4.01-strict">
+<div id="tabstrip" style="display:none;"> <ul> 
+<li class="k-state-active">Classes</li>
+<li>Courses</li>
+<li>Training Locations</li>
+<li>Enterprise Training Agreements</li>
+<li>Enrollments</li>
+</ul>
+<!-- Classes -->
+<div style="overflow:hidden;"> 
+<CRMC_PP:Grid ObjectName="Class__c" DelayLoad="false"  ViewID="" 
+ EnableNewButton="false"  EnableNewInline="false"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+ <CRMC_PP:DrillUp /> 
+ </div>
+
+<!-- Courses -->
+<div style="overflow:hidden;"> 
+<CRMC_PP:Grid ObjectName="Course__c" DelayLoad="true"  ViewID="" 
+ EnableNewButton="false"  EnableNewInline="false"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+ <CRMC_PP:DrillUp /> 
+ </div>
+
+<!-- Training Locations -->
+<div style="overflow:hidden;"> 
+<CRMC_PP:Grid ObjectName="Training_Location__c" DelayLoad="true"  ViewID="" 
+ EnableNewButton="false"  EnableNewInline="false"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+ <CRMC_PP:DrillUp /> 
+ </div>
+
+<!-- Enterprise Training Agreements -->
+<div style="overflow:hidden;"> 
+<CRMC_PP:Grid ObjectName="Enterprise_Training_Agreement__c" DelayLoad="true"  ViewID="" 
+ EnableNewButton="false"  EnableNewInline="false"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+ <CRMC_PP:DrillUp /> 
+ </div>
+
+<!-- Enrollments -->
+<div style="overflow:hidden;"> 
+<CRMC_PP:Grid ObjectName="Enrollment__c" DelayLoad="true"  ViewID="" 
+ EnableNewButton="false"  EnableNewInline="false"  EnableEdit="true"  EnableActions="true"  EnableFieldChooser="true" 
+ EnableStickyViews="true"  EnableToolbar="true"  EnableViews="true"  EnableFormatting="true"  EnableReadingPane="true" />
+ <CRMC_PP:DrillUp /> 
+ </div>
+
+</div>
+<script>
+$(document).ready(function() {
+    $("#tabstrip").kendoTabStrip({
+      activate: function(e){
+        setTimeout(function(){          $(window).resize();        });
+      }
+    });
+    $("#tabstrip").css("display", "block");
+});
+ </script>
+</apex:page>

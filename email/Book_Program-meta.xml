@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Book Program - English</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinatesInternal>CS_Natick_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Rep_Report_CS_Natick_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MathWorks_Marketing</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

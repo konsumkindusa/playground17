@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>US PE Rep Report Mark McBroom</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>US PE Rep Report Mark McBroom</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>US_PE_Manager_Mark_McBroom</parentRole>
+</Role>

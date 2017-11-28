@@ -1,0 +1,22 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. In order for you to deactivate your machine, you must provide a deactivation string as your validation status is overdue.  Validation is an automatic, periodic check to ensure the authenticity of License Files in use.  
+
+To deactivate using MATLAB:    Launch MATLAB   
+1.    Help Menu -> Licensing -> Deactivate Current License  
+2.    Click the "Deactivate Now" button  
+3.    Copy the Deactivation String and bring to License Center or provide it to Customer Service.    
+
+This can also be avoided by validating the license, and then deactivating.  The end user can manually force a validation.  To access this feature:    
+1.   Open MATLAB  
+2.   Select Help > Licensing  
+3.   Select Update Current License     
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

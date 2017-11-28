@@ -1,0 +1,45 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+The review team has accepted your request to join the MathWorks Connections Program with your application for {!Partner_Agreement__c.Partner_Agreement_Name__c}.
+
+However, there are still steps you need to complete before your membership as a Pre-Product Partner can be finalized. Please note, if these requirements are not met in the next 30 days, your application to the MathWorks Connections Program will expire. If you need more time, please reply and provide us with a specific date when you expect to meet these requirements.
+
+Below is a summary of steps to be completed. Details for each requirement are provided below.
+
+·         Sign and mail the Connections Program Terms & Conditions
+·         Purchase and/or renew development license
+
+===========
+
+TERMS AND CONDITIONS:
+
+You must agree to and sign a copy of the MathWorks Connections Program Terms & Conditions located at https://www.mathworks.com/content/dam/mathworks/mathworks-dot-com/products/connections/join/CNXTerms_Conditions.pdf. We must receive the signed hard copy document before membership is confirmed in the program.  Please mail a signed copy of the Terms and Conditions to:
+
+MathWorks, Inc.
+Attn: Dana Wright
+3 Apple Hill Drive
+Natick, MA 01760 USA
+
+===========
+
+DEVELOPMENT LICENSE:
+[CHOOSE ONE BELOW AND DELETE THIS MESSAGE]
+
+Connections Program partners must own and maintain at least one commercial license of MathWorks products on which your products or services depend current under software Maintenance Service. CHOOSE ONE
+
+It is our understanding that you’re working through the details for acquiring a license with [SPONSOR]. If you have questions regarding this process, please contact [SPONSOR]. 
+
+According to our records your license of MathWorks tools is currently out of maintenance. To request a quote to renew the maintenance on your license, please contact your sales representative, [NAME] at [PHONE] or [EMAIL].
+
+According to our records you do not own a license of MathWorks tools. You are eligible to receive a 25% Connections Program Developer Discount on the purchase of two licenses to support your Connections Program approved product. Attached to this email is the Developer Discount Guidelines that explains the eligibility requirements of this discount. To request a quote, please reply to this email and indicate which products, license type (individual, group, concurrent, etc.) and platform you need quoted. Our price list is available online: https://www.mathworks.com/store?s_cid=store_top_nav&s_tid=gn_store.
+
+If you do already own a license, please email the license number to connections@mathworks.com.
+
+[ATTACH DEVELOPER DISCOUNT GUIDELINES PDF, DOMESTIC OR INTERNATIONAL]
+
+We are looking forward to working with you to complete the application review process. Please feel free to contact us if you have any questions.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

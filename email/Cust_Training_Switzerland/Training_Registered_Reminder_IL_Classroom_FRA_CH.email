@@ -1,0 +1,23 @@
+Ce message vous est envoyé pour vous rappeller votre inscription à la formation suivante et nous comptons donc sur votre présence pour suivre cette session de formation :
+
+FORMATION: {!Enrollment__c.Class__c} 
+DATES:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LIEU:  {!Class__c.City__c},{!Class__c.Country__c} 
+HORAIRE:  9 h 00 - 17 h 00
+
+Vous trouverez un plan d'accès, pour vous rendre dans notre centre de formation, à l'adresse suivante :
+
+http://www.mathworks.fr/services/training/policies/directions.html
+
+Conditions d'annulation et de report
+
+Une formation peut être annulée ou reportée, sans aucun frais de report ou d'annulation, à condition de nous faire parvenir une confirmation écrite au minimum 20 jours ouvrables avant le début de la formation. 
+
+Pour toute annulation nous parvenant entre 20 et 6 jours ouvrables avant le début de la formation, des frais d'annulation de 50% seront alors appliqués, ce conformément aux conditions d'annulation et de report stipulées dans nos conventions de formation. Sans confirmation d'annulation écrite de votre part, le montant total de la formation vous sera alors facturé. Pour éviter tout frais d'annulation ou de report, vous pouvez vous faire remplacer par un collègue.  
+
+Si une formation ne peut avoir lieu comme prévu en raison de circonstances indenpendantes de The MathWorks SAS , la seule et unique obligation de The MathWorks SAS consistera à rembourser le montant perçu par The MathWorks SAS.
+
+Sincères salutations,
+Le service formation
+
+{!Class__c.Sponsor_Office_Signature__c} 

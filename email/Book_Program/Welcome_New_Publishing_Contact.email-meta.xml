@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use this template to welcome a new editing contact to the Book Program. Gives them a link to apply to the publisher directory and more information on the MathWorks Book Program.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Welcome New Publishing Contact</name>
+    <style>none</style>
+    <subject>Welcome to The MathWorks Book Program</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

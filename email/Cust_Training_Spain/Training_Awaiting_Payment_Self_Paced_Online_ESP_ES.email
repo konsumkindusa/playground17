@@ -1,0 +1,20 @@
+Buenos días {!Contact.Name}, 
+
+Gracias por contactar al departamento de formación de MathWorks. 
+
+Su registro en el curso {!Enrollment__c.Class__c} a su ritmo se completará al recibir el pago del mismo. 
+
+Para asegurar su plaza, el pago debe recibirse antes del comienzo de la clase. 
+
+Puede visitar la siguiente página para informarse sobre las instrucciones de pago: 
+
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor 
+
+Puede pagar con tarjeta de crédito, orden de compra o cheque. Si lo hace con tarjeta de crédito puede realizar el pago online. Si lo hace mediante orden de compra o cheque, incluya el nombre del asistente(s), el nombre del curso(s), la localización y las fechas.
+
+Recibirá un correo electrónico de confirmación junto con los detalles del curso una vez se haya procesado el pago. Si hubiera algún problema, se lo notificaremos inmediatamente.  
+
+Atentamente, 
+Departamento de Formación
+
+{!Class__c.Sponsor_Office_Signature__c}

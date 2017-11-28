@@ -1,0 +1,80 @@
+Dear {!Case.Contact},
+
+Thank you for your interest in The MathWorks Connections Program. We want to provide you with some key resources as you plan your product development. The MathWorks provides well documented, open APIs for third parties to interface to its products. This e-mail provides an overview of the APIs that are available and where to find more information.
+
+For most of the reference URLs listed below, you will need to login to your MathWorks Account in order to view our online documentation. MathWorks Accounts are free of charge and easy to setup, even if you are not a licensed user of MathWorks products. To setup an account, visit our homepage at http://www.mathworks.com/ and click on the "Create Account" link.
+
+Primary APIs
+------------
+MATLAB and Simulink are The MathWorks two platform products. For the majority of partners, integrating their products with MATLAB and/or Simulink means developing to these open APIs which are outlined below.
+
+MATLAB Interfaces: MATLAB provides interfaces to external routines written in other programming languages, data that needs to be shared with external routines, clients or servers communicating via Component Object Model (COM), and peripheral devices that communicate directly with MATLAB. These interfaces are described in detail in the MATLAB External Interfaces documentation.
+    http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/
+
+  
+Simulink Interfaces: If you are developing an interface to Simulink, such as a co-simulation link, the Simulink S-function (system-function) documentation provides information on how you can create a custom block in Simulink and implement it in one of many languages, including MATLAB, C, C++, Ada, or Fortran. The S-function provides flexible options for connecting Simulink to stand-alone third-party products.
+    http://www.mathworks.com/access/helpdesk/help/toolbox/simulink/sfg/
+
+
+Application Specific APIs
+-------------------------
+There are additional APIs for integrating external products with some of The MathWorks application specific products.  These product APIs are described below along with a reference for additional information.
+
+1. Requirements Management Interface (RMI) 
+   Purpose: Associating requirements documents with objects in Simulink models
+
+The Requirements Management Interface (RMI) is part of the Simulink Verification and Validation product. It allows you to associate requirements with Simulink models and Stateflow diagrams. The interface supports ActiveX controls, for establishing two-way selection-based links. There are built-in links to selected document types (word, excel, pdf, html) as well as an interface to the Telelogic DOORS product.  The documentation also describes "Linking to Custom Types of Requirements Documents".
+            http://www.mathworks.com/access/helpdesk/help/toolbox/slvnv/
+
+
+2. Source Control Interface
+   Purpose: Providing access to a source control system from within MATLAB & Simulink 
+
+The Source Control Interface is part of the MATLAB environment. It provides access to a users source control system (also known as version control, revision control, configuration management, and file management system) from with MATLAB and Simulink. The interfaces are slightly different for Windows and UNIX platforms. This allows users to use menu items in MATLAB, Simulink, or Stateflow, or run functions in the MATLAB Command Window to interface with the source control system. The documentation provides an overview of supported third-party products, and tells how to create interfaces to custom sorce control systems.
+            http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_env/f7-5297.html
+
+
+3. Data Acquisition Toolbox - Adapter Kit
+   Purpose: Interfacing data acquisition boards for bringing live data into MATLAB
+
+The Data Acquisition Toolbox provides a framework for bringing live, measured data into MATLAB using PC-compatible, plug-in data acquisition hardware. The Data Acquisition Toolbox Adaptor Kit provides APIs for vendors to interface their custom data acquisition hardware to MATLAB. Several vendors have already integrated their data acquisition boards via this adapter kit. 
+            http://www.mathworks.com/access/helpdesk/help/pdf_doc/daq/adaptorkit.pdf
+
+
+4. Instrument Control Toolbox - MATLAB Instrument Drivers
+Purpose: Communicating with instruments directly from MATLAB
+
+Instrument Control Toolbox lets you communicate with instruments, such as oscilloscopes, function generators, and analytical instruments, directly from MATLAB. The toolbox enables you to communicate with instruments via instrument drivers, such as IVI and VXIplug&play, and commonly used communication protocols, such as GPIB, VISA, TCP/IP, and UDP. With the Instrument Control Toolbox, you can generate data in MATLAB to send out to an instrument, or read data into MATLAB for analysis and visualization. Instrument Control Toolbox includes tools to facilitate the creation of MATLAB Instrument Drivers, which priovide a layer of interpretation between the user and the instrument, allowing users to program the instrument with familiar and consistent device object properties and functions.
+
+http://www.mathworks.com/access/helpdesk/help/toolbox/instrument/
+
+Several vendors have already created MATLAB Instrument Drivers for their hardware and placed them on MATLAB Central:
+
+<http://www.mathworks.com/matlabcentral/fileexchange/loadCategory.do?objectType=category&objectId=123&objectName=Instrument%20Drivers>
+
+5. Real-Time Workshop - Developing Custom Targets
+   Purpose: Building code generation targets for custom environments
+
+Real-Time Workshop uses target template files to translate Simulink models into ANSI/ISO C code. The target templates specify the environment on which your generated code will run. If you are developing your own custom targets for Real-time Workshop, you will need to modify the overall code generation process. The Real-Time Workshop architecture is described in its User's Guide.
+            http://www.mathworks.com/access/helpdesk/help/toolbox/rtw/ug/f26190.html
+
+The code generation process is controlled by the Target Language Compiler (TLC) program. Customizing the code generation process involves creating custom template files (template makefile, system and block target files), which tell the TLC program how to generate code based on your Simulink models. This is outlined in the Target Language Compiler documentation.
+            http://www.mathworks.com/access/helpdesk/help/toolbox/rtw/tlc/bp6j4co.html
+
+
+6. Real-Time Workshop Embedded Coder - Developing Embedded Targets
+   Purpose: Developing code generation targets for custom embedded applications
+
+Real-Time Workshop Embedded Coder extends Real-Time Workshop for use in embedded systems. It is based on an Embedded Real-Time (ERT) target which is highly customizable. If you are developing a custom target for use on embedded systems, you will need to modifiy the ERT target files. The general Real-Time Workshop Embedded Coder documentation describes the overall code generation process.
+            http://www.mathworks.com/access/helpdesk/help/toolbox/ecoder/
+
+
+In additon, the Developing Embedded Targets document describes how to customize the ERT target for your production requirements.
+            http://www.mathworks.com/access/helpdesk/help/toolbox/ecoder/det/bp6daud.html
+
+Feel free to contact us if you have any questions.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

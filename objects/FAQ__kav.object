@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <articleTypeChannelDisplay>
+        <articleTypeTemplates>
+            <channel>App</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Prm</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Csp</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Pkb</channel>
+            <template>Toc</template>
+        </articleTypeTemplates>
+    </articleTypeChannelDisplay>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Default Article Type for MathWorks</description>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>Answer__c</fullName>
+        <externalId>false</externalId>
+        <label>Answer</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Answers_Preview_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(($Setup.General_Settings__c.AnswersPreviewBaseUrl__c)&amp; CASESAFEID(Id), &quot;Answers Preview&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Answers Preview URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Answers_URL_Link__c</fullName>
+        <description>Clickable Answers URL</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(Answers_URL__c, Answers_URL__c)</formula>
+        <label>Answers URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Answers_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Answers_URL_with_Postfix__c</fullName>
+        <externalId>false</externalId>
+        <formula>Answers_URL__c &amp; $Setup.General_Settings__c.SuggestedContentUrlPostfix__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Answers URL with Postfix</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Article_To_Be_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Article To Be Sent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Article_Was_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Article Was Sent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Attachment_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Attachment #2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>File</type>
+    </fields>
+    <fields>
+        <fullName>Attachment_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Attachment #3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>File</type>
+    </fields>
+    <fields>
+        <fullName>Attachment_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Attachment #4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>File</type>
+    </fields>
+    <fields>
+        <fullName>Attachment_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Attachment #5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>File</type>
+    </fields>
+    <fields>
+        <fullName>Attachments__c</fullName>
+        <externalId>false</externalId>
+        <label>Attachment #1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>File</type>
+    </fields>
+    <fields>
+        <fullName>Created_Migrated__c</fullName>
+        <externalId>false</externalId>
+        <label>Created (Migrated)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Template_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Template ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GeckId__c</fullName>
+        <description>This stores the Id of a Geck that is associated to this article.  Used for integration with Gecko.</description>
+        <externalId>false</externalId>
+        <label>GeckId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geck_Additional_Question__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Question</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Geck_Internal_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Info</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Geck_Pattern_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Pattern Geck ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Internal_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Notes</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>KCS_Audit_Status__c</fullName>
+        <description>KCS field</description>
+        <externalId>false</externalId>
+        <label>KCS Audit Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Audited</fullName>
+                    <default>true</default>
+                    <label>Not Audited</label>
+                </value>
+                <value>
+                    <fullName>Audited</fullName>
+                    <default>false</default>
+                    <label>Audited</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>KCS_Comments__c</fullName>
+        <description>KCS field</description>
+        <externalId>false</externalId>
+        <label>KCS Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_Migrated__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Represents the created date of the article from Siebel.  Note that this is in GMT</inlineHelpText>
+        <label>Created Date (Migrated)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MW_Last_Modified_By_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>MW Last Modified By ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MW_Last_Modified_By__c</fullName>
+        <externalId>false</externalId>
+        <label>MW Last Modified By</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Major_Release__c</fullName>
+        <description>Used to determine if this article draft should be published as a new version (indicating a major release or that significant changes have been made) or to overwrite the current version.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose Yes if you have made significant changes to this article and want a new version published to represent that change. No will result in a update to the existing version (EG, you made a spelling change as opposed to re-writing the article)</inlineHelpText>
+        <label>Major Release</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Overall_Assessment__c</fullName>
+        <description>KCS field</description>
+        <externalId>false</externalId>
+        <label>Overall Assessment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Need Rework</fullName>
+                    <default>false</default>
+                    <label>Need Rework</label>
+                </value>
+                <value>
+                    <fullName>Sufficient for Use</fullName>
+                    <default>false</default>
+                    <label>Sufficient for Use</label>
+                </value>
+                <value>
+                    <fullName>Exceptional</fullName>
+                    <default>false</default>
+                    <label>Exceptional</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Problem_Found__c</fullName>
+        <description>KCS field</description>
+        <externalId>false</externalId>
+        <label>Problem Found</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Incorrect/Irrelevant</fullName>
+                    <default>false</default>
+                    <label>Incorrect/Irrelevant</label>
+                </value>
+                <value>
+                    <fullName>Incomplete</fullName>
+                    <default>false</default>
+                    <label>Incomplete</label>
+                </value>
+                <value>
+                    <fullName>Unclear</fullName>
+                    <default>false</default>
+                    <label>Unclear</label>
+                </value>
+                <value>
+                    <fullName>Title Problem</fullName>
+                    <default>false</default>
+                    <label>Title Problem</label>
+                </value>
+                <value>
+                    <fullName>Link/Tag Problem</fullName>
+                    <default>false</default>
+                    <label>Link/Tag Problem</label>
+                </value>
+                <value>
+                    <fullName>Metadata Issues</fullName>
+                    <default>false</default>
+                    <label>Metadata Issues</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Package__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Support Package</label>
+        <referenceTo>PRODUCT_SUPPRT__c</referenceTo>
+        <relationshipLabel>FAQ</relationshipLabel>
+        <relationshipName>FAQ</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Support_Package_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Package__r.CODE__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Support Package Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Support_Package_Release__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Package__r.GR_Release_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Support Package Release</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Support_Package_SW_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Package__r.SUPPRT_SFTWR_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product_Support Package SW ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Support_Package_SW_Version__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Package__r.SUPPRT_SFTWR_VER_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product_Support Package SW Version</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Support_Package_Version__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Package__r.VER_FULL__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Support Package Version</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publish_External__c</fullName>
+        <externalId>false</externalId>
+        <label>Publish External</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Question_RT__c</fullName>
+        <externalId>false</externalId>
+        <label>Question</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Question__c</fullName>
+        <externalId>false</externalId>
+        <label>Question (not use)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Related_Articles__c</fullName>
+        <externalId>false</externalId>
+        <label>Related Articles</label>
+        <length>300</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Siebel_Solution_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Siebel Solution ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site__c</fullName>
+        <externalId>false</externalId>
+        <label>Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                    <label>Documentation</label>
+                </value>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                    <label>Software</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tags__c</fullName>
+        <externalId>false</externalId>
+        <label>Tags</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URL_to_Linked_Cases__c</fullName>
+        <description>FG list all cases associated with the article</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/DisplayLincedCases?ArticleNumber=&quot;+ArticleNumber,ArticleNumber)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>List Cases associated to the article</inlineHelpText>
+        <label>Click Article  Id to View Linked Cases</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Validation_Status__c</fullName>
+        <description>Field created to replicate Validation Status value. The original Validation Status field is not accessible by BODI job .</description>
+        <externalId>false</externalId>
+        <formula>TEXT(ValidationStatus)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Validation_Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Version_Number__c</fullName>
+        <description>Field created to replicate Version Number value. The original Version Number field is not accessible by BODI job .</description>
+        <externalId>false</externalId>
+        <formula>VersionNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Version Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>FAQ</label>
+    <pluralLabel>FAQ</pluralLabel>
+    <validationRules>
+        <fullName>Geck_ID_is_less_than_8_numbers</fullName>
+        <active>true</active>
+        <description>Geck ID can not be greater that 8 numbers in length</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(GeckId__c)),OR( 
+LEN (GeckId__c) &gt;8, 
+NOT(ISNUMBER( GeckId__c )) 
+))</errorConditionFormula>
+        <errorMessage>Geck ID must be a numeric value of 8 numbers or less. Only one geck ID is allowed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Major_Release_Required</fullName>
+        <active>true</active>
+        <description>the Major release field is always required on save</description>
+        <errorConditionFormula>isblank(text( Major_Release__c ))</errorConditionFormula>
+        <errorMessage>Major Release is required to save</errorMessage>
+    </validationRules>
+</CustomObject>

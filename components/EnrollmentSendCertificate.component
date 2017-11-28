@@ -1,0 +1,10 @@
+<apex:component access="global">
+<apex:attribute access="global"   name="enrollmentId" type="String" required="true" description="EnrollmentId"/>
+<p>Dear {!enrollmentId},</p>
+
+<p>Thank you for your recent participation in our training event.  Attached is a certificate confirming your participation.<br/>
+Please consider us for your future training needs. To learn more about the courses we offer visit our website at www.mathworks.com/training.<br/>
+If we may be of further assistance, please contact us at training@mathworks.com.</p><br/>
+
+<p>Thank you,</p><br/>
+</apex:component>

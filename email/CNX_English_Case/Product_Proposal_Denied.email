@@ -1,0 +1,15 @@
+Dear {!Case.Contact},
+
+Thank you for your interest in working with The MathWorks to develop a product based on your [ADD PRODUCT NAME] technology.  After detailed review of your proposal, we have concluded that this technology does not align with our current product development needs.
+
+The MATLAB technical computing environment provides a rich set of tools that can be used to create technology-focused applications and toolboxes.  The primary focus for The MathWorks product family is to provide the best possible set of core products. As a result, we cannot take on many of the large number of valuable new product proposals and suggestions that we receive. 
+
+We regret that we cannot work together developing your technology into a MathWorks product.  At the same time, product requirements change rapidly given today's competitive environment; therefore we would like to reserve the option to contact you in the future about possible collaboration, should our product needs change.
+
+Again, thank you for your interest.  Do not hesitate to contact me if you have any questions.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+
+{!Case.CaseNumber}

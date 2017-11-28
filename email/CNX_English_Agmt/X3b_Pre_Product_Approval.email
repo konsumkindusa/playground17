@@ -1,0 +1,23 @@
+Dear {!Contact.Salutation} {!Partner_Agreement__c.Primary_Contact__c}, 
+  
+APPROVAL AS A PRE-PRODUCT PARTNER
+ Congratulations, your company has been approved as a Pre-Product Partner in The MathWorks Connections Program with your product, {!Partner_Agreement__c.Partner_Agreement_Name__c}.. You will remain registered in the program as a Pre-Product Partner until your Connections Program-approved product is commercially available and we have completed the required reference checks. Once the product is completed and you can provide two customer reference names, we can proceed with the application to become a full Product Partner.
+
+ BENEFITS FOR PRE-PRODUCT PARTNERS
+ As a Pre-Product Partner, you are eligible for some of the benefits available to Connections Program Partners, including:
+ * Discount on software purchased for development purposes
+ * Discount on MathWorks product training
+ * Periodic electronic mailings with product or program information to keep you up-to-date 
+  
+YOUR RESPONSIBILITIES TO REMAIN IN THE PROGRAM
+ In order to remain an active Pre-Product Partner in the Connections Program, we ask that you keep in touch with us throughout your product development cycle. You will receive an e-mail request for a status update every six months. If you do not reply, you may be removed from the program and lose access to all Connections Program benefits.
+
+EDITORIAL STANDARDS  
+As you move towards completing your integration and marketing your product, please be aware that MathWorks has editorial standards for referring to our trademarks. Please see attached guidelines. Please note, MathWorks logos are not available for use until the integration is complete and you become a full Product Partner.
+
+If you have any questions, or want to request a partner discount, please send an e-mail to connections@mathworks.com. 
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

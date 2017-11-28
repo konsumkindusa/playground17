@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Support</fullName>
+        <default>false</default>
+        <label>Advanced Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Engineering</fullName>
+        <default>false</default>
+        <label>Application Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Applications</fullName>
+        <default>false</default>
+        <label>Business Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Model Support</fullName>
+        <default>false</default>
+        <label>Business Model Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Sales</fullName>
+        <default>false</default>
+        <label>Commercial Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting Services</fullName>
+        <default>false</default>
+        <label>Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Control Design Automation</fullName>
+        <default>false</default>
+        <label>Control Design Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support</fullName>
+        <default>false</default>
+        <label>Customer Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Development University</fullName>
+        <default>false</default>
+        <label>Development University</label>
+    </customValue>
+    <customValue>
+        <fullName>Documentation</fullName>
+        <default>false</default>
+        <label>Documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Education Marketing</fullName>
+        <default>false</default>
+        <label>Education Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Education Sales</fullName>
+        <default>false</default>
+        <label>Education Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering Development</fullName>
+        <default>false</default>
+        <label>Engineering Development</label>
+    </customValue>
+    <customValue>
+        <fullName>eProducts and Services</fullName>
+        <default>false</default>
+        <label>eProducts and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance and Administration</fullName>
+        <default>false</default>
+        <label>Finance and Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Human Resources</fullName>
+        <default>false</default>
+        <label>Human Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry Marketing</fullName>
+        <default>false</default>
+        <label>Industry Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Infrastructure Arch and Tools</fullName>
+        <default>false</default>
+        <label>Infrastructure Arch and Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Language of Tech. Computing</fullName>
+        <default>false</default>
+        <label>Language of Tech. Computing</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal Services</fullName>
+        <default>false</default>
+        <label>Legal Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Communications</fullName>
+        <default>false</default>
+        <label>Marketing Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Services</fullName>
+        <default>false</default>
+        <label>Marketing Services</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>true</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Office Services</fullName>
+        <default>false</default>
+        <label>Office Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Pilot Engineering</fullName>
+        <default>false</default>
+        <label>Pilot Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Marketing</fullName>
+        <default>false</default>
+        <label>Product Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Program Management</fullName>
+        <default>false</default>
+        <label>Program Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Engineering</fullName>
+        <default>false</default>
+        <label>Quality Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Operations</fullName>
+        <default>false</default>
+        <label>Sales Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Support</fullName>
+        <default>false</default>
+        <label>Sales Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Signal Processing and Comms</fullName>
+        <default>false</default>
+        <label>Signal Processing and Comms</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems Services</fullName>
+        <default>false</default>
+        <label>Systems Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Support</fullName>
+        <default>false</default>
+        <label>Technical Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Training Services</fullName>
+        <default>false</default>
+        <label>Training Services</label>
+    </customValue>
+    <customValue>
+        <fullName>UNKNOWN</fullName>
+        <default>false</default>
+        <label>UNKNOWN</label>
+    </customValue>
+    <customValue>
+        <fullName>User Experience</fullName>
+        <default>false</default>
+        <label>User Experience</label>
+    </customValue>
+    <description>The department SFDC Standard Users created for</description>
+    <masterLabel>MW Department</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

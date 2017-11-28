@@ -1,0 +1,21 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName},
+
+We recently received a copy of the book, {!Book_Project__c.BookTitle__c} and we would like to promote it on the MathWorks web site at: www.mathworks.com/support/books/  
+ 
+To draft a webpage for this title, we need more information. Please provide promotional information at the link below to to help us develop a webpage for this title: https://www.mathworks.com/support/books/promote.html.
+ 
+Feel free to contact me with any questions.
+
+
+Regards,
+
+{!User.FirstName} {!User.LastName}
+=============================  
+MathWorks Book Program  
+3 Apple Hill Drive, Natick, MA 01760  
+bookprogram@mathworks.com  
+mathworks.com/support/members  
+=============================
+
+Book Project: {!Book_Project__c.Name}

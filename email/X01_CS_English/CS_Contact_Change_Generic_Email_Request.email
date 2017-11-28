@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  In processing the changes you have requested in your MathWorks Account, I noticed the email submitted is XXXGENERIC@XXXX.   
+ 
+Please note that MathWorks Account Profiles are not to be used as "general" or "shared" accounts.  These profiles are for individual use only. It is best for each person who might use this account set up their own profile and become associated with the license.      
+
+Using a general email account puts your assets at risk because any person who has access to that email account has the potential to login to the MathWorks Account to which it is associated.  Once in the MathWorks Account, that person can add users to the licenses, including people who are not affiliated with your Organization.  They can also redistribute products across licenses, deactivate activation's, remove users from the license, and submit Service Requests to have other changes made while posing as you.  If there are others who need access to the licenses to assist with the administration, we can add them as an additional Administrator using their specific contact details and individual email addresses.  Please reply with your direct business phone number and email address and I will update your MathWorks Account.    
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

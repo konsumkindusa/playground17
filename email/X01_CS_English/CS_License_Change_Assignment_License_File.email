@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. We have received your request to transfer ownership of your MathWorks license(s).  In order to process your request, we need to receive a copy of your License File for license numbers(s) XXXXX.   The License File shows the products and versions that are installed for each license and is part of the license manager files.  The license file is very easy to find and can be emailed back to us at your convenience. Once we receive the file we will send you instructions on how to correctly complete the transfer.
+
+The license file (license.dat) is located in the following location on the license server:
+
+$MATLABROOT/etc ($MATLAB\flexlm for releases prior to R2010b on Windows)
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

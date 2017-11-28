@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>KR Sales Rep Report Mira Do</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>KR Sales Rep Report Mira Do</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>KR_Sales_Manager_Mira_Do</parentRole>
+</Role>

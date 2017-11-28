@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send once the product is denied but is OK for Connections Program.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Product Proposal - Denied, suggest CNX</name>
+    <style>none</style>
+    <subject>Status on your MathWorks Product Proposal</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+Thank you for your interest in the MathWorks Connections Program. In reviewing your application, we need more information than you provided in response to the question about how your product interfaces with MathWorks products. The specifics are below.
+
+Application Question: 
+================
+
+Describe how your product works with MATLAB/Simulink and other MathWorks software. 
+
+(If your product is a MATLAB Toolbox or Simulink Blockset state this explicitly. If your product interfaces to MathWorks products in other ways, you must provide specifics of the APIs used for exchanging data (e.g. COM, S-Functions, IVI instrument drivers, data acquisition adapter kit, etc.):
+
+Your response:  
+============
+
+<insert answer>
+
+In order to complete the review, we need more information on the specific APIs used in your products interface to MathWorks products. Please provide more details on the technical integration that exists or is planned.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

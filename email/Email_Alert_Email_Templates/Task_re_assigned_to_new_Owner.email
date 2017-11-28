@@ -1,0 +1,8 @@
+A new Task was assigned to an inactive User where you were listed as their manager, you are now the owner of this task.  Review the Task associated to the Case below.
+
+Case Number - {!Case.CaseNumber}
+Case Closed - {!Case.ClosedDate}
+Case Area - {!Case.Area__c}
+Case Sub Area - {!Case.Sub_Area__c}
+Case Owner - {!Case.Owner_Name__c}
+Case link - https://mathworks.my.salesforce.com/console#/{!Case.Id}

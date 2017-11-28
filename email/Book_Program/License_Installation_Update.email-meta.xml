@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send this email if an author&apos;s license is active and current on SMS however they are still receiving a warning message that their license will expire.  This email provides steps on how to update their installation.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>License Installation Update</name>
+    <style>none</style>
+    <subject>MathWorks Software License Installation Update</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

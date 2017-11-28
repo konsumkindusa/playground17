@@ -1,0 +1,19 @@
+{!Contact.LastName}{!Contact.FirstName}您好， 
+
+我正在处理您编号为#{!Case.CaseNumber}的关于“{!Case.Subject}”的技术支持案例。 
+
+我们的记录显示，您所提供的MATLAB许可证号（License Number）{!Case.License__c}已经过了维护期。 
+
+以电话和电子邮件的方式联系技术支持工程师，是订购软件维护服务（SMS）的权益之一。若需联系技术支持，请续订这个License的软件维护服务。 
+
+我们的销售团队会给您发送续订SMS的报价邮件。如有任何问题，请联系销售团队：
+http://www.mathworks.com/company/worldwide/ 
+ 
+
+谨启， 
+{!User.Email_Template_Signature__c} 
+
+技术支持自助中心: http://www.mathworks.cn/support/ 
+文件交换及新闻组: http://www.mathworks.cn/matlabcentral/
+
+{!User.Disclosure__c}

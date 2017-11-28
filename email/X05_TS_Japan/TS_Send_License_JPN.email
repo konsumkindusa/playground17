@@ -1,0 +1,32 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName} 様 
+
+いつもお世話になっております。MathWorks の{!User.Email_Template_Signature__c}と申します。 お問い合わせ頂きました "{!Case.Subject}" の件でご連絡いたします。 
+
+確認しましたところ、ライセンス番号が記載されておりませんでした。お手数をお掛けしますが、ご連絡くださいますようお願い致します。 
+ライセンス番号は、MATLAB コマンドプロンプトから 
+
+MATLAB R2012b 以降のバージョンの場合：
+>> ver -support
+
+MATLAB R2012a 以前のバージョンの場合：
+>> ver 
+
+とタイプインすることで表示されます。ご利用中の MATLAB バージョンと、OS の情報も併せて出力されますので、表示された全ての内容をお送りください。
+
+なお、テクニカルサポートサービスは、ソフトウェア保守サービスにて提供されるサービスであり、テクニカルサポートを受けるためには、保守が有効である必要があります。 
+
+また、以下の URL から、お問い合わせの Case を閲覧・更新することができます。
+http://jp.mathworks.com/support/servicerequests/index.html
+
+このサービスリクエストに対して追加の情報をお知らせいただく場合には、下記に記載されている REFERENCE ID を削除せずに、本メールにご返信ください。これにより、弊社システム内で自動的に以前のお問い合わせ内容と紐付けされます。 
+
+以上、宜しくお願い致します。 
+MathWorks テクニカルサポート窓口 
+{!User.Email_Template_Signature__c} 
+TEL: 03-6367-6707 
+
+テクニカルサポートメインページ: 
+http://jp.mathworks.com/support/
+ファイルエクスチェンジサービスとニュースグループ: 
+http://www.mathworks.com/matlabcentral/

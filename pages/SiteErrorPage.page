@@ -1,0 +1,38 @@
+<!--
+ * @author      Pranav Raulkar
+ * @date        7th June 2016
+ * @description Custom Site Error Page
+ * @revision    1.0 - Initial version
+-->
+<apex:page showHeader="false" sidebar="false">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <title><apex:outputText value="{!$Label.CP_ENROLL_Title_Enrollee_Details}" escape="false" /></title>
+
+        <!-- Load Fonts -->
+        <script src="https://fonts.mathworks.com/xvy5baa.js"></script>
+        <script>
+            try { 
+                Typekit.load();
+            } catch(e) {
+                console.log('Error Loading Font: ' + e.message);
+            }
+        </script>
+    </head>
+
+    <apex:composition template="TAHSiteComposition">
+        <apex:define name="body">
+            <apex:outputPanel id="container" layout="block">
+                <apex:outputPanel layout="block" styleClass="slds-text-heading--medium slds-m-bottom--medium">
+                    <apex:outputText STYleClass="emphasize" value="{!$Label.CP_ENROLL_SignupMatlabAcademyHeader}" escape="false">
+                        <apex:param value="{!$Label.CP_ENROLL_StaffAndStudents}" />
+                    </apex:outputText>
+                </apex:outputPanel>
+                <apex:outputPanel layout="block" styleClass="formElement" style="border:#fae8e6">
+                    <apex:outputText style="color:#a31b20" value="{!$Label.CP_ENROLL_SiteErrorPageContent}" escape="false" />
+                </apex:outputPanel>
+            </apex:outputPanel>
+        </apex:define>
+    </apex:composition>
+    </html>
+</apex:page>

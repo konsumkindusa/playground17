@@ -1,0 +1,21 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. We are in the process of updating our records and have noticed that your contact information is out of date.  Please reply to this email with the most current contact information.    
+Your name:  
+Account Name:  
+Account Address:  
+City, 
+State, 
+Zip:  
+Telephone Number: 
+Email Address:    
+If applicable,  MATLAB License number:    
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Book_Project__c.Book_Promotional_Survey_Last_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Book_Project__c.Unresponsive_to_Book_Promotion_Survey__c</field>
+    </columns>
+    <columns>
+        <field>Book_Project__c.Promotional_Survey_Status__c</field>
+    </columns>
+    <columns>
+        <field>Book_Project__c.Send_Book_Promotion_Survey__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 or 2 or 3</booleanFilter>
+        <criteriaItems>
+            <column>Book_Project__c.Book_Promotional_Survey_Last_Sent__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Book_Project__c.Unresponsive_to_Book_Promotion_Survey__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Book_Project__c.Promotional_Survey_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Metrics: Book Promo Survey data</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Book_Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Book_Project__c.Book_Promotional_Survey_Last_Sent__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Book_Project__c.Book_Promotional_Survey_Last_Sent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,17 @@
+Buenos días {!Contact.Salutation}{!Contact.Name},
+
+Este correo electrónico es para confirmar su cancelación al siguiente curso:
+
+Nombre del curso:{!Enrollment__c.Class__c} 
+
+Atención: las cancelaciones realizadas durante el primer día después del registro, sólo recuperará el 50% de la matrícula. Si cancela después del primer día de registro, deberá abonar la matrícula completa.  
+
+Los reembolsos hechos a las tarjetas de crédito serán procesados en 1-2 días hábiles después de la cancelación.
+
+Si cree que reúne los requisitos para el reembolso, póngase en contacto con el departamento de formación de MathWorks.
+
+
+Atentamente,
+Departamento de Formación 
+
+{!Class__c.Sponsor_Office_Signature__c}

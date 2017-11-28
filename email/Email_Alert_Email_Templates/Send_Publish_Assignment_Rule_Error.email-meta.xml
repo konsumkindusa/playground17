@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send email alert to sfdcsupport@mathworks.com for Publish Assignment Rule Error</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Send Publish Assignment Rule Error</name>
+    <style>none</style>
+    <subject>Error Publish Territory Assignment Rules</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

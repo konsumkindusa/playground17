@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EC2 2 Take Back after customer has trialed - Do they want a New License Set Up</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EC2 1ba Takeback after trial ready for a License</name>
+    <style>none</style>
+    <subject>MathWorks Follow Up on your trial of  MATLAB Distributed Computing Server On Demand</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+Dear {!Contact.FirstName},
+
+My name is {!Contact.OwnerFullName} and I am your Educational Support Rep, working with your Account Manager at MathWorks, developer of MATLAB and Simulink.
+
+II am writing to inform you that your MATLAB license ****** lapsed off Software Maintenance Service on ***** and that your 90-day grace period ends on *****. 
+
+Visit our website to watch a brief video overview and learn more about the most current release which includes updates to over 84 tools.(http://www.mathworks.com/products/new_products/latest_features.html?s_cid=0912_sasu_edu) 
+
+Unfortunately, as a result of the expiration, you will no longer qualify for the following resources available to customers who have a current maintenance contract: 
+      *Telephone and e-mail access to MathWorks technical support engineers 
+    *Automatic shipment of new releases of your licensed products, including CDs, bug fixes, product enhancements, and new documentation when available 
+    *Access to the download section of the MathWorks Web site to obtain patches, point releases, and major releases 
+    *Access to trial downloads of any product in the product family 
+    *Access to prerelease and beta versions of new products and upgrades 
+
+If you would like to receive a quotation to reinstate your MATLAB license or if I can answer any questions on our Software Maintenance Service program, please do not hesitate to contact me directly. 
+
+If you would like this license marked as declined so as to not receive any further contact from us, please let me know and I will make that change for you. 
+
+Best regards,

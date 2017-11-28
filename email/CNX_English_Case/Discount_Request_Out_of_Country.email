@@ -1,0 +1,38 @@
+Dear [SALESREP]
+
+Thank you for confirming the product set for <PARTNER>. The following request is approved. 
+
+The discount code for this approval is {!Case.CaseNumber}. This discount code is for one-time use only, and cannot be reused for multiple discount requests/approvals.
+
+You should now quote the end user and pass through a 25% discount from your normal pricing. Once your customer places their order with you, and you are ready to place an order with MathWorks, proceed to the steps below.
+
+Placing your order with MathWorks:
+You will now use the approval code to place your order with MathWorks as follows:
+
+1.	Open the Commerce application
+2.	For new licenses, select 'Standard' and the appropriate configuration (individual, etc) 
+3.	Click List Products, select the appropriate products, click done 
+4.	Under the Master License Tab, click Select all Lines 
+5.	Select Discount and enter the discount amount in the window (25%) 
+6.	Select Program under the Discount reason field, click ok 
+7.	In the Cover Letter Body field, add the following text after the first sentence: 
+
+"This Quote contains the 25% Connections Program Developer Discount. To receive the discount on your order you must provide a signed copy of the attached Development Discount Guidelines with your payment information. Please reference the discount approval code [{!Case.CaseNumber}] on your purchase order."
+ 
+8.	Click the Save button 
+9.	Attach the developer discount guidelines to the quote and send to the partner. 
+10.	When the order is received, submit the order to RAC using the following Subject:         "Partner Order – Approval Code: {!Case.CaseNumber}
+
+* Please do not send orders to the Connections Program, as we do not process orders. 
+* Please send the signed developer discount guidelines with the order to RAC at   orders@mathworks.com. 
+* Please cc: connections@mathworks.com when submitting the order so we may follow up with the   partner 
+
+Please feel free to contact me if you have any questions. Thank you.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Case: {!Case.CaseNumber} 
+
+[ATTACH PDF] 
+{!Case.Email_Thread}

@@ -1,0 +1,52 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+Recently you applied to The MathWorks Connections Program with {!Partner_Agreement__c.Partner_Agreement_Name__c}.
+
+[NO REASON]
+We regret to inform you that your application has not been accepted for membership. However, this decision does not prevent you from going to market with this product/service.
+
+[INTEGRATION]
+We regret to inform you that your application has not been accepted for membership because your product integration with MathWorks products does not meet the minimum membership requirement. 
+
+Connections Program members are required to develop and share capabilities above and beyond capabilities delivered with MathWorks products. For example, products that only support a standard API such as ActiveX are not eligible, but products that provide customized GUIs that enable users to more easily interact with MathWorks products (even if the GUIs leverage a standard API such as ActiveX) are eligible. If you wish to develop a tighter integration between your product and those of The MathWorks, we would be happy to reevaluate your application. To learn more about how to do this, please visit the non-MAT-file sections of the External Interface Guide (http://www.mathworks.com/help/techdoc/learn_matlab/bq9b7fb.html)
+
+[OVERLAP]
+We regret to inform you that your application has not been accepted for membership due to overlap with existing MathWorks products.
+
+[MATLAB COMPILER]
+Based on your application, it seems that you are planning to distribute your product as a stand-alone product using our MATLAB Compiler and/or MATLAB Builder deployment products. Distributing in this way allows you to provide a stand-alone end product where users do not need purchase MATLAB. We understand that this is an attractive deployment model for many of our customers; however membership in the MathWorks Connections Program requires that your product is delivered in such a way that your end users are required to purchase MATLAB. For more information, please refer to our product partner eligibility details, here: http://www.mathworks.com/products/connections/join/prod_join.html
+
+If you later decide to deploy in such a way that your end-users require MATLAB, we would be happy to reevaluate your application.
+
+[LACK OF RESPONSE CHOICES]
+We regret to inform you that your application is being closed due to lack of response to program membership requirements. The specifics are below:
+
+[ADDITIONAL APPLICATION INFO]
+I regret to inform you that your company's application in The MathWorks Connections Program has been denied due to lack of response for additional information regarding your application.
+
+[TERMS AND CONDITIONS]
+Despite multiple attempts to reach you, we still have not received your signed hard copy of the MathWorks Connections Program Terms and Conditions which is a requirement for membership.
+
+[LICENSE]
+We have tried to contact you regarding your Connections Program development license which is one of the conditions of program membership. Each partner must own at least one commercial license of MathWorks products, and keep it current under our software maintenance service.  Despite multiple attempts to reach you, our records indicate
+
+[CHOOSE ONE]
+you still do not own a license.
+your license is still out of maintenance.
+
+[REFERENCE NAMES]
+We still have not received two reference contacts [name/email] from you whom we contact to ask a few brief questions about their opinion on your company's [PRODUCT/SERVICE] , technical expertise, and relationship with MathWorks products.
+
+[WEB EDITS] 
+We have tried to contact you regarding the Web page edits for {!Partner_Agreement__c.Partner_Agreement_Name__c}. Despite multiple attempts to reach you, we still have not received your comments on the draft Web page we provided.
+
+[DENIAL ENDING]
+Though we are denying this application, we encourage you to continue working with MathWorks products. In addition, we would be happy to consider other applications for potential inclusion in the MathWorks Connections Program.
+
+[NO-RESPONSE ENDING]
+At this time we are closing your application and will no longer be following up. If you wish to have your application reopened by meeting the requirements indicated above, please contact us at connections@mathworks.com> Please note, in order to reopen your application you must provide a definite date when you expect these requirements to be met.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

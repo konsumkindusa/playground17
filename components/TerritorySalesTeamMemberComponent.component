@@ -1,0 +1,33 @@
+<!--
+ @author :Abhay Verma - Cloud Sherpas/Mathworks, Last Modified: 
+ @Created date : 19-Feb-2016 , Last Modified: 
+ @Description : Show the territory Sales Team Member associated to the territory in the territory summary page
+-->
+
+
+<apex:component controller="TerritorySalesTeamMemberComponentCC" allowDML="true">
+    <script>
+      var j$ = jQuery.noConflict();
+    </script>
+    <apex:attribute name="territory2RecId" type="String" description="Store the Id of the Terriotry2 Object." assignTo="{!territoryRecId}"/>
+    <apex:attribute name="territoryShadowRecId" type="String" description="Store the territory Shadow object id." assignTo="{!territoryShadowId}"/>
+    <form>
+    <apex:pageBlock id="pageblock">
+        <apex:pageMessage severity="Info" summary="{!$Label.No_Sales_Team_Member_Found}" strength="3" rendered="{!NOT(TerritoryTeamMembers != null)}" />
+         <apex:outputPanel >   
+        <apex:pageBlockTable style="width:100%" id="pageBlockTable" value="{!TerritoryTeamMembers}" var="UserDetails" rendered="{!TerritoryTeamMembers != null}">
+              <apex:column headerValue="Action">            
+                <apex:commandLink action="{!edit}" value="Edit" style="text-decoration:underline">
+                    <apex:param name="territoryRuleCriteriaValueId" value="{!UserDetails.Id}" assignTo="{!teamUserAssociationId}"/>
+                </apex:commandLink>
+              </apex:column>
+              <apex:column style="width:20%" value="{!UserDetails.User.Name}" headerValue="{!UserDetails.User.Name}"/>
+              <apex:column style="width:20%" value="{!UserDetails.RoleInTerritory2}" id="column" headerValue="{!$Label.Team_Role_Label}"/>
+              <apex:repeat value="{!$ObjectType.User.FieldSets.TerritorySalesTeamMemberFieldSet}" var="fs">
+                    <apex:column style="width:20%" value="{!UserDetails.User[fs]}" id="column" headerValue="{!fs.Label}"/>
+              </apex:repeat>
+          </apex:pageBlockTable>
+        </apex:outputPanel>
+      </apex:pageBlock> 
+    </form>
+</apex:component>

@@ -1,0 +1,43 @@
+Dear {!Case.Contact},
+
+Could you answer a couple of questions for me to help me in understanding how these license's will be used  to gain the proper internal approvals?
+
+Questions:
+------------
+
+1.     Is there a fee for customers/prospects to attend?
+
+2.     Please provide an outline of the training curriculum.
+
+3.     What is the % of time will the training be based on MATLAB?  Will you provide training on the basics of MATLAB? 
+
+4.     How long is the course?
+
+5.  When will this course be held? (dates over the next 12 months)
+
+6.     What are the dates of the training/seminar over the next year? 
+
+7.     Do you expect this to be an ongoing training/seminar beyond this year?
+
+8.     Will you be willing to offer signup sheets to your participants who would like to receive information from MathWorks about future events, product information, etc?
+
+9.     Do you have permanent training facilities?  How many? Or do you rent out training space or use customer training facilities?
+
+[If you use third party training facilities, we require that you remove all software at the end of each training session.]
+
+10.  Which products are required? (MATLAB, Simulink, ...<full list>)
+
+11. Which release is needed? (R2010b, R2011b, R2011a, R2012a) ?
+
+12. Who will be responsible for installing & activating the software?
+      Name:
+      Company
+      E-mail:
+      User City/Country: 
+*Please note that trials are download only.
+
+Once I receive your response to the questions above, I can send your request out for approval.
+
+
+Best Regards,
+{!User.Email_Template_Signature__c}

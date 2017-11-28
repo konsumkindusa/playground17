@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+As of today, I have not received any response from you regarding {!Case.Subject}.   Since I have not yet heard back from you, I am not sure whether your issue is resolved or you still need assistance. 
+
+As a reminder, the additional information I previously requested was: 
+
+<INFO NEEDED>
+
+Until I hear back from you, your Case {!Case.CaseNumber} will be marked as closed.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>CRMC_PP__CRMC_Action_Grid_Defaults</fullName>
+        <description>Default columns for CRMC Action Grid</description>
+        <displayedFields>
+            <field>Username</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Title</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CRMC Action Grid Defaults</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>TerritorySalesTeamMemberFieldSet</fullName>
+        <description>TerritorySalesTeamMemberComponent</description>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TerritorySalesTeamMemberFieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Territory_Team</fullName>
+        <description>this field set will be used in visualforce page ViewTerritoryTeams</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Territory Team</label>
+    </fieldSets>
+    <fields>
+        <fullName>Area__c</fullName>
+        <description>Used to define the area that a user works in. If a user works in more then 1 area, their primary area should be defined by this value. This is used as part of a trigger on Case to default the area when creating a new case based on the user.</description>
+        <externalId>false</externalId>
+        <label>Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>APAC - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>APAC - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>APAC - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>APAC - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>APAC - Technical Evangelist</fullName>
+                    <default>false</default>
+                    <label>APAC - Technical Evangelist</label>
+                </value>
+                <value>
+                    <fullName>AU - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>AU - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>AU - Customer Support</fullName>
+                    <default>false</default>
+                    <label>AU - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>AU - Install</fullName>
+                    <default>false</default>
+                    <label>AU - Install</label>
+                </value>
+                <value>
+                    <fullName>AU - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>AU - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>AU - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>AU - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>AU - Sales</fullName>
+                    <default>false</default>
+                    <label>AU - Sales</label>
+                </value>
+                <value>
+                    <fullName>AU - Technical Support</fullName>
+                    <default>false</default>
+                    <label>AU - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>BNL - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>BNL - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>BNL - Customer Support</fullName>
+                    <default>false</default>
+                    <label>BNL - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>BNL - Install</fullName>
+                    <default>false</default>
+                    <label>BNL - Install</label>
+                </value>
+                <value>
+                    <fullName>BNL - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>BNL - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>BNL - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>BNL - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>BNL - Sales</fullName>
+                    <default>false</default>
+                    <label>BNL - Sales</label>
+                </value>
+                <value>
+                    <fullName>BNL - Technical Support</fullName>
+                    <default>false</default>
+                    <label>BNL - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Business Applications</fullName>
+                    <default>false</default>
+                    <label>Business Applications</label>
+                </value>
+                <value>
+                    <fullName>CH - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>CH - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>CH - Customer Support</fullName>
+                    <default>false</default>
+                    <label>CH - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CH - Install</fullName>
+                    <default>false</default>
+                    <label>CH - Install</label>
+                </value>
+                <value>
+                    <fullName>CH - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>CH - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>CH - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>CH - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>CH - Sales</fullName>
+                    <default>false</default>
+                    <label>CH - Sales</label>
+                </value>
+                <value>
+                    <fullName>CH - Technical Support</fullName>
+                    <default>false</default>
+                    <label>CH - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>CN - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>CN - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>CN - Customer Support</fullName>
+                    <default>false</default>
+                    <label>CN - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CN - Install</fullName>
+                    <default>false</default>
+                    <label>CN - Install</label>
+                </value>
+                <value>
+                    <fullName>CN - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>CN - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>CN - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>CN - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>CN - Sales</fullName>
+                    <default>false</default>
+                    <label>CN - Sales</label>
+                </value>
+                <value>
+                    <fullName>CN - Technical Support</fullName>
+                    <default>false</default>
+                    <label>CN - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>DE - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>DE - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>DE - Customer Support</fullName>
+                    <default>false</default>
+                    <label>DE - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>DE - Install</fullName>
+                    <default>false</default>
+                    <label>DE - Install</label>
+                </value>
+                <value>
+                    <fullName>DE - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>DE - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>DE - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>DE - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>DE - Sales</fullName>
+                    <default>false</default>
+                    <label>DE - Sales</label>
+                </value>
+                <value>
+                    <fullName>DE - Technical Support</fullName>
+                    <default>false</default>
+                    <label>DE - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>EMEA - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Install</fullName>
+                    <default>false</default>
+                    <label>EMEA - Install</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>EMEA - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Technical Evangelist</fullName>
+                    <default>false</default>
+                    <label>EMEA - Technical Evangelist</label>
+                </value>
+                <value>
+                    <fullName>ES - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>ES - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>ES - Customer Support</fullName>
+                    <default>false</default>
+                    <label>ES - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>ES - Install</fullName>
+                    <default>false</default>
+                    <label>ES - Install</label>
+                </value>
+                <value>
+                    <fullName>ES - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>ES - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>ES - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>ES - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>ES - Sales</fullName>
+                    <default>false</default>
+                    <label>ES - Sales</label>
+                </value>
+                <value>
+                    <fullName>ES - Technical Support</fullName>
+                    <default>false</default>
+                    <label>ES - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>FR - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>FR - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>FR - Customer Support</fullName>
+                    <default>false</default>
+                    <label>FR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>FR - Install</fullName>
+                    <default>false</default>
+                    <label>FR - Install</label>
+                </value>
+                <value>
+                    <fullName>FR - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>FR - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>FR - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>FR - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>FR - Sales</fullName>
+                    <default>false</default>
+                    <label>FR - Sales</label>
+                </value>
+                <value>
+                    <fullName>FR - Technical Support</fullName>
+                    <default>false</default>
+                    <label>FR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Grenoble - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Grenoble - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>IE - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>IE - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>IE - Pilit Engineering</fullName>
+                    <default>false</default>
+                    <label>IE - Pilit Engineering</label>
+                </value>
+                <value>
+                    <fullName>IE - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IE - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IE - Sales</fullName>
+                    <default>false</default>
+                    <label>IE - Sales</label>
+                </value>
+                <value>
+                    <fullName>IN - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>IN - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>IN - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>IN - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>IN - Customer Support</fullName>
+                    <default>false</default>
+                    <label>IN - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>IN - Install</fullName>
+                    <default>false</default>
+                    <label>IN - Install</label>
+                </value>
+                <value>
+                    <fullName>IN - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>IN - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>IN - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IN - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IN - Sales</fullName>
+                    <default>false</default>
+                    <label>IN - Sales</label>
+                </value>
+                <value>
+                    <fullName>IN - Technical Support</fullName>
+                    <default>false</default>
+                    <label>IN - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>IT - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>IT - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>IT - Customer Support</fullName>
+                    <default>false</default>
+                    <label>IT - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>IT - Install</fullName>
+                    <default>false</default>
+                    <label>IT - Install</label>
+                </value>
+                <value>
+                    <fullName>IT - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>IT - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>IT - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IT - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IT - Sales</fullName>
+                    <default>false</default>
+                    <label>IT - Sales</label>
+                </value>
+                <value>
+                    <fullName>IT - Technical Support</fullName>
+                    <default>false</default>
+                    <label>IT - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>JP - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>JP - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>JP - Connections</fullName>
+                    <default>false</default>
+                    <label>JP - Connections</label>
+                </value>
+                <value>
+                    <fullName>JP - Customer Support</fullName>
+                    <default>false</default>
+                    <label>JP - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Install</fullName>
+                    <default>false</default>
+                    <label>JP - Install</label>
+                </value>
+                <value>
+                    <fullName>JP - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>JP - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>JP - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>JP - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>JP - Sales</fullName>
+                    <default>false</default>
+                    <label>JP - Sales</label>
+                </value>
+                <value>
+                    <fullName>JP - Technical Support</fullName>
+                    <default>false</default>
+                    <label>JP - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>KR - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>KR - Customer Support</fullName>
+                    <default>false</default>
+                    <label>KR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Install</fullName>
+                    <default>false</default>
+                    <label>KR - Install</label>
+                </value>
+                <value>
+                    <fullName>KR - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>KR - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>KR - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>KR - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>KR - Sales</fullName>
+                    <default>false</default>
+                    <label>KR - Sales</label>
+                </value>
+                <value>
+                    <fullName>KR - Technical Support</fullName>
+                    <default>false</default>
+                    <label>KR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Connections</fullName>
+                    <default>false</default>
+                    <label>Natick - Connections</label>
+                </value>
+                <value>
+                    <fullName>Natick - Customer Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Database</fullName>
+                    <default>false</default>
+                    <label>Natick - Database</label>
+                </value>
+                <value>
+                    <fullName>Natick - Export Compliance</fullName>
+                    <default>false</default>
+                    <label>Natick - Export Compliance</label>
+                </value>
+                <value>
+                    <fullName>Natick - Freight Management</fullName>
+                    <default>false</default>
+                    <label>Natick - Freight Management</label>
+                </value>
+                <value>
+                    <fullName>Natick - Install</fullName>
+                    <default>false</default>
+                    <label>Natick - Install</label>
+                </value>
+                <value>
+                    <fullName>Natick - License Compliance</fullName>
+                    <default>false</default>
+                    <label>Natick - License Compliance</label>
+                </value>
+                <value>
+                    <fullName>Natick - Partner Exchange</fullName>
+                    <default>false</default>
+                    <label>Natick - Partner Exchange</label>
+                </value>
+                <value>
+                    <fullName>Natick - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>Natick - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>Natick - Sales</fullName>
+                    <default>false</default>
+                    <label>Natick - Sales</label>
+                </value>
+                <value>
+                    <fullName>Natick - Technical Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>NL - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>NL - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>Nordic - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Customer Support</fullName>
+                    <default>false</default>
+                    <label>Nordic - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Install</fullName>
+                    <default>false</default>
+                    <label>Nordic - Install</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>Nordic - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>Nordic - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Sales</fullName>
+                    <default>false</default>
+                    <label>Nordic - Sales</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Technical Support</fullName>
+                    <default>false</default>
+                    <label>Nordic - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Premier Support - Denso</fullName>
+                    <default>false</default>
+                    <label>Premier Support - Denso</label>
+                </value>
+                <value>
+                    <fullName>SE - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>SE - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>SE - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>SE - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>UK - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>UK - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>UK - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>UK - Customer Support</fullName>
+                    <default>false</default>
+                    <label>UK - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Install</fullName>
+                    <default>false</default>
+                    <label>UK - Install</label>
+                </value>
+                <value>
+                    <fullName>UK - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>UK - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>UK - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>UK - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>UK - Sales</fullName>
+                    <default>false</default>
+                    <label>UK - Sales</label>
+                </value>
+                <value>
+                    <fullName>UK - Technical Support</fullName>
+                    <default>false</default>
+                    <label>UK - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>US - Application Engineering</fullName>
+                    <default>false</default>
+                    <label>US - Application Engineering</label>
+                </value>
+                <value>
+                    <fullName>US - Pilot Engineering</fullName>
+                    <default>false</default>
+                    <label>US - Pilot Engineering</label>
+                </value>
+                <value>
+                    <fullName>US - Technical Evangelist</fullName>
+                    <default>false</default>
+                    <label>US - Technical Evangelist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <description>Customer Portal Field</description>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Direct_Report_Role__c</fullName>
+        <description>Fields will be populated on Manager&apos;s user records to have direct report to default role if automated process will not be able to detect it.</description>
+        <externalId>false</externalId>
+        <label>Default Direct Report Role</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disclosure__c</fullName>
+        <externalId>false</externalId>
+        <label>Disclosure</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Email_Template_Signature__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Template Signature</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Functional_Role__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes what role a user plays on a Sales Territory Team.  Used for Oppty assignment and to support collaboration among team members.</inlineHelpText>
+        <label>Functional Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inside Sales Rep</fullName>
+                    <default>false</default>
+                    <label>Inside Sales Rep</label>
+                </value>
+                <value>
+                    <fullName>Inside Sales Rep non primary</fullName>
+                    <default>false</default>
+                    <label>Inside Sales Rep non primary</label>
+                </value>
+                <value>
+                    <fullName>National Account Sales Specialist</fullName>
+                    <default>false</default>
+                    <label>National Account Sales Specialist</label>
+                </value>
+                <value>
+                    <fullName>Product Overlay Sales Rep</fullName>
+                    <default>false</default>
+                    <label>Product Overlay Sales Rep</label>
+                </value>
+                <value>
+                    <fullName>Sales Development Rep</fullName>
+                    <default>false</default>
+                    <label>Sales Development Rep</label>
+                </value>
+                <value>
+                    <fullName>Sales Maintenance Rep</fullName>
+                    <default>false</default>
+                    <label>Sales Maintenance Rep</label>
+                </value>
+                <value>
+                    <fullName>Sales Maintenance Rep non primary</fullName>
+                    <default>false</default>
+                    <label>Sales Maintenance Rep non primary</label>
+                </value>
+                <value>
+                    <fullName>Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales Rep</fullName>
+                    <default>false</default>
+                    <label>Sales Rep</label>
+                </value>
+                <value>
+                    <fullName>Sales Rep Primary</fullName>
+                    <default>false</default>
+                    <label>Sales Rep Primary</label>
+                </value>
+                <value>
+                    <fullName>Sales Specialist</fullName>
+                    <default>false</default>
+                    <label>Sales Specialist</label>
+                </value>
+                <value>
+                    <fullName>Sales Support Manager</fullName>
+                    <default>false</default>
+                    <label>Sales Support Manager</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Application Engineer</fullName>
+                    <default>false</default>
+                    <label>Application Engineer</label>
+                </value>
+                <value>
+                    <fullName>Pilot Engineer</fullName>
+                    <default>false</default>
+                    <label>Pilot Engineer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Industry_Vetted_Login__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Set Account Industry Vetted Login/Date only when industry updated by the authorized users</description>
+        <externalId>false</externalId>
+        <label>Industry Vetted Login</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Test_User__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field will be set on the user records created from the Test classes. Also will be used in the process builder to opt out  user records with checked flag.</description>
+        <externalId>false</externalId>
+        <label>Is Test User</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Knowledge_Role__c</fullName>
+        <description>This field is used to assign a knowledge publishing role to a user.  This is used as part of the approval process for publishing.  This role / attribute is defined by the business management on a per-user basis.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to assign a knowledge publishing role to a user.  This is used as part of the approval process for publishing.  This role / attribute is defined by the business management on a per-user basis.</inlineHelpText>
+        <label>Knowledge Publishing Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Candidate</fullName>
+                    <default>false</default>
+                    <label>Candidate</label>
+                </value>
+                <value>
+                    <fullName>Contributor</fullName>
+                    <default>false</default>
+                    <label>Contributor</label>
+                </value>
+                <value>
+                    <fullName>Publisher</fullName>
+                    <default>false</default>
+                    <label>Publisher</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LastDateInCurrentRole__c</fullName>
+        <description>The field will be populated based on the manager&apos;s request to keep person active during the transitioning period before person will be moved to a different role/area/profile.</description>
+        <externalId>false</externalId>
+        <label>LastDateInCurrentRole</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Date__c</fullName>
+        <description>The field will be populated based on the manager&apos;s request to keep person active during the transitioning period before person is inactivated in SF</description>
+        <externalId>false</externalId>
+        <label>Last Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Local_Department_Name__c</fullName>
+        <description>For CJK users</description>
+        <externalId>false</externalId>
+        <label>Local Department Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Full_Name__c</fullName>
+        <description>For CJK users only</description>
+        <externalId>false</externalId>
+        <label>Local Full Name</label>
+        <length>120</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Job_Title__c</fullName>
+        <description>For CJK users</description>
+        <externalId>false</externalId>
+        <label>Local Job Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MW_Department__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>New users created only for the departments listed in the picklist</inlineHelpText>
+        <label>MW Department</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MW_Department</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MW_Office__c</fullName>
+        <description>MW Office - HR Employee Office</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HR Employee Office</inlineHelpText>
+        <label>MW Office</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MW_Office</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>MathWorks_Employee_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>MathWorks Employee ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Service_RAC_user__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag should be checked for any users who will not actively work on cases(AE/PE, sales)
+This field will be used in Area validation rule to enforce area on Case creation for these users</description>
+        <externalId>false</externalId>
+        <label>Non Service/RAC user</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Person_Master_Id__c</fullName>
+        <description>Person Master Id, populated by Informatica job</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Person Master Id</inlineHelpText>
+        <label>Person Master Id</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_User_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Portal User Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce_User_ID__c</fullName>
+        <description>This field calculates the 18 characters long User Salesforce ID</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <label>Salesforce User ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_User_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Siebel User ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Customer Portal Field</description>
+        <externalId>false</externalId>
+        <label>Student</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>User_Currency__c</fullName>
+        <description>Copy of the OOB user default currency value. Field populated by the process builder when new record is created or user currency updated by the system admin or user from the personal setting</description>
+        <externalId>false</externalId>
+        <label>User Currency</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>is_Manager__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Populated by informatica job - HR Manager flag. When flag is set , the email notification has to be sent to the sfdc admin group to create new role,direct report role, dashboard for TS managers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HR Flag</inlineHelpText>
+        <label>is Manager</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_e2a__Email_Html_Body__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores html body of email to be accessed in SF templates.</description>
+        <externalId>false</externalId>
+        <label>Last Email Html Body</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ortoo_e2a__Email_Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Email Subject</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ortoo_e2a__Email_Text_Body__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores text body of email to be accessed in SF templates.</description>
+        <externalId>false</externalId>
+        <label>Last Email Text Body</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <listViews>
+        <fullName>AMB_Set_Email_Notifications_List_1</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>JZaalber</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MReal</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MHarfaou</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>FNakahat</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>THatcher</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>LLedenva</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MAsaduzz</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>TedWood</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>BLaguna</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>LSarasso</value>
+        </filters>
+        <label>AMB Set Email Notifications List 1</label>
+    </listViews>
+    <listViews>
+        <fullName>AMB_Set_Email_Notifications_List_2</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>ckrenc</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MaiSeki</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>RYamoto</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>JKato</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>AAoki</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>EKageyam</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>yishide</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>afermeli</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>lackley</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>KWatanab</value>
+        </filters>
+        <label>AMB Set Email Notifications List 2</label>
+    </listViews>
+    <listViews>
+        <fullName>AMB_Set_Email_Notifications_List_3</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>dplumb</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>GLandare</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>fnakahat</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>YAndrade</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MTrachte</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>niacono</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>ryamoto</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>mkobayas</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>iseifert</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>mbuller</value>
+        </filters>
+        <label>AMB Set Email Notifications List 3</label>
+    </listViews>
+    <listViews>
+        <fullName>AMB_Set_Email_Notifications_List_4</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>FrMartin</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>HoonSeo</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MAn@mathworks</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>ISeifert</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>DDingema</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>KApfelbe</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>NDabesta</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MYang</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>Michanel</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>SMikkola</value>
+        </filters>
+        <label>AMB Set Email Notifications List 4</label>
+    </listViews>
+    <listViews>
+        <fullName>AMB_Set_Email_Notifications_List_5</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>FBraeuel</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MPerono</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>CEgusqui</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>SConstan</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>FSarmien</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>GGoggi</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MWerndli</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>MKarrasc</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>IRose</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>startsWith</operation>
+            <value>EAlam</value>
+        </filters>
+        <label>AMB Set Email Notifications List 5</label>
+    </listViews>
+    <listViews>
+        <fullName>ActivePortalUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>b</value>
+        </filters>
+        <label>Active Portal Users</label>
+    </listViews>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Sales</value>
+        </filters>
+        <label>Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Active_Cloud_Sherpas_Staff</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.EMAIL</field>
+            <operation>contains</operation>
+            <value>@cloudsherpas.com</value>
+        </filters>
+        <label>Active Cloud Sherpas Staff</label>
+    </listViews>
+    <listViews>
+        <fullName>Active_MathWorks_Staff_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>S</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active MathWorks Staff Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Active_users_excluding_portal_users1</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>S</value>
+        </filters>
+        <label>Active users excluding portal users</label>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>System Administrator</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Ann_New_Hires_Active_Users</fullName>
+        <booleanFilter>1 AND 2 AND 3 and (4 or 5)</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>MW Sales Standard User</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>Rep</value>
+        </filters>
+        <label>* New Hire records last 30 days</label>
+        <sharedTo>
+            <role>Sales_Ops</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CJK_Employee_Record</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>JP,KR,CN</value>
+        </filters>
+        <filters>
+            <field>Local_Full_Name__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Area__c</field>
+            <operation>contains</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>* CJK Employee Record</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Sales_Ops</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Frozen_User_Accounts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>IS_FROZEN</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IS_FROZEN</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Frozen User Accounts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_Active_Portal_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>b</value>
+        </filters>
+        <label>Inactive Active Portal Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_MathWorks_Service_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>MW Customer Service Standard User</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Inactive MathWorks Service Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_MathWorks_Staff_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.USERNAME</field>
+            <operation>contains</operation>
+            <value>mathworks.com</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Inactive MathWorks Staff Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Search_for_an_Employee_Record</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>Area__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>equals</operation>
+            <value>Nate</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.LAST_NAME</field>
+            <operation>startsWith</operation>
+            <value>Bolton</value>
+        </filters>
+        <label>* Search for an Employee Record</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Sales_Ops</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Smoke_Test_Users</fullName>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.EMAIL</field>
+            <operation>contains</operation>
+            <value>sfdcmathworks+</value>
+        </filters>
+        <label>Smoke Test Users</label>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.DEPARTMENT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MANAGER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.COUNTRY_CODE</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USER_ROLE.NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USERS.DEPARTMENT</lookupFilterFields>
+        <lookupFilterFields>MANAGER</lookupFilterFields>
+        <lookupFilterFields>CORE.USERS.COUNTRY_CODE</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

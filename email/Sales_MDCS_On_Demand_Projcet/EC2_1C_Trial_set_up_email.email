@@ -1,0 +1,14 @@
+The purpose of this MATLAB Distributed Computing Server on Amazon EC2 trial is to ensure that you can create, connect, and submit jobs to a cluster on Amazon. For the trial, you will be provided with access to a maximum of 16-workers. 
+
+PLEASE NOTE: Although MathWorks is providing the trial at no charge, you will incur charges from Amazon for hardware usage during the trial. 
+
+You will be billed separately by Amazon Web Services for your use of the EC2 instances. You and other users that provide Amazon credentials for Cloud Center may want to periodically checking your active Amazon resources through your Amazon Web Services account. 
+
+During this trial, you will have access to our web application, Cloud Center (https://cloudcenter.mathworks.com). The documentation for Cloud Center can be viewed at any time at (http://www.mathworks.com/help/cloudcenter). 
+
+If you run into any problems or have technical questions, please call our Technical Support Team directly. 
+
+Your local Technical Support contact information can be found at this link: 
+https://www.mathworks.com/support/contact_us/ 
+
+It is best to contact Technical Support by telephone since there is a 24 hour turn-around time to respond to emails. You may not hear back from an engineer before your trial expires if the email queue is busy.

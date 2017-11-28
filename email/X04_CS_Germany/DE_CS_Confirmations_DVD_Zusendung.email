@@ -1,0 +1,13 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},  
+
+auf Grund ihrer Anfrage/ auf Anfrage unseres Sales Teams/ haben wir für Sie die Zusendung einer (oder andere Anzahl) Release XXX DVD/s beantragt. Diese sollte/n Ihnen in Kürze zugehen. Ist dies nicht der Fall, lassen Sie uns das bitte mit einer Rückmeldung auf diese Email unter Beibehalt der unten verzeichneten Reference ID wissen. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

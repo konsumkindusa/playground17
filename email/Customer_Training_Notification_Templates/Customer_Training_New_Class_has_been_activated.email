@@ -1,0 +1,8 @@
+The following class which you are an instructor for has been activated:
+
+Class: {!Class__c.Name}
+Start Date: {!Class__c.Start_Date__c}
+End Date: {!Class__c.End_Date__c}
+
+Primary Instructor: {!Class__c.Primary_Instructor__c}
+Secondary Instructor: {!Class__c.Secondary_Instructor__c}

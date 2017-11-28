@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When we find out that a product may no longer be supported</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>General - Ask if Product/Service Available</name>
+    <style>none</style>
+    <subject>Request from The MathWorks Connections Program</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,47 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;background:
+white;mso-fareast-language:JA">PLEASE DO NOT REPLY TO THIS MESSAGE. This is an
+auto-generated reply to your request.&nbsp;</span><span style="font-size:12.0pt;
+line-height:107%;mso-fareast-language:JA"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;background:
+white;mso-fareast-language:JA">CASE ID: &nbsp;&nbsp;{!Case.CaseNumber}</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:
+JA"><br></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:
+JA">Thank you very much for contacting the MathWorks Order Receipt Desk. </span><span style="font-size: 12pt; line-height: 107%; background: white;">&nbsp;We have received your request.</span><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:JA"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:
+JA"><br></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:
+JA">If you are placing an order,<span style="color:red"> </span>we will email you an Order
+Confirmation as soon as we process your order.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:
+JA">If you have any questions about this case, please </span><a href="http://www.mathworks.com/company/aboutus/contact_us/?s_tid=gn_cntus"><b><span style="font-size:12.0pt;line-height:
+107%;color:#0563C1;mso-fareast-language:JA">contact us</span></b></a><span style="font-size:12.0pt;line-height:107%;mso-fareast-language:JA">. We will ask
+you for the above mentioned Case ID, so please make a note of it.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;background:
+white;mso-fareast-language:JA"><br></span></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;background:
+white;mso-fareast-language:JA">Sincerely,&nbsp;</span><span lang="DE" style="font-size:12.0pt;line-height:107%;background:white;mso-ansi-language:
+DE"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:12.0pt;background:white;mso-fareast-language:
+JA">MathWorks<o:p></o:p></span></p>
+
+<div style="mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.5pt;
+padding:0in 0in 1.0pt 0in">
+
+<p class="MsoNormal" style="border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in"><span style="font-size:12.0pt;
+line-height:107%;mso-fareast-language:JA">Order Receipt Desk<span style="background:white">&nbsp;</span></span></p><p class="MsoNormal" style="border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in"><span style="font-size:12.0pt;
+line-height:107%;mso-fareast-language:JA"><span style="background:white"><br></span></span></p><p class="MsoNormal" style="border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in"><br></p><p class="MsoNormal" style="border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in"><span style="font-size: 9pt; line-height: 107%; font-family: Arial, sans-serif; background: white;">{!Case.Thread_Id}</span></p><p class="MsoNormal" style="border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in"><br></p></div>]]></td>
+</tr>
+</table>

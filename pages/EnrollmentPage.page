@@ -1,0 +1,243 @@
+<apex:page controller="EnrollmentPageController" tabStyle="Enrollment_Request__c" showHeader="true" sidebar="true">
+    <!-- Include Stylesheets -->
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS, '/assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.TAH, '/styles/enrollmentpage.css')}" />
+
+    <style type="text/css">
+    .slds .selfenroll-ecode-input  {
+        width: 90%;
+    }
+    .slds .slds-table th {
+        text-transform: capitalize;
+        font-size: 15px;
+        color: black;
+    }
+    </style>
+
+    <!-- Section Header -->
+    <apex:sectionHeader title="New" subtitle="Enrollment"/>
+
+    <!-- Page Form -->
+    <apex:form >
+    <apex:outputPanel id="container" layout="block">
+        <!-- Action Status -->
+        <apex:actionstatus id="processingRequest">
+            <apex:facet name="start">
+                <apex:outputPanel layout="block" styleClass="slds-spinner_container">
+                    <apex:outputPanel layout="block" styleClass="slds-spinner--brand slds-spinner slds-spinner--medium">
+                        <apex:outputPanel layout="block" styleClass="slds-spinner__dot-a"></apex:outputPanel>
+                        <apex:outputPanel layout="block" styleClass="slds-spinner__dot-b"></apex:outputPanel>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+            </apex:facet>
+        </apex:actionstatus> 
+
+        <apex:outputPanel layout="block" styleClass="slds">
+            <apex:outputPanel layout="block" styleClass="slds-grid slds-grid--vertical">
+                <!-- Messages section -->
+                <apex:outputPanel layout="block" styleClass="slds-box slds-m-around--x-small slds-m-bottom--large slds-box-error" rendered="{!isError}">
+                    <apex:outputText value="{!errorMessage}" escape="false" />
+                </apex:outputPanel>
+
+                <apex:outputPanel layout="block" styleClass="slds-box slds-m-around--x-small slds-m-bottom--large slds-box-error" rendered="{!AND(availableClasses.size == 0, NOT(isError), enrollmentRequest.Contact__c != null, enrollmentRequest.Enterprise_Training_Agreement__c != null)}">
+                    <apex:outputText value="{!$Label.CP_ENROLL_No_Classes_Available}" />
+                </apex:outputPanel>
+
+                <apex:outputPanel layout="block" styleClass="slds-form--horizontal slds-size--3-of-6" >
+                    <!-- Enrollee Name -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element is-required slds-m-bottom--small">
+                        <apex:outputLabel styleClass="slds-form-element__label" for="enrolleeName">
+                            <abbr class="required" title="required">*&nbsp;</abbr>
+                            <apex:outputText value="{!$Label.CP_ENROLL_EnrolleeName}" />
+                        </apex:outputLabel>
+                        <apex:outputPanel layout="block" styleClass="slds-form-element__control">                        
+                            <apex:inputField id="enrolleeName" styleClass="slds-input" value="{!enrollmentRequest.Contact__c}" >
+                                <apex:actionSupport event="onchange" action="{!updateVisibility}" reRender="container" />
+                            </apex:inputField>                            
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <!-- ETA: Enterprise Training Agreeement -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element" rendered="{!showETALookup}">
+                        <apex:outputLabel styleClass="slds-form-element__label" for="eta">
+                        	<apex:outputText value="{!$Label.CP_ENROLL_ETA}" />
+                        </apex:outputLabel>
+                        <apex:outputPanel layout="block" styleClass="slds-form-element__control slds-m-bottom--small">
+                            <apex:actionRegion >
+                                <apex:inputField id="eta" styleClass="slds-input" value="{!enrollmentRequest.Enterprise_Training_Agreement__c}" >
+                                    <apex:actionSupport event="onchange" action="{!updateVisibility}" reRender="container" />
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <!-- CLASS: -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element" rendered="{!showClassLookup}">
+                        <apex:outputLabel styleClass="slds-form-element__label" for="class">
+                        	<apex:outputText value="{!$Label.CP_ENROLL_Class}" />
+                        </apex:outputLabel>
+                        <apex:outputPanel layout="block" styleClass="slds-form-element__control slds-m-bottom--small">
+                            <apex:actionRegion >
+                                <apex:inputField id="class" styleClass="slds-input" value="{!enrollmentRequest.Class__c}" >
+                                    <apex:actionSupport event="onchange" action="{!updateVisibility}" reRender="container" />
+                                </apex:inputField>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <!-- CLASS: Enrollment Status -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element is-required" rendered="{!NOT(showETALookup)}">
+                        <apex:outputLabel styleClass="slds-form-element__label" for="status">
+                            <abbr class="required" title="required">*&nbsp;</abbr>
+                            <apex:outputText value="{!$Label.CP_ENROLL_EnrollmentStatus}" />
+                        </apex:outputLabel>
+                        <apex:outputPanel layout="block" styleClass="slds-form-element__control slds-m-bottom--small">
+                            <apex:inputField id="status" styleClass="slds-input" value="{!enrollment.Enrollment_Status__c}" />
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <!-- CLASS: Payment Method -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element" rendered="{!NOT(showETALookup)}">
+                        <apex:outputLabel styleClass="slds-form-element__label" for="paymentMethod">
+                        	<apex:outputText value="{!$Label.CP_ENROLL_PaymentMethod}" />
+                        </apex:outputLabel>
+                        <apex:outputPanel layout="block" styleClass="slds-form-element__control slds-m-bottom--small">
+                            <apex:inputField id="paymentMethod" styleClass="slds-input" value="{!enrollment.Payment_Method__c}" />
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <!-- CLASS: Order Number -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element" rendered="{!NOT(showETALookup)}">
+                        <apex:outputLabel styleClass="slds-form-element__label" for="orderNumber">
+                        	<apex:outputText value="{!$Label.CP_ENROLL_OrderNumber}" />
+                        </apex:outputLabel>
+                        <apex:outputPanel layout="block" styleClass="slds-form-element__control slds-m-bottom--small">
+                            <apex:inputField id="orderNumber" styleClass="slds-input" value="{!enrollment.Order_Number__c}" />
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                    <!-- CLASS: Button Section -->
+                    <apex:outputPanel layout="block" styleClass="slds-form-element" rendered="{!NOT(showETALookup)}">
+                        <apex:commandButton onclick="cancelJS();return false;" immediate="true" value="{!$Label.CP_ENROLL_ButtonCancel}" styleClass="slds-button slds-button--neutral" />
+                        <apex:commandButton action="{!createNewEnrollment}" value="{!$Label.CP_ENROLL_ButtonSave}" styleClass="slds-button slds-button--brand" />
+                    </apex:outputPanel>
+
+                    <apex:outputPanel layout="block" styleClass="slds-form-element" rendered="{!AND(availableClasses.size == 0, NOT(isError), enrollmentRequest.Contact__c != null, enrollmentRequest.Enterprise_Training_Agreement__c != null)}">
+	                	<apex:commandButton onclick="cancelJS();return false;" immediate="true" value="{!$Label.CP_ENROLL_ButtonCancel}" styleClass="slds-button slds-button--neutral" />
+                    </apex:outputPanel>
+                </apex:outputPanel>
+
+                <!-- ETA: Class Table Section -->
+                <apex:outputPanel layout="block" styleClass="slds-m-around--medium slds-m-left--xx-large" rendered="{!availableClasses.size > 0}" >
+                    <h3 class="slds-section-title--divider">
+                    <apex:outputText value="{!$Label.CP_ENROLL_THAvailableClasses}" />
+                    </h3>
+                    <table class="slds-table slds-table--bordered">
+                        <thead>
+                            <tr class="slds-text-heading--label">
+                                <!-- <th class="slds-cell-shrink">
+                                	<div class="tooltip">
+                                        <label class="slds-checkbox">
+	                                        <apex:inputCheckbox styleClass="masterCb" onchange="toggleAllClasses(this.checked);" />
+	                                        <input type="checkbox" name="options" value="" />
+	                                        <span class="slds-checkbox--faux"></span>
+	                                        <span class="slds-assistive-text"><b><apex:outputText value="{!$Label.CP_ENROLL_CHSelectRow}" /></b></span>
+	                                    </label>
+                                        <span class="tooltiptext">
+                                            <div class="slds-theme--brand">
+                                                <apex:outputText value="{!$Label.CP_ENROLL_SelectAll}" />    
+                                            </div>
+                                        </span>
+                                    </div>                                    
+                                </th> -->
+                                <th scope="col" style="text-align: center;">
+                                    <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHEnroll}" /></b></div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHClass}" /></b></div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHPrerequisite}" /></b></div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate"><b><apex:outputText value="{!$Label.CP_ENROLL_CHLanguage}" /></b></div>
+                                </th>
+                            </tr>
+                            <apex:repeat value="{!availableClasses}" var="rec">
+                                <tr>
+                                    <td class="slds-cell-wrap" style="text-align: center;">
+                                        <label class="slds-checkbox">
+                                            <!-- <apex:inputCheckbox value="{!rec.isNewEnrollment}" styleClass="toggleCb" onchange="toggleSelectedClasses();" /> -->
+                                            <apex:inputCheckbox value="{!rec.isNewEnrollment}" styleClass="toggleCb" />
+                                            <input type="checkbox" name="options" value="" />
+                                            <span class="slds-checkbox--faux"></span>
+                                            <span class="slds-assistive-text"><apex:outputText value="{!$Label.CP_ENROLL_CHSelectRow}" /></span>
+                                        </label>
+                                    </td>
+                                    <td class="slds-cell-wrap">
+                                        <div class="slds-text-regular--small">
+                                            <!-- <b> --><apex:outputText value="{!rec.courseLanguage.Localized_Course_Name__c}" /><!-- </b> -->
+                                        </div>
+                                        <!-- <div class="slds-text-body--small slds-m-top--small">
+                                            <apex:outputText value="{!rec.courseLanguage.Localized_Short_Description__c}" />
+                                        </div> -->
+                                    </td>
+                                    <td class="slds-cell-wrap">
+                                        <div class="slds-text-regular--small">
+                                            <apex:outputText value="{!rec.courseLanguage.Localized_Pre_Requisite__c}" />
+                                        </div>
+                                    </td>
+                                    <td class="slds-cell-wrap">
+                                        <div class="slds-text-regular--small">
+                                            <apex:outputText value="{!rec.etaclass.Language__r.Name}" />
+                                        </div>
+                                    </td>
+                                </tr>                                       
+                            </apex:repeat>
+                        </thead>
+                    </table>
+
+                    <!-- ETA: Button Section -->
+                    <apex:outputPanel layout="block" styleClass="slds-grid slds-grid--align-center" rendered="{!NOT(showClassLookup)}">
+                        <apex:outputPanel layout="block" styleClass="slds-m-top--small" >
+                            <apex:commandButton onclick="cancelJS();return false;" immediate="true" value="{!$Label.CP_ENROLL_ButtonCancel}" styleClass="slds-button slds-button--neutral" />
+                            <apex:commandButton action="{!createNewEnrollmentRequest}" value="{!$Label.CP_ENROLL_ButtonSave}" styleClass="slds-button slds-button--brand"  />
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+
+                <apex:actionFunction name="cancelAF" action="{!gotoReturnURL}" />
+
+                <script type="text/javascript">
+                    function cancelJS() {
+                        if(sforce.console.isInConsole()) {
+                            sforce.console.getEnclosingPrimaryTabId(function(result) { 
+                                var tabId = result.id; 
+                                if(tabId !== null || tabId !== '') {
+                                    sforce.console.getFocusedSubtabId(function(subresult) {
+                                        var subtabid = subresult.id;
+
+                                        if(subtabid !== null || subtabid !== '') {
+                                            cancelAF();
+                                        }
+                                    });
+                                } else {
+                                    sforce.console.closeTab(tabId);
+                                }
+                            });
+                        } else {
+                            cancelAF();
+                        }
+                    }
+                </script>
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:outputPanel>
+    </apex:form>
+
+    <!-- Include Scripts -->
+    <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/jquery-1.10.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/enrollmentpage.js')}" />
+    <apex:includeScript value="/xdomain/xdomain.js" />
+    <apex:includeScript value="/support/console/37.0/integration.js" />
+</apex:page>

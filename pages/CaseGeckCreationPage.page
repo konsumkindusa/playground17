@@ -1,0 +1,45 @@
+<!-- 
+* @author Original: Limo Sadalla - Cloud Sherpas
+* @date Original: 13 June 2013 
+* @description Extension class for Geck creation page
+ -->
+ 
+<apex:page StandardController="Case" showheader="true" extensions="CaseGeckCreationController">
+
+ <apex:includeScript value="{!$Resource.jquery_172}"/>
+   <script>
+
+     function submitGecko()
+     {      
+        selectedGeckId = $('[id$=geckslist]').val();
+        selectedGeck = selectedGeckId.split("|")[0];
+        geckLang = selectedGeckId.split("|")[1];
+        caseId =  $('[id$=caseId]').val(); 
+        window.open('/apex/submitCaseToGeko?id='+caseId+'&articleNumber='+selectedGeck+'&lang='+geckLang, '_blank');
+ 
+     }
+    
+    
+  </script>
+   <apex:form id="_form">
+   <apex:pageBlock title="Create Geck from Case Articles">
+
+       
+       <apex:pageMessages />
+             
+       <apex:selectList value="{!selectedGeck}" id="geckslist" size="1" rendered="{!gecks.size != 0}">
+            <apex:selectOptions value="{!gecks}"/>
+        </apex:selectList><p/>
+       
+       <apex:inputHidden value="{!caseId}" id="caseId"/> 
+        <br/>
+        
+        <apex:commandButton action="{!submitToGecko}" id="submitBtn" onClick="submitGecko();"  rendered="{!gecks.size != 0}" value="Submit to Gecko!"/>
+        
+        
+
+    </apex:pageBlock> 
+  
+  </apex:form>  
+    
+</apex:page>

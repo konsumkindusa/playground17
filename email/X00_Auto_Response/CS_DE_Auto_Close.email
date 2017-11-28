@@ -1,0 +1,30 @@
+Sehr geehrte Kundin, sehr geehrter Kunde,
+
+da wir auf unsere Nachricht bezüglich Ihrer Anfrage ID [Service Request.SR Number] bisher keine Antwort erhalten haben, gehen wir davon aus, dass Sie keine Unterstützung mehr benötigen. Aus diesem Grund haben wir Ihre Anfrage in unserem System geschlossen. 
+
+Für den Fall, dass Sie diesbezüglich doch noch Unterstützung benötigen, informieren Sie uns bitte unter Angabe untenstehender Reference ID.
+
+Dies ist eine automatisch erstellte Nachricht. 
+
+Mit freundlichen Grüßen
+
+{!Case.OwnerFullName}
+Customer Service
+MathWorks GmbH 
+Adalperostr. 45
+85737 Ismaning
+Deutschland
+www.mathworks.de
+
+
+Customer Service: +49-89-45 23 5-6700  Durchwahl Menu 3
+info@mathworks.de
+
+Informationen zu unseren aktuellen Veranstaltungen und Schulungen finden Sie unter: 
+www.mathworks.de/events  und  www.mathworks.de/training
+
+MathWorks GmbH | Friedlandstr.18 | 52064 Aachen | Amtsgericht Aachen | HRB 8082 | Geschäftsführer: Andreas Schindler, Steven D. Barbo, Jeanne O’Keefe
+
+
+
+{!Case.Thread_Id}

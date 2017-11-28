@@ -1,0 +1,12 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  You have requested to modify your company's name via your MathWorks Account. In our efforts to keep our records accurate we use the legal company name provided on official company communications. For that reason your account will continue to reflect the information as previously shown.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

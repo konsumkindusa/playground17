@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Extended_End__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Days_between_Start_and_now__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Status_Age__c</field>
+    </columns>
+    <columns>
+        <field>Academic_Support_Project__c.Status__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Update on all active project time in current status</description>
+    <filter>
+        <criteriaItems>
+            <column>Academic_Support_Project__c.Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - No Response,Complete,Denied,Spam,No Action</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Aging Current Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Academic_Support_Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Academic_Support_Project__c.Account__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,12 @@
+Hi {!Contact.FirstName},
+
+ I am following up to see if you are ready to trial MATLAB Distributed Computing Server on Amazon EC2. 
+
+ Once your Amazon AWS account is set up and you successfully ran the connectivity checker, please let me know the date you would like to trial MATLAB Distributed Computing Server on Amazon EC2. I also need to know what release of MATLAB you are running.
+
+Please note that although there is no charge from MathWorks for the one day trial, you will be billed separately by Amazon Web Services for your use of the EC2 instances.
+
+You and other users that provide Amazon credentials for Cloud Center might want to consider periodically checking your active Amazon resources through your Amazon Web Services account.
+
+
+ I look forward to hearing from you soon.

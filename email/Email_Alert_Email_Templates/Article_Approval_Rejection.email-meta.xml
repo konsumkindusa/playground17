@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to alert a user that their article has been rejected</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Article Approval Rejection</name>
+    <style>none</style>
+    <subject>Your Article &quot;{!FAQ__kav.Title}&quot; has not been published</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

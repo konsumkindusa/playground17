@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used to manage IDs of Reports dynamically filtered by passing parameters via custom buttons, links and formulas. [Environment Dependent]</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_View_CPN_Hierachy__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of Report to launch from View CPN Hierarchy button on Account (MW Sales Reports &gt; View CPN Account Hierarchy)</inlineHelpText>
+        <label>Account &gt; View CPN Hierachy</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Campaign_View_campaign_influence_report__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign&gt; View Campaign Influence Report</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Related_Contact_Activities__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of Report to launch from Related Contact Activities link on Lead (MW Lead Reports &gt; Contact Past Activity)</inlineHelpText>
+        <label>Lead &gt; Related Contact Activities</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Related_Contact_Opportunities__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of Report to launch from Related Contact Opportunities link on Lead (MW Sales Reports &gt; Contact Opportunities)</inlineHelpText>
+        <label>Lead &gt; Related Contact Opportunities</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_View_Lead_Activity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of Report to launch from View Lead Activity link on Lead  (MW Lead Reports &gt; Lead Activity)</inlineHelpText>
+        <label>Lead &gt; View Lead Activity</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Qualifications__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of Report to launch from Qualifications button on Opportunity (MW Sales Reports &gt; Sales Qualification Activities)</inlineHelpText>
+        <label>Opportunity &gt; Qualifications</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Milestones_Milestones_Report__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of Report to launch from Milestones Report button on Milestones Related list on Project(MW AE/PE Reports &gt; Milestones by Project)</inlineHelpText>
+        <label>Project &gt;Milestones &gt; Milestones Report</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TimeCardTotalWeekHours__c</fullName>
+        <description>Added by Jaspreet for Attask story # 905412</description>
+        <externalId>false</externalId>
+        <label>TimeCardTotalWeekHours</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Dynamic Report Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

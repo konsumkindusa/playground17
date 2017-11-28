@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks.  In order to transfer MATLAB license XXXX from XXXX to XXXX, the attached Assignment and Assumption Agreement must be signed by a current officer of the Assignee and Assignor.  Please note it contains a Schedule A for the license list, Administrator names/contact information, and maintenance expiration dates.  If a license is out of maintenance, the Assignee takes on the responsibility of paying the ‘then current maintenance’ fees in order to receive maintenance services for the software.  
+
+It is important to note two different contacts must sign for the Assignee and Assignor. The same contact is not permitted to sign the Agreement for both Accounts.
+
+Once the Agreement has been signed by the Assignor and Assignee and returned to us, it will be reviewed and subsequently approved by our Legal Department.  Once approved, we will record the transfer in our database, and the Assignor can transfer the licenses and associated software. After the transfer has been complete, the Assignor must notify its end users to uninstall the licenses and associated software.  
+
+Please return the completed Agreement by replying to this email.  
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

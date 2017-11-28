@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send when we receive the order to purchase SSL&apos;s.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sales Support - Order Complete</name>
+    <style>none</style>
+    <subject>Sales Support License Order In Process</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

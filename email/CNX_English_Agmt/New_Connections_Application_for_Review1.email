@@ -1,0 +1,37 @@
+Hello,
+
+Below is a new Connections Program application from {!Partner_Agreement__c.Account__c}.
+
+----------------------------------------------------------------------------------------
+APPLICATION REVIEW - SYSTEM INTEGRATOR OR CONSULTANT PARTNER
+----------------------------------------------------------------------------------------
+
+Please consider this application first as a System Integrator (SI) partner. If this applicant does not meet the criteria for the SI program, please evaluate them as a possible Consultant partner.
+
+As a reminder, strong candidates for membership as System Integrators should meet the following criteria: 
+
+* Deliver MATLAB or Simulink based content some of the time
+* Have significant technical expertise with MathWorks products
+* Have at least 4 employees with MATLAB/Simulink experience
+* Have delivered at least 10 projects based on MATLAB and Simulink
+* Provide 4 references (The Connections Program Team will enforce this requirement)
+
+1) Do you feel that this application meets the requirements as a System Integrator? If not, please Reply-All and provide a few sentences describing your concerns to the team.
+
+2) Do you feel that this application meets the requirements as a Consultant? If not, please Reply-All and provide a few sentences describing your concerns to the team.
+
+3) Overall, are you comfortable with this company being in the Connections Program? - If not, please specify your concerns.
+
+4) Should this application be sent to anyone else for review? Feel free to name a proxy as appropriate. Please let me know if you have any questions. Thank you for your help with the review process.
+
+If you need additional information, please reply all with any questions you have and we will relay them to the applicant.
+
+If you think a live discussion would better facilitate a decision, please call a meeting. Once the meeting is held, please remember to reply all to this discussion with any decisions that have been made.
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name} 
+{!Partner_Agreement__c.Thread_Id__c}
+
+COPY AND PASTE INTO OUTLOOK AND SEND USING RTF

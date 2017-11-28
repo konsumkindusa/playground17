@@ -1,0 +1,13 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c},
+
+I recently sent you a draft Connections Program Web page for {!Partner_Agreement__c.Partner_Agreement_Name__c} with a request for comments but haven't heard back from you. We'd like to complete the Connections Program process and make your product/service listing live on our Web directory and your comments are required to proceed.
+
+Attached is another copy of the draft Web page for your review.  Please review this Web page as soon as possible and let me know when you will be able to return your comments to me.  If I do not receive your edits or a firm date for when I can expect to see them within the next two weeks, this product will be removed from the Connections Program.
+
+If you have questions about the format or appropriate content for this Web page, please visit the Connections Help Desk Web site and review the instructions for updating your web page listed in the Marketing section.  If you have misplaced the login information, please send a message to connections@mathworks.com to receive another copy.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+--------------- Original Message --------------- 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

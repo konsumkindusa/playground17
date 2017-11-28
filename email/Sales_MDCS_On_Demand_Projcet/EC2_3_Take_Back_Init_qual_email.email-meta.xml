@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EC2 3 Take Back if no response to init qual email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EC2 3 Take Back Init qual email</name>
+    <style>none</style>
+    <subject>MathWorks Product Trial for MATLAB Distributed Computing Server On Demand</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

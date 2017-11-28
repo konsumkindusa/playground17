@@ -1,0 +1,26 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+The license was provided for use in developing your book materials that are based on MathWorks products.  We are not aware of a specific project you are working on at this time.  Could you provide us more details about your intended use for this license?
+
+If you are developing a new edition or new book project, please complete a book program application so we can evaluate our support and the renewal of this license at: www.mathworks.com/support/books/program.html
+
+Regards, 
+
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}
+
+From: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Name__c} [{!ortoo_e2a__EmailMessage__c.ortoo_e2a__From_Address__c}] 
+Sent: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Message_Date__c} 
+To: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__To_Address__c} 
+Subject: {!ortoo_e2a__EmailMessage__c.ortoo_e2a__Subject__c} 
+ 
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

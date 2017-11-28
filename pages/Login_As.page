@@ -1,0 +1,6 @@
+<apex:page >
+    <a href="/servlet/servlet.su?oid={!$Organization.Id}&suorgadminid=005e0000001l1wKAAQ&retURL=/home/home.jsp&targetURL=/home/home.jsp">Jane Sherpa (Sales User)</a><br />
+    <a href="/servlet/servlet.su?oid={!$Organization.Id}&suorgadminid=005e0000001QmaJAAS&retURL=/home/home.jsp&targetURL=/home/home.jsp">Ed Sherpa (AE/PE User)</a><br /> 
+    <a href="/servlet/servlet.su?oid={!$Organization.Id}&suorgadminid=005e0000001l1wZAAQ&retURL=/home/home.jsp&targetURL=/home/home.jsp">Mary Sherpa (AE/PE Manager)</a><br />
+    <a href="/servlet/servlet.su?oid={!$Organization.Id}&suorgadminid=005e0000001lJIrAAM&retURL=/home/home.jsp&targetURL=/home/home.jsp">Carl Sherpa (RAC User)</a><br />
+</apex:page>

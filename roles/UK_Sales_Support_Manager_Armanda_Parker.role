@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>UK Sales Support Manager Armanda Parker</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>UK Sales Support Manager Armanda Parker</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>UK_Sales_Support</parentRole>
+</Role>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>RAC FR auto reply</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>RAC FR Auto Reply</name>
+    <style>freeForm</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Ceci est un message automatique. VEUILLEZ DE NE PAS REPONDRE.
+
+
+
+
+NUMERO DE DOSSIER : {!Case.CaseNumber}
+
+
+
+
+Merci d’avoir contacté le Service Réception des Commandes de MathWorks. Nous avons bien reçu votre message.
+
+
+
+Si vous avez envoyé une commande, nous vous enverrons une confirmation de réception aussitôt que celle-ci sera traitée.
+
+Pour toute question concernant ce dossier, veuillez nous envoyer un message en précisant votre numéro de dossier &quot; Case ID &quot;.
+
+
+
+
+Sincères Salutations,
+
+MathWorks,
+
+Service Réception des Commandes</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

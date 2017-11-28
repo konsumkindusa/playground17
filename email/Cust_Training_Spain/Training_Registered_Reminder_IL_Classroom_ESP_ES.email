@@ -1,0 +1,27 @@
+¡Bienvenido al curso de formación de The MathWorks!
+
+Le confirmamos su inscripción al curso:
+
+NOMBRE DEL CURSO: {!Enrollment__c.Class__c} 
+FECHAS:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LUGAR:  {!Class__c.City__c},{!Class__c.Country__c} 
+HORARIO: {!Class__c.Start_Time__c} to {!Class__c.End_Time__c}
+
+Puede acceder a más información sobre la dirección y cómo llegar al centro, a través del siguiente enlace:  
+http://www.mathworks.es/services/training/policies/directions.html
+
+Política de Devolución/Cancelación
+Formación con instructor: 
+Las peticiones de cancelación recibidas por escrito con un mínimo de 7 días laborables antes del comienzo de las clases, se reembolsarán al 100%.
+
+Si la cancelación no se recibe durante los siete días laborables previos al inicio del curso, el alumno solo recuperará el 75% del importe de la matrícula. Si el alumno no asiste al curso y no ha notificado previamente la cancelación por escrito, deberá abonar el 100% del curso. El alumno puede ceder los derechos de asistencia a otra persona para evitar la penalización.
+
+Si el curso no pudiera realizarse en las fechas previstas, por circunstancias ajenas a The MathWorks, la responsabilidad de The MathWorks se limitará al reembolso de los importes oportunamente abonados. The MathWorks no reembolsará bajo ninguna circunstancia ningún otro coste en el que haya podido incurrir.
+
+Si tiene cualquier pregunta, puede contactarnos en el teléfono +34 91 799 47 00, o enviarnos un correo electrónico a: info@mathworks.es.
+
+Para más información sobre cursos ofertados por The MathWorks, visite nuestra web http://www.mathworks.es.
+
+Atentamente,
+Departamento de Formación
+{!Class__c.Sponsor_Office_Signature__c} 

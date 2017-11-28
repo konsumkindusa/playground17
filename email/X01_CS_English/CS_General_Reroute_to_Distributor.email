@@ -1,0 +1,14 @@
+Hello {XXDISTRIB NAMEXX},    
+
+Please help this customer with their inquiry.  Their contact information, and email request is listed below:
+
+<INFO>
+
+If you need further assistance regarding this request, please reply to this email preserving the Reference ID listed below.  If you have a new Customer Support question, please submit a request here: http://www.mathworks.com/support/servicerequests/create.html or via email at ihelp@mathworks.com.
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

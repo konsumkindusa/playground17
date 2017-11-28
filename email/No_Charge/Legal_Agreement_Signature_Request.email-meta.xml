@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request for a third party to sign legal agreements to receive no charge licenses</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Legal Agreement Signature Request</name>
+    <style>freeForm</style>
+    <subject>Implementing MathWorks No Charge Licenses for {!Contact.Account_Name_Latin__c}</subject>
+    <textOnly>Hello {!Contact.Name},
+
+My name is Justin Tumeinski and I will be facilitating your no charge MathWorks software. This message outlines what I need you to do prior to setting up the license.
+
+Info Required: Review, sign, and email or fax back the attached agreement(s) to me at 508-652-6978.
+
+If you have any questions, please let me know.
+
+Thank you,
+-Justin
+Justin Tumeinski
+MathWorks No Charge Team
+partnernocharge@mathworks.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

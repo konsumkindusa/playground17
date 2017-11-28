@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+Thank you for your participation in the MathWorks Connections Program. We value your partnership and hope that you continue your participation in the program for the upcoming year.  Each year, all partners must review and acknowledge continued acceptance of the program terms and conditions (attached).  
+
+The Connections Program Team has tried multiple times to contact your organization regarding your annual acknowledgement of The MathWorks Connections Program Terms and Conditions. Despite multiple attempts to reach you, our records indicate that you still have not responded to our request.
+
+If you are unable to re-accept the Connection Program terms and conditions, need more time to complete, or no longer want to participate in the program, please e-mail the Connections Program Team at connections@mathworks.com with an explanation.   
+
+You will receive a separate email with a direct link to re-accept the terms and conditions.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Case: {!Case.CaseNumber}

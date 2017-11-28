@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Australia Adelaide</fullName>
+        <default>false</default>
+        <label>Australia Adelaide</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia Brisbane</fullName>
+        <default>false</default>
+        <label>Australia Brisbane</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia Hobart</fullName>
+        <default>false</default>
+        <label>Australia Hobart</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia Melbourne</fullName>
+        <default>false</default>
+        <label>Australia Melbourne</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia Perth</fullName>
+        <default>false</default>
+        <label>Australia Perth</label>
+    </customValue>
+    <customValue>
+        <fullName>Australia Sydney</fullName>
+        <default>false</default>
+        <label>Australia Sydney</label>
+    </customValue>
+    <customValue>
+        <fullName>Austria</fullName>
+        <default>false</default>
+        <label>Austria</label>
+    </customValue>
+    <customValue>
+        <fullName>Belgium</fullName>
+        <default>false</default>
+        <label>Belgium</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada Atlantic</fullName>
+        <default>false</default>
+        <label>Canada Atlantic</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada Central</fullName>
+        <default>false</default>
+        <label>Canada Central</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada Eastern</fullName>
+        <default>false</default>
+        <label>Canada Eastern</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada Mountain</fullName>
+        <default>false</default>
+        <label>Canada Mountain</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada Pacific</fullName>
+        <default>false</default>
+        <label>Canada Pacific</label>
+    </customValue>
+    <customValue>
+        <fullName>Chile</fullName>
+        <default>false</default>
+        <label>Chile</label>
+    </customValue>
+    <customValue>
+        <fullName>China</fullName>
+        <default>false</default>
+        <label>China</label>
+    </customValue>
+    <customValue>
+        <fullName>Colombia</fullName>
+        <default>false</default>
+        <label>Colombia</label>
+    </customValue>
+    <customValue>
+        <fullName>Costa Rica</fullName>
+        <default>false</default>
+        <label>Costa Rica</label>
+    </customValue>
+    <customValue>
+        <fullName>Denmark</fullName>
+        <default>false</default>
+        <label>Denmark</label>
+    </customValue>
+    <customValue>
+        <fullName>Finland</fullName>
+        <default>false</default>
+        <label>Finland</label>
+    </customValue>
+    <customValue>
+        <fullName>France</fullName>
+        <default>false</default>
+        <label>France</label>
+    </customValue>
+    <customValue>
+        <fullName>Germany</fullName>
+        <default>false</default>
+        <label>Germany</label>
+    </customValue>
+    <customValue>
+        <fullName>Iceland</fullName>
+        <default>false</default>
+        <label>Iceland</label>
+    </customValue>
+    <customValue>
+        <fullName>India</fullName>
+        <default>false</default>
+        <label>India</label>
+    </customValue>
+    <customValue>
+        <fullName>Italy</fullName>
+        <default>false</default>
+        <label>Italy</label>
+    </customValue>
+    <customValue>
+        <fullName>Japan</fullName>
+        <default>false</default>
+        <label>Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>Korea</fullName>
+        <default>false</default>
+        <label>Korea</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxembourg</fullName>
+        <default>false</default>
+        <label>Luxembourg</label>
+    </customValue>
+    <customValue>
+        <fullName>Mexico Central</fullName>
+        <default>false</default>
+        <label>Mexico Central</label>
+    </customValue>
+    <customValue>
+        <fullName>Netherlands</fullName>
+        <default>false</default>
+        <label>Netherlands</label>
+    </customValue>
+    <customValue>
+        <fullName>New Zealand</fullName>
+        <default>false</default>
+        <label>New Zealand</label>
+    </customValue>
+    <customValue>
+        <fullName>Norway</fullName>
+        <default>false</default>
+        <label>Norway</label>
+    </customValue>
+    <customValue>
+        <fullName>Peru</fullName>
+        <default>false</default>
+        <label>Peru</label>
+    </customValue>
+    <customValue>
+        <fullName>Portugal</fullName>
+        <default>false</default>
+        <label>Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>Spain</fullName>
+        <default>false</default>
+        <label>Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweden</fullName>
+        <default>false</default>
+        <label>Sweden</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland</fullName>
+        <default>false</default>
+        <label>Switzerland</label>
+    </customValue>
+    <customValue>
+        <fullName>United Kingdom</fullName>
+        <default>false</default>
+        <label>United Kingdom</label>
+    </customValue>
+    <customValue>
+        <fullName>US Arizona</fullName>
+        <default>false</default>
+        <label>US Arizona</label>
+    </customValue>
+    <customValue>
+        <fullName>US Central</fullName>
+        <default>false</default>
+        <label>US Central</label>
+    </customValue>
+    <customValue>
+        <fullName>US Eastern</fullName>
+        <default>false</default>
+        <label>US Eastern</label>
+    </customValue>
+    <customValue>
+        <fullName>US Indianapolis</fullName>
+        <default>false</default>
+        <label>US Indianapolis</label>
+    </customValue>
+    <customValue>
+        <fullName>US Mountain</fullName>
+        <default>false</default>
+        <label>US Mountain</label>
+    </customValue>
+    <customValue>
+        <fullName>US Pacific</fullName>
+        <default>false</default>
+        <label>US Pacific</label>
+    </customValue>
+    <description>Time Zone for training classes</description>
+    <masterLabel>Training Time Zone</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

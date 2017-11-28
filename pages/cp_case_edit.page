@@ -1,0 +1,98 @@
+<apex:page standardController="Case"   extensions="cp_CaseControllerExtension"  standardStylesheets="true" sidebar="false" showHeader="false">
+
+<link href="https://www.mathworks.com/includes_content/css/dom.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/css/site4.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/css/site5_pre.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/nextgen/css/header-footer-nextgen.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mathworks.com/includes_content/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="http://www.mathworks.com/includes_content/css/mod_brows.css" type="text/css" rel="stylesheet" media="print"/>
+<link href="http://www.mathworks.com/support/service_requests/stylesheets/placeholder_textbox.css" rel="stylesheet" type="text/css" />
+<link href="http://www.mathworks.com/support/service_requests/stylesheets/service_requests.css" rel="stylesheet" type="text/css" /> 
+<link href="http://www.mathworks.com/support/service_requests/stylesheets/modalbox.css" rel="stylesheet" type="text/css" /> 
+<apex:includeScript value="{!$Resource.jquery_172}"/>
+ <script>
+
+        $(function() 
+        {
+            setUrl(window.top.location.href.split("?")[0]);
+       });   
+   
+ </script> 
+
+    <apex:sectionHeader title="{!$ObjectType.Case.label} Edit" subtitle="{!Case.Casenumber}"/>
+    <apex:form >
+    <apex:actionFunction action="{!setUrl}" name="setUrl" rerender="none">
+    <apex:param name="PageUrl" assignTo="{!PageUrl}" value="" />
+</apex:actionFunction>
+    <apex:pageBlock title="{!$ObjectType.Case.label} Edit" mode="edit">
+        <apex:pageBlockButtons >
+            <apex:commandLink action="{!save}" value="Save"  target="_top" styleClass="btn"/>  
+            <apex:commandLink action="{!cancel}" value="Cancel"  target="_top" styleClass="btn"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection showHeader="true" title="Case Information" columns="2">
+     
+            <apex:inputField required="true" value="{!Case.Status}"/>
+            <apex:inputField value="{!Case.ContactId}"/>
+            <apex:inputField required="true" value="{!Case.SubStatus__c}"/>
+            <apex:inputField value="{!Case.Area__c}"/>
+            <apex:inputField value="{!Case.Sub_Area__c}"/>
+            <!--<apex:inputField value="{!Case.Topic_CS_DB_delete__c}"/>-->
+            <!-- <apex:inputField value="{!Case.Sub_Topic_CS_DB_delete__c}"/> -->
+            <!--<apex:inputField value="{!Case.Publish_to_Customer_Portal__c}"/>-->
+            <!--<apex:inputField value="{!Case.Topic_Install_delete__c}"/>-->
+           <!--  <apex:inputField value="{!Case.Sub_Topic_Install_delete__c}"/> -->
+            <apex:inputField value="{!Case.ParentId}"/>
+            <apex:inputField required="true" value="{!Case.Category__c}"/>
+            <apex:inputField value="{!Case.Closed_Reason__c}"/>
+            <apex:inputField value="{!Case.Origin}"/>
+            <apex:pageBlockSectionItem />
+            <apex:inputField value="{!Case.IsEscalated}"/>
+            <apex:pageBlockSectionItem />
+            <apex:inputField value="{!Case.Escalation_to__c}"/>
+            <apex:pageBlockSectionItem />
+            <apex:inputField value="{!Case.Install_Reviewed__c}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection showHeader="true" title="License & Product" columns="2">
+            <apex:inputField value="{!Case.License__c}"/>
+            <apex:inputField value="{!Case.Product_Base_Code__c}"/>
+            <apex:inputField value="{!Case.License_Type__c}"/>
+            <apex:inputField value="{!Case.Product_Lookup__c}"/>
+            <apex:inputField value="{!Case.License_Account__c}"/>
+            <apex:inputField value="{!Case.Platform__c}"/>
+            <apex:inputField value="{!Case.On_Support__c}"/>
+            <apex:inputField value="{!Case.OS__c}"/>
+            <apex:inputField value="{!Case.Support_Status__c}"/>
+            <apex:pageBlockSectionItem />
+            <apex:inputField value="{!Case.Support_Reason__c}"/>
+            <apex:pageBlockSectionItem />
+            <apex:pageBlockSectionItem />
+            <apex:pageBlockSectionItem />
+            <apex:pageBlockSectionItem />
+        </apex:pageBlockSection>
+        <apex:pageBlockSection showHeader="true" title="Description Information" columns="1">
+            <apex:inputField value="{!Case.Subject}"/>
+            <apex:inputField value="{!Case.Description}"/>
+            <!--<apex:inputField value="{!Case.GL_Notes__c}"/>-->
+            <apex:inputField value="{!Case.Test_Email_Debug__c}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection showHeader="false" columns="2">
+            <apex:inputField value="{!Case.Follow_up__c}"/>
+            <apex:inputField value="{!Case.Auto_Close__c}"/>
+            <!-- dereferenced
+            <apex:inputField value="{!Case.Follow_up_Days_old__c}"/>
+            <apex:inputField value="{!Case.Auto_Close_Days_old__c}"/>
+            <apex:inputField value="{!Case.Follow_up_Date_old__c}"/>
+            <apex:inputField value="{!Case.Auto_Close_Date_old__c}"/>
+            -->
+            <apex:inputField value="{!Case.Email_Template_Disclosure__c}"/>
+            <apex:pageBlockSectionItem />
+            <apex:inputField value="{!Case.Email_Template_Signature__c}"/>
+            <apex:pageBlockSectionItem />
+        </apex:pageBlockSection>
+        <apex:pageBlockSection showHeader="true" title="Web Information" columns="2">
+        </apex:pageBlockSection>
+        <apex:pageBlockSection showHeader="true" title="System Information" columns="2">
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

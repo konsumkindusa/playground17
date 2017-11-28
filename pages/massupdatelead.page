@@ -1,0 +1,49 @@
+<apex:page controller="massupdatelead" id="page">
+  
+ 
+  <apex:pageBlock id="pb" >
+
+
+    <apex:outputPanel >
+     <apex:pageMessages />
+     <apex:outputText > Update records below </apex:outputText> 
+    </apex:outputPanel>
+     
+     <apex:pageBlockTable value="{!listLeadDisplayOnPage}" var="objLead" rendered="true" id="pbTable">
+        <apex:column value="{!objLead.Name}" title="Name" headerValue="Name"/> 
+        <apex:column value="{!objLead.Lead_Follow_Up_Date__c}" title="Lead Follow Up Date " headerValue="Lead Follow Up Date "/> 
+        <apex:column value="{!objLead.Status}" title="Status" headerValue="Status"/> 
+        <apex:column value="{!objLead.Outcome__c}" title="Outcome" headerValue="Outcome"/> 
+     
+     </apex:pageBlockTable>
+ 
+ </apex:pageBlock>
+ 
+ <apex:form id="form">
+ 
+   <apex:pageblock id="pb2">
+     
+     <apex:pageBlockSection columns="2">
+    
+     <apex:pageBlockSectionItem >
+         <apex:outputLabel >Lead Follow Up Date</apex:outputLabel>
+              <apex:inputField label="Lead Follow Up Date" showDatePicker="true" value="{!objContactDatefield.Birthdate}"  />
+             
+     </apex:pageBlockSectionItem>
+
+    <apex:pageBlockSectionItem > 
+     <apex:outputLabel >Outcome</apex:outputLabel>
+         <apex:selectList value="{!setOutcomeValues}" multiselect="false" size="1">
+             <apex:selectOptions Value="{!outcomeOptions}" />
+         </apex:selectList>
+    </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+   <apex:pageBlockButtons >
+     <apex:commandButton value="Submit" action="{!methodUpdateValues}" reRender="pb,pb2,outputPannel"/>
+     <apex:commandButton value="Cancel" action="{!cancel}" reRender="pb,pb2,outputPannel"/>
+   </apex:pageBlockButtons> 
+  </apex:pageblock>
+  </apex:form>
+ 
+
+</apex:page>

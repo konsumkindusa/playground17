@@ -1,0 +1,54 @@
+<!-- 
+/**
+* @author Original: Jesfer Baculod - Cloud Sherpas/Mathworks, Last Modified: Jesfer Baculod - Cloud Sherpas/Mathworks
+* @date Original: 06 May 2013, Last Modified: 09 May 2013
+* @description page that redirects the user to ACE tool link when updating Contact records  
+*/ 
+-->
+<apex:page name="pgACE" standardController="Contact" extensions="OverrideForACEExtension" showheader="false" action="{!ACEonEdit}" sidebar="false">
+    <apex:includeScript value="/support/console/27.0/integration.js"/>
+    <apex:outputpanel id="opACE" rendered="{!if(URLpath != null,true,false)}">
+        <script type="text/javascript">
+            function OpenACEonSCprimarytab(){
+                sforce.console.getEnclosingPrimaryTabId(openPrimtab);
+            }
+            var openPrimtab = function openPrimtab(result){
+                //Open PrimaryTab
+                var primaryTabId = result.id;
+                sforce.console.openPrimaryTab(primaryTabId, '/apex/ContactEditOverride?id={!ACid}&o=1', true, '{!Contact.Name} - ACE');
+            }
+            function OpenACEonSCsubtab() {
+                //find the ID of the primary tab to put the new subtab in
+                sforce.console.getEnclosingPrimaryTabId(openSubtab);
+            }
+            var openSubtab = function openSubtab(result) {
+                //Open SubTab
+                var primaryTabId = result.id;
+                sforce.console.openSubtab(primaryTabId , '/apex/ContactEditOverride?id={!ACid}&o=1', true, '{!Contact.Name} - ACE',null);
+            };  
+            function OpenACE(){
+                var referer = '{!URLreferer}';
+                //VF Page is opened on Service Cloud Console
+                if (sforce.console.isInConsole()){
+                    if ('{!ACEon}' != '1'){
+                        //SC Edit button is clicked on Detail Page 
+                        if (referer.indexOf('servicedesk') == -1){
+                            //open ACE link to new SubTab
+                            OpenACEonSCsubtab();
+                            //retain current page
+                            window.location.href = '{!URLreferer}';
+                        }
+                        //SC Edit button is clicked on Contact home page
+                        else {
+                            //open ACE link to new primary tab
+                            OpenACEonSCprimarytab();
+                        }
+                    }
+                }
+            }
+            OpenACE();  
+        </script>
+        <!-- DISPLAY ACE edit link -->
+        <apex:iframe src="{!URLpath}" scrolling="true"/> 
+    </apex:outputpanel>
+</apex:page>

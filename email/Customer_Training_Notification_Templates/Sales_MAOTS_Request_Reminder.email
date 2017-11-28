@@ -1,0 +1,19 @@
+Training Operations,
+
+The following opportunity includes a MAOTS and is pending sale:
+
+
+Opportunity: {!Opportunity.Link} 
+
+Opportunity Name:  {!Opportunity.Name}
+
+Opportunity Owner: {!Opportunity.OwnerFullName}
+
+Primary Purpose: {!Opportunity.Primary_Purpose__c}
+
+Training Revenue: {!Opportunity.Training_Revenue__c}
+
+Account Name: {!Account.Name}
+
+
+Thank you.

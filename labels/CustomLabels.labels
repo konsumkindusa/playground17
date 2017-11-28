@@ -1,0 +1,4267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AE_PE</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AE_PE Resource</shortDescription>
+        <value>Resource:</value>
+    </labels>
+    <labels>
+        <fullName>Academic_Support_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Academic Support Subject</shortDescription>
+        <value>No Subject provided</value>
+    </labels>
+    <labels>
+        <fullName>Account_City_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account City error message</shortDescription>
+        <value>Contact Account City Name Latin is missing</value>
+    </labels>
+    <labels>
+        <fullName>Account_Name_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Name error message</shortDescription>
+        <value>Contact Account Name Latin is missing</value>
+    </labels>
+    <labels>
+        <fullName>AccounttLicMsgNoCDSID</fullName>
+        <categories>Licenses on Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccounttLicMsgNoCDSID</shortDescription>
+        <value>Unable to display Licenses for an Account without a CDS Account Id</value>
+    </labels>
+    <labels>
+        <fullName>AccounttLicMsgNoSiebelId</fullName>
+        <categories>Licenses on Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Licenses for contact without Seibel Account Id</shortDescription>
+        <value>Unable to display Licenses for an Account without a Siebel Account Id</value>
+    </labels>
+    <labels>
+        <fullName>Activity_not_found_for_Project_Purpose</fullName>
+        <categories>TimeCardController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Activity not found for Project Purpose</shortDescription>
+        <value>No dependent activity Type values found for selected Project</value>
+    </labels>
+    <labels>
+        <fullName>AssignBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignBtn</shortDescription>
+        <value>Assign</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessSummary</shortDescription>
+        <value>The opportunities you selected and their attached open activities have successfully been reassigned.</value>
+    </labels>
+    <labels>
+        <fullName>AssignSuccessTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignSuccessTitle</shortDescription>
+        <value>Reassignment successfully completed!</value>
+    </labels>
+    <labels>
+        <fullName>AssignToBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssignToBtn</shortDescription>
+        <value>Assign to:</value>
+    </labels>
+    <labels>
+        <fullName>AssigningBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssigningBtn</shortDescription>
+        <value>In progress ...</value>
+    </labels>
+    <labels>
+        <fullName>Book_Project_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Book Project Subject</shortDescription>
+        <value>No subject provided</value>
+    </labels>
+    <labels>
+        <fullName>Button_Add_Entry</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Add Entry</shortDescription>
+        <value>New Row</value>
+    </labels>
+    <labels>
+        <fullName>Button_Cancel</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Button_Delete</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Delete</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Button_Edit</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Button_Go</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Go</shortDescription>
+        <value>Go!</value>
+    </labels>
+    <labels>
+        <fullName>Button_New</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Button_OK</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - OK</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_Close</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Save &amp; Close</shortDescription>
+        <value>Save &amp; Close</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_New</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Save &amp; New</shortDescription>
+        <value>Save &amp; New</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_and_Send</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Save and Send</shortDescription>
+        <value>Save and Send</value>
+    </labels>
+    <labels>
+        <fullName>Button_Save_to_Draft</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Save to Draft</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Button_Submit_as_Final</fullName>
+        <categories>VF, Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button - Submit as Final</shortDescription>
+        <value>Submit As Final</value>
+    </labels>
+    <labels>
+        <fullName>CDS_Account_Id_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDS Account Id Error Message</shortDescription>
+        <value>CDS Account Id is missing</value>
+    </labels>
+    <labels>
+        <fullName>CDS_Contact_Id_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDS Contact Id Error Message</shortDescription>
+        <value>CDS Contact Id is missing</value>
+    </labels>
+    <labels>
+        <fullName>CPN_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPN Account Link</shortDescription>
+        <value>https://mathworks.my.salesforce.com/console#%2F</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Available_Courses</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Available_Courses</shortDescription>
+        <value>Available Courses:</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_BlacklistedEnrollee</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_BlacklistedEnrollee</shortDescription>
+        <value>Oops! It appears the email address associated with this MathWorks account  has been prohibited from enrolling in MATLAB Academy. Please contact customer service for more information.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_ButtonCancel</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_ButtonCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_ButtonSave</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_ButtonSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CHClass</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CHClass</shortDescription>
+        <value>Class</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CHEnroll</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CHEnroll</shortDescription>
+        <value>Enroll</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CHEnrolledOn</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CHEnrolledOn</shortDescription>
+        <value>Enrolled On</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CHLanguage</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CHLanguage</shortDescription>
+        <value>Language</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CHPrerequisite</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CHPrerequisite</shortDescription>
+        <value>Prerequisite</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CHSelectRow</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CHSelectRow</shortDescription>
+        <value>Select Row</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Class</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Class</shortDescription>
+        <value>Class</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CoOrdinatorNotification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CoOrdinatorNotification</shortDescription>
+        <value>Dear {0},&lt;br/&gt;&lt;br/&gt; 
+We are pleased to confirm that your MathWorks online training agreement for {1} will be active from {2} to {3}.&lt;br/&gt;
+Once active, your exclusive agreement registration link will be:&lt;br/&gt;&lt;br/&gt; 
+{4}&lt;br/&gt;&lt;br/&gt; 
+By following the link above, your users, subject to any seat or registration restrictions, will be granted access to the following course(s):&lt;br/&gt;&lt;br/&gt; 
+{5}&lt;br/&gt;&lt;br/&gt; 
+Please note: The current end date of your agreement is {3}. Users will have until that date to access and complete course content, and will require a MathWorks Account registered to your specified agreement email domain(s).&lt;br/&gt;&lt;br/&gt; 
+Questions?&lt;br/&gt; 
+If you have any questions, contact us at {6} or {7}&lt;br/&gt; 
+&lt;br/&gt;
+Thank you,&lt;br/&gt; 
+MathWorks Training Services&lt;br/&gt; 
+{8}&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_CoOrdinatorNotificationSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_CoOrdinatorNotificationSubject</shortDescription>
+        <value>MathWorks Online Course Agreement Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Coordinator_Notification_Part1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Coordinator_Notification_Part1</shortDescription>
+        <value>Dear {0},&lt;br/&gt;&lt;br/&gt;
+We are pleased to confirm that your MathWorks online training agreement for {1} will be active from {2} to {3}.&lt;br/&gt;&lt;br/&gt;
+Your users will be granted access to the following course(s):&lt;br/&gt;&lt;br/&gt; 
+{4}&lt;br/&gt;
+Once the agreement is active, all users who are associated to your campus Total Academic Headcount (TAH) license are &lt;span style=&quot;font-weight: bold;&quot;&gt;automatically enrolled&lt;/span&gt; in all available online training courses. To access training, users should:&lt;br/&gt;&lt;br/&gt; 
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1. Visit &lt;a href=&quot;http://matlabacademy.mathworks.com&quot;&gt;http://matlabacademy.mathworks.com&lt;/a&gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2. Log in using their MathWorks account&lt;br/&gt;&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Coordinator_Notification_Part2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Coordinator_Notification_Part2</shortDescription>
+        <value>Users who are not associated to the TAH license can visit &lt;a href=&quot;https://www.mathworks.com/licensecenter/licenses/add&quot;&gt;this page&lt;/a&gt; to link their MathWorks account to the TAH license.&lt;br/&gt;&lt;br/&gt;
+Please note: The current end date of your agreement is {3}. Users will have until that date to access and complete course content, and will require a MathWorks Account associated with your TAH license.&lt;br/&gt;&lt;br/&gt;
+Questions?&lt;br/&gt; 
+If you have any questions, contact us at {5} or {6}&lt;br/&gt; 
+&lt;br/&gt; 
+Thank you,&lt;br/&gt; 
+MathWorks Training Services&lt;br/&gt; 
+{7}&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_ETA</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_ETA</shortDescription>
+        <value>Enterprise Training Agreement</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EmailNotInAllowedDomain</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EmailNotInAllowedDomain</shortDescription>
+        <value>Oops! It appears the email address associated with this MathWorks Account is not associated with {0}. Please make sure to enroll using a MathWorks Account that is registered using your {1} email address. If you have additional questions, please contact customer service for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EnrolleeName</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EnrolleeName</shortDescription>
+        <value>Enrollee Name</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EnrollingClassInformation</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EnrollingClassInformation</shortDescription>
+        <value>&lt;b&gt;Note: &lt;/b&gt;You are enrolling in these online, self-paced classes as {0} with the MathWorks Account &quot;{1}&quot; as part of a training agreement with {2}. You will have access until {3}.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EnrollmentCode</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EnrollmentCode</shortDescription>
+        <value>Enrollment Code</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EnrollmentCodeTooltip</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EnrollmentCodeTooltip</shortDescription>
+        <value>Please enter a valid 12 digit Enrollment Code. The code must be active and associated with an active Enterprise Training Agreement.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EnrollmentStatus</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EnrollmentStatus</shortDescription>
+        <value>Enrollment Status</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Enrollment_Code_Configuration_Missing_Setup</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Enrollment_Code_Configuration_Missing_Setup</shortDescription>
+        <value>Missing setup. Please make sure that you have setup the org wide default data for Enrollment_Code_Configuration__c custom settings.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_EnterEnrollmentCode</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_EnterEnrollmentCode</shortDescription>
+        <value>Enter the enrollment code provided by your organization to see the next steps in the enrollment process.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Footer_Patents</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Footer_Patents</shortDescription>
+        <value>Patents</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Footer_Preventing_Piracy</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Footer_Preventing_Piracy</shortDescription>
+        <value>Preventing Piracy</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Footer_Privacy_Policy</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Footer_Privacy_Policy</shortDescription>
+        <value>Privacy Policy</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Footer_Trademarks</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Footer_Trademarks</shortDescription>
+        <value>Trademarks</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_HowDoISignUpContent</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_HowDoISignUpContent</shortDescription>
+        <value>&lt;p&gt;&lt;b&gt;Here&apos;s how&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Sign into your MathWorks Account registered to your official university or organization email address.&lt;/li&gt;&lt;li&gt;Select from the list of classes available through your university or organization.&lt;/li&gt;&lt;li&gt;You will receive an email with information on taking your selected course(s) through MATLAB Academy.&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_HowDoISignUpHeader</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_HowDoISignUpHeader</shortDescription>
+        <value>Access your free training</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_InactiveEnterpriseAgreementTrainingCode</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_InactiveEnterpriseAgreementTrainingCode</shortDescription>
+        <value>Oops! The Training Agreement associated with this Enrollment Code is not active. Please contact your organization&apos;s training coordinator.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_InvalidEnrollmentCodeLength</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_InvalidEnrollmentCodeLength</shortDescription>
+        <value>Oops! The Enrollment Code provided does not seem to be a valid length. Please check your entry and try again.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Join_Conversation</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Join_Conversation</shortDescription>
+        <value>Join the conversation</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_LearnMatlabOnline</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_LearnMatlabOnline</shortDescription>
+        <value>Learn MATLAB Online</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_LetsGetStarted</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_LetsGetStarted</shortDescription>
+        <value>Get started</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Link_Patents</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Link_Patents</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/patents.html?s_tid=gf_pat</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Link_Preventing_Piracy</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Link_Preventing_Piracy</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/piracy.html?s_tid=gf_pir</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Link_Privacy_Policy</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Link_Privacy_Policy</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/?s_tid=gf_priv</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Link_Trademarks</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Link_Trademarks</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/trademarks.html?s_tid=gf_trd</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Logout</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Logout</shortDescription>
+        <value>Log out</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MATLAB_Academy_Link</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MATLAB_Academy_Link</shortDescription>
+        <value>To resume your work in these classes, please log in to &lt;a href=&quot;https://matlabacademy.mathworks.com&quot;&gt;MATLAB Academy&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MATLAB_Facebook</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MATLAB_Facebook</shortDescription>
+        <value>http://www.facebook.com/MATLAB</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MATLAB_GooglePlus</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MATLAB_GooglePlus</shortDescription>
+        <value>https://plus.google.com/117177960465154322866?prsrc=3</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MATLAB_LinkedIn</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MATLAB_LinkedIn</shortDescription>
+        <value>http://www.linkedin.com/company/the-mathworks_2</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MATLAB_RSS</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MATLAB_RSS</shortDescription>
+        <value>http://www.mathworks.com/company/rss/index.html</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MATLAB_Twitter</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MATLAB_Twitter</shortDescription>
+        <value>http://www.twitter.com/MATLAB</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MathWorks_Copyright</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MathWorks_Copyright</shortDescription>
+        <value>&amp;copy; 1994-2017 The MathWorks, Inc.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MathworksRegistered</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Mathworks&amp;reg;</shortDescription>
+        <value>Mathworks&amp;reg;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_MatlabSimulinkTraining</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_MatlabSimulinkTraining</shortDescription>
+        <value>MATLAB and Simulink Training</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_NewEnrollmentSuccess</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_NewEnrollmentSuccess</shortDescription>
+        <value>Your request for a new enrollment(s) has been successfully submitted. You will receive an email once your enrollment request has been approved.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_No_Classes_Available</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_No_Classes_Available</shortDescription>
+        <value>No classes available for enrollment with associated Enterprise Training Agreement.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_No_Current_Enrollments</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_No_Current_Enrollments</shortDescription>
+        <value>No current enrollments. Choose from the classes below to get started learning MATLAB today.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_NonActiveEnrollmentCode</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_NonActiveEnrollmentCode</shortDescription>
+        <value>Oops! The Enrollment Code entered is no longer active. Please check your entry and try again or contact your organization&apos;s training coordinator to obtain a new code.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_NonExistentEnrollmentCode</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_NonExistentEnrollmentCode</shortDescription>
+        <value>Oops! The Enrollment Code entered does not exist. Please check your entry and try again.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_OmnitureNonProdURL</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_OmnitureNonProdURL</shortDescription>
+        <value>https://assets.adobedtm.com/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09-staging.js</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_OmnitureProdURL</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_OmnitureProdURL</shortDescription>
+        <value>https://www.mathworks.com/scripts/dtm/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_OrderNumber</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_OrderNumber</shortDescription>
+        <value>Order Number</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_PaymentMethod</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_PaymentMethod</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_PrivacyPolicyInfo</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_PrivacyPolicyInfo</shortDescription>
+        <value>*We will not  sell or rent your personal contact information. See our &lt;a href=&quot;http://www.mathworks.com/company/aboutus/policies_statements/?s_tid=gf_priv&quot;&gt;privacy policy&lt;/a&gt; for details.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Renewal_Cofirmation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Renewal_Cofirmation</shortDescription>
+        <value>Dear {0},&lt;br/&gt;&lt;br/&gt; 
+We are pleased to confirm that your MathWorks online training agreement for {1} has been renewed. Your exclusive registration access portal link is:&lt;br/&gt;&lt;br/&gt; 
+{2}&lt;br/&gt;&lt;br/&gt; 
+By following the link above, your users, subject to any seat or registration restrictions, will be granted access to the following course(s):&lt;br/&gt;&lt;br/&gt; 
+{3}&lt;br/&gt;&lt;br/&gt; 
+Please note: The updated end date of your agreement is {4}. Users will have until that date to access and complete course content, and will require a MathWorks Account registered to your specified agreement email domain(s).&lt;br/&gt;&lt;br/&gt; 
+Questions?&lt;br/&gt; 
+If you have any questions, contact us at {5} or {6}&lt;br/&gt;
+&lt;br/&gt; 
+Thank you,&lt;br/&gt; 
+MathWorks Training Services &lt;br/&gt; 
+{7}&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Renewal_Confirmation_Part1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Renewal_Confirmation_Part1</shortDescription>
+        <value>Dear {0},&lt;br/&gt;&lt;br/&gt; 
+We are pleased to confirm that your MathWorks online training agreement for {1} has been renewed.&lt;br/&gt;&lt;br/&gt; 
+Your users will be granted access to the following course(s):&lt;br/&gt;&lt;br/&gt; 
+{4}&lt;br/&gt;
+All users who are associated to your campus Total Academic Headcount (TAH) license are &lt;span style=&quot;font-weight: bold;&quot;&gt;automatically enrolled&lt;/span&gt; in all available online training courses. To access training, users should:&lt;br/&gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1. Visit &lt;a href=&quot;http://matlabacademy.mathworks.com&quot;&gt;http://matlabacademy.mathworks.com&lt;/a&gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2. Log in using their MathWorks account&lt;br/&gt;&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Renewal_Confirmation_Part2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Renewal_Confirmation_Part2</shortDescription>
+        <value>Users who are not associated to the TAH license can visit &lt;a href=&quot;https://www.mathworks.com/licensecenter/licenses/add&quot;&gt;this page&lt;/a&gt; to link their MathWorks account to the TAH license.&lt;br/&gt;&lt;br/&gt;
+
+Please note: The updated end date of your agreement is {3}. Users will have until that date to access and complete course content, and will require a MathWorks Account associated with your TAH license.&lt;br/&gt;&lt;br/&gt; 
+Questions?&lt;br/&gt; 
+If you have any questions, contact us at {5} or {6}&lt;br/&gt; 
+&lt;br/&gt; 
+Thank you,&lt;br/&gt; 
+MathWorks Training Services &lt;br/&gt; 
+{7}&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Renewal_Template_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Renewal_Template_Subject</shortDescription>
+        <value>MathWorks Online Course Agreement Renewal Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_RequiredFieldsMissing</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_RequiredFieldsMissing</shortDescription>
+        <value>Required fields missing. Please correct the error(s) and try again.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_SSOLogoutURL</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_SSOLogoutURL</shortDescription>
+        <value>https://www.mathworks.com/login/logout?uri=http://trainingenrollment.mathworks.com/selfEnrollment?code={0}&amp;ln={1}</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_SelectAll</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_SelectAll</shortDescription>
+        <value>Select/Deselect all classes.</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_SignupMatlabAcademyContent</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_SignupMatlabAcademyContent</shortDescription>
+        <value>&lt;p&gt;Learn MATLAB&amp;reg; interactively, at your own pace, with MATLAB Academy&amp;trade;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;MATLAB is listed as a top skill to learn by students at top technical schools across the globe. Knowing MATLAB is beneficial for your coursework and projects in school, and when entering the workforce.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;You can build these skills with online, self-paced training sponsored by {0}.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_SignupMatlabAcademyHeader</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_SignupMatlabAcademyHeader</shortDescription>
+        <value>Complimentary MATLAB Training for {0}</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_SiteErrorPageContent</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_SiteErrorPageContent</shortDescription>
+        <value>&lt;p&gt;Our enrollment request form is unavailable at this time. 
+For assistance with creating enrollment, contact &lt;a href=&quot;mailto:training@mathworks.com&quot;&gt;Training Support&lt;/a&gt;.&lt;/p&gt;&lt;/br&gt;
+
+&lt;p&gt;Please provide with your name, email, phone, organization and the MATLAB Academy access portal link received in the email.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_StaffAndStudents</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_StaffAndStudents</shortDescription>
+        <value>Staff and Students</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_SubmitEnrollmentRequest</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_SubmitEnrollmentRequest</shortDescription>
+        <value>Submit enrollment request</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_THAvailableClasses</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_THAvailableClasses</shortDescription>
+        <value>Available Classes</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_THClassesEnrolledIn</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_THClassesEnrolledIn</shortDescription>
+        <value>Current Enrollments</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Title_Enrollee_Details</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Title_Enrollee_Details</shortDescription>
+        <value>MATLAB &amp;amp; Simulink Training - Enrollee Details</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_Title_Self_Enroll</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_Title_Self_Enroll</shortDescription>
+        <value>MATLAB &amp;amp; Simulink Training - Self Enrollment</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_ValidateCode</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_ValidateCode</shortDescription>
+        <value>Validate Code</value>
+    </labels>
+    <labels>
+        <fullName>CP_ENROLL_YourOrganization</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_ENROLL_YourOrganization</shortDescription>
+        <value>your organization</value>
+    </labels>
+    <labels>
+        <fullName>CP_EnrollTrainingConf_1</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_EnrollTrainingConf_1</shortDescription>
+        <value>Dear {0},&lt;br/&gt; &lt;br/&gt; 
+Your online training enrollment on behalf of {1} in the following course(s) is confirmed: &lt;br/&gt; &lt;br/&gt; 
+&lt;strong&gt;{2}&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt; 
+Please Note: You have until {3} to access and complete the course content.&lt;br/&gt; 
+&lt;p style=&quot;font-size:15px;font-weight:bolder;margin:10px 0px 0px&quot;&gt;&lt;strong&gt;Accessing Your Online Course&lt;/strong&gt;&lt;/p&gt; 
+To gain access to the online course content, please follow the link below and log in with your MathWorks Account username and password as required:&lt;br/&gt; 
+&lt;a id=&quot;theLink&quot; name=&quot;theLink&quot; href=&quot;{4}&quot;&gt;MATLAB Academy login&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;
+Please note there may be a 10-15 minute delay before you can access the course material(s) following your registration.&lt;br/&gt; 
+For MathWorks Account login inquiries, please see our &lt;a id=&quot;theLink&quot; name=&quot;theLink&quot; href=&quot;{5}&quot;&gt;FAQ page&lt;/a&gt;&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CP_EnrollTrainingConf_2</fullName>
+        <categories>Training Self Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CP_EnrollTrainingConf_2</shortDescription>
+        <value>&lt;p style=&quot;font-size:15px;font-weight:bolder;margin:10px 0px 0px&quot;&gt;&lt;strong&gt;Questions?&lt;/strong&gt;&lt;/p&gt; 
+If you have any questions, contact us at {0} or {1}&lt;br/&gt; 
+&lt;p style=&quot;font-size:15px;font-weight:bolder;margin:10px 0px 0px&quot;&gt;&lt;strong&gt;Explore Training Options&lt;/strong&gt;&lt;/p&gt;
+For more information on additional MathWorks training offerings, visit &lt;a id=&quot;theLink&quot; name=&quot;theLink&quot; href=&quot;{2}&quot;&gt;{2}&lt;/a&gt;&lt;br/&gt;&lt;br/&gt; 
+
+Thank you,&lt;br/&gt;
+MathWorks Training Services &lt;br/&gt; 
+{3}&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CS_Add_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Add Admin</shortDescription>
+        <value>Add a new administrator</value>
+    </labels>
+    <labels>
+        <fullName>CS_Add_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Add Details</shortDescription>
+        <value>Add additional details to your request</value>
+    </labels>
+    <labels>
+        <fullName>CS_Assistance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Assistance</shortDescription>
+        <value>To request assistance from the Customer Service team, please fill out the form below. A customer service representative will contact you.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Back_to_Home</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Back to Home</shortDescription>
+        <value>Back to Home</value>
+    </labels>
+    <labels>
+        <fullName>CS_Backup_Host_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Backup Host ID</shortDescription>
+        <value>Backup Host ID</value>
+    </labels>
+    <labels>
+        <fullName>CS_Change</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Change</shortDescription>
+        <value>Change an existing administrator</value>
+    </labels>
+    <labels>
+        <fullName>CS_City</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>CS_Company_University</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Company University</shortDescription>
+        <value>Company / University</value>
+    </labels>
+    <labels>
+        <fullName>CS_Country_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Country Region</shortDescription>
+        <value>Country/Region</value>
+    </labels>
+    <labels>
+        <fullName>CS_Create_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Create New</shortDescription>
+        <value>Create New Service Request</value>
+    </labels>
+    <labels>
+        <fullName>CS_Current_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Current Contact</shortDescription>
+        <value>Current Contact Information</value>
+    </labels>
+    <labels>
+        <fullName>CS_Department</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Department</shortDescription>
+        <value>Department</value>
+    </labels>
+    <labels>
+        <fullName>CS_E_mail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS E-mail</shortDescription>
+        <value>E-mail</value>
+    </labels>
+    <labels>
+        <fullName>CS_Extension</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Extension</shortDescription>
+        <value>Extension</value>
+    </labels>
+    <labels>
+        <fullName>CS_Fax</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Fax</shortDescription>
+        <value>Fax</value>
+    </labels>
+    <labels>
+        <fullName>CS_First_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>CS_Footer_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Footer 1</shortDescription>
+        <value>MathWorks is a worldwide organization. Your submission will be accessed by staff who will assist with your service request. If you plan to attach any files that contain export controlled information, call</value>
+    </labels>
+    <labels>
+        <fullName>CS_Footer_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Footer 2</shortDescription>
+        <value>MathWorks Technical Support</value>
+    </labels>
+    <labels>
+        <fullName>CS_Footer_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Footer 3</shortDescription>
+        <value>for your country before you submit your request.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Footer_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Footer 4</shortDescription>
+        <value>MATLAB and Simulink student Version Users: Technical support by Mathworks is only available for issues related to activation, installation, and bug-related problems. For other issues, visit the</value>
+    </labels>
+    <labels>
+        <fullName>CS_Footer_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Footer 5</shortDescription>
+        <value>MATLAB and Simulink Student Version support page</value>
+    </labels>
+    <labels>
+        <fullName>CS_Footer_6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Footer 6</shortDescription>
+        <value>or contact your instructor.</value>
+    </labels>
+    <labels>
+        <fullName>CS_From_License</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS From License</shortDescription>
+        <value>From License #</value>
+    </labels>
+    <labels>
+        <fullName>CS_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Header</shortDescription>
+        <value>Customer Service: License modifications, product activation</value>
+    </labels>
+    <labels>
+        <fullName>CS_Host_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Host ID</shortDescription>
+        <value>How do I obtain my Host ID?</value>
+    </labels>
+    <labels>
+        <fullName>CS_How_Get</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS How Get</shortDescription>
+        <value>How do I get my license number?</value>
+    </labels>
+    <labels>
+        <fullName>CS_If_You_would</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS If You would</shortDescription>
+        <value>If you would like to add a backup or redundant server, both backup hosts are required.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Job_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Job Title</shortDescription>
+        <value>Job Title</value>
+    </labels>
+    <labels>
+        <fullName>CS_Last_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>CS_License_Center</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS License Center</shortDescription>
+        <value>please visit the License Center</value>
+    </labels>
+    <labels>
+        <fullName>CS_Mail_Stop</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Mail Stop</shortDescription>
+        <value>Mail Stop</value>
+    </labels>
+    <labels>
+        <fullName>CS_Middle_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Middle Name</shortDescription>
+        <value>Middle Name</value>
+    </labels>
+    <labels>
+        <fullName>CS_Mobile_Phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Mobile Phone</shortDescription>
+        <value>Mobile Phone</value>
+    </labels>
+    <labels>
+        <fullName>CS_New_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS New Contact</shortDescription>
+        <value>New Contact Information</value>
+    </labels>
+    <labels>
+        <fullName>CS_Note_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Note Name</shortDescription>
+        <value>Note: Please enter the official name.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Notes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Notes</shortDescription>
+        <value>Notes</value>
+    </labels>
+    <labels>
+        <fullName>CS_Option_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Option 1</shortDescription>
+        <value>Passcode/license file or redesignate (transfer) license to new server</value>
+    </labels>
+    <labels>
+        <fullName>CS_Option_1_Note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Option 1 Note</shortDescription>
+        <value>Note: Releases 2008a and beyond require activation and no longer need passcodes for installation.</value>
+    </labels>
+    <labels>
+        <fullName>CS_Option_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Option 2</shortDescription>
+        <value>Add, Change or Remove an Administrator</value>
+    </labels>
+    <labels>
+        <fullName>CS_Option_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Option 3</shortDescription>
+        <value>Combine Licenses/Transfer products between licenses</value>
+    </labels>
+    <labels>
+        <fullName>CS_Option_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Option 4</shortDescription>
+        <value>General CS Request (Activation, Invoice, etc.)</value>
+    </labels>
+    <labels>
+        <fullName>CS_Phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>CS_Primary_Host</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Primary Host</shortDescription>
+        <value>Primary Host ID (Required only for network installation):</value>
+    </labels>
+    <labels>
+        <fullName>CS_Product_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Product Name</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>CS_Quantity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>CS_Redesignate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Redesignate</shortDescription>
+        <value>Redesignate (transfer) a license to a new server</value>
+    </labels>
+    <labels>
+        <fullName>CS_Remove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Remove</shortDescription>
+        <value>Remove an existing administrator</value>
+    </labels>
+    <labels>
+        <fullName>CS_Request_Passcode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Request Passcode</shortDescription>
+        <value>Request a passcode/license file</value>
+    </labels>
+    <labels>
+        <fullName>CS_Salutation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Salutation</shortDescription>
+        <value>Salutation</value>
+    </labels>
+    <labels>
+        <fullName>CS_Self_Service</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Self Service</shortDescription>
+        <value>For self-service,</value>
+    </labels>
+    <labels>
+        <fullName>CS_Step_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Step 1</shortDescription>
+        <value>Step 1/2: Select Request Type</value>
+    </labels>
+    <labels>
+        <fullName>CS_Street_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Street Address</shortDescription>
+        <value>Street Address</value>
+    </labels>
+    <labels>
+        <fullName>CS_Task</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Task</shortDescription>
+        <value>Task</value>
+    </labels>
+    <labels>
+        <fullName>CS_To_Add</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS To Add</shortDescription>
+        <value>To add/remove a License End User,</value>
+    </labels>
+    <labels>
+        <fullName>CS_To_License</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS To License</shortDescription>
+        <value>To License #</value>
+    </labels>
+    <labels>
+        <fullName>CS_Transfer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Transfer</shortDescription>
+        <value>Transfer</value>
+    </labels>
+    <labels>
+        <fullName>CS_What_Would_You</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS What Would You</shortDescription>
+        <value>What would you like to do?</value>
+    </labels>
+    <labels>
+        <fullName>CS_Zip_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Zip Code</shortDescription>
+        <value>Zip Code</value>
+    </labels>
+    <labels>
+        <fullName>CaseCloneOverride_AdditionalInfo</fullName>
+        <categories>VF, CaseCloneOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseCloneOverride - AdditionalInfo</shortDescription>
+        <value>Additional Information</value>
+    </labels>
+    <labels>
+        <fullName>CaseCloneOverride_CaseInfo</fullName>
+        <categories>VF, CaseCloneOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseCloneOverride - CaseInfo</shortDescription>
+        <value>Case Information</value>
+    </labels>
+    <labels>
+        <fullName>CaseCloneOverride_DescriptionInfo</fullName>
+        <categories>VF, CaseCloneOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseCloneOverride - Description Info</shortDescription>
+        <value>Description Information</value>
+    </labels>
+    <labels>
+        <fullName>CaseCloneOverride_LicenseProduct</fullName>
+        <categories>VF, CaseCloneOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseCloneOverride - License and Product</shortDescription>
+        <value>License &amp; Product</value>
+    </labels>
+    <labels>
+        <fullName>CaseDeleteOverride_LinkText</fullName>
+        <categories>VF, CaseDeleteOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Delete Override - Link Text</shortDescription>
+        <value>Click here to go back to previous page.</value>
+    </labels>
+    <labels>
+        <fullName>CaseDeleteOverride_PageMessage</fullName>
+        <categories>VF, CaseDeleteOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Delete Override - Page Message</shortDescription>
+        <value>You are not allowed to delete Cases.</value>
+    </labels>
+    <labels>
+        <fullName>Check_OnSupport_button</fullName>
+        <categories>VF, button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check OnSupport - button</shortDescription>
+        <value>Check OnSupport</value>
+    </labels>
+    <labels>
+        <fullName>Class</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contain the Class</shortDescription>
+        <value>Class</value>
+    </labels>
+    <labels>
+        <fullName>Class_Before_Delete</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Class Before Delete</shortDescription>
+        <value>Cannot delete classes with enrollments or that are published to the web.</value>
+    </labels>
+    <labels>
+        <fullName>CloseDateCriteriaLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CloseDateCriteriaLabel</shortDescription>
+        <value>Closed Date</value>
+    </labels>
+    <labels>
+        <fullName>Comment_during_closedcase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comment_during_closedcase</shortDescription>
+        <value>New close case comment added to the case:</value>
+    </labels>
+    <labels>
+        <fullName>Comment_on_closedcase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comment_on_closedcase</shortDescription>
+        <value>New case comment added to the closed case:</value>
+    </labels>
+    <labels>
+        <fullName>Commerce_Account_Individual_Account_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commerce Account Individual Account Error</shortDescription>
+        <value>Quotes do not exist for Individual Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Commerce_Account_No_CDS_ID_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commerce Account No CDS ID Error</shortDescription>
+        <value>Unable to display quotes for accounts without a CDS Account Id</value>
+    </labels>
+    <labels>
+        <fullName>Commerce_CDS_Id_Not_Attached</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commerce CDS Id Not Attached</shortDescription>
+        <value>No CDS Id attached.</value>
+    </labels>
+    <labels>
+        <fullName>Commerce_CDS_Record_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commerce CDS Record Not Found</shortDescription>
+        <value>No record is found.</value>
+    </labels>
+    <labels>
+        <fullName>Commerce_Contact_No_CDS_ID_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commerce Contact No CDS ID Error</shortDescription>
+        <value>Unable to display quotes for contacts without a CDS Contact Id</value>
+    </labels>
+    <labels>
+        <fullName>Competitor_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Competitor_Required</shortDescription>
+        <value>At least one Competitor is required if choosing COMPETITION as the Non-Win Reason. 
+
+Please update the Competitors list on the Opportunity then attempt to close the opportunity again.</value>
+    </labels>
+    <labels>
+        <fullName>ConLicMsgNoMWAccntId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConLicMsgNoMWAccntId</shortDescription>
+        <value>Unable to display Licenses for contact without a MW Account Id</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_Delete_Msg</fullName>
+        <categories>TimecardController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm Delete Msg</shortDescription>
+        <value>Timecard successfully removed.</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_Save_Msg</fullName>
+        <categories>TimecardController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm Save Msg</shortDescription>
+        <value>Timecards successfully saved.</value>
+    </labels>
+    <labels>
+        <fullName>Console_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Console URL</shortDescription>
+        <value>https://mathworks.my.salesforce.com/console#%2F</value>
+    </labels>
+    <labels>
+        <fullName>ContQuoreMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContQuoteMsg</shortDescription>
+        <value>Unable to display quotes for contacts without a Siebel Contact Id</value>
+    </labels>
+    <labels>
+        <fullName>ContQuoteFailResp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContQuoteFailResp</shortDescription>
+        <value>There are no quotes related to this Contact</value>
+    </labels>
+    <labels>
+        <fullName>ContQuoteSuccessResp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContQuoteSuccessResp</shortDescription>
+        <value>Successfully linked Opportunity with Quote</value>
+    </labels>
+    <labels>
+        <fullName>ContactLicMsgNoCDSID</fullName>
+        <categories>Licenses on Contact</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContactLicMsgNoCDSID</shortDescription>
+        <value>Unable to display Licenses for contact without a CDS Contact Id</value>
+    </labels>
+    <labels>
+        <fullName>ContactLicMsgNoSiebelId</fullName>
+        <categories>Licenses on Contact</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Licenses for contact without Seibel Contact Id</shortDescription>
+        <value>Unable to display Licenses for contact without a Siebel Contact Id</value>
+    </labels>
+    <labels>
+        <fullName>Contact_FirstName_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact FirstName error message</shortDescription>
+        <value>Contact First Name Latin is missing</value>
+    </labels>
+    <labels>
+        <fullName>Contact_LastName_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact LastName error message</shortDescription>
+        <value>Contact Last Name Latin is missing</value>
+    </labels>
+    <labels>
+        <fullName>ConvertedLeadPageURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConvertedLeadPageURL</shortDescription>
+        <value>/p/lead/ViewConvertedLead/d?id=</value>
+    </labels>
+    <labels>
+        <fullName>Country_Label</fullName>
+        <categories>VF Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Country Label</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Country_Required</fullName>
+        <categories>VF Component, Territory_Rule_Criteria_Value__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Country Required</shortDescription>
+        <value>Please select a country.</value>
+    </labels>
+    <labels>
+        <fullName>Cp_EnrollTemplateSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cp_EnrollTemplateSubject</shortDescription>
+        <value>MathWorks Online Training Enrollment Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>CreateNewQuotePageBlockSectionForOpportunityProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CreateNewQuotePageBlockSectionForOpportunityProduct</shortDescription>
+        <value>Opportunity Products</value>
+    </labels>
+    <labels>
+        <fullName>CreateNewQuotePageBlockSectionToChooseContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CreateNewQuotePageBlockSectionToChooseContact</shortDescription>
+        <value>Choose Opportunity Contact</value>
+    </labels>
+    <labels>
+        <fullName>Create_case_Warning_Message</fullName>
+        <categories>warning message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create case Warning Message</shortDescription>
+        <value>The request could not be completed because of the following:</value>
+    </labels>
+    <labels>
+        <fullName>CreatedDateCriteriaLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CreatedDateCriteriaLabel</shortDescription>
+        <value>Created date:</value>
+    </labels>
+    <labels>
+        <fullName>CriteriaSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CriteriaSearchSection</shortDescription>
+        <value>Search with a search criteria</value>
+    </labels>
+    <labels>
+        <fullName>DeleteFeedITem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DeleteFeedItem</shortDescription>
+        <value>#deletethisthread</value>
+    </labels>
+    <labels>
+        <fullName>DisplayViewLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DisplayViewLabel</shortDescription>
+        <value>Display:</value>
+    </labels>
+    <labels>
+        <fullName>Do_Not_Create_Opportunity</fullName>
+        <categories>In Lead conversion Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Do Not Create Opportunity</shortDescription>
+        <value>Convert To Contact And Do Not Create Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Do_not_allow_duplicate_enrollments_for_the_same_contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Do not allow duplicate enrollments for the same contact in a class</shortDescription>
+        <value>Contact is already enrolled in this class</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Territory_Button_Label</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Edit Territory Button Label</shortDescription>
+        <value>Edit Territory</value>
+    </labels>
+    <labels>
+        <fullName>EmailChangeRequest</fullName>
+        <categories>EmailHandler,case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailChangeRequest</shortDescription>
+        <value>Finish changing your Salesforce account’s outgoing email address</value>
+    </labels>
+    <labels>
+        <fullName>EnrollmentCodeError</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrollmentCodeError</shortDescription>
+        <value>Only one  active Enrollment code is  allowed on the Training Agreement.</value>
+    </labels>
+    <labels>
+        <fullName>EnrollmentJpCertL1</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrollmentJpCertL1</shortDescription>
+        <value>ここに、以下のMathWorks トレーニングを</value>
+    </labels>
+    <labels>
+        <fullName>EnrollmentJpCertL2</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrollmentJpCertL2</shortDescription>
+        <value>受講したことを証明いたします。</value>
+    </labels>
+    <labels>
+        <fullName>EnrollmentJpCertL3</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrollmentJpCertL3</shortDescription>
+        <value>開催日:</value>
+    </labels>
+    <labels>
+        <fullName>EnrollmentJpCertL4</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrollmentJpCertL4</shortDescription>
+        <value>様</value>
+    </labels>
+    <labels>
+        <fullName>EnrollmentPreriquisiteError</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrollmentPreriquisiteError</shortDescription>
+        <value>Cannot enroll in exam. The prerequisite for the exam has not been completed.</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_ClassLabel</fullName>
+        <categories>VF, Enrollment,Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment_ClassLabel</shortDescription>
+        <value>Class</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_Contact_not_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment Contact not found</shortDescription>
+        <value>Enrollment Contact not found.</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_Name</fullName>
+        <categories>VF, Enrollment,Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment Name</shortDescription>
+        <value>Enrollee Name</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_Required_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment Required Fields</shortDescription>
+        <value>Enrollment required fields missing (email address / class Id / enrollment status).</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_Status</fullName>
+        <categories>VF, Customer Training, Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment Status</shortDescription>
+        <value>Enrollment Status</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_Status_Cancelled</fullName>
+        <categories>Enrollment Trigger Handler, Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment Status Cancelled</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>Enrollment_not_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment not found</shortDescription>
+        <value>Enrollment not found.</value>
+    </labels>
+    <labels>
+        <fullName>Enterprise_Training_Agreement</fullName>
+        <categories>VF, Enrollment, Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enterprise Training Agreement</shortDescription>
+        <value>Enterprise Training Agreement</value>
+    </labels>
+    <labels>
+        <fullName>Escalate_To_Dev_Email_Saved</fullName>
+        <categories>VF, EscToDev</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate To Dev - Save Draft</shortDescription>
+        <value>Email has been saved successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Escalate_To_Dev_Email_Success</fullName>
+        <categories>VF, EscToDev</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate To Dev - Email Success</shortDescription>
+        <value>Your email has been sent successfully.</value>
+    </labels>
+    <labels>
+        <fullName>Escalate_To_Dev_Valid_Email</fullName>
+        <categories>VF, EscToDev</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate To Dev - Save Draft</shortDescription>
+        <value>To Address: must have a valid email address.</value>
+    </labels>
+    <labels>
+        <fullName>Escalated_Task_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalated Task Error</shortDescription>
+        <value>You cannot create an escalation task on closed case</value>
+    </labels>
+    <labels>
+        <fullName>Five_Pillar_Section1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Five Pillar Section1</shortDescription>
+        <value>Broaden Adoption</value>
+    </labels>
+    <labels>
+        <fullName>Five_Pillar_Section2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Five Pillar Section2</shortDescription>
+        <value>Deepen Adoption</value>
+    </labels>
+    <labels>
+        <fullName>Five_Pillar_Section3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Five Pillar Section3</shortDescription>
+        <value>End User Relationships</value>
+    </labels>
+    <labels>
+        <fullName>Five_Pillar_Section4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Five Pillar Section4</shortDescription>
+        <value>Management Relationships</value>
+    </labels>
+    <labels>
+        <fullName>Five_Pillar_Section5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Five Pillar Section5</shortDescription>
+        <value>Executive Relationships</value>
+    </labels>
+    <labels>
+        <fullName>Format_Of_Class_self_paced</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Format Of Class self-paced</shortDescription>
+        <value>self-paced</value>
+    </labels>
+    <labels>
+        <fullName>FunRol_InsideSalesRep</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRol_InsideSalesRep</shortDescription>
+        <value>Inside Sales Rep</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_Distributort</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole_Distributor</shortDescription>
+        <value>Distributor</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_NationalAccountSalesSpecialist</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole__NationalAccountSalesSpecialist</shortDescription>
+        <value>National Account Sales Specialist</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_Renewal</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole_Renewal</shortDescription>
+        <value>Renewal</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_SalesMaintenanceRep</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole__SalesMaintenanceRep</shortDescription>
+        <value>Sales Maintenance Rep</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_SalesManager</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole_SalesManager</shortDescription>
+        <value>Sales Manager</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_SalesRepPrimary</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole__SalesRepPrimary</shortDescription>
+        <value>Sales Rep Primary</value>
+    </labels>
+    <labels>
+        <fullName>FunRole_SalesSpecialist</fullName>
+        <categories>OpportunityAssignmentManager</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunRole_SalesSpecialist</shortDescription>
+        <value>Sales Specialist</value>
+    </labels>
+    <labels>
+        <fullName>GQOQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GQOQuote</shortDescription>
+        <value>&apos;[{&quot;id&quot;:2019965,&quot;opportunityId&quot;:&quot;1-5P8UHT&quot;,&quot;contactId&quot;:&quot;1-ACMSJ&quot;,&quot;quoteStatus&quot;:&quot;Active&quot;,&quot;expirationDate&quot;:&quot;2008-06-03 00:00:00.0&quot;,&quot;createdBy&quot;:&quot;beals&quot;,
+&quot;dateCreated&quot;:&quot;2008-04-04 00:00:00.0&quot;,&quot;productTotal&quot;:232159.4,&quot;discountTotal&quot;:0.0,&quot;handlingTotal&quot;:0.0,&quot;taxTotal&quot;:21105.4,&quot;orderDate&quot;:null,&quot;currencyCode&quot;:&quot;AUD&quot;,
+&quot;webViewable&quot;:true,&quot;modifiedBy&quot;:&quot;jwang&quot;,&quot;dateUpdated&quot;:&quot;2008-04-06 21:25:11.0&quot;,&quot;accountId&quot;:&quot;1-ODPT&quot;},{&quot;id&quot;:2036799,&quot;opportunityId&quot;:&quot;1-5P8UHT&quot;,&quot;contactId&quot;:&quot;1-ACMSJ&quot;,
+&quot;quoteStatus&quot;:&quot;Working&quot;,&quot;expirationDate&quot;:&quot;2008-06-04 00:00:00.0&quot;,&quot;createdBy&quot;:&quot;wvolwerk&quot;,&quot;dateCreated&quot;:&quot;2008-05-05 00:00:00.0&quot;,&quot;productTotal&quot;:304263.3,&quot;discountTotal&quot;:0.0,
+&quot;handlingTotal&quot;:0.0,&quot;taxTotal&quot;:27660.3,&quot;orderDate&quot;:null,&quot;currencyCode&quot;:&quot;AUD&quot;,&quot;webViewable&quot;:true,&quot;modifiedBy&quot;:&quot;wvolwerk&quot;,&quot;dateUpdated&quot;:&quot;2008-05-05 21:40:49.0&quot;,&quot;accountId&quot;:&quot;1-ODPT&quot;},]&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Gecko_Integration_URL</fullName>
+        <categories>Gecko Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Gecko Integration URL</shortDescription>
+        <value>http://komodo.mathworks.com/main/gecko/ndnew</value>
+    </labels>
+    <labels>
+        <fullName>HeaderText</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HeaderText</shortDescription>
+        <value>Mass reassign opportunities</value>
+    </labels>
+    <labels>
+        <fullName>Header_Action</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header Action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>Header_Activity</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header Activity</shortDescription>
+        <value>Activity Type</value>
+    </labels>
+    <labels>
+        <fullName>Header_Hours</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header Hours</shortDescription>
+        <value>Hours</value>
+    </labels>
+    <labels>
+        <fullName>Header_Notes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header Notes</shortDescription>
+        <value>Notes</value>
+    </labels>
+    <labels>
+        <fullName>Header_Product</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header Product</shortDescription>
+        <value>Product Group</value>
+    </labels>
+    <labels>
+        <fullName>Header_Project</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Header Project</shortDescription>
+        <value>Project</value>
+    </labels>
+    <labels>
+        <fullName>Individual_Account_Error_Message</fullName>
+        <categories>Lead Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Individual Account Error Message</shortDescription>
+        <value>Individual Account can have only one contact</value>
+    </labels>
+    <labels>
+        <fullName>KnownContRT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KnownContRT</shortDescription>
+        <value>Known Contact</value>
+    </labels>
+    <labels>
+        <fullName>KnownContactLeadIndicatorForConvertingExistingAccountContact</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KnownContactLeadIndicatorForConvertingExistingAccountContact</shortDescription>
+        <value>Lead will get converted to an existing account and contact</value>
+    </labels>
+    <labels>
+        <fullName>LastSyncDateLableOnSyncTerritoryFieldsToAccount_page</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LastSyncDateLableOnSyncTerritoryFieldsToAccount</shortDescription>
+        <value>Last Sync Date:</value>
+    </labels>
+    <labels>
+        <fullName>LeadAcceptMessage</fullName>
+        <categories>AcceptButtonOnClickJavascript</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadAcceptMessage</shortDescription>
+        <value>You have accepted these Leads:</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversionErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversionErrorMessage</shortDescription>
+        <value>Account and Contact should be associated to lead for conversion</value>
+    </labels>
+    <labels>
+        <fullName>LeadRejectMessage</fullName>
+        <categories>AcceptButtonOnClickJavascript</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadRejectMessage</shortDescription>
+        <value>These Leads were already accepted by you or other users:</value>
+    </labels>
+    <labels>
+        <fullName>Lead_has_been_converted_Label</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead has been converted Label</shortDescription>
+        <value>Lead has been converted</value>
+    </labels>
+    <labels>
+        <fullName>Lead_has_to_be_owned_by_a_Person_and_not_a_Queue_for_Lead_conversion_Label</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead has to be owned by a Person and not a Queue for Lead conversion Label</shortDescription>
+        <value>Lead has to be owned by a Person and not a Queue for Lead conversion</value>
+    </labels>
+    <labels>
+        <fullName>LicenseNotFound</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseNotFound</shortDescription>
+        <value>No Licenses found for this Contact</value>
+    </labels>
+    <labels>
+        <fullName>LicenseNotFoundForAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseNotFoundForAccount</shortDescription>
+        <value>There are no Licenses related to this Account</value>
+    </labels>
+    <labels>
+        <fullName>LicenseNotFoundForContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseNotFoundForContact</shortDescription>
+        <value>There are no Licenses related to this Contact</value>
+    </labels>
+    <labels>
+        <fullName>LicenseServerError</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseServerError</shortDescription>
+        <value>Server Error for View Licenses</value>
+    </labels>
+    <labels>
+        <fullName>License_Account_Id</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Account Id</shortDescription>
+        <value>License Account Id</value>
+    </labels>
+    <labels>
+        <fullName>License_Administrator_Id</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Administrator Id</shortDescription>
+        <value>Administrator Id</value>
+    </labels>
+    <labels>
+        <fullName>License_CoreProduct_EndDate</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License CoreProduct EndDate</shortDescription>
+        <value>Core Product End Date</value>
+    </labels>
+    <labels>
+        <fullName>License_Id</fullName>
+        <categories>License Header</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Id</shortDescription>
+        <value>License Id</value>
+    </labels>
+    <labels>
+        <fullName>License_LimitPage</fullName>
+        <categories>Page Number</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License LimitPage</shortDescription>
+        <value>&apos;10&apos;</value>
+    </labels>
+    <labels>
+        <fullName>License_Lokkup_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Lokkup Not Found</shortDescription>
+        <value>License not found</value>
+    </labels>
+    <labels>
+        <fullName>License_Lookup_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Lookup Help Text</shortDescription>
+        <value>Please enter License Id</value>
+    </labels>
+    <labels>
+        <fullName>License_Maintenance_GroupId</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Maintenance GroupId</shortDescription>
+        <value>Maintenance GroupId</value>
+    </labels>
+    <labels>
+        <fullName>License_Option</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Option</shortDescription>
+        <value>Option</value>
+    </labels>
+    <labels>
+        <fullName>License_Override_Account_Id</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Override Account Id</shortDescription>
+        <value>Override Account Id</value>
+    </labels>
+    <labels>
+        <fullName>License_Prorate_Date</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Prorate Date</shortDescription>
+        <value>Prorate Date</value>
+    </labels>
+    <labels>
+        <fullName>License_Status</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>License_Term</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Term</shortDescription>
+        <value>Term</value>
+    </labels>
+    <labels>
+        <fullName>License_Use</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>License Use</shortDescription>
+        <value>Use</value>
+    </labels>
+    <labels>
+        <fullName>LicensesNotFound</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicensesNotFound</shortDescription>
+        <value>NotFound</value>
+    </labels>
+    <labels>
+        <fullName>Manage_Territory_Users_Label</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Manage Territory Users Label</shortDescription>
+        <value>Manage Sales Team Members</value>
+    </labels>
+    <labels>
+        <fullName>MathworksURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MathworksURL</shortDescription>
+        <value>http://www.mathworks.com/index.html?s_tid=gn_logo</value>
+    </labels>
+    <labels>
+        <fullName>Max_Enrollment_Error_Message</fullName>
+        <categories>Enrollment Trigger, Class, Enterprise Training Agreement</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Max Enrollment Error Message</shortDescription>
+        <value>The maximum number of enrollments has been reached for this class under the selected  enterprise training agreement.</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Add_Case_Comment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Add Case Comment</shortDescription>
+        <value>Add Case Comment</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Add_Comment_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Add Comment Button</shortDescription>
+        <value>Add Comment</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Add_a_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Add a Description</shortDescription>
+        <value>Add a Description</value>
+    </labels>
+    <labels>
+        <fullName>MySR_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR All</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Attach_File_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Attach File Button</shortDescription>
+        <value>Attach File</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Attachments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Attachments</shortDescription>
+        <value>Attachments</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Back_to_Service_Request</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Back to Service Request</shortDescription>
+        <value>Back to Service Request</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Case_Comment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Case Comment</shortDescription>
+        <value>Case Comment</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Case_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Case Number</shortDescription>
+        <value>Case Number</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Close_Case_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Close Case Button</shortDescription>
+        <value>Close Case</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Closed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Closed</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Communication_History</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Communication History</shortDescription>
+        <value>Communication History</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Date_Time_Closed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Date/Time Closed</shortDescription>
+        <value>Date/Time Closed</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Date_Time_Opened</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Date/Time Opened</shortDescription>
+        <value>Date/Time Opened</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Done</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Email_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Email Action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Email_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Email Body</shortDescription>
+        <value>Body</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Email_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Email Details</shortDescription>
+        <value>Email Details</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Email_From</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Email From</shortDescription>
+        <value>From</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Email_To</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Email To</shortDescription>
+        <value>To</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Email_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Email View</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Existing_Attachments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Existing Attachments</shortDescription>
+        <value>Existing Attachments</value>
+    </labels>
+    <labels>
+        <fullName>MySR_FileName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR FileName</shortDescription>
+        <value>File Name</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Patents</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Patents</shortDescription>
+        <value>Patents</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Patents_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Patents Url</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/patents.html?s_tid=gf_pat</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Preventing_Piracy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Preventing Piracy</shortDescription>
+        <value>Preventing Piracy</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Preventing_Piracy_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Preventing Piracy Url</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/piracy.html?s_tid=gf_pir</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Privacy_Policy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Privacy Policy</shortDescription>
+        <value>Privacy Policy</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Privacy_Policy_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Privacy Policy Url</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/?s_tid=gf_priv</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Trademarks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Trademarks</shortDescription>
+        <value>Trademarks</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Footer_Trademarks_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Footer Trademarks Url</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/policies_statements/trademarks.html?s_tid=gf_trd</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Form_is_loading</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Form is loading</shortDescription>
+        <value>Form is loading</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_Associate_License</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header Associate License</shortDescription>
+        <value>Associate License</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_Associate_License_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header Associate License Url</shortDescription>
+        <value>https://www.mathworks.com/licensecenter/workflows/associate_license?s_tid=gn_aslc</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_Contact_Us</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header Contact Us</shortDescription>
+        <value>Contact Us</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_Contact_Us_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header Contact Us Url</shortDescription>
+        <value>http://www.mathworks.com/company/aboutus/contact_us/?s_tid=gn_cntus</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_How_To_Buy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header How To Buy</shortDescription>
+        <value>How To Buy</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_How_To_Buy_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header How To Buy Url</shortDescription>
+        <value>http://www.mathworks.com/store?s_cid=store_top_nav&amp;amp;s_tid=gn_store</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_Log_Out</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header Log Out</shortDescription>
+        <value>Log Out</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_Log_Out_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header Log Out Url</shortDescription>
+        <value>https://www.mathworks.com/login/logout?uri=http://www.mathworks.com/support/index.html%3Fs_tid%3Dgn_supp</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_My_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header My Account</shortDescription>
+        <value>My Account</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Header_My_Account_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Header My Account Url</shortDescription>
+        <value>https://www.mathworks.com/mwaccount/?s_tid=gn_myac</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Invalid</shortDescription>
+        <value>Invalid</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Less</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Less</shortDescription>
+        <value>Less...</value>
+    </labels>
+    <labels>
+        <fullName>MySR_License_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR License Number</shortDescription>
+        <value>License Number</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Message_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Message Date</shortDescription>
+        <value>Message Date</value>
+    </labels>
+    <labels>
+        <fullName>MySR_More</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR More</shortDescription>
+        <value>More...</value>
+    </labels>
+    <labels>
+        <fullName>MySR_New_SR_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR New SR Button</shortDescription>
+        <value>Create New Service Request</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Open</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Open</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Operating_System</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Operating System</shortDescription>
+        <value>Operating System</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Page_Height_Allowance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Page Height Allowance</shortDescription>
+        <value>400</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Page_Minimum_Width</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Page Minimum Width</shortDescription>
+        <value>470</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Platform</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Platform</shortDescription>
+        <value>Platform</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Please_Enter_Part_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Please Enter Part 1</shortDescription>
+        <value>Please enter a valid</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Please_Enter_Part_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Please Enter Part 2</shortDescription>
+        <value>&amp;nbsp;</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Please_enter_a</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Please enter a</shortDescription>
+        <value>Please enter a</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Please_enter_a_valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Please enter a valid</shortDescription>
+        <value>Please enter a valid</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Product_Release</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Product Release</shortDescription>
+        <value>Product Release</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Product_Version</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Product Version</shortDescription>
+        <value>Product Version</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Saving</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Saving</shortDescription>
+        <value>Saving...</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Select_a_File</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Select a File</shortDescription>
+        <value>Select a File</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Style_Sheet_Host</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Style Sheet Host</shortDescription>
+        <value>https://www-dev1.mathworks.com</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Submitted_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Submitted Date</shortDescription>
+        <value>Submitted Date</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Suggested_Answers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Suggested Answers</shortDescription>
+        <value>Suggested Answers</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Suggested_Answers_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Suggested Answers Title</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Support</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Support</shortDescription>
+        <value>Support</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Title</shortDescription>
+        <value>My Service Requests</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Upload_Attachments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Upload Attachments</shortDescription>
+        <value>Upload Attachments</value>
+    </labels>
+    <labels>
+        <fullName>MySR_Uploaded_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR Uploaded Date</shortDescription>
+        <value>Uploaded Date</value>
+    </labels>
+    <labels>
+        <fullName>MySR_View_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR View All</shortDescription>
+        <value>View All Service Requests</value>
+    </labels>
+    <labels>
+        <fullName>MySR_View_My_Licenses</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MySR View My Licenses</shortDescription>
+        <value>View My Licenses</value>
+    </labels>
+    <labels>
+        <fullName>NewViewLinkLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewViewLinkLabel</shortDescription>
+        <value>Create new view</value>
+    </labels>
+    <labels>
+        <fullName>NoQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoQuote</shortDescription>
+        <value>No Quotes Found</value>
+    </labels>
+    <labels>
+        <fullName>NoResultSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultSummary</shortDescription>
+        <value>Please modify your search criteria</value>
+    </labels>
+    <labels>
+        <fullName>NoResultTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoResultTitle</shortDescription>
+        <value>No results</value>
+    </labels>
+    <labels>
+        <fullName>NoViewSelection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NoViewSelection</shortDescription>
+        <value>- None -</value>
+    </labels>
+    <labels>
+        <fullName>No_Criteria_Value_Record</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Criteria Value Record</shortDescription>
+        <value>No Territory Record Criteria Value Found</value>
+    </labels>
+    <labels>
+        <fullName>No_ETAgreement_Associated_Class</fullName>
+        <categories>Enrollment Page, Class, Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Enterprise Training Agreement Associated to Class</shortDescription>
+        <value>There are no classes associated to this enterprise training agreement.</value>
+    </labels>
+    <labels>
+        <fullName>No_Project_Assignment_Msg</fullName>
+        <categories>Class, TimecardController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Project Assignment Msg</shortDescription>
+        <value>No Open Projects assigned to current user.</value>
+    </labels>
+    <labels>
+        <fullName>No_Qualifications_Found_on_Opportunity</fullName>
+        <categories>MW_Project__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Qualifications Found on Opportunity</shortDescription>
+        <value>No Sales - Qualifications activity found on Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>No_Sales_Team_Member_Found</fullName>
+        <categories>VF Component, TerritorySalesTeamMemberComponent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Sales Team Member Found</shortDescription>
+        <value>No sales team member assigned to this territory.</value>
+    </labels>
+    <labels>
+        <fullName>No_Territory_Criteria_Record_Found</fullName>
+        <categories>VF Component, TerritoryRuleCriteriaComponent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Territory Criteria Record Found</shortDescription>
+        <value>No Territory Rule Criteria Record Found.</value>
+    </labels>
+    <labels>
+        <fullName>OnSupportLicenseUnknown</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>On Support License Unknown</shortDescription>
+        <value>Unknown</value>
+    </labels>
+    <labels>
+        <fullName>On_Support</fullName>
+        <categories>VF, Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>On Support - Title</shortDescription>
+        <value>On Support</value>
+    </labels>
+    <labels>
+        <fullName>On_Support_Eligible_False</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OnSupportEligibleFalse</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>On_Support_Eligible_True</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OnSupportEligibleTrue</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>On_Support_License_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>On Support License Not Found</shortDescription>
+        <value>License Not Found</value>
+    </labels>
+    <labels>
+        <fullName>On_Support_Must_Select_Product</fullName>
+        <categories>VF, OnSupport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>On Support - Product must be selected</shortDescription>
+        <value>A product must be selected.</value>
+    </labels>
+    <labels>
+        <fullName>OpenPreferenceCenter</fullName>
+        <categories>Lead, Contact</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpenPreferenceCenter</shortDescription>
+        <value>https://go2.mathworks.com/preference-center</value>
+    </labels>
+    <labels>
+        <fullName>OppoNewTrialSelectContErr</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppoNewTrialSelectContErr</shortDescription>
+        <value>Please Select Contact for Creating Trial</value>
+    </labels>
+    <labels>
+        <fullName>OppoQuoteFailResp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppoQuoteFailResp</shortDescription>
+        <value>There are no quotes related to this Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OppoQuoteMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppoQuoteMsg</shortDescription>
+        <value>Unable to display quotes for opportunity without an opportunity Id</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityCreateErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityCreateErrorMsg</shortDescription>
+        <value>An Opportunity is already associated to this Case</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityName</shortDescription>
+        <value>Opp created by Customer Support or Technical Support</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityNewQuoteContactRoleMessage</fullName>
+        <categories>OpportunityNewQuote</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityNewQuoteContactRoleMessage</shortDescription>
+        <value>PLEASE NOTE: There are no contact records associated to this opportunity. A contact must be added to the opportunity before creating a quote.</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityNewQuoteSelectContactMessage</fullName>
+        <categories>OpportunityNewQuote</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityNewQuoteSelectContactMessage</shortDescription>
+        <value>Please Select Contact for Creating Quote</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityStageName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityStageName</shortDescription>
+        <value>E - Suspect</value>
+    </labels>
+    <labels>
+        <fullName>OptLicenseMsgNoMasterLicenseId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OptLicenseMsgNoMasterLicenseId</shortDescription>
+        <value>Unable to display Licenses for opportunity without a Master License id</value>
+    </labels>
+    <labels>
+        <fullName>OverrideForACE_Enable_Popup</fullName>
+        <categories>VF, Alert</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Override for ACE - Enable Popup on Browsers</shortDescription>
+        <value>Pop-up must be enabled.</value>
+    </labels>
+    <labels>
+        <fullName>Override_Account_Id_header</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Override Account Id header</shortDescription>
+        <value>Override Account Id</value>
+    </labels>
+    <labels>
+        <fullName>PageBlockSectionOnLastSyncDateLableOnSyncTerritoryFieldsToAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PageBlockSectionOnSyncTerritoryFieldsToAccount</shortDescription>
+        <value>Sync Modified Territory fields to Associated Account</value>
+    </labels>
+    <labels>
+        <fullName>Pagi_First</fullName>
+        <categories>VF, Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pagination - First</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>Pagi_GoTo</fullName>
+        <categories>VF, Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pagination - Go To</shortDescription>
+        <value>Go To</value>
+    </labels>
+    <labels>
+        <fullName>Pagi_Last</fullName>
+        <categories>VF, Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pagination - Last</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>Pagi_Next</fullName>
+        <categories>VF, Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pagination - Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>Pagi_Page</fullName>
+        <categories>VF, Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pagination - Page</shortDescription>
+        <value>Page</value>
+    </labels>
+    <labels>
+        <fullName>Pagi_Previous</fullName>
+        <categories>VF, Pagination</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pagination - Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Pick_Product_Title</fullName>
+        <categories>VF, Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pick Product - Title</shortDescription>
+        <value>Pick Product</value>
+    </labels>
+    <labels>
+        <fullName>Portal_TS_Install_request_description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Portal_TS_Install_request_description</shortDescription>
+        <value>Description - Include Error Message</value>
+    </labels>
+    <labels>
+        <fullName>Portal_TS_Install_request_platform</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Portal_TS_Install_request_platform</shortDescription>
+        <value>Platform and Environment Information</value>
+    </labels>
+    <labels>
+        <fullName>Processin_for_CDS_contact_lookup</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Searching for CDS contact lookup</shortDescription>
+        <value>Searching........</value>
+    </labels>
+    <labels>
+        <fullName>Product_Allocation_Status</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Allocation Status</shortDescription>
+        <value>Allocation Status</value>
+    </labels>
+    <labels>
+        <fullName>Product_Id_header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Id header</shortDescription>
+        <value>Product Id</value>
+    </labels>
+    <labels>
+        <fullName>Product_Maintenance_End_Date</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Maintenance End Date</shortDescription>
+        <value>Maintenance End Date</value>
+    </labels>
+    <labels>
+        <fullName>Product_Name_header</fullName>
+        <categories>VF Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Name header</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>Product_Quantity</fullName>
+        <categories>ContactViewLicense Vf Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>Product_Search_Header</fullName>
+        <categories>VF, Product Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Search - Header</shortDescription>
+        <value>Product Search</value>
+    </labels>
+    <labels>
+        <fullName>Product_Search_License_Invalid</fullName>
+        <categories>VF, ProductSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Search - License Invalid</shortDescription>
+        <value>License # cannot include non-number characters.</value>
+    </labels>
+    <labels>
+        <fullName>ProjectTeamMemeberFunctionalRole_ApplicationEngineer</fullName>
+        <categories>ProjectTeamMemeberFunctionalRole(Search Criteria)</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProjectTeamMemeberFunctionalRole_ApplicationEngineer</shortDescription>
+        <value>Application Engineer</value>
+    </labels>
+    <labels>
+        <fullName>ProjectTeamMemeberFunctionalRole_PilotEngineer</fullName>
+        <categories>ProjectTeamMemeberFunctionalRole(Search Criteria)</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProjectTeamMemeberFunctionalRole_PilotEngineer</shortDescription>
+        <value>Pilot Engineer</value>
+    </labels>
+    <labels>
+        <fullName>QuoteAllowWebViewHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteAllowWebViewHeader</shortDescription>
+        <value>Allow Web View</value>
+    </labels>
+    <labels>
+        <fullName>QuoteCreatedDateHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteCreatedDateHeader</shortDescription>
+        <value>Created Date</value>
+    </labels>
+    <labels>
+        <fullName>QuoteCurrencyCodeHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteCurrencyCodeHeader</shortDescription>
+        <value>Currency</value>
+    </labels>
+    <labels>
+        <fullName>QuoteDiscountTotalHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteDiscountTotalHeader</shortDescription>
+        <value>Discount Total</value>
+    </labels>
+    <labels>
+        <fullName>QuoteExpirationDateHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteExpirationDateHeader</shortDescription>
+        <value>Expiration Date</value>
+    </labels>
+    <labels>
+        <fullName>QuoteHandlingTotalHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteHandlingTotalHeader</shortDescription>
+        <value>Handling Total</value>
+    </labels>
+    <labels>
+        <fullName>QuoteIDHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteIDHeader</shortDescription>
+        <value>Quote ID</value>
+    </labels>
+    <labels>
+        <fullName>QuoteIdErrorMessage</fullName>
+        <categories>QuoteLookUpController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteIdRequiredErrorMessage</shortDescription>
+        <value>Please Enter Quote Id.</value>
+    </labels>
+    <labels>
+        <fullName>QuoteNotFoundErrorMessage</fullName>
+        <categories>QuoteLookUpController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteNotFoundErrorMessage</shortDescription>
+        <value>Quote not found</value>
+    </labels>
+    <labels>
+        <fullName>QuoteOrderDateHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteOrderDateHeader</shortDescription>
+        <value>Order Date</value>
+    </labels>
+    <labels>
+        <fullName>QuoteProductSubTotalHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteProductSubTotalHeader</shortDescription>
+        <value>Product Sub Total</value>
+    </labels>
+    <labels>
+        <fullName>QuoteStatusHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteStatusHeader</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>QuoteTaxTotalHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteTaxTotalHeader</shortDescription>
+        <value>Tax Total</value>
+    </labels>
+    <labels>
+        <fullName>QuoteTitleHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteTitleHeader</shortDescription>
+        <value>Quote</value>
+    </labels>
+    <labels>
+        <fullName>QuoteTotalHeader</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteTotalHeader</shortDescription>
+        <value>Quote Total</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Creation_error_message_for_Indivisual_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote Creation error message for Indivisual Account</shortDescription>
+        <value>Quote creation is not allowed for contacts with individual accounts</value>
+    </labels>
+    <labels>
+        <fullName>RequestBodyXML</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RequestBodyXML</shortDescription>
+        <value>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:sec=&quot;http://security.services.internal.mathworks.com&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;sec:getSecurityToken&gt;
+         &lt;username&gt;alohar@mathworks.com&lt;/username&gt;
+         &lt;password&gt;WABrupr7&lt;/password&gt;
+         &lt;tokenType&gt;LDAP&lt;/tokenType&gt;
+      &lt;/sec:getSecurityToken&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Response_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Response Error</shortDescription>
+        <value>Publish Assignment Rules Error. Connection to BODI Service Failed</value>
+    </labels>
+    <labels>
+        <fullName>Response_Return_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Response Return Error</shortDescription>
+        <value>Publish Assignment Rules Error.</value>
+    </labels>
+    <labels>
+        <fullName>ResultBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ResultBlockTitle</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>SamlID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SamlIDforCustomJITClassTest</shortDescription>
+        <value>0LEi00000004CWq</value>
+    </labels>
+    <labels>
+        <fullName>SearchBlockTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBlockTitle</shortDescription>
+        <value>Search opportunities</value>
+    </labels>
+    <labels>
+        <fullName>SearchBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchBtn</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>SearchingBtn</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchingBtn</shortDescription>
+        <value>Searching ...</value>
+    </labels>
+    <labels>
+        <fullName>SecurityTokenNotFoundMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SecurityTokenNotFoundMessage</shortDescription>
+        <value>Error getting Security Token</value>
+    </labels>
+    <labels>
+        <fullName>SelectLeadMessage</fullName>
+        <categories>AcceptButtonOnClickJavascript</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SelectLeadMessage</shortDescription>
+        <value>Please select at least one Lead</value>
+    </labels>
+    <labels>
+        <fullName>Select_a_Class</fullName>
+        <categories>Enrollment Page, Class,Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Class</shortDescription>
+        <value>Please select a class.</value>
+    </labels>
+    <labels>
+        <fullName>Service_Mathwork_Adress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Service Mathwork Adress</shortDescription>
+        <value>service@mathworks.com</value>
+    </labels>
+    <labels>
+        <fullName>Siebel_Account_ID_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siebel Account ID error message</shortDescription>
+        <value>Contact Siebel Account Id is missing</value>
+    </labels>
+    <labels>
+        <fullName>Siebel_Contact_ID_error_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Siebel Contact ID error message</shortDescription>
+        <value>Contact Siebel Contact Id is missing</value>
+    </labels>
+    <labels>
+        <fullName>Social_Action_subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Social Action subject</shortDescription>
+        <value>No Subject provided</value>
+    </labels>
+    <labels>
+        <fullName>State_Label</fullName>
+        <categories>VF Component</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>State Label</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>State_Required</fullName>
+        <categories>VF Component, Territory_Rule_Criteria_Value__c</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>State Required</shortDescription>
+        <value>Please select the state.</value>
+    </labels>
+    <labels>
+        <fullName>Status_Loading</fullName>
+        <categories>VF, Status</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Status - Loading</shortDescription>
+        <value>Loading...</value>
+    </labels>
+    <labels>
+        <fullName>Status_Saving</fullName>
+        <categories>VF, Status</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Status - Saving</shortDescription>
+        <value>Saving...</value>
+    </labels>
+    <labels>
+        <fullName>Support_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>URLSupportPage</shortDescription>
+        <value>http://www.mathworks.com/support/?s_tid=gn_supp</value>
+    </labels>
+    <labels>
+        <fullName>Support_Mathwork_Adress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Support Mathwork Adress</shortDescription>
+        <value>support@mathworks.com</value>
+    </labels>
+    <labels>
+        <fullName>SyncButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SyncButtonOnSyncTerritoryFieldsToAccount</shortDescription>
+        <value>Sync</value>
+    </labels>
+    <labels>
+        <fullName>SyncCompleteMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SyncCompleteMessage</shortDescription>
+        <value>Sync Complete..!</value>
+    </labels>
+    <labels>
+        <fullName>SyncInProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SyncInProgress</shortDescription>
+        <value>Synching.......</value>
+    </labels>
+    <labels>
+        <fullName>TS_Cancel_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>TS_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Header</shortDescription>
+        <value>Technical Support: Installation, product help, bugs, suggestions or documentation errors</value>
+    </labels>
+    <labels>
+        <fullName>TS_Option_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Option 1</shortDescription>
+        <value>Installation, license manager, or startup</value>
+    </labels>
+    <labels>
+        <fullName>TS_Option_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Option 2</shortDescription>
+        <value>Product help, bugs, suggestions or documentation errors</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Attach_File</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Attach File</shortDescription>
+        <value>Attach File(s):</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Attachment_Add_More</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Attachment Add More</shortDescription>
+        <value>Add More</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Crash_Dump</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Crash Dump</shortDescription>
+        <value>Attach Crash Dump (for MATLAB startup issues):</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Crash_Dump_How</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Crash Dump How</shortDescription>
+        <value>How do I locate the crash dump file generated by MATLAB?</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_File_Size_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request File Size Limit</shortDescription>
+        <value>File size limit: 5MB</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Include_in_Discription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Include in Discription</shortDescription>
+        <value>What do I include in my description?</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_License</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install License</shortDescription>
+        <value>License #</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Operating_System</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Operating System</shortDescription>
+        <value>Operating System:</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Placeholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Placeholder</shortDescription>
+        <value>Enter your question here...</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Platform</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Platform</shortDescription>
+        <value>Platform</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Problem_Detail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Problem Detail</shortDescription>
+        <value>Problem Description and Details</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Release</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Release</shortDescription>
+        <value>Release</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Required_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Required Info</shortDescription>
+        <value>Indicates Required Information</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Step_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Step 2</shortDescription>
+        <value>Step 2/2: Answer questions related to your request and submit it</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Install_Ver_Output</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Install Ver Output</shortDescription>
+        <value>Paste the output of the ver command (if available):</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Installer_Log</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Installer Log</shortDescription>
+        <value>Attach Installer Log file:</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Installer_Log_Where</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Installer Log Where</shortDescription>
+        <value>Where are the MATLAB installation log files located?</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_License_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request License Link</shortDescription>
+        <value>How do I obtain my license number?</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Missing_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Missing Fields</shortDescription>
+        <value>Please enter a valid</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Operating_System_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Operating System Link</shortDescription>
+        <value>How do I find my operating system?</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Product</shortDescription>
+        <value>If you do not know which product to select, select one that is the closest match.</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Recommended</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Recommended</shortDescription>
+        <value>Recommended:</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Title</shortDescription>
+        <value>Service Request Subject</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Ver_Command</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Ver Command</shortDescription>
+        <value>Execute ver command and paste output:</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Ver_Command_Fail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Ver Command Fail</shortDescription>
+        <value>No valid License or Release information is found in your ver.</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Ver_Command_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Ver Command Link</shortDescription>
+        <value>What is the &lt;kbd&gt;ver&lt;/kbd&gt; command?</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Ver_Command_Missing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Ver Command Missing</shortDescription>
+        <value>ver Command</value>
+    </labels>
+    <labels>
+        <fullName>TS_Request_Ver_Command_Success</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Request Ver Command Success</shortDescription>
+        <value>Your License and Release information has been successfully received from the ver.</value>
+    </labels>
+    <labels>
+        <fullName>TS_Submit_Button</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TS Submit Button</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>Task_subject_on_lead_conversion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task subject on lead conversion</shortDescription>
+        <value>New Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Team_Role_Label</fullName>
+        <categories>VF Component, Territory2</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Team Role Label</shortDescription>
+        <value>Team Role</value>
+    </labels>
+    <labels>
+        <fullName>Territory2DeleteErrorMessage</fullName>
+        <categories>Territory2</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory2DeleteErrorMessage</shortDescription>
+        <value>You cannot delete a territory that has accounts assigned to it</value>
+    </labels>
+    <labels>
+        <fullName>Territory2Dml_batch_apex_message_emailbody</fullName>
+        <categories>Territory2AccountSync</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory2Dml batch apex message</shortDescription>
+        <value>The batch Apex Job Processed Successfully</value>
+    </labels>
+    <labels>
+        <fullName>Territory2Dml_batch_apex_message_subject</fullName>
+        <categories>Territory2AccountSync</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory2Dml batch apex message</shortDescription>
+        <value>Apex Batch Job is done</value>
+    </labels>
+    <labels>
+        <fullName>Territory_Info_Label</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory Info Label</shortDescription>
+        <value>Territory Info</value>
+    </labels>
+    <labels>
+        <fullName>Territory_Model_not_active</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory Model not active</shortDescription>
+        <value>Territory Model is not active for this territory</value>
+    </labels>
+    <labels>
+        <fullName>Territory_No_Team_Role</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory No Team Role</shortDescription>
+        <value>Territory does not have any team member assigned to it</value>
+    </labels>
+    <labels>
+        <fullName>Territory_Sales_Team_Label</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory Sales Team Label</shortDescription>
+        <value>Territory Sales Team</value>
+    </labels>
+    <labels>
+        <fullName>Territory_not_available</fullName>
+        <categories>Territory Summary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Territory not available</shortDescription>
+        <value>Territory does not exist</value>
+    </labels>
+    <labels>
+        <fullName>TimeCardTotalHoursLabel</fullName>
+        <categories>TimeCardPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TimeCardTotalHoursLabel</shortDescription>
+        <value>Total Hours :</value>
+    </labels>
+    <labels>
+        <fullName>TimecardDeleteErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timecard Delete Error Message</shortDescription>
+        <value>Timecard cannot be deleted on a closed project</value>
+    </labels>
+    <labels>
+        <fullName>Timecard_Entries</fullName>
+        <categories>VF, ProjectTimecard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timecard Entries</shortDescription>
+        <value>Time Card Entries</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsError</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsError</shortDescription>
+        <value>The total number of open activities on the opportunities you selected is greater than the system can handle. Please reduce the number of opportunities to reassign</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsSummary</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsSummary</shortDescription>
+        <value>The view you selected returned more than 1000 rows. Only the 1000 first ones will be displayed</value>
+    </labels>
+    <labels>
+        <fullName>TooManyRowsTitle</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TooManyRowsTitle</shortDescription>
+        <value>Too many rows returned</value>
+    </labels>
+    <labels>
+        <fullName>TotalFooterLabel</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TotalFooterLabel</shortDescription>
+        <value>Number</value>
+    </labels>
+    <labels>
+        <fullName>Training_location_before_delete</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Training location before delete</shortDescription>
+        <value>Cannot delete a training location that is published to web. Please uncheck &quot;Publish To Web&quot; before attempting to delete a training location.</value>
+    </labels>
+    <labels>
+        <fullName>Training_location_before_update</fullName>
+        <categories>Customer Training</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Training location before update</shortDescription>
+        <value>Cannot unpublish this training location as it has one or more classes that are published to web associated with it.</value>
+    </labels>
+    <labels>
+        <fullName>Training_location_before_update_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Training location before update 2</shortDescription>
+        <value>Location Status cannot be changed to &apos;Mark for Deletion&apos; if it is published to web or if there are associated classes.</value>
+    </labels>
+    <labels>
+        <fullName>TrialHeaderTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TrialHeaderTitle</shortDescription>
+        <value>Trials</value>
+    </labels>
+    <labels>
+        <fullName>Trial_is_Individual_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Trial is Individual Error</shortDescription>
+        <value>Trial cannot be created for the individual account.</value>
+    </labels>
+    <labels>
+        <fullName>UEHRoutingModuleNotFound</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UEHRoutingModuleNotFound</shortDescription>
+        <value>ModuleNotFound</value>
+    </labels>
+    <labels>
+        <fullName>UEH_Email_To_Project_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UEH Email To Project Name</shortDescription>
+        <value>Technical evangelist request</value>
+    </labels>
+    <labels>
+        <fullName>UEH_Email_To_Project_OwnerId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UEH Email To Project OwnerId</shortDescription>
+        <value>00G31000004Vdla</value>
+    </labels>
+    <labels>
+        <fullName>UnknownContRT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnknownContRT</shortDescription>
+        <value>Unknown Contact</value>
+    </labels>
+    <labels>
+        <fullName>UnknownContactCreateNewContactAndAccountLabel</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnknownContactCreateNewContactAndAccountLabel</shortDescription>
+        <value>Account not found - create new account</value>
+    </labels>
+    <labels>
+        <fullName>UnknownContactLeadIndicatorAccountOptionLabel</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnknownContactLeadIndicatorAccountOptionLabel</shortDescription>
+        <value>Choose one of the account options below</value>
+    </labels>
+    <labels>
+        <fullName>UnknownContactLead_Exact_Account_found_label</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnknownContactLead Exact Account  found label</shortDescription>
+        <value>Exact Account  found - Use the matched account</value>
+    </labels>
+    <labels>
+        <fullName>Unknown_Contact_Lead_Choose_from_Reccomended_Accounts_label</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unknown Contact Lead Choose from Reccomended Accounts label</shortDescription>
+        <value>Select from list of similar account names</value>
+    </labels>
+    <labels>
+        <fullName>Unknown_Contact_Lead_Select_Account_message_for_partial_match</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unknown Contact Lead Select Account message for partial match</shortDescription>
+        <value>Please Select Account</value>
+    </labels>
+    <labels>
+        <fullName>Unknown_Contact_Select_Account_for_Conversion_Label</fullName>
+        <categories>LeadConversionPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unknown Contact Select Account for Conversion Label</shortDescription>
+        <value>Search for different account</value>
+    </labels>
+    <labels>
+        <fullName>ValidateProjectBeforeCloseErrorMessage</fullName>
+        <categories>Validating project record before closing it</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ValidateProjectBeforeCloseErrorMessage(All)</shortDescription>
+        <value>The project cannot be closed.&lt;/br&gt;
+Please ensure all Project Team members have entered their Project Time Card hours</value>
+    </labels>
+    <labels>
+        <fullName>ValidateProjectBeforeCloseErrorMessage_NotAll</fullName>
+        <categories>Validating project record before closing it</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ValidateProjectBeforeCloseErrorMessage</shortDescription>
+        <value>The project cannot be closed.&lt;/br&gt;
+Please ensure the following Project Team members have entered their Project Time Card hours:</value>
+    </labels>
+    <labels>
+        <fullName>ViewLicenseServerError</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewLicenseServerError</shortDescription>
+        <value>Server Error for View Licenses</value>
+    </labels>
+    <labels>
+        <fullName>ViewSearchSection</fullName>
+        <categories>Opty Reassign Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ViewSearchSection</shortDescription>
+        <value>Search with a view</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialContactHeaderLabel</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialContactHeaderLabel</shortDescription>
+        <value>Contact Related List</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialContactHeaderLabel_ContactName</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialContactHeaderLabel_ContactName</shortDescription>
+        <value>Contact Name</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialContactHeaderLabel_ContactType</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialContactHeaderLabel_ContactType</shortDescription>
+        <value>Contact Type</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialContactHeaderLabel_HasLicense</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialContactHeaderLabel_HasLicense</shortDescription>
+        <value>Has License</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_ActivationDate</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_ActivationDate</shortDescription>
+        <value>Activation Date</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_ActivationType</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_ActivationType</shortDescription>
+        <value>Activation Type</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_Count</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_Count</shortDescription>
+        <value>Count</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_CreatedBy</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_CreatedBy</shortDescription>
+        <value>Created By</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_DateCreated</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_DateCreated</shortDescription>
+        <value>Date Created</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_ExpirationDate</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_ExpirationDate</shortDescription>
+        <value>Expiration Date</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_Releases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_Releases</shortDescription>
+        <value>Releases</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_TrialExtnDate</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_TrialExtnDate</shortDescription>
+        <value>Trial Extn Date</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_TrialId</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_TrialId</shortDescription>
+        <value>Trial Id</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_TrialLabel</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_TrialLabel</shortDescription>
+        <value>Trial Label</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialHeaderLabel_TrialStatus</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialHeaderLabel_TrialStatus</shortDescription>
+        <value>Trial Status</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialNotrialsFoundMessage</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialNotrialsFoundMessage</shortDescription>
+        <value>No Trials are available</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialProductHeaderLabel</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialProductHeaderLabel</shortDescription>
+        <value>Product Related List</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialProductHeaderLabel_ProductCode_Base_Code</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialProductHeaderLabel_ProductCode(Base Code)</shortDescription>
+        <value>Product Code (Base Code)</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialProductHeaderLabel_ProductName</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialProductHeaderLabel_ProductName</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialServerError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialServerError</shortDescription>
+        <value>Server Error</value>
+    </labels>
+    <labels>
+        <fullName>ViewTrialsMathWorkAccountIdNotFound</fullName>
+        <categories>ViewTrialsPages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ViewTrialsMathWorkAccountIdNotFound</shortDescription>
+        <value>MathworksAccountId not Found For Contact</value>
+    </labels>
+    <labels>
+        <fullName>WaitMessageForQuotes</fullName>
+        <categories>QuoteLookUpPage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WaitMessageForQuotes</shortDescription>
+        <value>Searching Quote.....</value>
+    </labels>
+    <labels>
+        <fullName>Warning_CannotEdit_Msg</fullName>
+        <categories>TimecardController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warning CannotEdit Msg</shortDescription>
+        <value>Cannot Create/Modify Timecards that has No Project/No hours specified.</value>
+    </labels>
+    <labels>
+        <fullName>Warning_CannotRemove_Msg</fullName>
+        <categories>TimecardController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warning CannotRemove Msg</shortDescription>
+        <value>Cannot Remove Submitted Timecard.</value>
+    </labels>
+    <labels>
+        <fullName>Would_you_like_to_continue_search</fullName>
+        <categories>global contact search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Would you like to continue search</shortDescription>
+        <value>If you would like to continue to search for a contact with a new email address</value>
+    </labels>
+    <labels>
+        <fullName>case_created_confirmation_distributor_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>case created confirmation distributor message</shortDescription>
+        <value>Your request has been successfully submitted to your local authorized distributor.</value>
+    </labels>
+    <labels>
+        <fullName>case_created_confirmation_distributor_message_detail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>case created confirmation distributor message detail</shortDescription>
+        <value>Technical support and service in your region is provided by a MathWorks distributor, who will contact you shortly.</value>
+    </labels>
+    <labels>
+        <fullName>case_created_confirmation_message</fullName>
+        <categories>confirmation message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>case created confirmation message</shortDescription>
+        <value>MathWorks Support has received your request for assistance. We will be contacting you within 1 business day.</value>
+    </labels>
+    <labels>
+        <fullName>close_case_label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>close_case_label</shortDescription>
+        <value>Choosing &quot;Submit&quot; below will effectively close this Service Request with MathWorks Support team.</value>
+    </labels>
+    <labels>
+        <fullName>close_case_text2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>close_case_text2</shortDescription>
+        <value>Once it is closed, no further correspondence will be sent to you regarding this issue. You can later re-open this request if necessary.</value>
+    </labels>
+    <labels>
+        <fullName>close_case_text3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>close_case_text3</shortDescription>
+        <value>Why are you closing this case?</value>
+    </labels>
+    <labels>
+        <fullName>editProfileURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>editProfileURL</shortDescription>
+        <value>https://www.mathworks.com/accesslogin/editProfile.do?s_tid=gn_ep</value>
+    </labels>
+    <labels>
+        <fullName>helpText_doNotCreateOpty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>helpText_doNotCreateOpty</shortDescription>
+        <value>Check this box when you need to associate a converted lead to an existing opportunity</value>
+    </labels>
+    <labels>
+        <fullName>mw_domain_url</fullName>
+        <categories>domain url</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>mw domain url</shortDescription>
+        <value>https://www.mathworks.com</value>
+    </labels>
+    <labels>
+        <fullName>myAccountURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>myAccountURL</shortDescription>
+        <value>https://www.mathworks.com/accesslogin/myAccount.do?s_tid=gn_myac</value>
+    </labels>
+    <labels>
+        <fullName>plp_license_url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>plp_license_url</shortDescription>
+        <value>/support/solutions/en/data/1-63ZIR6/</value>
+    </labels>
+    <labels>
+        <fullName>portalIdFor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>portalIdForCustomJITClassTest</shortDescription>
+        <value>060i0000000Ly7D</value>
+    </labels>
+    <labels>
+        <fullName>supportPageURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>supportPageURL</shortDescription>
+        <value>https://www.mathworks.com/accesslogin/logout.do?uri=http://www.mathworks.com/support</value>
+    </labels>
+    <labels>
+        <fullName>use_global_search</fullName>
+        <categories>global contact search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>use global search</shortDescription>
+        <value>Use the Global Search to search for  a contact using additional search criteria</value>
+    </labels>
+    <labels>
+        <fullName>would_you_like_create_contact</fullName>
+        <categories>global contact search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>would you like create contact</shortDescription>
+        <value>Would you like to create a new contact?</value>
+    </labels>
+</CustomLabels>

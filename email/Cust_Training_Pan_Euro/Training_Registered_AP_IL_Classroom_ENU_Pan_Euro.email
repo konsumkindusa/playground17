@@ -1,0 +1,29 @@
+Dear {!Contact.Name},
+
+Your enrollment is confirmed however we have not received payment.  Full payment is required prior to the start of class in order to attend the training class.
+
+
+COURSE NAME: {!Enrollment__c.Class__c} 
+DATES: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+LOCATION:  {!Class__c.City__c}, {!Class__c.Country__c} 
+
+TIME: {!Class__c.Start_Time__c}  until {!Class__c.End_Time__c} 
+
+Please submit your payment prior to the start of class.    To pay by Purchase Order, please contact us at
+for Germany +49 (0)89 45235 6700 
+for Italy +39 011 2274 700
+for Spain +34 91 799 47 00
+for Sweden +46 8 5051 69 00
+for Switzerland +41 31 950 60 20
+for The Netherlands +31 (0)40 2156700
+for the UK +44 (0)1223 226700
+to speak with a representative.  
+
+To ensure proper processing, please include attendee name(s), course name(s), location, and dates on all Purchase Orders. 
+You will be sent a confirmation email with all the course details once your payment is processed successfully. If we experience any problems, you will be notified immediately.
+
+Thank you,
+Training Services
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Class cancellation policy: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor

@@ -1,0 +1,17 @@
+Dear {!Contact.FirstName},
+
+We have not received a response from you regarding Case #{!Case.CaseNumber}. Since we have not yet heard back from you, we are not sure if your issue is resolved or if you still need assistance.
+
+If further assistance is needed, please reply to this email by {!Case.Auto_Close_Date_Time__c} maintaining the Reference ID included below.
+
+Thank you,
+
+{!Case.OwnerFullName}
+Customer Service Team
+MathWorks
+508.647.7000
+
+This is an auto generated e-mail
+
+
+{!Case.Thread_Id}

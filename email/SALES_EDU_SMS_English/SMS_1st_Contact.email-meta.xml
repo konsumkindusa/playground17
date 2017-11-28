@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SMS 1st Contact</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SMS 1st Contact</name>
+    <style>none</style>
+    <subject>Software Maintenance Service</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

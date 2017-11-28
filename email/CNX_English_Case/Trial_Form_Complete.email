@@ -1,0 +1,12 @@
+Dear {!Case.Contact},
+
+Thank you for signing up for the ability to offer time-expiring trials of MathWorks products to your prospects for evaluation purposes.  Your company has been added to the "Company" drop down list in the Partner Trial Request Form, 
+https://www.mathworks.com/products/connections/forms/cnxtrialreq.html. You may now complete the Partner Trial Request Form each time you need to request a MathWorks trial for a prospect.  
+
+This trial service is provided to support software evaluations by your qualified prospects only.  Should you or another member of your company need access to MathWorks products, please contact connections@mathworks.com for assistance.
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+MathWorks Connections Program
+
+{!Case.CaseNumber}

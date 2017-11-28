@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Update Contact on Bug Report Survey (no Case created) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Contact on Bug Report Survey (no Case created)</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Update_Contact_on_Bug_Report_Survey_no_Case</name>
+        <label>Update Contact on Bug Report Survey (no Case)</label>
+        <locationX>455</locationX>
+        <locationY>52</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_GetFeedback_Contact_no_Case</targetReference>
+        </connector>
+        <filters>
+            <field>MathWorks_Account_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>MWAID</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputAssignments>
+            <assignToReference>ContactID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_GetFeedback_Contact_no_Case</name>
+        <label>Update GetFeedback Contact (no Case)</label>
+        <locationX>459</locationX>
+        <locationY>204</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetFeedbackID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Contact__c</field>
+            <value>
+                <elementReference>ContactID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Get_Feedback__c</object>
+    </recordUpdates>
+    <startElementReference>Update_Contact_on_Bug_Report_Survey_no_Case</startElementReference>
+    <variables>
+        <name>ContactID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>GetFeedbackID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>MWAID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

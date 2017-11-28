@@ -1,0 +1,17 @@
+Hello {!Opportunity.OwnerFirstName},
+
+The following opportunity exceeds USD 5,000,000. 
+
+Name: {!Opportunity.Name}
+Amount: {!Opportunity.Amount}
+Close Date: {!Opportunity.CloseDate}
+Stage: {!Opportunity.StageName}
+ID: {!Opportunity.Id}
+Owner: {!Opportunity.OwnerFullName}
+
+If this is correct, no action is needed. 
+
+If this isn't correct, please change the amount or currency to reflect the correct opportunity value. 
+
+Thanks,
+Sales Operations

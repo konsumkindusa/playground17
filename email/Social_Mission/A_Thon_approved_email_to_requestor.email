@@ -1,0 +1,15 @@
+Hello {!Social_Action__c.Contact__c},
+
+Your A-Thon Donation Matching Request has been approved for ${!Social_Action__c.Mathworks_Monetary_Contribution__c}. 
+
+The company match will be made via Electronic Funds Transfer (EFT) payment. You will receive a confirmation email from Accounts Payable once the transaction is processed (within 5 business days).  Once you receive this email, you can forward the remittance details to your respective organization to ensure they associate the donation to your personal fundraising account total.    
+
+Congratulations on your fundraising efforts, and thank you for participating in the MathWorks A-thon Matching Program.
+
+Thank You,
+Caitlin Brosnihan
+Social Mission
+socialmission@mathworks.com
+
+
+{!Social_Action__c.Thread_ID__c}

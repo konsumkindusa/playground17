@@ -1,0 +1,41 @@
+Gentile {!Contact.Name},
+
+Benvenuto al Training di The MathWorks!
+questo messaggio è per ricordarle che lei è iscritto al corso: 
+
+DENOMINAZIONE CORSO: {!Enrollment__c.Class__c} 
+DATA:  {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+SEDE: {!Class__c.City__c},{!Class__c.Country__c} 
+ORARIO:  dalle {!Class__c.Start_Time__c} fino alle {!Class__c.End_Time__c}
+
+Acceda al link sottostante per Indirizzo e direzioni:
+http://www.mathworks.it/services/training/policies/directions.html
+
+Le suggeriamo di contattarci qualche giorno prima dell'inizio del corso telefonando direttamente al numero 011-2274-733 per verificare le coordinate esatte della sede del corso. 
+
+Per informazioni generali, non esiti a contattarci al centralino 011.2274700 o al numero 011.2274.771 o ad inviarci un email all'indirizzo info@mathworks.it.
+
+Per ulteriori dettagli sui programmi e sulle offerte Training di The MathWorks, visiti il nostro sito web http://www.mathworks.it/training
+
+Policy and FAQ: http://www.mathworks.it/services/training/policies/
+
+Nell'attesa di incontrarci presto, la invitiamo a non perdere la possibilità di fare la reciproca conoscenza arrivando 10-15 minuti prima dell'inizio del corso. 
+
+Cordiali saluti,
+{!Class__c.Sponsor_Office_Signature__c} 
+
+
+Regolamento per Cancellazioni/Rimborsi   
+I partecipanti possono annullare la propria iscrizione inviando una comunicazione scritta (via e-mail o posta ordinaria) o telefonando al numero  011.2274700 entro 15 giorni dall'inizio del corso.
+
+In caso di impossibilità a partecipare, è possibile mandare un sostituto comunicando la variazione per iscritto prima dell'inizio del corso. 
+
+The MathWorks si riserva il diritto di cancellare un corso qualora il numero minimo di partecipanti non sia raggiunto entro 7 giorni dall'inizio del corso. In tal caso The MathWorks invierà comunicazione agli iscritti.
+
+Se una sessione di training non può essere effettuata per circostanze indipendenti dalla volontà di The MathWorks, la sola responsabilità di The MathWorks sarà quella di rimborsare, in caso di avvenuto pagamento, il costo del/i corso/i al quale è iscritto o di trasferirla ad un'altra sessione di ugual costo o inferiore. Tuttavia, The MathWorks non rimborser à alcun costo al di fuori di quello relativo al corso stesso. 
+
+Le sedi del Training possono cambiare, con un limitato preavviso. Faremo il possibile per comunicarle l'eventuale cambiamento di sede prima dell'inizio del corso.
+
+Problemi derivanti da cause atmosferiche
+
+The MathWorks intende rispettare il calendario previsto dei corsi, evitando sospensioni per cause atmosferiche ogni qualvolta questo sia possibile. Tuttavia, in caso di cattivo tempo e se non sono previsti miglioramenti, le sessioni della giornata saranno cancellate. Per informazioni su cancellazioni dovute a cause atmosferiche, la preghiamo di contattare direttamente la sede del Training. Se la cancellazione è inevitabile, riceverà un email da parte di The MathWorks, con alcune scelte per una nuova sessione di formazione. Tale email non sarà quindi un messaggio di cancellazione, ma intende solo fornirle alcune scelte alternative a causa della cancellazione avvenuta.

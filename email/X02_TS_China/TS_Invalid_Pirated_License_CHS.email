@@ -1,0 +1,15 @@
+{!Contact.LastName}{!Contact.FirstName}您好， 
+
+您所提供的许可证号（License Number）{!Case.License__c} 是一个无效的MATLAB软件许可证。如果要使用MATLAB以及其他产品，您需要使用一个有效的许可证。
+为了确认您安装的MathWorks产品，请提供以下信息：
+1）您是使用个人名下的MathWorks License还是使用贵公司名下的License？ 
+2）如您使用公司的License，请提供公司或组织名称。 
+3）请提供您的电话，或者是贵公司负责MathWorks License同事的电话。 
+
+谨启， 
+{!User.Email_Template_Signature__c} 
+
+技术支持自助中心: http://www.mathworks.cn/support/ 
+文件交换及新闻组: http://www.mathworks.cn/matlabcentral/
+
+{!User.Disclosure__c}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template for creating / sending manager comments for PE Projects</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PE Manager Comments</name>
+    <style>none</style>
+    <subject>Manager Comments - {!MW_Project__c.Name} / {!MW_Project__c.Project_Name__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

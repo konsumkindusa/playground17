@@ -1,0 +1,59 @@
+We identified a problem related to certain firewall and network devices blocking communication to downloads from our Installer application.
+
+The R2017a installer available on our website has been updated to avoid encountering this block.  Anyone that had encountered this problem previously can download the updated R2017a installer from our website.
+
+For releases prior to R2017a we have uploaded the files you will need to our Secure File Transfer site. Start by clicking the corresponding link below and login with the username and password: 
+
+R2016b:
+
+Windows:
+https://sft.mathworks.com/human.aspx?r=771614027&arg06=416660820&arg07=416646012&arg11=1&arg12=fileview
+
+Mac:
+https://sft.mathworks.com/human.aspx?r=771614027&arg06=416660820&arg07=416711966&arg11=1&arg12=fileview
+
+Linux:
+https://sft.mathworks.com/human.aspx?r=771614027&arg06=416660820&arg07=416660648&arg11=1&arg12=fileview
+
+
+R2016a:
+
+Windows
+https://sft.mathworks.com/human.aspx?r=1516086184&arg06=416597128&arg07=416678816&arg11=1&arg12=fileview
+
+Mac:
+https://sft.mathworks.com/human.aspx?r=1516086184&arg06=416597128&arg07=416739390&arg11=1&arg12=fileview
+
+Linux:
+https://sft.mathworks.com/human.aspx?r=1516086184&arg06=416597128&arg07=416548506&arg11=1&arg12=fileview
+
+
+Username: support 
+Password: simulink 
+
+You will see a download button on this page. Click this start downloading. 
+
+Once the offline installation files have been downloaded please follow the instructions below for the manual activation workflow to get the license file and File Installation Key. 
+
+Manual Activation 
+
+1. Navigate to https://www.mathworks.com/licensecenter/licenses and log in. 
+2. Click on license "XXXXX" 
+3. Click the "Install & Activate" tab 
+4. Click "Activate to Retrieve License File" or click "Activate a Computer" 
+5. Choose release R20XXx 
+6. Enter your Host ID and Login Name as well as an activation label to identify this activation 
+7. Download the license file and copy down the File Installation Key. 
+
+
+Offline installation 
+
+After you have the SFT installer, the File Installation Key, and the license file, you are ready to install MATLAB. 
+
+1. Launch the MATLAB Installer. 
+2. Choose the 'offline' or 'Use a File Installation Key' installation method. 
+3. Enter your File Installation Key (FIK), when asked, and proceed through the installation. 
+4. Once your installation completes, the activation client will automatically launch. 
+5. In the activation client, select “Activate manually without the Internet” 
+6. Select the first option, “Enter the full path to your license file…” 
+7. Click browse, and navigate to your license file. MATLAB will save a copy of the license file in a safe place.

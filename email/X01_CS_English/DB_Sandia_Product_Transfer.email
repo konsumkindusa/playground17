@@ -1,0 +1,18 @@
+Hello {!Case.Contact},
+
+Your MathWorks order has been processed.  The XXXXX Toolbox has been added to your MATLAB License XXXXXX.  If you log into your MathWorks Account you will see the updated changes in the "My Licenses" section.
+
+A new Activation is required for all R2008a or newer releases on all machines affected by this Product Transfer. Click on this link to learn more about activation (Log in required):
+www.mathworks.com/support/activation/index.html
+
+If you have a new Customer Support question, please submit a request here: 
+https://www.mathworks.com/support/contact_us/
+
+If you have any further questions or need anything else, please contact your Account Management Team:  Allison Cognetti, allison.cognetti@mathworks.com 
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

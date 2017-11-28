@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Name of staff member</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of staff member</inlineHelpText>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.Employee_Flag__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Social Engagements</relationshipLabel>
+        <relationshipName>Social_Engagements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Hours_Invested__c</fullName>
+        <description>Optional: Track the time donated by staff members.  Resource hours spent by the core Social Mission Team should be tracked in the &quot;Project Hours&quot; field on the main Social Action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional: Track the time donated by staff members.  Resource hours spent by the core Social Mission Team should be tracked in the &quot;Project Hours&quot; field on the main Social Action.</inlineHelpText>
+        <label>Hours Invested</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Migration_ID__c</fullName>
+        <description>Added by Marc for migration purposes.</description>
+        <externalId>false</externalId>
+        <label>Migration ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Optional: capture notes of the staff engagement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional: capture notes of the staff engagement</inlineHelpText>
+        <label>Notes</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Role of staff member for this engagement. &quot;Champion/Organizer&quot; = main leader, EOY nominator, a-thon participant, STEM Ambassador, etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Role of staff member for this engagement. &quot;Champion/Organizer&quot; = main leader, EOY nominator, a-thon participant, STEM Ambassador, etc.</inlineHelpText>
+        <label>Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Champion/Organizer</fullName>
+                    <default>false</default>
+                    <label>Champion/Organizer</label>
+                </value>
+                <value>
+                    <fullName>EOY Voter</fullName>
+                    <default>false</default>
+                    <label>EOY Voter</label>
+                </value>
+                <value>
+                    <fullName>STEM Ambassador</fullName>
+                    <default>false</default>
+                    <label>STEM Ambassador</label>
+                </value>
+                <value>
+                    <fullName>Volunteer - Participant</fullName>
+                    <default>false</default>
+                    <label>Volunteer - Participant</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Social_Action__c</fullName>
+        <description>track the Social Action that the Role is associated to</description>
+        <externalId>false</externalId>
+        <label>Social Action</label>
+        <referenceTo>Social_Action__c</referenceTo>
+        <relationshipLabel>Social Engagements</relationshipLabel>
+        <relationshipName>Social_Engagements1</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Social Engagement</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Contact__c</columns>
+        <columns>NAME</columns>
+        <columns>Social_Action__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SE-{0000}</displayFormat>
+        <label>Social Engagement ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Social Engagements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

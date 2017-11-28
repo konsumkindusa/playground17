@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Our warehouse has notified us that a recent shipment of the <XXXList Product(s)XXX> could not be delivered to you due to an incorrect or incomplete address.  Please confirm or correct the shipping address listed below. We will have this product reshipped to you as soon as possible.  
+
+Shipping Address:
+
+<XXXShipping AddressXXX>
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

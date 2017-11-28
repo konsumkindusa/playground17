@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>EMEA EDU Sales Manager Johan Soderberg</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>EMEA EDU Sales Manager Johan Soderberg</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>EMEA_EDU_Sales_Manager_Ronald_van_de_Pol</parentRole>
+</Role>

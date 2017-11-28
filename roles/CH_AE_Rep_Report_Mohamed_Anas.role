@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>CH AE Rep Report Mohamed Anas</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>CH AE Rep Report Mohamed Anas</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>CH_AE_Manager_Mohamed_Anas</parentRole>
+</Role>

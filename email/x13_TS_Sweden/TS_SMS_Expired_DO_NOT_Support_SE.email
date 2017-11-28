@@ -1,0 +1,18 @@
+Hej {!Contact.FirstName}, 
+
+Jag skriver med anledning av ditt tekniska supportärende # {!Case.CaseNumber} som gäller '{!Case.Subject}'. 
+
+Enligt våra uppgifter saknar licens #{!Case.License__c} underhåll.
+
+En av fördelarna med ett gilltig underhållsavtal (Software Maintenance Service (SMS)) är tillgången till vår Tekniska Support. Förnyelse av licensens SMS avtal kommer ge dig tillgång till vår Tekniska Support.
+
+För att förnya ditt SMS avtal, vänligen kontakta ditt lokala säljteam:
+http://www.mathworks.com/company/worldwide/
+
+Vänliga hälsningar,
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange och MATLAB Answers: http://www.mathworks.com/matlabcentral/ 
+
+{!User.Disclosure__c}

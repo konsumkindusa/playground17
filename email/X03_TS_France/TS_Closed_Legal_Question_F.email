@@ -1,0 +1,13 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Je vous écris concernant votre dossier n°{!Case.CaseNumber} : {!Case.Subject}. 
+
+L'équipe Support Technique Mathworks ne peut vous fournir des conseils sur la loi concernant votre application. Le Deployment Addendum du MathWorks, Inc. Software License Agreement contient les droits et obligations spécifiques relatifs au déploiement d'applications créées avec les Programmes de Déploiement. 
+
+Si vous avez des questions générales concernant The MathWorks Software License Agreement, merci d'envoyer ces questions à l'adresse contracts@mathworks.com. 
+
+Veuillez ne pas fournir d'informations que vous considérez confidentielles, du fait que Mathworks ne répondra qu'à des questions générales d'application du Software License Agreement. 
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

@@ -1,0 +1,26 @@
+尊敬的 {!Contact.Name}：
+
+本邮件确认我们已收到您的入学注册请求，但您被放在等待列表中：
+
+课程名称: {!Enrollment__c.Class__c} 
+日期{!Enrollment__c.Display_Start_Date__c}至{!Enrollment__c.Display_End_Date__c}
+地点：{!Class__c.State__c},{!Class__c.City__c}
+时间：{!Class__c.Start_Time__c}-{!Class__c.End_Time__c}
+
+
+如果有了席位，我们团队的成员会立即与您联系。我们的标准做法是按先到先得原则通知客户席位可用性。我们将通过电子邮件通知您场地是否可用，或我们是否决定要在以后增加此课程/地点。
+
+如果您已汇出付款，我们收到时会与您联系，以讨论可用的培训机会。
+
+如果有您希望注册其他课程/地点，敬请查看下列课表，我们非常高兴为您变更入学注册。
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+
+取消政策
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+如果您需要进一步帮助，请致电 {!Class__c.Sponsor_Office_Phone__c} 
+ 或通过电子邮件 {!Class__c.Sponsor_Office_Email__c} 与我们联系。
+
+谢谢！
+{!Class__c.Sponsor_Office_Signature__c} 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Service Survey - IT</name>
+    <style>freeForm</style>
+    <subject>richiesta di valutazione del caso # {!Case.CaseNumber} da parte di MathWorks</subject>
+    <textOnly>Gentile {!Case.Contact},
+
+
+ci ha contattato il giorno {!Case.CreatedDate} per richiedere assistenza tecnica e vorremmo avere una sua valutazione del servizio ricevuto. La sua richiesta di supporto {!Case.CaseNumber}, {!Case.Subject}, è stata chiusa il giorno {!Case.ClosedDate} da {!Case.OwnerFullName}.
+
+
+Trova di seguito il collegamento per accedere al questionario, che richiede meno di 5 minuti per essere completato
+
+
+Survey Link
+
+
+
+Grazie per aver dedicato del tempo per completare il questionario. La sua opinione è per noi importante e ci aiuta a migliorare il servizio offerto ai nostri clienti.
+
+Codiali saluti
+
+MathWorks Technical Support Team
+
+http://www.mathworks.com/support/
+
+
+Per cortesia non risponda a questa email. Questa casella di posta elettronica non è controllata, pertanto una risposta a questa email non sarà letta.
+
+
+Se in futuro non volesse più ricevere i questionari da MathWorks, per cortesia utilizzi il seguente collegamento per modificare le impostazioni delle comunicazioni: https://go2.mathworks.com/preference-center
+
+
+L&apos;informativa sulla privacy MathWorks è consultabile al seguente indirizzo:
+
+http://www.mathworks.com/company/aboutus/policies_statements/</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

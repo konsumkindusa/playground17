@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>MW Exchange rates used on opportunity custom fields to convert custom local to corp and corp to local amount</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AUD_to_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>AUD to Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CHF_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>CHF To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CNY_to_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>CNY to Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DKK_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>DKK To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EUR_to_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>EUR to Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GBP_to_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>GBP to Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>INR_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>INR To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JPY_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>JPY To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KRW_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>KRW To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NOK_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>NOK To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NZD_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>NZD To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SEK_To_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>SEK To Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>USD_to_Corporate__c</fullName>
+        <externalId>false</externalId>
+        <label>USD to Corporate</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>6</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Mathworks Exchange Rates</label>
+    <visibility>Public</visibility>
+</CustomObject>

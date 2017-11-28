@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Breakfast Table Approval to staff member</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Breakfast Table Approved</name>
+    <style>none</style>
+    <subject>Breakfast Table Approved</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

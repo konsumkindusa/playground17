@@ -1,0 +1,23 @@
+{!Contact.LastName}{!Contact.FirstName}您好， 
+
+我正在处理您编号为#{!Case.CaseNumber}的关于“{!Case.Subject}”的技术支持案例。  
+
+我在几天前给您发送了邮件，希望得到更多的信息，但没有收到您的回复。因此我假设您不再需要我们的协助。 
+
+如果您对于该技术支持案例需要进一步的帮助，请回复这封邮件，提供所需的信息并且保留底部的技术支持申请编号（Reference ID），我将很高兴重新开启此技术支持案例。
+
+如果您想咨询一个新的技术问题，请访问以下网页并提交新的技术支持案例：
+http://www.mathworks.cn/support/servicerequests/create.html
+
+
+
+谨启， 
+
+MathWorks技术支持 
+www.mathworks.cn 
+
+
+这是一封自动生成的邮件 
+
+
+{!Case.Thread_Id}

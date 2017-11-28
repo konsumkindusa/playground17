@@ -1,0 +1,19 @@
+Dear {!Case.Contact},
+
+Recently I contacted you regarding the renewal of your MathWorks development license.  Our records indicate your license is now out of maintenance.  
+
+We value your participation in the MathWorks Connections Program, and are sending this final reminder so you are aware that you need to renew the license within the next 30 days to maintain your participation in the program.  If you are now using a different license number for development, please let us know.  If for some reason, you expect to renew at a later date, please respond to me here with details of your situation. 
+
+If you are no longer interested in remaining in the program, please reply to this message and we will no longer follow up with you. If we don’t hear back from you and you still haven’t renewed the license in the next month, we will have to assume you are no longer interested in participating, and to start inactivating your Web page and other partner benefits.
+
+If you have any questions about your renewal, you can contact your MathWorks Sales representative. If you have questions related to the MathWorks Connections Program, feel free to send them to me. 
+
+I look forward to hearing from you. Thank you. 
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+
+
+<Attach Original Email Reminder>
+
+{!Case.CaseNumber}

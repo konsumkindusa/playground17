@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This Object is the Junction Object between Account and MW_Projects.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Account_Projects</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Account_Association__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>This field is to prevent that the same Account can only be added once to the project.</description>
+        <externalId>false</externalId>
+        <label>Duplicate Account Association</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>MW_Project__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Account_Projects</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>is_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Primary Account</description>
+        <externalId>false</externalId>
+        <label>is Primary</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Account Project Relationship</label>
+    <nameField>
+        <displayFormat>A-{0000}</displayFormat>
+        <label>Account Project Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Project Relationships</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Do_Not_Allow_Multiple_Primary_Accounts</fullName>
+        <active>false</active>
+        <description>Only one Account can be marked as a primary on the project when multiple accounts associated with project</description>
+        <errorConditionFormula>AND(ISCHANGED( is_Primary__c ),is_Primary__c = true, Project__r.Primary_Number__c =1, Project__r.Count_Account__c &gt;1, PRIORVALUE(is_Primary__c)=false)</errorConditionFormula>
+        <errorDisplayField>is_Primary__c</errorDisplayField>
+        <errorMessage>Error: Only one Account can be set as Primary</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Primary_Account_Required</fullName>
+        <active>false</active>
+        <description>Primary Account required for Territory Support</description>
+        <errorConditionFormula>AND( Project__r.Count_Account__c =1,ISPICKVAL(Project__r.Purpose__c ,&quot;Territory Support&quot;),ISCHANGED( is_Primary__c ),is_Primary__c =false)</errorConditionFormula>
+        <errorDisplayField>Account__c</errorDisplayField>
+        <errorMessage>Territory Support project must have a Primary Account</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

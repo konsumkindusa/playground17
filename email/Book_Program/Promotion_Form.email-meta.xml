@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use when you have received a copy of a book that qualifies for promotion but do not have permission from the publisher to repurpose the description from their web site.  This email has the author provide promotional information for use.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Promotion Form</name>
+    <style>none</style>
+    <subject>Book Promotion</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

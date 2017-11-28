@@ -1,0 +1,7 @@
+Dear {!Contact.FirstName},
+
+Thank you for taking the time to speak with me today. As we discussed, I have forwarded the notes from our conversation to your Account Manager,  {!Opportunity.OwnerFullName}.
+
+As we discussed, they will follow up with you regarding (input application) 
+
+Best regards,

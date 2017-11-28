@@ -1,0 +1,14 @@
+Hello {!Case.Contact}, 
+
+Thank you for contacting MathWorks. Per the request of XXXX, License XXXX has been moved from Master License XXXXX to Master License XXXXX. If you log into your MathWorks Account you will see the change reflected in the License Center.
+
+A Master License allows you to organize your licenses for administration and renewal purposes. A Master License provides a single Software Maintenance Service renewal for all licenses within the Master License.  If you wish to receive one renewal notification for all of your licenses, it is recommended that you request to have your licenses consolidated into one Master License by contacting Customer Service.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html 
+
+Thank you, 
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

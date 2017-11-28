@@ -1,0 +1,18 @@
+order_management@mathworks.com
+
+Hi, 
+
+Could you process SV/Home Order＃, please? 
+It says "Your order is still being processed. 
+Please Click here to refresh the page after some time." 
+
+License Number is #. 
+
+If there are any issues, please let me know. 
+Please reply when the process is done.
+
+Thank you, 
+
+{!User.Disclosure__c} 
+
+Case ID: {!Case.CaseNumber}

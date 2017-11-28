@@ -1,0 +1,17 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. The system requirements for MATLAB are dependent on the platform and version of MATLAB that you are using.
+
+To view the system requirements for the current release: http://www.mathworks.com/support/sysreq/current_release/
+
+To view the system requirements for a previous release: 
+http://www.mathworks.com/support/sysreq/previous_releases.html
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

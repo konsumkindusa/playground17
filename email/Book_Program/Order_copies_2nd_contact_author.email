@@ -1,0 +1,28 @@
+{!Contact.Email} 
+Dear 
+
+I am following up on our previous request for one promotional copy of {!Book_Project__c.Book_Title__c}. We would like to get a promotional copy so that we can do a final qualification and then promote this book on our Web site to the MATLAB community at www.mathworks.com/support/books.
+
+Feel free to forward this request directly to your publisher or provide us with the name and address of your point of contact there so we can make this request.  
+
+Our mailing address is:
+
+MathWorks Book Program
+c/o Alexa Zahares
+The MathWorks, Inc.
+3 Apple Hill Dr.
+Natick, MA 01760-2098
+
+Please feel free to contact me if you have any questions.
+
+Regards,
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

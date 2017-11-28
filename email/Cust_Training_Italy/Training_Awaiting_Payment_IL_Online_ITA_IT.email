@@ -1,0 +1,14 @@
+Gentile {!Contact.Name}, 
+
+la ringraziamo per aver contattato il Training Department di The MathWorks e aver dimostrato interesse per MATLAB/Simulink ed in particolare per il seguente corso: 
+
+DENOMINAZIONE CORSO: {!Enrollment__c.Class__c}  
+DATA: {!Enrollment__c.Display_Start_Date__c} - {!Enrollment__c.Display_End_Date__c} 
+
+Qualora volesse partecipare, non esiti a contattarci al numero 011.2274.700 o ad inviarci un email all'indirizzo info@mathworks.it. 
+
+istruzioni di pagamento possono essere trovati qui: 
+https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor 
+
+Cordiali saluti, 
+{!Class__c.Sponsor_Office_Signature__c}

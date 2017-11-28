@@ -1,0 +1,22 @@
+Hello {!Contact.FirstName}, 
+
+I am writing in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+
+<<<<Include your response to customer’s specific question here>>>>
+
+
+In order to learn MATLAB interactively, at your own pace, we provide complimentary access to MATLAB Onramp training through MATLAB Academy. Available through the MATLAB Help menu or online: https://matlabacademy.mathworks.com/ 
+
+Login with your MathWorks account or create one at no cost.
+
+If you have a new technical support question, please submit a new request here: 
+http://www.mathworks.com/support/servicerequests/create.html 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange and MATLAB Answers: http://www.mathworks.com/matlabcentral/ 
+
+{!User.Disclosure__c}

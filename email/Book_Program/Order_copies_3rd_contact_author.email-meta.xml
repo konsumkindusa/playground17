@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template is used for a 3rd request for a book from an author. Asks them for a copy of the book or to put is into contact with the editor. Warns them if we do not receive a response, they will not have a promotional webpage.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Order copies 3rd contact author</name>
+    <style>none</style>
+    <subject>Promotional Copies: Final Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

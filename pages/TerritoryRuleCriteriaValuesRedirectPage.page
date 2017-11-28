@@ -1,0 +1,132 @@
+<!-- 
+/**
+ * @author Original: Archana Lohar- Cloud Sherpas/Mathworks, Last Modified: Archana Lohar - Cloud Sherpas/Mathworks
+ * @date Original: 15 Jan 2016 , Last Modified: 20 Jan 2016
+ * @description: Page for Territory Rule Criteria Value
+-->
+<apex:page standardController="Territory_Rule_Criteria_Value__c"
+    extensions="TerritoryRuleCriteriaValuesController">
+    <apex:form >
+   
+        <apex:pageMessages id="id" />
+        <apex:pageBlock title="Territory Rule Criteria Value">
+            <apex:pageBlockButtons >
+                <apex:outputPanel >
+                    <apex:commandButton value="Save" action="{!saveCustom}" />
+                    <apex:commandButton value="Cancel" action="{!Cancel}" />
+                </apex:outputPanel>
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="onEditTRCV" rendered="{!showOnNewTRCV}">
+                <apex:pageBlockSection title="Territory Rule Criteria Fields">
+                    <apex:repeat value="{!TRCFieldSetNames}" var="fsname">
+                        <apex:outputField value="{!currentRecord [fsname]}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:outputPanel id="onNewTRCV" rendered="{!showOnEditTRCV}">
+                <apex:pageBlockSection title="Territory Rule Criteria Fields">
+                    <apex:repeat value="{!TRCVAdditionalFieldSet}" var="fsName">
+                        <apex:outputField value="{!criteriaValueRecObj [fsName]}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            
+            <apex:outputPanel id="NewPanel" rendered="{!showNew}">
+                <apex:pageBlockSection title="Information" columns="1">
+                    <apex:repeat value="{!fieldnames}" var="fname">
+                        <apex:inputField value="{!Territory_Rule_Criteria_Value__c [fname]}"
+                            required="{!fname.required}" />
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:outputPanel id="EditPanel" rendered="{!showEdit}">
+                <apex:pageBlockSection title="Information" columns="1">
+                    <apex:repeat value="{!tRCVObjLst}" var="acc">
+                        <apex:repeat value="{!fieldnames}" var="fieldValue">
+                            <apex:inputField value="{!acc[fieldValue]}"
+                                required="{!fieldValue.required}" />
+                        </apex:repeat>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+       
+
+   
+    <c:CountryStatePickListComponent compData="{!theData}"
+        ShowStates="{!showStates}" CountryWithStates="{!CountryWithStates}"
+        RequiredCountry="{!RequiredCountry}" RequiredState="{!RequiredState}" selectedCountryEdit="{!countryCodeToEdit}" selectedStateEdit="{!stateCodeToedit}" showCountryNamesWithCodes="true"
+        rendered="{!showComponent}" />
+    
+         <apex:pageBlockSection >
+                <apex:inputfield value="{!Territory_Rule_Criteria_Value__c.Score__c}"
+                    required="false" />
+          </apex:pageBlockSection>
+            
+           
+        </apex:pageBlock>
+    </apex:form>
+
+    <style>
+    
+    .apexp .bPageBlock.apexDefaultPageBlock .pbBody {
+    margin: 1px -2px 7px;
+}
+    
+    .Custom31Tab .secondaryPalette,.individualPalette .Custom31Block .secondaryPalette
+        {
+        background-color: #ba3b3b;
+        border-color: #FBF8F8;
+    }
+    
+    body .bodyDiv .outer .oRight,body .bodyDiv .outerNoSidebar { //
+        background-color: rgb(250, 248, 248);
+        background-color: white;
+    }
+    
+    .bPageBlock .detailList tr td,.bPageBlock .detailList tr th,.hoverDetail .bPageBlock .detailList tr td,.hoverDetail .bPageBlock .detailList tr th
+        {
+        border-bottom: 0px solid rgb(227, 222, 184);
+    }
+    
+    body .bPageBlock .pbBody .labelCol,body .bPageBlock .pbBody .dataCol,body .bPageBlock .pbBody .data2Col,body .print .topics-label,body .print .topics-list
+        {
+        padding-top: 5px;
+        /* padding-bottom: 5px; */
+    }
+    
+    body .bPageBlock,body #bodyCell .bResource .secondaryPalette,body .secondaryPalette.bPageBlock,body .individualPalette .secondaryPalette.bPageBlock,body .bodyDiv .genericTable,body .genericPageBlockTable,body .bodyDiv .bSubBlock,body .bComponentBlock .bPageBlock,body .bMyDashboard .bPageBlock,body.rlHoverFrame .bPageBlock,body.subjectSelectionPopup div.choicesBox,body.lookupTab .secondaryPalette.bPageBlock,body.popupTab .secondaryPalette.bPageBlock,body.UserTagStatsPage .secondaryPalette.bPageBlock
+        {
+        background-color: #f8f8f8;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+    
+    body .bPageBlock {
+        padding: 0;
+        margin-bottom: -37px;
+        border-top-width: 0px;
+    }
+    
+    body .bEditBlock .pbBottomButtons,body .apexp .bPageBlock.apexDefaultPageBlock .pbBottomButtons
+        {
+        margin-top: 11px;
+    }
+    
+    .bodyDiv {
+        position: relative;
+        height: 400px;
+    }
+    
+    body .bPageBlock .pbBody .labelCol, body .bPageBlock .pbBody .dataCol, body .bPageBlock .pbBody .data2Col, body .print .topics-label, body .print .topics-list {
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+}
+
+
+    
+    body .bEditBlock .pbBottomButtons, body .apexp .bPageBlock.apexDefaultPageBlock .pbBottomButtons {
+    margin-top: 0px;
+}
+</style>
+</apex:page>

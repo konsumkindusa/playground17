@@ -1,0 +1,24 @@
+Hi Evelyn,
+
+Attached is a license assignment purchase order for end user {!Case.Account}.  The quote number for the order is Quote NUMBER.
+
+Please add [CONTACT] as a second primary contact on the license. Please email a copy of the order confirmation to the second primary contact as well. 
+
+When processing this License assignment order please use the Bill To Account that is Type of Transactional VAR.  If there is not an account type of Transactional VAR for the partner then please add the Type to an existing account temporarily just to process the order. Once the order is processed please remove the Type of Transactional VAR.
+
+Please let me know when the order is placed so I can follow up with the partner. 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Case: {!Case.CaseNumber} 
+
+
+===============DELETE EVERYTHING BELOW THIS LINE==========
+Make sure the following is completed:
+-A copy of the license assignment signed by partner
+-A completed PO with complete bill-to, ship-to, and ultimate end user contact information (name, company, address, phone, e-mail) and the specific products, and license option(s) required.
+-If partner is installing the license before sending to the end user provide contact information (name, company, address, e-mail)on the purchase order to have them added to the license as the asset manager.
+-A completed Assignment and Novation Agreement signed by partner and end user.   
+End-use statement from end user on appropriate company letterhead, if required
+- If the purchase order states “Tax Exempt” make sure they provide a certificate with the order.

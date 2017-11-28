@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When there is a change in the primary contact on a product/service agmt.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sales Support License - Contact Change</name>
+    <style>none</style>
+    <subject>Sales Support License Administrator Contact Updated</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

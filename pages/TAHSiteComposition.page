@@ -1,0 +1,156 @@
+<!--
+ * @author      Pranav Raulkar
+ * @date        9th May 2016
+ * @description Template for TAH Site Pages
+ * @revision    1.0 - Initial version
+-->
+<apex:page controller="TAHSiteCompositionController" standardStylesheets="false" showHeader="false" sidebar="false">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <head>
+            <!-- Styles -->
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS, '/assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.TAH, '/styles/jquery-ui.css')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.TAH, '/styles/tah-custom.css')}" />
+
+            <!-- BEGIN Adobe DTM -->
+            <apex:includeScript value="{!IF(isSandbox, $Label.CP_ENROLL_OmnitureNonProdURL, $Label.CP_ENROLL_OmnitureProdURL)}" />
+            <!-- END Adobe DTM -->
+        </head>
+        <body>
+            <div class="slds">
+                <!-- Header -->
+                <div class="slds-col slds-size--1-of-1 header">
+                    <div class="slds-grid slds-grid--align-center">
+                        <div style="max-width: 1170px; width: 100%;" class="slds-m-vertical--small headerTop slds-p-horizontal--medium">
+                            <apex:image value="{!URLFOR($Resource.TAH, '/images/pic-header-mathworks-logo.svg')}" />
+                        </div>
+                    </div>
+
+                    <div class="sticky_anchor" />
+                    <div id="sticky" class="slds-grid slds-grid--align-center headerMiddle">                        
+                        <div style="max-width: 1170px; width: 100%;" class="slds-m-vertical--small slds-p-horizontal--medium">
+                            <apex:outputText value="{!$Label.CP_ENROLL_MatlabSimulinkTraining}" />
+                        </div>
+                    </div>
+
+                    <div class="slds-grid slds-grid--align-center" style="background-color: #8E9085;">
+                        <div class="headerBottom slds-col slds-size--1-of-1 slds-medium-show" style="max-width: 1170px; width: 100%; background-image: url(/resource/1465305873000/TAH/images/maots-banner.jpg);background-position: -450px;background-repeat-x: no-repeat;position: relative;height: 251px;background-color: #8E9085; top: 1px;">
+                            <div class="bannerText slds-p-horizontal--medium">
+                                <apex:outputText value="{!$Label.CP_ENROLL_LearnMatlabOnline}" />
+                            </div>
+                        </div>
+
+                        <div class="headerBottom slds-col slds-size--1-of-1 fixed-ratio-resize slds-small-show-only">
+                            <apex:image styleClass="fixed-ratio-resize" value="/resource/1465305873000/TAH/images/maots-banner.jpg" />
+                            <div class="slds-p-horizontal--medium slds-p-vertical--medium bannerTextResponsive">
+                                <apex:outputText value="{!$Label.CP_ENROLL_LearnMatlabOnline}" />
+                            </div>
+                        </div>
+
+                        <div class="headerBottom slds-col slds-size--1-of-1 fixed-ratio-resize slds-x-small-show-only">
+                            <apex:image styleClass="fixed-ratio-resize" value="/resource/1465305873000/TAH/images/maots-banner.jpg" />
+                            <div class="slds-p-horizontal--medium slds-p-vertical--medium bannerTextResponsive">
+                                <apex:outputText value="{!$Label.CP_ENROLL_LearnMatlabOnline}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Body -->
+                <div class="slds-col slds-size--1-of-1 body">
+                    <div class="slds-grid slds-grid--align-center">
+                        <div style="max-width: 1170px; width: 100%;" class="slds-m-top--large slds-m-bottom--large slds-p-horizontal--medium">
+                            <apex:insert name="body"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="slds-col slds-size--1-of-1 footer">
+                    <div class="slds-grid slds-grid--align-center">
+                        <div style="max-width: 1170px; width: 100%;" class="slds-grid slds-p-horizontal--medium">
+                            <div class="slds-grid slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--2-of-3">
+                                <div class="slds-grid--vertical slds-m-vertical--x-large">
+                                    <div class="slds-col">
+                                        <apex:outputLink styleClass="slds-m-right--xx-small" value="{!$Label.CP_ENROLL_Link_Patents}">
+                                            <apex:outputText value="{!$Label.CP_ENROLL_Footer_Patents}" />
+                                        </apex:outputLink>|
+                                        <apex:outputLink styleClass="slds-m-left--xx-small slds-m-right--xx-small" value="{!$Label.CP_ENROLL_Link_Trademarks}">
+                                            <apex:outputText value="{!$Label.CP_ENROLL_Footer_Trademarks}" />
+                                        </apex:outputLink>|
+                                        <apex:outputLink styleClass="slds-m-left--xx-small slds-m-right--xx-small" value="{!$Label.CP_ENROLL_Link_Privacy_Policy}">
+                                            <apex:outputText value="{!$Label.CP_ENROLL_Footer_Privacy_Policy}" />
+                                        </apex:outputLink>|
+                                        <apex:outputLink styleClass="slds-m-left--xx-small" value="{!$Label.CP_ENROLL_Link_Preventing_Piracy}">
+                                            <apex:outputText value="{!$Label.CP_ENROLL_Footer_Preventing_Piracy}" />
+                                        </apex:outputLink>
+                                    </div>
+                                    <div class="slds-col">
+                                        <apex:outputText escape="false" value="{!$Label.CP_ENROLL_MathWorks_Copyright}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3">
+                                <div class="slds-grid--vertical slds-m-vertical--x-large" style="float: right;">
+                                    <div class="slds-col">
+                                        <apex:outputLink styleClass="slds-m-right--x-small" value="{!$Label.CP_ENROLL_MATLAB_Facebook}">
+                                            <apex:image styleClass="socialIcon" value="{!URLFOR($Resource.TAH, '/images/ico-facebook.svg')}" />
+                                        </apex:outputLink>
+                                        <apex:outputLink styleClass="slds-m-right--x-small" value="{!$Label.CP_ENROLL_MATLAB_Twitter}">
+                                            <apex:image styleClass="socialIcon" value="{!URLFOR($Resource.TAH, '/images/ico-twitter.svg')}" />
+                                        </apex:outputLink>
+                                        <apex:outputLink styleClass="slds-m-right--x-small" value="{!$Label.CP_ENROLL_MATLAB_GooglePlus}">
+                                            <apex:image styleClass="socialIcon" value="{!URLFOR($Resource.TAH, '/images/ico-google-plus.svg')}" />
+                                        </apex:outputLink>
+                                        <apex:outputLink styleClass="slds-m-right--x-small" value="{!$Label.CP_ENROLL_MATLAB_LinkedIn}">
+                                            <apex:image styleClass="socialIcon" value="{!URLFOR($Resource.TAH, '/images/ico-linkedin.svg')}" />
+                                        </apex:outputLink>
+                                        <apex:outputLink styleClass="slds-m-right--x-small" value="{!$Label.CP_ENROLL_MATLAB_RSS}">
+                                            <apex:image styleClass="socialIcon" value="{!URLFOR($Resource.TAH, '/images/ico-rss.svg')}" />
+                                        </apex:outputLink>
+                                    </div>
+                                    <div class="slds-col slds-m-top--xx-small">
+                                        <i><apex:outputText value="{!$Label.CP_ENROLL_Join_Conversation}" /></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/jquery-1.10.2.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/jquery-ui.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.TAH, '/scripts/tah-composition.js')}" />
+
+        <!-- BEGIN Adobe DTM -->
+        <script type="text/javascript">
+        try {
+            _satellite.pageBottom();
+        } catch (e) {
+            //something went wrong
+        }
+        </script>
+        <!-- END Adobe DTM -->
+
+        <script type="text/javascript">
+            // function sticky_relocate() {
+            //     var window_top = $(window).scrollTop();
+            //     var div_top = $('#sticky-anchor').offset().top;
+            //     if (window_top > div_top) {
+            //         $('#sticky').addClass('stick');
+            //         $('#sticky-anchor').height($('#sticky').outerHeight());
+            //     } else {
+            //         $('#sticky').removeClass('stick');
+            //         $('#sticky-anchor').height(0);
+            //     }
+            // }
+
+            // $(function() {
+            //     $(window).scroll(sticky_relocate);
+            //     sticky_relocate();
+            // });
+        </script>
+    </html>
+</apex:page>

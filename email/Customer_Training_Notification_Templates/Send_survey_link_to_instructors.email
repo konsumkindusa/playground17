@@ -1,0 +1,11 @@
+Hi {!Class__c.Primary_Instructor__c},
+
+Provided below is the evaluation link(s) for your {!Class__c.Class_Type__c} "{!Course__c.Name}" starting on {!Class__c.Display_Start_Date__c} in {!Class__c.City__c}, {!Class__c.Country__c}.
+
+{!IF(Class__c.Language__c != "English","Survey in " + Class__c.Language__c + ": " + Class__c.local_language_survey_url__c , '')} 
+Survey in English: {!Class__c.English_Survey_URL__c}
+
+You may use a service such as https://goo.gl/ or https://bitly.com/ to shorten the URL for ease of sharing in the classroom.
+
+Regards,
+Ganesh

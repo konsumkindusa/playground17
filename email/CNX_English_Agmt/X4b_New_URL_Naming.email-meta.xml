@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to Gary with suggested URL naming</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>4b - New URL Naming</name>
+    <style>none</style>
+    <subject>New URL suggestion for {!Partner_Agreement__c.Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

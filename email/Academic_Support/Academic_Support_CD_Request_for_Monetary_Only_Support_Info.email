@@ -1,0 +1,45 @@
+Add Technical Lead to the CC line
+
+Attach award letter
+Attach EFT Form
+
+Remove the payment information not being requested
+
+Hello Professor {!Academic_Support_Project__c.Primary_Contact__c},
+
+Monetary support (if US)
+
+MathWorks is excited to be funding the development of curriculum for the course entitled '{!Academic_Support_Project__c.Name}'.  Attached is an award letter that describes the support.
+
+In order to move forward with the support payment, please provide us with your company’s bank information for EFT payments using the attached form.     
+
+Please include an Accounts Receivable contact and email.  EFT remittance details will be emailed to the Accounts Receivable email provided each time an EFT payment is made.  
+
+The completed EFT Payment Information Form should be emailed to Accounts.Payable@mathworks.com. 
+
+If your University cannot provide EFT information, please reply to this email and explain why payment must be made by check or wire transfer. 
+
+Monetary Support (If International)
+In order to move forward with the support payment, please provide the following information via email: 
+
+
+Wire information (if international): 
+1. Bank name & complete mailing address 
+2. Account number (IBAN): 
+3. SWIFT/BIC code 
+
+Once I receive all of the information requested above, I will initiate your support.  I am also including a link to the MathWorks logo: www.mathworks.com/brandguide/visual/logos.html so that you can put it on your website to reflect our role as a sponsor of this project.  We recommend you use the first full-color logo file and link it back to www.mathworks.com.
+
+If you have any questions, please contact me.
+
+
+Best Regards,
+{!User.FirstName} {!User.LastName}
+
+MathWorks Academic Support Program
+E.  academicsupport@mathworks.com
+F.  508.652.8740
+
+MathWorks
+3 Apple Hill Drive 
+Natick, MA 01760

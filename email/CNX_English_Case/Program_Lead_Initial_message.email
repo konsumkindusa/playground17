@@ -1,0 +1,13 @@
+Dear {!Case.Contact},
+
+The MathWorks Connections Program is available, at no charge, to third-party organizations who develop and distribute complementary, commercially-available products and services based on the MATLAB technical computing environment.
+
+BENEFITS 
+The Connections Program provides our third-party organizations with such benefits as a Web page listing on our site, access to "Connections Partner only" logos to display in your collateral, early access to new versions of MathWorks products, tradeshow signs, reduced-price licenses for demonstration use, etc.
+
+If you are interested in joining the Connections Program or just finding out more about it, please visit our Web site at http://www.mathworks.com/products/connections/join . If you would like to join, please fill out the most relevant application as completely as possible. Should you have any questions about this program, please do not hesitate to contact me directly at connections@mathworks.com.
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}

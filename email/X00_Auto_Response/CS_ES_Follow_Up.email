@@ -1,0 +1,16 @@
+Estimado Sr. / Sra.: 
+
+A día de hoy seguimos sin haber recibido una respuesta en relación a su Caso #{!Case.CaseNumber}. En consecuencia no estamos seguros de si usted aún necesita nuestra ayuda en relación con esta petición.
+
+Si aún necesita asistencia de nuestra parte por favor, conteste a este email {!Case.Auto_Close_Date_Time__c} manteniendo intacto el “Reference ID” que aparece al final del mismo.
+
+
+{!Case.OwnerFullName}
+Departamento de Atención al Cliente
+The MathWorks SL
+Tel: +34 91 799 4700
+info@mathworks.es
+
+Este es un email automático.
+
+{!Case.Thread_Id}

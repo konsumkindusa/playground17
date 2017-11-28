@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Academic Support</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>MW_Technical_Evangelist_Rep_Report_Lauren_Tabolinsky</role>
+        <roleAndSubordinatesInternal>CS_Natick_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>CS_Rep_Report_CS_Natick_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MW_Customer_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MW_Education_Marketing</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

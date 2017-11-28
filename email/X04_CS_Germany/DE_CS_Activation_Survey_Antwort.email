@@ -1,0 +1,16 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+bei einem Survey zu Ihrer Anfrage: 'XXX (Thema)', Bestätigungsmail s. u., bezeichnen Sie diese als nicht erledigt:
+
+XXXXX (Kopie des entsprechenden Survey- Absatzes)
+
+Bitte lassen Sie uns mit einer Antwort auf diese Email unter Beibehalt der unten verzeichneten Reference ID wissen, was wir noch für Sie tun können.
+Vielen Dank.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

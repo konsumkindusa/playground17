@@ -1,0 +1,20 @@
+{!Contact.LastName}{!Contact.FirstName}您好， 
+
+我正在处理您编号为#{!Case.CaseNumber}的关于“{!Case.Subject}”的技术支持案例。
+
+我们仅对学生版本用户遇到的安装和Bug问题提供电话与邮件的技术支持。MathWorks.com网站提供了许多有用的资源，或许可以回答您的问题：
+
+MathWorks文档中心提供了MATLAB和Simulink产品的完成文档，包括大量的演示和示例：
+http://www.mathworks.cn/help/
+
+在线论坛MATLAB Central中的MATLAB Answers板块提供了超过100000个MATLAB和Simulink相关问题的解答：
+http://www.mathworks.cn/matlabcentral/answers/
+
+对于您的这个问题，以下是一些可供参考的信息：
+
+ 
+
+
+谨启， 
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

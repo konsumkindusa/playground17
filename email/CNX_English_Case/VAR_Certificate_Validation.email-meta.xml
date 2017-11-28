@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to License admin once they have been added to the Keysight VAR license</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Connections</letterhead>
+    <name>VAR Keysight - Certificate Validation</name>
+    <style>freeForm</style>
+    <subject>Instructions – Downloading and installing your MATLAB software</subject>
+    <textOnly>Thank you for purchasing MATLAB software from Keysight, or a Keysight partner.  (On August 1, 2014, Agilent Test &amp; Measurement became Keysight Technologies.).  A MATLAB license has been assigned to you in your on-line MathWorks Account available at www.mathworks.com.  Through this account, you will be able to download, install, and activate your MATLAB software.  (If you did not already have a MathWorks Account, you will also receive a separate e-mail with your user name and password for this account.)  
+
+Your MathWorks License Number is xxxxx.
+
+When contacting MathWorks for support or with questions, please be sure to reference your MathWorks License Number above.
+
+==Installation and Activation==
+You can now download and install MATLAB on your instrument or remote PC by clicking &lt;http://www.mathworks.com/downloads/web_downloads/&gt;  
+
+As part of installing MathWorks software, you will be required to activate your license(s).  If you are installing on a machine with Internet access, you will be walked through the activation steps at the end of installation.  
+
+Note: If you are installing the software on a machine that *cannot* have Internet access for the installation process, please follow these instructions: http://www.mathworks.com/support/solutions/data/1-5A111Q.html?solution=1-5A111Q 
+
+==Obtaining Technical Support==  
+For self-service options 24 hours a day on our Web site:  http://www.mathworks.com/support/  
+
+This license includes one year of Software Maintenance Service (“SMS”) starting from the shipment date of the Agilent or Keysight instrument to you.  SMS allows you to contact MathWorks technical support during this period by “Creating a New Service Request” at http://www.mathworks.com/support/contact_us/index.html.  In addition, you have access to new MathWorks releases during this period.  You will receive an email notice to optionally renew SMS for another year approximately three months before the end of the SMS period.  
+
+==View and manage your license(s)==
+
+View license details, manage user information, set permissions, etc. (login required) at http://www.mathworks.com/licensecenter  
+
+Sincerely,
+MathWorks Customer Service Team
+http://www.mathworks.com/contact_us  
+
+
+MathWorks programs are distributed in accordance with US Export Administration regulations. They may be subject to U.S .Export Control laws or other (U.S .and Non-U.S.) governmental export and import laws. It shall be the Licensee&apos;s responsibility to comply with the latest U.S. or other governmental import or export regulations. Diversion contrary to U.S. law is prohibited. 
+
+{!Case.CaseNumber}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

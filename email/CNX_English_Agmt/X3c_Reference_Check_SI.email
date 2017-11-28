@@ -1,0 +1,29 @@
+Dear [REFERENCE]
+
+{!Partner_Agreement__c.Account__c} has recently applied to become a member of the MathWorks Connections Program with their system integration services.
+
+Part of the application process is to contact two of {!Partner_Agreement__c.Account__c}’s customers that have used their system integration services where MathWorks products were involved. {!Partner_Agreement__c.Account__c} provided your name to me as one such reference. Please take a moment and answer the following questions. Your prompt reply is greatly appreciated as this application cannot be completed until your comments have been received.
+
+=====================================================
+** All information collected will be held Confidential by MathWorks, Inc. **
+===================================================== 
+
+1. When and for how long did you use the system integration services?
+
+2. What was the nature of the project that the system integrator worked on for you?
+a)  How well did they understand your problem?
+b)  Please rate {!Partner_Agreement__c.Account__c}’s understanding of The MathWorks products (5=expert – 1=novice) (e.g. MATLAB, Simulink).
+c)  How did the delivered solution meet your needs?
+
+3. Describe your working relationship with {!Partner_Agreement__c.Account__c}.
+
+4. Would you recommend this system integrator to a colleague?  With what restrictions (e.g. must be an advanced control design project)?
+
+======================================================
+
+Thank you very much for your assistance. Your prompt reply is greatly appreciated. If you have any questions regarding this request, or if I can help you in any way, please let me know.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

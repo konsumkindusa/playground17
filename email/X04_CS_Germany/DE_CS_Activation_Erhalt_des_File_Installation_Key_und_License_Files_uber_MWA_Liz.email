@@ -1,0 +1,37 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für Ihre Anfrage.
+
+Die gewünschten Werte finden Sie in Ihrem geöffneten Mathworks Account über: 
+
+A: Für Individual Lizenzen: 
+- Öffnen der gewünschten Lizenznummer unter der Option: ‘My Software‘: ‚License‘ oder ‚View additional Licenses or Trials‘
+- Öffnen des aufscheinenden ‚Install and Activate‘ Tab 
+- Öffnen der entsprechenden Aktivierung, die als blauer Link in der Spalte ‚Activation Label’ gelistet und über die dort abgebildete HostID oder den Namen der Aktivierung identifiziert wird 
+- Auswahl: 'Get License File’ 
+- Auswahl des gewünschten Releases 
+- Download oder Email Versand des erzeugten License Files 
+
+B: Für Netzwerklizenzen: 
+- Öffnen der gewünschten Lizenznummer unter der Option: ‘My Software‘: ‚License‘ oder ‚View additional Licenses or Trials‘
+- Öffnen des darunter aufscheinenden ‚Install and Activate‘ Tab 
+- Auswahl: 'Get License File’ 
+- Erzeugung des hier ausschließlich zum aktuellen Release der Lizenz angebotenen bis 8a rückwärtskompatiblen License Files und des aktuellen File Installation Keys 
+
+Für benötigte ältere Releases: 
+- Zusatzerzeugung des entsprechenden File Installation Keys in dem sich danach öffnenden Fenster 
+'Advanced Options‘ 
+
+Installation immer mit dem aktuellsten License File und dem Release-spezifischen File Installation Key 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

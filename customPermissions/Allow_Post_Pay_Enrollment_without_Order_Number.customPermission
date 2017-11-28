@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission will allow a user to create/edit training enrollments that are marked as Notify RAC for Post Payment Processing without requiring an Order Number. Workfront Story #1736520</description>
+    <label>Allow Post Pay Enrollment without Order Number</label>
+</CustomPermission>

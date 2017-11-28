@@ -1,0 +1,19 @@
+Dear {!Social_Action__c.Contact__c},
+
+Thank you for applying for a MathWorks Community Grant through our Social Mission program.  All community grant applications are reviewed quarterly by the MathWorks Community Grant Review Team, who award grants based on budget, number of qualified applications received, and alignment with our Social Mission criteria.
+
+We receive a large number of competitive applications each cycle, and unfortunately are unable to award every applicant.  While we are not able to support your efforts at this time, we encourage you to apply for a grant to support future initiatives that you feel meet the MathWorks Community Grant guidelines.  
+
+MathWorks is committed to actively supporting our communities and promoting social and environmental responsibility. Our core values and conviction to "Do the Right Thing" guide us in leveraging our unique company strengths for meaningful outcomes. We believe that investing in our Social Mission Program helps us to lead in both our communities and the field of technical computing.
+
+For information about our program and guidelines, please visit:  
+http://www.mathworks.com/company/aboutus/soc_mission/eligibility_guidelines/   
+
+On behalf of MathWorks, I wish you continued success in your fundraising efforts.
+
+Sincerely,
+{!Social_Action__c.OwnerFullName}
+Social Mission
+socialmission@mathworks.com
+
+{!Social_Action__c.Thread_ID__c}

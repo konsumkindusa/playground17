@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_67510469</developerName>
+        <masterLabel>Hand Raiser</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lead.Hand_Raiser_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Contact Maintenance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quote Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pricing Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pay Per Click</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professor Trials</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trial Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Program Mktg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Requested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Maintenance Requested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technical Support Qualified Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact Consulting</sourceValue>
+            </sourceValues>
+            <value>Hand Raiser</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_53421279</developerName>
+        <masterLabel>Sector Grouping</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lead.Sector__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Commercial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Government</sourceValue>
+            </sourceValues>
+            <value>Comm/Gov</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Education</sourceValue>
+            </sourceValues>
+            <value>Education</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_53421279</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_67510469</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>8</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Lead.Hand_Raiser_Type__c</field>
+    </columns>
+    <columns>
+        <field>Lead.SFDC_Lead_Score__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Lead_Score__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Lead_Age__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Lead.Total_Outbound_Attempts__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Lead.Account__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Office__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Not owned by the queue.</description>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Open,To Call,To Call Working</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>unassigned lead</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ALIAS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>lynn</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_67510469</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_53421279</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Assigned Leads by Sector - Manager</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Lead.Lead_Score__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

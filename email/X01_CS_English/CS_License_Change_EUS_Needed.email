@@ -1,0 +1,16 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks Customer Service.  In order to process your request, please complete the attached End User Statement completely on company letterhead and return via email.  Once the End User Statement has been received, we will follow the necessary steps for approval.  Once approved, I will be able to complete your request.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!Case.OwnerFullName}
+MathWorks Customer Service
+
+
+{!Case.CaseNumber}
+
+
+{!Case.Email_Ref_Id__c}

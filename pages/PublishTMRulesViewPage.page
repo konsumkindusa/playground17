@@ -1,0 +1,24 @@
+<!-- 
+/**
+* @author Original: Sagar Talele- Cloud Sherpas/Mathworks, Last Modified: Sagar Talele - Cloud Sherpas/Mathworks, Faina Gorelik - MathWorks AtTask 1589562 
+* @date Original: 05 Feb 2016, Last Modified: 05 Feb 2016, 22 july 2016
+* @description: view Page for Territory Management Settings 
+*/ 
+-->
+<apex:page standardController="Territory_Publish_Rule__c" extensions="PublishTMRulesViewPageController"  id="PgId">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Publish" disabled="{!isDisabled}" />
+                <apex:commandButton value="Refresh" action="{!Refresh}"/>
+         
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!terrpublished}" var="tmSettings"  >
+                <apex:column value="{!tmSettings.Pending_Rule_Publish__c}" headerValue="TM Pending Rules Publish" /> 
+                <apex:column value="{!tmSettings.Rules_Last_Published_By__c}" headerValue="TM Rules Last Published By" /> 
+                <apex:column value="{!tmSettings.Rules_Last_Published_On__c}" headerValue="TM Rules Last Published On" />    
+			
+            </apex:pageBlockTable>
+        </apex:pageBlock> 
+    </apex:form>                     
+</apex:page>

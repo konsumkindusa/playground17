@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+Thank you for submitting your proposal for [Service Request.Abstract] as an add-on technology for MathWorks products. I will forward your proposal to review to see if there is interest in having more detailed discussions. This is just a quick message to let you know that I have your proposal and to set your expectations on the review cycle.  
+
+Because of other development priorities, these proposal reviews can sometimes take several weeks to several months. I will contact you as soon as I have a result, but if you do not hear from me within three months, feel free to check-in for an update.
+
+Thanks again for your interest in working with the MathWorks.
+
+Best regards,
+{!User.Email_Template_Signature__c} 
+
+
+
+{!Case.CaseNumber}

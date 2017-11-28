@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains integration setting related to the  license</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>LicenseLimitPage__c</fullName>
+        <description>License LimitPage Size</description>
+        <externalId>false</externalId>
+        <label>LicenseLimitPage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LicenseMWUrl__c</fullName>
+        <description>Contains License Base Url for Mathworks</description>
+        <externalId>false</externalId>
+        <label>LicenseMWUrl</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>LimitSizeOfProduct__c</fullName>
+        <description>Limit Size Of Product for Licenses</description>
+        <externalId>false</externalId>
+        <label>LimitSizeOfProduct</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PageSizeForPaginationToShowLicenses__c</fullName>
+        <description>This will be used to set page size for License showing on view License page</description>
+        <externalId>false</externalId>
+        <label>PageSizeForPaginationToShowLicenses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URLForNonProfLicensesAccount__c</fullName>
+        <description>URL to open new Non Prof License Application. Searches by CDS Acccount Id passed with URL only PASS, Home use, or student licenses</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Non professional licenses search</inlineHelpText>
+        <label>URLForNonProfLicensesAccount</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URLForNonProfLicenses__c</fullName>
+        <description>URL to open Non professional license application - Home, PASS, Student licenses</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL to new MW License App</inlineHelpText>
+        <label>URLForNonProfLicenses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UrlForShowingLicenses__c</fullName>
+        <externalId>false</externalId>
+        <label>UrlForShowingLicenses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UrlForShowingMasterLicense__c</fullName>
+        <description>pass master license id from Opportunity to search license app by master license id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Open License App URL by Opportunity Master License Id</inlineHelpText>
+        <label>UrlForShowingMasterLicense</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>License Integration Setting</label>
+    <visibility>Protected</visibility>
+</CustomObject>

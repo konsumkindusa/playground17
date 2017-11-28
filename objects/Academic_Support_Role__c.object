@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to relate contacts to academic support records
+
+Changed Label from Academic Support Role to EDU Support Role on 5/4</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Academic_Support_Project_Class__c</fullName>
+        <description>reflects the class value from the related academic support record</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Academic_Support__r.Class__c)</formula>
+        <inlineHelpText>reflects the class value from the related academic support record</inlineHelpText>
+        <label>Academic Support Project Class</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Academic_Support__c</fullName>
+        <description>Used to create a master/detail relationship between the contact role and the academic support record
+
+Changed Label from Academic Support to Edu Project on May 2016</description>
+        <externalId>false</externalId>
+        <label>EDU Project</label>
+        <referenceTo>Academic_Support_Project__c</referenceTo>
+        <relationshipName>Academic_Support_Roles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Account_Location__c</fullName>
+        <description>reflects the location field from the account related to the specified contact</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.Site</formula>
+        <inlineHelpText>reflects the location field from the account related to the specified contact</inlineHelpText>
+        <label>Account Location</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>Returns the latin name of the account</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Contact__r.Account.Account_Name_Latin__c),  Contact__r.Account.Name , Contact__r.Account.Account_Name_Latin__c)</formula>
+        <label>Account</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to a contact record (customer OR MathWorker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use to lookup a contact record (customer OR MathWorker</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Academic_Support_Roles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Used to reflect the email address of the related contact</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Email</formula>
+        <inlineHelpText>Used to reflect the email address of the related contact</inlineHelpText>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <description>used to reflect the job title of the related contact</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Title</formula>
+        <inlineHelpText>used to reflect the job title of the related contact</inlineHelpText>
+        <label>Job Title</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>used to denote if the contact is a primary contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to denote if the contact is the primary contact</inlineHelpText>
+        <label>Primary Contact</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Used to identify the role a contact plays in relationship to the Academic Support Record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the role this contact is in related to this particular record</inlineHelpText>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal Sponsor</fullName>
+                    <default>false</default>
+                    <label>Internal Sponsor</label>
+                </value>
+                <value>
+                    <fullName>Technical Lead</fullName>
+                    <default>false</default>
+                    <label>Technical Lead</label>
+                </value>
+                <value>
+                    <fullName>Primary Faculty Advisor</fullName>
+                    <default>false</default>
+                    <label>Primary Faculty Advisor</label>
+                </value>
+                <value>
+                    <fullName>Secondary Faculty Advisor</fullName>
+                    <default>false</default>
+                    <label>Secondary Faculty Advisor</label>
+                </value>
+                <value>
+                    <fullName>Graduate Student</fullName>
+                    <default>false</default>
+                    <label>Graduate Student</label>
+                </value>
+                <value>
+                    <fullName>Professor</fullName>
+                    <default>false</default>
+                    <label>Professor</label>
+                </value>
+                <value>
+                    <fullName>Competition Organizer</fullName>
+                    <default>false</default>
+                    <label>Competition Organizer</label>
+                </value>
+                <value>
+                    <fullName>Undergraduate Student</fullName>
+                    <default>false</default>
+                    <label>Undergraduate Student</label>
+                </value>
+                <value>
+                    <fullName>Postgraduate Student</fullName>
+                    <default>false</default>
+                    <label>Postgraduate Student</label>
+                </value>
+                <value>
+                    <fullName>Intern</fullName>
+                    <default>false</default>
+                    <label>Intern</label>
+                </value>
+                <value>
+                    <fullName>Team Leader</fullName>
+                    <default>false</default>
+                    <label>Team Leader</label>
+                </value>
+                <value>
+                    <fullName>Field Marketing</fullName>
+                    <default>false</default>
+                    <label>Field Marketing</label>
+                </value>
+                <value>
+                    <fullName>Technical Marketing</fullName>
+                    <default>false</default>
+                    <label>Technical Marketing</label>
+                </value>
+                <value>
+                    <fullName>Sales Rep</fullName>
+                    <default>false</default>
+                    <label>Sales Rep</label>
+                </value>
+                <value>
+                    <fullName>Program Manager</fullName>
+                    <default>false</default>
+                    <label>Program Manager</label>
+                </value>
+                <value>
+                    <fullName>Technical Evangelist</fullName>
+                    <default>false</default>
+                    <label>Technical Evangelist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Siebel_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Siebel ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>EDU Support Role</label>
+    <nameField>
+        <displayFormat>ASR-{0000000}</displayFormat>
+        <label>Academic Support Role</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>EDU Support Roles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,9 @@
+<messaging:emailTemplate subject="{!$Label.Cp_EnrollTemplateSubject}" 
+recipientType="Contact" relatedToType="Enrollment_Request__c" 
+language="{!relatedTo.Language_ISO_Code__c}">
+    <messaging:htmlEmailBody >
+        <c:EnrollmentConfEmailContent enrollmentRequestId="{!relatedTo.Id}" langu="{!relatedTo.Language_ISO_Code__c}"></c:EnrollmentConfEmailContent>
+        <!-- <c:EnrollmentConfEmailContent langu="{!relatedTo.Id}" ></c:EnrollmentConfEmailContent> -->
+    </messaging:htmlEmailBody>
+    
+</messaging:emailTemplate>

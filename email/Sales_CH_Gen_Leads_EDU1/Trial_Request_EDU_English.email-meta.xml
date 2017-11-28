@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Trial Request EDU English</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Request EDU English</name>
+    <style>none</style>
+    <subject>Your Trial Request at MathWorks</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

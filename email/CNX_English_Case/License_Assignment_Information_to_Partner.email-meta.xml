@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Information sent to someone requesting to resell as a one off.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>License Assignment - Information</name>
+    <style>none</style>
+    <subject>License Assignment information from the Connections Program</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

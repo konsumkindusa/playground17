@@ -1,0 +1,14 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. We received a request from XXXX to transfer the role of Administrator for T*H License # XXXX from XXXX to XXXX.
+
+Please reply to this email preserving the Reference ID listed below in order to confirm this change should be processed. 
+
+You may submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

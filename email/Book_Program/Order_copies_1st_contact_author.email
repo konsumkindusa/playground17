@@ -1,0 +1,29 @@
+{!Contact.Email} 
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+Congratulations on the publication of your book, {!Book_Project__c.Book_Title__c}. To evaluate your book for promotion from the MathWorks we need a copy mailed to us at the address noted below.  
+
+Please forward this request to your publisher or feel free to provide us with your editorial contact's name and email address so we can make this request.
+
+Our mailing address is:
+MathWorks Book Program
+c/o Alexa Zahares
+The MathWorks, Inc.
+3 Apple Hill Dr.
+Natick, MA 01760-2098
+
+Please feel free to contact me if you have any questions.
+
+
+
+Regards, 
+
+{!User.FirstName} {!User.LastName} 
+============================= 
+MathWorks Book Program 
+3 Apple Hill Drive, Natick, MA 01760 
+bookprogram@mathworks.com 
+mathworks.com/support/members 
+=============================
+
+Book Project: {!Book_Project__c.Name}

@@ -1,0 +1,2 @@
+{"licenseId":491381,"licenseSupportEligible":true,"licenseeAccountId":"B0876123","controllingProductDetail":{"geographicScope":"LOCAL","latestServiceEndDate":"2026-06-30","offeringGracePeriod": 0,"option":"TH","term":"ANNUAL","use":"ACADEM","lifecycleStage":"ACTIVE"},"productCode":"ML","productSupportEligible": true,"requestedProductDetail": {"geographicScope": "LOCAL", "latestServiceEndDate":"2026-06-30","offeringGracePeriod":0,"option": "TH", "term":"ANNUAL", "use":"ACADEM","lifecycleStage": "ACTIVE"}}
+                

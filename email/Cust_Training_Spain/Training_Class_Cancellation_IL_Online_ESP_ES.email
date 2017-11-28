@@ -1,0 +1,20 @@
+Buenos días {!Contact.Name},
+
+Lamentamos informarle la cancelación del curso:
+
+Nombre del curso: {!Enrollment__c.Class__c} 
+Fechas:  {!Enrollment__c.Display_Start_Date__c} a {!Enrollment__c.Display_End_Date__c}
+
+Por favor, para recibir el reembolso completo del curso cancelado, contacte con el departamento de formación. Abajo encontrará un enlace a nuestro calendario de cursos públicos. Si hubiera algún otro curso de su interés y quisiera registrarse, llame a {!Class__c.Sponsor_Office_Phone__c} , o simplemente responda a este correo con el nombre del curso y la localización del mismo.  
+
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+Le pedimos disculpas por los inconvenientes causados.
+
+Atentamente,
+Departamento de Formación
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+Si el curso no pudiera realizarse en las fechas previstas, por circunstancias ajenas a MathWorks, la responsabilidad de MathWorks se limitará al reembolso de los importes oportunamente abonados. MathWorks no reembolsará bajo ninguna circunstancia ningún otro coste en el que haya podido incurrir.

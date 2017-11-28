@@ -1,0 +1,25 @@
+<messaging:emailTemplate subject="MathWorks Certified MATLAB Professional Exam Results {!relatedTo.Class__r.Exam_Date_For_Template__c}, {!relatedTo.Class__r.Training_Location__r.Location_Name__c}" recipientType="Contact" relatedToType="Enrollment__c">
+    <messaging:htmlEmailBody > 
+    <p>Dear {!relatedTo.Enrollee_Name__r.name},</p>
+    
+    <p>Thank you for participating in the MathWorks Certification Program.  We regret to inform you that your score for the MathWorks Certified MATLAB Professional Exam offering on {!relatedTo.Class__r.Exam_Date_For_Template__c} in {!relatedTo.Class__r.Training_Location__r.Location_Name__c} did not result in a passing grade.</p>
+    
+    <p>Unfortunately, we are unable to discuss the specifics of the exam or provide a detailed breakdown of questions missed.  We have included a link to our MATLAB Programming Techniques, MATLAB for Data Processing and Visualization, and Building Interactive Applications in MATLAB course schedules below. Should you decide to register for the exam again, these courses offer an opportunity to review the concepts covered.  We have also included a link to the certification exam schedule.</p>
+    <p>
+    https://www.mathworks.com/training-schedule/matlab-programming-techniques<br></br>
+    https://www.mathworks.com/training-schedule/matlab-for-data-processing-and-visualization<br></br>
+    https://www.mathworks.com/training-schedule/building-interactive-applications-in-matlab<br></br>
+    </p>
+    <p>
+    https://www.mathworks.com/training-schedule/certifications/<br></br>
+    </p>
+    <p>
+    Any further questions or communication regarding the program can be directed to certification@mathworks.com
+    </p>
+    <p>
+    Best Regards,<br></br>
+    MathWorks Certification Team <br></br>
+    508-647-7000
+    </p>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

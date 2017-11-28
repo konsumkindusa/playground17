@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send this email template if discovered that a current book project is out of print and a new edition is available that we are not tracking in SalesForce.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Out of Print</name>
+    <style>none</style>
+    <subject>Out of Print</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

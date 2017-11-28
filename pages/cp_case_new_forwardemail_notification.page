@@ -1,0 +1,18 @@
+<apex:page sidebar="false" showHeader="false">
+    <apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+    <script>
+        function confirmcancel() {
+            window.top.location.href = '{!$Label.mw_domain_url}/company/aboutus/contactus.html';
+        }
+    </script>
+    <apex:pageBlock >
+        <div class="success">
+            <h3><b>{!$Label.case_created_confirmation_distributor_message}</b></h3>
+            <br/><br/><br/>
+            <h3>{!$Label.case_created_confirmation_distributor_message_detail} <a href="mailto:{!$CurrentPage.parameters.de}" target="_top">{!$CurrentPage.parameters.de}</a></h3>
+            <br/><br/>
+            <a href="#" onClick="confirmcancel();">Return to the Support main page.</a>
+        </div>
+    </apex:pageBlock>
+    
+</apex:page>

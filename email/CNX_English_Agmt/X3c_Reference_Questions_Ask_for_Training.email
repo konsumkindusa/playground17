@@ -1,0 +1,36 @@
+Dear [REFERENCE]
+
+{!Partner_Agreement__c.Account__c} has recently applied to become a partner in the MathWorks Connections Program with their training services. 
+
+Part of the application review process is to contact clients who have attended the MATLAB and/or Simulink based training. Your name was provided to me as one such reference. Please take a moment and answer the following questions. Your prompt reply is greatly appreciated as this application cannot be completed until your comments have been received.
+
+===================================================== 
+** All information collected will be held Confidential by MathWorks, Inc. ** =====================================================
+
+1. When did you attend their training course?
+
+2. What was the nature of the course (title, topic areas covered)?
+
+3. What version of MathWorks products was the training based on?
+
+4. Please rate the following areas from 5=excellent to 1=poor
+
+a) Course organization
+b) Style of presentation
+c) Attentiveness to trainees 
+d) Quality of course notes/handouts
+e) Understanding of MathWorks' products
+
+5. How did the course meet your expectations?
+
+6. How useful was the course to your work or your ability to use MathWorks products?
+
+7. Would you recommend this instructor to others? With what restrictions, if any?
+
+
+Please send your response to <connections@mathworks.com>. If you have any questions regarding this request, or if I can help you in any way, please let me know.
+
+Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

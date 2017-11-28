@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>TAH Agreement Renewal Confirmation Email ENU</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TAH Agreement Renewal Confirmation Email ENU</name>
+    <style>none</style>
+    <subject>MathWorks Online Course Agreement Renewal Confirmation</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

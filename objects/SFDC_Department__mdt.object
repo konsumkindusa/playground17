@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Distinct list of the MW SFDC Departments  -  only MW Employees from the listed Department will be loaded to SF</description>
+    <fields>
+        <fullName>MW_Department_Name__c</fullName>
+        <description>HR MW Department Name</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>MW Department Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SFDC Department</label>
+    <pluralLabel>SFDC Departments</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

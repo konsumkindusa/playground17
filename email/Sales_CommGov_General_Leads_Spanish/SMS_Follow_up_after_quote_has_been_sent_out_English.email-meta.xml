@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SMS Follow up after quote has been sent out English</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SMS Follow up after quote has been sent out English</name>
+    <style>none</style>
+    <subject>Software Maintenance Service on your license expiring soon</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

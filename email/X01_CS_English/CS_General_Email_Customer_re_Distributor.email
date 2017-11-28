@@ -1,0 +1,15 @@
+Hello {!Case.Contact},  
+
+Thank you for contacting MathWorks. I have forwarded your request to our Distributor in <**COUNTRY**>.  They will be following up with you regarding this request.  In the future, they can be contacted directly at:      
+Name:    <XXXXX>
+Ph:          <XXXXX>
+Email:     <XXXXX> 
+
+If you have a new Customer Support question, please submit a request here: http://www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

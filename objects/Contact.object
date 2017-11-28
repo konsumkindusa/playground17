@@ -1,0 +1,2496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>MW_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>MW_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>Department</fields>
+        <fields>AccountId</fields>
+        <fields>Country_State_Code__c</fields>
+        <label>MW Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>CRMC_PP__CRMC_Action_Grid_Defaults</fullName>
+        <description>Default columns for CRMC Action Grid</description>
+        <displayedFields>
+            <field>Account.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CRMC Action Grid Defaults</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>MwAccountFieldSet</fullName>
+        <description>ContactMathworksAccount page</description>
+        <displayedFields>
+            <field>MathWorks_Account_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Web_Profile_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Mathworks_Account_Email_Verified__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Self_Identified_Country__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>MwAccountFieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Changed_Date__c</fullName>
+        <defaultValue>NOW()</defaultValue>
+        <description>Date/Time field for storing the last time the Contact’s primary Account was updated; will be set by trigger; not added to page layouts</description>
+        <externalId>false</externalId>
+        <label>Account Changed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Account_Denied_On_Watch_List__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Denied_Prohibited_Account__c</formula>
+        <label>Account Denied/On Watch List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Export_Prohibited__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Export_Prohibited__c</formula>
+        <label>Account Export Prohibited</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Latin__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Account_Name_Latin__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name (Latin)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Site__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Site</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Warnings__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Account_Warning_Icon__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Warnings</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Changed_Date__c</fullName>
+        <defaultValue>NOW()</defaultValue>
+        <description>Date/Time field for storing the last time an element of the address was updated; will be set by trigger; not added to page layouts</description>
+        <externalId>false</externalId>
+        <label>Address Changed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Advisory_Board__c</fullName>
+        <description>Include in data migration and integration but not display on UI in phase 1.</description>
+        <externalId>false</externalId>
+        <label>Advisory Board</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AERODEF (MALC)</fullName>
+                    <default>false</default>
+                    <label>AERODEF (MALC)</label>
+                </value>
+                <value>
+                    <fullName>AUTO (MAAB)</fullName>
+                    <default>false</default>
+                    <label>AUTO (MAAB)</label>
+                </value>
+                <value>
+                    <fullName>Comp Bio</fullName>
+                    <default>false</default>
+                    <label>Comp Bio</label>
+                </value>
+                <value>
+                    <fullName>Communications and Electronics</fullName>
+                    <default>false</default>
+                    <label>Communications and Electronics</label>
+                </value>
+                <value>
+                    <fullName>Distributed Computing</fullName>
+                    <default>false</default>
+                    <label>Distributed Computing</label>
+                </value>
+                <value>
+                    <fullName>EMAB</fullName>
+                    <default>false</default>
+                    <label>EMAB</label>
+                </value>
+                <value>
+                    <fullName>Executive Contact</fullName>
+                    <default>false</default>
+                    <label>Executive Contact</label>
+                </value>
+                <value>
+                    <fullName>FINSVCS</fullName>
+                    <default>false</default>
+                    <label>FINSVCS</label>
+                </value>
+                <value>
+                    <fullName>JP MAB</fullName>
+                    <default>false</default>
+                    <label>JP MAB</label>
+                </value>
+                <value>
+                    <fullName>Oil &amp; Gas MAB</fullName>
+                    <default>false</default>
+                    <label>Oil &amp; Gas MAB</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Authentication_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Authentication Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Verified</fullName>
+                    <default>false</default>
+                    <label>Verified</label>
+                </value>
+                <value>
+                    <fullName>Not a student</fullName>
+                    <default>false</default>
+                    <label>Not a student</label>
+                </value>
+                <value>
+                    <fullName>Unable to verify</fullName>
+                    <default>false</default>
+                    <label>Unable to verify</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Not received yet</fullName>
+                    <default>false</default>
+                    <label>Not received yet</label>
+                </value>
+                <value>
+                    <fullName>Received</fullName>
+                    <default>false</default>
+                    <label>Received</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Book_Program_End__c</fullName>
+        <description>Captures the end date of the book program relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures the end date of the book program relationship</inlineHelpText>
+        <label>Book Program End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Book_Program_Start__c</fullName>
+        <description>Captures the start date of the book program relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures the start date of the book program relationship</inlineHelpText>
+        <label>Book Program Start</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Book_Program_Status__c</fullName>
+        <description>Used to capture if a contact is part of the book program and their status within it.  Used as criteria to incorporate into the publisher directory.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>New indicates if they have not been introduced to the program but should.  Active indicated they have been introduced and have provided consent to share their contact information publicly.</inlineHelpText>
+        <label>Book Program Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CDS_Contact_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>The ID of the Contact in CDS database and will be used for integration</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The ID of the Contact in CDS</inlineHelpText>
+        <label>CDS Contact Id</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CanAllowPortalSelfReg</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>City_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>City (Latin)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Count__c</fullName>
+        <description>Power of 1 field to be used on reports for uniquely counting contacts on summary and matrix reports where Contact may be duplicated in the results. (ie: Report on Enrollments but want to see how many unique Contacts the Enrollments relate to.)</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Role</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                    <label>Duplicate</label>
+                </value>
+                <value>
+                    <fullName>No Longer at Account</fullName>
+                    <default>false</default>
+                    <label>No Longer at Account</label>
+                </value>
+                <value>
+                    <fullName>Junk</fullName>
+                    <default>false</default>
+                    <label>Junk</label>
+                </value>
+                <value>
+                    <fullName>Retired</fullName>
+                    <default>false</default>
+                    <label>Retired</label>
+                </value>
+                <value>
+                    <fullName>Deceased</fullName>
+                    <default>false</default>
+                    <label>Deceased</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_URL__c</fullName>
+        <description>Include in data migration but not display on UI for phase 1 release</description>
+        <externalId>false</externalId>
+        <label>Contact URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Warning__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Contact_Warnings__c,
+&quot;&quot;, &quot;&quot;,IMAGE ( &quot;/img/msg_icons/warning32.png&quot;, &quot;True Image&quot; ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Warning</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Warnings__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Warnings</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Credit Hold</fullName>
+                    <default>false</default>
+                    <label>Credit Hold</label>
+                </value>
+                <value>
+                    <fullName>Suspicious - License Use</fullName>
+                    <default>false</default>
+                    <label>Suspicious - License Use</label>
+                </value>
+                <value>
+                    <fullName>Suspicious - Business Practice</fullName>
+                    <default>false</default>
+                    <label>Suspicious - Business Practice</label>
+                </value>
+                <value>
+                    <fullName>Restricted - License Use</fullName>
+                    <default>false</default>
+                    <label>Restricted - License Use</label>
+                </value>
+                <value>
+                    <fullName>Restricted - Trials &amp; Sales</fullName>
+                    <default>false</default>
+                    <label>Restricted - Trials &amp; Sales</label>
+                </value>
+                <value>
+                    <fullName>Restricted - Legal</fullName>
+                    <default>false</default>
+                    <label>Restricted - Legal</label>
+                </value>
+                <value>
+                    <fullName>Export Compliance Concern</fullName>
+                    <default>false</default>
+                    <label>Export Compliance Concern</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_State_Code__c</fullName>
+        <description>Concatenated State &amp; Country Codes - used by CDS integration for matching.</description>
+        <externalId>false</externalId>
+        <formula>IF(OR (TEXT(MailingCountryCode) =&apos;US&apos;, TEXT(MailingCountryCode)=&apos;CA&apos;),TEXT(MailingStateCode),
+IF(ISBLANK(MailingState),&apos;&apos;,TEXT(MailingCountryCode)&amp;&apos;-&apos;&amp; TEXT(MailingStateCode)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country State Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County_Local__c</fullName>
+        <externalId>false</externalId>
+        <label>County (Local)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Denied_On_Watch_List__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Denied_On_Watch_List_checkbox__c = TRUE, 
+IMAGE ( &quot;/img/msg_icons/error32.png&quot;, &quot;True Image&quot; ), &quot;&quot;
+)</formula>
+        <label>Denied/On Watch List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Denied_On_Watch_List_checkbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Denied/On Watch List</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Department_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>Department (Latin)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Disable_Merge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Disable Merge</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <description>Used to capture what division of the publisher the contact falls within</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to capture what division of the publisher the contact falls within</inlineHelpText>
+        <label>Division</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Higher Education</fullName>
+                    <default>false</default>
+                    <label>Higher Education</label>
+                </value>
+                <value>
+                    <fullName>Professional</fullName>
+                    <default>false</default>
+                    <label>Professional</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Duplicate_of_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Kept_Contact_Name__r.Siebel_Contact_Id__c</formula>
+        <label>Duplicate of Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Employee_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Employee Flag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Export_Prohibited__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Export_Prohibited_checkbox__c = TRUE, 
+IMAGE ( &quot;/img/msg_icons/error32.png&quot;, &quot;True Image&quot; ), &quot;&quot;
+)</formula>
+        <label>Export Prohibited</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Export_Prohibited_checkbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Export Prohibited</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Field_of_Study__c</fullName>
+        <externalId>false</externalId>
+        <label>Field of Study</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Field_of_Study</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>First_Name_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>First Name (Latin)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Greeting__c</fullName>
+        <externalId>false</externalId>
+        <label>Greeting</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Has_Licenses__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has Licenses</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Invalid_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Comes from EBC. need to determine how this will be fetched.</inlineHelpText>
+        <label>Invalid Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Individual_Account__c</fullName>
+        <description>Used by CDS integration</description>
+        <externalId>false</externalId>
+        <formula>Account.Is_Individual_Account__c</formula>
+        <label>Is Individual Account</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Job_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Self-Defined Job Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Use the software</fullName>
+                    <default>false</default>
+                    <label>Use the software</label>
+                </value>
+                <value>
+                    <fullName>Manage teams using the software</fullName>
+                    <default>false</default>
+                    <label>Manage teams using the software</label>
+                </value>
+                <value>
+                    <fullName>Provide IT/licensing support</fullName>
+                    <default>false</default>
+                    <label>Provide IT/licensing support</label>
+                </value>
+                <value>
+                    <fullName>Purchase the software for others</fullName>
+                    <default>false</default>
+                    <label>Purchase the software for others</label>
+                </value>
+                <value>
+                    <fullName>Educator, Researcher (College, University)</fullName>
+                    <default>false</default>
+                    <label>Educator, Researcher (College, University)</label>
+                </value>
+                <value>
+                    <fullName>Educator (K-12, Pre-College)</fullName>
+                    <default>false</default>
+                    <label>Educator (K-12, Pre-College)</label>
+                </value>
+                <value>
+                    <fullName>Software Admin (College, University)</fullName>
+                    <default>false</default>
+                    <label>Software Admin (College, University)</label>
+                </value>
+                <value>
+                    <fullName>Software Admin (K-12, Pre-College)</fullName>
+                    <default>false</default>
+                    <label>Software Admin (K-12, Pre-College)</label>
+                </value>
+                <value>
+                    <fullName>Postdoctoral</fullName>
+                    <default>false</default>
+                    <label>Postdoctoral</label>
+                </value>
+                <value>
+                    <fullName>Student (Graduate-level)</fullName>
+                    <default>false</default>
+                    <label>Student (Graduate-level)</label>
+                </value>
+                <value>
+                    <fullName>Student (Undergraduate)</fullName>
+                    <default>false</default>
+                    <label>Student (Undergraduate)</label>
+                </value>
+                <value>
+                    <fullName>Student (K-12, Pre-College)</fullName>
+                    <default>false</default>
+                    <label>Student (K-12, Pre-College)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Job_Title_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Title (Latin)</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Kept_Contact_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Active Contact Name</description>
+        <externalId>false</externalId>
+        <label>Kept Contact Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Duplicate Contacts</relationshipLabel>
+        <relationshipName>Duplicate_Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Language__c</fullName>
+        <description>Contact Preferred Language</description>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>Dutch</fullName>
+                    <default>false</default>
+                    <label>Dutch</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Swedish</fullName>
+                    <default>false</default>
+                    <label>Swedish</label>
+                </value>
+                <value>
+                    <fullName>Danish</fullName>
+                    <default>false</default>
+                    <label>Danish</label>
+                </value>
+                <value>
+                    <fullName>Finnish</fullName>
+                    <default>false</default>
+                    <label>Finnish</label>
+                </value>
+                <value>
+                    <fullName>Norwegian</fullName>
+                    <default>false</default>
+                    <label>Norwegian</label>
+                </value>
+                <value>
+                    <fullName>Portuguese</fullName>
+                    <default>false</default>
+                    <label>Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>false</default>
+                    <label>Chinese</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Last_Name_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Name (Latin)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Service_Survey_Sent_Date__c</fullName>
+        <description>Identifies when we sent the last Service Survey to a Contact</description>
+        <externalId>false</externalId>
+        <label>Last Service Survey Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Latin_First_Name_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE ( First_Name_Latin__c ,NULL,FirstName,First_Name_Latin__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Latin First Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Latin_Last_Name_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Last_Name_Latin__c,NULL,LastName,Last_Name_Latin__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Latin Last Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Department__c</fullName>
+        <description>This field captures the department field from the lead on conversion.  A workflow field update will take this value and populate it in the standard Department field on the contact object.  It should not be on the page layout</description>
+        <externalId>false</externalId>
+        <label>Lead Department</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mail_Stop_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>Mail Stop (Latin)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mail_Stop__c</fullName>
+        <externalId>false</externalId>
+        <label>Mail Stop</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MathWorks_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>MathWorks Account ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mathworks_Account_Email_Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>MathWorks Account Email Verified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Middle_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Middle Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NonFormattedMobilePhone__c</fullName>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE( 
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(    MobilePhone , &quot;(&quot;, &quot;&quot;), &quot;)&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;), &quot;-&quot;, &quot;&quot;), &quot;+&quot;, &quot;&quot;), &quot;ext&quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;),&quot;e&quot;, &quot;&quot;), &quot;x&quot;, &quot;&quot;)</formula>
+        <label>NonFormattedMobilePhone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NonFormattedPhone__c</fullName>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE( 
+SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(    Phone , &quot;(&quot;, &quot;&quot;), &quot;)&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;), &quot;-&quot;, &quot;&quot;), &quot;+&quot;, &quot;&quot;), &quot;ext&quot;, &quot;&quot;), &quot;.&quot;, &quot;&quot;),&quot;e&quot;, &quot;&quot;), &quot;x&quot;, &quot;&quot;)</formula>
+        <label>NonFormattedPhone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opt_Out_All_Emails__c</fullName>
+        <description>Field used for sync to Eloqua, represents preference on email communication</description>
+        <externalId>false</externalId>
+        <label>Opt-Out: All Emails</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OPTOUT</fullName>
+                    <default>false</default>
+                    <label>OPTOUT</label>
+                </value>
+                <value>
+                    <fullName>OPTIN</fullName>
+                    <default>false</default>
+                    <label>OPTIN</label>
+                </value>
+                <value>
+                    <fullName>UNKNOWN</fullName>
+                    <default>false</default>
+                    <label>UNKNOWN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Optional_Data_Missing__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    OR
+    (
+      ISPICKVAL ( MailingCountryCode , &quot;CN&quot;), 
+      ISPICKVAL(MailingCountryCode, &quot;JP&quot;), 
+      ISPICKVAL(MailingCountryCode, &quot;KR&quot;)
+    )
+,
+(
+    IF( ISBLANK( Title ) , &quot; Job Title&quot;, &quot;&quot;) + 
+    IF( ISBLANK( Department ) , &quot; Department&quot;, &quot;&quot;) + 
+    IF( AND(ISBLANK(Phone),ISBLANK(MobilePhone)), &quot; Phone&quot;, &quot;&quot;) +
+    IF( ISBLANK( First_Name_Latin__c ) , &quot; First Name (Latin)&quot;, &quot;&quot;) +
+    IF( ISBLANK( Last_Name_Latin__c ) , &quot; Last Name (Latin)&quot;, &quot;&quot;) +
+    IF( ISBLANK( Job_Title_Latin__c ) , &quot; Job Title (Latin)&quot;, &quot;&quot;) +
+    IF( ISBLANK( Department_Latin__c ) , &quot; Department (Latin)&quot;, &quot;&quot;) +
+    IF( ISBLANK( City_Latin__c ) , &quot; City (Latin)&quot;, &quot;&quot;)
+),IF( ISBLANK( Title ) , &quot; Job Title&quot;, &quot;&quot;) + 
+    IF( ISBLANK( Department ) , &quot; Department&quot;, &quot;&quot;) + 
+    IF( AND(ISBLANK(Phone),ISBLANK(MobilePhone)), &quot; Phone&quot;, &quot;&quot;))</formula>
+        <label>Optional Data Missing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Reason_Not_Authenticated__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason Not Authenticated</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unknown university</fullName>
+                    <default>false</default>
+                    <label>Unknown university</label>
+                </value>
+                <value>
+                    <fullName>Illegible/incomplete form</fullName>
+                    <default>false</default>
+                    <label>Illegible/incomplete form</label>
+                </value>
+                <value>
+                    <fullName>Expired or no date on form</fullName>
+                    <default>false</default>
+                    <label>Expired or no date on form</label>
+                </value>
+                <value>
+                    <fullName>Multiple Reasons</fullName>
+                    <default>false</default>
+                    <label>Multiple Reasons</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Record_Completeness_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+                  OR(
+                                   ISPICKVAL ( MailingCountryCode , &quot;CN&quot;), 
+                                   ISPICKVAL(MailingCountryCode, &quot;JP&quot;), 
+                                   ISPICKVAL(MailingCountryCode, &quot;KR&quot;)
+                                   )
+,
+(
+(
+   IF( ISBLANK( First_Name_Latin__c ) , 0, 1) + 
+   IF( ISBLANK( Last_Name_Latin__c ) , 0, 1) +  
+   IF( ISBLANK( Job_Title_Latin__c ) , 0, 1) + 
+   IF( ISBLANK( Department_Latin__c ) , 0, 1) + 
+   IF( ISBLANK( City_Latin__c ) , 0, 1) + 
+   IF( ISBLANK( Title ) , 0, 1) + 
+   IF( ISBLANK( Department ) , 0, 1) +  
+   IF( 
+       AND(ISBLANK(Phone)
+           ,ISBLANK(MobilePhone)), 0, 1)
+   ) / 8)
+,((IF( ISBLANK( Title ) , 0, 1) + 
+IF( ISBLANK( Department ) , 0, 1) + IF( AND(ISBLANK(Phone),ISBLANK(MobilePhone)), 0, 1)) / 3))</formula>
+        <label>Record Completeness %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Record_Completeness__c</fullName>
+        <description>Display image if optional required fields are missing</description>
+        <externalId>false</externalId>
+        <formula>CASE(Record_Completeness_Percent__c, 
+1, &quot;&quot;,IMAGE ( &quot;/img/msg_icons/info32.png&quot;, &quot;True Image&quot; ))</formula>
+        <inlineHelpText>This record has been saved without optional but important data, see the Optional Data Missing field for details. If available, add the missing data in order to improve the quality.</inlineHelpText>
+        <label>Record Completeness</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Contact_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <label>Salesforce Contact ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Self_Defined_Sector__c</fullName>
+        <externalId>false</externalId>
+        <label>Self-Defined Sector</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial Use</fullName>
+                    <default>false</default>
+                    <label>Commercial Use</label>
+                </value>
+                <value>
+                    <fullName>Government Use</fullName>
+                    <default>false</default>
+                    <label>Government Use</label>
+                </value>
+                <value>
+                    <fullName>Student Version</fullName>
+                    <default>false</default>
+                    <label>Student Version</label>
+                </value>
+                <value>
+                    <fullName>University Version</fullName>
+                    <default>false</default>
+                    <label>University Version</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Self_Identified_Country__c</fullName>
+        <description>Self Identified Country from the MWA Profile.</description>
+        <externalId>false</externalId>
+        <label>Self Identified Country</label>
+        <length>2</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Contact_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Contact Id from Siebel</description>
+        <externalId>true</externalId>
+        <label>Siebel Contact ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Table__c</fullName>
+        <description>Text formula field returning static value of “Contact”; not added to page layouts</description>
+        <externalId>false</externalId>
+        <formula>&apos;Contact&apos;</formula>
+        <label>Source Table</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Province_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>State/Province (Latin)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street_Latin__c</fullName>
+        <externalId>false</externalId>
+        <label>Street (Latin)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Student_School_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Student School Name</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Student</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Suffix__c</fullName>
+        <externalId>false</externalId>
+        <label>Suffix</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Web_Profile_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Profile Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ABANDONED</fullName>
+                    <default>false</default>
+                    <label>ABANDONED</label>
+                </value>
+                <value>
+                    <fullName>ACTIVE</fullName>
+                    <default>false</default>
+                    <label>ACTIVE</label>
+                </value>
+                <value>
+                    <fullName>CLOSED</fullName>
+                    <default>false</default>
+                    <label>CLOSED</label>
+                </value>
+                <value>
+                    <fullName>INCOMPLETE</fullName>
+                    <default>false</default>
+                    <label>INCOMPLETE</label>
+                </value>
+                <value>
+                    <fullName>PENDING</fullName>
+                    <default>false</default>
+                    <label>PENDING</label>
+                </value>
+                <value>
+                    <fullName>UNCONFIRMED</fullName>
+                    <default>false</default>
+                    <label>UNCONFIRMED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>isAccount_Changed__c</fullName>
+        <description>Checkbox formula field returning whether the Account has changed during the last DML operation as determined by the following: 
+	if the transaction was an insert, return true
+if the transaction was an update, check if the Account Changed Date/Time = Last Modified Date Time, if 	yes then return true, else return false;
+not added to page layouts</description>
+        <externalId>false</externalId>
+        <formula>AND(
+    IF(
+        LastModifiedDate-Account_Changed_Date__c &lt;=  $Setup.General_Settings__c.CDS_IsChanged_Interval__c 
+        ,true
+        ,false
+    )
+    ,NOT(Is_Individual_Account__c)
+    ,NOT(ISBLANK(AccountId))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isAccount Changed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isAddress_Changed__c</fullName>
+        <description>Checkbox formula field returning whether the address has changed during the last DML operation as determined by the following: 
+	if the transaction was an insert, return true
+	if the transaction was an update, check if the Address 			Changed Date/Time = Last Modified Date Time, if 	yes then return true, else return false;
+not added to page layouts</description>
+        <externalId>false</externalId>
+        <formula>IF(LastModifiedDate-Address_Changed_Date__c &lt;=  $Setup.General_Settings__c.CDS_IsChanged_Interval__c ,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isAddress Changed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ortoo_e2a__Thread_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;ref:&quot;&amp;
+LEFT( $Organization.Id , 4 )&amp;
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0000000&apos;), RIGHT($Organization.Id,4),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;000000&apos;), RIGHT($Organization.Id,5),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;00000&apos;), RIGHT($Organization.Id,6),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0000&apos;), RIGHT($Organization.Id,7),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;000&apos;), RIGHT($Organization.Id,8),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;00&apos;), RIGHT($Organization.Id,9),
+IF( BEGINS(RIGHT($Organization.Id,11), &apos;0&apos;), RIGHT($Organization.Id,10), 
+RIGHT($Organization.Id,11)
+)))))))
+&amp;&quot;.&quot;&amp;LEFT( Id , 4 )&amp;
+
+IF(BEGINS(RIGHT(Id,11), &apos;0000000&apos;), RIGHT(Id,4),
+IF(BEGINS(RIGHT(Id,11), &apos;000000&apos;), RIGHT(Id,5),
+IF(BEGINS(RIGHT(Id,11), &apos;00000&apos;), RIGHT(Id,6),
+IF(BEGINS(RIGHT(Id,11), &apos;0000&apos;), RIGHT(Id,7),
+IF(BEGINS(RIGHT(Id,11), &apos;000&apos;), RIGHT(Id,8),
+IF(BEGINS(RIGHT(Id,11), &apos;00&apos;), RIGHT(Id,9),
+IF(BEGINS(RIGHT(Id,11), &apos;0&apos;), RIGHT(Id,10),
+RIGHT(Id,11)
+))))))) &amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Thread Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.FIRST_NAME</columns>
+        <columns>CONTACT.LAST_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>Contact_Status__c</columns>
+        <columns>First_Name_Latin__c</columns>
+        <columns>Last_Name_Latin__c</columns>
+        <columns>Contact_Role__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.FIRST_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.LAST_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.SITE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.EMAIL</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>First_Name_Latin__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Last_Name_Latin__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.FIRST_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.LAST_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>First_Name_Latin__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Last_Name_Latin__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>CONTACT.EMAIL</lookupFilterFields>
+        <lookupFilterFields>Country_Code__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.EMAIL</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE1</searchFilterFields>
+        <searchFilterFields>CONTACT.ADDRESS2_CITY</searchFilterFields>
+        <searchFilterFields>Country_State_Code__c</searchFilterFields>
+        <searchFilterFields>Country_Code__c</searchFilterFields>
+        <searchFilterFields>Has_Licenses__c</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.LAST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Has_Licenses__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.DEPARTMENT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CDS_Contact_Id__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Change_Disable_Merge_to_Dup</fullName>
+        <active>true</active>
+        <description>Cannot change to Dup if DisableMerge flag is ON</description>
+        <errorConditionFormula>AND( NOT( ISBLANK( Kept_Contact_Name__c ) ) , Disable_Merge__c = True)</errorConditionFormula>
+        <errorDisplayField>Kept_Contact_Name__c</errorDisplayField>
+        <errorMessage>You cannot change status to Duplicate if Disable Merge flag is ON</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Change_Status_to_Duplicate</fullName>
+        <active>true</active>
+        <description>Users cannot manulay change status to Duplicate, only when Kept Contact name has been populated</description>
+        <errorConditionFormula>AND ( ISCHANGED( Contact_Status__c) , ISPICKVAL( Contact_Status__c , &quot;Duplicate&quot;), ISBLANK( Kept_Contact_Name__c ))</errorConditionFormula>
+        <errorDisplayField>Contact_Status__c</errorDisplayField>
+        <errorMessage>To change contact status to Duplicate you must enter the value of Kept Contact Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ConStatus_From_To_Duplicate_Restriction</fullName>
+        <active>true</active>
+        <description>Contact status cannot be manually set to or from the &quot;Duplicate&quot; status. Only Admins can do it.</description>
+        <errorConditionFormula>OR(
+   AND(
+   ISPICKVAL(PRIORVALUE( Contact_Status__c), &apos;Duplicate&apos;),
+   ISCHANGED(Contact_Status__c), $Setup.Contact_Validation_Rule__c.Prevent_Setting_Status_Duplicate__c 
+   ),
+   AND(
+     ISPICKVAL(Contact_Status__c, &apos;Duplicate&apos;),
+     ISCHANGED(Contact_Status__c), $Setup.Contact_Validation_Rule__c.Prevent_Setting_Status_Duplicate__c  
+   )
+)</errorConditionFormula>
+        <errorDisplayField>Contact_Status__c</errorDisplayField>
+        <errorMessage>Contact status cannot be manually set to or from the &quot;Duplicate&quot; status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contact_Is_Licensed_Validate_Status_Res</fullName>
+        <active>true</active>
+        <description>If the contact is licensed, only a Data Steward can set the contact status from other than Duplicate.</description>
+        <errorConditionFormula>AND(
+ Has_Licenses__c = true,
+ NOT( $Permission.Allow_Licensed_Contact_Status_Update),
+ ISCHANGED( Contact_Status__c ),
+ ISPICKVAL(Contact_Status__c, &apos;Duplicate&apos;)
+)</errorConditionFormula>
+        <errorDisplayField>Contact_Status__c</errorDisplayField>
+        <errorMessage>Contact is licensed, Only a Data Administrator can set the contact status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Email_Is_Required</fullName>
+        <active>true</active>
+        <description>Email is required when profile is not system admin and integration user</description>
+        <errorConditionFormula>AND(
+ ISBLANK(Email),$Setup.Contact_Validation_Rule__c.Prevent_contact_without_Email__c
+)</errorConditionFormula>
+        <errorDisplayField>Email</errorDisplayField>
+        <errorMessage>Email is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Employee_Record</fullName>
+        <active>true</active>
+        <description>If the contact is an employee (Contact.Employee_Flag__c), only a Data Administrator  can modify the following fields: 
+Email 
+FirstName 
+LastName</description>
+        <errorConditionFormula>AND( Employee_Flag__c , 
+ NOT ($Permission.Allow_Employee_Data_changes),
+OR (ISCHANGED( FirstName ),  ISCHANGED( LastName ),  ISCHANGED( Email ) ) )</errorConditionFormula>
+        <errorDisplayField>LastName</errorDisplayField>
+        <errorMessage>Only Data Administrator can update the First Name, Last Name and Email.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>First_Name_is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( FirstName )</errorConditionFormula>
+        <errorDisplayField>FirstName</errorDisplayField>
+        <errorMessage>First Name is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LAddress_Fields_Cannot_Contain_UcodeChar</fullName>
+        <active>true</active>
+        <description>This to check for Unicode characters in latin fields</description>
+        <errorConditionFormula>OR(NOT(OR(OR( LEN(City_Latin__c ) = 0,REGEX(
+City_Latin__c,  $Setup.General_Settings__c.RegEx_Latin__c)))),
+NOT(OR(OR( LEN( Street_Latin__c ) = 0,REGEX(  Street_Latin__c ,  $Setup.General_Settings__c.RegEx_Latin__c)))),
+NOT(OR(OR( LEN(Job_Title_Latin__c) = 0,REGEX(    Job_Title_Latin__c,  $Setup.General_Settings__c.RegEx_Latin__c)))),
+NOT(OR(OR( LEN(Last_Name_Latin__c) = 0,REGEX(    
+Last_Name_Latin__c , 
+$Setup.General_Settings__c.RegEx_Latin__c )))),
+NOT(OR(OR( LEN( Mail_Stop_Latin__c ) = 0,REGEX(      Mail_Stop_Latin__c ,  
+$Setup.General_Settings__c.RegEx_Latin__c )))),
+NOT(OR(OR( LEN( First_Name_Latin__c  ) = 0,REGEX(      First_Name_Latin__c,  
+$Setup.General_Settings__c.RegEx_Latin__c )))),
+NOT(OR(OR( LEN( Department_Latin__c ) = 0,REGEX(       Department_Latin__c,  
+$Setup.General_Settings__c.RegEx_Latin__c )))))</errorConditionFormula>
+        <errorMessage>Latin fields cannot contain multi-byte characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MailingCity_Is_Required</fullName>
+        <active>true</active>
+        <description>Mailing City is required when associated with a real Account and profile is not system admin and integration user</description>
+        <errorConditionFormula>AND
+(
+NOT(ISCHANGED( Last_Service_Survey_Sent_Date__c )),
+  ISBLANK(  MailingCity ), 
+  AND(NOT(ISNULL(AccountId)),NOT(Account.Is_Individual_Account__c)),
+  $Setup.Contact_Validation_Rule__c.Prevent_contact_without_MailingCity__c
+)</errorConditionFormula>
+        <errorDisplayField>MailingCity</errorDisplayField>
+        <errorMessage>Mailing City is required when associated with a real Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MailingCountry_Is_Required</fullName>
+        <active>true</active>
+        <description>Mailing Country is required when not associated with a real Account
+According to new business requirement:
+Mailing country is required for all accounts but validation should be skipped for system admin and integration users</description>
+        <errorConditionFormula>AND(
+NOT(ISCHANGED( Last_Service_Survey_Sent_Date__c )),
+ISBLANK( MailingCountry ), 
+$Setup.Contact_Validation_Rule__c.Prevent_contact_without_MailingCountry__c
+)</errorConditionFormula>
+        <errorDisplayField>MailingCountryCode</errorDisplayField>
+        <errorMessage>Mailing Country is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MailingPostalCode_Is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(  
+NOT(ISCHANGED( Last_Service_Survey_Sent_Date__c )),
+ISBLANK( MailingPostalCode  ) ,
+CONTAINS( $Setup.Countries_Requiring_States__c.Countries_Requires_States__c ,  TEXT(MailingCountryCode) ),
+NOT(ISBLANK(TEXT(MailingCountryCode))),
+AND(NOT(ISNULL(AccountId)),NOT(Account.Is_Individual_Account__c)), 
+$Setup.Contact_Validation_Rule__c.Prevent_contact_without_MailingPostalCod__c)</errorConditionFormula>
+        <errorDisplayField>MailingPostalCode</errorDisplayField>
+        <errorMessage>Mailing Postal Code is required for this country</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>MailingStateCode_is_required</fullName>
+        <active>true</active>
+        <description>mailing state code is required
+
+when country is in list of required states
+when related account is not individual account
+profile is not system admin and integration user</description>
+        <errorConditionFormula>AND(
+NOT(ISCHANGED( Last_Service_Survey_Sent_Date__c )),
+ISBLANK(TEXT(MailingStateCode) ) ,
+CONTAINS( $Setup.Countries_Requiring_States__c.Countries_Requires_States__c ,  TEXT(MailingCountryCode) ),
+AND(NOT(ISNULL(AccountId)),NOT(Account.Is_Individual_Account__c)),
+$Setup.Contact_Validation_Rule__c.Prevent_contact_without_MailingStateCode__c
+)</errorConditionFormula>
+        <errorDisplayField>MailingState</errorDisplayField>
+        <errorMessage>Mailing State Code is required for this country</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Orphaned_Contacts</fullName>
+        <active>true</active>
+        <description>After a Contact is created, it should not be allowed to have it&apos;s Account set to a blank value.</description>
+        <errorConditionFormula>AND(
+    NOT(ISNEW())
+    ,ISBLANK(AccountId)
+)</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Account is required after creating a Contact</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Setting_Status_Inactive</fullName>
+        <active>true</active>
+        <description>Prevent all but the listed profiles from setting a contact to inactive.</description>
+        <errorConditionFormula>AND (
+    TEXT(PRIORVALUE(Contact_Status__c)) != &quot;Inactive&quot;
+    ,ISPICKVAL(Contact_Status__c, &quot;Inactive&quot;)
+    ,$Setup.Contact_Validation_Rule__c.Prevent_Setting_Status_Inactive__c 
+)</errorConditionFormula>
+        <errorDisplayField>Contact_Status__c</errorDisplayField>
+        <errorMessage>You cannot change Contact Status to Inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Advisory_Board</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Advisory Board on Contact</description>
+        <errorConditionFormula>Len(TEXT(Advisory_Board__c))&gt;50</errorConditionFormula>
+        <errorDisplayField>Advisory_Board__c</errorDisplayField>
+        <errorMessage>Length of Advisory Board Should not exceed 50 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Contact_Status</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Contact Status on Contact</description>
+        <errorConditionFormula>Len(TEXT(Contact_Status__c))&gt;30</errorConditionFormula>
+        <errorDisplayField>Contact_Status__c</errorDisplayField>
+        <errorMessage>Length of Contact Status Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Contact_URL</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Contact URL on Contact</description>
+        <errorConditionFormula>Len(Contact_URL__c)&gt;100</errorConditionFormula>
+        <errorDisplayField>Contact_URL__c</errorDisplayField>
+        <errorMessage>Length of Contact URL  Should not exceed 100 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Contact_Warning</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Contact Warning on Contact</description>
+        <errorConditionFormula>Len(TEXT(Contact_Warnings__c))&gt;100</errorConditionFormula>
+        <errorDisplayField>Contact_Warnings__c</errorDisplayField>
+        <errorMessage>Length of Contact Warning Should not exceed 100 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_County_Local</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of County Local on Contact</description>
+        <errorConditionFormula>Len(County_Local__c)&gt;50</errorConditionFormula>
+        <errorDisplayField>County_Local__c</errorDisplayField>
+        <errorMessage>Length of  County (Local) Should not exceed 50 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Duplicate_of_Contact</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Duplicate Of Contact on Contact</description>
+        <errorConditionFormula>Len(Duplicate_of_Contact__c)&gt;20</errorConditionFormula>
+        <errorMessage>Length of Duplicate of Contact Should not exceed 20 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Language</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Language on Contact</description>
+        <errorConditionFormula>Len(TEXT(Language__c))&gt;40</errorConditionFormula>
+        <errorDisplayField>Language__c</errorDisplayField>
+        <errorMessage>Length of Language Should not exceed 40 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_LastName</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of LastName on Contact</description>
+        <errorConditionFormula>Len(LastName)&gt;50</errorConditionFormula>
+        <errorDisplayField>LastName</errorDisplayField>
+        <errorMessage>Length of LastName Should not exceed 50 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Mailing_Country</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Mailing Country on Contact</description>
+        <errorConditionFormula>Len(TEXT(MailingCountryCode))&gt;30</errorConditionFormula>
+        <errorDisplayField>MailingCountry</errorDisplayField>
+        <errorMessage>Length of Mailing Country Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Mailing_State</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Mailing State on Contact</description>
+        <errorConditionFormula>Len(MailingState)&gt;40</errorConditionFormula>
+        <errorDisplayField>MailingState</errorDisplayField>
+        <errorMessage>Length of Mailing State Should not exceed 40 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Reason_Not_Authentica</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Reason Not Authenticated  on Contact</description>
+        <errorConditionFormula>Len(TEXT(Reason_Not_Authenticated__c))&gt;30</errorConditionFormula>
+        <errorDisplayField>Reason_Not_Authenticated__c</errorDisplayField>
+        <errorMessage>Length of Reason Not Authenticated Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Salutation</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Salutation on Contact</description>
+        <errorConditionFormula>Len(TEXT(Salutation))&gt;15</errorConditionFormula>
+        <errorDisplayField>Salutation</errorDisplayField>
+        <errorMessage>Length of Salutation Should not exceed 15 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Self_Defined_Sector</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Self Defined Sector on Contact</description>
+        <errorConditionFormula>Len(TEXT(Self_Defined_Sector__c))&gt;30</errorConditionFormula>
+        <errorDisplayField>Self_Defined_Sector__c</errorDisplayField>
+        <errorMessage>Length of Self Defined Sector Should not exceed 30 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Siebel_Contact_Id</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Siebel Contact Id on Contact</description>
+        <errorConditionFormula>Len(Siebel_Contact_Id__c)&gt;15</errorConditionFormula>
+        <errorDisplayField>Siebel_Contact_Id__c</errorDisplayField>
+        <errorMessage>Length of Siebel Contact Id Should not exceed 15  characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Length_Of_Title</fullName>
+        <active>true</active>
+        <description>This is to restrict the length of Title on Contact</description>
+        <errorConditionFormula>Len(Title)&gt;75</errorConditionFormula>
+        <errorDisplayField>Title</errorDisplayField>
+        <errorMessage>Length of Title Should not exceed 75 characters.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Edit_Contact</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Edit Contact</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var path = window.top.location.pathname
+//If on Standard Salesforce page
+if (path.indexOf(&apos;Service&apos;) != -1){
+srcUp(&apos;/apex/ContactEditOverride?id={!Contact.Id}&apos;);
+}
+else {
+//If On Service Cloud Console
+window.location.href = &apos;/apex/ContactEditOverride?id={!Contact.Id}&apos;;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Eloqua_Engage</fullName>
+        <availability>online</availability>
+        <description>This is used to display Eloqua Engage tool</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Eloqua Engage</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://login.eloqua.com/auth/saml2/autologin?LoginPrefix={!$Setup.Eloqua_Settings__c.LoginPrefix__c}&amp;Idp={!$Setup.Eloqua_Settings__c.Idp__c}&amp;ReturnUrl=apps%2FsalesTools%2Fengage%3FemailAddress%3D{!Contact.Email}%26emailId%3D5213</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Quote</fullName>
+        <availability>online</availability>
+        <description>Create a new quote in GQO</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>900</height>
+        <isResizable>false</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>New GQO Quote</masterLabel>
+        <openType>newWindow</openType>
+        <page>ContactNewQuote</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <width>800</width>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Quote_Commerce</fullName>
+        <availability>online</availability>
+        <description>New quote in new commerce app</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>New Commerce Quotes</masterLabel>
+        <openType>newWindow</openType>
+        <page>ContactNewQuoteCommerce</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <width>800</width>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Trial</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>New Trial</masterLabel>
+        <openType>newWindow</openType>
+        <page>AUIConnect</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>ORC</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>ORC</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!URLFOR( $Setup.General_Settings__c.ORC_Url__c ,  Contact.Id , [contactId = Contact.Siebel_Contact_Id__c])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Open_Preference_Center</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Manage Email Preferences</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!URLFOR($Setup.General_Settings__c.Open_Preference_Center__c)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendGmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Gmail</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Contact_Email}&lt;{!Contact_LastName}, {!Contact_FirstName}&gt;&amp;tf=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Sync_Lead</fullName>
+        <availability>online</availability>
+        <description>It will sync information from the contact to OPEN lead record where the salesforce contact id is equal to the contact id that the button was pushed.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Sync Lead</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>/** 
+* @author Original: Archana Lohar- Cloud Sherpas/Mathworks, Last Modified: Archana Lohar - Cloud Sherpas/Mathworks 
+* @date Original: 5 Mar 2015, Last Modified: 5 Mar 2015 
+*/ 
+
+ //adds the proper code for inclusion of AJAX toolkit 
+ {!REQUIRESCRIPT(&quot;/soap/ajax/13.0/connection.js&quot;)} 
+ {!REQUIRESCRIPT(&quot;/support/console/27.0/integration.js&quot;)}
+
+//for showing loading Image 
+var errorDiv = document.getElementById(&apos;errorDiv_ep&apos;); 
+
+errorDiv.innerHTML = &quot;&lt;img class=&apos;waitingImage&apos; src=&apos;/img/loading.gif&apos; title=&apos;Please Wait...&apos; /&gt; &lt;span class=&apos;waitingDescription&apos;&gt;Sync In Progress...&lt;/span&gt;&quot;; 
+
+errorDiv.style.display = &quot;block&quot;; 
+
+
+ var leadRecords= sforce.connection.query(&quot;SELECT id  FROM Lead  WHERE Contact__c =    &apos;{!Contact.Id}&apos; AND status!=&apos;Closed - Converted&apos; AND  status!=&apos;Closed - Unconverted&apos;&quot;);
+
+
+ var lRecords= leadRecords.getArray(&quot;records&quot;);
+
+ var updateRecords = [];
+
+ //Iterate through the returned results 
+ for (var LeadIndex=0;LeadIndex&lt;lRecords.length;LeadIndex++) { 
+   
+      var LeadObj = lRecords[LeadIndex]; 
+
+      var LeadUpdate = new sforce.SObject(&quot;Lead&quot;); 
+      LeadUpdate.Id = LeadObj.Id;
+
+      if(&apos;{!Contact.Salutation}&apos;.length!=0) {
+       LeadUpdate.Salutation=&apos;{!Contact.Salutation}&apos;;
+      }
+      if(&apos;{!Contact.FirstName}&apos;.length!=0) {
+       LeadUpdate.FirstName=&apos;{!Contact.FirstName}&apos;;
+      }
+      if(&apos;{!Contact.LastName}&apos;.length!=0) {
+       LeadUpdate.LastName=&apos;{!Contact.LastName}&apos;;
+      }
+      if(&apos;{!Contact.Title}&apos;.length!=0) {
+       LeadUpdate.Title=&apos;{!Contact.Title}&apos;;
+      }
+      if(&apos;{!Contact.Job_Role__c}&apos;.length!=0) {
+       LeadUpdate.Job_Role__c=&apos;{!Contact.Job_Role__c}&apos;;
+      }
+      if(&apos;{!Contact.MailingCountry}&apos;.length!=0) {
+       LeadUpdate.country=&apos;{!Contact.MailingCountry}&apos;;
+      }
+      //Updated by Haigang Wu, for Sprint 2016.5.1, story 1429194
+      if(&apos;{!Contact.Country_State_Code__c}&apos;.length!=0) {
+       LeadUpdate.Country_State_Code__c=&apos;{!Contact.Country_State_Code__c}&apos;;
+      }
+      if(&apos;{!JSENCODE(Contact.MailingStreet)}&apos;.length!=0) {
+       LeadUpdate.Street=&apos;{!JSENCODE(Contact.MailingStreet)}&apos;;
+      }
+      if(&apos;{!Contact.MailingCity}&apos;.length!=0) {
+       LeadUpdate.City=&apos;{!Contact.MailingCity}&apos;;
+      }
+      if(&apos;{!Contact.MailingState}&apos;.length!=0) {
+       LeadUpdate.State=&apos;{!Contact.MailingState}&apos;;
+      }
+      //if(&apos;{!Contact.MailingStateCode}&apos;.length!=0) {
+      // LeadUpdate.StateCode=&apos;{!Contact.MailingStateCode}&apos;;
+      //}
+      if(&apos;{!Contact.MailingPostalCode}&apos;.length!=0) {
+       LeadUpdate.PostalCode=&apos;{!Contact.MailingPostalCode}&apos;;
+      }
+      
+      if(&apos;{!Contact.Phone}&apos;.length!=0) {
+       LeadUpdate.Phone=&apos;{!Contact.Phone}&apos;;
+      }
+      if(&apos;{!Contact.MobilePhone}&apos;.length!=0) {
+       LeadUpdate.MobilePhone=&apos;{!Contact.MobilePhone}&apos;;
+      }
+
+      if(&apos;{!Contact.Fax}&apos;.length!=0) {
+      LeadUpdate.Fax=&apos;{!Contact.Fax}&apos;;
+      }
+      
+      if(&apos;{!Contact.Email}&apos;.length!=0) {
+        LeadUpdate.Email=&apos;{!Contact.Email}&apos;;
+      }
+      
+       if(&apos;{!Contact.DoNotCall}&apos;.length!=0) {
+      LeadUpdate.DoNotCall=&apos;{!Contact.DoNotCall}&apos;;
+      }
+      
+       if(&apos;{!Contact.Department}&apos;.length!=0) {
+         LeadUpdate.Department__c=&apos;{!Contact.Department}&apos;;
+      }
+       if(&apos;{!Contact.First_Name_Latin__c}&apos;.length!=0) {
+        LeadUpdate.First_Name_Latin__c=&apos;{!Contact.First_Name_Latin__c}&apos;;
+      }
+       if(&apos;{!Contact.Last_Name_Latin__c}&apos;.length!=0) {
+        LeadUpdate.Last_Name_Latin__c=&apos;{!Contact.Last_Name_Latin__c}&apos;;
+      }
+       if(&apos;{!Contact.Job_Title_Latin__c}&apos;.length!=0) {
+          LeadUpdate.Title_Latin__c=&apos;{!Contact.Job_Title_Latin__c}&apos;;
+      }
+      if(&apos;{!Contact.Department_Latin__c}&apos;.length!=0) {
+           LeadUpdate.Department_Latin__c=&apos;{!Contact.Department_Latin__c}&apos;;
+      }
+      if(&apos;{!Contact.City_Latin__c}&apos;.length!=0) {
+           LeadUpdate.City_Latin__c=&apos;{!Contact.City_Latin__c}&apos;;
+      }
+      if(&apos;{!Contact.State_Province_Latin__c}&apos;.length!=0) {
+            LeadUpdate.State_Province_Latin__c=&apos;{!Contact.State_Province_Latin__c}&apos;;
+      }
+      if(&apos;{!Contact.Field_of_Study__c}&apos;.length!=0) {
+            LeadUpdate.Field_of_Study__c=&apos;{!Contact.Field_of_Study__c}&apos;;
+      }
+   
+      LeadUpdate.Account__C=&apos;{!Account.Id}&apos;;
+      
+      updateRecords.push(LeadUpdate); 
+  }
+
+try{
+
+if (updateRecords.length&gt;0) { 
+
+   sforce.connection.update(updateRecords);
+    
+ } 
+}
+catch(e){
+  alert(e.toString());
+}
+//Refresh page 
+   location.reload(true);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TestButton</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>TestButton</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&apos;http://www.google.com&apos;,&apos;mywindow&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Additional_Licenses</fullName>
+        <availability>online</availability>
+        <description>URL to open new MW License Application.</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>View Licenses</masterLabel>
+        <openType>newWindow</openType>
+        <page>LicenseOpenContact</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Licenses</fullName>
+        <availability>online</availability>
+        <description>When Button/Link pressed, pass Siebel Contact Id to Query License WS</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Licenses</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/support/console/32.0/integration.js&quot;)}
+var openURL =  &apos;/apex/ContactViewLicenses?id={!Contact.Id}&apos;;
+if (sforce.console.isInConsole()) 
+{ 
+     sforce.console.openPrimaryTab(null,openURL , true, 
+                &apos;View Licenses - {!JSENCODE(Contact.Name)}&apos;, null,&apos;ViewLicensesTab&apos;);  
+}
+else {
+    window.open(openURL,&quot;_blank&quot;,&quot;height=1000,width=1300, scrollbars=1&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Quotes</fullName>
+        <availability>online</availability>
+        <description>View GQO Quotes</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View GQO Quotes</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/support/console/32.0/integration.js&quot;)}
+var openURL =  &apos;/apex/ContactViewQuote?id={!Contact.Id}&apos;;
+if (sforce.console.isInConsole()) 
+{ 
+     sforce.console.openPrimaryTab(null,openURL , true, 
+                &apos;View Quotes - {!JSENCODE(Contact.Name)}&apos;, null,&apos;ViewQuotesTab&apos;);  
+}
+else {
+    window.open(openURL,&quot;_blank&quot;,&quot;height=1000,width=1300, scrollbars=1&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Quotes_Commerce</fullName>
+        <availability>online</availability>
+        <description>View quotes in new commerce app</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>View Commerce Quotes</masterLabel>
+        <openType>newWindow</openType>
+        <page>ContactViewQuotesCommerce</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Trials</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Trials</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/support/console/32.0/integration.js&quot;)}
+var openURL = &apos;/apex/ContactViewTrials?id={!Contact.Id}&apos;;
+if(sforce.console.isInConsole())
+{
+sforce.console.openPrimaryTab(null,openURL, true,
+&apos;View Trials- {!Contact.Id}&apos; , null, &apos;ViewTrialsTab&apos; );
+}
+else {
+window.open(openURL,&quot;_blank&quot;,&quot;height=1000,width=1350,scrollbars=1&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Contact_MailingCountry}&amp;csz={!Contact_MailingCity}+{!Contact_MailingState}+{!Contact_MailingPostalCode}+&amp;addr={!Contact_MailingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooWeather</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Weather</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>activities__Create_Tasks_Contacts</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Tasks</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
+var records = {!GETRECORDIDS( $ObjectType.Contact)};
+var returnURL = window.location.href;
+if(records != null &amp;&amp; records != &apos;&apos;){
+mywin = window.open(&apos;/apex/activities__createTasks?Ids=&apos;+records+&apos;&amp;retURL=&apos;+returnURL+&apos;&amp;type=whoid&apos;+&apos;&amp;SelectedObject=Contact&apos; , &apos;_top&apos;,
+&apos;height=400,width=600,status=yes,toolbar=no,menubar=no,location=no,center=yes,resizable=no&apos;);
+mywin.focus();
+}else{
+alert(&apos;Please select atleast one record.&apos;);
+}</url>
+    </webLinks>
+</CustomObject>

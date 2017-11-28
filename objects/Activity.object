@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Call_Logs__c</fullName>
+        <description>Log notes here about the outbound call</description>
+        <externalId>false</externalId>
+        <label>Call Logs</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Call_Outbound_Outcomes__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Outbound Outcomes</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contacted Customer</fullName>
+                    <default>false</default>
+                    <label>Contacted Customer</label>
+                </value>
+                <value>
+                    <fullName>Left message</fullName>
+                    <default>false</default>
+                    <label>Left message</label>
+                </value>
+                <value>
+                    <fullName>Did not leave message</fullName>
+                    <default>false</default>
+                    <label>Did not leave message</label>
+                </value>
+                <value>
+                    <fullName>Contacted Internal</fullName>
+                    <default>false</default>
+                    <label>Contacted Internal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Case_Escalated_To_Value__c</fullName>
+        <description>This field will store the value of Escalated To that is set on the Parent Case</description>
+        <externalId>false</externalId>
+        <label>Case Escalated To Value</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Escalation – Request to Dev</fullName>
+                    <default>false</default>
+                    <label>Escalation – Request to Dev</label>
+                </value>
+                <value>
+                    <fullName>Escalation - Direct to Cust</fullName>
+                    <default>false</default>
+                    <label>Escalation - Direct to Cust</label>
+                </value>
+                <value>
+                    <fullName>Escalation - Assistance</fullName>
+                    <default>false</default>
+                    <label>Escalation - Assistance</label>
+                </value>
+                <value>
+                    <fullName>Sales - Qualifications</fullName>
+                    <default>false</default>
+                    <label>Sales - Qualifications</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Close_Date_Time__c</fullName>
+        <description>Date/Time when activity status set to Completed or Sent for outbound emails</description>
+        <externalId>false</externalId>
+        <label>Close Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Created_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Artifacts__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;http://sharpoint/&quot; &amp; Id, &quot;Id&quot; )</formula>
+        <label>Customer Artifacts</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Email__c</fullName>
+        <description>Used for identifying associated Case on emailhandler when a customer replied to an email from salesforce</description>
+        <externalId>false</externalId>
+        <label>Customer Email</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMAPP__TTG_Prime_Action_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>PRIME Action</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prove your value</fullName>
+                    <default>false</default>
+                    <label>Prove your value</label>
+                </value>
+                <value>
+                    <fullName>Retrieve missing information</fullName>
+                    <default>false</default>
+                    <label>Retrieve missing information</label>
+                </value>
+                <value>
+                    <fullName>Insulate against competition</fullName>
+                    <default>false</default>
+                    <label>Insulate against competition</label>
+                </value>
+                <value>
+                    <fullName>Minimize your weaknesses</fullName>
+                    <default>false</default>
+                    <label>Minimize your weaknesses</label>
+                </value>
+                <value>
+                    <fullName>Emphasize your strengths</fullName>
+                    <default>false</default>
+                    <label>Emphasize your strengths</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DMAPP__ThirdPartyId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ThirdPartyId</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMAPP__ThirdPartyName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Plan Objective</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Open__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - DATEVALUE ( CreatedDate )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Open</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Overdue__c</fullName>
+        <description>For open tasks, calculates the number of days between today and due date. If number is &lt;= 0 returns a blank value. If task due date is null, returns null</description>
+        <externalId>false</externalId>
+        <formula>IF(IsClosed,NULL,IF((TODAY()-ActivityDate &gt; 0), TODAY()-ActivityDate,NULL))</formula>
+        <label>Days Overdue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_between_Created_and_Closed__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(IsClosed , Close_Date_Time__c  -  Created_Date_Time__c ,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days between Created and Closed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ETL_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Used for SMS Process</description>
+        <externalId>true</externalId>
+        <label>ETL External Id</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Outbound_Outcomes__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Outbound Outcomes</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>Bounced</fullName>
+                    <default>false</default>
+                    <label>Bounced</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Escalate_To__c</fullName>
+        <description>Use as part of the case escalation process</description>
+        <externalId>false</externalId>
+        <label>Escalate To</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AU - Customer Support</fullName>
+                    <default>false</default>
+                    <label>AU - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>AU - Customer Training</fullName>
+                    <default>false</default>
+                    <label>AU - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>AU - Install</fullName>
+                    <default>false</default>
+                    <label>AU - Install</label>
+                </value>
+                <value>
+                    <fullName>AU - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>AU - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>AU - Technical Support</fullName>
+                    <default>false</default>
+                    <label>AU - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>BNL - Customer Support</fullName>
+                    <default>false</default>
+                    <label>BNL - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>BNL - Customer Training</fullName>
+                    <default>false</default>
+                    <label>BNL - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>BNL - Install</fullName>
+                    <default>false</default>
+                    <label>BNL - Install</label>
+                </value>
+                <value>
+                    <fullName>BNL - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>BNL - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>BNL - Technical Support</fullName>
+                    <default>false</default>
+                    <label>BNL - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>CH - Customer Support</fullName>
+                    <default>false</default>
+                    <label>CH - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CH - Customer Training</fullName>
+                    <default>false</default>
+                    <label>CH - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>CH - Install</fullName>
+                    <default>false</default>
+                    <label>CH - Install</label>
+                </value>
+                <value>
+                    <fullName>CH - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>CH - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>CH - Technical Support</fullName>
+                    <default>false</default>
+                    <label>CH - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>CN - Customer Support</fullName>
+                    <default>false</default>
+                    <label>CN - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>CN - Customer Training</fullName>
+                    <default>false</default>
+                    <label>CN - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>CN - Install</fullName>
+                    <default>false</default>
+                    <label>CN - Install</label>
+                </value>
+                <value>
+                    <fullName>CN – Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>CN – Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>CN - Technical Support</fullName>
+                    <default>false</default>
+                    <label>CN - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>DE - Customer Support</fullName>
+                    <default>false</default>
+                    <label>DE - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>DE - Customer Training</fullName>
+                    <default>false</default>
+                    <label>DE - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>DE - Install</fullName>
+                    <default>false</default>
+                    <label>DE - Install</label>
+                </value>
+                <value>
+                    <fullName>DE - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>DE - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>DE - Technical Support</fullName>
+                    <default>false</default>
+                    <label>DE - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Install</fullName>
+                    <default>false</default>
+                    <label>EMEA - Install</label>
+                </value>
+                <value>
+                    <fullName>ES - Customer Support</fullName>
+                    <default>false</default>
+                    <label>ES - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>ES - Customer Training</fullName>
+                    <default>false</default>
+                    <label>ES - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>ES - Install</fullName>
+                    <default>false</default>
+                    <label>ES - Install</label>
+                </value>
+                <value>
+                    <fullName>ES - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>ES - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>ES - Technical Support</fullName>
+                    <default>false</default>
+                    <label>ES - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>FR - Customer Support</fullName>
+                    <default>false</default>
+                    <label>FR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>FR - Customer Training</fullName>
+                    <default>false</default>
+                    <label>FR - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>FR - Install</fullName>
+                    <default>false</default>
+                    <label>FR - Install</label>
+                </value>
+                <value>
+                    <fullName>FR - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>FR - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>FR - Technical Support</fullName>
+                    <default>false</default>
+                    <label>FR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Grenoble - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Grenoble - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>IE - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IE - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IN - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>IN - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>IN - Customer Support</fullName>
+                    <default>false</default>
+                    <label>IN - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>IN - Customer Training</fullName>
+                    <default>false</default>
+                    <label>IN - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>IN - Install</fullName>
+                    <default>false</default>
+                    <label>IN - Install</label>
+                </value>
+                <value>
+                    <fullName>IN – Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IN – Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IN - Technical Support</fullName>
+                    <default>false</default>
+                    <label>IN - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>IT - Customer Support</fullName>
+                    <default>false</default>
+                    <label>IT - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>IT - Customer Training</fullName>
+                    <default>false</default>
+                    <label>IT - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>IT - Install</fullName>
+                    <default>false</default>
+                    <label>IT - Install</label>
+                </value>
+                <value>
+                    <fullName>IT - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>IT - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>IT - Technical Support</fullName>
+                    <default>false</default>
+                    <label>IT - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>JP - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Connections</fullName>
+                    <default>false</default>
+                    <label>JP - Connections</label>
+                </value>
+                <value>
+                    <fullName>JP - Customer Support</fullName>
+                    <default>false</default>
+                    <label>JP - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>JP - Customer Training</fullName>
+                    <default>false</default>
+                    <label>JP - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>JP - Install</fullName>
+                    <default>false</default>
+                    <label>JP - Install</label>
+                </value>
+                <value>
+                    <fullName>JP - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>JP - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>JP - Technical Support</fullName>
+                    <default>false</default>
+                    <label>JP - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Customer Support</fullName>
+                    <default>false</default>
+                    <label>KR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Customer Training</fullName>
+                    <default>false</default>
+                    <label>KR - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>KR - Install</fullName>
+                    <default>false</default>
+                    <label>KR - Install</label>
+                </value>
+                <value>
+                    <fullName>KR - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>KR - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>KR - Technical Support</fullName>
+                    <default>false</default>
+                    <label>KR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Connections</fullName>
+                    <default>false</default>
+                    <label>Natick - Connections</label>
+                </value>
+                <value>
+                    <fullName>Natick - Customer Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Customer Training</fullName>
+                    <default>false</default>
+                    <label>Natick - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>Natick - Database</fullName>
+                    <default>false</default>
+                    <label>Natick - Database</label>
+                </value>
+                <value>
+                    <fullName>Natick - Export Compliance</fullName>
+                    <default>false</default>
+                    <label>Natick - Export Compliance</label>
+                </value>
+                <value>
+                    <fullName>Natick - Freight Management</fullName>
+                    <default>false</default>
+                    <label>Natick - Freight Management</label>
+                </value>
+                <value>
+                    <fullName>Natick - Install</fullName>
+                    <default>false</default>
+                    <label>Natick - Install</label>
+                </value>
+                <value>
+                    <fullName>Natick - License Compliance</fullName>
+                    <default>false</default>
+                    <label>Natick - License Compliance</label>
+                </value>
+                <value>
+                    <fullName>Natick - Partner Exchange</fullName>
+                    <default>false</default>
+                    <label>Natick - Partner Exchange</label>
+                </value>
+                <value>
+                    <fullName>Natick - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>Natick - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>Natick - Tax</fullName>
+                    <default>false</default>
+                    <label>Natick - Tax</label>
+                </value>
+                <value>
+                    <fullName>Natick - Technical Support</fullName>
+                    <default>false</default>
+                    <label>Natick - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Customer Support</fullName>
+                    <default>false</default>
+                    <label>Nordic - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Customer Training</fullName>
+                    <default>false</default>
+                    <label>Nordic - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Install</fullName>
+                    <default>false</default>
+                    <label>Nordic - Install</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>Nordic - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Technical Support</fullName>
+                    <default>false</default>
+                    <label>Nordic - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Premier Support - Denso</fullName>
+                    <default>false</default>
+                    <label>Premier Support - Denso</label>
+                </value>
+                <value>
+                    <fullName>UK - Advanced Support</fullName>
+                    <default>false</default>
+                    <label>UK - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Customer Support</fullName>
+                    <default>false</default>
+                    <label>UK - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Customer Training</fullName>
+                    <default>false</default>
+                    <label>UK - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>UK - Install</fullName>
+                    <default>false</default>
+                    <label>UK - Install</label>
+                </value>
+                <value>
+                    <fullName>UK - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>UK - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>UK - Technical Support</fullName>
+                    <default>false</default>
+                    <label>UK - Technical Support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Existing_Opportunity_Id__c</fullName>
+        <description>this will store Existing Opportunity Id</description>
+        <externalId>false</externalId>
+        <label>Existing_Opportunity_Id</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Has_Attachment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FG - Copies Has Attachment flag from the email message associated with the task. Added to the Task List Views</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Message has attachment</inlineHelpText>
+        <label>Has Email Attachment</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Requested_For_Escalation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Requested For Escalation</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Object_Related_To_What_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_to_ObjectName__c</formula>
+        <label>Object Related To What Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Related_To_Who_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Object Related To Who Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_to_ObjectName__c</fullName>
+        <description>will contain the name of parent object</description>
+        <externalId>false</externalId>
+        <label>Object Related To</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SPQ_Change_Date__c</fullName>
+        <description>Capture date/tim when Sales Phone Queue task has been changed to any other value (including no value)</description>
+        <externalId>false</externalId>
+        <label>SPQ Change Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SPQ_ChangedByUserName__c</fullName>
+        <description>Updated from Workflow Rule when Activity Type is changed From Sales Phone Queue to another value</description>
+        <externalId>false</externalId>
+        <label>SPQ Changed By User Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Activity_Time__c</fullName>
+        <description>Time related to the Sales Support Activity Type. Required if Sales Support Activity type is selected</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Required when Sales Support Activity Type is selected</inlineHelpText>
+        <label>Sales Support Activity Time</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Support_Activity_Type__c</fullName>
+        <description>Sales Support Activity Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Categorization of out-of-model activity for Sales Support</inlineHelpText>
+        <label>Sales Support Activity Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complex Quote</fullName>
+                    <default>false</default>
+                    <label>Complex Quote</label>
+                </value>
+                <value>
+                    <fullName>Customer Research</fullName>
+                    <default>false</default>
+                    <label>Customer Research</label>
+                </value>
+                <value>
+                    <fullName>Meetings</fullName>
+                    <default>false</default>
+                    <label>Meetings</label>
+                </value>
+                <value>
+                    <fullName>Open Territory Coverage</fullName>
+                    <default>false</default>
+                    <label>Open Territory Coverage</label>
+                </value>
+                <value>
+                    <fullName>Peer Coverage</fullName>
+                    <default>false</default>
+                    <label>Peer Coverage</label>
+                </value>
+                <value>
+                    <fullName>Rep Coverage</fullName>
+                    <default>false</default>
+                    <label>Rep Coverage</label>
+                </value>
+                <value>
+                    <fullName>Special Projects</fullName>
+                    <default>false</default>
+                    <label>Special Projects</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Lead_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce Lead Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Activity_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Siebel Activity Id which is migrated from Siebel Application.</description>
+        <externalId>true</externalId>
+        <label>Siebel Activity ID</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Siebel_Contact_Id__c</fullName>
+        <description>Contact Siebel Id. Will be used in Siebel to create Opportunity for Tech Support activities</description>
+        <externalId>false</externalId>
+        <label>Siebel Contact Id</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Task_Owner_Area__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner:User.Area__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Task Owner Area</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Task_Owner_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.ManagerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Task Owner Manager</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Task_Related_To__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Related_to_ObjectName__c),IF(LEFT(WhoId,3)=&apos;00Q&apos;,&apos;Lead&apos;,IF(LEFT(WhoId,3)=&apos;003&apos;,&apos;Contact&apos;,&apos;N/A&apos;)), Related_to_ObjectName__c)</formula>
+        <label>Task Related To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Thread_ID__c</fullName>
+        <description>Used for identifying associated Case on emailhandler when a customer replied to an email from salesforce</description>
+        <externalId>false</externalId>
+        <label>Thread ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Updated_Priority__c</fullName>
+        <description>custom field will be shown on mass edit page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choosing None does not change the current value</inlineHelpText>
+        <label>Updated Priority</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASAP</fullName>
+                    <default>false</default>
+                    <label>ASAP</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Updated_Status__c</fullName>
+        <description>replica of status field for mass update</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choosing None does not change the current value</inlineHelpText>
+        <label>Updated Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Waiting on TMW</fullName>
+                    <default>false</default>
+                    <label>Waiting on TMW</label>
+                </value>
+                <value>
+                    <fullName>Waiting on Customer</fullName>
+                    <default>false</default>
+                    <label>Waiting on Customer</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Value_Add__c</fullName>
+        <externalId>false</externalId>
+        <label>Value Add</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SMS upsell</fullName>
+                    <default>false</default>
+                    <label>SMS upsell</label>
+                </value>
+                <value>
+                    <fullName>Lapsed SMS</fullName>
+                    <default>false</default>
+                    <label>Lapsed SMS</label>
+                </value>
+                <value>
+                    <fullName>NPS upsell</fullName>
+                    <default>false</default>
+                    <label>NPS upsell</label>
+                </value>
+                <value>
+                    <fullName>Training referral</fullName>
+                    <default>false</default>
+                    <label>Training referral</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+                <value>
+                    <fullName>Polyspace referral</fullName>
+                    <default>false</default>
+                    <label>Polyspace referral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>task_owner_is_active__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.IsActive</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Task owner is active</label>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>Book_Project_My_Open_Tasks</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>Customer_Email__c</columns>
+        <columns>EVENT.LOCATION</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Book Project My Open Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Tasks</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>Customer_Email__c</columns>
+        <columns>EVENT.LOCATION</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>SALES My Open Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Tasks2</fullName>
+        <columns>ACTIVITY.TASK</columns>
+        <columns>Thread_ID__c</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Has_Attachment__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open Tasks2</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinatesInternal>MW_Customer_Support_Manager</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>MW_Development_Manager</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>MW_Operations</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>MW_Tech_Support_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Project_Activities</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>EVENT.DURATION</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Project Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>Out_of_office</fullName>
+        <booleanFilter>(1 AND 2 AND 3) AND (4 OR 5)</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.LAST_UPDATE</field>
+            <operation>greaterThan</operation>
+            <value>12/28/2015 6:00 AM</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>equals</operation>
+            <value>cmoore</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>equals</operation>
+            <value>CHRISTIB</value>
+        </filters>
+        <label>Out of office</label>
+    </listViews>
+    <listViews>
+        <fullName>Overdue_Tasks</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.LAST_NAME</field>
+            <operation>equals</operation>
+            <value>Nunna</value>
+        </filters>
+        <label>Overdue Tasks Tech Evangelists</label>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>SALES_My_Non_Oppty_Open_All</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>Customer_Email__c</columns>
+        <columns>EVENT.LOCATION</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Days_Open__c</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Related_to_ObjectName__c</field>
+            <operation>notEqual</operation>
+            <value>Opportunity</value>
+        </filters>
+        <label>SALES My Non-Oppty Open All</label>
+    </listViews>
+    <listViews>
+        <fullName>SALES_My_Open_Tasks_Today</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>Customer_Email__c</columns>
+        <columns>EVENT.LOCATION</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>SALES My Open Tasks = &lt; Today</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>EVENT.START_DATE_TIME</columns>
+        <columns>EVENT.END_DATE_TIME</columns>
+        <columns>TASK.CREATED_DATE</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>TASK.WHAT_NAME</field>
+            <operation>equals</operation>
+            <value>Event</value>
+        </filters>
+        <label>My Upcoming Events</label>
+    </listViews>
+    <listViews>
+        <fullName>X02_My_Non_Opportunity_Today_s_Tasks</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>Customer_Email__c</columns>
+        <columns>EVENT.LOCATION</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Days_Open__c</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Related_to_ObjectName__c</field>
+            <operation>notEqual</operation>
+            <value>Opportunity</value>
+        </filters>
+        <label>SALES My Non-Oppty Past Due</label>
+    </listViews>
+    <listViews>
+        <fullName>X02_My_Non_Oppty_Due_Today</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>Customer_Email__c</columns>
+        <columns>EVENT.LOCATION</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>Related_to_ObjectName__c</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Days_Open__c</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Related_to_ObjectName__c</field>
+            <operation>notEqual</operation>
+            <value>Opportunity</value>
+        </filters>
+        <label>SALES My Non-Oppty Due Today</label>
+    </listViews>
+    <listViews>
+        <fullName>activities__Overdue_Tasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Overdue Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>activities__Today_Overdue_Tasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today + Overdue Tasks</label>
+        <sharedTo>
+            <group>List_View_Admin_Only</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>activities__TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+        <sharedTo>
+            <group>List_View_Admin_Only</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>activities__Tomorrow_s_Tasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Tomorrow&apos;s Tasks</label>
+    </listViews>
+    <searchLayouts>
+        <listViewButtons>Mass_update_tasks</listViewButtons>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Siebel_Activity_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>SiteErrorPage</authorizationRequiredPage>
+    <bandwidthExceededPage>SiteErrorPage</bandwidthExceededPage>
+    <changePasswordPage>ChangePassword</changePasswordPage>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <customWebAddresses>
+        <certificate>Training_Enrollment</certificate>
+        <domainName>trainingenrollment.mathworks.com</domainName>
+        <primary>true</primary>
+    </customWebAddresses>
+    <description>Site used to expose self-enrollment functionality to subscribers of Enterprise Training Agreements. Uses same set of users that can access My SR functionality with a separate SAML SSO flow for login.</description>
+    <fileNotFoundPage>SiteErrorPage</fileNotFoundPage>
+    <genericErrorPage>SiteErrorPage</genericErrorPage>
+    <inMaintenancePage>SiteErrorPage</inMaintenancePage>
+    <inactiveIndexPage>InMaintenance</inactiveIndexPage>
+    <indexPage>SelfEnrollment</indexPage>
+    <masterLabel>Training Self-Enrollment Site</masterLabel>
+    <portal>Training Self-Enrollment</portal>
+    <requireHttps>true</requireHttps>
+    <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
+    <siteAdmin>mwsfdcadmin@mathworks.com</siteAdmin>
+    <siteTemplate>SiteTemplate</siteTemplate>
+    <siteType>Visualforce</siteType>
+    <subdomain>mathworksservicerequest</subdomain>
+    <urlPathPrefix>enroll</urlPathPrefix>
+</CustomSite>

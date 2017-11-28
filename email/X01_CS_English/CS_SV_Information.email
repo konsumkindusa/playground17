@@ -1,0 +1,22 @@
+Hello {!Case.Contact},
+
+We currently provide two different offerings for Students: MATLAB and Simulink Student Suite and MATLAB Student. MATLAB and Simulink Student Suite includes MATLAB, Simulink, and 10 of the most widely used add-on products, as well as built-in support for prototyping, testing, and running models on low-cost target hardware and is available on our website for $99 USD. MATLAB Student includes MATLAB Only and is available for $50 USD. Add-ons must be purchased separately. If Add-ons are purchased at the time of initial purchase, the cost is $10 USD per toolbox. If Student toolboxes are purchased separately from the original order, the cost is US $29 each.  For a complete list of available toolboxes, please visit: http://www.mathworks.com/academia/student_version/
+
+MATLAB and Simulink Student Suite is published and distributed directly by MathWorks and is available worldwide.  
+Students in the U.S., Canada, China, Japan, Korea and India can purchase the MATLAB and Simulink Student Suite directly from MathWorks Webstore (www.mathworks.com/store) or at campus bookstores for US $99.   International students can purchase the MATLAB and Simulink Student Suite directly from MathWorks Webstore (www.mathworks.com/store) in their local currency.  
+
+MATLAB and Simulink Student Suite Contents:
+MATLAB, Simulink, Control System Toolbox, Simulink Control Design, Image Processing Toolbox, Optimization Toolbox, Signal Processing Toolbox, DSP System Toolbox, Statistics Toolbox, Symbolic Math Toolbox, Data Acquisition Toolbox and Instrument Control Toolbox 
+
+Please visit our website at http://www.mathworks.com/academia/student_version/ for additional product information about MATLAB and Simulink Student Suite and add-on products.  Activation is required to use the software. 
+
+The ISBN number for the MATLAB and Simulink Student Suite Release 2014a is 978-0-9896-140-23
+
+If you need further assistance regarding this request, please reply to this email preserving the Reference ID listed below. If you have a new Customer Support question, please submit a request here: http://www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

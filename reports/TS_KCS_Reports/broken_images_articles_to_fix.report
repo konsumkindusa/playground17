@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticleVersion$Id</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$ArticleNumber</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticleVersion$Title</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeArticleVersion$Id</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ka031000000KxU2,ka031000000KxIQ,ka031000000Kx8V,ka031000000Kwqb,ka031000000Kwnr,ka031000000KvvB,ka031000000KvVr,ka031000000Ktem,ka031000000Ktr7</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>broken images articles to fix</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Article_Versions_Not_to_Deploy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticleVersion$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,13 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+License number {!Case.License__c} is an invalid license number. In order to use MATLAB and any of the additional products you need to have a valid license.
+
+Please send me the following information to verify your installation of MathWorks products: 
+1) Do you have your own license for the MathWorks products or do you use your company's/organization's license? 
+2) If you are not using your own license, what is the name of the company or organization for which you work? 
+3) A phone number where you or the person in charge of licensing software products for your company can be contacted. 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

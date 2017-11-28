@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Responce to leads that are at a TAH account encourage them to use TAH</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>respond to leads that are at a TAH account</name>
+    <style>none</style>
+    <subject>Your inquiry about MATLAB and Simulink</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

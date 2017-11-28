@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The object has been populated by BODI job and contains the list of the  accounts with the potential parent account ids</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account_CDS_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.CDS_Account_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account CDS Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Id__c</fullName>
+        <description>Account id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Child Account id</inlineHelpText>
+        <label>Account Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Industry__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Account__r.Industry )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Industry</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Latin_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Account_Name_Latin__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Latin Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Changed_Date__c</fullName>
+        <description>Date/Time when child account name/latin name was changed</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Account_Name_Changed_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date/Time when child account name/latin name was changed</inlineHelpText>
+        <label>Account Name Changed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Territory_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Territory_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Territory Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>CPN Account Matchings</relationshipLabel>
+        <relationshipName>CPN_Account_Matchings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Existing_Child_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Existing peer (child) account id</description>
+        <externalId>false</externalId>
+        <label>Existing Child Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>CPN Account Matchings (Existing Child Account)</relationshipLabel>
+        <relationshipName>CPN_Account_Matchings2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Account_CPN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Is_Corporate_Parent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Account CPN</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Parent_CPN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent_Account__r.Is_Corporate_Parent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Parent CPN</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Match_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Match_Local__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Match Local</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Match_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Score</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Status_Changed_Date__c</fullName>
+        <description>The Date when CPN Match Status was updated</description>
+        <externalId>false</externalId>
+        <label>Match Status Changed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Match_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                    <label>Confirmed</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Delete</fullName>
+                    <default>false</default>
+                    <label>Delete</label>
+                </value>
+                <value>
+                    <fullName>Proposed</fullName>
+                    <default>false</default>
+                    <label>Proposed</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Match_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Existing Parent</fullName>
+                    <default>false</default>
+                    <label>Existing Parent</label>
+                </value>
+                <value>
+                    <fullName>Existing Peer</fullName>
+                    <default>false</default>
+                    <label>Existing Peer</label>
+                </value>
+                <value>
+                    <fullName>Proposed New Parent</fullName>
+                    <default>false</default>
+                    <label>Proposed New Parent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_CDS_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent_Account__r.CDS_Account_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account CDS Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Id__c</fullName>
+        <description>Potential parent account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Potential Parent Account Id</inlineHelpText>
+        <label>Parent Account Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Latin_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent_Account__r.Account_Name_Latin__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account Latin Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Name_Changed_Date__c</fullName>
+        <description>Date/Time when Parent account name was changed</description>
+        <externalId>false</externalId>
+        <formula>Parent_Account__r.Account_Name_Changed_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date/Time parent account name/latin name was changed</inlineHelpText>
+        <label>Parent Account Name Changed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>CPN Account Matchings (Parent Account)</relationshipLabel>
+        <relationshipName>CPN_Account_Matchings1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>is_Account_Name_Changed__c</fullName>
+        <description>Flag if Account Name/Latin Name was changed after the Matching Change Date</description>
+        <externalId>false</externalId>
+        <formula>OR (  Account_Name_Changed_Date__c &gt; Match_Status_Changed_Date__c ,  Parent_Account_Name_Changed_Date__c &gt;Match_Status_Changed_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Set to True when Account Name/Latin Name was changed after the Matching Change Date</inlineHelpText>
+        <label>is Account Name Changed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>CPN Account Matching</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Match_Date__c</columns>
+        <columns>Match_Status_Changed_Date__c</columns>
+        <columns>Account__c</columns>
+        <columns>Match_Type__c</columns>
+        <columns>Match_Status__c</columns>
+        <columns>Is_Parent_CPN__c</columns>
+        <columns>Parent_Account_Id__c</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>Parent_Account_Latin_Name__c</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Account_Latin_Name__c</columns>
+        <columns>Is_Account_CPN__c</columns>
+        <columns>Account_Industry__c</columns>
+        <columns>Account_Territory_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Match_Type__c</field>
+            <operation>equals</operation>
+            <value>Existing Peer</value>
+        </filters>
+        <label>Existing Peer</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>CPN Account Matching Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>CPN Account Matchings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Parent_Account_Has_CPN_Flag</fullName>
+        <active>true</active>
+        <description>Account can&apos;t be set to Parent if it&apos;s not marked as CPN</description>
+        <errorConditionFormula>AND(NOT(Parent_Account__r.Is_Corporate_Parent__c ), ISPICKVAL(Match_Status__c,&apos;Confirmed&apos;))</errorConditionFormula>
+        <errorMessage>Parent Account must be CPN</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Update_Match_Status</fullName>
+        <active>true</active>
+        <description>Users can&apos;t update match status for confirmed records</description>
+        <errorConditionFormula>AND(ISCHANGED( Match_Status__c ),  ISPICKVAL(PRIORVALUE(Match_Status__c),&apos;Confirmed&apos;))</errorConditionFormula>
+        <errorDisplayField>Match_Status__c</errorDisplayField>
+        <errorMessage>You cannot update status of the Confirmed records</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

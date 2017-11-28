@@ -1,0 +1,24 @@
+{!Contact.Email} 
+Dear ,   
+
+We recently received a copy of the book, {!Book_Project__c.BookTitle__c} and we would like to promote it on the MathWorks web site at: www.mathworks.com/support/books/.
+
+To draft the webpage, we would like to request permission to reuse the book cover image and book description from your web site on the MathWorks Web sites.  Ideally we would appreciate if you can grant permission for all books on your site that are based on MATLAB so we don't need to request permission each time. 
+
+
+Please review and consider the attached form. Feel free to contact us with any questions. 
+
+
+
+Regards, 
+
+
+{!User.FirstName} {!User.LastName}  
+=============================  
+MathWorks Book Program  
+3 Apple Hill Drive, Natick, MA 01760  
+bookprogram@mathworks.com  
+mathworks.com/support/members  
+============================= 
+
+Book Project: {!Book_Project__c.Name}

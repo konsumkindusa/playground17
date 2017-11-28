@@ -1,0 +1,29 @@
+Hi {!Contact.FirstName},
+
+Question:  How much would it cost to recall and repair a product that is already deployed in the field?  
+
+- Bug Finder - Every developer writing important code should be using Bug Finder(Or some form of debugger) after every code change.
+Why?  It can quickly find *most* bugs, without interrupting the flow of development.  If anything, it speeds up development because people will spend less time debugging.
+
+- ode Prover should be used at key milestones when you need to get to zero bugs
+o	Before formal peer code reviews
+o	Before any kind of testing (unit or higher)
+o	On any critical algorithm where the math has to be perfect, after every code change
+
+Why?   Why leave even a single bug in the code during these labor-intensive phases that could have been found much more easily with an automated tool.
+
+White papers and other collateral on best practices for deployment (links are embedded in articles below)
+•	Polyspace products in a workflow
+/www.mathworks.com/products/polyspace/new-products/#working
+
+•	Using Software Quality Objectives with Polyspace (video by Renault and PSA)
+www.mathworks.com/videos/best-practice-for-software-quality-defining-and-measuring-software-quality-objectives-for-source-code-93135.html
+
+•	Using Polyspace to verify control code of emergency diesel generators
+//www.mathworks.com/company/newsletters/articles/verifying-high-integrity-control-software-for-mission-critical-emergency-diesel-generators.html
+
+I’d be happy to schedule a time to speak with you, arrange for a conference call with one of our Application Engineers, set up an evaluation, or conduct an onsite visit. 
+
+I will give you a call in the near future, but please feel free to contact me if you have any questions regarding the above listed tools capabilities.   
+
+Thank you for your time,

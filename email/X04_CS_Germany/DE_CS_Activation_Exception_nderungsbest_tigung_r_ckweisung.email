@@ -1,0 +1,24 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+vielen Dank für die in Ihrem MathWorks Account bekanntgegebenen Datenänderungen.
+
+A. Diese haben wir ausgeführt. (Bei Stud. bei Bedarf: Allerdings ist die von Ihnen gewünschte Mitnahme der Software der XXXX an die XXXX nicht möglich. Bitte erkundigen Sie sich ggf. nach der Nutzungsmöglichkeit einer dortigen Lizenz).
+
+B. Diese: XXX (nichtausführbare Änderung) konnte/n leider nicht ausgeführt werden, da XXX/zur Nutzung der mit Ihren Daten assoziierten Lizenz/en eine hochschul/firmenbezogene Email Adresse nötig ist. Sollten Sie die Firma/Hochschule verlassen haben, lassen Sie uns dies bitte wissen.
+
+C. Da diese Daten gemäß unserer Standards nicht verwendet werden, wurden sie in Ihrem Profil nicht umgesetzt. Offizielle Schreiben und Dokumente werden davon unbenommen die rechtlich notwendige Form aufweisen.
+
+D. Darin teilen Sie uns eine Fehlerkorrektur ohne Nennung der neuen korrekten Angaben mit. Könnten Sie uns diese bitte noch zukommen lassen? Oder bedeutet die gegenwärtige Löschung Ihrer bisherigen Daten (s.u.), dass Sie Ihre Firma/Hochschule verlassen haben? 
+Vielen Dank für Ihre Rückmeldung auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID. 
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
++49-89-45235-6700, Option 3 
+
+{!User.Disclosure__c} 
+
+{!Case.CaseNumber}

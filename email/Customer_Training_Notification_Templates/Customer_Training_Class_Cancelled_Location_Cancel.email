@@ -1,0 +1,7 @@
+The following class has been cancelled:
+
+Class Name: {!Class__c.Name}
+Format: {!Class__c.Format_Of_Class__c}
+Location: {!Class__c.Training_Location__c}
+Start date: {!Class__c.Start_Date__c}
+End Date: {!Class__c.End_Date__c}

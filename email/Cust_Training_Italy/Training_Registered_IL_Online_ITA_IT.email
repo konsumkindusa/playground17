@@ -1,0 +1,23 @@
+Benvenuto al Training Online MathWorks!
+
+Sei iscritto al corso online {!Enrollment__c.Class__c}.
+
+DATE: {!Enrollment__c.Display_Start_Date__c}-{!Enrollment__c.Display_End_Date__c} 
+ORA: {!Class__c.Start_Time__c}-{!Class__c.End_Time__c} 
+
+Per favore, controlla di avere tutti i Requisiti di Sistema necessari per l’imminente classe online al sito:
+https://it.mathworks.com/services/training/policies/requirements.html 
+
+************************************************************ 
+Ecco cosa aspettarti:
+************************************************************ 
+** Il materiale del corso sarà reso disponibile elettronicamente. 
+** Prima dell’inizio del corso (circa 5-7 giorni) riceverai due email separate. 
+La prima email conterrà un link e informazioni di login per il programma training Web e un unico codice di accesso per ReadyTech, la nostra aula virtuale che ti fornirà tutto il software necessario, preinstallato, per la tua lezione. 
+La seconda email sarà inviata da OnSecure per garantirti l’accesso al materiale di supporto per il training. Attraverso il link nell’emal, ti sarà chiesto di creare un nuovo account per poter visionare il materiale del corso.
+Per le regole di cancellazione e rimborso, per favore visita: https://it.mathworks.com/services/training/policies
+Per avere più informazioni sull’offerta Training di MathWorks, per favore visit ail nostro sito web  https://it.mathworks.com 
+
+Grazie, 
+
+{!Class__c.Sponsor_Office_Signature__c}

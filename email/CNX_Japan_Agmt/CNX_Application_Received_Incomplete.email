@@ -1,0 +1,49 @@
+{!Partner_Agreement__c.Primary_Contact__c}, 様
+
+Connections Program へご連絡願います  
+
+
+いつもお世話になっております。
+
+この度は、弊社ウェブサイトより MathWorks Connections Program へ
+お申込みいただき、ありがとうございました。
+社内でのレビューさせて頂くにあたり、下記の内容についてお知らせ頂きますよう
+よろしくお願い申し上げます。 
+
+[if this is a PRODUCT or PRE PRODUCT application use the following questions. Delete this line]
+
+・　製品概要の概略（30文字程度）
+・　ハイライト（箇条書きで最大6項目まで）
+・　製品概要
+貴社製品が MATLAB/Simulink や、他の MathWorks 製品と
+どのように動作するかご説明ください。（300文字程度にて）
+・　MATLAB/Simulinkとの連携方法についての詳細
+（貴社製品がMATLAB Toolboxや、Simulink Blocksetである場合は、
+その旨ご連絡下さい。他の方法でMathWorks製品とのインターフェースを取っている場合は、
+データ通信に利用するAPIの仕様をお知らせ下さい（例：COM, S-function, IVI Instrument driver, データ集録アダプタキット等）) 
+
+
+[if this is a SERVICE application use the following questions. Delete this line.]
+
+・　サービス概要
+貴社サービスで MATLAB や Simulink の使用方法についてご説明ください。
+
+[if this is a SYSTEM INTEGRATOR application use the following questions. Delete this line.]
+
+
+・　システムインテグレーションンサービス概要
+
+SIサービスで MATLAB や Simulink を使用されていますか。
+
+なお、開発用ライセンスの所有と保守更新の継続を、
+Connections Programパートナーの必要条件とさせて頂いております。
+登録完了の際にはライセンスのご購入について、
+ご留意いただけますようお願い申し上げます。
+
+MATLAB環境を使用した製品およびサービスを開発いただき、
+ありがとうございます。今後ともよろしくお願い申し上げます。
+
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}
+{!ortoo_e2a__EmailMessage__c.ortoo_e2a__Text_Body__c}

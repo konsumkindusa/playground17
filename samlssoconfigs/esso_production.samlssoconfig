@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <errorUrl>https://sharepoint.mathworks.com/</errorUrl>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>https://esso.mathworks.com</issuer>
+    <loginUrl>https://esso.mathworks.com/idp/SSO.saml2</loginUrl>
+    <logoutUrl>http://inside.mathworks.com</logoutUrl>
+    <name>esso-production</name>
+    <oauthTokenEndpoint>https://mathworks--autoRabitD.cs91.my.salesforce.com/services/oauth2/token?so=00D2F00000097F9</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P10Z000000GncJ</requestSigningCertId>
+    <salesforceLoginUrl>https://mathworks--autoRabitD.cs91.my.salesforce.com?so=00D2F00000097F9</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDVDCCAjygAwIBAgIGAVtX4CQPMA0GCSqGSIb3DQEBCwUAMGsxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJNQTEPMA0GA1UEBxMGTmF0aWNrMRIwEAYDVQQKEwlNYXRoV29ya3MxDDAKBgNVBAsTA1NTRzEcMBoGA1UEAxMTUGluZ1Byb2RDZXJ0RXhwMjAyMDAeFw0xNzA0MTAxMjM5MThaFw0yMDA0MDkxMjM5MThaMGsxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJNQTEPMA0GA1UEBxMGTmF0aWNrMRIwEAYDVQQKEwlNYXRoV29ya3MxDDAKBgNVBAsTA1NTRzEcMBoGA1UEAxMTUGluZ1Byb2RDZXJ0RXhwMjAyMDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIjPjzA0Rmest5bbbX51delH5Ax0MvM5HstVu2OX4hC96S8sMjNjH9phWO74oMvgjtSFdx9zJpgZ7NtigTLTezya6JRZR4mXur/JcqwzHhq4W8SD8BiTXfErDUVJkaJxqGrIBHr8T9PmHE2VgbKG8D9hHm5ioJ35wAdTZk5M3u3r81YGZWUsXUhpTNPnTpdIt/TBq1uFr9Zm7WQLQavkSCUX5ZC/MK4OjNxuCASiyWhfMgg55IRgFtLwx7/mdrNOX/XFo5wqPnAY2pk+kATkxZpHb8/InHHPpVtUVFeD6P9Yu966A+lEo8HTe4Mwq6cRsXcruOWwgCtZxTF10rHrs3ECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAZZIlI/z7M54AB3Kqn2xPvhTCwietbNjQrVpND6RpucGO+qltC7c5KFE0ZBQxneuoOCpwsgrnFV7KWFRVx7uCaCI/4rmOy92k9GwkCtInLJgqJO/xRbRas7WDL9NGn3umKs8CwB7tj9k96HjOq/7HQ4h3IkqOFm/HCbHnz+nBI+iAnp5FZyymOhI4fJL4ZUqDaig6Gq6Fy4ieRWI13PUVNjCYLh3f4HDQdSNAVMNenkQVF90aMySxH3gUEvjhnJbsbWFCFocwbHUq53QOj+3hD0j6R9Xy1jZ5VjucGP9mBbHEjc0izAEsXHgtbn+YvcBfj4H/LnXs9lzgd6FgSGuQMw==</validationCert>
+</SamlSsoConfig>

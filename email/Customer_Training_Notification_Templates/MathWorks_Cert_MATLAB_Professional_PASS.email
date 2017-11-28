@@ -1,0 +1,25 @@
+<messaging:emailTemplate subject="MathWorks Certified MATLAB Professional Exam Results {!relatedTo.Class__r.Exam_Date_For_Template__c}, {!relatedTo.Class__r.Training_Location__r.Location_Name__c}" recipientType="Contact" relatedToType="Enrollment__c">
+<messaging:htmlEmailBody > 
+ <p>Dear {!relatedTo.Enrollee_Name__r.name},</p>
+
+<p>Congratulations! You have passed the certification exam you took on {!relatedTo.Class__r.Exam_Date_For_Template__c} in {!relatedTo.Class__r.Training_Location__r.Location_Name__c} and have earned the credential of MathWorks Certified MATLAB Professional.</P>
+
+<p>Attached is a certificate and logo indicating your Professional-level credential that you can use on your personal business materials, such as business cards, resumes, and web sites. Please take a moment to review the usage guidelines before applying your credential to any business collateral. You can view the usage guidelines by copying and pasting the following link into your browser.</P>
+
+<p>http://www.mathworks.com/brandguide/downloads/TrainingCert_LogoGuidelines.pdf</P>
+
+<p>Your name has also been entered in the MathWorks certification database so that employers can verify the credential and date of exam.</p>
+
+<p>Once again, congratulations on becoming a MathWorks Certified MATLAB Professional!</P>
+
+<p>John Kotwicki<br></br>
+Certification Manager - Training Services
+</P>
+</messaging:htmlEmailBody>
+ <messaging:attachment renderAs="pdf" filename="Training_Certificate"> <!-- Use the renderAs attribute here.-->    
+ <c:EnrollmentTrainingCertProfessional enrollmentId="{!relatedTo.Id}" ></c:EnrollmentTrainingCertProfessional> 
+   </messaging:attachment>
+   <messaging:attachment renderAs="pdf" filename="Training_Certificate_logo"> <!-- Use the renderAs attribute here.-->    
+         <c:EnrollTrainingCertificateProfessinalLogo ></c:EnrollTrainingCertificateProfessinalLogo>
+  </messaging:attachment>
+</messaging:emailTemplate>

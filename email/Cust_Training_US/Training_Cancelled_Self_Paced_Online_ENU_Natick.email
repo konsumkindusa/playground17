@@ -1,0 +1,17 @@
+Dear {!Contact.Name},
+
+This e-mail confirms your cancellation for the following course:
+
+Course name: {!Enrollment__c.Class__c} 
+
+View our cancellation policy here: https://www.mathworks.com/services/training/policies.html?s_tid=gn_trg_mor
+
+Refunds made to credit cards will be processed within 1-2 business days of cancellation.
+
+If you believe you are eligible for reimbursement, contact MathWorks Training Services with your payment information by phone at {!Class__c.Sponsor_Office_Phone__c} or email at {!Class__c.Sponsor_Office_Email__c}. 
+
+
+Thank you, 
+Training Services
+{!Class__c.Sponsor_Office_Signature__c} 
+{!Class__c.Sponsor_Office_Training_URL__c}

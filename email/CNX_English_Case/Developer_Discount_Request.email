@@ -1,0 +1,49 @@
+Dear [SALESREP]
+
+Thank you for your email. The following request has [CHOOSE ONE] 
+
+been approved for #PRODUCT for {!Account.Name}.
+not been approved for the following reasons: 
+been approved, but with the following restrictions: 
+
+The approval code for this request is {!Case.CaseNumber}. Please reference this number on all correspondence related to this order. This approval code is for a one-time use only, and cannot be reused for multiple discount requests/approvals. 
+
+OVERVIEW: The Connections Program team in conjunction with RAC has implemented a new process regarding developer discounts for partners. RAC now requires a unique approval code for each Third Party discount order submitted. This is to ensure that the sales representative has obtained the proper approval from the Connections Program prior to generating the quote. If the approval code is not provided with the order, RAC will not process it. The order will be sent to the Connections Program team for investigation, resulting in delays, and possible cancellation of the order. 
+
+To ensure Third Party quotes/orders are processed correctly, we have outlined the steps below: 
+
+1. Partner contacts sales requesting a quote that includes the Connections Program discount. 
+
+2. Sales representative forwards request to connections@mathworks.com for approval. 
+
+3. If approved, the Connections Program team will reply and provide you with a approval code. Please make note of this number. The approval code is used to track this request, and it is for a one-time use only. It cannot be reused for multiple discount requests/approvals. 
+
+4. Generate the quote in Commerce using the following steps:
+
+a. For new licenses, select 'Standard' and the appropriate configuration (individual, etc)
+b. Click List Products, select the appropriate products, click done
+c. Under the Master License Tab, click Select all Lines
+d. Select Discount and enter the discount amount in the window (25%)
+e. Select Program under the Discount reason field, click ok
+f. In the Cover Letter Body field, add the following text after the first sentence:
+
+This Quote contains the 25% Connections Program Developer Discount. To receive the discount on your order you must provide a signed copy of the attached Development Discount Guidelines with your payment information. Please reference the following discount approval code [{!Case.CaseNumber}] on your purchase order. 
+
+g. Click the Save button
+h. Attach the developer discount guidelines to the quote and send to the partner. 
+
+5. When the order is received, submit the order to RAC using the following Subject: "Partner Order – Approval Code: {!Case.CaseNumber} 
+
+* Please do not send orders to the Connections Program, as we do not process orders. 
+* Include the signed developer discount guidelines with the order to RAC. 
+* Please cc: connections@mathworks.com when submitting the order so we may follow up with the partner 
+
+Please feel free to contact me if you have any questions. Thank you. 
+
+Best Regards, 
+{!User.Email_Template_Signature__c} 
+
+Case: {!Case.CaseNumber} 
+
+[ATTACH PDF] 
+{!Case.Email_Thread}

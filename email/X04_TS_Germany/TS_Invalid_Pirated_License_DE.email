@@ -1,0 +1,13 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName}, 
+
+Lizenznummer {!Case.License__c} ist eine ungültige Lizenznummer. Um MATLAB und weitere Produkte zu verwenden benötigen Sie eine gültige Lizenznummer.
+
+Bitte schicken Sie mir folgende Informationen um Ihre installierten MathWorks Produkte zu prüfen: 
+1) Haben Sie eine eigene Lizenz für MathWorks Produkte oder nutzen Sie die Lizenz Ihres Unternehmens / Ihrer Organisation? 
+2) Falls Sie nicht über eine eigene Lizenz verfügen, wie lautet der Name des Unternehmens oder der Organisation für die Sie arbeiten? 
+3) Eine Telefonnummer unter der wir eine für die Lizenzierung von Softwareprodukten verantwortliche Person kontaktieren können. 
+
+Mit freundlichen Grüßen 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

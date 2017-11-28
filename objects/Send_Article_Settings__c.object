@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Last_Run_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Run Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Scheduled_Run__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Scheduled Run</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Articles_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Articles Sent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchedulerName__c</fullName>
+        <defaultValue>&quot;Send Articles To MW Answers&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>SchedulerName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Send Article Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,297 @@
+<!-- 
+/**
+* @author Original: Divya Gawade - Cloud Sherpas/Mathworks, Last Modified:Divya Gawade - Cloud Sherpas/Mathworks
+* @date Original: 6 August 2014, Last Modified: 3 Sept 2014
+* @description page for dispaying list of GQO quotes related to an opportunity
+*/ 
+-->
+<apex:page standardController="Contact" extensions="ContactViewQuoteController" 
+ showHeader="false" tabStyle="Contact" >
+    <apex:includeScript value="/soap/ajax/26.0/connection.js"/>        
+    <apex:includeScript value="/support/console/32.0/integration.js"/>
+     <apex:stylesheet value="{!URLFOR($Resource.JQueryTableSort, '/themes/blue/style.css')}"/>
+     <apex:stylesheet value="{!URLFOR($Resource.JQueryTableSort, '/themes/blue/style.css')}"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.js"></script>
+    <Script type="text/javascript" src="{!$Resource.JqueryUINew}" />
+    <Script type="text/javascript" src="{!$Resource.JqueryUIMin}" />
+  
+    <style>
+          
+    #opptydialog{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #707070  ;
+    border-radius: 2px 2px 2px 2px;
+    color: #333333;
+    display: none;
+    font-size: 12px;
+    left: 25%;
+    margin-left: -200px;
+    position: fixed;
+    top: 10%;
+    width: 1000px;
+    z-index: 9999;
+    }
+
+div.loader {
+    background: url("../img/loading.gif") no-repeat scroll 0 0 transparent;
+    height: 32px;
+    width: 32px;
+    display: none;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    margin-left: -10px;
+}
+
+div.close {
+    background: url("../img/closebox.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: -27px;
+    top: -24px;
+    width: 30px;
+}
+
+div#popup_content {
+    margin: 4px 7px;
+    overflow-y: scroll;
+    height: 400px;
+    width: 1000px; //width of the modal window
+    </style>
+    <script type="text/javascript">
+    
+    function openTab(url,name, tabname){        
+        if (sforce.console.isInConsole()){
+        sforce.console.openPrimaryTab(null,url, true, name, null,tabname);
+        }
+        else {
+        window.open(url,"_blank","height=1000,width=1300");
+        }
+     }
+     
+    
+      function openWindowTab(url){
+        window.open(url,"_blank","height=1000,width=1300");
+      }
+      
+      function showProdustAndContacts(){
+            
+            $("#opptydialog").dialog({
+                modal: true
+              
+            });
+            
+            $('#disableBack').css("display","block"); 
+            
+      }
+      
+      function closePopup(){
+      
+       $('#opptydialog').dialog('close');
+       
+       $('#disableBack').css("display","none"); 
+     } 
+         
+      $(document).ready(function()
+      {      
+         showLoadingImage() ;            
+      });
+      
+    </script>
+    <apex:form id="TheForm">
+        <apex:pageMessages rendered="{!errMsg}"/>
+        <apex:pageBlock id="ok" rendered="{!pageQuotList.size>0}">
+            
+            <apex:pageblockButtons >
+            
+            <h1>Showing {!pageNumberToSetForQuote} of {!modOfQuote} pages</h1>&nbsp;&nbsp;
+                        <apex:commandButton value="First Page" rerender="ok" action="{!FirstPageOfQuote}" disabled="{!prev}" status="myStatus"/>
+                        <apex:commandButton value="Previous" rerender="ok" action="{!previousOfQuote}" disabled="{!prev}" status="myStatus"/>
+                        <apex:commandButton value="Next" rerender="ok" action="{!nextOfQuote}" disabled="{!nxt}" status="myStatus"/>
+                        <apex:commandButton value="Last Page" rerender="ok" action="{!LastPageOfQuote}" disabled="{!nxt}" status="myStatus"/>
+            
+            </apex:pageblockButtons>  
+             <apex:pageBlockSection title="{!$Label.QuoteTitleHeader}" columns="1" rendered="{!!errMsg}" >  
+             
+             <apex:actionfunction action="{!getOppty}" name="linkquote" oncomplete="showProdustAndContacts()" rerender="opptyList" 
+                                  status="myOptyStatus"  >
+              <apex:param value="" assignTo="{!selectedquoteId}" name="quoteId"/>
+             </apex:actionfunction>
+           <apex:pageblocktable value="{!pageQuotList}" var="quot" width="100%" id="details">
+            <apex:column headerValue="Select">
+                <apex:outputPanel >
+                    <input type="radio" onclick="linkquote('{!quot.Id}');" 
+                     name="<strong>selectRadio</strong>" 
+                     id="primary"  />
+                </apex:outputPanel>              
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteIDHeader}">
+                <apex:outputlink onclick="javascript:openWindowTab('{!$Setup.QuoteIntegrationSettings__c.Mathwork_Quote_Url__c}&QuoteId={!quot.Id}');return false;">{!quot.Id}</apex:outputLink>
+            </apex:column>
+            <apex:column value="{!quot.quoteStatus }" headerValue="{!$Label.QuoteStatusHeader}"/>
+            <apex:column width="6%" headerValue="Account">
+                <apex:outputText rendered="{!If(mapAccount[quot.accountId].Name='DummyAccount',false,true)}">
+                <apex:outputlink target="_self" 
+                                  onClick="javascript:openTab('/{!mapAccount[quot.accountId].Id}', '{!mapAccount[quot.accountId].Name}', '{!mapAccount[quot.accountId].Name}')" >
+                                   {!if((mapAccount[quot.accountId].Account_Name_Latin__c!= null),mapAccount[quot.accountId].Account_Name_Latin__c,mapAccount[quot.accountId].Name)}
+                </apex:outputlink>
+            </apex:outputText>
+            <apex:outputText rendered="{!If(mapAccount[quot.accountId].Name='DummyAccount',true,false)}">                    
+                         {!quot.accountId}
+            </apex:outputText>
+            </apex:column>
+            
+            <apex:column width="7%" headerValue="Opportunity">
+                <apex:outputText rendered="{!If(mapOpportunity[quot.opportunityId].Name='DummyOpportunity',false,true)}">
+                <apex:outputlink target="_self" 
+                                onClick="javascript:openTab('/{!mapOpportunity[quot.opportunityId].Id}', '{!mapOpportunity[quot.opportunityId].Name}', '{!mapOpportunity[quot.opportunityId].Name}')" >{!mapOpportunity[quot.opportunityId].Name}
+                </apex:outputlink>
+                </apex:outputText> 
+            <apex:outputText rendered="{!If(mapOpportunity[quot.opportunityId].Name='DummyOpportunity',true,false)}">                    
+                         {!quot.opportunityId}
+            </apex:outputText>
+            </apex:column>
+            
+            <apex:column headerValue="{!$Label.QuoteTotalHeader}">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                   <apex:param value="{!quot.productTotal}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteProductSubTotalHeader}">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                   <apex:param value="{!quot.prodSubTot}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteHandlingTotalHeader}">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                   <apex:param value="{!quot.handlingTotal}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteTaxTotalHeader}">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                   <apex:param value="{!quot.taxTotal}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteDiscountTotalHeader}">
+                <apex:outputText value="{0, number, ###,##0.00}">
+                   <apex:param value="{!quot.discountTotal}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column value="{!quot.currencyCode}" headerValue="{!$Label.QuoteCurrencyCodeHeader}"/>
+            <apex:column headerValue="{!$Label.QuoteAllowWebViewHeader}">
+                <center>
+                <apex:image value="{!if(quot.webViewable,'/img/checkbox_checked.gif','/img/checkbox_unchecked.gif')}" width="21" height="16">
+                </apex:image>
+                </center>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteCreatedDateHeader}">
+                 <apex:outputText value="{0,date,yyyy-MM-dd }">
+                   <apex:param value="{!datevalue(quot.dateCreated)}" />
+                 </apex:outputText>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteOrderDateHeader}">
+                 <apex:outputText value="{0,date,yyyy-MM-dd }">
+                   <apex:param value="{!datevalue(quot.orderDate)}" />
+                 </apex:outputText>
+            </apex:column>
+            <apex:column headerValue="{!$Label.QuoteExpirationDateHeader}">
+                 <apex:outputText value="{0,date,yyyy-MM-dd }">
+                   <apex:param value="{!datevalue(quot.expirationDate)}" />
+                 </apex:outputText>
+            </apex:column>
+             
+           </apex:pageblocktable>
+           
+             <apex:actionStatus id="myOptyStatus">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading"
+                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif"
+                            title="Please Wait..." /> <span class="waitingDescription">Fetching
+                            Opportunities.....</span>
+                    </div>
+                </div>
+            </apex:facet>
+           <apex:facet name="stop">
+          </apex:facet>
+        </apex:actionStatus>
+            </apex:pageBlockSection>
+         </apex:pageBlock> 
+         
+          <apex:actionStatus id="myStatus">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading"
+                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif"
+                            title="Please Wait..." /> <span class="waitingDescription">Fetching
+                            Quotes.....</span>
+                    </div>
+                </div>
+            </apex:facet>
+           <apex:facet name="stop">
+          </apex:facet>
+        </apex:actionStatus>
+       
+       <apex:actionFunction name="showLoadingImage" 
+           action="{!firstPageOfQuote}" rerender="TheForm"
+            status="myStatus" />
+          
+        <div class="waitingSearchDiv" id="disableBack"
+            style="display: none; background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;"></div>   
+        <div id="opptydialog" class="dialogclass"  style="display:none">  
+            <div class="close">
+                <img src="{!$Resource.close}" width="23" id="closewindow"
+                    onclick="closePopup()" height="23" />
+            </div>
+            <div id="popup_content" >
+                <apex:pageBlock id="opptyList" title="Link Quote {!selectedQuoteId}">
+                    <apex:pageMessages id="statusMessage" rendered="{!jsonMessage}"/>
+                    <apex:pageBlockTable value="{!opptyList}" var="opp">
+                    <apex:column >
+                        <apex:commandLink value="Link Quote" action="{!setJsonStringForOpp}" id="Quotes" rerender="opptyList" status="linkQuoteLoading">
+                             <apex:param name="selectedoppoIdParam" value="{!opp.Id}" assignTo="{!selectedoppoId}" />
+                            
+                             <apex:param name="quoteIdParam" value="{!selectedQuoteId}" assignTo="{!quoteId}" />
+
+                            </apex:commandLink>
+                        </apex:column>
+                        <apex:column headerValue="Opportunity Name">
+                        <apex:outputLink onclick="javascript:openTab('/{!opp.Id}', '{!opp.Name}', '{!opp.Name}');return false;" >{!opp.Name}</apex:outputLink>
+                        </apex:column>
+                        
+                    <apex:repeat value="{!$ObjectType.Opportunity.FieldSets.QuoteOppoCont}"
+                        var="fieldsToShow">
+                        <apex:column value="{!opp[fieldsToShow]}">
+                        </apex:column>
+                    </apex:repeat>
+                    </apex:pageBlockTable>
+                     <apex:actionStatus id="linkQuoteLoading">
+                <apex:facet name="start">
+                   <div class="waitingSearchDiv" id="el_loading"
+                    style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder"
+                        style="top: 74.2px; opacity: 1.0; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif"
+                            title="Please Wait..." /> <span class="waitingDescription">Linking
+                            Quotes.....</span>
+                    </div>
+                </div>
+            </apex:facet>
+           <apex:facet name="stop">
+          </apex:facet>
+        </apex:actionStatus>
+                </apex:pageBlock>
+            </div> 
+        </div> 
+       
+    </apex:form> 
+    <script>
+    showLoadingImage();</script>
+</apex:page>

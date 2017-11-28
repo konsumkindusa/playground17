@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>UK AE Manager Marta Wilczkowiak</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>UK AE Manager Marta Wilczkowiak</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>EMEA_PE_Manager_Mark_Walker</parentRole>
+</Role>

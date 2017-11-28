@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>MathWorks – Ihre Anfrage (**Angebot + Quali Email)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>MathWorks – Ihre Anfrage (**Angebot + Quali Email)</name>
+    <style>none</style>
+    <subject>MathWorks – Ihre Anfrage (**Angebot + Quali Email)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

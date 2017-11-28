@@ -1,0 +1,83 @@
+<apex:component access="global" controller="EnrollmentCertificateController"  >
+     <apex:attribute access="global" assignTo="{!enrollId}"  name="enrollmentId" type="String" required="true" description="enrollmentId"/>
+     <html>
+      <style>
+       
+        #EnrolleeName {
+            text-align: left;
+            padding: 7cm 0.5cm 2cm 5cm;
+            //margin-left:190px;
+           //margin:300px;
+             width: auto;
+            height: auto;
+            //background-color:Cyan;
+            color:black;
+            font-size: 18px;
+            font-family:"Arial Unicode MS";
+            margin-left: 78px;
+            margin-top: -10px;
+        }
+        #Text{
+            text-align: left;
+            padding:1cm 0.5cm 2cm 1cm;
+            color:black;
+            font-size: 22px;
+            font-family:"Arial Unicode MS";
+            margin-left: 40px;
+            //background-color:yellow;
+            margin-top: -60px;
+        }
+        #ExamDate{
+            text-align: left;
+            padding: 2cm 0.5cm 2cm 6cm;
+            color:black;
+            font-size: 18px;
+            font-family:"Arial Unicode MS";
+            margin-left: 40px;
+            //background-color:blue;
+            margin-top:-135px;
+        }
+        #EnrollId{
+            text-align: left;
+            //padding: 2cm 0.5cm 2cm 6cm;
+            color:black;
+            font-size: 10px;
+            font-family:"Times New Roman";
+            margin-left: 320px;
+            //background-color:blue;
+            margin-top:227px;
+        }
+        @page{
+            size: auto;//8in 12in;
+            size: landscape;
+            margin-top: 0.00cm;
+            margin-bottom: 0.00cm;
+            margin-left: 0.00cm;
+            margin-right: 0.00cm;
+                  
+        }
+        body{
+       // background-color:blue;//#FFFFFF; 
+        //border: solid 1px black ;
+        margin: 0px;  /* this affects the margin on the content before sending to printer */
+       }
+    </style>
+     <img src="{!$resource.EnrollmentTrainingCertificateAssociate}" style="position: fixed;z-index:-1" width="1055" height="813" >
+         </img>
+      <div id ="EnrolleeName">
+      <p>{!EnrolleeName}</p> 
+      </div>
+      <div id="Text">
+      <b>MATHWORKS CERTIFIED MATLAB ASSOCIATE</b>
+      </div>
+      
+      <div id ="ExamDate">
+     {!EnrollmentRec.Class__r.Exam_Date_For_Template__c}
+      </div>
+      
+      <div id ="EnrollId">
+      {!EnrollmentRec.Name}
+      </div>
+      
+     </html>
+</apex:component>

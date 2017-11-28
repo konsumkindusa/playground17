@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to the primary contact of SSL agmt when local/office requests SSLs.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Sales Support - Local office/disti requesting access to SSL</name>
+    <style>none</style>
+    <subject>Access to Sales Support licenses</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

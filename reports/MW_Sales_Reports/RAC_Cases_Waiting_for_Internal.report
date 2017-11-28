@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Case_Age_Days__c</field>
+    </columns>
+    <columns>
+        <field>Case$Area__c</field>
+    </columns>
+    <columns>
+        <field>Case$Account</field>
+    </columns>
+    <columns>
+        <field>Case$SubStatus__c</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Case.Activities$Status</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This report shows RAC Cases that require action by Sales</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$Area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Revenue Accounting and Controls</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$SubStatus__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Waiting for Internal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Activities$Owner.Area__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Sales</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Activities$Owner.Area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>RAC Cases Waiting for Internal</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Task_with_Case_Owners__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Case$Case_Age_Days__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$Auto_Close_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

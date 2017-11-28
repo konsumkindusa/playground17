@@ -1,0 +1,228 @@
+<!-- 
+/**
+* @author Original: Sagar Talele- Cloud Sherpas/Mathworks, Last Modified: Sagar Talele - Cloud Sherpas/Mathworks
+* @date Original: 18 Feb 2015, Last Modified: 20 Feb 2015
+* @description: Page for License Lookup
+*/ 
+-->
+<apex:page showHeader="{!$CurrentPage.parameters.noHeader}" sidebar="{!$CurrentPage.parameters.noSidebar}" standardController="Contact" extensions="LicenseLookupController" action="{!viewLicenses}"  >
+      
+    <Script type="text/javascript" src="{!$Resource.JqueryUINew}" />
+    <Script type="text/javascript" src="{!$Resource.JqueryUIMin}" />
+    <Script type="text/javascript" src="{!$Resource.DataTable}" />
+    <apex:stylesheet value="{!URLFOR($Resource.JQueryTableSort, '/themes/blue/style.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.JQueryTableSort, '/themes/blue/style.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.JQueryTableSort, '/jquery-latest.js')}"/>
+    <apex:stylesheet value="{!$Resource.DataTableCSS}"/>
+    <apex:includeScript value="/soap/ajax/26.0/connection.js" />
+    <apex:includeScript value="/support/console/32.0/integration.js" />
+     <style>
+    .dataTables_filter, .dataTables_info { display: none; }
+    .dataTables_length{ display:none;
+    }
+     .paging_full_numbers span.paginate_button, .paging_full_numbers span.paginate_active      {
+            border: 1px solid #aaa;
+            padding: 2px 5px;
+            margin: 0 3px;
+            cursor: pointer;
+            cursor: hand;
+      } .paging_full_numbers
+      {
+            width: 600px;
+            height: 24px;
+            padding: 4px 0px 2px 0px;
+            vertical-align: middle;
+            line-height: 22px;
+      }
+      
+      body .bRelatedList .pbTitle h3, body .bPageBlock .pbTitle h2, body .bPageBlock .pbTitle h3, body .bSubBlock h3.lbHeader {
+  
+    font-size: 19px; 
+    color: rgb(17, 166, 227); 
+    font-style: oblique; 
+    ont-family: inherit;"
+    
+  } 
+ 
+</style>
+    <apex:form id="TheForm">
+       
+      <apex:outputPanel id="showLicenseInput">
+              <apex:pageBlock id="pgblock" title="License Lookup" rendered="{!showLookupInput}">
+                  <apex:pageBlockSection >
+                       <apex:pageBlockSectionItem helpText="{!$Label.License_Lookup_Help_Text}">
+                          <apex:outputLabel styleclass="labelCol" value="License ID " for="licenseid"/>
+                          <input value="{!licenseID}" onkeydown="if(event.keyCode==13){this.blur();doSearchLicense();}" id="licenseid"/>&nbsp;<h1 id="errorMessageLicenseId" style="Color:red;bold" rendered="{!showLookupInput}"></h1>  
+                       </apex:pageBlockSectionItem>
+                   </apex:pageBlockSection>
+                  <apex:actionFunction name="doSearchLicense" status="status"
+                reRender="details,pageError,ok" action="{!viewLicenses}" />
+                        <apex:pageBlockButtons >
+                             <apex:commandButton value="View License" status="counterStatus"    reRender="pageError,details,ProductDetails,ok,LicenseDetails" onClick="javascript:openPage('/apex/LicenseLookupPage?licenseID=', 'License Details', 'License Details');return false;" />
+                             <apex:commandButton value="Clear" status="counterStatus" oncomplete="this.form.reset();return false;"  action="{!hideLicenseDetailSection}" reRender="pageError,details,ProductDetails,ok,LicenseDetails,showLicenseInput"/>
+                        </apex:pageBlockButtons>
+                    <apex:actionstatus id="counterStatus">
+                         <apex:facet name="start">
+                            <div class="waitingSearchDiv" id="el_loading"
+                                style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                                <div class="waitingHolder"
+                                    style="top: 74.2px; opacity: 1.0; width: 91px;">
+                                    <img class="waitingImage" src="/img/loading.gif"
+                                        title="Please Wait..." /> <span class="waitingDescription">Processing.....</span>
+                                </div>
+                            </div>
+                        </apex:facet>
+                    </apex:actionstatus>
+                   
+              </apex:pageBlock>
+            </apex:outputPanel>
+            <apex:outputPanel id="LicenseDetails">
+                <apex:pageblock rendered="{!showDetails}" title="License Details - {!LicenseBeanLst[0].Id}">
+                    <apex:pageBlockSection title="License Information"  columns="2" rendered="{!showDetails}">
+                         <apex:pageBlockSectionItem >
+                                <apex:outputLabel value="{!$Label.License_Id}" />
+                                <apex:outputlink onclick="javascript:openWindowTab('{!$Setup.LicenseIntegrationSetting__c.UrlForShowingLicenses__c}{!LicenseBeanLst[0].Id}');return false;">{!LicenseBeanLst[0].Id}</apex:outputLink>
+                         </apex:pageBlockSectionItem>
+                        
+                        <apex:outputText value="{!LicenseBeanLst[0].status}" label="{!$Label.License_Status}"  />
+                        
+                        <apex:pageBlockSectionItem rendered="{!If(LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].lastname='DummyContact',false,true)}">
+                                        <apex:outputLabel value="{!$Label.License_Administrator_Id}" />
+                                        <apex:outputlink value="Contact" target="_self"
+                                            onClick="javascript:openTab('/{!LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].Id}', 'LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].Name}', 'LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].Name}');return false;"> 
+                                                     {!if((LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].First_Name_Latin__c != null ||
+                                                              LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].Last_Name_Latin__c != null),
+                                                              LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].First_Name_Latin__c+' '+LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId].Last_Name_Latin__c,
+                                                              LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].Name)} 
+                                        </apex:outputlink>
+                        </apex:pageBlockSectionItem>
+                        <apex:outputText value="{!LicenseBeanLst[0].administratorId }"
+                                            label="Contact Id"
+                                            rendered="{!If(LicenseAdministratorIdMap[LicenseBeanLst[0].administratorId ].lastname='DummyContact',true,false)}" />
+                        
+                        <apex:outputText value="{!LicenseBeanLst[0].use}" label="{!$Label.License_Use}"  />
+                        
+                         <apex:pageBlockSectionItem rendered="{!If(LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Name='DummyAccount',false,true)}">
+                                <apex:outputLabel value="{!$Label.License_Account_Id}" />
+                                <apex:outputlink target="_self" 
+                                              onClick="javascript:openTab('/{!LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Id}', '{!LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Name}', '{!LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Name}');return false;" > 
+                                                {!if((LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Account_Name_Latin__c!= null),
+                                                LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Account_Name_Latin__c,LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Name)}
+                                 </apex:outputlink>
+                          
+                        </apex:pageBlockSectionItem>
+                        <apex:outputText rendered="{!If(LicenseAccountIdMap[LicenseBeanLst[0].licenseAccountId].Name='DummyAccount',
+                                                             true,false)}" label="{!$Label.License_Account_Id}">
+                            {!LicenseBeanLst[0].licenseAccountId}
+                        </apex:outputText>
+                        
+                        <apex:outputText value="{!LicenseBeanLst[0].option}" label="{!$Label.License_Option}" />
+                          
+                        <apex:pageBlockSectionItem rendered="{!If(OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Name='DummyAccount',false,true)}">
+                            <apex:outputLabel value="{!$Label.License_Override_Account_Id}" />
+                            <apex:outputlink target="_self" 
+                                                      onClick="javascript:openTab('/{!OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Id}', '{!OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Name}', '{!OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Name}');return false;" > 
+                                {!if((OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Account_Name_Latin__c!= null),
+                                    OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Account_Name_Latin__c,
+                                    OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Name)}
+                            </apex:outputlink>
+                       </apex:pageBlockSectionItem>                      
+                       <apex:outputText rendered="{!If(OverrideAccountIdMap[LicenseBeanLst[0].overrideAccountId].Name='DummyAccount',
+                                                                     true,false)}" label="{!$Label.License_Override_Account_Id}">                                        
+                            {!LicenseBeanLst[0].overrideAccountId}
+                       </apex:outputText>
+                       
+                       <apex:outputText value="{!LicenseBeanLst[0].term}" label="{!$Label.License_Term}" />
+                       <apex:outputText value="{!LicenseBeanLst[0].maintenanceGroupId}" label="{!$Label.License_Maintenance_GroupId}" />
+                       <apex:outputText value="{!LicenseBeanLst[0].prorateDate}" label="{!$Label.License_Prorate_Date}"  />
+                        <br></br>
+                       <apex:outputText value="{!LicenseBeanLst[0].coreProductEndDate}" label="{!$Label.License_CoreProduct_EndDate}" />
+                                          
+                                          
+                  </apex:pageBlockSection>
+               </apex:pageblock>
+         <apex:pageblock rendered="{!showDetails}">
+             <apex:pageBlockSection title="Product Related List" columns="1" rendered="{!showDetails}" >
+                   <apex:pageBlockTable styleclass="tablesorter" value="{!LicenseBeanLst[0].licensedProducts}" id="sortId"  var="products"  width="90%"  >
+                           <apex:column value="{!products.productId}" headerValue="{!$Label.Product_Id_header}" />
+                           <apex:column value="{!products.productName}" headerValue="{!$Label.Product_Name_header}" />
+                           <apex:column value="{!products.quantity}" headerValue="{!$Label.Product_Quantity}" />
+                           <apex:column value="{!products.allocationStatus}" headerValue="{!$Label.Product_Allocation_Status}" />
+                           <apex:column value="{!products.maintenanceEndDate}" headerValue="{!$Label.Product_Maintenance_End_Date}" />
+                   </apex:pageBlockTable>
+               </apex:pageBlockSection>
+         </apex:pageblock>
+      </apex:outputPanel>
+        <apex:outputPanel styleClass="pageError">
+            <apex:pageBlock rendered="{!isError}">
+                <apex:pageMessages />
+            </apex:pageBlock> 
+        </apex:outputPanel>
+          
+  </apex:form>
+     <script>
+        var j$ = jQuery.noConflict();
+   
+     
+       var j$ = jQuery.noConflict();
+       
+       j$('#toPopup').dialog({model:true});
+    
+       j$('#disableBack').css("display","block"); 
+       
+      j$('.tablesorter').dataTable( {
+        "order": [[ 1, "asc" ]],
+        "aoColumns":[
+        {"bSortable": false},
+        {"bSortable": false},
+        {"bSortable": false},
+        {"bSortable": false},
+        {"bSortable": false}
+    ],"pagingType": "full"
+    } );
+       
+     
+    
+      function openPage(url,name, tabname){ 
+       
+       var j$ = jQuery.noConflict();
+       
+       var licenseIdToPass=j$('#licenseid').val();
+       
+       if(licenseIdToPass.length===0){
+       
+       j$('#errorMessageLicenseId').html('{!$Label.License_Lookup_Help_Text}');
+       return false;
+       
+       }
+       
+        j$('#errorMessageLicenseId').html('');
+       
+        var url=url+licenseIdToPass+'&showDetails=true';
+              
+        if (sforce.console.isInConsole())
+        {
+        sforce.console.openPrimaryTab(null,url, true, name+'-'+licenseIdToPass, null,tabname+'-'+licenseIdToPass);
+        }
+        else {
+        window.open(url,"_blank","height=1000,width=1300");
+        }
+      }
+     
+   function openTab(url,name, tabname){        
+        if (sforce.console.isInConsole())
+        {
+        sforce.console.openPrimaryTab(null,url, true, name, null,tabname);
+        }
+        else {
+        window.open(url,"_blank","height=1000,width=1300");
+        }
+      }
+
+     function openWindowTab(url){
+        window.open(url,"_blank","height=1000,width=1300");
+      }
+      
+   
+    </script>
+</apex:page>

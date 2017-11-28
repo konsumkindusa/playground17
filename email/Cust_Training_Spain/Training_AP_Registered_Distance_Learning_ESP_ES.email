@@ -1,0 +1,6 @@
+Test for Registered - Awaiting Payment - Spain
+
+Name : {!Enrollment__c.Enrollee_Name__c}
+Class Name: {!Enrollment__c.Class__c}
+Start Date: {!Enrollment__c.Display_Start_Date__c}
+End Date: {!Enrollment__c.Display_End_Date__c}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a new Child Partner Agreement</description>
+    <fieldOverrides>
+        <field>Account__c</field>
+        <formula>Partner_Agreement__c.Account__r.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>MW_Focal_Point__c</field>
+        <formula>Partner_Agreement__c.MW_Focal_Point__r.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Primary_Contact__c</field>
+        <formula>Partner_Agreement__c.Primary_Contact__r.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>1a - Proposal Sent</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>No Charge</literalValue>
+    </fieldOverrides>
+    <label>New Child Agreement</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Partner_Agreement_Name__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Type__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>Partner_Agreement__c</targetObject>
+    <targetParentField>Parent_Agreement__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

@@ -1,0 +1,33 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. Due to the issue you described, you may need to delete the cookie files in your Web Browser.  Before deleting the cookies you will need to log out of your MathWorks Account.     
+
+Below are instructions to clear the cookies on different Web Browsers:    
+
+Internet Explorer: 
+Tools > Internet Options > General Tab > Temporary Files > Delete files button > Delete cookies button.    
+Firefox: 
+Tools > Options > Privacy Tab > Show cookies > Remove all cookies button > (in private data) Clear now button    
+Safari2: 
+File > Preferences > Security Tab > Show cookies > Remove all button & History > Clear history    
+Safari3: 
+Safari > Reset Safari > Reset    
+
+Google Chrome: 
+1. Open Chrome.
+2. On your browser toolbar, click the Chrome menu Menu.
+3. Click More tools > Clear browsing data.
+4. In the box that appears, click the checkboxes for "Cookies and other site and plug-in data" and "Cached images and files."
+5. Use the menu at the top to select the amount of data that you want to delete. Choose beginning of time to delete everything.
+6. Click Clear browsing data.
+
+If you continue to experience problems after deleting the cookie files and logging back into your MathWorks Account, another solution may be to use a different Web Browser.    
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

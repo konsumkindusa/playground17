@@ -1,0 +1,14 @@
+Dear {!Case.Contact},
+
+Recently I contacted you regarding xxx. To date, we have not heard back from you.  Did you receive the original message?  Do you need more time?
+
+Membership in the Connections Program is dependent on certain criteria, including responsiveness to inquiries. We cannot continue to offer program benefits to companies that consistently do not meet those expectations.
+
+Please note, if I do not receive a response by [DATE] , your membership to the Connections Program will denied. I look forward to hearing from you. 
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}
+
+{!Case.Email_Thread}

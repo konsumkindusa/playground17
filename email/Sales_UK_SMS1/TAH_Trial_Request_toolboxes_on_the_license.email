@@ -1,0 +1,12 @@
+Dear {!Contact.FirstName}
+
+Thank you for your interest in a MATLAB Trial. We are pleased to advise that the ***** now has a site-wide licence for MATLAB and Simulink with a range of Toolboxes including *****.  For more information on how to access the site license please feel free to contact your University computing helpdesk.
+
+If you still would like to trial our software or if I can be of any further assistance, please do not hesitate to contact me.
+
+Kind regards
+{!Opportunity.OwnerFullName}
+Support Specialist 
+Tel:  +44 1223
+E-mail: sales@mathworks.co.uk
+Visit our Webstore: https://www.mathworks.com/accesslogin/login.do

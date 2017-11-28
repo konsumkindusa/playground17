@@ -1,0 +1,21 @@
+{!Account.Name} 
+{!Contact.LastName} {!Contact.FirstName} 様 
+
+いつもお世話になっております。MathWorks の {!User.Email_Template_Signature__c} と申します。 
+お問い合わせ頂いておりましたサービスリクエスト（“{!Case.Subject}”, Case #{!Case.CaseNumber}）に関して、ご連絡いたします。 
+
+Student Version をご利用中のお客様は、インストールに関わる問題と製品の不具合の報告の場合に限り、テクニカルサポートサービスを利用いただくことができます。その他の内容については、弊社 Web サイト上に多くの技術情報を掲載しておりますので、そちらをご利用ください。
+
+MathWorks ドキュメンテーションセンターでは、数多くのデモや例を含む、MATLAB/Simulink 製品の全てのドキュメンテーションを提供しています。
+http://jp.mathworks.com/help/
+
+MATLAB Answers では、オンラインコミュニティであるMATLAB CentralでやりとりされたMATLAB/Simulink 製品に関する質問が、約10万件以上掲載されています。 
+http://www.mathworks.com/matlabcentral/answers/
+
+今回いただいたご質問に関しましては、導入として参考となる情報を以下に記載いたしますので、ご活用いただければ幸いです。
+
+
+以上、宜しくお願い致します。 
+
+MathWorks テクニカルサポート窓口 
+{!User.Email_Template_Signature__c}

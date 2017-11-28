@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Project_Time_Card__c.Hours__c:SUM / FLOOR(((TODAY()-DATEVALUE(&quot;2015-2-1&quot;))/7))</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Avg effort hours per week, starting Feb 1, 2015</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>BucketField_2411028</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Hours Per Week</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_2411028</developerName>
+        <masterLabel>KPIs</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Project_Time_Card__c.Activity_Type__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Customer Interaction</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Support</sourceValue>
+            </sourceValues>
+            <value>Customer I &amp; S</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Traveling</sourceValue>
+            </sourceValues>
+            <value>Customer Travel</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_2411028</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Huge</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project_Time_Card__c.Hours__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shows my current average time for customer interaction &amp; support and my customer travel time.  I can then compare this to my 40% and 10% standard work week time, respectively.</description>
+    <filter>
+        <criteriaItems>
+            <column>Project_Time_Card__c.My_Time_Card__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_2411028</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>My AE/PE KPI Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MW_Project__c$Project_Time_Card__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Project_Time_Card__c.Week_Ending__c</dateColumn>
+        <endDate>2015-03-27</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-02-01</startDate>
+    </timeFrameFilter>
+</Report>

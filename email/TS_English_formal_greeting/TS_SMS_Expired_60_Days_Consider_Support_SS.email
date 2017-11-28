@@ -1,0 +1,25 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+I am writing in reference to your Technical Support Case #{!Case.CaseNumber} regarding '{!Case.Subject}'. 
+
+Our records indicate that license #{!Case.License__c} is out of maintenance. 
+
+Telephone and e-mail access to our Technical Support staff is one of the benefits of having a current Software Maintenance Service (SMS) subscription. 
+
+Although your SMS subscription has expired, let me see what I can do to help you with this specific situation.  For future questions, please renew the SMS subscription on this license. 
+
+
+
+
+
+
+
+Please preserve the Reference ID in any further correspondence on this question. This will allow our systems to automatically assign your reply to the appropriate Case, where I can help you further on this question. 
+
+To arrange for renewal of your SMS subscription, contact your local Sales team: 
+http://www.mathworks.com/company/worldwide/ 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+{!User.Disclosure__c}

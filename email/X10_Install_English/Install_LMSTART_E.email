@@ -1,0 +1,9 @@
+To restart your license manager:
+
+1. Open a terminal window
+
+2. Type the following:
+
+      cd $MATLAB/etc (Where $MATLAB is the path to your root MATLAB directory)
+
+3. Type './lmstart'

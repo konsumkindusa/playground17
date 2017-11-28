@@ -1,0 +1,9 @@
+Dear {!FAQ__kav.CreatedBy},
+
+I have reviewed your article, {!FAQ__kav.ArticleNumber}: {!FAQ__kav.Title} and have sent it back to you for revisions.  Please see my feedback below. 
+
+If you have any questions, please email me directly.  Otherwise, please make appropriate edits and re-submit TO ME for approval.
+
+{!FAQ__kav.KCS_Audit_Status__c}
+
+{!FAQ__kav.KCS_Comments__c}

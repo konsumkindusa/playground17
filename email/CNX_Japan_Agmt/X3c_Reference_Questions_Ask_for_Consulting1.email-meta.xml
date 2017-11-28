@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>3c - Reference Questions - Ask for Consulting</name>
+    <style>none</style>
+    <subject>{!Partner_Agreement__c.Partner_Agreement_Name__c}についてお聞かせ下さい-MathWorks Connections Program よりご協力のお願い</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

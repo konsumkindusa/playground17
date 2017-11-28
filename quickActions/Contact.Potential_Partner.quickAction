@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>pass a potential partner to the Partner Team to follow up on</description>
+    <fieldOverrides>
+        <field>Area__c</field>
+        <literalValue>Natick - Connections</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>is_Partner_Lead__c</field>
+        <formula>true</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>Open</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Subject</field>
+        <formula>&quot;Potential Partner -  &quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SubStatus__c</field>
+        <literalValue>In Progress</literalValue>
+    </fieldOverrides>
+    <label>Potential Partner</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Subject</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Description</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Case</targetObject>
+    <targetParentField>Contact</targetParentField>
+    <targetRecordType>Case.Partner_Connections</targetRecordType>
+    <type>Create</type>
+</QuickAction>

@@ -1,0 +1,14 @@
+Estimado/a {!Case.Contact} y XXXXXX,
+
+En base a la solicitud de XXXXXX, XXXXXX está ahora autorizado a hacer Uso de la Licencia XXXXXX. Conectándose a su Cuenta MathWorks en www.mathworks.com verá los cambios realizados en la sección “Mis licencias”.
+
+Para aprender más acerca de la activación de su licencia, puede seguir el link que figura a continuación, que requiere que se conecte a su Cuenta MathWorks:   http://www.mathworks.com/support/activation/index.html?BB=1
+
+Si necesita más ayuda en relación a este Caso, por favor responda a este email preservando el Reference ID incluido debajo. Si tiene una nueva consulta para el equipo de Atención al Cliente, por favor envíe su solicitud desde el siguiente link: http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+Gracias,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+Case ID: {!Case.CaseNumber}

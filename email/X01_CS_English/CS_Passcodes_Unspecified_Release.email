@@ -1,0 +1,19 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks. In your email request for a License File, you did not specify which MATLAB release you require.
+
+If you need the License File for Release R2007b or an earlier release, please let us know which release you require by replying to this email preserving the THREAD ID listed below.  We will then provide the requested license file.
+
+If you would like the License File for R2008a or later then you can obtain the License File yourself through Activation provided you are the Administrator, Asset Manager, or Licensed End User (with Activation Permissions) on this license.  
+
+To learn how to Activate and obtain the License File you can follow the link below, which we require you to log into your MathWorks Account:
+http://www.mathworks.com/matlabcentral/answers/99457#answer_108804
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

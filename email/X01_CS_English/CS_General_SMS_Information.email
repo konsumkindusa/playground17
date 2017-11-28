@@ -1,0 +1,22 @@
+Hello {!Case.Contact}, 
+
+Thank you for contacting MathWorks.  The first year of Software Maintenance Service (SMS) is included with the purchase of new product licenses.  Subscribing to SMS provides licenses with the only way to receive product updates and bug fixes, obtain technical support, and add new products to a license.  By renewing a MathWorks SMS subscription a license can continue uninterrupted service.  
+
+Software Maintenance Service (SMS) provides:
+
+• Access to New Features: Increase your effectiveness and efficiency by using new product features delivered in general releases twice each year.
+• Direct Technical Support: Resolve technical issues and get technical solutions through telephone, e-mail, and Web assistance provided by specialized support engineers. 
+• Online License Management: View license details, manage user permissions, activate software, get passcodes for previous releases, and obtain order status
+• Ability to Add New Products: Extend your computing environment by adding products to your license at any time. A MathWorks SMS subscription gives you access to the latest release to ensure compatibility with new versions of MathWorks products.
+• Bug Fixes: Receive bug fixes via twice-yearly general releases and periodic Web updates, as well as interim solutions from Technical Support. 
+
+Because MathWorks ensures compatibility among products in the same release, a subscription to SMS ensures that you have access to the latest release.  A license also has to be in Maintenance to add new products to a license.  Licensed products for which a subscription has lapsed will incur back SMS charges to the date the Maintenance expired.  Maintenance subscriptions that have lapsed three months (90 days) or more will also include a reinstatement fee.  Staying subscribed is the most cost−effective way to receive the latest advances and support.  For more information on Software Maintenance Service, go to www.mathworks.com/services/maintenance.
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

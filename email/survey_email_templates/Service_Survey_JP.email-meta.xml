@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>test</letterhead>
+    <name>Service Survey - JP</name>
+    <style>freeForm</style>
+    <subject>MathWorksテクニカルサポート品質調査へのご協力のお願い#{!Case.CaseNumber}</subject>
+    <textOnly>{!Account.Name}
+{!Contact.LastName} {!Contact.FirstName}様
+
+先日は、弊社テクニカルサポート窓口をご利用頂きまして、誠にありがとうございました。お問い合わせ頂きましたサービスリクエスト {!Case.CaseNumber}, {!Case.Subject} は、弊社担当者 , {!User.Alias} が対応させていただきました。今後のサポート品質向上のため、このサービスリクエストに関するアンケートにご協力頂きたく、本メールを送付させていただきました。なお、本メールは、サポートの完了にご同意いただけましたお客様、または、サービスリクエスト対応後一定期間ご連絡をいただけなかったお客様に送信しております。
+
+つきましては、以下のURLにアクセスし、アンケートにご回答頂けますでしょうか。所要時間は、5分以内を予定しております。なお、アンケート1ページ目は、言語を選択していただく為に、英語表記となっております。お手数ですが、日本語 を選択後、Continueボタンにてお進みください。
+
+Link to Survey - English version
+https://mathworks.getfeedback.com/r/EZEPSv6q?CaseID=%7b!Case.Id%7d&amp;ContactID=%7b!Case.ContactId%7d&amp;AccountID=%7b!Case.AccountId%7d&amp;CaseOwnerID=%7b!Case.OwnerId%7d
+
+Link to Survey - Japanese version
+https://mathworks.getfeedback.com/r/KKwSKUSc?CaseID=%7b!Case.Id%7d&amp;ContactID=%7b!Case.ContactId%7d&amp;AccountID=%7b!Case.AccountId%7d&amp;CaseOwnerID=%7b!Case.OwnerId%7d
+
+アンケートにて頂戴致しましたご意見をもとに、より一層充実したサービスを提供すべく邁進する所存です。ご多忙のおり誠に恐縮ではございますが、ご協力の程何卒宜しくお願い申し上げます。
+
+MathWorks　技術サポート窓口
+http://jp.mathworks.com/support/contact_us/index.html
+
+このメールアドレスは送信専用であり、ご返信をいただきましても確認・対応できませんこと、ご了承ください。
+
+今後、MathWorksからのアンケート調査に関するメールの受信を拒否する場合は、以下の URL よりCommunication Preferencesの情報を更新して下さい。
+http://www.mathworks.com/emailoptions/mailings
+
+MathWorksの個人情報保護方針の詳細につきましては、下記 URLをご参照下さい。
+http://www.mathworks.com/company/aboutus/policies_statements/</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

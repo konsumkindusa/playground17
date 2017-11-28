@@ -1,0 +1,57 @@
+<!-- 
+/**
+* @author Original: Jesfer Baculod - Cloud Sherpas/Mathworks
+* @date Original: 23 July 2013
+* @description page that prevents users from deleting Cases excluding Sys Admins and MathWorks Data Management  
+*/ 
+-->
+<apex:page action="{!if(AND($Profile.Name != $Setup.General_Settings__c.CaseDeleteOverride_Excluded_Profile_1__c,
+							$Profile.Name != $Setup.General_Settings__c.CaseDeleteOverride_Excluded_Profile_2__c),
+   						 	null,
+    						urlFor($Action.Case.Delete, $CurrentPage.Parameters.id, [retURL='/500'], true)
+    						)
+    			   }"
+  		standardController="Case">
+  		<apex:includeScript value="/support/console/27.0/integration.js"/>
+  		<script type="text/javascript">
+  		 	function redirectpage(){
+  		 		//Case on Service Cloud Console
+	            if (sforce.console.isInConsole()){
+	            	var closeSubtab = function closeSubtab(result) {
+                        //Now that we've got the tab ID, we can close it
+                        var tabId = result.id;
+                        sforce.console.closeTab(tabId);
+                    }; 
+                    //First find the ID of the current tab to close it
+                    sforce.console.getEnclosingTabId(closeSubtab);
+                    //Case is being deleted on Detail Page
+                    if ('{!$CurrentPage.Parameters.retURL}' == '/500/o'){
+                    	//reOpen Case detail tab
+	            		sforce.console.openPrimaryTab(null, '/{!$CurrentPage.Parameters.Id}', true);
+	            	}
+	            	//Case is being deleted on Case Home Page
+	            	else {
+	            		//Refresh Cloud Console - Navigation Tab
+	            		top.location.href = '/ui/support/servicedesk/ServiceDeskPage';
+	            	}
+	            }
+	            //Case on Standard Page
+	            else {
+	            	//Case is being deleted on Detail Page
+	            	if ('{!$CurrentPage.Parameters.retURL}' == '/500/o'){
+	            		document.getElementById('{!$Component.OLredir}').href = '/{!$CurrentPage.Parameters.Id}';
+	            	}
+	            	//Case is being deleted on Case Home Page
+	            	else{
+	            		document.getElementById('{!$Component.OLredir}').href = '{!$CurrentPage.Parameters.retURL}';
+	            	}
+	            }
+            }
+  		</script>
+  		<br/>
+  		<apex:outputpanel style="position:relative; left:-20px;">
+	        <apex:PageMessage summary="{!$Label.CaseDeleteOverride_PageMessage}" severity="Warning" strength="3"/>
+	        <apex:pageMessages />
+        </apex:outputpanel>
+        <apex:outputlink id="OLredir" onclick="redirectpage();">{!$Label.CaseDeleteOverride_LinkText}</apex:outputlink>
+</apex:page>

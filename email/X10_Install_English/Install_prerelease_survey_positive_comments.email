@@ -1,0 +1,20 @@
+Hello {!Contact.FirstName}, 
+
+Thank you for providing feedback on the {!Case.Prerelease_Survey_Prerelease__c} Prerelease. 
+
+
+
+<Customize response based on the feedback provided: I am glad you found the updates useful.>
+
+
+
+If you have future technical support questions, please submit a request here: 
+http://www.mathworks.com/support/servicerequests/create.html 
+
+Sincerely, 
+{!User.Email_Template_Signature__c} 
+
+Self-Service: http://www.mathworks.com/support 
+File Exchange and MATLAB Answers: http://www.mathworks.com/matlabcentral/ 
+
+{!User.Disclosure__c}

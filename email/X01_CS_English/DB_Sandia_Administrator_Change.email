@@ -1,0 +1,24 @@
+Hello {!Case.Contact},
+
+Your MathWorks order has been processed.  You are now assigned as the Administrator for License XXXXX.   If you log into your MathWorks Account you will see the updated changes in the "My Licenses" section.
+
+The Administrator manages end users and can perform license administration tasks in the License Center.  All MathWorks licenses require an Administrator to serve as the main source of communication for the license.  
+
+Please note that the Administrator is responsible for assigning Licensed End Users to this License.  To learn more about adding and removing Licensed End Users click on the links below:
+
+Add/Remove Licensed End User: 
+http://www.mathworks.com/support/solutions/en/data/1-6092ZT/
+
+Click on this link to learn more about activation (Log in required):
+www.mathworks.com/support/activation/index.html
+
+If you have a new Customer Support question, please submit a request here: https://www.mathworks.com/support/contact_us/
+
+If you have any further questions or need anything else, please contact your Account Management Team:  Allison Cognetti, allison.cognetti@mathworks.com 
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

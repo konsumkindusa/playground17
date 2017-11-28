@@ -1,0 +1,15 @@
+Estimado Sr. / Sra.: 
+
+Dado que no hemos recibido comunicación por parte suya en referencia a su Caso #{!Case.CaseNumber} su petición ha sido cerrada en nuestro sistema. Si aún necesita de nuestra ayuda, por favor, conteste a este email manteniendo intacto el “Reference Id” que aparece al final del mismo.
+
+Atentamente,
+
+{!Case.OwnerFullName}
+Departamento de Atención al Cliente
+The MathWorks SL
+Tel: +34 91 799 4700
+info@mathworks.es
+
+Este es un email automático.
+
+{!Case.Thread_Id}

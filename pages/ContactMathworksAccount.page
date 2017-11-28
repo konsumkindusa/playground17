@@ -1,0 +1,41 @@
+<!-- 
+/**
+* @author Original: Haigang Wu - Mathworks
+* @date Original: June 7 2016
+* @date Modified:  March 7, 2017 Donna Latte Story #1723616
+* @description Ability to Create, View and Edit MWA from a Salesforce Contact Record (story 1499236)  
+*/ 
+-->
+
+<apex:page StandardController="Contact" id="pageId" showHeader="false">
+    <apex:form >
+        <apex:pageBlock id="pb1">
+            <apex:pageMessages />
+
+            <apex:pageBlockSection >
+               <apex:repeat value="{!$ObjectType.Contact.FieldSets.MwAccountFieldSet}" var="f" >
+                  <apex:outputfield value="{!Contact[f]}" />
+               </apex:repeat>
+                <!-- 
+                <apex:outputfield value="{!contact.MathWorks_Account_ID__c}"/>
+                <apex:outputfield value="{!contact.Web_Profile_Status__c}"/>
+                <apex:outputfield value="{!contact.Mathworks_Account_Email_Verified__c}"/>
+                <apex:inputCheckbox value="{!contact.Mathworks_Account_Email_Verified__c}"/> 
+                -->
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons location="bottom">
+                <!-- 
+                <apex:commandButton action="{!save1}" value="Save"/>
+                <apex:commandButton action="{!refresh}" value="Refresh" rerender="pb1"/>
+                 -->
+                <apex:commandButton value="Create MW Account" 
+                    onclick="window.open('{!$Setup.MWAccountProfileIntegrationSetting__c.UrlForCreatingMWAccountProfile__c + contact.CDS_Contact_Id__c}','_blank')" 
+                    rendered="{!$Permission.Create_Mathworks_Account && ISBLANK(contact.MathWorks_Account_ID__c)}"/>
+                <apex:commandButton value="View/Edit MW Account" 
+                    onclick="window.open('{!$Setup.MWAccountProfileIntegrationSetting__c.UrlForViewEditMWAccountProfile__c + contact.MathWorks_Account_ID__c}','_blank')" 
+                    rendered="{!$Permission.View_Edit_Mathworks_Account && ! ISBLANK(contact.MathWorks_Account_ID__c)}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

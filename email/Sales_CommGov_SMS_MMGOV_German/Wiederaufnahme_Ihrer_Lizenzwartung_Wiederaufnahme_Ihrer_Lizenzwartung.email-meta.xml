@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Wiederaufnahme Ihrer Lizenzwartung (**Wiederaufnahme Ihrer Lizenzwartung)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Wiederaufnahme Ihrer Lizenzwartung (**Wiederaufnahme Ihrer Lizenzwartung)</name>
+    <style>none</style>
+    <subject>MathWorks - Wiederaufnahme Ihrer Lizenzwartung</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

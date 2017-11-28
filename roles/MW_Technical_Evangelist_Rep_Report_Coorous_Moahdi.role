@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>MW Technical Evangelist Rep Report Coorous Mohtadi</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>MW Technical Evangelist Rep Report Coorous Mohtadi</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>MW_Technical_Evangelist_Manager_Coorous_Motahdi</parentRole>
+</Role>

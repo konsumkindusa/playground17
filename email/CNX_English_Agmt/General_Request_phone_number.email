@@ -1,0 +1,12 @@
+Dear {!Partner_Agreement__c.Primary_Contact__c}, 
+
+Your company is currently a member of The MathWorks Connections Program with {!Partner_Agreement__c.Partner_Agreement_Name__c}.
+
+We're in the process of updating our partner contact information and noticed that we do not have a phone number for you. We kindly ask that you please provide us with a phone number in the event we need to call you regarding any partner related activities. 
+
+Thank you for your time. 
+
+Best Regards,
+{!User.Email_Template_Signature__c}
+
+** All information collected will be held Confidential by MathWorks, Inc. **

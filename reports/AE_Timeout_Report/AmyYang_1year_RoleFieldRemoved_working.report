@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_65336967</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Project_Time_Card__c.Created_by_Role_Name__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Manager Abhishek Gupta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Abhishek Gupta</sourceValue>
+            </sourceValues>
+            <value>Abhishek Gupta Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Becky Petteys</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Becky Petteys</sourceValue>
+            </sourceValues>
+            <value>Becky Petteys Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Chris Fillyaw</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Chris Fillyaw</sourceValue>
+            </sourceValues>
+            <value>Chris Fillyaw Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Gerardo Hernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Gerardo Hernandez</sourceValue>
+            </sourceValues>
+            <value>Gerardo Hernandez Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Grant Martin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Grant Martin</sourceValue>
+            </sourceValues>
+            <value>Grant Martin Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Isaac Noh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Isaac Noh</sourceValue>
+            </sourceValues>
+            <value>Isaac Noh</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Leopold Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Leopold Lee</sourceValue>
+            </sourceValues>
+            <value>Leopold Lee</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Mike Agostini</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Mike Agostini</sourceValue>
+            </sourceValues>
+            <value>Mike Agostini Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Mike Donovan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Mike Donovan</sourceValue>
+            </sourceValues>
+            <value>Mike Donovan Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Mike Mulligan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Mike Mulligan</sourceValue>
+            </sourceValues>
+            <value>Mike Mulligan Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Sam Mirsky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Sam Mirsky</sourceValue>
+            </sourceValues>
+            <value>Sam Mirsky Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Shaun Kalinowski</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Shaun Kalinowski</sourceValue>
+            </sourceValues>
+            <value>Shaun Kalinowski team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Shripad Chandrachood</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Shripad Chandrachood</sourceValue>
+            </sourceValues>
+            <value>Shripad Chandrachood Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Yi Wang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Yi Wang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Raymond Norris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Raymond Norris</sourceValue>
+            </sourceValues>
+            <value>Yi Wang Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>US AE Rep Report Wit Nursilo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>US AE Manager Wit Nursilo</sourceValue>
+            </sourceValues>
+            <value>Wit Nursilo Team</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>Project_Time_Card__c.Week_Date__c</field>
+    </columns>
+    <columns>
+        <field>Project_Time_Card__c.Activity_Type__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Role Field removed</description>
+    <filter>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Amy Yang</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <name>AmyYang_12months_working</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MW_Project__c$Project_Time_Card__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Project_Time_Card__c.Week_Date__c</dateColumn>
+        <endDate>2016-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

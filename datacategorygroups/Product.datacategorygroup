@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>MATLAB</label>
+            <name>MATLAB</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink</label>
+            <name>Simulink</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Aerospace Blockset</label>
+            <name>Aerospace_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Aerospace Toolbox</label>
+            <name>Aerospace_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Applix Link</label>
+            <name>Applix_Link</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Antenna Toolbox</label>
+            <name>Antenna_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Audio System Toolbox</label>
+            <name>Audio_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Automated Driving System Toolbox</label>
+            <name>Automated_Driving_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Bioinformatics Toolbox</label>
+            <name>Bioinformatics_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>CDMA Reference Blockset</label>
+            <name>CDMA_Reference_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Chemometrics Toolbox</label>
+            <name>Chemometrics_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Communications Blockset</label>
+            <name>Communications_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Communications System Toolbox Prerelease</label>
+            <name>Communications_System_Toolbox_Prerelease</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Communications System Toolbox</label>
+            <name>Communications_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Computer Vision System Toolbox</label>
+            <name>Computer_Vision_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Control System Toolbox</label>
+            <name>Control_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Curve Fitting Toolbox</label>
+            <name>Curve_Fitting_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Data Acquisition Toolbox</label>
+            <name>Data_Acquisition_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Database Toolbox</label>
+            <name>Database_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Datafeed Toolbox</label>
+            <name>Datafeed_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Developers Kit for TI DSP</label>
+            <name>Developers_Kit_for_TI_DSP</name>
+        </dataCategory>
+        <dataCategory>
+            <label>DO Qualification Kit</label>
+            <name>DO_Qualification_Kit</name>
+        </dataCategory>
+        <dataCategory>
+            <label>DSP System Toolbox</label>
+            <name>DSP_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Econometrics Toolbox</label>
+            <name>Econometrics_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>EDA Simulator Link DS</label>
+            <name>EDA_Simulator_Link_DS</name>
+        </dataCategory>
+        <dataCategory>
+            <label>EDA Simulator Link IN</label>
+            <name>EDA_Simulator_Link_IN</name>
+        </dataCategory>
+        <dataCategory>
+            <label>EDA Simulator Link MQ</label>
+            <name>EDA_Simulator_Link_MQ</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded Coder</label>
+            <name>Embedded_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded IDE Link</label>
+            <name>Embedded_IDE_Link</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded IDE Link CC</label>
+            <name>Embedded_IDE_Link_CC</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded IDE Link MU</label>
+            <name>Embedded_IDE_Link_MU</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded IDE Link TS</label>
+            <name>Embedded_IDE_Link_TS</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded IDE Link VS</label>
+            <name>Embedded_IDE_Link_VS</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded Target for Motorola HC12</label>
+            <name>Embedded_Target_for_Motorola_HC12</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Embedded Target for OSEK/VDX</label>
+            <name>Embedded_Target_for_OSEK_VDX</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Extended Symbolic Math Toolbox</label>
+            <name>Extended_Symbolic_Math_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Filter Design HDL Coder</label>
+            <name>Filter_Design_HDL_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Filter Design Toolbox</label>
+            <name>Filter_Design_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Derivatives Toolbox</label>
+            <name>Financial_Derivatives_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Instruments Toolbox</label>
+            <name>Financial_Instruments_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Time Series Toolbox</label>
+            <name>Financial_Time_Series_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Financial Toolbox</label>
+            <name>Financial_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Fixed-Income Toolbox</label>
+            <name>Fixed_Income_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Fixed-Point Designer</label>
+            <name>Fixed_Point_Designer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Fixed-Point Toolbox</label>
+            <name>Fixed_Point_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Frequency Domain</label>
+            <name>Frequency_Domain</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Fuzzy Logic Toolbox</label>
+            <name>Fuzzy_Logic_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>GARCH Toolbox</label>
+            <name>GARCH_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Gauges Blockset</label>
+            <name>Gauges_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Global Optimization Toolbox</label>
+            <name>Global_Optimization_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>CPU Coder</label>
+            <name>CPU_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>HDL Coder</label>
+            <name>HDL_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>HDL Verifier</label>
+            <name>HDL_Verifier</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Higher-Order Spectral Analysis</label>
+            <name>Higher_Order_Spectral_Analysis</name>
+        </dataCategory>
+        <dataCategory>
+            <label>IEC Certification Kit</label>
+            <name>IEC_Certification_Kit</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Image Acquisition Toolbox</label>
+            <name>Image_Acquisition_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Image Processing Toolbox</label>
+            <name>Image_Processing_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Instrument Control Toolbox</label>
+            <name>Instrument_Control_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>LMI Control Toolbox</label>
+            <name>LMI_Control_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>LTE HDL Toolbox</label>
+            <name>LTE_HDL_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>LTE System Toolbox</label>
+            <name>LTE_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mapping Toolbox</label>
+            <name>Mapping_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB and Simulink Student Suite</label>
+            <name>MATLAB_and_Simulink_Student_Suite</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB &amp; Simulink Student Version</label>
+            <name>MATLAB_Simulink_Student_Version</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB &amp; Simulink Student Version Grp</label>
+            <name>MATLAB_Simulink_Student_Version_Grp</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Builder EX</label>
+            <name>MATLAB_Builder_EX</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Builder for COM</label>
+            <name>MATLAB_Builder_for_COM</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Builder for Java Language</label>
+            <name>MATLAB_Builder_for_Java_Language</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Builder JA</label>
+            <name>MATLAB_Builder_JA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Builder NE</label>
+            <name>MATLAB_Builder_NE</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB C Math Library</label>
+            <name>MATLAB_C_Math_Library</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB C/C++ Graphics Library</label>
+            <name>MATLAB_C_C_Graphics_Library</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB C/C++ Math Library</label>
+            <name>MATLAB_C_C_Math_Library</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Coder</label>
+            <name>MATLAB_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Compiler</label>
+            <name>MATLAB_Compiler</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Compiler SDK</label>
+            <name>MATLAB_Compiler_SDK</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Distributed Computing Server</label>
+            <name>MATLAB_Distributed_Computing_Server</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Production Server</label>
+            <name>MATLAB_Production_Server</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Report Generator</label>
+            <name>MATLAB_Report_Generator</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Runtime Server</label>
+            <name>MATLAB_Runtime_Server</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MATLAB Web Server</label>
+            <name>MATLAB_Web_Server</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MatrixVB</label>
+            <name>MatrixVB</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mixed-Signal Blockset</label>
+            <name>Mixed_Signal_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>MMLE3 Identification Toolbox</label>
+            <name>MMLE3_Identification_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Model Predictive Control Toolbox</label>
+            <name>Model_Predictive_Control_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Model-Based Calibration Toolbox</label>
+            <name>Model_Based_Calibration_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Motorola DSP Developers Kit</label>
+            <name>Motorola_DSP_Developers_Kit</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Mu-Analysis and Synthesis Toolbox</label>
+            <name>Mu_Analysis_and_Synthesis_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>NAG Foundation</label>
+            <name>NAG_Foundation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Neural Network Toolbox</label>
+            <name>Neural_Network_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>OPC Toolbox</label>
+            <name>OPC_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Optimization Toolbox</label>
+            <name>Optimization_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Parallel Computing Toolbox</label>
+            <name>Parallel_Computing_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Partial Differential Equation Toolbox</label>
+            <name>Partial_Differential_Equation_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Phased Array System Toolbox</label>
+            <name>Phased_Array_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Bug Finder</label>
+            <name>Polyspace_Bug_Finder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Client for Ada</label>
+            <name>Polyspace_Client_for_Ada</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Client for C/C++</label>
+            <name>Polyspace_Client_for_C_C</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Code Prover</label>
+            <name>Polyspace_Code_Prover</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Model Link SL</label>
+            <name>Polyspace_Model_Link_SL</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Model Link TL</label>
+            <name>Polyspace_Model_Link_TL</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Server for Ada</label>
+            <name>Polyspace_Server_for_Ada</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace Server for C/C++</label>
+            <name>Polyspace_Server_for_C_C</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Polyspace UML Link RH</label>
+            <name>Polyspace_UML_Link_RH</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Powertrain Blockset</label>
+            <name>Powertrain_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Predictive Maintenance Toolbox</label>
+            <name>Predictive_Maintenance_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Primary and Secondary School Suite</label>
+            <name>Primary_and_Secondary_School_Suite</name>
+        </dataCategory>
+        <dataCategory>
+            <label>QFT Frequency Domain Control Design Tlbx</label>
+            <name>QFT_Frequency_Domain_Control_Design_Tlbx</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Real-Time Toolbox</label>
+            <name>Real_Time_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Real-Time Windows Target</label>
+            <name>Real_Time_Windows_Target</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Real-Time Workshop Ada Coder</label>
+            <name>Real_Time_Workshop_Ada_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Requirements Management Interface</label>
+            <name>Requirements_Management_Interface</name>
+        </dataCategory>
+        <dataCategory>
+            <label>RF Toolbox</label>
+            <name>RF_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Risk Management Toolbox</label>
+            <name>Risk_Management_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Robotics System Toolbox</label>
+            <name>Robotics_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Robust Control Toolbox</label>
+            <name>Robust_Control_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Sensor Fusion and Tracking Toolbox</label>
+            <name>Sensor_Fusion_and_Tracking_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Signal Processing Toolbox</label>
+            <name>Signal_Processing_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimBiology</label>
+            <name>SimBiology</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimDriveline</label>
+            <name>SimDriveline</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimElectronics</label>
+            <name>SimElectronics</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimEvents</label>
+            <name>SimEvents</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimHydraulics</label>
+            <name>SimHydraulics</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimMechanics</label>
+            <name>SimMechanics</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimPowerSystems</label>
+            <name>SimPowerSystems</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SimRF</label>
+            <name>SimRF</name>
+        </dataCategory>
+        <dataCategory>
+            <label>RF Blockset</label>
+            <name>RF_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simscape</label>
+            <name>Simscape</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink 3D Animation</label>
+            <name>Simulink_3D_Animation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Accelerator</label>
+            <name>Simulink_Accelerator</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Accelerator - Former Version</label>
+            <name>Simulink_Accelerator_Former_Version</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Check</label>
+            <name>Simulink_Check</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Code Inspector</label>
+            <name>Simulink_Code_Inspector</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Coder</label>
+            <name>Simulink_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Control Design</label>
+            <name>Simulink_Control_Design</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Coverage</label>
+            <name>Simulink_Coverage</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Design Optimization</label>
+            <name>Simulink_Design_Optimization</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Design Verifier</label>
+            <name>Simulink_Design_Verifier</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Desktop Real-Time</label>
+            <name>Simulink_Desktop_Real_Time</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Fixed Point</label>
+            <name>Simulink_Fixed_Point</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink HMI Design</label>
+            <name>Simulink_HMI_Design</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Model Diff US Contractor</label>
+            <name>Simulink_Model_Diff_US_Contractor</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Parameter Estimation</label>
+            <name>Simulink_Parameter_Estimation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Performance Tools</label>
+            <name>Simulink_Performance_Tools</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink PLC Coder</label>
+            <name>Simulink_PLC_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Real-Time</label>
+            <name>Simulink_Real_Time</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Report Generator</label>
+            <name>Simulink_Report_Generator</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Requirements</label>
+            <name>Simulink_Requirements</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Response Optimization</label>
+            <name>Simulink_Response_Optimization</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Test</label>
+            <name>Simulink_Test</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Simulink Verification and Validation</label>
+            <name>Simulink_Verification_and_Validation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Spline Toolbox</label>
+            <name>Spline_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Spreadsheet Link EX</label>
+            <name>Spreadsheet_Link_EX</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stateflow</label>
+            <name>Stateflow</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Stateflow Coder</label>
+            <name>Stateflow_Coder</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Statistics Toolbox</label>
+            <name>Statistics_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Statistics and Machine Learning Toolbox</label>
+            <name>Statistics_and_Machine_Learning_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Symbolic Math Toolbox</label>
+            <name>Symbolic_Math_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>System Identification Toolbox</label>
+            <name>System_Identification_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>System Composer</label>
+            <name>System_Composer</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SystemTest</label>
+            <name>SystemTest</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Target Support Package</label>
+            <name>Target_Support_Package</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Target Support Package FM5</label>
+            <name>Target_Support_Package_FM5</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Target Support Package IC1</label>
+            <name>Target_Support_Package_IC1</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Target Support Package TC2</label>
+            <name>Target_Support_Package_TC2</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Target Support Package TC6</label>
+            <name>Target_Support_Package_TC6</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Text Analytics Toolbox</label>
+            <name>Text_Analytics_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>ThingSpeak</label>
+            <name>ThingSpeak</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Trading Toolbox</label>
+            <name>Trading_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Vehicle Dynamics Blockset</label>
+            <name>Vehicle_Dynamics_Blockset</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Vehicle Network Toolbox</label>
+            <name>Vehicle_Network_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Vision HDL Toolbox</label>
+            <name>Vision_HDL_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Wavelet Toolbox</label>
+            <name>Wavelet_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>WLAN System Toolbox</label>
+            <name>WLAN_System_Toolbox</name>
+        </dataCategory>
+        <dataCategory>
+            <label>xPC Target</label>
+            <name>xPC_Target</name>
+        </dataCategory>
+        <dataCategory>
+            <label>xPC Target Embedded Option</label>
+            <name>xPC_Target_Embedded_Option</name>
+        </dataCategory>
+        <dataCategory>
+            <label>xPC TargetBox</label>
+            <name>xPC_TargetBox</name>
+        </dataCategory>
+        <label>All Products</label>
+        <name>All_Products</name>
+    </dataCategory>
+    <label>Product</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

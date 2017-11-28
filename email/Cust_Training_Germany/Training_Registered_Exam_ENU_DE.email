@@ -1,0 +1,29 @@
+Sehr geehrte(r) [MW Greeting] {!Enrollment__c.Enrollee_Name__c},
+
+wir danken Ihnen für die Anmeldung zu folgender Schulung, die wir hiermit bestätigen:
+
+Kursname: {!Enrollment__c.Class__c}
+Datum:      {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c}
+Ort:           {!Class__c.City__c}, {!Class__c.Country__c}
+Zeit:          {!Class__c.Start_Time__c} until {!Class__c.End_Time__c} Uhr
+
+Informationen über den Schulungsort finden Sie unter
+
+http://www.mathworks.de/services/training/policies/directions.html
+
+Die Schulung beginnt jeweils um 09.00 Uhr, Ende um 17.00 Uhr.
+
+Die Schulungsunterlagen erhalten Sie am 1. Schulungstag. Die Rechnungstellung erfolgt separat an die von Ihnen angegebene Adresse.
+
+Eine kostenfreie Stornierung der Anmeldung ist bis 7 Arbeitstage vor Schulungsbeginn schriftlich per Brief, Fax oder eMail möglich. Geht eine Stornierung später bei uns ein, werden 75 % der Schulungsgebühren in Rechnung gestellt; bei Nichterscheinen ohne vorherige schriftliche Stornierung wird die volle Teilnahmegebühr berechnet.
+
+Muss eine Schulung aus organisatorischen Gründen seitens The MathWorks GmbH abgesagt werden, entstehen über die Teilnahmegebühren hinaus keine weiteren Ansprüche.
+
+Mit freundlichen Grüßen aus München
+
+Training Services
+Tel.: +49 89 45235 6700
+Fax: +49 89 45235 6710
+mailto:schulung@mathworks.de
+
+The MathWorks GmbH | Friedlandstr.18 | 52064 Aachen | Amtsgericht Aachen | HRB 8082 | Geschäftsführer: Andreas Schindler, Steven D. Barbo

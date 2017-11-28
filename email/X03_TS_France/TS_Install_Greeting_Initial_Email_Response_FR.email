@@ -1,0 +1,11 @@
+Bonjour {!Contact.Salutation} {!Contact.LastName}, 
+
+Je vous écris concernant votre dossier n°{!Case.CaseNumber} : {!Case.Subject}.
+
+
+
+Merci de bien vouloir conserver le Reference ID en bas de cet e-mail dans toute correspondance future concernant ce dossier.
+
+Cordialement,
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send to author if you find out about their book and there is no book project yet created. Gives them information on MathWorks and gives them a link to apply.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Book Project Lead</name>
+    <style>none</style>
+    <subject>MathWorks Book Program</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

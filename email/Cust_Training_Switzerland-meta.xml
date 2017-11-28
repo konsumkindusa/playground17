@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Cust Training Switzerland</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>MathWorks_Customer_Services</role>
+        <role>MathWorks_General_Users</role>
+        <role>MathWorks_Marketing</role>
+        <roleAndSubordinatesInternal>AE_PE</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MW_Customer_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MathWorks_Revenue_Accounting_and_Controls</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>MathWorks_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Training_Services</roleAndSubordinatesInternal>
+    </sharedTo>
+</EmailFolder>

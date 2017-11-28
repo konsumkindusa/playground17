@@ -1,0 +1,27 @@
+Trainops@mathworks.com
+
+Hello Training Group,
+
+This Connections Program member is eligible for a 30% discount. Please see details below on the training they are requesting. Please follow up with the partner to confirm availability, provide a quote, and coordinate payment. 
+
+Kind regards, 
+Dana Wright 
+MathWorks Connections Program 
+
+Number attending training: [#]
+
+Student name(s) [NAME] [EMAIL]
+
+Course title(s) [TITLE]
+
+Date(s) [DATE]
+
+Location: [LOCATION]
+
+Regards,
+
+{!User.Email_Template_Signature__c}
+
+Case: {!Case.CaseNumber}
+
+{!EmailMessage.TextBody}

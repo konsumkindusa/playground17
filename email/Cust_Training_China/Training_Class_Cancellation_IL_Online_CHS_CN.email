@@ -1,0 +1,20 @@
+尊敬的 {!Contact.Name},
+
+很抱歉通知您，您下面的课程已取消。
+
+
+课程名称: {!Enrollment__c.Class__c}  
+日期:  {!Enrollment__c.Display_Start_Date__c} 至 {!Enrollment__c.Display_End_Date__c} 
+
+为了收到该课程的全额退款，请致电培训部并提供付款信息。下面有我们的公开课培训安排链接，请您花几分钟时间浏览。若您对其他课程感兴趣并想参加，请致电[PHONE]或直接回复本邮件，告诉我们课程名称和地点。
+
+{!Class__c.Sponsor_Office_Training_URL__c}
+
+对此造成的不便，我们深感歉意。
+
+谢谢，
+Training Services
+
+{!Class__c.Sponsor_Office_Signature__c} 
+
+若培训课程因 MathWorks 无力可控因素而不能如期进行，MathWorks 将负责退还所报名课程费用或将您转到其他等价或价格更低的课程。MathWorks 不会退还课程本身费用之外的任何费用。"

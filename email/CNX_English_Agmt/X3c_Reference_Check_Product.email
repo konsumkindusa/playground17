@@ -1,0 +1,32 @@
+Dear [REFERENCE],
+
+{!Partner_Agreement__c.Account__c} has recently applied to become a partner in the MathWorks Connections Program with their product, {!Partner_Agreement__c.Partner_Agreement_Name__c}, that is linked to MATLAB and Simulink.
+
+Part of the application review process is to contact customers that have used the MATLAB based product under consideration. Your name was provided to me as one such reference. Please take a moment and answer the following questions. Your prompt reply is greatly appreciated as this application cannot be completed until your comments have been received.
+
+===================================================== 
+** All information collected will be held Confidential by MathWorks, Inc. **
+===================================================== 
+
+1. Have you used the product and has it met your needs? If yes, how long have you been using it?
+
+2. Does this product work satisfactorily with MathWorks products?
+
+3. Please describe your relationship to this company? (customer, partner, etc.)
+
+4. Have you used their Technical Support and did you find it satisfactory? If not, please explain.
+
+5. Would you recommend this product to others? With what restrictions, if any?
+
+6. Are there any additional comments or issues that The MathWorks should be aware of?
+
+======================================================
+
+Please send your response to <connections@mathworks.com>. If you have any questions regarding this request, or if I can help you in any way, please let me know.
+
+Thank you very much for your assistance.
+
+Best Regards,
+{!User.Email_Template_Signature__c} 
+
+Agreement: {!Partner_Agreement__c.Name}

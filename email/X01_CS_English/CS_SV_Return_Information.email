@@ -1,0 +1,14 @@
+Hello {!Case.Contact},
+
+Thank you for contacting MathWorks regarding returning the MATLAB® & Simulink® Student software purchased on Order XXXXX. We have submitted your request to our Order department, once complete we will send you an email confirming this transaction.
+
+Licensee shall not attempt to access or use Programs, or copies of Programs, that Licensee is not currently licensed to use. Licensee is required to remove all archival copies of the programs mentioned above under license number ##### from their systems and refrain from using again without first entering into a valid Software License Agreement with MathWorks. 
+
+If you need further assistance regarding this request, reply to this email preserving the Reference ID listed below. Please submit any new requests here: www.mathworks.com/support/servicerequests/create.html
+
+Thank you,
+
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

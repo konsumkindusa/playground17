@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Curriculum Dev Award Notification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Academic Support - CD Award Notification</name>
+    <style>none</style>
+    <subject>MathWorks Monetary Support Notification - {!Academic_Support_Project__c.Account__c} – (A#: {!Academic_Support_Project__c.AccountId__c})</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

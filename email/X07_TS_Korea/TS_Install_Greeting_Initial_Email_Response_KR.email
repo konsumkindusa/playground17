@@ -1,0 +1,18 @@
+{!Contact.LastName}{!Contact.FirstName}님, 안녕하세요.
+
+매스웍스 코리아 입니다.
+[Sending Korean Installation Guide – Manually Installation]
+첨부하여 드리는 한글 설치 가이드의 13page 부터 참고하시어 Manually Activation을 하시어 File Installation Key와 라이선스 파일을 다운로드 하시기 바랍니다.
+[Sending Korean Installation Guide – Manually download]
+첨부하여 드리는 한글 설치 가이드의 6page 부터 참고하시어 Manually download를 합니다.
+
+[Sending Korean Installation Guide – Activation Trial license]
+13page부터 참조하시어 Manually installation을 진행합니다. 16page의 6-3의 주황색 'My Licenses' 탭을 클릭하여 Trials 를 선택하시면 발급받으신 Trial license에 대한 Activation을 진행하실 수 있습니다.
+
+향후 지원 요청 시 http://www.mathworks.co.kr/support/contact_us/index.html 의 주소로 요청하여 주시거나 www.mathworks.co.kr에 로그인 후 오른쪽 상단의 My Account 클릭 > 왼쪽 메뉴의 Create Service Request 를 통하여 요청하여 주시면 보다 빠른 지원이 가능합니다.
+
+감사합니다.
+xxx 드림,
+MathWorks Korea, LLC.
+{!User.Email_Template_Signature__c} 
+{!User.Disclosure__c}

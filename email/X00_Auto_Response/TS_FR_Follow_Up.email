@@ -1,0 +1,24 @@
+Dear {!Contact.FirstName},
+
+Cher(e) {!Contact.FirstName} {!Contact.LastName},
+
+
+Ce message concerne votre demande ouverte aupres de notre service support technique  “{!Case.Subject}” Case #{!Case.CaseNumber}.
+
+Je vous ai contacte recemment pour obtenir des informations complementaires concernant votre question technique. A ce jour, nous n’avons pas recu de reponse de votre part. Si vous avez encore besoin de nos services, veuillez repondre a ce message avec les informations complementaires demandees, tout en gardant le numero de dossier Reference ID indique plus bas.
+
+Pour toute nouvelle demande de support technique, nous vous invitons a soumettre celle-ci par l’intermediaire de notre formulaire en ligne :
+http://www.mathworks.com/support/servicerequests/index.html?s_cid=speml
+
+
+Sincères salutations,
+
+L’equipe Support Technique
+
+MathWorks SAS,
+www.mathworks.fr
+
+Ce message est une reponse generee automatiquement
+
+
+{!Case.Thread_Id}

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>for capturing info when the Case is for MDCS</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Accounts_configured_with_AD__c</fullName>
+        <description>capture if the account is configured with AD for the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>capture if the account is configured with AD for the MDCS Escalation</inlineHelpText>
+        <label>Accounts configured with AD</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Additional_Notes__c</fullName>
+        <description>Notes for configuration and environment for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes for configuration and environment for MDCS Escalation</inlineHelpText>
+        <label>Additional Notes</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>All_Computers_on_same_domain__c</fullName>
+        <description>Are all the computers on the same domain for the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Are all the computers on the same domain for the MDCS Escalation</inlineHelpText>
+        <label>All Computers on same domain</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Automated_Validation__c</fullName>
+        <description>Capture if the MDCS has automated validation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture if the MDCS has automated validation</inlineHelpText>
+        <label>Automated Validation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Failed – Step 1: Connection Test</fullName>
+                    <default>false</default>
+                    <label>Failed – Step 1: Connection Test</label>
+                </value>
+                <value>
+                    <fullName>Failed – Step 2: Job Test</fullName>
+                    <default>false</default>
+                    <label>Failed – Step 2: Job Test</label>
+                </value>
+                <value>
+                    <fullName>Failed – Step 3: SPMD Job Test</fullName>
+                    <default>false</default>
+                    <label>Failed – Step 3: SPMD Job Test</label>
+                </value>
+                <value>
+                    <fullName>Failed – Step 4: Pool job test</fullName>
+                    <default>false</default>
+                    <label>Failed – Step 4: Pool job test</label>
+                </value>
+                <value>
+                    <fullName>Failed – Step 5: Parpool</fullName>
+                    <default>false</default>
+                    <label>Failed – Step 5: Parpool</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>MDCS_Escalations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Cluster_Location__c</fullName>
+        <description>Capture the Cluster Location of an MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the Cluster Location of an MDCS Escalation</inlineHelpText>
+        <label>Cluster Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Cloud</fullName>
+                    <default>false</default>
+                    <label>Cloud</label>
+                </value>
+                <value>
+                    <fullName>Local</fullName>
+                    <default>false</default>
+                    <label>Local</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cluster_OS__c</fullName>
+        <description>Capture the Cluster OS of the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the Cluster OS of the MDCS Escalation</inlineHelpText>
+        <label>Cluster OS</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Operating_System</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cluster_Platform__c</fullName>
+        <description>Capture the Cluster Platform of the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the Cluster Platform of the MDCS Escalation</inlineHelpText>
+        <label>Cluster Platform</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Platform</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Connectivity_test_in_Admin_Center__c</fullName>
+        <description>Capture if the MDCS completed connectivity test in admin center</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture if the MDCS completed connectivity test in admin center</inlineHelpText>
+        <label>Connectivity test in Admin Center</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Count_of_Worker_Nodes__c</fullName>
+        <description>Number of worker node for the MDCS Escalaion</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of worker node for the MDCS Escalaion</inlineHelpText>
+        <label>Count of Worker Nodes</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_of_Workers__c</fullName>
+        <description>Number of workers for the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of workers for the MDCS Escalation</inlineHelpText>
+        <label>Count of Workers</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Details_screen_info_attached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicate if the Details screen is attached to the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate if the Details screen is attached to the MDCS Escalation</inlineHelpText>
+        <label>Details screen info attached</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MATLAB_release__c</fullName>
+        <description>Capture the MATLAB release</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the MATLAB release</inlineHelpText>
+        <label>MATLAB release</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MDCS_Installed_Licensed__c</fullName>
+        <description>capture if the MDCS is installed and licensed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>capture if the MDCS is installed and licensed</inlineHelpText>
+        <label>MDCS Installed &amp; Licensed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MDCS_Release__c</fullName>
+        <description>Capture the release of MDCS for the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the release of MDCS for the MDCS Escalation</inlineHelpText>
+        <label>MDCS Release</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ML_PCT_Installed__c</fullName>
+        <description>capture if the MDCS was ML &amp; PCT installed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>capture if the MDCS was ML &amp; PCT installed</inlineHelpText>
+        <label>ML &amp; PCT Installed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manual_Validation_Results_attached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicate is the validation results are attached to the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate is the validation results are attached to the MDCS Escalation</inlineHelpText>
+        <label>Manual Validation Results attached</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Manual_Validation__c</fullName>
+        <description>Capture if the MDCS has manual validation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture if the MDCS has manual validation</inlineHelpText>
+        <label>Manual Validation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Failed_Independent_Job</fullName>
+                    <default>false</default>
+                    <label>Failed_Independent_Job</label>
+                </value>
+                <value>
+                    <fullName>Failed – SPMD Job</fullName>
+                    <default>false</default>
+                    <label>Failed – SPMD Job</label>
+                </value>
+                <value>
+                    <fullName>Failed – Parpool</fullName>
+                    <default>false</default>
+                    <label>Failed – Parpool</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ping_Fully_Qualified_Hostname2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping Fully Qualified Hostname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_Fully_Qualified_Hostname3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalations</description>
+        <externalId>false</externalId>
+        <label>Ping Fully Qualified Hostname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_Fully_Qualified_Hostname__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping Fully Qualified Hostname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_IP_Address2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping IP Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_IP_Address3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping IP Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_IP_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping IP Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_Short_Hostname2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping Short Hostname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_Short_Hostname3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping Short Hostname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ping_Short_Hostname__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS Escalation</description>
+        <externalId>false</externalId>
+        <label>Ping Short Hostname</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Run_Test_Connectivity_in_Admin_Center__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for MDCS</description>
+        <externalId>false</externalId>
+        <label>Run Test Connectivity in Admin Center</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Scheduler__c</fullName>
+        <description>to capture the Scheduler for an MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>to capture the Scheduler for an MDCS Escalation</inlineHelpText>
+        <label>Scheduler</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Scheduler</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submission_Node_Location__c</fullName>
+        <description>Capture the submission node location of the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the submission node location of the MDCS Escalation</inlineHelpText>
+        <label>Submission Node Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Within Cluster</fullName>
+                    <default>false</default>
+                    <label>Within Cluster</label>
+                </value>
+                <value>
+                    <fullName>Outside Cluster</fullName>
+                    <default>false</default>
+                    <label>Outside Cluster</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submission_OS__c</fullName>
+        <description>Capture the Submission OS of the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the Submission OS of the MDCS Escalation</inlineHelpText>
+        <label>Submission OS</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Operating_System</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submission_Platform__c</fullName>
+        <description>Capture the platform of the MDCS Escalation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture the platform of the MDCS Escalation</inlineHelpText>
+        <label>Submission Platform</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Platform</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Test_Between_Cluster_Nodes__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>===Test Between Cluster Nodes===</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Between_Sub_Worker_Nodes__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>===Test Between Sub/Worker Nodes===</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Between_Submission_Head_Node__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>===Test Between Submission/Head Node===</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>more_info_MDCS_link1__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://www.mathworks.com/matlabcentral/answers/311099-why-does-parpool-fail-validation-on-my-client-node-when-using-an-mdcs-cluster&quot;, &quot;ARTICLE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>more info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>more_info_MDCS_link2__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://www.mathworks.com/matlabcentral/answers/310163&quot;, &quot;ARTICLE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>more info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>more_info_MDCS_link3__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://www.mathworks.com/matlabcentral/answers/307175&quot;, &quot;ARTICLE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>more info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>more_info_MDCS_link4__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://www.mathworks.com/matlabcentral/answers/130554&quot;, &quot;ARTICLE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>more info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>more_info_MDCS_link5__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://www.mathworks.com/matlabcentral/answers/319356&quot;, &quot;ARTICLE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>more info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>output_txt_from_dmlworker_attached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicate if the output.txt file is attached</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate if the output.txt file is attached</inlineHelpText>
+        <label>output.txt from dmlworker attached</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ver_attached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ver attached</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>MDCS Troubleshooting Checklist</label>
+    <nameField>
+        <label>Checklist Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MDCS Troubleshooting Checklists</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

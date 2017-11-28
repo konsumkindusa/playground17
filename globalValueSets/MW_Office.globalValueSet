@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MathWorks AB (Finland)</fullName>
+        <default>false</default>
+        <label>MathWorks AB (Finland)</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks AB (Sweden)</fullName>
+        <default>false</default>
+        <label>MathWorks AB (Sweden)</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Australia</fullName>
+        <default>false</default>
+        <label>MathWorks Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks China</fullName>
+        <default>false</default>
+        <label>MathWorks China</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks France</fullName>
+        <default>false</default>
+        <label>MathWorks France</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Germany</fullName>
+        <default>false</default>
+        <label>MathWorks Germany</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks India</fullName>
+        <default>false</default>
+        <label>MathWorks India</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Italy</fullName>
+        <default>false</default>
+        <label>MathWorks Italy</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Japan</fullName>
+        <default>false</default>
+        <label>MathWorks Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Korea</fullName>
+        <default>false</default>
+        <label>MathWorks Korea</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Natick</fullName>
+        <default>true</default>
+        <label>MathWorks Natick</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Netherlands</fullName>
+        <default>false</default>
+        <label>MathWorks Netherlands</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Spain</fullName>
+        <default>false</default>
+        <label>MathWorks Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Switzerland</fullName>
+        <default>false</default>
+        <label>MathWorks Switzerland</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks UK</fullName>
+        <default>false</default>
+        <label>MathWorks UK</label>
+    </customValue>
+    <customValue>
+        <fullName>UNKNOWN</fullName>
+        <default>false</default>
+        <label>UNKNOWN</label>
+    </customValue>
+    <customValue>
+        <fullName>MathWorks Ireland</fullName>
+        <default>false</default>
+        <label>MathWorks Ireland</label>
+    </customValue>
+    <description>Currently used on User object for Employee Data Feed</description>
+    <masterLabel>MW Office</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

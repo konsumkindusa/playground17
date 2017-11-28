@@ -1,0 +1,251 @@
+<!--
+/**
+* @author Original: Limo Sadalla - Cloud Sherpas/Mathworks, Last Modified:kishore AN, Robbie Macatbag, Kishore AN,Jaspreet Singh
+* @date Original: 26 June 2013, Last Modified:31 July 2013, 08 August 2013,12 Dec 2013
+* @description page on Customer Portal for case list views 
+* @Jaspreet Singh : Added javascript to change  Date/Time Opened date format to DD MMM YYYY
+*/ 
+-->
+<apex:page standardController="Case" extensions="cp_CaseControllerExtension" recordSetvar="cases" sidebar="false" showHeader="false" language="{!language}">
+<!-- 
+<apex:stylesheet value="{!$Resource.MWHeaderStyles}"/>
+<apex:includeScript value="{!$Resource.jquery_172}"/>
+<apex:stylesheet value="{!$Resource.MWnextgenstyles}"/>
+<apex:stylesheet value="{!$Resource.MWExternalStyle960}"/>
+ -->
+<head>
+    <title>
+      My Service Request - View
+    </title>
+</head>
+
+<!-- 
+<style>
+    .list td a{ color: #000 !important; text-decoration: none; }
+    form#filter_element { padding-top: 10px; margin-left: 0px; display: inline-block; } 
+    .bNext { padding-top: 3px; margin-right: 30px; display: inline-block; float: right; }
+   .secondaryPalette{width:50%, margin-left:25%}
+   .mwheader{width:50%, margin-left:25%}h1 {
+      font-weight: bold !important;
+      letter-spacing: 0em !important;
+      }
+      form {
+        font-size: 13px !important;
+      }
+      html body {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        //font-size: 62.5%;
+        color: #3C3C3C;
+        line-height: 140%;
+        background: #D6D6D6 url({!$Resource.BodyBackground}) repeat-x top left;
+        overflow-y: scroll;
+        -webkit-font-smoothing: antialiased;
+      }
+      .section_image h1{
+          font-size:1.7em;;
+          font-weight: normal!important;
+      }
+      
+       .mwa-nav a
+      {
+      font-size: 10.8833px;
+      }
+
+     .form_element .dropdown, .dropdown {width:auto; border:none;}
+     .mwbutton, .btn {float:none;}
+	 .fat_footer {background: #333; border: none;}
+	 .logo_container {position: relative;}
+	 .footer .social_media_icons {width: auto;}     
+	
+</style>
+ -->
+
+<body class="search_template" id="nextgen_b">
+    <apex:include pageName="cp_header" />
+<apex:outputPanel layout="block" styleclass="content_container" >
+<apex:outputPanel layout="block" styleclass="container" >
+<div class="row">
+<apex:outputPanel layout="block" styleClass="col-xs-12">
+<apex:outputPanel layout="block">
+    <apex:outputPanel layout="block">
+        <apex:outputPanel layout="block" id="content_container">
+
+        <h1 class="mwheader">{!$Label.MySR_Title}</h1>
+              
+        <apex:listViews type="case" />
+            <br/>
+            <apex:form >        
+                <apex:commandButton value="{!$Label.MySR_New_SR_Button}" id="CreateRequest" action="/apex/cp_case_new?cc={!(LEFT($CurrentPage.parameters.CC,2))}" style="float:right" styleClass="mwbutton rounded secondary"/><br/>
+            </apex:form> 
+        <br/>
+        
+         <script>
+       //  var PingSpURL = "https://www-external-dev.mathworks.com/accesslogin/sso/saml?type=SFEXT_SSO&?PartnerSpId=salesforce.com.sp";
+       //  var siteLoginPage = "&TargetResource={!$Site.CurrentSiteUrl}siteLogin?startUrl={!$Site.OriginalUrl}cp_case_new";
+       //  window.location = PingSpURL+siteLoginPage;
+
+            
+            //$(".bFilterView").css("margin-left","17px");
+            
+            $(".actionColumn").css("display","none");    
+            $(".actionLink").css("display","none");
+            
+            //$(".bNext").css("margin-right","30px");
+            
+            $(".listHeader").css("display","none");
+            
+            //$(".sortAsc").css("background-image", "url(https://www.mathworks.com/support/images/sorting_arrow_up.gif)");
+            //$(".sortAsc").css("background-repeat","no-repeat");
+            //$(".sortAsc").css("background-position","0 50%");            
+            //$(".sortDesc").css("background-image", "url(https://www.mathworks.com/support/images/sorting_arrow_dwn.gif)");
+            //$(".sortDesc").css("background-repeat","no-repeat");
+            //$(".sortDesc").css("background-position","0 50%");
+            //$(".sortDesc").css("margin-left","5px");
+            //$(".mwbutton").css("padding","6px 10px");
+            //$(".mwbutton").css("margin-left","30px");
+            //$(".bPageBlock .pbBody").css("padding","6px 30px 0px");
+            //$(".bPageBlock").css("margin-bottom","0px");
+           
+           
+           var loc = parent.location.href.split("?")[0];
+           function navigateToPage(pageUrl){     
+               parent.location.href= loc + '?page=' + pageUrl;
+           }
+           $(function(){           
+             $("[name='newCase']").attr("onClick", "navigateToPage('cp_case_new');")
+             
+            $('a[href*="500"]').each(function(){
+            
+                   var pageUrl = '/apex/cp_case_detail?cc={!(LEFT($CurrentPage.parameters.CC,2))}';
+                   if ($(this).html()=='Edit'){
+                       pageUrl = '/apex/cp_case_edit?cc={!(LEFT($CurrentPage.parameters.CC,2))}';
+                   }else if ($(this).html()=='Del'){
+                       pageUrl = '/apex/cp_case_delete?cc={!(LEFT($CurrentPage.parameters.CC,2))}';
+                   }
+                   $(this).attr('target', '_parent');
+                   $(this).attr("href", pageUrl + '&id='+$(this).attr('href').match(/[a-zA-Z0-9]{15}|[a-zA-Z0-9]{18}/)[0]);
+             });
+
+              /*Added by Jaspreet 
+              Descrption : This method has been added to change the format of dates from MM/DD/YYYY 00:00:00 (as of now all CP users locale is US) to DD MMM YYYY
+                           and label of of Date/time Opened to Date Submitted */
+              var columnNumber = 5; // Default Column of date time opened is 5
+            
+            //HW 2118970 
+            document.getElementsByName('j_id0:j_id17:fcf')[0].options[0].innerHTML = '{!$Label.MySR_All}'; 
+            document.getElementsByName('j_id0:j_id17:fcf')[0].options[1].innerHTML = '{!$Label.MySR_Closed}'; 
+            document.getElementsByName('j_id0:j_id17:fcf')[0].options[2].innerHTML = '{!$Label.MySR_Open}'; 
+            //HW 2118970 
+
+            $("th.zen-deemphasize:nth-child(2) > a:nth-child(1)").text('{!$Label.MySR_Case_Number}'); // Change label of case number
+              if($("#j_id0\\:j_id17\\:fcf").val() == '00Bi0000001GfJ2')
+                {
+                    columnNumber = 4; // Change date time open field column number
+                    $('.list tr td:nth-child(3), .list th.zen-deemphasize:nth-child(3)').remove(); // Hides contact column if selected view is Recently viewed
+                    $('.list tr td:nth-child(4), .list th.zen-deemphasize:nth-child(4)').remove(); // Hides status column if selected view is Recently viewed
+                    $('.list tr td:nth-child(5), .list th.zen-deemphasize:nth-child(5)').remove(); // Hides owner column if selected view is Recently viewed
+                } else {
+                    $("th.zen-deemphasize:nth-child(4) > a:nth-child(1)").text('{!$Label.MySR_Status}'); // Change label of status
+                }
+                
+             $('.list tr td:nth-child('+ columnNumber + ')').each(function(){ //change date format
+                  
+                  var arrSplitValues = this.innerHTML.split("/");
+                  
+                  if (arrSplitValues[0].length == 4) {
+	                  var dtMonth =arrSplitValues[1]; // this.innerHTML.substring(0,2); //Sub string date
+	                  if (dtMonth.substring(0,1) == '0') dtMonth = dtMonth.substring(1,2);
+	                  var dtDay = arrSplitValues[2].substring(0,2);  //this.innerHTML.substring(3,5); // Sub string month
+	                  var dtYear = arrSplitValues[0]; //Sub string year
+                  } else {
+	                  var dtMonth =arrSplitValues[0]; // this.innerHTML.substring(0,2); //Sub string date
+	                  var dtDay = arrSplitValues[1];  //this.innerHTML.substring(3,5); // Sub string month
+	                  var dtYear = arrSplitValues[2].substring(0,4); //Sub string year
+                  }
+                  
+                  switch (dtMonth) { // Switch statement to convert month from number to string
+                    case '1':
+                        dtMonth = 'Jan';
+                        break;
+                    case '2':
+                        dtMonth = 'Feb';
+                        break;
+                    case '3':
+                        dtMonth = 'Mar';
+                        break;
+                    case '4':
+                        dtMonth = 'Apr';
+                        break;
+                    case '5':
+                        dtMonth = 'May';
+                        break;
+                    case '6':
+                        dtMonth = 'Jun';
+                        break;
+                    case '7':
+                        dtMonth = 'Jul';
+                        break;
+                    case '8':
+                        dtMonth = 'Aug';
+                        break;
+                    case '9':
+                        dtMonth = 'Sep';
+                        break;
+                    case '10':
+                        dtMonth = 'Oct';
+                        break;
+                    case '11':
+                        dtMonth = 'Nov';
+                        break;
+                    case '12':
+                        dtMonth = 'Dec';
+                        break;
+                  } 
+                 this.innerHTML = dtDay+' '+dtMonth+' '+dtYear; // Join date month and year
+               
+              });
+              $("th.zen-deemphasize:nth-child("+ columnNumber + ") > a:nth-child(1)").text('{!$Label.MySR_Submitted_Date}');   // Change label of Date time opened               
+              $("th.zen-deemphasize:nth-child("+ columnNumber + ") > a:nth-child(1)").each(function(){
+              if(this.title == "Date/Time Opened - Sorted ascending"
+                 ||this.title == "Submitted Date - Sorted ascending")  // Add Ascending title, alt and image attributes 
+              {
+               var imageUp = $('<img id="sortAsc">'); 
+               imageUp.attr('src', 'https://www.mathworks.com/support/images/sorting_arrow_up.gif');
+               imageUp.attr('title','Sorted - Ascending');
+               imageUp.attr('alt','Sorted Ascending');               
+               imageUp.attr('style','margin-left: 5px;');               
+               $(this).append(imageUp);
+               $(this).attr('title','Submitted Date - Sorted ascending');
+              }else if(this.title =="Date/Time Opened - Sorted descending"
+                    ||this.title == "Submitted Date - Sorted descending")// Add Descending title, alt and image attributes 
+              {
+                var imageDown = $('<img id="sortAsc">'); 
+                imageDown.attr('src', 'https://www.mathworks.com/support/images/sorting_arrow_dwn.gif');
+                imageDown.attr('title','Sorted Descending');
+                imageDown.attr('alt','Sorted Descending');               
+                imageDown.attr('style','margin-left: 5px;');               
+                $(this).append(imageDown);
+                $(this).attr('title','Submitted Date - Sorted descending');
+              } 
+              else if(this.title == "Date/Time Opened - Click to sort ascending")
+              {
+                $(this).attr('title','Submitted Date - Click to sort ascending');
+              } 
+              });
+              
+             });
+          
+ </script>
+ </apex:outputPanel>    
+ </apex:outputPanel>  
+ </apex:outputPanel>  
+ </apex:outputPanel>  
+ </div>
+ </apex:outputPanel> 
+ </apex:outputPanel>
+ <apex:include pageName="cp_footer" />
+ </body>
+</apex:page>

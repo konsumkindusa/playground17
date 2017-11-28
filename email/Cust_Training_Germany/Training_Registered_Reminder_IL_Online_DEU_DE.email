@@ -1,0 +1,20 @@
+Sehr geehrte(r) {!Contact.Name}, 
+
+mit dieser e-mail möchten wir Sie an den folgenden Trainingskurs, den Sie gebucht haben, erinnern: 
+
+Kursname: {!Enrollment__c.Class__c}  
+Datum: {!Enrollment__c.Display_Start_Date__c} to {!Enrollment__c.Display_End_Date__c} 
+Ort: {!Class__c.City__c},{!Class__c.Country__c}  
+Zeit: {!Class__c.Start_Time__c} until {!Class__c.End_Time__c} Uhr 
+
+Hier finden Sie Informationen zu den Schulungsorten: 
+
+http://www.mathworks.de/services/training/policies/directions.html 
+
+Eine kostenfreie Stornierung der Anmeldung ist bis 7 Arbeitstage vor Schulungsbeginn schriftlich per Brief, Fax oder eMail möglich. Geht eine Stornierung später bei uns ein, werden 25 % der Schulungsgebühren in Rechnung gestellt; bei Nichterscheinen ohne vorherige schriftliche Stornierung wird die volle Teilnahmegebühr berechnet. 
+
+Muss eine Schulung aus organisatorischen Gründen seitens The MathWorks GmbH abgesagt werden, entstehen über die Teilnahmegebühren hinaus keine weiteren Ansprüche. 
+
+Danke, 
+
+{!Class__c.Sponsor_Office_Signature__c}

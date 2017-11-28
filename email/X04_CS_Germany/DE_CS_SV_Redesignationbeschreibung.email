@@ -1,0 +1,32 @@
+Sehr geehrt{!Contact.Greeting__c} {!Contact.LastName},
+
+vielen Dank für ihre Anfrage nach einer neuen Aktivierung. 
+
+Seit Mitte August 2013 sind die ehemaligen Studenten- Version- Seriennummern in reguläre Lizenznummern gewandelt worden, welche Sie über Ihr MathWorks Account License Center unter: 
+https://www.mathworks.com/accesslogin/login.do?uri=http://www.mathworks.com/ 
+sehen und verwalten. 
+
+Um Ihre Studentenversion umzuziehen und erneut zu aktivieren, wählen Sie bitte eine nicht mehr benötigte Aktivierung aus, die Sie dann deaktivieren und deinstallieren und mit der gewünschten neuen Aktivierung ersetzen. Dies ist wichtig, da Sie gleichzeitig nicht mehr als 2 Aktivierungen führen und nur eine davon zeitgleich nutzen dürfen. Andernfalls erhalten Sie einen/den von Ihnen genannten/ Activation Error. 
+
+Bitte gehen Sie hierzu wie folgt vor: 
+1. Bestimmung der zu löschenden Aktivierung/en 
+2. Deinstallation der Aktivierung/en von Ihrem Rechner 
+3. Deaktivierung der Aktivierung/en über das MathWorks Account License Center 
+4. Neuaktivierung der Studenten Version auf den gewünschten neuen Rechner. 
+
+Um mehr über die Aktivierung einer Lizenz zu erfahren, besuchen Sie bitte aus Ihrem geöffneten MathWorks Account den Link ‘Activation‘: http://www.mathworks.com/support/activation/index.html?BB=1
+
+Um mehr über die Deaktivierung einer Lizenz zu erfahren besuchen Sie bitte den Link:
+http://www.mathworks.com/support/solutions/data/1-698KQP.html?solution=1-698KQP
+
+Sollten Sie weitere Auskunft zu dieser Anfrage benötigen, so antworten Sie bitte auf diese Email unter Beibehalt der unten verzeichneten Reference ID.
+
+Sollten Sie eine neue Anfrage stellen wollen, so nutzen Sie dazu bitte den Link: www.mathworks.com/support/servicerequests/create.html.
+
+Mit freundlichen Grüßen
+{!User.Email_Template_Signature__c}
++49-89-45235-6700, Option 3
+
+{!User.Disclosure__c}
+
+{!Case.CaseNumber}

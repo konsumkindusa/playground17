@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Trial Download follow-up 2nd Contact No Response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Trial Download follow-up 2nd Contact No Response</name>
+    <style>none</style>
+    <subject>Trial Download follow-up</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Module_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Module Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_CC_Addresses__c</fullName>
+        <description>Stores the value of CC Address coming from Email.</description>
+        <externalId>false</externalId>
+        <label>Email CC Addresses</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_From_Address__c</fullName>
+        <description>Stores the value of From Address from Email.</description>
+        <externalId>false</externalId>
+        <label>Email From Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_HTML_Body__c</fullName>
+        <description>Store the HTML Body of the Email.</description>
+        <externalId>false</externalId>
+        <label>Email HTML Body</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Header__c</fullName>
+        <description>Store the value of Header in Email.</description>
+        <externalId>false</externalId>
+        <label>Email Header</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>50</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Html_Body_Is_Truncated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Store value if the HTML Body is get Truncated or not.</description>
+        <externalId>false</externalId>
+        <label>Email Html Body Is Truncated</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Is_Valid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email is Valid</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Message_Id__c</fullName>
+        <description>Store the value of the  Message Id from Email.</description>
+        <externalId>false</externalId>
+        <label>Email Message Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Plain_Text_Body_Is_Truncated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Store if the Email Plain Text Body is truncated or not.</description>
+        <externalId>false</externalId>
+        <label>Email Plain Text Body Is Truncated</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_References__c</fullName>
+        <description>Containing the Email Address which it is replying to.</description>
+        <externalId>false</externalId>
+        <label>Email References</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Reply_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Reply To</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Subject__c</fullName>
+        <description>Store the Subject of Email.</description>
+        <externalId>false</externalId>
+        <label>Email Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_Text_Body__c</fullName>
+        <description>Contain the Text body of the email which is send.</description>
+        <externalId>false</externalId>
+        <label>Email Text Body</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_To_Addresses__c</fullName>
+        <description>Stores the Email address of the Receiver.</description>
+        <externalId>false</externalId>
+        <label>Email To Addresses</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_from_Name__c</fullName>
+        <description>Stores the value of Sender Name send&apos;s the Email</description>
+        <externalId>false</externalId>
+        <label>Email From Name</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Email_in_Reply_To__c</fullName>
+        <description>Store the email address of the previous mail to whom it is replying.</description>
+        <externalId>false</externalId>
+        <label>Email In ReplyTo</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UEH_Envelope_From_Address__c</fullName>
+        <description>Contains the email Address of the Sender in Envelope.</description>
+        <externalId>false</externalId>
+        <label>Envelope From Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Envelope_To_Address__c</fullName>
+        <description>Contain the Email Address of the Receiver.</description>
+        <externalId>false</externalId>
+        <label>Envelope To Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UEH_Status__c</fullName>
+        <description>Stores the Status of the Email : Accepted and Not Accepted.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blocked</fullName>
+                    <default>false</default>
+                    <label>Blocked</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>UEH Inbound Email Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>UEH_Status__c</columns>
+        <columns>UEH_Email_HTML_Body__c</columns>
+        <columns>UEH_Email_Text_Body__c</columns>
+        <columns>UEH_Envelope_To_Address__c</columns>
+        <columns>UEH_Email_from_Name__c</columns>
+        <columns>UEH_Email_From_Address__c</columns>
+        <columns>UEH_Email_Subject__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>6/1/2016 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>UEH_Email_From_Address__c</field>
+            <operation>contains</operation>
+            <value>sharepoint</value>
+        </filters>
+        <label>eric</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_UEH</fullName>
+        <columns>NAME</columns>
+        <columns>UEH_Envelope_From_Address__c</columns>
+        <columns>UEH_Email_Subject__c</columns>
+        <columns>Module_Name__c</columns>
+        <columns>UEH_Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All UEH</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>IEL-{0000}</displayFormat>
+        <label>UEH Inbound Email Log Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>UEH Inbound Email Logs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

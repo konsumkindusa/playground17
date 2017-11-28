@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Assignment Cover Letter</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS - License Change - Assignment Cover Letter</name>
+    <style>none</style>
+    <subject>Assignment and Assumption Cover Letter</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
