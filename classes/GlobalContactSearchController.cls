@@ -196,7 +196,7 @@ global class GlobalContactSearchController{
                     return null; 
                  } // DL:  END 1508448
 
-                //Check for proper jason string
+                //Check for proper Json string
                 //DL: 1508448 added && conJsonString != '' 
                 if (conJsonString!= null && conJsonString!='NotFound' && conJsonString != ''){
                 	System.Debug('Thinks JSON is proper ' + conJsonString);
