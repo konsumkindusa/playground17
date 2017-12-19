@@ -367,6 +367,18 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>AutorabitExtId__c</fullName>
+        <description>External Id created by AutoRABIT</description>
+        <externalId>true</externalId>
+        <label>AutorabitExtId__c</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Birthdate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -1637,6 +1649,7 @@ RIGHT(Id,11)
         <columns>First_Name_Latin__c</columns>
         <columns>Last_Name_Latin__c</columns>
         <columns>Contact_Role__c</columns>
+        <columns>CONTACT.LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CONTACT.CREATED_DATE</field>

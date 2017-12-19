@@ -695,6 +695,7 @@
         <members>Account.Account_Warning__c</members>
         <members>Account.Address_Changed_Date__c</members>
         <members>Account.AnnualRevenue</members>
+        <members>Account.AutorabitExtId__c</members>
         <members>Account.BillingAddress</members>
         <members>Account.Bypass_Fuzzy_Matching__c</members>
         <members>Account.CDS_Account_Id__c</members>
@@ -1078,6 +1079,7 @@
         <members>Case.Auto_Close_Date_Time__c</members>
         <members>Case.Auto_Close_Days__c</members>
         <members>Case.Auto_Close__c</members>
+        <members>Case.AutorabitExtId__c</members>
         <members>Case.BookProject__c</members>
         <members>Case.Browser_Version__c</members>
         <members>Case.Browsers__c</members>
@@ -1382,6 +1384,7 @@
         <members>Contact.AssistantName</members>
         <members>Contact.AssistantPhone</members>
         <members>Contact.Authentication_Status__c</members>
+        <members>Contact.AutorabitExtId__c</members>
         <members>Contact.Birthdate</members>
         <members>Contact.Book_Program_End__c</members>
         <members>Contact.Book_Program_Start__c</members>
@@ -2485,6 +2488,7 @@
         <members>Opportunity.Account_name_text__c</members>
         <members>Opportunity.Age_Days__c</members>
         <members>Opportunity.Amount</members>
+        <members>Opportunity.AutorabitExtId__c</members>
         <members>Opportunity.Batch_Evaluate__c</members>
         <members>Opportunity.Call_Attempts__c</members>
         <members>Opportunity.CampaignId</members>

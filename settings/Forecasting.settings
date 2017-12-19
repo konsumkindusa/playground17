@@ -255,6 +255,10 @@
             <label>Amount (User Currency)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N29000000ci43</field>
+            <label>AutorabitExtId__c</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N3100000Gk6KI</field>
             <label>Batch Evaluate</label>
         </opportunityListFieldsLabelMappings>
@@ -555,6 +559,7 @@
             <field>00Ni000000FJp86</field>
             <field>00Ni000000FHq0E</field>
             <field>00N3100000GMg5u</field>
+            <field>00N29000000ci43</field>
             <field>00N3100000Gk6KI</field>
             <field>00Ni000000FHq0F</field>
             <field>00Ni000000FHq0G</field>
@@ -802,6 +807,10 @@
             <label>Amount (User Currency)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N29000000ci43</field>
+            <label>AutorabitExtId__c</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N3100000Gk6KI</field>
             <label>Batch Evaluate</label>
         </opportunityListFieldsLabelMappings>
@@ -1102,6 +1111,7 @@
             <field>00Ni000000FJp86</field>
             <field>00Ni000000FHq0E</field>
             <field>00N3100000GMg5u</field>
+            <field>00N29000000ci43</field>
             <field>00N3100000Gk6KI</field>
             <field>00Ni000000FHq0F</field>
             <field>00Ni000000FHq0G</field>
@@ -1349,6 +1359,10 @@
             <label>Amount (User Currency)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N29000000ci43</field>
+            <label>AutorabitExtId__c</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N3100000Gk6KI</field>
             <label>Batch Evaluate</label>
         </opportunityListFieldsLabelMappings>
@@ -1649,6 +1663,7 @@
             <field>00Ni000000FJp86</field>
             <field>00Ni000000FHq0E</field>
             <field>00N3100000GMg5u</field>
+            <field>00N29000000ci43</field>
             <field>00N3100000Gk6KI</field>
             <field>00Ni000000FHq0F</field>
             <field>00Ni000000FHq0G</field>
@@ -1896,6 +1911,10 @@
             <label>Amount (User Currency)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N29000000ci43</field>
+            <label>AutorabitExtId__c</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N3100000Gk6KI</field>
             <label>Batch Evaluate</label>
         </opportunityListFieldsLabelMappings>
@@ -2196,6 +2215,7 @@
             <field>00Ni000000FJp86</field>
             <field>00Ni000000FHq0E</field>
             <field>00N3100000GMg5u</field>
+            <field>00N29000000ci43</field>
             <field>00N3100000Gk6KI</field>
             <field>00Ni000000FHq0F</field>
             <field>00Ni000000FHq0G</field>
@@ -2443,6 +2463,10 @@
             <label>Amount (User Currency)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N29000000ci43</field>
+            <label>AutorabitExtId__c</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N3100000Gk6KI</field>
             <label>Batch Evaluate</label>
         </opportunityListFieldsLabelMappings>
@@ -2743,6 +2767,7 @@
             <field>00Ni000000FJp86</field>
             <field>00Ni000000FHq0E</field>
             <field>00N3100000GMg5u</field>
+            <field>00N29000000ci43</field>
             <field>00N3100000Gk6KI</field>
             <field>00Ni000000FHq0F</field>
             <field>00Ni000000FHq0G</field>

@@ -369,6 +369,11 @@ Examples are for AE/PE users who are in special projects requiring Eloqua Engage
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.AutorabitExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.BillingAddress</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1735,6 +1740,11 @@ Examples are for AE/PE users who are in special projects requiring Eloqua Engage
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Auto_Close__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.AutorabitExtId__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3155,6 +3165,11 @@ Examples are for AE/PE users who are in special projects requiring Eloqua Engage
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.Authentication_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.AutorabitExtId__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7695,6 +7710,11 @@ Examples are for AE/PE users who are in special projects requiring Eloqua Engage
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Amount</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.AutorabitExtId__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
