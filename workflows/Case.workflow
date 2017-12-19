@@ -1517,7 +1517,7 @@ IF(CONTAINS((TEXT(Escalation_to__c)),&quot;Customer Support&quot;),
     <outboundMessages>
         <fullName>CaseEscalationMessage</fullName>
         <apiVersion>40.0</apiVersion>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/main/services/EscalationsCaseNotification?wsdl</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/main/services/EscalationsCaseNotification?wsdl</endpointUrl>
         <fields>Id</fields>
         <fields>Owner_Name__c</fields>
         <fields>Status</fields>
@@ -1531,7 +1531,7 @@ IF(CONTAINS((TEXT(Escalation_to__c)),&quot;Customer Support&quot;),
     <outboundMessages>
         <fullName>CaseOutboundMessage</fullName>
         <apiVersion>35.0</apiVersion>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/sfdccasetolicenseint/spring/casetolicense</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/sfdccasetolicenseint/spring/casetolicense</endpointUrl>
         <fields>ContactId</fields>
         <fields>Id</fields>
         <fields>License__c</fields>

@@ -188,7 +188,7 @@ a.	Source Table
 b.	Event Type
 c.	ID
 d.	Is Address Changed</description>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/sfdcaccountnotification/soap/v1/</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/sfdcaccountnotification/soap/v1/</endpointUrl>
         <fields>Id</fields>
         <fields>IsAddress_Changed__c</fields>
         <fields>Source_Table__c</fields>
@@ -226,7 +226,7 @@ d.	Is Address Changed</description>
             <name>AccountOutboundMessage</name>
             <type>OutboundMessage</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>workflow rule on the Account object that executes on insert and every update</description>
         <formula>AND(     OR(         ISCHANGED(Name)         ,ISCHANGED(Controlled_Technology_Alert__c)         ,ISCHANGED(Denied_Company__c ) ,ISCHANGED(Is_Corporate_Parent__c)        ,ISCHANGED(Disable_Merge__c)         ,ISCHANGED(Export_Status__c)         ,ISCHANGED(CDS_Account_Id__c)         ,ISCHANGED(Industry)         ,ISCHANGED(Type)         ,ISCHANGED(Kept_Account_Siebel_Id__c)         ,ISCHANGED(Site)         ,ISCHANGED(Account_Name_Latin__c)         ,ISCHANGED(Account_Status__c)         ,ISCHANGED(Account_Sector__c)         ,ISCHANGED(Siebel_Account_Id__c)        ,ISCHANGED(Account_Warning__c)         ,ISCHANGED(Corporate_Parent_Name__c)         ,ISCHANGED(Website)         ,IsAddress_Changed__c     )     ,NOT(Is_Individual_Account__c)     ,$User.Id != &quot;005i00000014J7w&quot; )</formula>
         <triggerType>onAllChanges</triggerType>

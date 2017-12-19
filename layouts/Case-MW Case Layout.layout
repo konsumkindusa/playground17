@@ -86,6 +86,10 @@
                 <behavior>Readonly</behavior>
                 <field>Attachments_Folder__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>isDistributorCase__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

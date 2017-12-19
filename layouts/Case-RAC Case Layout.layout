@@ -106,6 +106,10 @@
                 <behavior>Edit</behavior>
                 <field>PO_Date__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>isDistributorCase__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

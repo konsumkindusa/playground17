@@ -2481,6 +2481,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.isDistributorCase__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.isSecured__c</field>
         <readable>false</readable>
     </fieldPermissions>

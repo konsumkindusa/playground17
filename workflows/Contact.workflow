@@ -60,7 +60,7 @@ b.	Event Type
 c.	ID
 d.	Is Address Changed
 e.	Is Account Changed</description>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/sfdccontactnotification/soap/v1/</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/sfdccontactnotification/soap/v1/</endpointUrl>
         <fields>Id</fields>
         <fields>Source_Table__c</fields>
         <fields>isAccount_Changed__c</fields>

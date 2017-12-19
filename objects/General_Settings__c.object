@@ -401,27 +401,5 @@
         <unique>false</unique>
     </fields>
     <label>General Settings</label>
-    <listViews>
-        <fullName>Default</fullName>
-        <columns>SETUP_OWNER_NAME</columns>
-        <columns>SETUP_TYPE</columns>
-        <columns>OBJECT_ID</columns>
-        <columns>NAME</columns>
-        <columns>ACE_Url__c</columns>
-        <columns>CaseDeleteOverride_Excluded_Profile_1__c</columns>
-        <columns>CaseDeleteOverride_Excluded_Profile_2__c</columns>
-        <columns>Current_Domain__c</columns>
-        <columns>EmailRoutingRule_Current_ResponseTo__c</columns>
-        <columns>Escalate_To_Dev_Email__c</columns>
-        <columns>CREATED_DATE</columns>
-        <columns>UPDATEDBY_USER.ALIAS</columns>
-        <columns>UPDATEDBY_USER</columns>
-        <columns>LAST_UPDATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>Default</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
     <visibility>Public</visibility>
 </CustomObject>

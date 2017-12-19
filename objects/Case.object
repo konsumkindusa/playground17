@@ -9448,6 +9448,17 @@ IMAGE ( &quot;/img/samples/flag_red.gif&quot;, &quot;True Image&quot; ),&quot;&q
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>isDistributorCase__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If True, this Case was created from iHelp or iSupport, or from the Web by a Distributor.</description>
+        <externalId>false</externalId>
+        <label>isDistributorCase</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>isSecured__c</fullName>
         <defaultValue>false</defaultValue>
         <description>This flag is used to determine if the case attachments are secured or not</description>

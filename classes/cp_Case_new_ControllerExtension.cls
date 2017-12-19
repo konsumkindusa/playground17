@@ -222,6 +222,10 @@ global class cp_Case_new_ControllerExtension {
   		if (string.isNotBlank(str)) {
   			caseObj.License__c = str;
   		}
+        // DL 12/2017
+        if (isDistributor){ 
+            caseObj.isDistributorCase__c = true;
+        }
   		Logger.pop();
         return caseObj;
     }

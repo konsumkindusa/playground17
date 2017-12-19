@@ -553,7 +553,7 @@ ISBLANK(Test_2_Pass_Score__c)
     <outboundMessages>
         <fullName>Send_Enrollment_data_to_MHLM</fullName>
         <apiVersion>36.0</apiVersion>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/SFDCEnrollmentNotificationService/soap/v1/</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/SFDCEnrollmentNotificationService/soap/v1/</endpointUrl>
         <fields>Course_Code__c</fields>
         <fields>Email__c</fields>
         <fields>End_Date__c</fields>

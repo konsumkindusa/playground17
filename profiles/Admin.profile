@@ -1075,6 +1075,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Student</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SupportAnswersBulk</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -4015,6 +4019,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.Warning__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.isDistributorCase__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

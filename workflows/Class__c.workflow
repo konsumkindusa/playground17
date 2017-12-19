@@ -93,7 +93,7 @@
     <outboundMessages>
         <fullName>ClassOutboundMessage</fullName>
         <apiVersion>38.0</apiVersion>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/ProductTrainingWs/soap/v1/</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/ProductTrainingWs/soap/v1/</endpointUrl>
         <fields>Id</fields>
         <fields>Source_Table__c</fields>
         <includeSessionId>true</includeSessionId>

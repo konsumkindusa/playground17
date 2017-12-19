@@ -4,7 +4,7 @@
         <fullName>Send_SF_Job_Id_To_CDS</fullName>
         <apiVersion>36.0</apiVersion>
         <description>Territory Recalculation Batch Job sends where clause to CDS Account Reassignment engine</description>
-        <endpointUrl>https://sf-ext-msg.mathworks.com/sfdcterrrecalcnotification/soap/v1/</endpointUrl>
+        <endpointUrl>https://DONOTUSEsf-ext-msg.mathworks.com/sfdcterrrecalcnotification/soap/v1/</endpointUrl>
         <fields>Id</fields>
         <fields>WHERE_Clause__c</fields>
         <includeSessionId>false</includeSessionId>

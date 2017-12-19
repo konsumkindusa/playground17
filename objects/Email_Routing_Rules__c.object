@@ -78,19 +78,5 @@
         <unique>false</unique>
     </fields>
     <label>Email Routing Rules</label>
-    <listViews>
-        <fullName>All_Attribute_View</fullName>
-        <columns>NAME</columns>
-        <columns>Generic_Email__c</columns>
-        <columns>Response_to_DEV_email__c</columns>
-        <columns>Response_to_PROD__c</columns>
-        <columns>Response_to_TEST_email__c</columns>
-        <columns>Sub_Area_on_SR__c</columns>
-        <columns>Email_Service_Address__c</columns>
-        <columns>Area_on_SR__c</columns>
-        <columns>Case_Record_Type__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All Attribute View</label>
-    </listViews>
     <visibility>Public</visibility>
 </CustomObject>
