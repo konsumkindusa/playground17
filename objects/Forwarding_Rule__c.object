@@ -73,5 +73,18 @@
         <type>Checkbox</type>
     </fields>
     <label>Forwarding Rules</label>
+    <listViews>
+        <fullName>View_with_all_fields</fullName>
+        <columns>NAME</columns>
+        <columns>Dommain_Country_Code__c</columns>
+        <columns>Distributor_Name__c</columns>
+        <columns>MathWorks_Office__c</columns>
+        <columns>Forwarding_Email_Address__c</columns>
+        <columns>Case_Area_Country_Code__c</columns>
+        <columns>Country_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>View with all fields</label>
+        <language>en_US</language>
+    </listViews>
     <visibility>Public</visibility>
 </CustomObject>
