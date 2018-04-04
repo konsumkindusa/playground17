@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>40.0</version>
+    <version>41.0</version>
     <types>
         <members>AUIConnectController</members>
         <members>AUIConnectControllerTest</members>
@@ -899,91 +899,12 @@
         <members>AssetRelationship.RelatedAssetId</members>
         <members>AssetRelationship.RelationshipType</members>
         <members>AssetRelationship.ToDate</members>
-        <members>Book_Product__c.Book_Project__c</members>
-        <members>Book_Product__c.Product_Code__c</members>
-        <members>Book_Product__c.Product_Unique_Identifier__c</members>
-        <members>Book_Product__c.Product__c</members>
-        <members>Book_Product__c.Siebel_ID__c</members>
-        <members>Book_Project_Role__c.Book_Project__c</members>
-        <members>Book_Project_Role__c.Contact__c</members>
-        <members>Book_Project_Role__c.Role__c</members>
-        <members>Book_Project_Role__c.Siebel_ID__c</members>
-        <members>Book_Project__c.Book_Language__c</members>
-        <members>Book_Project__c.Book_Promotion_Response_Date_Time__c</members>
-        <members>Book_Project__c.Book_Promotional_Survey_Last_Sent__c</members>
-        <members>Book_Project__c.Book_Title__c</members>
-        <members>Book_Project__c.Companion_Software_URL__c</members>
-        <members>Book_Project__c.Copyright_Year__c</members>
-        <members>Book_Project__c.Description__c</members>
-        <members>Book_Project__c.E2AEmailCount__c</members>
-        <members>Book_Project__c.Expected_Publication_Date__c</members>
-        <members>Book_Project__c.External_Book_Webpage__c</members>
-        <members>Book_Project__c.Follow_Up_Required__c</members>
-        <members>Book_Project__c.MathWorks_Web_Page_Live_Date__c</members>
-        <members>Book_Project__c.MathWorks_Web_Page_Removed__c</members>
-        <members>Book_Project__c.MathWorks_Webpage__c</members>
-        <members>Book_Project__c.New_Message__c</members>
-        <members>Book_Project__c.Parent_Book__c</members>
-        <members>Book_Project__c.Primary_Contact__c</members>
-        <members>Book_Project__c.Primary_Contact_s_Account__c</members>
-        <members>Book_Project__c.Primary_Office__c</members>
-        <members>Book_Project__c.Promotional_Survey_Status__c</members>
-        <members>Book_Project__c.Receive_Time_of_Last_Email__c</members>
-        <members>Book_Project__c.Send_Book_Promotion_Survey__c</members>
-        <members>Book_Project__c.Siebel_ID__c</members>
-        <members>Book_Project__c.Siebel_Publisher__c</members>
-        <members>Book_Project__c.Status_Age__c</members>
-        <members>Book_Project__c.Status_Update_Survey_Last_sent_date__c</members>
-        <members>Book_Project__c.Status_Update_Survey_Response_Date_Tim__c</members>
-        <members>Book_Project__c.Status_Update_Survey_Send__c</members>
-        <members>Book_Project__c.Status_Update_Survey_Status__c</members>
-        <members>Book_Project__c.Status_Update_Survey_Unresponsive__c</members>
-        <members>Book_Project__c.Status_Updated_Date__c</members>
-        <members>Book_Project__c.Status__c</members>
-        <members>Book_Project__c.Thread_Id__c</members>
-        <members>Book_Project__c.Unresponsive_to_Book_Promotion_Survey__c</members>
-        <members>Book_Project__c.Web_Category__c</members>
-        <members>Bypass_Triggers__c.Trigger_Objects__c</members>
-        <members>Bypass_Triggers__c.Triggers_Disabled__c</members>
-        <members>CPN_Account_Matching__c.Account_CDS_Id__c</members>
-        <members>CPN_Account_Matching__c.Account_Id__c</members>
-        <members>CPN_Account_Matching__c.Account_Industry__c</members>
-        <members>CPN_Account_Matching__c.Account_Latin_Name__c</members>
-        <members>CPN_Account_Matching__c.Account_Name_Changed_Date__c</members>
-        <members>CPN_Account_Matching__c.Account_Name__c</members>
-        <members>CPN_Account_Matching__c.Account_Territory_Name__c</members>
-        <members>CPN_Account_Matching__c.Account__c</members>
-        <members>CPN_Account_Matching__c.Comments__c</members>
-        <members>CPN_Account_Matching__c.Existing_Child_Account__c</members>
-        <members>CPN_Account_Matching__c.Is_Account_CPN__c</members>
-        <members>CPN_Account_Matching__c.Is_Parent_CPN__c</members>
-        <members>CPN_Account_Matching__c.Match_Date__c</members>
-        <members>CPN_Account_Matching__c.Match_Local__c</members>
-        <members>CPN_Account_Matching__c.Match_Score__c</members>
-        <members>CPN_Account_Matching__c.Match_Status_Changed_Date__c</members>
-        <members>CPN_Account_Matching__c.Match_Status__c</members>
-        <members>CPN_Account_Matching__c.Match_Type__c</members>
-        <members>CPN_Account_Matching__c.Parent_Account_CDS_Id__c</members>
-        <members>CPN_Account_Matching__c.Parent_Account_Id__c</members>
-        <members>CPN_Account_Matching__c.Parent_Account_Latin_Name__c</members>
-        <members>CPN_Account_Matching__c.Parent_Account_Name_Changed_Date__c</members>
-        <members>CPN_Account_Matching__c.Parent_Account_Name__c</members>
-        <members>CPN_Account_Matching__c.Parent_Account__c</members>
-        <members>CPN_Account_Matching__c.is_Account_Name_Changed__c</members>
-        <members>CSE_Contact_Roles__c.Contact__c</members>
-        <members>CSE_Contact_Roles__c.Customer_Success_Engagement__c</members>
-        <members>CSE_Contact_Roles__c.Department__c</members>
-        <members>CSE_Contact_Roles__c.Email__c</members>
-        <members>CSE_Contact_Roles__c.Phone__c</members>
-        <members>CSE_Contact_Roles__c.Primary__c</members>
-        <members>CSE_Contact_Roles__c.Role__c</members>
-        <members>CSE_Contact_Roles__c.Title__c</members>
-        <members>CSE_Contact_Roles__c.Unique_CSE_Contact_Role_Association__c</members>
-        <members>CSE_External_Link__c.Customer_Success_Engagement__c</members>
-        <members>CSE_External_Link__c.External_Link_Date__c</members>
-        <members>CSE_External_Link__c.External_Link__c</members>
-        <members>CSE_External_Link__c.Notes__c</members>
-        <members>CSE_External_Link__c.Type__c</members>
+        <members>Aug_Demo__c.Aug_text__c</members>
+        <members>Aug_Demo__c.Type1__c</members>
+        <members>Aug_Demo__c.Type2__c</members>
+        <members>Aug_Demo__c.Type_3__c</members>
+        <members>Aug_Demo__c.Type_4__c</members>
+        <members>Brad__c.Brad_text__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
@@ -2225,49 +2146,7 @@
         <members>HVCPUserLog__c.mathworks_accountId__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
-        <members>Integration_Settings__c.Batch_Size__c</members>
-        <members>Integration_Settings__c.CA_Cert__c</members>
-        <members>Integration_Settings__c.Caller_ID__c</members>
-        <members>Integration_Settings__c.Clientname__c</members>
-        <members>Integration_Settings__c.Endpoint__c</members>
-        <members>Integration_Settings__c.Locale__c</members>
-        <members>Integration_Settings__c.Password__c</members>
-        <members>Integration_Settings__c.Retry_Attempts__c</members>
-        <members>Integration_Settings__c.Timeout__c</members>
-        <members>Integration_Settings__c.Token__c</members>
-        <members>Integration_Settings__c.Username__c</members>
-        <members>Integration_Settings__c.WSDL_Name_Space__c</members>
-        <members>Investment__c.Academic_Support_Project__c</members>
-        <members>Investment__c.Activity_Type__c</members>
-        <members>Investment__c.Comments__c</members>
-        <members>Investment__c.Course__c</members>
-        <members>Investment__c.Date_of_Investment__c</members>
-        <members>Investment__c.Deliverable_Type__c</members>
-        <members>Investment__c.Department__c</members>
-        <members>Investment__c.Hardware__c</members>
-        <members>Investment__c.Hours__c</members>
-        <members>Investment__c.License_Link__c</members>
-        <members>Investment__c.License_Number__c</members>
-        <members>Investment__c.License_Type__c</members>
-        <members>Investment__c.MathWorker__c</members>
-        <members>Investment__c.Payment_Amount__c</members>
-        <members>Investment__c.Quantity__c</members>
-        <members>Investment__c.Role__c</members>
-        <members>Investment__c.Siebel_ID__c</members>
-        <members>Investment__c.Year__c</members>
-        <members>Language_Display_Name__c.Display_Name__c</members>
-        <members>Language_Display_Name__c.Language__c</members>
-        <members>Language_Display_Name__c.Language_code__c</members>
-        <members>Language__c.ISO_Code__c</members>
-        <members>Language__c.Language_Code__c</members>
-        <members>Language__c.Language_Display_Name__c</members>
-        <members>Language__c.Locale_Code__c</members>
-        <members>Language__c.Multibyte__c</members>
-        <members>Language__c.SF_ISO_Code__c</members>
-        <members>Language__c.Show_Names_By__c</members>
-        <members>Language__c.Training_L1_Survey_Link__c</members>
-        <members>Lead.Account_Status__c</members>
-        <members>Lead.Account__c</members>
+        <members>Jeff__c.Jeff_text__c</members>
         <members>Lead.Address</members>
         <members>Lead.AnnualRevenue</members>
         <members>Lead.Area_of_Interest__c</members>
@@ -2734,105 +2613,6 @@
         <members>PartnerAgreementRecipientToQueueMapping__c.Queue_Name__c</members>
         <members>PartnerAgreementRecipientToQueueMapping__c.Recipient_Email_Address__c</members>
         <members>PartnerRole.ReverseRole</members>
-        <members>Partner_Agreement_Role__c.Contact__c</members>
-        <members>Partner_Agreement_Role__c.Partner_Agreement__c</members>
-        <members>Partner_Agreement_Role__c.Role__c</members>
-        <members>Partner_Agreement_Role__c.SSL_Survey_Response_Date__c</members>
-        <members>Partner_Agreement_Role__c.Send_SSL_Renewal__c</members>
-        <members>Partner_Agreement_Role__c.Send_T_C_Renewal__c</members>
-        <members>Partner_Agreement_Role__c.Siebel_ID__c</members>
-        <members>Partner_Agreement_Role__c.T_C_Survey_Response_Date__c</members>
-        <members>Partner_Agreement__c.Account_Location__c</members>
-        <members>Partner_Agreement__c.Account_Name_Latin__c</members>
-        <members>Partner_Agreement__c.Account__c</members>
-        <members>Partner_Agreement__c.Action_Date__c</members>
-        <members>Partner_Agreement__c.Agreement_Application__c</members>
-        <members>Partner_Agreement__c.Agreement_Status_Updated__c</members>
-        <members>Partner_Agreement__c.Application__c</members>
-        <members>Partner_Agreement__c.CMS_ID__c</members>
-        <members>Partner_Agreement__c.Category__c</members>
-        <members>Partner_Agreement__c.Class__c</members>
-        <members>Partner_Agreement__c.Days_From_Start_Date__c</members>
-        <members>Partner_Agreement__c.Denied_Prohibited__c</members>
-        <members>Partner_Agreement__c.E2AEmailCount__c</members>
-        <members>Partner_Agreement__c.End_Date__c</members>
-        <members>Partner_Agreement__c.Extended_End_Date__c</members>
-        <members>Partner_Agreement__c.Final_Approval_Date__c</members>
-        <members>Partner_Agreement__c.Follow_Up_Required__c</members>
-        <members>Partner_Agreement__c.Industry__c</members>
-        <members>Partner_Agreement__c.Interface_Type__c</members>
-        <members>Partner_Agreement__c.Last_Action_Date__c</members>
-        <members>Partner_Agreement__c.License_Discount__c</members>
-        <members>Partner_Agreement__c.License_Discounts_Remaining__c</members>
-        <members>Partner_Agreement__c.MW_Focal_Point__c</members>
-        <members>Partner_Agreement__c.New_Message__c</members>
-        <members>Partner_Agreement__c.Notes__c</members>
-        <members>Partner_Agreement__c.Parent_Agreement__c</members>
-        <members>Partner_Agreement__c.Partner_Agreement_Name__c</members>
-        <members>Partner_Agreement__c.Pre_Product_Response__c</members>
-        <members>Partner_Agreement__c.Pre_Product_Response_date__c</members>
-        <members>Partner_Agreement__c.Pre_Product_Status__c</members>
-        <members>Partner_Agreement__c.Pre_Product_sent_date__c</members>
-        <members>Partner_Agreement__c.Pre_product_no_response__c</members>
-        <members>Partner_Agreement__c.Pre_product_send__c</members>
-        <members>Partner_Agreement__c.Primary_Contact__c</members>
-        <members>Partner_Agreement__c.Primary_Office__c</members>
-        <members>Partner_Agreement__c.Prod_Svc_Type__c</members>
-        <members>Partner_Agreement__c.Qualifying_License_Number__c</members>
-        <members>Partner_Agreement__c.Receive_Time_of_Last_Email__c</members>
-        <members>Partner_Agreement__c.Relationship__c</members>
-        <members>Partner_Agreement__c.SSL_Last_Completed__c</members>
-        <members>Partner_Agreement__c.SSL_Usage_No_Response__c</members>
-        <members>Partner_Agreement__c.SSL_Usage_Response_Date__c</members>
-        <members>Partner_Agreement__c.SSL_Usage_Response__c</members>
-        <members>Partner_Agreement__c.SSL_Usage_Send__c</members>
-        <members>Partner_Agreement__c.SSL_Usage_Sent_Date__c</members>
-        <members>Partner_Agreement__c.SSL_Usage_Status__c</members>
-        <members>Partner_Agreement__c.Sector__c</members>
-        <members>Partner_Agreement__c.Siebel_Agreement_Number__c</members>
-        <members>Partner_Agreement__c.Siebel_ID__c</members>
-        <members>Partner_Agreement__c.Stage__c</members>
-        <members>Partner_Agreement__c.Start_Date__c</members>
-        <members>Partner_Agreement__c.Status_Action__c</members>
-        <members>Partner_Agreement__c.Status_Age__c</members>
-        <members>Partner_Agreement__c.Status_Date__c</members>
-        <members>Partner_Agreement__c.Status_Updated_to_Active__c</members>
-        <members>Partner_Agreement__c.Status__c</members>
-        <members>Partner_Agreement__c.Sub_Class__c</members>
-        <members>Partner_Agreement__c.T_C_No_Response__c</members>
-        <members>Partner_Agreement__c.T_C_Response_Date__c</members>
-        <members>Partner_Agreement__c.T_C_Response__c</members>
-        <members>Partner_Agreement__c.T_C_Send__c</members>
-        <members>Partner_Agreement__c.T_C_Sent_Date__c</members>
-        <members>Partner_Agreement__c.T_C_Status__c</members>
-        <members>Partner_Agreement__c.Thread_Id__c</members>
-        <members>Partner_Agreement__c.Training_Discounts_Remaining__c</members>
-        <members>Partner_Agreement__c.Translated_Agreement__c</members>
-        <members>Partner_Agreement__c.Type__c</members>
-        <members>Partner_Agreement__c.Vision__c</members>
-        <members>Partner_Agreement__c.Web_Page_URL__c</members>
-        <members>Partner_Agreement__c.days_to_active__c</members>
-        <members>Partner_Agreement__c.partner_count__c</members>
-        <members>Partner_Attended_Event__c.Expo__c</members>
-        <members>Partner_Attended_Event__c.Notes__c</members>
-        <members>Partner_Attended_Event__c.Partner_Agreement__c</members>
-        <members>Partner_Attended_Event__c.Year__c</members>
-        <members>Partner_Benefits__c.Discount__c</members>
-        <members>Partner_Benefits__c.Event_Name__c</members>
-        <members>Partner_Benefits__c.License_Link__c</members>
-        <members>Partner_Benefits__c.License_Number__c</members>
-        <members>Partner_Benefits__c.License_Status__c</members>
-        <members>Partner_Benefits__c.License_Type__c</members>
-        <members>Partner_Benefits__c.Notes__c</members>
-        <members>Partner_Benefits__c.Order_Number__c</members>
-        <members>Partner_Benefits__c.Partner_Agreement__c</members>
-        <members>Partner_Benefits__c.Re_sale_Markets__c</members>
-        <members>Partner_Benefits__c.Request_Date__c</members>
-        <members>Partner_Benefits__c.Siebel_ID__c</members>
-        <members>Partner_Benefits__c.Unused_Benefit__c</members>
-        <members>Partner_Benefits__c.Year__c</members>
-        <members>Portal_CountryCode_Language_Mapping__mdt.CountryCode__c</members>
-        <members>Portal_CountryCode_Language_Mapping__mdt.LanguageCode__c</members>
         <members>Pricebook2.Description</members>
         <members>Pricebook2.IsActive</members>
         <members>Pricebook2.IsStandard</members>
@@ -2862,104 +2642,6 @@
         <members>Product2.Product_Name__c</members>
         <members>Product2.Product_Unique_Identifier__c</members>
         <members>Product2.QuantityUnitOfMeasure</members>
-        <members>Product2.Quotable__c</members>
-        <members>Product2.Release__c</members>
-        <members>Product2.Revenue_Class__c</members>
-        <members>Product2.Sales_Product__c</members>
-        <members>Product2.Status__c</members>
-        <members>Product2.StockKeepingUnit</members>
-        <members>Product2.Topic__c</members>
-        <members>Product2.Trialable__c</members>
-        <members>Product2.Version__c</members>
-        <members>Project_Role__c.Account__c</members>
-        <members>Project_Role__c.Contact__c</members>
-        <members>Project_Role__c.Email__c</members>
-        <members>Project_Role__c.Job_Title__c</members>
-        <members>Project_Role__c.Related_Project__c</members>
-        <members>Project_Role__c.Role__c</members>
-        <members>Project_Role__c.Siebel_Role_Id__c</members>
-        <members>Project_Role__c.Technical_Resource_Group__c</members>
-        <members>Project_Role__c.Unique_Project_Contact_Role_Association__c</members>
-        <members>Project_Team_Member__c.Duplicate_Team_Member__c</members>
-        <members>Project_Team_Member__c.My_Team_Project__c</members>
-        <members>Project_Team_Member__c.Project__c</members>
-        <members>Project_Team_Member__c.Requester_Email__c</members>
-        <members>Project_Team_Member__c.Requester_Phone__c</members>
-        <members>Project_Team_Member__c.Requester__c</members>
-        <members>Project_Team_Member__c.Resource_Phone__c</members>
-        <members>Project_Team_Member__c.Resource__c</members>
-        <members>Project_Time_Card__c.AE_PE__c</members>
-        <members>Project_Time_Card__c.Activity_Type__c</members>
-        <members>Project_Time_Card__c.Created_By_Area__c</members>
-        <members>Project_Time_Card__c.Created_by_Role_Name__c</members>
-        <members>Project_Time_Card__c.Hours__c</members>
-        <members>Project_Time_Card__c.Is_Hours_Since_Last_Reviewed_Date__c</members>
-        <members>Project_Time_Card__c.My_Team_Time_Card__c</members>
-        <members>Project_Time_Card__c.My_Time_Card__c</members>
-        <members>Project_Time_Card__c.Notes__c</members>
-        <members>Project_Time_Card__c.Product_Group__c</members>
-        <members>Project_Time_Card__c.Project_Name__c</members>
-        <members>Project_Time_Card__c.Project_Status__c</members>
-        <members>Project_Time_Card__c.Project__c</members>
-        <members>Project_Time_Card__c.Status__c</members>
-        <members>Project_Time_Card__c.Week_Date__c</members>
-        <members>Project_Time_Card__c.Week_Ending__c</members>
-        <members>Project_Time_Validation_Settings__c.Manage_My_Time__c</members>
-        <members>Project_Validation_Rule_Settings__c.Manage_My_Time__c</members>
-        <members>Project_Validation_Rule_Settings__c.Prevent_Deleting_Closed_Projects__c</members>
-        <members>Project_Validation_Rule_Settings__c.Prevent_Editing_Closed_Projects__c</members>
-        <members>Project_Validation_Rule_Settings__c.Prevent_Editing_Time_on_Closed_Projects__c</members>
-        <members>Project_Validation_Rule_Settings__c.ProjectActivityType__c</members>
-        <members>QuickText.Category</members>
-        <members>QuickText.Channel</members>
-        <members>QuickText.Message</members>
-        <members>QuickText.Name</members>
-        <members>QuickText.OwnerId</members>
-        <members>QuoteIntegrationSettings__c.CommerceQuoteURL__c</members>
-        <members>QuoteIntegrationSettings__c.GQOQuoteBaseURL__c</members>
-        <members>QuoteIntegrationSettings__c.Mathwork_Quote_Url__c</members>
-        <members>QuoteIntegrationSettings__c.PageSizeForPaginationToShowQuotes__c</members>
-        <members>Reassign_Helper__c.Assign_to__c</members>
-        <members>Reassign_Helper__c.ClosedDate_From__c</members>
-        <members>Reassign_Helper__c.ClosedDate_To__c</members>
-        <members>Reassign_Helper__c.From__c</members>
-        <members>Reassign_Helper__c.Owner__c</members>
-        <members>Reassign_Helper__c.To__c</members>
-        <members>References__c.Company__c</members>
-        <members>References__c.Email__c</members>
-        <members>References__c.Name__c</members>
-        <members>References__c.Phone__c</members>
-        <members>References__c.Related_Agreement__c</members>
-        <members>Release__c.Release_Type__c</members>
-        <members>Release__c.Show_in_Portal__c</members>
-        <members>Release__c.Sort_Order_in_Portal__c</members>
-        <members>RemoteAppSettings__c.consumer_key__c</members>
-        <members>RemoteAppSettings__c.consumer_secret__c</members>
-        <members>RemoteAppSettings__c.endpoint_url__c</members>
-        <members>RemoteAppSettings__c.password__c</members>
-        <members>RemoteAppSettings__c.username__c</members>
-        <members>ResolutionLink__c.Case__c</members>
-        <members>ResolutionLink__c.URL__c</members>
-        <members>ResolutionLink__c.Web_Command__c</members>
-        <members>SFDC_Department__mdt.MW_Department_Name__c</members>
-        <members>SFDC_Gecko_Platform_Mapping__c.Gecko_OS_Name__c</members>
-        <members>SFDC_Gecko_Platform_Mapping__c.Gecko_Platform_Name__c</members>
-        <members>SFDC_Gecko_Platform_Mapping__c.sfdc_platform_os_Name__c</members>
-        <members>Scorecard.Description</members>
-        <members>Scorecard.Name</members>
-        <members>ScorecardMetric.Category</members>
-        <members>ScorecardMetric.Description</members>
-        <members>ScorecardMetric.Name</members>
-        <members>ScorecardMetric.ReportId</members>
-        <members>ScorecardMetric.ScorecardId</members>
-        <members>SendArticlesSession__c.SessionId__c</members>
-        <members>Send_Article_Settings__c.Last_Run_Status__c</members>
-        <members>Send_Article_Settings__c.Last_Scheduled_Run__c</members>
-        <members>Send_Article_Settings__c.Number_of_Articles_Sent__c</members>
-        <members>Send_Article_Settings__c.SchedulerName__c</members>
-        <members>SocialPersona.AreWeFollowing</members>
-        <members>SocialPersona.AuthorLabels</members>
-        <members>SocialPersona.Bio</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
         <members>SocialPersona.Followers</members>
@@ -3487,12 +3169,6 @@
         <members>UserProvisioningRequest.SalesforceUserId</members>
         <members>UserProvisioningRequest.State</members>
         <members>UserProvisioningRequest.UserProvAccountId</members>
-        <members>UserTerritory2Association.RoleInTerritory2</members>
-        <members>ortoo_e2a__EmailMessage__c.Academic_Support_Project__c</members>
-        <members>ortoo_e2a__EmailMessage__c.Book_Project__c</members>
-        <members>ortoo_e2a__EmailMessage__c.Partner_Agreement__c</members>
-        <members>ortoo_e2a__EmailMessage__c.Project__c</members>
-        <members>ortoo_e2a__EmailMessage__c.Social_Action__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -4931,13 +4607,6 @@
         <members>Asset</members>
         <members>AssetRelationship</members>
         <members>AssistantProgress</members>
-        <members>Book_Product__c</members>
-        <members>Book_Project_Role__c</members>
-        <members>Book_Project__c</members>
-        <members>Bypass_Triggers__c</members>
-        <members>CPN_Account_Matching__c</members>
-        <members>CSE_Contact_Roles__c</members>
-        <members>CSE_External_Link__c</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
         <members>Campaign_Project__c</members>
@@ -4994,11 +4663,6 @@
         <members>HR_Department_To_SFDC_Profile__mdt</members>
         <members>HVCPUserLog__c</members>
         <members>Idea</members>
-        <members>Ignored_usernames__c</members>
-        <members>Integration_Settings__c</members>
-        <members>Investment__c</members>
-        <members>Language_Display_Name__c</members>
-        <members>Language__c</members>
         <members>Lead</members>
         <members>LicenseIntegrationSetting__c</members>
         <members>LinkedArticle</members>
@@ -5034,32 +4698,6 @@
         <members>PRODUCT_SUPPRT__c</members>
         <members>PartnerAgreementRecipientToQueueMapping__c</members>
         <members>PartnerRole</members>
-        <members>Partner_Agreement_Role__c</members>
-        <members>Partner_Agreement__c</members>
-        <members>Partner_Attended_Event__c</members>
-        <members>Partner_Benefits__c</members>
-        <members>Portal_CountryCode_Language_Mapping__mdt</members>
-        <members>Pricebook2</members>
-        <members>PricebookEntry</members>
-        <members>Product2</members>
-        <members>Project_Role__c</members>
-        <members>Project_Team_Member__c</members>
-        <members>Project_Time_Card__c</members>
-        <members>Project_Time_Validation_Settings__c</members>
-        <members>Project_Validation_Rule_Settings__c</members>
-        <members>QuickText</members>
-        <members>QuoteIntegrationSettings__c</members>
-        <members>Reassign_Helper__c</members>
-        <members>References__c</members>
-        <members>Release__c</members>
-        <members>RemoteAppSettings__c</members>
-        <members>ResolutionLink__c</members>
-        <members>SFDC_Department__mdt</members>
-        <members>SFDC_Gecko_Platform_Mapping__c</members>
-        <members>Scorecard</members>
-        <members>ScorecardMetric</members>
-        <members>SendArticlesSession__c</members>
-        <members>Send_Article_Settings__c</members>
         <members>Site</members>
         <members>SocialPersona</members>
         <members>SocialPost</members>
@@ -5106,7 +4744,6 @@
         <members>URL_Parameters__c</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
-        <members>UserTerritory2Association</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -7496,13 +7133,6 @@
         <members>ArticleBulkData__c-ArticleBulkData Layout</members>
         <members>Article_Feedback__c-Article Feedback Layout</members>
         <members>Asset-Asset Layout</members>
-        <members>Book_Product__c-Book-Product Layout</members>
-        <members>Book_Project_Role__c-Book Project Role Layout</members>
-        <members>Book_Project__c-Book Project Feed Layout</members>
-        <members>Book_Project__c-Book Project Layout</members>
-        <members>CPN_Account_Matching__c-CPN Account Matching Layout</members>
-        <members>CSE_Contact_Roles__c-CSE Contact Role Layout</members>
-        <members>CSE_External_Link__c-CSE External Link Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>Campaign-Sales Campaign Layout</members>
         <members>CampaignMember-Campaign Member Page Layout</members>
@@ -7588,30 +7218,6 @@
         <members>HR_Department_To_SFDC_Profile__mdt-HR Department To SFDC Profile Layout</members>
         <members>HVCPUserLog__c-HVCPUserLog Layout</members>
         <members>Idea-Idea Layout</members>
-        <members>Integration_Settings__c-Integration Setting Layout</members>
-        <members>Investment__c-Deliverable Layout</members>
-        <members>Investment__c-Hardware Layout</members>
-        <members>Investment__c-Investment Layout</members>
-        <members>Investment__c-License Layout</members>
-        <members>Investment__c-Staff Resource Layout</members>
-        <members>Investment__c-Training layout</members>
-        <members>Investment__c-Year Layout</members>
-        <members>Language_Display_Name__c-Language Display Name Layout</members>
-        <members>Language__c-Language Layout</members>
-        <members>Lead-Known Contact Page Layout</members>
-        <members>Lead-Unknown Contact Page Layout</members>
-        <members>LinkedArticle-Linked Article Layout</members>
-        <members>LiveAgentSession-Live Agent Session Layout</members>
-        <members>LiveChatTranscript-Live Chat Transcript Layout</members>
-        <members>LiveChatTranscriptEvent-Live Chat Transcript Event Layout</members>
-        <members>LiveChatVisitor-Live Chat Visitor Layout</members>
-        <members>Log__c-Log Layout</members>
-        <members>MDCS_Troubleshooting_Checklist__c-Install Layout</members>
-        <members>MW_Business_Hours__c-MW Business Hours Layout</members>
-        <members>MW_Project__c-AEG Project Layout</members>
-        <members>MW_Project__c-AEG Sales Request Layout</members>
-        <members>MW_Project__c-Marketing Request</members>
-        <members>MW_Project__c-TE Project Layout</members>
         <members>Macro-Macro Layout</members>
         <members>Milestone__c-Milestone Layout</members>
         <members>ObjectTerritory2AssignmentRule-Object Territory Assignment Rule Layout</members>
@@ -7623,20 +7229,6 @@
         <members>Opportunity-Opportunity Layout</members>
         <members>Opportunity-TS Opp Layout</members>
         <members>OpportunityLineItem-Opportunity Product Layout</members>
-        <members>OpportunityTeamMember-Opportunity Team Member Layout</members>
-        <members>Opportunity_Projects__c-Opportunity Project Layout</members>
-        <members>Outlook-Test Publisher Layout</members>
-        <members>PRODUCT_SUPPRT__c-Product Support Package Layout</members>
-        <members>Partner_Agreement_Role__c-Partner Agreement Role Layout</members>
-        <members>Partner_Agreement__c-Partner Agreement Layout</members>
-        <members>Partner_Attended_Event__c-Partner Attended Event Layout</members>
-        <members>Partner_Benefits__c-Event Exhibitor</members>
-        <members>Partner_Benefits__c-License Discount Layout</members>
-        <members>Partner_Benefits__c-Other</members>
-        <members>Partner_Benefits__c-Partner Benefit Layout</members>
-        <members>Partner_Benefits__c-Re-Sale Discounts</members>
-        <members>Partner_Benefits__c-Training Discount Layout</members>
-        <members>Portal_CountryCode_Language_Mapping__mdt-Portal CountryCode Language Mapping Layout</members>
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
@@ -7652,10 +7244,6 @@
         <members>SFDC_Gecko_Platform_Mapping__c-SFDC Gecko Platform Mapping Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
-        <members>Social_Action__c-Social Mission Layout</members>
-        <members>Social_Benefits_and_Contributions__c-Benefits</members>
-        <members>Social_Benefits_and_Contributions__c-Contributions</members>
-        <members>Social_Engagement__c-Social Engagement Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Sponsor_Office__c-Sponsor Office Detail Layout</members>
         <members>State_Code_List__mdt-State Code List Layout</members>
@@ -7686,8 +7274,6 @@
         <members>Training_Time_Zone_Canonical_Mapping__mdt-Training Time Zone Canonical Mapping Layout</members>
         <members>UEH_Inbound_Email_Log__c-UEH Inbound Email Log Layout</members>
         <members>User-User Layout</members>
-        <members>UserAlt-User Profile Layout</members>
-        <members>UserTerritory2Association-User Territory Association Layout</members>
         <name>Layout</name>
     </types>
     <types>
