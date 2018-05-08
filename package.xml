@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>41.0</version>
+    <version>40.0</version>
     <types>
         <members>AUIConnectController</members>
         <members>AUIConnectControllerTest</members>
@@ -789,87 +789,7 @@
         <members>Account.Website</members>
         <members>Account.ortoo_e2a__Thread_Id__c</members>
         <members>AccountContactRole.Role</members>
-        <members>Account_Project__c.Account__c</members>
-        <members>Account_Project__c.Duplicate_Account_Association__c</members>
-        <members>Account_Project__c.Project__c</members>
-        <members>Account_Project__c.is_Primary__c</members>
-        <members>Account_Validation_Rule__c.MOOC__c</members>
-        <members>Account_Validation_Rule__c.Prevent_Change_Account_Sector__c</members>
-        <members>Account_Validation_Rule__c.Prevent_Local_State_State_Province__c</members>
-        <members>Account_Validation_Rule__c.Prevent_Setting_Status_Duplicate__c</members>
-        <members>Account_Validation_Rule__c.Prevent_Setting_Status_Inactive__c</members>
-        <members>Account_Validation_Rule__c.Prevent_account_without_city__c</members>
-        <members>Account_Validation_Rule__c.Prevent_billing_account_without_country__c</members>
-        <members>Account_Validation_Rule__c.Prevent_changing_MOOC_Account__c</members>
-        <members>Activity.Call_Logs__c</members>
-        <members>Activity.Call_Outbound_Outcomes__c</members>
-        <members>Activity.Case_Escalated_To_Value__c</members>
-        <members>Activity.Category__c</members>
-        <members>Activity.Close_Date_Time__c</members>
-        <members>Activity.Created_Date_Time__c</members>
-        <members>Activity.Customer_Artifacts__c</members>
-        <members>Activity.Customer_Email__c</members>
-        <members>Activity.DMAPP__TTG_Prime_Action_Type__c</members>
-        <members>Activity.DMAPP__ThirdPartyId__c</members>
-        <members>Activity.DMAPP__ThirdPartyName__c</members>
-        <members>Activity.Days_Open__c</members>
-        <members>Activity.Days_Overdue__c</members>
-        <members>Activity.Days_between_Created_and_Closed__c</members>
-        <members>Activity.ETL_External_Id__c</members>
-        <members>Activity.Email_Outbound_Outcomes__c</members>
-        <members>Activity.Escalate_To__c</members>
-        <members>Activity.Existing_Opportunity_Id__c</members>
-        <members>Activity.Has_Attachment__c</members>
-        <members>Activity.Is_Requested_For_Escalation__c</members>
-        <members>Activity.Object_Related_To_What_Name__c</members>
-        <members>Activity.Object_Related_To_Who_Name__c</members>
-        <members>Activity.Related_to_ObjectName__c</members>
-        <members>Activity.SPQ_Change_Date__c</members>
-        <members>Activity.SPQ_ChangedByUserName__c</members>
-        <members>Activity.Sales_Support_Activity_Time__c</members>
-        <members>Activity.Sales_Support_Activity_Type__c</members>
-        <members>Activity.Salesforce_Lead_Id__c</members>
-        <members>Activity.Siebel_Activity_ID__c</members>
-        <members>Activity.Siebel_Contact_Id__c</members>
-        <members>Activity.Task_Owner_Area__c</members>
-        <members>Activity.Task_Owner_Manager__c</members>
-        <members>Activity.Task_Related_To__c</members>
-        <members>Activity.Thread_ID__c</members>
-        <members>Activity.Updated_Priority__c</members>
-        <members>Activity.Updated_Status__c</members>
-        <members>Activity.Value_Add__c</members>
-        <members>Activity.task_owner_is_active__c</members>
-        <members>Address_Latin_Translation__c.Country_Code__c</members>
-        <members>Address_Latin_Translation__c.Country__c</members>
-        <members>Address_Latin_Translation__c.State_Code__c</members>
-        <members>Address_Latin_Translation__c.State_Latin__c</members>
-        <members>Address_Latin_Translation__c.State_Local__c</members>
-        <members>Aetna_PG_Obj__c.Aetna_PG_Fld__c</members>
-        <members>Aetna_PG_Obj__c.Fld2_Aetna__c</members>
-        <members>Allowed_Domains__c.Allow_Sub_Domain__c</members>
-        <members>Allowed_Domains__c.Enterprise_Training_Agreement__c</members>
-        <members>Areas_Case_Task_Closure__c.UserArea__c</members>
-        <members>Aricle_Exclude_Modified_By__c.User_Name__c</members>
-        <members>ArticleBulkData__c.Article_Id__c</members>
-        <members>Article_Feedback__c.Answers_URL__c</members>
-        <members>Article_Feedback__c.Article_Author__c</members>
-        <members>Article_Feedback__c.Article_Feedback_Report__c</members>
-        <members>Article_Feedback__c.Article_ID__c</members>
-        <members>Article_Feedback__c.Article_Link__c</members>
-        <members>Article_Feedback__c.Article_Number__c</members>
-        <members>Article_Feedback__c.Article_Title__c</members>
-        <members>Article_Feedback__c.Article_Version__c</members>
-        <members>Article_Feedback__c.Author_User__c</members>
-        <members>Article_Feedback__c.CommentsBy__c</members>
-        <members>Article_Feedback__c.Comments__c</members>
-        <members>Article_Feedback__c.Feed_Id__c</members>
-        <members>Article_Feedback__c.Feedback_Status__c</members>
-        <members>Article_Feedback__c.Language__c</members>
-        <members>Article_Feedback__c.Platform_OS_Group__c</members>
-        <members>Article_Feedback__c.Product_Group__c</members>
-        <members>Article_Feedback__c.Topic_Group__c</members>
-        <members>Article_Feedback__c.Type_Group__c</members>
-        <members>Article_Feedback__c.Verified_in_Release_Group__c</members>
+        <members>Aetna_Playground1_Obj__c.Aetna_Playground1_Fld__c</members>
         <members>Asset.AccountId</members>
         <members>Asset.AssetLevel</members>
         <members>Asset.AssetProvidedById</members>
@@ -4600,13 +4520,8 @@
         <members>Account_Project__c</members>
         <members>Account_Validation_Rule__c</members>
         <members>Activity</members>
-        <members>Address_Latin_Translation__c</members>
-        <members>Aetna_PG_Obj__c</members>
-        <members>Allowed_Domains__c</members>
-        <members>Areas_Case_Task_Closure__c</members>
-        <members>Aricle_Exclude_Modified_By__c</members>
-        <members>ArticleBulkData__c</members>
-        <members>Article_Feedback__c</members>
+        <members>Aetna_Playground1_Obj__c</members>
+        <members>Ar_Obj23__c</members>
         <members>Asset</members>
         <members>AssetRelationship</members>
         <members>AssistantProgress</members>
@@ -7131,11 +7046,8 @@
         <members>Academic_Support_Project__c-Student Competition Layout</members>
         <members>Academic_Support_Role__c-Academic Support Role Layout</members>
         <members>Account-Account Layout</members>
-        <members>Account_Project__c-Account Project Layout</members>
-        <members>Aetna_PG_Obj__c-Aetna_PG_Obj Layout</members>
-        <members>Allowed_Domains__c-Allowed Domain Layout</members>
-        <members>ArticleBulkData__c-ArticleBulkData Layout</members>
-        <members>Article_Feedback__c-Article Feedback Layout</members>
+        <members>Aetna_Playground1_Obj__c-Aetna_Playground1_Obj Layout</members>
+        <members>Ar_Obj23__c-Ar-Obj23 Layout</members>
         <members>Asset-Asset Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>Campaign-Sales Campaign Layout</members>
