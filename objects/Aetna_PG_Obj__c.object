@@ -45,7 +45,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -56,6 +55,17 @@
         <fullName>Aetna_PG_Fld__c</fullName>
         <externalId>false</externalId>
         <label>Aetna_PG_Fld</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fld2_Aetna__c</fullName>
+        <externalId>false</externalId>
+        <label>Fld2_Aetna</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>

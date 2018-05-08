@@ -845,6 +845,7 @@
         <members>Address_Latin_Translation__c.State_Latin__c</members>
         <members>Address_Latin_Translation__c.State_Local__c</members>
         <members>Aetna_PG_Obj__c.Aetna_PG_Fld__c</members>
+        <members>Aetna_PG_Obj__c.Fld2_Aetna__c</members>
         <members>Allowed_Domains__c.Allow_Sub_Domain__c</members>
         <members>Allowed_Domains__c.Enterprise_Training_Agreement__c</members>
         <members>Areas_Case_Task_Closure__c.UserArea__c</members>
