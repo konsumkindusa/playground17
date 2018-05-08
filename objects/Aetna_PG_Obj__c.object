@@ -73,7 +73,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Aetna_PG_Obj</label>
+    <label>Aetna_PG_Obj_2</label>
     <nameField>
         <label>Aetna_Obj Name</label>
         <type>Text</type>
