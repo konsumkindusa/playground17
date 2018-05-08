@@ -844,6 +844,7 @@
         <members>Address_Latin_Translation__c.State_Code__c</members>
         <members>Address_Latin_Translation__c.State_Latin__c</members>
         <members>Address_Latin_Translation__c.State_Local__c</members>
+        <members>Aetna_PG_Obj__c.Aetna_PG_Fld__c</members>
         <members>Allowed_Domains__c.Allow_Sub_Domain__c</members>
         <members>Allowed_Domains__c.Enterprise_Training_Agreement__c</members>
         <members>Areas_Case_Task_Closure__c.UserArea__c</members>
@@ -4799,6 +4800,7 @@
         <members>Account_Validation_Rule__c</members>
         <members>Activity</members>
         <members>Address_Latin_Translation__c</members>
+        <members>Aetna_PG_Obj__c</members>
         <members>Allowed_Domains__c</members>
         <members>Areas_Case_Task_Closure__c</members>
         <members>Aricle_Exclude_Modified_By__c</members>
@@ -7330,6 +7332,7 @@
         <members>Academic_Support_Role__c-Academic Support Role Layout</members>
         <members>Account-Account Layout</members>
         <members>Account_Project__c-Account Project Layout</members>
+        <members>Aetna_PG_Obj__c-Aetna_PG_Obj Layout</members>
         <members>Allowed_Domains__c-Allowed Domain Layout</members>
         <members>ArticleBulkData__c-ArticleBulkData Layout</members>
         <members>Article_Feedback__c-Article Feedback Layout</members>
