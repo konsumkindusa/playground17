@@ -775,6 +775,7 @@
         <members>Account.Territory_Sales_Group__c</members>
         <members>Account.Territory_Sales_Team_Type__c</members>
         <members>Account.Territory__c</members>
+        <members>Account.Status__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Total_Technical_Headcount_TTH__c</members>
         <members>Account.Type</members>
@@ -4630,36 +4631,6 @@
         <members>TRCRecordTypeToTRCVFieldSetMapping__mdt</members>
         <members>TS_Case_Audit__c</members>
         <members>Task</members>
-        <members>Territory2</members>
-        <members>Territory2Model</members>
-        <members>Territory_Assignment_Rule__c</members>
-        <members>Territory_Management_Settings__c</members>
-        <members>Territory_Publish_Rule__c</members>
-        <members>Territory_Recalculation_Job__c</members>
-        <members>Territory_Rule_Criteria_Value__c</members>
-        <members>Territory_Rule_Criteria__c</members>
-        <members>Territory_Settings__c</members>
-        <members>Territory_Shadow__c</members>
-        <members>TimeCardController__c</members>
-        <members>Training_Agreement_Class_Relationship__c</members>
-        <members>Training_Agreement_Settings__c</members>
-        <members>Training_Get_Feedback__c</members>
-        <members>Training_Location__c</members>
-        <members>Training_Test__c</members>
-        <members>Training_Time_Zone_Canonical_Mapping__mdt</members>
-        <members>Training_Validation_Rule__c</members>
-        <members>TrialsIntegrationSetting__c</members>
-        <members>UEHGeneralSetting__c</members>
-        <members>UEHMessageCheckingSettings__c</members>
-        <members>UEH_AcademicSup_RecipientToQueueMapping__c</members>
-        <members>UEH_BookProject_RecipientToQueueMapping__c</members>
-        <members>UEH_Inbound_Email_Log__c</members>
-        <members>UEH_KeyPrefix_Module_Handler__c</members>
-        <members>UEH_Recipient_Module_Handler__c</members>
-        <members>UEH_Sender_Blacklist__c</members>
-        <members>UEH_Sender_Whitelist__c</members>
-        <members>UEH_SocialAction_RecipientToQueueMapping__c</members>
-        <members>URL_Parameters__c</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
         <name>CustomObject</name>
