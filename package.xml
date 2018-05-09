@@ -88,6 +88,7 @@
         <members>Account.Sic</members>
         <members>Account.SicDesc</members>
         <members>Account.Site</members>
+        <members>Account.Status__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Tradestyle</members>
         <members>Account.Type</members>
@@ -673,6 +674,7 @@
         <members>StreamingChannel</members>
         <members>Support_Test_Object__c</members>
         <members>Task</members>
+        <members>Test_Label__c</members>
         <members>Test_object__c</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
