@@ -43,9 +43,9 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>yes, this is obj description</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -53,9 +53,9 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Test_Fld_Label__c</fullName>
+        <fullName>Aetna_PG_Fld__c</fullName>
         <externalId>false</externalId>
-        <label>Test Fld Label</label>
+        <label>Aetna_PG_Fld</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -63,12 +63,23 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Test_Label</label>
+    <fields>
+        <fullName>Fld2_Aetna__c</fullName>
+        <externalId>false</externalId>
+        <label>Fld2_Aetna</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Aetna_PG_Obj_2</label>
     <nameField>
-        <label>Test_Label Name</label>
+        <label>Aetna_Obj Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>tests</pluralLabel>
+    <pluralLabel>aetnas_ob</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

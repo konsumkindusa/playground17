@@ -53,8 +53,9 @@
     <enableStreamingApi>true</enableStreamingApi>
     <label>AR-Accobj1</label>
     <nameField>
+        <displayFormat>A-{0000}</displayFormat>
         <label>AR-Accobj1 Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>AR-Accobj1s</pluralLabel>
     <searchLayouts/>

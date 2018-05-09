@@ -23,7 +23,7 @@
     </rules>
     <rules>
         <fullName>AR-WorkflowRule2</fullName>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>AR_CustomObject1__c.AR_CustomField1__c</field>
             <operation>equals</operation>

@@ -14,6 +14,8 @@
         <members>AccountCreation</members>
         <members>AccountCreationTest</members>
         <members>ArApexClass5</members>
+        <members>NewClass</members>
+        <members>NewClassTest</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -98,6 +100,8 @@
         <members>AccountCleanInfo.Industry</members>
         <members>AccountCleanInfo.Ownership</members>
         <members>AccountContactRole.Role</members>
+        <members>Aetna_PG_Obj__c.Aetna_PG_Fld__c</members>
+        <members>Aetna_PG_Obj__c.Fld2_Aetna__c</members>
         <members>Aetna_Playground1_Obj__c.Aetna_Playground1_Fld__c</members>
         <members>Asset.AccountId</members>
         <members>Asset.AssetLevel</members>
@@ -465,7 +469,14 @@
         <members>Macro.OwnerId</members>
         <members>Mathworks__c.Mathworks_picklist__c</members>
         <members>Mathworks__c.Mathworks_text__c</members>
+        <members>Mathworks__c.Test_Active__c</members>
+        <members>Mathworks__c.Test_Number__c</members>
         <members>Metric.OrigMetricId__c</members>
+        <members>Move_Final__c.MovesFinalFld__c</members>
+        <members>Move_Obj__c.Move_Fld__c</members>
+        <members>Move_Playground2__c.Move_Playground2_Fld__c</members>
+        <members>Move_Playground_3__c.Move_Playground3__c</members>
+        <members>Move__c.Move__c</members>
         <members>Opportunity.AccountId</members>
         <members>Opportunity.Amount</members>
         <members>Opportunity.AutorabitExtId__c</members>
@@ -596,6 +607,7 @@
         <members>Task.Type</members>
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
+        <members>Test_Label__c.Test_Fld_Label__c</members>
         <members>Test_object__c.Field_A__c</members>
         <members>Test_object__c.Field_C__c</members>
         <members>User.ManagerId</members>
@@ -621,6 +633,7 @@
         <members>AccountCleanInfo</members>
         <members>AccountContactRole</members>
         <members>Activity</members>
+        <members>Aetna_PG_Obj__c</members>
         <members>Aetna_Playground1_Obj__c</members>
         <members>Ar_Obj23__c</members>
         <members>Asset</members>
@@ -656,6 +669,11 @@
         <members>MacroAction</members>
         <members>MacroInstruction</members>
         <members>Mathworks__c</members>
+        <members>Move_Final__c</members>
+        <members>Move_Obj__c</members>
+        <members>Move_Playground2__c</members>
+        <members>Move_Playground_3__c</members>
+        <members>Move__c</members>
         <members>Opportunity</members>
         <members>OpportunityCompetitor</members>
         <members>OpportunityContactRole</members>
@@ -725,6 +743,7 @@
         <members>Account-Account %28Sales%29 Layout</members>
         <members>Account-Account %28Support%29 Layout</members>
         <members>Account-Account Layout</members>
+        <members>Aetna_PG_Obj__c-Aetna_PG_Obj Layout</members>
         <members>Aetna_Playground1_Obj__c-Aetna_Playground1_Obj Layout</members>
         <members>Ar_Obj23__c-Ar-Obj23 Layout</members>
         <members>Asset-Asset Layout</members>
@@ -759,6 +778,11 @@
         <members>Lead-Lead Layout</members>
         <members>Macro-Macro Layout</members>
         <members>Mathworks__c-Mathworks Layout</members>
+        <members>Move_Final__c-Move_Final Layout</members>
+        <members>Move_Obj__c-Move_Obj Layout</members>
+        <members>Move_Playground2__c-Move_Playground2 Layout</members>
+        <members>Move_Playground_3__c-Move_Playground_3 Layout</members>
+        <members>Move__c-Move Layout</members>
         <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
         <members>Opportunity-Opportunity %28Sales%29 Layout</members>
         <members>Opportunity-Opportunity %28Support%29 Layout</members>
@@ -776,6 +800,7 @@
         <members>Solution-Solution Layout</members>
         <members>Support_Test_Object__c-Support Test Object Layout</members>
         <members>Task-Task Layout</members>
+        <members>Test_Label__c-Test_Label Layout</members>
         <members>Test_object__c-Test object Layout</members>
         <members>User-User Layout</members>
         <members>UserProvAccount-User Provisioning Account Layout</members>
@@ -1035,6 +1060,10 @@
         <members>TaskSubject</members>
         <members>TaskType</members>
         <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Case.Test_case_validation</members>
+        <name>ValidationRule</name>
     </types>
     <types>
         <members>Account.Billing</members>

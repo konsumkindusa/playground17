@@ -398,6 +398,13 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Test_case_validation</fullName>
+        <active>true</active>
+        <description>Test</description>
+        <errorConditionFormula>Account.Name =  &apos;Test10&apos;</errorConditionFormula>
+        <errorMessage>It is a test account</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
         <availability>online</availability>
