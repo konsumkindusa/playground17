@@ -202,6 +202,7 @@
         <members>Case.AssetId</members>
         <members>Case.AutorabitExtId__c</members>
         <members>Case.BusinessHoursId</members>
+        <members>Case.Case_escalation__c</members>
         <members>Case.ClosedDate</members>
         <members>Case.Comments</members>
         <members>Case.ContactEmail</members>
