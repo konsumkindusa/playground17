@@ -936,6 +936,7 @@
         <members>Case.Case_Status__c</members>
         <members>Case.Category__c</members>
         <members>Case.Citation__c</members>
+        <members>Case.Case_escalation__c</members>
         <members>Case.ClosedDate</members>
         <members>Case.Closed_Reason__c</members>
         <members>Case.Cluster_Location__c</members>

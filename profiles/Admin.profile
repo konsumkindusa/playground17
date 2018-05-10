@@ -11824,6 +11824,12 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Territory_Publish_Rule__c.Rules_Last_Published_By__c</field>
+        <field>Case.Case_escalation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.ClosedDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
