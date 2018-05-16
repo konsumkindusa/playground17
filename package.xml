@@ -19,6 +19,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>AccountAddressTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
         <members>AppSwitcher</members>
         <members>Salesforce1</members>
         <name>AppMenu</name>
@@ -576,6 +580,7 @@
         <members>Product2.Name</members>
         <members>Product2.ProductCode</members>
         <members>Product2.QuantityUnitOfMeasure</members>
+        <members>Provider_Reference__c.Test_Provider1__c</members>
         <members>Sherdah__c.Sherdah_text__c</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
@@ -687,6 +692,7 @@
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
         <members>Product2</members>
+        <members>Provider_Reference__c</members>
         <members>Sherdah__c</members>
         <members>Site</members>
         <members>SocialPersona</members>
@@ -797,6 +803,7 @@
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
+        <members>Provider_Reference__c-Test Provider Reference Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
         <members>Sherdah__c-Sherdah Layout</members>
