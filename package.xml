@@ -466,70 +466,6 @@
         <members>TrainingLocationPage</members>
         <members>Unauthorized</members>
         <members>UnderConstruction</members>
-        <members>ViewTrials</members>
-        <members>cp_CaseDetailDesc</members>
-        <members>cp_case_attachfile</members>
-        <members>cp_case_close</members>
-        <members>cp_case_detail</members>
-        <members>cp_case_edit</members>
-        <members>cp_case_email</members>
-        <members>cp_case_home</members>
-        <members>cp_case_new</members>
-        <members>cp_case_new_cs_opt1</members>
-        <members>cp_case_new_cs_opt2</members>
-        <members>cp_case_new_cs_opt3</members>
-        <members>cp_case_new_cs_opt4</members>
-        <members>cp_case_new_cs_opt5</members>
-        <members>cp_case_new_cs_opt6</members>
-        <members>cp_case_new_cs_opt7</members>
-        <members>cp_case_new_forwardemail_notification</members>
-        <members>cp_case_new_style</members>
-        <members>cp_case_new_ts_attachments_fix</members>
-        <members>cp_case_new_ts_opt1</members>
-        <members>cp_case_new_ts_opt2</members>
-        <members>cp_case_task</members>
-        <members>cp_create_casecomment</members>
-        <members>cp_error</members>
-        <members>cp_footer</members>
-        <members>cp_header</members>
-        <members>cp_service_frame</members>
-        <members>massupdatelead</members>
-        <members>submitCaseToGeko</members>
-        <members>viewterritoryteams</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>AccountMasterTrigger</members>
-        <members>AttachmentMasterTrigger</members>
-        <members>CaseMasterTrigger</members>
-        <members>ClassMasterTrigger</members>
-        <members>ContactMasterTrigger</members>
-        <members>ContentDocumentLinkMasterTrigger</members>
-        <members>CourseMasterTrigger</members>
-        <members>CreateArticleFeedback</members>
-        <members>E2AEmailMasterTrigger</members>
-        <members>EmailMessageMasterTrigger</members>
-        <members>EnrollmentCodeTrigger</members>
-        <members>EnrollmentMasterTrigger</members>
-        <members>EnrollmentRequestMasterTrigger</members>
-        <members>EnterpriseTrainingAgreementMasterTrigger</members>
-        <members>LeadMasterTrigger</members>
-        <members>OpportunityLineItemMasterTrigger</members>
-        <members>OpportunityProjectTrigger</members>
-        <members>OpportunityTrigger</members>
-        <members>ProjectMasterTrigger</members>
-        <members>ProjectTeamMemberMasterTrigger</members>
-        <members>TaskMasterTrigger</members>
-        <members>Territory2MasterTrigger</members>
-        <members>TerritoryAssignmentRuleMasterTrigger</members>
-        <members>TimecardMasterTrigger</members>
-        <members>TrainingAgreementClassMasterTrigger</members>
-        <members>TrainingLocMasterTrigger</members>
-        <members>UserT2AMasterTrigger</members>
-        <members>deleteFeedItem</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
         <members>Salesforce1</members>
         <name>AppMenu</name>
     </types>
@@ -2566,6 +2502,8 @@
         <members>Product2.Product_Name__c</members>
         <members>Product2.Product_Unique_Identifier__c</members>
         <members>Product2.QuantityUnitOfMeasure</members>
+        <members>Provider_Reference__c.Test_Provider1__c</members>
+        <members>Sherdah__c.Sherdah_text__c</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
         <members>SocialPersona.Followers</members>
@@ -4618,6 +4556,12 @@
         <members>PRODUCT_SUPPRT__c</members>
         <members>PartnerAgreementRecipientToQueueMapping__c</members>
         <members>PartnerRole</members>
+        <members>Patrick__c</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
+        <members>Product2</members>
+        <members>Provider_Reference__c</members>
+        <members>Sherdah__c</members>
         <members>Site</members>
         <members>SocialPersona</members>
         <members>SocialPost</members>
@@ -7120,16 +7064,6 @@
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
-        <members>Project_Role__c-Project Contact Role Layout</members>
-        <members>Project_Team_Member__c-Project Team Layout</members>
-        <members>Project_Time_Card__c-Project Time Card Layout</members>
-        <members>QuickText-Quick Text Layout</members>
-        <members>Reassign_Helper__c-Présentation de Mass Reassign Opportunity Helper</members>
-        <members>References__c-Reference Layout</members>
-        <members>Release__c-Release Layout</members>
-        <members>ResolutionLink__c-DocLink Layout</members>
-        <members>SFDC_Department__mdt-SFDC Department Layout</members>
-        <members>SFDC_Gecko_Platform_Mapping__c-SFDC Gecko Platform Mapping Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
         <members>Solution-Solution Layout</members>
