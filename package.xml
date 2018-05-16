@@ -868,10 +868,6 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>LeelaMarket_Developer</members>
-        <name>PermissionSet</name>
-    </types>
-    <types>
         <members>AR-Profile1</members>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>
