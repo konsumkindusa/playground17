@@ -8094,6 +8094,11 @@
         <name>Portal</name>
     </types>
     <types>
+        <members>AR_Test_Permission_set</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>AR-Profile1</members>
         <members>Admin</members>
         <members>Chatter External User</members>
         <members>Chatter Free User</members>
