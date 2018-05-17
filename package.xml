@@ -898,6 +898,7 @@
         <members>Customer Community User</members>
         <members>Customer Portal Manager Custom</members>
         <members>Customer Portal Manager Standard</members>
+        <members>Customer%3A Support Profile</members>
         <members>External Identity User</members>
         <members>Force%2Ecom - App Subscription User</members>
         <members>Force%2Ecom - Free User</members>
@@ -919,8 +920,13 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>Custom_Support_Profile_profilePasswordPolicy1526553928236</members>
         <members>PT1_profilePasswordPolicy1463153221823</members>
         <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>Custom_Support_Profile_profileSessionSetting1526553928301</members>
+        <name>ProfileSessionSetting</name>
     </types>
     <types>
         <members>Case.NewChildCase</members>
