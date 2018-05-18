@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Test</description>
+    <interviewLabel>Test Flow 1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test Flow 1</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Test_Flow</name>
+        <label>Test Flow</label>
+        <locationX>274</locationX>
+        <locationY>124</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Test_cur</name>
+            <dataType>Currency</dataType>
+            <defaultValue>
+                <numberValue>5.0</numberValue>
+            </defaultValue>
+            <fieldText>Test cur</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>Test_date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <dateValue>2018-05-18</dateValue>
+            </defaultValue>
+            <fieldText>Test date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+</Flow>
