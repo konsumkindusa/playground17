@@ -699,6 +699,16 @@
         <name>EmailTemplate</name>
     </types>
     <types>
+        <members>Case_Process-1</members>
+        <members>Test_Flow_1-1</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Case_Process</members>
+        <members>Test_Flow_1</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
         <members>DE Default</members>
         <name>HomePageLayout</name>
     </types>
@@ -864,10 +874,57 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>Custom_Marketing_Profile_profilePasswordPolicy1526626267538</members>
+        <members>Custom_Support_Profile_profilePasswordPolicy1526553928236</members>
         <members>PT1_profilePasswordPolicy1463153221823</members>
         <name>ProfilePasswordPolicy</name>
     </types>
     <types>
+        <members>Custom_Marketing_Profile_profileSessionSetting1526626267718</members>
+        <members>Custom_Support_Profile_profileSessionSetting1526553928301</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>AE_PE_Unassigned_Requests</members>
+        <members>Academic_Support</members>
+        <members>Article_Approval_Externally_Approved</members>
+        <members>Article_Approval_Internally_Approved</members>
+        <members>Book_Project_China</members>
+        <members>Book_Project_Japan</members>
+        <members>Book_Project_Natick</members>
+        <members>Japan_Partner_Agreements</members>
+        <members>Natick_No_Charge</members>
+        <members>Natick_Partner_Agreements</members>
+        <members>Student_Competition</members>
+        <members>TE_Unassigned_Requests</members>
+        <members>Training_Survey_Unassigned</members>
+        <members>Unassigned</members>
+        <members>Unassigned_Lead</members>
+        <members>Unassigned_Social_Mission</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Account.AE_PE_Sales_Request</members>
+        <members>Account.CSE_Community</members>
+        <members>Account.CSE_Curriculum</members>
+        <members>Account.CSE_Enterprise</members>
+        <members>Account.CSE_FIMTAH</members>
+        <members>Account.CSE_Maintenance</members>
+        <members>Account.CSE_Onboarding</members>
+        <members>Account.CSE_Other</members>
+        <members>Account.CSE_Reonboarding</members>
+        <members>Account.CSE_Research</members>
+        <members>Account.Create_RAC_Case</members>
+        <members>Account.Create_Service_Case</members>
+        <members>Account.New_CFA</members>
+        <members>Account.Quick_Opportunity</members>
+        <members>Campaign.AE_PE_Marketing_Request</members>
+        <members>Case.Create_Escalation</members>
+        <members>Case.Create_Geck</members>
+        <members>Case.Create_a_Resolution_Link</members>
+        <members>Case.Escalation_non_Dev</members>
+        <members>Case.Log_Call</members>
+        <members>Case.ML_Answers</members>
         <members>Case.NewChildCase</members>
         <members>CollaborationGroup.NewGroupMember</members>
         <members>CollaborationGroup.NewGroupRecord</members>
@@ -1025,5 +1082,14 @@
         <members>AR_CustomObject1__c.AR-WorkFlow1</members>
         <members>AR_CustomObject1__c.AR-WorkflowRule2</members>
         <name>WorkflowRule</name>
+    </types>
+    <types>
+        <members>Account.Account_Warning_Notes</members>
+        <members>Case.Auto_Close_Email_Sent_to_the_Customer</members>
+        <members>Case.Follow_Up_email_sent_to_the_Customer</members>
+        <members>Contact.Contact_Warning_Denied_Notes_Reminder</members>
+        <members>Opportunity.NewTaskATOpportunity</members>
+        <members>Opportunity.Provide_agreement_information</members>
+        <name>WorkflowTask</name>
     </types>
 </Package>
