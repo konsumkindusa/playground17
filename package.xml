@@ -739,6 +739,16 @@
         <name>EmailTemplate</name>
     </types>
     <types>
+        <members>Case_Process-1</members>
+        <members>Test_Flow_1-1</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Case_Process</members>
+        <members>Test_Flow_1</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
         <members>DE Default</members>
         <name>HomePageLayout</name>
     </types>
@@ -920,11 +930,13 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>Custom_Marketing_Profile_profilePasswordPolicy1526626267538</members>
         <members>Custom_Support_Profile_profilePasswordPolicy1526553928236</members>
         <members>PT1_profilePasswordPolicy1463153221823</members>
         <name>ProfilePasswordPolicy</name>
     </types>
     <types>
+        <members>Custom_Marketing_Profile_profileSessionSetting1526626267718</members>
         <members>Custom_Support_Profile_profileSessionSetting1526553928301</members>
         <name>ProfileSessionSetting</name>
     </types>
