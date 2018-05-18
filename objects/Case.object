@@ -717,6 +717,34 @@
         <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Test_case_validation</fullName>
+        <active>true</active>
+        <description>Testing this Validation Rule</description>
+        <errorConditionFormula>Account.Name =  &apos;Test12&apos;</errorConditionFormula>
+        <errorMessage>It is a test account</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>UpsellCrosssellOpportunity</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Up-sell / Cross-sell Opportunity</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
         <protected>false</protected>
         <requireRowSelection>true</requireRowSelection>
         <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
