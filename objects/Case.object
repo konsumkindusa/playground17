@@ -295,6 +295,199 @@
                     <default>false</default>
                     <label>Yes</label>
                 </value>
+                <value>
+                    <fullName>JP - Install</fullName>
+                    <color>#B6E32E</color>
+                    <default>false</default>
+                    <label>JP - Install</label>
+                </value>
+                <value>
+                    <fullName>JP - Revenue Accounting and Controls</fullName>
+                    <color>#641CCF</color>
+                    <default>false</default>
+                    <label>JP - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>JP - Technical Support</fullName>
+                    <color>#F96FB7</color>
+                    <default>false</default>
+                    <label>JP - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Customer Support</fullName>
+                    <color>#2F5D85</color>
+                    <default>false</default>
+                    <label>KR - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>KR - Customer Training</fullName>
+                    <default>false</default>
+                    <label>KR - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>KR - Install</fullName>
+                    <color>#AFCADF</color>
+                    <default>false</default>
+                    <label>KR - Install</label>
+                </value>
+                <value>
+                    <fullName>KR - Revenue Accounting and Controls</fullName>
+                    <color>#8F6429</color>
+                    <default>false</default>
+                    <label>KR - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>KR - Technical Support</fullName>
+                    <color>#EFAE73</color>
+                    <default>false</default>
+                    <label>KR - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Advanced Support</fullName>
+                    <color>#57F17C</color>
+                    <default>false</default>
+                    <label>Natick - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Connections</fullName>
+                    <color>#0B6FCE</color>
+                    <default>false</default>
+                    <label>Natick - Connections</label>
+                </value>
+                <value>
+                    <fullName>Natick - Customer Support</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>Natick - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Natick - Customer Training</fullName>
+                    <default>false</default>
+                    <label>Natick - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>Natick - Database</fullName>
+                    <color>#E27001</color>
+                    <default>false</default>
+                    <label>Natick - Database</label>
+                </value>
+                <value>
+                    <fullName>Natick - Export Compliance</fullName>
+                    <color>#A845DC</color>
+                    <default>false</default>
+                    <label>Natick - Export Compliance</label>
+                </value>
+                <value>
+                    <fullName>Natick - Freight Management</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>Natick - Freight Management</label>
+                </value>
+                <value>
+                    <fullName>Natick - Install</fullName>
+                    <color>#A53711</color>
+                    <default>false</default>
+                    <label>Natick - Install</label>
+                </value>
+                <value>
+                    <fullName>Natick - License Compliance</fullName>
+                    <color>#66E9BD</color>
+                    <default>false</default>
+                    <label>Natick - License Compliance</label>
+                </value>
+                <value>
+                    <fullName>Natick - Partner Exchange</fullName>
+                    <color>#0B24BE</color>
+                    <default>false</default>
+                    <label>Natick - Partner Exchange</label>
+                </value>
+                <value>
+                    <fullName>Natick - Revenue Accounting and Controls</fullName>
+                    <color>#419249</color>
+                    <default>false</default>
+                    <label>Natick - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>Natick - Tax</fullName>
+                    <color>#B6E32E</color>
+                    <default>false</default>
+                    <label>Natick - Tax</label>
+                </value>
+                <value>
+                    <fullName>Natick - Technical Support</fullName>
+                    <color>#641CCF</color>
+                    <default>false</default>
+                    <label>Natick - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Customer Support</fullName>
+                    <color>#F96FB7</color>
+                    <default>false</default>
+                    <label>Nordic - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Customer Training</fullName>
+                    <default>false</default>
+                    <label>Nordic - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Install</fullName>
+                    <color>#2F5D85</color>
+                    <default>false</default>
+                    <label>Nordic - Install</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Revenue Accounting and Controls</fullName>
+                    <color>#AFCADF</color>
+                    <default>false</default>
+                    <label>Nordic - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>Nordic - Technical Support</fullName>
+                    <color>#8F6429</color>
+                    <default>false</default>
+                    <label>Nordic - Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Premier Support - Denso</fullName>
+                    <color>#EFAE73</color>
+                    <default>false</default>
+                    <label>Premier Support - Denso</label>
+                </value>
+                <value>
+                    <fullName>UK - Advanced Support</fullName>
+                    <color>#57F17C</color>
+                    <default>false</default>
+                    <label>UK - Advanced Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Customer Support</fullName>
+                    <color>#0B6FCE</color>
+                    <default>false</default>
+                    <label>UK - Customer Support</label>
+                </value>
+                <value>
+                    <fullName>UK - Customer Training</fullName>
+                    <default>false</default>
+                    <label>UK - Customer Training</label>
+                </value>
+                <value>
+                    <fullName>UK - Install</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>UK - Install</label>
+                </value>
+                <value>
+                    <fullName>UK - Revenue Accounting and Controls</fullName>
+                    <default>false</default>
+                    <label>UK - Revenue Accounting and Controls</label>
+                </value>
+                <value>
+                    <fullName>UK - Technical Support</fullName>
+                    <color>#A845DC</color>
+                    <default>false</default>
+                    <label>UK - Technical Support</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -416,5 +609,17 @@
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>https://na1.salesforce.com/opp/oppedit.jsp?accid={!Account_ID}&amp;opp3=Up-sell+/+Cross-sell&amp;opp5=Existing+Customer&amp;opp6=Customer+Support</url>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
+var records = {!GETRECORDIDS( $ObjectType.Case)};
+var returnURL = window.location.href;
+if(records != null &amp;&amp; records != &apos;&apos;){
+mywin = window.open(&apos;/apex/activities__createTasks?Ids=&apos;+records+&apos;&amp;retURL=&apos;+returnURL+&apos;&amp;type=whatId&apos; , &apos;_top&apos;,
+&apos;height=400,width=600,status=yes,toolbar=no,menubar=no,location=no,center=yes,resizable=no&apos;);
+mywin.focus();
+}else{
+alert(&apos;Please select atleast one record.&apos;);
+}</url>
     </webLinks>
 </CustomObject>
