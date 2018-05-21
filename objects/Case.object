@@ -594,8 +594,8 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <description>Test Validation Rule check</description>
-        <errorConditionFormula>Account.Name =  &apos;Test11&apos;</errorConditionFormula>
+        <description>Validation Rules Description Test</description>
+        <errorConditionFormula>Account.Name =  &apos;Test12&apos;</errorConditionFormula>
         <errorMessage>It is a test account</errorMessage>
     </validationRules>
     <webLinks>
