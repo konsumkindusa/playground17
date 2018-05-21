@@ -875,12 +875,14 @@
     </types>
     <types>
         <members>Custom_Marketing_Profile_profilePasswordPolicy1526626267538</members>
+        <members>Custom_Sales_Profile_profilePasswordPolicy1526886509099</members>
         <members>Custom_Support_Profile_profilePasswordPolicy1526553928236</members>
         <members>PT1_profilePasswordPolicy1463153221823</members>
         <name>ProfilePasswordPolicy</name>
     </types>
     <types>
         <members>Custom_Marketing_Profile_profileSessionSetting1526626267718</members>
+        <members>Custom_Sales_Profile_profileSessionSetting1526886509334</members>
         <members>Custom_Support_Profile_profileSessionSetting1526553928301</members>
         <name>ProfileSessionSetting</name>
     </types>
