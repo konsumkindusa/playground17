@@ -87,6 +87,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
+    <description>It is a Custom Sales Profile</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>AR_CustomObject1__c.AR_CustomField1__c</field>
