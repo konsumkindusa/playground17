@@ -1,3 +1,4 @@
+//This is a test Class
 @isTest
 public class AccountCreationTest
 {
@@ -5,6 +6,7 @@ public class AccountCreationTest
   {
   
   // For HNI Playground
+  // For Move Playground
   AccountCreation ca = new AccountCreation();
   ca.createAccount('TestAcc1');
   
