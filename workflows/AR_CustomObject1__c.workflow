@@ -14,7 +14,7 @@
             <value>testworkflowfield3</value>
         </criteriaItems>
         <description>Add Comment for AR-WorkFlow1</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onCreateOnly</triggerType>
         <workflowTimeTriggers>
             <offsetFromField>AR_CustomObject1__c.LastModifiedDate</offsetFromField>
             <timeLength>1</timeLength>
