@@ -1,3 +1,5 @@
+//This is a new Class
+
 public class DemoClass3{
   // Attributes usually come first!
   String  name;

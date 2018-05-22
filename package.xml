@@ -17,6 +17,7 @@
         <members>DemoClass1</members>
         <members>DemoClass2</members>
         <members>DemoClass3</members>
+        <members>DemoNewClass</members>
         <members>DemoTestclass4</members>
         <members>NewClass</members>
         <members>NewClassTest</members>
@@ -922,6 +923,7 @@
         <members>Customer Portal Manager Custom</members>
         <members>Customer Portal Manager Standard</members>
         <members>Customer%3A Support Profile</members>
+        <members>Demo New Profile</members>
         <members>Demo Profile 1</members>
         <members>Demo Profile 2</members>
         <members>External Identity User</members>
@@ -948,6 +950,7 @@
         <members>Custom_Marketing_Profile_profilePasswordPolicy1526626267538</members>
         <members>Custom_Sales_Profile_profilePasswordPolicy1526886509099</members>
         <members>Custom_Support_Profile_profilePasswordPolicy1526553928236</members>
+        <members>Demo_New_Profile_profilePasswordPolicy1526992784551</members>
         <members>Demo_Profile_1_profilePasswordPolicy1526981861549</members>
         <members>Demo_Profile_2_profilePasswordPolicy1526981881433</members>
         <members>PT1_profilePasswordPolicy1463153221823</members>
