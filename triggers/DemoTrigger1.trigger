@@ -1,6 +1,3 @@
-////Adding a Comment
-
-
 trigger DemoTrigger1 on Account (before insert,before update) {
 
 

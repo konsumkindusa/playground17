@@ -1557,6 +1557,42 @@
         <members>DMAPP__Plan_Type__c.MR_ProjPlanning__c</members>
         <members>DMAPP__Plan_Type__c.MR_SeniorInfluencers__c</members>
         <members>DMAPP__Plan_Type__c.MR_SeniorRel__c</members>
+        <members>DandBCompany.CompanyCurrencyIsoCode</members>
+        <members>DandBCompany.CountryAccessCode</members>
+        <members>DandBCompany.CurrencyCode</members>
+        <members>DandBCompany.Description</members>
+        <members>DandBCompany.DomesticUltimateBusinessName</members>
+        <members>DandBCompany.DomesticUltimateDunsNumber</members>
+        <members>DandBCompany.DunsNumber</members>
+        <members>DandBCompany.EmployeeQuantityGrowthRate</members>
+        <members>DandBCompany.EmployeesHere</members>
+        <members>DandBCompany.EmployeesHereReliability</members>
+        <members>DandBCompany.EmployeesTotal</members>
+        <members>DandBCompany.EmployeesTotalReliability</members>
+        <members>DandBCompany.FamilyMembers</members>
+        <members>DandBCompany.Fax</members>
+        <members>DandBCompany.FifthNaics</members>
+        <members>DandBCompany.FifthNaicsDesc</members>
+        <members>DandBCompany.FifthSic</members>
+        <members>DandBCompany.FifthSic8</members>
+        <members>DandBCompany.FifthSic8Desc</members>
+        <members>DandBCompany.FifthSicDesc</members>
+        <members>DandBCompany.FipsMsaCode</members>
+        <members>DandBCompany.FipsMsaDesc</members>
+        <members>DandBCompany.FortuneRank</members>
+        <members>DandBCompany.FourthNaics</members>
+        <members>DandBCompany.FourthNaicsDesc</members>
+        <members>DandBCompany.FourthSic</members>
+        <members>DandBCompany.FourthSic8</members>
+        <members>DandBCompany.FourthSic8Desc</members>
+        <members>DandBCompany.FourthSicDesc</members>
+        <members>DandBCompany.GeoCodeAccuracy</members>
+        <members>DandBCompany.GlobalUltimateBusinessName</members>
+        <members>DandBCompany.GlobalUltimateDunsNumber</members>
+        <members>DandBCompany.GlobalUltimateTotalEmployees</members>
+        <members>DandBCompany.ImportExportAgent</members>
+        <members>DandBCompany.IncludedInSnP500</members>
+        <members>DandBCompany.Latitude</members>
         <members>DuplicateRecordItem.DuplicateRecordSetId</members>
         <members>DuplicateRecordItem.RecordId</members>
         <members>DuplicateRecordSet.DuplicateRuleId</members>
@@ -4486,15 +4522,6 @@
         <members>ContentVersion</members>
         <members>Contract</members>
         <members>ContractContactRole</members>
-        <members>Countries_Requiring_States__c</members>
-        <members>Country_Code_List__mdt</members>
-        <members>Country_List__c</members>
-        <members>Country_Settings__c</members>
-        <members>Course_Language__c</members>
-        <members>Course_Product__c</members>
-        <members>Course__c</members>
-        <members>Customer_Facing_Activity__c</members>
-        <members>Customer_Success_Engagement__c</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
         <members>Dynamic_Report_Settings__c</members>
@@ -7007,24 +7034,6 @@
         <members>Contact-Sales Contact Layout</members>
         <members>Contact-Test</members>
         <members>Contract-Contract Layout</members>
-        <members>Country_Code_List__mdt-Country Code List Layout</members>
-        <members>Course_Language__c-Course Language Layout</members>
-        <members>Course_Product__c-Course Product Layout</members>
-        <members>Course__c-Distance Learning Layout</members>
-        <members>Course__c-Exam Layout</members>
-        <members>Course__c-Instructor Led Layout</members>
-        <members>Course__c-Self-Paced Layout</members>
-        <members>Course__c-Training Layout</members>
-        <members>Customer_Facing_Activity__c-Customer Facing Activity Layout</members>
-        <members>Customer_Success_Engagement__c-Community Engagement Layout</members>
-        <members>Customer_Success_Engagement__c-Curriculum Engagement Layout</members>
-        <members>Customer_Success_Engagement__c-Enterprise</members>
-        <members>Customer_Success_Engagement__c-FIMTAH</members>
-        <members>Customer_Success_Engagement__c-Maintenance Engagement Layout</members>
-        <members>Customer_Success_Engagement__c-Onboarding Engagement Layout</members>
-        <members>Customer_Success_Engagement__c-Other Engagement Layout</members>
-        <members>Customer_Success_Engagement__c-Reonboarding Engagement Layout</members>
-        <members>Customer_Success_Engagement__c-Research Engagement Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EmailMessage-Email Message Layout</members>
         <members>EmailMessage-Email Message Layout - Email-to-Case</members>

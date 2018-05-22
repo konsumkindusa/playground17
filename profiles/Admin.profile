@@ -12145,6 +12145,17 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Training_Get_Feedback__c.Facility_Overall__c</field>
+        <field>Demo_Work_1__c.Demo_Test_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Demo_Work_1__c.Demo_Test_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>EMD__c.EMD_Checkbox__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13241,6 +13252,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Partner_Benefits__c-Partner Benefit Layout</layout>
+        <layout>Demo_Work_1__c-Demo Work 1 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Partner_Benefits__c-Partner Benefit Layout</layout>
@@ -14031,6 +14046,16 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>QuickText</object>
+        <object>Demo_Work_1__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>DuplicateRecordSet</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
