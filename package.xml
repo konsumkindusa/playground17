@@ -20,11 +20,105 @@
         <members>DemoNewClass</members>
         <members>DemoTestclass4</members>
         <members>NewClass</members>
+        <members>NewClass1</members>
+        <members>NewClass2</members>
+        <members>NewClass3</members>
         <members>NewClassTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>AppSwitcher</members>
+        <members>AccountAddressTrigger</members>
+        <members>DemoTrigger1</members>
+        <members>DemoTrigger2</members>
+        <members>DemoTrigger3</members>
+        <members>newaccounttrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>AE_PE_ActionGrid</members>
+        <members>AG_Case_Install_Natick</members>
+        <members>AG_Home</members>
+        <members>AG_MultiTab_Sales</members>
+        <members>AUIConnect</members>
+        <members>AccountEditOverride</members>
+        <members>AccountEditOverride2</members>
+        <members>AccountNewOverride</members>
+        <members>AccountNewOverride2</members>
+        <members>AccountViewLicense</members>
+        <members>AccountViewQuotesCommerce</members>
+        <members>ActionGrid_for_Training_Services</members>
+        <members>Activity_mass_update_confirmation</members>
+        <members>AnswersHome</members>
+        <members>BandwidthExceeded</members>
+        <members>CPOutage</members>
+        <members>CaseCloneCancel</members>
+        <members>CaseCloneOverride</members>
+        <members>CaseCloneSaveBypass</members>
+        <members>CaseCreateEscalation</members>
+        <members>CaseDeleteOverride</members>
+        <members>CaseGeckCreationPage</members>
+        <members>ChangePassword</members>
+        <members>ContactEditOverride</members>
+        <members>ContactEditOverride2</members>
+        <members>ContactEloquaProfiler</members>
+        <members>ContactMathworksAccount</members>
+        <members>ContactNewOverride</members>
+        <members>ContactNewOverride2</members>
+        <members>ContactNewQuote</members>
+        <members>ContactNewQuoteCommerce</members>
+        <members>ContactViewLicenses</members>
+        <members>ContactViewQuote</members>
+        <members>ContactViewQuotesCommerce</members>
+        <members>ContactViewTrials</members>
+        <members>DisplayLincedCases</members>
+        <members>EnrollmentPage</members>
+        <members>Exception</members>
+        <members>FileNotFound</members>
+        <members>Five_Pillar_Questions</members>
+        <members>ForgotPassword</members>
+        <members>ForgotPasswordConfirm</members>
+        <members>GlobalContactSearch</members>
+        <members>GlobalContactSearchOptions</members>
+        <members>IdeasHome</members>
+        <members>InMaintenance</members>
+        <members>LaunchRecord</members>
+        <members>LeadConversion</members>
+        <members>LeadEloquaProfiler</members>
+        <members>Lead_mass_update_confirmation</members>
+        <members>LicenseLookupPage</members>
+        <members>LicenseOpenAccount</members>
+        <members>LicenseOpenContact</members>
+        <members>Login_As</members>
+        <members>MassReassignOpportunities</members>
+        <members>MyProfilePage</members>
+        <members>OpenOpportunityMasterLicense</members>
+        <members>OppCommerceNewQuote</members>
+        <members>OpportunityNewQuote</members>
+        <members>OpportunityNewTrial</members>
+        <members>OpportunityViewQuote</members>
+        <members>Opportunity_Mass_Reorg</members>
+        <members>ProductSearch</members>
+        <members>ProjectTimecard</members>
+        <members>PublishTMRulesViewPage</members>
+        <members>QuoteLookupPage</members>
+        <members>RedirectToTimeCard</members>
+        <members>RegisterTraining</members>
+        <members>SelfEnrollment</members>
+        <members>Send_Email_Page</members>
+        <members>SiteErrorPage</members>
+        <members>SiteLogin</members>
+        <members>SiteRegister</members>
+        <members>SiteRegisterConfirm</members>
+        <members>SiteTemplate</members>
+        <members>StdExceptionTemplate</members>
+        <members>TAHSiteComposition</members>
+        <members>TS_MultiTab_ActionGrid</members>
+        <members>TerritoryRuleCriteriaValuesRedirectPage</members>
+        <members>TerritorySummary</members>
+        <members>TimecardRedirect</members>
+        <members>TrainingLocationPage</members>
+        <members>Unauthorized</members>
+        <members>UnderConstruction</members>
         <members>Salesforce1</members>
         <name>AppMenu</name>
     </types>
