@@ -18,5 +18,10 @@
     </classAccesses>
     <custom>true</custom>
     <description>Test</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Aetna_PG_Obj__c.Fld3_Aetna__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <userLicense>Salesforce</userLicense>
 </Profile>
