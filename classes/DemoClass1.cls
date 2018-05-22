@@ -1,4 +1,4 @@
-//Adding a Comment
+//Adding a Comment - This is a new Class
 
 public class DemoClass1 {       //Class definition and body
    public static Integer myValue = 0;  //Class Member variable

@@ -103,7 +103,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
-    <description>It is a Custom Sales Profile</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>AR_CustomObject1__c.AR_CustomField1__c</field>
@@ -896,16 +895,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Demo_Work_1__c.Demo_Test_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Demo_Work_1__c.Demo_Test_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>EMD__c.EMD_Checkbox__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1055,9 +1044,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Lead.Primary__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1070,9 +1059,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Lead.SICCode__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1150,9 +1139,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Opportunity.DeliveryInstallationStatus__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1185,9 +1174,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Opportunity.OrderNumber__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1200,9 +1189,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Opportunity.TrackingNumber__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1464,7 +1453,7 @@
         <layout>AR_UATObj2__c-AR-UATObj2 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account %28Sales%29 Layout</layout>
+        <layout>Account-Account %28Marketing%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Aetna_PG_Obj__c-Aetna_PG_Obj Layout</layout>
@@ -1482,13 +1471,13 @@
         <layout>CampaignMember-Campaign Member Page Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Case %28Sales%29 Layout</layout>
+        <layout>Case-Case %28Marketing%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contact-Contact %28Sales%29 Layout</layout>
+        <layout>Contact-Contact %28Marketing%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContentVersion-Content Version Layout</layout>
@@ -1521,7 +1510,7 @@
         <layout>Idea-Idea Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lead-Lead %28Sales%29 Layout</layout>
+        <layout>Lead-Lead %28Marketing%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
@@ -1545,7 +1534,7 @@
         <layout>Move__c-Move Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity %28Sales%29 Layout</layout>
+        <layout>Opportunity-Opportunity %28Marketing%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
@@ -1703,11 +1692,11 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Campaign</tab>
-        <visibility>DefaultOff</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Case</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Contact</tab>
