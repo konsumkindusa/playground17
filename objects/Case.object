@@ -415,7 +415,7 @@
         <fullName>Test_case_validation</fullName>
         <active>true</active>
         <description>Validation Rules Description Test</description>
-        <errorConditionFormula>Account.Name =  &apos;Test12&apos;</errorConditionFormula>
+        <errorConditionFormula>Account.Name =  &apos;Test15&apos;</errorConditionFormula>
         <errorMessage>It is a test account</errorMessage>
     </validationRules>
     <webLinks>
