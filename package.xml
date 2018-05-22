@@ -398,6 +398,8 @@
         <members>DandBCompany.UsTaxId</members>
         <members>DandBCompany.WomenOwned</members>
         <members>DandBCompany.YearStarted</members>
+        <members>Demo_Work_1__c.Demo_Test_1__c</members>
+        <members>Demo_Work_1__c.Demo_Test_2__c</members>
         <members>DuplicateRecordItem.DuplicateRecordSetId</members>
         <members>DuplicateRecordItem.RecordId</members>
         <members>DuplicateRecordSet.DuplicateRuleId</members>
@@ -666,6 +668,7 @@
         <members>Contract</members>
         <members>ContractContactRole</members>
         <members>DandBCompany</members>
+        <members>Demo_Work_1__c</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
         <members>EMD_CI_Demo__c</members>
@@ -791,6 +794,7 @@
         <members>ContentVersion-Content Version Layout</members>
         <members>Contract-Contract Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
+        <members>Demo_Work_1__c-Demo Work 1 Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EMD_CI_Demo__c-EMD CI Demo Layout</members>
         <members>EMD__c-EMD Layout</members>
