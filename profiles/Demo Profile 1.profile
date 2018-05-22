@@ -33,7 +33,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
-    <description>Test</description>
+    <description>Test profile deploy</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Aetna_PG_Obj__c.Fld3_Aetna__c</field>
