@@ -1,4 +1,4 @@
-//Adding some testlines to the code for commiting
+//Adding some testlines to the code for merging
 
 public Class ARApexClass4
 {
