@@ -20,34 +20,19 @@
         <members>DemoNewClass</members>
         <members>DemoTestclass4</members>
         <members>NewClass</members>
+        <members>NewClass1</members>
+        <members>NewClass2</members>
+        <members>NewClass3</members>
         <members>NewClassTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>CaseArticleInfoEmailTemplateAttachments</members>
-        <members>CaseArticleInfoEmailTemplateText</members>
-        <members>CountryStatePickListComponent</members>
-        <members>Course</members>
-        <members>EnrollTrainingCertificateAssociateLogo</members>
-        <members>EnrollTrainingCertificateProfessinalLogo</members>
-        <members>EnrollmentCertificateEmailContent</members>
-        <members>EnrollmentCompletionCert</members>
-        <members>EnrollmentConfEmailContent</members>
-        <members>EnrollmentSendCertificate</members>
-        <members>EnrollmentTrainingCertAssociate</members>
-        <members>EnrollmentTrainingCertProfessional</members>
-        <members>LeadConversionHeader</members>
-        <members>SiteFooter</members>
-        <members>SiteHeader</members>
-        <members>SiteLogin</members>
-        <members>SitePoweredBy</members>
-        <members>TerritoryAssignmnetRuleComponent</members>
-        <members>TerritoryRuleCriteriaComponent</members>
-        <members>TerritoryRuleCriteriaValueComponent</members>
-        <members>TerritorySalesTeamMemberComponent</members>
-        <members>TrainingCoordinatorNotification</members>
-        <members>TrainingCoordinatorRenewal</members>
-        <name>ApexComponent</name>
+        <members>AccountAddressTrigger</members>
+        <members>DemoTrigger1</members>
+        <members>DemoTrigger2</members>
+        <members>DemoTrigger3</members>
+        <members>newaccounttrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>AE_PE_ActionGrid</members>
