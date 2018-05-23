@@ -1,5 +1,3 @@
-//Testing for commit and merge
-
 @isTest
 public class AccountCreationTest
 {
