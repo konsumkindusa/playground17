@@ -67,7 +67,15 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>AccountTriggerHandlerTest</apexClass>
+        <apexClass>ARApexclass2</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARdemoClass1</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AccountCreation</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -1694,7 +1702,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>User.Person_Master_Id__c</field>
+        <field>Survey_Response__c.Cost__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Survey_Response__c.Survey_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.ActivityDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2296,16 +2314,7 @@
         <layout>Solution-Solution Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Sponsor_Office__c-Sponsor Office Detail Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>State_Code_List__mdt-State Code List Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>TRCRecordTypeToTRCVFieldSetMapping__mdt-TRCRecordTypeTRCVFieldSetMapping Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>TS_Case_Audit__c-TS Case Audit Layout</layout>
+        <layout>Survey_Response__c-Survey Response Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
@@ -3276,7 +3285,16 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>UEH_Inbound_Email_Log__c</object>
+        <object>Survey_Response__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Test_object__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>

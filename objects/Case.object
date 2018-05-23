@@ -407,8 +407,7 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <description>Validation Rules Description Test</description>
-        <errorConditionFormula>Account.Name =  &apos;Test16&apos;  ||  Account.Name = &apos;Test7&apos;</errorConditionFormula>
+        <errorConditionFormula>Account.Name =  &apos;Test25&apos;  ||  Account.Name = &apos;Test7&apos;</errorConditionFormula>
         <errorMessage>It is a test account</errorMessage>
     </validationRules>
     <webLinks>

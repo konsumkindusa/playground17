@@ -10,7 +10,9 @@
         <members>ARApexclass12</members>
         <members>ARApexclass13</members>
         <members>ARApexclass15</members>
+        <members>ARApexclass2</members>
         <members>ARSApexclass4</members>
+        <members>ARdemoClass1</members>
         <members>AccountCreation</members>
         <members>AccountCreationTest</members>
         <members>AetnaDemoClass</members>
@@ -942,6 +944,8 @@
         <members>Solution.SolutionName</members>
         <members>Solution.SolutionNote</members>
         <members>Solution.Status</members>
+        <members>Survey_Response__c.Cost__c</members>
+        <members>Survey_Response__c.Survey_Number__c</members>
         <members>Task.ActivityDate</members>
         <members>Task.CallDisposition</members>
         <members>Task.CallDurationInSeconds</members>
@@ -1036,6 +1040,7 @@
         <members>Solution</members>
         <members>StreamingChannel</members>
         <members>Support_Test_Object__c</members>
+        <members>Survey_Response__c</members>
         <members>Task</members>
         <members>Test_object__c</members>
         <members>User</members>
@@ -1150,6 +1155,7 @@
         <members>Sherdah__c-Sherdah Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Support_Test_Object__c-Support Test Object Layout</members>
+        <members>Survey_Response__c-Survey Response Layout</members>
         <members>Task-Task Layout</members>
         <members>Test_object__c-Test object Layout</members>
         <members>User-User Layout</members>
@@ -1219,6 +1225,7 @@
     </types>
     <types>
         <members>AR Demo Profile</members>
+        <members>AR Demo Profile 1</members>
         <members>AR-Profile1</members>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>
