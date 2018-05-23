@@ -24,10 +24,13 @@
         <members>NewClass2</members>
         <members>NewClass3</members>
         <members>NewClassTest</members>
+        <members>NewlyCreatedClass</members>
+        <members>secondnewlycreatedclass</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>AccountAddressTrigger</members>
+        <members>Accounttrigger</members>
         <members>DemoTrigger1</members>
         <members>DemoTrigger2</members>
         <members>DemoTrigger3</members>
@@ -596,6 +599,8 @@
         <members>Product2.ProductCode</members>
         <members>Product2.QuantityUnitOfMeasure</members>
         <members>Provider_Reference__c.Test_Provider1__c</members>
+        <members>Service_Request__c.Service_Number__c</members>
+        <members>Service_Request__c.Service_name__c</members>
         <members>Sherdah__c.Sherdah_text__c</members>
         <members>SocialPersona.ExternalId</members>
         <members>SocialPersona.ExternalPictureURL</members>
@@ -709,6 +714,7 @@
         <members>PricebookEntry</members>
         <members>Product2</members>
         <members>Provider_Reference__c</members>
+        <members>Service_Request__c</members>
         <members>Sherdah__c</members>
         <members>Site</members>
         <members>SocialPersona</members>
@@ -834,6 +840,7 @@
         <members>Provider_Reference__c-Test Provider Reference Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>Service_Request__c-Service Request Layout</members>
         <members>Sherdah__c-Sherdah Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Support_Test_Object__c-Support Test Object Layout</members>
@@ -938,6 +945,7 @@
         <members>HighVolumePortal</members>
         <members>Identity User</members>
         <members>MarketingProfile</members>
+        <members>New Demo Profile</members>
         <members>Partner App Subscription User</members>
         <members>Partner Community Login User</members>
         <members>Partner Community User</members>
@@ -957,6 +965,7 @@
         <members>Demo_New_Profile_profilePasswordPolicy1526992784551</members>
         <members>Demo_Profile_1_profilePasswordPolicy1526981861549</members>
         <members>Demo_Profile_2_profilePasswordPolicy1526981881433</members>
+        <members>New_Demo_Profile_profilePasswordPolicy1527053413590</members>
         <members>PT1_profilePasswordPolicy1463153221823</members>
         <name>ProfilePasswordPolicy</name>
     </types>
