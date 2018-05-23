@@ -56,10 +56,11 @@
         <fullName>Aetna_Playground1_Fld__c</fullName>
         <externalId>false</externalId>
         <label>Aetna_Playground1_Fld</label>
-        <length>255</length>
+        <precision>15</precision>
         <required>false</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <label>Aetna_Playground1_Obj</label>

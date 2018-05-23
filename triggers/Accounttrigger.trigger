@@ -1,3 +1,5 @@
+//Adding a comment for Move !!
+
 trigger Accounttrigger on Account (before insert,before update) {
 
 
