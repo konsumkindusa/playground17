@@ -1,3 +1,5 @@
+//This is a new Class
+
 public class secondnewlycreatedclass{
   // Attributes usually come first!
   String  name;
@@ -9,7 +11,7 @@ public class secondnewlycreatedclass{
   Account manufacturer;
 
 
-
+  // Constructor(s) are next
   public secondnewlycreatedclass(String nickname, User myUser) {
     name                = nickname;  
     protonTorpedoes     = 2;

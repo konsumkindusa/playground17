@@ -1,3 +1,5 @@
+//Adding a Comment - This is a new Class
+
 public class NewlyCreatedClass {       //Class definition and body
    public static Integer myValue = 0;  //Class Member variable
    public static String myString = ''; //Class Member variable
