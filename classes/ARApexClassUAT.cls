@@ -4,12 +4,11 @@ public Class ARApexClassUAT
 {
 public Account createAccount(String name)  //method to create account
 {
-//Comment1
-//prod commit check comment
-//comment2
-Account acc112 = new Account();
-acc112.Name = name;
+
+Account acc = new Account();
+acc.Name = name;
 Contact con=new Contact();
-return acc112;
+return acc;
+//Check for commit
 }
 }
