@@ -727,8 +727,9 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <errorConditionFormula>Account.Name =  &apos;Test25&apos;  ||  Account.Name = &apos;Test7&apos;</errorConditionFormula>
-        <errorMessage>It is a test account</errorMessage>
+        <errorConditionFormula>Account.Name =  &apos;Test25&apos;</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Demo Validation Rule</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
