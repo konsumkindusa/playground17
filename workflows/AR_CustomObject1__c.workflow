@@ -23,11 +23,11 @@
     </rules>
     <rules>
         <fullName>AR-WorkflowRule2</fullName>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>AR_CustomObject1__c.AR_CustomField1__c</field>
             <operation>equals</operation>
-            <value>test</value>
+            <value>demotest</value>
         </criteriaItems>
         <description>Add comment for AR-WorkflowRule2</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
