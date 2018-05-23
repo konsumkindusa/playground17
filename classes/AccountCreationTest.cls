@@ -1,11 +1,13 @@
+//This is a test method
+
 @isTest
 public class AccountCreationTest
 {
-  static testMethod void testInsertAccount() //testClass
+  public static testMethod void testInsertAccount() //testClass
   {
   // For Move Playground
   AccountCreation ca = new AccountCreation();
-  ca.createAccount('TestAcc1');
+  ca.secondAccount('TestAcc1');
   
   }
 }
