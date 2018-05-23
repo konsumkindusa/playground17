@@ -1078,11 +1078,14 @@
         <members>Case_Process-1</members>
         <members>Case_Process-2</members>
         <members>Case_Process-3</members>
+        <members>Case_Process-4</members>
+        <members>Demo_Process-1</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
     <types>
         <members>Case_Process</members>
+        <members>Demo_Process</members>
         <members>Test_Flow_1</members>
         <name>FlowDefinition</name>
     </types>
