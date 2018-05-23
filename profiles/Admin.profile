@@ -75,6 +75,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>AetnaDemoClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AetnaDemoClass2</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ArApexClass5</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -12308,6 +12316,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Provider_Change_Request__c.CR_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Provider_Change_Request__c.CR_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Provider_Reference__c.Test_Provider1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12930,61 +12948,7 @@
         <layout>Product2-Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Project_Role__c-Project Contact Role Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Project_Team_Member__c-Project Team Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Project_Time_Card__c-Project Time Card Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>QuickText-Quick Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Reassign_Helper__c-Présentation de Mass Reassign Opportunity Helper</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>References__c-Reference Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Release__c-Release Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ResolutionLink__c-DocLink Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SFDC_Department__mdt-SFDC Department Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SFDC_Gecko_Platform_Mapping__c-SFDC Gecko Platform Mapping Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scorecard-Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Social_Action__c-Social Mission Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Social_Action__c-Social Mission Layout</layout>
-        <recordType>Social_Action__c.Social_Action</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Social_Benefits_and_Contributions__c-Benefits</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Social_Benefits_and_Contributions__c-Benefits</layout>
-        <recordType>Social_Benefits_and_Contributions__c.Benefits</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Social_Benefits_and_Contributions__c-Contributions</layout>
-        <recordType>Social_Benefits_and_Contributions__c.Contributions</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Social_Engagement__c-Social Engagement Layout</layout>
+        <layout>Provider_Change_Request__c-Provider Change Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Provider_Reference__c-Test Provider Reference Layout</layout>
@@ -13543,7 +13507,16 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>MDCS_Troubleshooting_Checklist__c</object>
+        <object>Aetna_Playground1_Obj__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Ar_Obj23__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -13851,6 +13824,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Territory_Assignment_Rule__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Provider_Change_Request__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

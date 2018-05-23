@@ -13,6 +13,8 @@
         <members>ARSApexclass4</members>
         <members>AccountCreation</members>
         <members>AccountCreationTest</members>
+        <members>AetnaDemoClass</members>
+        <members>AetnaDemoClass2</members>
         <members>ArApexClass5</members>
         <members>DemoClass1</members>
         <members>DemoClass2</members>
@@ -922,6 +924,8 @@
         <members>Product2.Name</members>
         <members>Product2.ProductCode</members>
         <members>Product2.QuantityUnitOfMeasure</members>
+        <members>Provider_Change_Request__c.CR_Name__c</members>
+        <members>Provider_Change_Request__c.CR_Number__c</members>
         <members>Provider_Reference__c.Test_Provider1__c</members>
         <members>Service_Request__c.Service_Number__c</members>
         <members>Service_Request__c.Service_name__c</members>
@@ -1023,6 +1027,7 @@
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
         <members>Product2</members>
+        <members>Provider_Change_Request__c</members>
         <members>Provider_Reference__c</members>
         <members>Service_Request__c</members>
         <members>Sherdah__c</members>
@@ -1071,6 +1076,8 @@
     </types>
     <types>
         <members>Case_Process-1</members>
+        <members>Case_Process-2</members>
+        <members>Case_Process-3</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
@@ -1132,6 +1139,8 @@
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
+        <members>Provider_Change_Request__c-Provider Change Request Layout</members>
+        <members>Provider_Reference__c-Test Provider Reference Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
         <members>Service_Request__c-Service Request Layout</members>
@@ -1206,6 +1215,7 @@
         <name>PermissionSet</name>
     </types>
     <types>
+        <members>AR Demo Profile</members>
         <members>AR-Profile1</members>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>
