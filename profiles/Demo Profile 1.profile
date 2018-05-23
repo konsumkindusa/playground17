@@ -9,6 +9,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>AccountCreationTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AetnaDemoClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AetnaDemoClass2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DemoClass1</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -62,6 +74,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Provider_Change_Request__c.CR_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Provider_Change_Request__c.CR_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Service_Request__c.Service_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -70,6 +92,9 @@
         <field>Service_Request__c.Service_name__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Provider_Change_Request__c-Provider Change Request Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Service_Request__c-Service Request Layout</layout>
     </layoutAssignments>

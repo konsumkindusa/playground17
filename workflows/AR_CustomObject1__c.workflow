@@ -2,7 +2,7 @@
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <rules>
         <fullName>AR-WorkFlow1</fullName>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>AR_CustomObject1__c.AR_CustomField1__c</field>
             <operation>equals</operation>

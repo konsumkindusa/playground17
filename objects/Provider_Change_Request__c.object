@@ -43,9 +43,10 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>It is an Aetna Playgroung object</description>
+    <description>Provider Change Request</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -53,21 +54,30 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Aetna_Playground1_Fld__c</fullName>
+        <fullName>CR_Name__c</fullName>
+        <description>CR Name</description>
         <externalId>false</externalId>
-        <label>Aetna_Playground1_Fld</label>
+        <label>CR Name</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Aetna_Playground1_Obj</label>
+    <fields>
+        <fullName>CR_Number__c</fullName>
+        <description>CR Number</description>
+        <externalId>false</externalId>
+        <label>CR Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>Provider Change Request</label>
     <nameField>
-        <label>Aetna_Playground1_Obj Name</label>
+        <label>Provider Change Request Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>aetna_pgs</pluralLabel>
+    <pluralLabel>Provider Change Requests</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
