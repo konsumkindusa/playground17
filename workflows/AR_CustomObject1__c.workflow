@@ -29,7 +29,6 @@
             <operation>equals</operation>
             <value>Opentest</value>
         </criteriaItems>
-        <description>Add comment for AR-WorkflowRule2</description>
-        <triggerType>onAllChanges</triggerType>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>

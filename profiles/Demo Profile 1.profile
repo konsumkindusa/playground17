@@ -49,7 +49,15 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>NewARClass2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>NewARClass25</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewARclass1</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -77,7 +85,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
-    <description>This is a Demo profile</description>
+    <description>Modifying the description to test the Move !!!</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Aetna_PG_Obj__c.Fld3_Aetna__c</field>

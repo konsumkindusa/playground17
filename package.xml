@@ -23,7 +23,9 @@
         <members>DemoClass3</members>
         <members>DemoNewClass</members>
         <members>DemoTestclass4</members>
+        <members>NewARClass2</members>
         <members>NewARClass25</members>
+        <members>NewARclass1</members>
         <members>NewARclass24</members>
         <members>NewClass</members>
         <members>NewClass1</members>
@@ -6473,6 +6475,7 @@
         <members>Case_Process-4</members>
         <members>Demo_Process-1</members>
         <members>Demo_Process-2</members>
+        <members>Demo_Process-3</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
