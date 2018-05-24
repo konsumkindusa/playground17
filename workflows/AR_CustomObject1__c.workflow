@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_a_field</fullName>
+        <description>Update a field</description>
+        <field>AR_Custom_Field3__c</field>
+        <name>Update a field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <rules>
         <fullName>AR-WorkFlow1</fullName>
         <active>true</active>
