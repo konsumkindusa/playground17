@@ -414,8 +414,7 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <errorConditionFormula>Account.Name =  &apos;Test25&apos;</errorConditionFormula>
-        <errorDisplayField>AccountId</errorDisplayField>
+        <errorConditionFormula>Account.Name =  &apos;Test25&apos; ||  Account.Name =&apos;&apos;</errorConditionFormula>
         <errorMessage>Adding a comment for validation rule for Move</errorMessage>
     </validationRules>
     <webLinks>

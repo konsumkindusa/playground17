@@ -1,3 +1,4 @@
+//Adding a comment to test a Move !!!
 public Class AccountCreation
 {
 public static Account createAccount(String name) //Method to Create Account. 
@@ -11,10 +12,10 @@ return acc;
 
 public Account secondAccount( String name)
 {
-Account acc1 = new Account(); 
-acc1.Name = name;
+Account demoacc= new Account(); 
+demoacc.Name = name;
 system.debug('Test');
 system.debug('Donna test');
-return acc1;
+return demoacc;
 }
 }
