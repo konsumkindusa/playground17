@@ -116,6 +116,7 @@
         <members>QuoteLookupPage</members>
         <members>RedirectToTimeCard</members>
         <members>RegisterTraining</members>
+        <members>Salesforce1</members>
         <members>SelfEnrollment</members>
         <members>Send_Email_Page</members>
         <members>SiteErrorPage</members>
@@ -132,7 +133,6 @@
         <members>TrainingLocationPage</members>
         <members>Unauthorized</members>
         <members>UnderConstruction</members>
-        <members>Salesforce1</members>
         <name>AppMenu</name>
     </types>
     <types>
