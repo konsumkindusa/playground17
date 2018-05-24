@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldUpdates>
+        <fullName>Field_AR_update</fullName>
+        <field>AR_Custom_Field3__c</field>
+        <name>Field AR update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_a_field</fullName>
         <description>Update a field</description>
         <field>AR_Custom_Field3__c</field>
@@ -32,12 +40,16 @@
     </rules>
     <rules>
         <fullName>AR-WorkflowRule2</fullName>
+        <actions>
+            <name>Field_AR_update</name>
+            <type>FieldUpdate</type>
+        </actions>
         <active>true</active>
         <criteriaItems>
             <field>AR_CustomObject1__c.AR_CustomField1__c</field>
             <operation>equals</operation>
-            <value>Demotest1</value>
+            <value>OpenDemo</value>
         </criteriaItems>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
 </Workflow>
