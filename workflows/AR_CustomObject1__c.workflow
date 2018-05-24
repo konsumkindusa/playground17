@@ -29,6 +29,6 @@
             <operation>equals</operation>
             <value>Demotest1</value>
         </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>

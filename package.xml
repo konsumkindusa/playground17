@@ -794,6 +794,7 @@
         <members>Demo_Process-3</members>
         <members>Demo_Process-4</members>
         <members>Demo_Process-5</members>
+        <members>Demo_Process-6</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
