@@ -48,10 +48,28 @@
         <apexClass>NewARclass24</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>NewClassARDemo1</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewClassARDemo2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
         <field>Aetna_Playground1_Obj__c.Aetna_Playground1_Fld__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Demo_Claim_Reference__c.Claim_info__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Demo_Claim_Reference__c.Reference_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -84,6 +102,9 @@
         <field>Survey_Response__c.Survey_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Demo_Claim_Reference__c-Demo Claim Reference Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Entitlement__c-Entitlement Layout</layout>
     </layoutAssignments>

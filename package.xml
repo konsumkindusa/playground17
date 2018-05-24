@@ -35,6 +35,8 @@
         <members>NewClass1</members>
         <members>NewClass2</members>
         <members>NewClass3</members>
+        <members>NewClassARDemo1</members>
+        <members>NewClassARDemo2</members>
         <members>NewClassTest</members>
         <members>NewlyCreatedClass</members>
         <members>secondnewlycreatedclass</members>
@@ -418,6 +420,8 @@
         <members>DandBCompany.UsTaxId</members>
         <members>DandBCompany.WomenOwned</members>
         <members>DandBCompany.YearStarted</members>
+        <members>Demo_Claim_Reference__c.Claim_info__c</members>
+        <members>Demo_Claim_Reference__c.Reference_Number__c</members>
         <members>Demo_Work_1__c.Demo_Test_1__c</members>
         <members>Demo_Work_1__c.Demo_Test_2__c</members>
         <members>DuplicateRecordItem.DuplicateRecordSetId</members>
@@ -698,6 +702,7 @@
         <members>Contract</members>
         <members>ContractContactRole</members>
         <members>DandBCompany</members>
+        <members>Demo_Claim_Reference__c</members>
         <members>Demo_Work_1__c</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
@@ -795,6 +800,7 @@
         <members>Demo_Process-4</members>
         <members>Demo_Process-5</members>
         <members>Demo_Process-6</members>
+        <members>Demo_Process-7</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
@@ -838,6 +844,7 @@
         <members>ContentVersion-Content Version Layout</members>
         <members>Contract-Contract Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
+        <members>Demo_Claim_Reference__c-Demo Claim Reference Layout</members>
         <members>Demo_Work_1__c-Demo Work 1 Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EMD_CI_Demo__c-EMD CI Demo Layout</members>
@@ -980,6 +987,7 @@
         <members>Demo New Profile</members>
         <members>Demo Profile 1</members>
         <members>Demo Profile 2</members>
+        <members>Demo Tech Support Profile</members>
         <members>External Identity User</members>
         <members>Force%2Ecom - App Subscription User</members>
         <members>Force%2Ecom - Free User</members>
@@ -1187,6 +1195,7 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>AR_CustomObject1__c.Field_AR_update</members>
         <members>AR_CustomObject1__c.Update_a_field</members>
         <name>WorkflowFieldUpdate</name>
     </types>
