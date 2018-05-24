@@ -1004,10 +1004,12 @@
         <name>ProfilePasswordPolicy</name>
     </types>
     <types>
+        <members>AR_Demo_Profile_profileSessionSetting1527096128636</members>
         <members>Custom_Marketing_Profile_profileSessionSetting1526626267718</members>
         <members>Custom_Sales_Profile_profileSessionSetting1526886509334</members>
         <members>Custom_Support_Profile_profileSessionSetting1526553928301</members>
         <members>Demo_Profile_1_profileSessionSetting1526981868384</members>
+        <members>Demo_Profile_2_profileSessionSetting1526994364069</members>
         <name>ProfileSessionSetting</name>
     </types>
     <types>
