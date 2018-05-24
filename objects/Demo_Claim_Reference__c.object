@@ -43,9 +43,10 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Live Chat</description>
+    <description>Demo Claim Reference</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -53,29 +54,31 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Active__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Active</description>
+        <fullName>Claim_info__c</fullName>
+        <description>Claim info</description>
         <externalId>false</externalId>
-        <label>Active</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Chat_Date4__c</fullName>
-        <description>Chat_Date4</description>
-        <externalId>false</externalId>
-        <label>Chat Date</label>
+        <label>Claim info</label>
+        <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Date</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
-    <label>Live Chat</label>
+    <fields>
+        <fullName>Reference_Number__c</fullName>
+        <description>Reference Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference Number</inlineHelpText>
+        <label>Reference Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>Demo Claim Reference</label>
     <nameField>
-        <label>Live Chat Name</label>
+        <label>Demo Claim Reference Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Live Chats</pluralLabel>
+    <pluralLabel>Demo Claim References</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

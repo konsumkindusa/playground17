@@ -1,4 +1,4 @@
-//Trigger is being test for Move !!!
+//Test the trigger for Move !!
 
 trigger Accounttrigger on Account (before insert,before update) {
 List<Account> acclst=new List<Account>();

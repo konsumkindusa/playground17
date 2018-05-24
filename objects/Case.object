@@ -727,9 +727,8 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <description>This is a test validation rule modified to check</description>
-        <errorConditionFormula>Account.Name =  &apos;Test27&apos;</errorConditionFormula>
-        <errorDisplayField>AccountId</errorDisplayField>
+        <description>This is a test validation rule modified to check comment</description>
+        <errorConditionFormula>Account.Name =  &apos;Demotest&apos;</errorConditionFormula>
         <errorMessage>Adding a comment for validation rule for Move</errorMessage>
     </validationRules>
     <webLinks>
