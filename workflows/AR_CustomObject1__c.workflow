@@ -27,7 +27,7 @@
         <criteriaItems>
             <field>AR_CustomObject1__c.AR_CustomField1__c</field>
             <operation>equals</operation>
-            <value>Opentest</value>
+            <value>Demotest1</value>
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>

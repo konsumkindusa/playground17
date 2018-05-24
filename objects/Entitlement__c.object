@@ -43,7 +43,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>It is an Aetna Playgroung object</description>
+    <description>Entitlements</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -53,21 +53,30 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Aetna_Playground1_Fld__c</fullName>
+        <fullName>Entitlement_Name__c</fullName>
+        <description>Entitlement Name</description>
         <externalId>false</externalId>
-        <label>Aetna_Playground1_Fld</label>
-        <precision>15</precision>
+        <label>Entitlement Name</label>
+        <length>155</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Aetna_Playground1_Obj</label>
+    <fields>
+        <fullName>Entitlement_Number__c</fullName>
+        <description>Entitlement Number</description>
+        <externalId>false</externalId>
+        <label>Entitlement Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>Entitlement</label>
     <nameField>
-        <label>Aetna_Playground1_Obj Name</label>
+        <label>Entitlement Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>aetna_pgs</pluralLabel>
+    <pluralLabel>Entitlements</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
