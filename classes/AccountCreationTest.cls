@@ -1,5 +1,3 @@
-//Adding a comment to test a Move !!!
-
 @isTest
 public class AccountCreationTest
 {

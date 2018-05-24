@@ -24,8 +24,10 @@
         <members>DemoNewClass</members>
         <members>DemoTestclass4</members>
         <members>NewARClass2</members>
+        <members>NewARClass21</members>
         <members>NewARClass25</members>
         <members>NewARclass1</members>
+        <members>NewARclass10</members>
         <members>NewARclass24</members>
         <members>NewClass</members>
         <members>NewClass1</members>
@@ -440,6 +442,8 @@
         <members>EmailMessage.TextBody</members>
         <members>EmailMessage.ToAddress</members>
         <members>EmailMessage.ValidatedFromAddress</members>
+        <members>Entitlement__c.Entitlement_Name__c</members>
+        <members>Entitlement__c.Entitlement_Number__c</members>
         <members>Event.ActivityDate</members>
         <members>Event.ActivityDateTime</members>
         <members>Event.Description</members>
@@ -698,6 +702,7 @@
         <members>EMD_CI_Demo__c</members>
         <members>EMD__c</members>
         <members>EmailMessage</members>
+        <members>Entitlement__c</members>
         <members>Event</members>
         <members>ExchangeUserMapping</members>
         <members>FeedItem</members>
@@ -785,6 +790,7 @@
         <members>Demo_Process-1</members>
         <members>Demo_Process-2</members>
         <members>Demo_Process-3</members>
+        <members>Demo_Process-4</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
@@ -832,6 +838,7 @@
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EMD_CI_Demo__c-EMD CI Demo Layout</members>
         <members>EMD__c-EMD Layout</members>
+        <members>Entitlement__c-Entitlement Layout</members>
         <members>Event-Event Layout</members>
         <members>FeedItem-Feed Item Layout</members>
         <members>Global-Global Layout</members>
@@ -942,6 +949,7 @@
     <types>
         <members>AR Demo Profile</members>
         <members>AR Demo Profile 1</members>
+        <members>AR Profile 100</members>
         <members>AR-Profile1</members>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>

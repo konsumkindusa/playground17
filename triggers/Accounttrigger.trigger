@@ -1,5 +1,3 @@
-//Trigger is being test for Move !!!
-
 trigger Accounttrigger on Account (before insert,before update) {
 
 
