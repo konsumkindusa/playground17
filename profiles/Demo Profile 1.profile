@@ -49,6 +49,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>NewARClass25</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewARclass24</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>NewClass1</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -82,6 +90,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Live_Chat__c.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Live_Chat__c.Chat_Date4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Provider_Change_Request__c.CR_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -110,6 +128,9 @@
         <field>Survey_Response__c.Survey_Number__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Live_Chat__c-Live Chat Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Provider_Change_Request__c-Provider Change Request Layout</layout>
     </layoutAssignments>

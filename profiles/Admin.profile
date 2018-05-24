@@ -155,7 +155,15 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>Address</apexClass>
+        <apexClass>NewARClass25</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewARclass24</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewClass</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -12322,7 +12330,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Training_Location__c.Account__c</field>
+        <field>Live_Chat__c.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Live_Chat__c.Chat_Date4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mathworks__c.Mathworks_picklist__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13177,6 +13195,9 @@
     <layoutAssignments>
         <layout>MW_Project__c-Marketing Request</layout>
         <recordType>MW_Project__c.Marketing_Request</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Live_Chat__c-Live Chat Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
@@ -14063,7 +14084,16 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Release__c</object>
+        <object>Live_Chat__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Macro</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
