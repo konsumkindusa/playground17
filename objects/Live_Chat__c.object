@@ -46,7 +46,6 @@
     <description>Live Chat</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -55,12 +54,16 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Active__c</fullName>
-        <defaultValue>false</defaultValue>
+        <defaultValue>0</defaultValue>
         <description>Active</description>
         <externalId>false</externalId>
         <label>Active</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Chat_Date4__c</fullName>

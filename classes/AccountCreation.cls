@@ -1,7 +1,6 @@
 //Adding a comment to test a Move !!!
 public Class AccountCreation
 {
-//Adding a method to crate an account
 public static Account createAccount(String name) 
 {
 Account acc = new Account(); 
