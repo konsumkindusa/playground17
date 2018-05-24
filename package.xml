@@ -1505,6 +1505,10 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>AR_CustomObject1__c.Update_a_field</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
         <members>AR_CustomObject1__c.AR-WorkFlow1</members>
         <members>AR_CustomObject1__c.AR-WorkflowRule2</members>
         <name>WorkflowRule</name>
