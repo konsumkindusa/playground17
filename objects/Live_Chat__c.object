@@ -43,9 +43,10 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>It is an Aetna Playgroung object</description>
+    <description>Live Chat</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -53,21 +54,29 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Aetna_Playground1_Fld__c</fullName>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Active</description>
         <externalId>false</externalId>
-        <label>Aetna_Playground1_Fld</label>
-        <length>255</length>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Chat_Date4__c</fullName>
+        <description>Chat_Date4</description>
+        <externalId>false</externalId>
+        <label>Chat Date</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Date</type>
     </fields>
-    <label>Aetna_Playground1_Obj</label>
+    <label>Live Chat</label>
     <nameField>
-        <label>Aetna_Playground1_Obj Name</label>
+        <label>Live Chat Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>aetna_pgs</pluralLabel>
+    <pluralLabel>Live Chats</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

@@ -416,7 +416,7 @@
         <active>true</active>
         <errorConditionFormula>Account.Name =  &apos;Test25&apos;</errorConditionFormula>
         <errorDisplayField>AccountId</errorDisplayField>
-        <errorMessage>Demo Validation Rule</errorMessage>
+        <errorMessage>Adding a comment for validation rule for Move</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
