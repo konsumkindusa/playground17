@@ -26,9 +26,11 @@
         <members>NewARClass2</members>
         <members>NewARClass21</members>
         <members>NewARClass25</members>
+        <members>NewARClass79</members>
         <members>NewARclass1</members>
         <members>NewARclass10</members>
         <members>NewARclass24</members>
+        <members>NewARclass78</members>
         <members>NewClass</members>
         <members>NewClass1</members>
         <members>NewClass2</members>
@@ -791,6 +793,7 @@
         <members>Demo_Process-2</members>
         <members>Demo_Process-3</members>
         <members>Demo_Process-4</members>
+        <members>Demo_Process-5</members>
         <members>Test_Flow_1-1</members>
         <name>Flow</name>
     </types>
@@ -962,6 +965,7 @@
         <members>Chatter Moderator User</members>
         <members>ContractManager</members>
         <members>Cross Org Data Proxy User</members>
+        <members>Custom Service Demo</members>
         <members>Custom%3A Marketing Profile</members>
         <members>Custom%3A Sales Profile</members>
         <members>Custom%3A Support Profile</members>
