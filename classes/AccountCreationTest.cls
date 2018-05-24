@@ -1,5 +1,3 @@
-//This is a test method
-
 @isTest
 public class AccountCreationTest
 {

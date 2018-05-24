@@ -27,9 +27,9 @@
         <criteriaItems>
             <field>AR_CustomObject1__c.AR_CustomField1__c</field>
             <operation>equals</operation>
-            <value>demotest</value>
+            <value>Opentest</value>
         </criteriaItems>
         <description>Add comment for AR-WorkflowRule2</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>
