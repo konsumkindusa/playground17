@@ -111,6 +111,11 @@
     <custom>true</custom>
     <description>Modifying the description to test the Move !!!</description>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>AR_CustomObject1__c.AR_Custom_Field3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Aetna_PG_Obj__c.Fld3_Aetna__c</field>
         <readable>true</readable>
@@ -198,5 +203,14 @@
     <layoutAssignments>
         <layout>Survey_Response__c-Survey Response Layout</layout>
     </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>AR_CustomObject1__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <userLicense>Salesforce</userLicense>
 </Profile>
