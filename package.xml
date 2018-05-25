@@ -1134,7 +1134,28 @@
         <name>RecordType</name>
     </types>
     <types>
+        <members>MW_Prod_sf_ext</members>
+        <members>MW_Prod_sf_msg_ext</members>
+        <members>MW_Stage_sf_ext</members>
+        <members>MW_Stage_sf_ext_msg</members>
+        <members>MW_Track_1_sf_ext_test1</members>
+        <members>MW_Track_2_sf_ext_dev2</members>
+        <members>MW_Track_2_sf_ext_msg_dev2</members>
+        <members>MW_Track_2_sf_ext_msg_test2</members>
+        <members>MW_Track_2_sf_ext_test2</members>
+        <members>MW_Track_3_sf_ext_dev3</members>
+        <members>MW_Track_3_sf_ext_msg_dev3</members>
+        <members>MW_Track_3_sf_ext_msg_test3</members>
+        <members>MW_Track_3_sf_ext_test3</members>
+        <members>SFDC_DEV_SendArticleToMW_Images</members>
+        <members>SFDC_Dev_ContentURL</members>
+        <members>SFDC_Prod_ArticleToMWSession</members>
+        <members>SFDC_Prod_Content_MyDomain</members>
+        <members>SFDC_Prod_MyDomain</members>
+        <members>SFDC_Prod_SendArticleToMW_Images</members>
+        <members>SFDC_Sandbox_ArticleToMWSession</members>
         <members>ApexDevNet</members>
+        <members>Datamotion_QA</members>
         <name>RemoteSiteSetting</name>
     </types>
     <types>
