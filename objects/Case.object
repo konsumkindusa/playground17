@@ -414,8 +414,7 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <description>This is a test validation rule modified to check comment</description>
-        <errorConditionFormula>Account.Name =  &apos;Demotest&apos;</errorConditionFormula>
+        <errorConditionFormula>Account.Name =  &apos;Opentest&apos;</errorConditionFormula>
         <errorDisplayField>AccountId</errorDisplayField>
         <errorMessage>You cannot have demotest has the account name</errorMessage>
     </validationRules>
