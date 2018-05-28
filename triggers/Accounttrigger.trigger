@@ -1,4 +1,3 @@
-//Test this trigger for Move !!!
 trigger Accounttrigger on Account (before insert,before update) {
 List<Account> acclst=new List<Account>();
   for(account a:trigger.new){
