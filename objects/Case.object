@@ -407,8 +407,8 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <errorConditionFormula>Account.Name =  &apos;Opentest&apos;</errorConditionFormula>
-        <errorDisplayField>AccountId</errorDisplayField>
+        <description>This is a test validation rule</description>
+        <errorConditionFormula>Account.Name =  &apos;demotest&apos;</errorConditionFormula>
         <errorMessage>You cannot have demotest has the account name</errorMessage>
     </validationRules>
     <webLinks>
