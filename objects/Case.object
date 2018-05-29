@@ -414,8 +414,8 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <description>Adding description for validation</description>
-        <errorConditionFormula>Account.Name =  &apos;demotest&apos;</errorConditionFormula>
+        <errorConditionFormula>Account.Name =  &apos;opentest&apos;</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
         <errorMessage>Check for Move and testing</errorMessage>
     </validationRules>
     <webLinks>
