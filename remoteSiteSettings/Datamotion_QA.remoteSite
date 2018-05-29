@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>This remote site testing is tested for move</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
-    <isActive>true</isActive>
+    <isActive>false</isActive>
     <url>https://aetnatesting.datamotion.com</url>
 </RemoteSiteSetting>

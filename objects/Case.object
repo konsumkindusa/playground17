@@ -414,9 +414,8 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <errorConditionFormula>Account.Name =  &apos;opentest&apos;</errorConditionFormula>
-        <errorDisplayField>AccountId</errorDisplayField>
-        <errorMessage>Check for Move and testing</errorMessage>
+        <errorConditionFormula>Account.Name =  &apos;demotest&apos;</errorConditionFormula>
+        <errorMessage>Error Validation</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
