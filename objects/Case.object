@@ -414,10 +414,8 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <description>This is a test validation rule</description>
-        <errorConditionFormula>Account.Name =  &apos;opendemo&apos;</errorConditionFormula>
-        <errorDisplayField>AccountId</errorDisplayField>
-        <errorMessage>You cannot have demotest has the account name</errorMessage>
+        <errorConditionFormula>Account.Name =  &apos;demotest&apos;</errorConditionFormula>
+        <errorMessage>This is a test validation</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
