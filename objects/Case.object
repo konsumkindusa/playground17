@@ -407,9 +407,9 @@
     <validationRules>
         <fullName>Test_case_validation</fullName>
         <active>true</active>
-        <errorConditionFormula>Account.Name =  &apos;opendemo&apos;</errorConditionFormula>
-        <errorDisplayField>AccountId</errorDisplayField>
-        <errorMessage>Check for Move</errorMessage>
+        <description>Adding description for validation</description>
+        <errorConditionFormula>Account.Name =  &apos;demotest&apos;</errorConditionFormula>
+        <errorMessage>Check for Move and testing</errorMessage>
     </validationRules>
     <webLinks>
         <fullName>UpsellCrosssellOpportunity</fullName>
